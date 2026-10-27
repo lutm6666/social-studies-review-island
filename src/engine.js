@@ -62,7 +62,7 @@ function buildBank(HAND,GEN,PERIODS){
   // 跨章節完全相同的題幹只保留第一題（精寫題優先）
   const seen=new Set();
   Object.keys(bank).forEach(k=>{ bank[k].sort((a,b)=>(a.src==='h'?0:1)-(b.src==='h'?0:1)); });
-  Object.keys(bank).forEach(k=>{ bank[k]=bank[k].filter(q=>{ const key=q.q.replace(/\s/g,''); if(seen.has(key)) return false; seen.add(key); return true; }); });
+  Object.keys(bank).forEach(k=>{ bank[k]=bank[k].filter(q=>{ const key=(q.q+'|'+(q.ctx||'')+'|'+(q.fig?JSON.stringify(q.fig):'')).replace(/\s/g,''); if(seen.has(key)) return false; seen.add(key); return true; }); });
   return bank;
 }
 root.buildBank=buildBank;
