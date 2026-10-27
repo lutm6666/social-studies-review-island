@@ -379,6 +379,10 @@ body.card-compact .card{gap:6px;padding:10px 14px}
 body.ui-hidden .eye-btn .eye-slash{display:inline}
 body.panel-open .eye-btn,body.touring .eye-btn{display:none}
 body.ui-hidden .ui,body.ui-hidden #labels{visibility:hidden}
+/* 寬螢幕橫式：卡片移到左側，讓出畫面中間給小島 */
+@media (min-width:1000px) and (min-aspect-ratio:7/5){
+  .card{position:fixed;left:max(16px,env(safe-area-inset-left,0px));bottom:calc(env(safe-area-inset-bottom,0px) + var(--dock-h,96px) + 28px);width:min(440px,32vw);max-height:calc(100vh - var(--dock-h,96px) - 120px);overflow:auto}
+}
 
 .tag3d.hubtag{--c:var(--accent)}
 .chip.hubchip{--c:var(--accent)}
