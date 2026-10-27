@@ -48,6 +48,52 @@
 `pre-h43` ✓
 `pre-h44` ✓
 
-共檢查 45 題，有問題 4 題（其中 1 題待確認）。全島題目總數：924。
+`pre-h45` ✗ 年份或排序題
+`pre-h46` ✓
+`pre-h47` ✓
+`pre-h48` ✓
+`pre-h49` ✓
+`pre-h50` ✓
+`pre-h51` ✓
+`pre-h52` ✓
+`pre-g0` ✓
+`pre-g2` ✓
+`pre-g4` ✓
+`pre-g5` ✓
+`pre-g6` ✓
+`pre-g7` ✓
+`pre-g8` ✓
+`pre-g10` ✓
+`pre-g11` ✓
+`pre-g12` ✓
+`pre-g13` ✓
+`pre-g14` ✓
+`pre-g15` ✓
+`pre-g16` ✓
+`pre-g17` ✓
+`pre-g19` ✓
+`pre-g20` ✓
+`pre-g22` ✓
+`pre-g24` ✓
+`pre-g26` ✓
+`pre-g27` ✓
+`pre-g28` ✓
+`pre-g29` ✓
+`pre-g30` ✓
+`pre-g32` ✓
+`pre-g34` ✓
+`pre-g36` ✓
+`pre-g38` ✓
+`pre-g40` ✓
+`pre-g42` ✓
+`pre-g45` ✓
+`pre-g46` ✓
+`pre-g47` ✗ 題目品質
+`pre-g48` ✓
+`pre-g50` ✓
+`pre-g51` ✓
+`pre-g52` ✓
 
-進度：已檢查到 `pre-h44`
+共檢查 90 題，有問題 6 題（其中 1 題待確認）。全島題目總數：924。
+
+進度：已檢查到 `pre-g52`
