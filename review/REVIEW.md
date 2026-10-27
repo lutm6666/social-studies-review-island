@@ -6,14 +6,14 @@
 
 | 檔案 | 內容 | 題數 |
 |---|---|---|
-| `questions_twh.md` | 臺灣史島（七年級歷史） | 924 |
+| `questions_twh.md` | 臺灣史島（七年級歷史） | 925 |
 | `questions_cnh.md` | 中國與東亞史島（八年級歷史） | 450 |
 | `questions_wdh.md` | 世界史島（九年級歷史） | 444 |
 | `questions_twg.md` | 臺灣地理島（七年級地理） | 486 |
 | `questions_asg.md` | 亞洲島（八年級地理） | 284 |
 | `questions_wdg.md` | 世界島（九年級地理） | 239 |
-| `questions_soc.md` | 社會生活島（七年級公民） | 257 |
-| `questions_law.md` | 政治與法律島（八年級公民） | 393 |
+| `questions_soc.md` | 社會生活島（七年級公民） | 262 |
+| `questions_law.md` | 政治與法律島（八年級公民） | 396 |
 | `questions_eco.md` | 經濟與全球島（九年級公民） | 288 |
 | `questions_cross.md` | 跨科航線 | 33 |
 
