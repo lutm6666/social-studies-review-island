@@ -385,6 +385,32 @@ body.card-compact .card{gap:6px;padding:10px 14px}
 body.ui-hidden .eye-btn .eye-slash{display:inline}
 body.panel-open .eye-btn,body.touring .eye-btn{display:none}
 body.ui-hidden .ui,body.ui-hidden #labels{visibility:hidden}
+
+/* 主島升級慶祝 */
+.mstars{color:#e3b23c;letter-spacing:-1px;margin-left:2px;font-size:.85em}
+.celeb{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:16px;background:rgba(10,20,35,.55);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);animation:celebIn .3s ease}
+.celeb.out{animation:celebOut .26s ease forwards}
+@keyframes celebIn{from{opacity:0}to{opacity:1}} @keyframes celebOut{to{opacity:0}}
+.celeb-card{position:relative;width:min(420px,100%);box-sizing:border-box;text-align:center;padding:56px 24px 22px;border-radius:20px;background:var(--paper);color:var(--ink);border:2px solid #e3b23c;box-shadow:0 24px 60px rgba(0,0,0,.35),0 0 0 6px rgba(227,178,60,.18);animation:celebPop .55s cubic-bezier(.2,1.4,.4,1)}
+@keyframes celebPop{from{transform:scale(.6) translateY(30px);opacity:0}to{transform:none;opacity:1}}
+.celeb-badge{position:absolute;left:50%;top:-44px;width:88px;height:88px;margin-left:-44px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#fff3c4,#e3b23c 55%,#b8861b);box-shadow:0 8px 20px rgba(184,134,27,.5),inset 0 -4px 0 rgba(0,0,0,.12);animation:celebSpin 1.2s ease}
+.celeb-badge span{font-family:var(--f-display);font-size:30px;font-weight:700;color:#6b4a0c}
+.celeb-badge::before{content:"";position:absolute;inset:-14px;border-radius:50%;background:conic-gradient(from 0deg,transparent 0 10deg,rgba(255,215,110,.55) 10deg 20deg,transparent 20deg 40deg,rgba(255,215,110,.55) 40deg 50deg,transparent 50deg 70deg,rgba(255,215,110,.55) 70deg 80deg,transparent 80deg 100deg,rgba(255,215,110,.55) 100deg 110deg,transparent 110deg 130deg,rgba(255,215,110,.55) 130deg 140deg,transparent 140deg 160deg,rgba(255,215,110,.55) 160deg 170deg,transparent 170deg 190deg,rgba(255,215,110,.55) 190deg 200deg,transparent 200deg 220deg,rgba(255,215,110,.55) 220deg 230deg,transparent 230deg 250deg,rgba(255,215,110,.55) 250deg 260deg,transparent 260deg 280deg,rgba(255,215,110,.55) 280deg 290deg,transparent 290deg 310deg,rgba(255,215,110,.55) 310deg 320deg,transparent 320deg 340deg,rgba(255,215,110,.55) 340deg 350deg,transparent 350deg);z-index:-1;animation:celebRays 8s linear infinite}
+@keyframes celebRays{to{transform:rotate(360deg)}} @keyframes celebSpin{from{transform:rotate(-200deg) scale(.3)}to{transform:none}}
+.celeb-eye{margin:0;font-size:var(--fs-2);letter-spacing:.3em;color:#b8861b;font-weight:700}
+.celeb-title{margin:4px 0 2px;font-family:var(--f-display);font-size:var(--fs-7,32px);letter-spacing:.06em}
+.celeb-stars{margin:2px 0 6px;font-size:28px;letter-spacing:6px}
+.celeb-stars span{color:var(--line);display:inline-block}
+.celeb-stars span.on{color:#e3b23c;animation:celebStar .5s cubic-bezier(.2,1.6,.4,1) backwards}
+.celeb-stars span.on:nth-child(2){animation-delay:.15s}.celeb-stars span.on:nth-child(3){animation-delay:.3s}
+@keyframes celebStar{from{transform:scale(0) rotate(-90deg)}to{transform:none}}
+.celeb-tier{margin:0 0 6px;font-weight:700;color:var(--c)}
+.celeb-msg{margin:0 0 16px;font-size:var(--fs-3);line-height:1.7;color:var(--muted)}
+.celeb-act{display:flex;gap:8px;justify-content:center}
+.celeb-conf{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.celeb-conf i{position:absolute;top:-20px;left:var(--x);width:8px;height:14px;background:var(--c);border-radius:2px;animation:celebFall var(--d) var(--w) linear infinite}
+@keyframes celebFall{to{transform:translateY(110vh) rotate(var(--r))}}
+@media (prefers-reduced-motion:reduce){.celeb-conf{display:none}.celeb-card,.celeb-badge,.celeb-badge::before,.celeb-stars span.on{animation:none}}
 .snd-btn{top:calc(64px + env(safe-area-inset-top,0px))}
 .snd-btn .snd-x{display:none}
 body.sound-off .snd-btn .snd-x{display:inline}
