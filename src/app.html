@@ -166,6 +166,12 @@ body:not(.focused) .tag3d.island:hover .sc,body:not(.focused) .tag3d.island.hove
 .seg button[aria-checked="true"]{background:var(--paper);color:var(--ink);font-weight:700;box-shadow:0 1px 3px rgba(0,0,0,.12)}
 .linkbtn{margin-top:8px;padding:0;border:0;background:none;font-size:var(--fs-2);color:var(--muted);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .linkbtn[aria-pressed="true"]{color:var(--warn)}
+a.linkbtn{display:inline-block}
+.fb-foot{flex-wrap:wrap}
+.bk-box{display:grid;gap:8px;margin:8px 0 16px}
+.bk-code{width:100%;box-sizing:border-box;min-height:88px;padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:12px/1.4 ui-monospace,Menlo,Consolas,monospace;resize:vertical}
+.bk-msg{margin:0;font-size:var(--fs-2);color:var(--muted)}
+.bk-msg.ok{color:var(--ok,#2e8b57)}.bk-msg.err{color:var(--warn)}
 .copybox{width:100%;box-sizing:border-box;min-height:120px;margin-top:12px;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--paper2);color:var(--ink);font:13px/1.5 var(--f-body)}
 .seg3{grid-template-columns:repeat(3,1fr)}
 .filters{display:flex;flex-wrap:wrap;gap:8px}
@@ -410,7 +416,7 @@ body.ui-hidden .ui,body.ui-hidden #labels{visibility:hidden}
       <li><span class="dot" style="--c:var(--geo)"></span>地理</li>
       <li><span class="dot" style="--c:var(--civ)"></span>公民</li>
     </ul>
-    <div class="hud-tools"><button type="button" class="tool" id="reviewBtn" disabled>今日複習 ✓</button><button type="button" class="tool" id="examBtn">會考模擬</button><button type="button" class="tool" id="searchBtn">搜尋題目</button><button type="button" class="tool" id="liteBtn" aria-pressed="false">省電模式</button><button type="button" class="tool" id="bigBtn" aria-pressed="false">大字模式</button><button type="button" class="tool" id="compactBtn" aria-pressed="false">精簡卡片</button></div>
+    <div class="hud-tools"><button type="button" class="tool" id="reviewBtn" disabled>今日複習 ✓</button><button type="button" class="tool" id="examBtn">會考模擬</button><button type="button" class="tool" id="searchBtn">搜尋題目</button><button type="button" class="tool" id="liteBtn" aria-pressed="false">省電模式</button><button type="button" class="tool" id="bigBtn" aria-pressed="false">大字模式</button><button type="button" class="tool" id="compactBtn" aria-pressed="false">精簡卡片</button><button type="button" class="tool" id="skyBtn">天空：自動</button><button type="button" class="tool" id="backupBtn">進度備份</button></div>
     <button type="button" class="back" id="backBtn" hidden>‹ 回到群島</button>
   </header>
   <div class="spacer"></div>

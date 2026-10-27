@@ -1,0 +1,29 @@
+{
+ "name": "社會科複習島",
+ "short_name": "社會科複習島",
+ "description": "國中社會科（108 課綱）3D 島嶼複習網站：歷史、地理、公民九座島，近四千題，附解說、圖表題與錯題複習。",
+ "lang": "zh-Hant",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#1f4a6e",
+ "theme_color": "#1f4a6e",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}

@@ -201,6 +201,8 @@
   // 腳下的接觸陰影
   const blobGeo=new T.CircleGeometry(0.2,16); blobGeo.rotateX(-Math.PI/2);
   const blobMat=new T.MeshBasicMaterial({color:'#000000',transparent:true,opacity:0.22,depthWrite:false});
+  // 臺灣史島：每座章節小島留一位小人（與其他島一致），另外兩位到主島散步
+  if(!PEOPLE.twh){ PEOPLE.twh=[PEOPLE.pre[1],PEOPLE.ces[1]].filter(Boolean); ['pre','voy','qpe','qsc','jpe','jsc','cpd','ces'].forEach(k=>{ if(PEOPLE[k]) PEOPLE[k]=PEOPLE[k].slice(0,1); }); }
   const PEOPLE_UNIT=id=>LM_INFO[id]?LM_INFO[id].unit:(ISL[id]?ISL[id].name:'');
   function addWalker(sp,unit,conf){
     const p=makePerson(sp); peopleGroup.add(p.g);

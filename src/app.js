@@ -8,7 +8,7 @@ const SUBJ = {
   civ: {name:'公民', css:'var(--civ)',  color:'#8796a6', angle:90}
 };
 const ISLANDS = [
-  {id:'twh', name:'臺灣史島', subj:'hist', g:0, grade:'七年級', ready:true,
+  {id:'twh', name:'臺灣史島', subj:'hist', g:0, grade:'七年級', ready:true, decor:'citygate',
    desc:'史前文化到當代臺灣（課綱歷史 B、C、E、F 主題）',
    lms:[
     {id:'pre', name:'史前遺址',   unit:'歷Ba 史前文化與臺灣原住民族'},
@@ -462,7 +462,7 @@ function renderCard(){
   } else if(isl.ready){
     const s=statsOf(islandPool(isl.id));
     cardEl.innerHTML=
-      '<div class="card-top"><div>'+tag+'<h2 class="card-title">'+isl.name+'</h2><p class="card-sub">'+(isl.id==='twh'?'8 座章節小島依時代排成一圈．發光弧線是跨章節的因果題．答對越多，小島越熱鬧':isl.lms.length+' 座章節小島'+(isl.subj==='hist'?'依時代排成一圈':'圍繞主島')+'．點小島近看單元模型．答對越多，小島越熱鬧')+'</p></div></div>'+
+      '<div class="card-top"><div>'+tag+'<h2 class="card-title">'+isl.name+'</h2><p class="card-sub">'+(isl.id==='twh'?'8 座章節小島依時代排成一圈，外圍的白色光點是時代航道，光點從最早的時代流向最近的時代．發光弧線是跨章節的因果題':isl.lms.length+' 座章節小島'+(isl.subj==='hist'?'依時代排成一圈，外圍白色光點是依時代流動的時代航道':'圍繞主島')+'．點小島近看單元模型．答對越多，小島越熱鬧')+'</p></div></div>'+
       '<p class="card-stat">'+s.total+' 題．做過 '+s.seen+' 題．答對率 '+pct(s.acc)+'</p>'+
       '<div class="card-row"><button type="button" class="btn primary" id="cAll">整座島隨機 '+ST.n+' 題</button><button type="button" class="btn" id="cPanel">難度與統計</button></div>';
     $('#cAll').addEventListener('click',()=>startQuiz({scope:'island',id:isl.id}));
@@ -637,10 +637,17 @@ function answer(k){
   const gap=record(q.id, ok); if(ok && scene3d && scene3d.cheer) scene3d.cheer();
   body.querySelectorAll('.opt').forEach((b,idx)=>{ b.disabled=true; if(S.opts[idx]===q.c) b.classList.add('is-right'); if(idx===k && !ok) b.classList.add('is-wrong'); });
   const fb=$('#fb'); fb.hidden=false; fb.className='feedback'+(ok?'':' bad');
-  fb.innerHTML='<div class="fb-head"><span class="fb-icon" aria-hidden="true">'+(ok?'✓':'✕')+'</span><strong>'+(ok?'答對了':'答錯了')+'</strong></div>'+(ok?'':'<div class="fb-ans"><span class="fb-label">正解</span><span>'+fmtOpt(q.c)+'</span></div>')+'<p class="fb-ex">'+esc(q.ex)+'</p><div class="fb-foot"><span class="nextrev">下次複習：'+(gap<=1?'明天':gap+' 天後')+'</span><button type="button" class="linkbtn" id="flagBtn" aria-pressed="'+!!ST.flag[q.id]+'">⚑ '+(ST.flag[q.id]?'已標記（再按取消）':'這題有疑問')+'</button></div>';
+  fb.innerHTML='<div class="fb-head"><span class="fb-icon" aria-hidden="true">'+(ok?'✓':'✕')+'</span><strong>'+(ok?'答對了':'答錯了')+'</strong></div>'+(ok?'':'<div class="fb-ans"><span class="fb-label">正解</span><span>'+fmtOpt(q.c)+'</span></div>')+'<p class="fb-ex">'+esc(q.ex)+'</p><div class="fb-foot"><span class="nextrev">下次複習：'+(gap<=1?'明天':gap+' 天後')+'</span><button type="button" class="linkbtn" id="flagBtn" aria-pressed="'+!!ST.flag[q.id]+'">⚑ '+(ST.flag[q.id]?'已標記（再按取消）':'這題有疑問')+'</button><a class="linkbtn" href="'+esc(reportURL(q))+'" target="_blank" rel="noopener">回報錯誤 ↗</a></div>';
   $('#flagBtn').addEventListener('click',e=>{ if(ST.flag[q.id]) delete ST.flag[q.id]; else ST.flag[q.id]=1; save(); e.currentTarget.setAttribute('aria-pressed',String(!!ST.flag[q.id])); e.currentTarget.textContent='⚑ '+(ST.flag[q.id]?'已標記（再按取消）':'這題有疑問'); });
   $('#qact').hidden=false; const nb=$('#nextBtn'); nb.focus({preventScroll:true});
   fb.scrollIntoView({block:'nearest',behavior:reduceMotion?'auto':'smooth'});
+}
+// 回報錯誤：開啟 GitHub 的回報頁，題號與題目內容已經填好
+const REPO_URL='https://github.com/lutm6666/social-studies-review-island';
+function reportURL(q){
+  const opts=[q.c].concat(q.w);
+  const bodyTxt='題號：'+q.id+'\n'+(q.ctx?'情境：'+q.ctx+'\n':'')+'題目：'+q.q+'\n標示的正解：'+q.c+'\n其他選項：'+q.w.join('／')+'\n解說：'+q.ex+'\n\n## 問題說明\n（請寫下哪裡有錯、正確應該是什麼，有資料來源更好）\n';
+  return REPO_URL+'/issues/new?title='+encodeURIComponent('[題目回報] '+q.id)+'&body='+encodeURIComponent(bodyTxt);
 }
 function next(){ if(!S) return; S.i++; if(S.i<S.qs.length) renderQ(); else renderResult(); }
 function renderResult(){
@@ -694,6 +701,35 @@ function renderExamSetup(){
   scrollTop0();
 }
 // 題目搜尋
+/* ---------- 進度備份：匯出成檔案或代碼，在其他裝置匯入（合併，保留作答次數較多的紀錄） ---------- */
+const BK_HEAD='SHEHUI1:';
+function backupData(){ return {app:'shehui-review',v:1,at:new Date().toISOString(),q:ST.q,flag:ST.flag}; }
+function toCode(o){ const s=JSON.stringify(o); const bytes=new TextEncoder().encode(s); let bin=''; for(let i=0;i<bytes.length;i+=0x8000) bin+=String.fromCharCode.apply(null,bytes.subarray(i,i+0x8000)); return BK_HEAD+btoa(bin); }
+function fromText(txt){ txt=(txt||'').trim(); let o=null;
+  if(txt.startsWith(BK_HEAD)){ const bin=atob(txt.slice(BK_HEAD.length).replace(/\s/g,'')); const bytes=new Uint8Array(bin.length); for(let i=0;i<bin.length;i++) bytes[i]=bin.charCodeAt(i); o=JSON.parse(new TextDecoder().decode(bytes)); }
+  else o=JSON.parse(txt);
+  if(!o || typeof o.q!=='object' || o.app!=='shehui-review') throw new Error('bad');
+  Object.keys(o.q).forEach(id=>{ const r=o.q[id]; if(!Array.isArray(r) || r.some(x=>typeof x!=='number')) delete o.q[id]; });
+  return o; }
+function renderBackup(){
+  view='backup'; S=null;
+  setHead('全部島嶼','進度備份','換手機、換電腦或清除瀏覽器資料前，先把進度存起來','civ'); openPanel();
+  const n=Object.keys(ST.q).length, f=Object.keys(ST.flag||{}).length;
+  body.innerHTML='<p class="note">目前這台裝置有 <b>'+n+'</b> 題的作答紀錄'+(f?'、'+f+' 題標記為有疑問':'')+'。</p>'+
+    '<p class="section-label">匯出</p><div class="bk-box"><div class="actions"><button type="button" class="btn primary" id="bkDl">下載備份檔</button><button type="button" class="btn" id="bkCopy">複製備份代碼</button></div><p class="bk-msg" id="bkOut" aria-live="polite">備份檔適合存在電腦或雲端硬碟；代碼可以貼到 LINE 給自己，再到另一台裝置貼上。</p></div>'+
+    '<p class="section-label">匯入</p><div class="bk-box"><label class="bk-msg" for="bkFile">選擇備份檔</label><input type="file" id="bkFile" accept=".json,application/json,text/plain">'+
+    '<label class="bk-msg" for="bkCode">或貼上備份代碼</label><textarea id="bkCode" class="bk-code" placeholder="SHEHUI1:…"></textarea>'+
+    '<div class="actions"><button type="button" class="btn primary" id="bkIn">匯入並合併</button></div><p class="bk-msg" id="bkInMsg" aria-live="polite">匯入會與這台裝置的紀錄合併：同一題保留作答次數較多的那一份，不會刪掉現有進度。</p></div>';
+  const out=$('#bkOut'), msg=$('#bkInMsg');
+  $('#bkDl').addEventListener('click',()=>{ try{ const blob=new Blob([JSON.stringify(backupData())],{type:'application/json'}); const a=document.createElement('a'); const d=new Date(); a.href=URL.createObjectURL(blob); a.download='社會科複習島-進度-'+d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0')+'.json'; document.body.appendChild(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },1000); out.textContent='已開始下載備份檔。如果沒有出現下載，請改用「複製備份代碼」。'; out.className='bk-msg ok'; }catch(e){ out.textContent='這個瀏覽器無法下載檔案，請改用「複製備份代碼」。'; out.className='bk-msg err'; } });
+  $('#bkCopy').addEventListener('click',async()=>{ const code=toCode(backupData()); try{ await navigator.clipboard.writeText(code); out.textContent='已複製備份代碼（'+code.length+' 字）。'; out.className='bk-msg ok'; }catch(e){ const ta=$('#bkCode'); ta.value=code; ta.select(); out.textContent='無法自動複製，代碼已放在下方的框框裡，請自己全選複製。'; out.className='bk-msg'; } });
+  const doImport=txt=>{ try{ const o=fromText(txt); const before=Object.keys(ST.q).length; let upd=0; Object.keys(o.q).forEach(id=>{ const a=ST.q[id], b=o.q[id]; if(!a || b[0]>a[0]) upd++; });
+      mergeST({q:o.q,flag:o.flag||{}}); save(); growthPrev=null; refreshProgress();
+      msg.textContent='匯入完成：更新了 '+upd+' 題的紀錄，現在共有 '+Object.keys(ST.q).length+' 題（原本 '+before+' 題）。'; msg.className='bk-msg ok'; }
+    catch(e){ msg.textContent='讀不懂這份備份，請確認是本網站匯出的檔案或完整的代碼。'; msg.className='bk-msg err'; } };
+  $('#bkIn').addEventListener('click',()=>{ const t=$('#bkCode').value; if(!t.trim()){ msg.textContent='請先選擇備份檔，或貼上備份代碼。'; msg.className='bk-msg err'; return; } doImport(t); });
+  $('#bkFile').addEventListener('change',e=>{ const file=e.target.files&&e.target.files[0]; if(!file) return; const rd=new FileReader(); rd.onload=()=>doImport(String(rd.result)); rd.onerror=()=>{ msg.textContent='讀取檔案失敗。'; msg.className='bk-msg err'; }; rd.readAsText(file); });
+}
 function renderSearch(term){
   view='search'; S=null;
   setHead('全部島嶼','搜尋題目','輸入關鍵字，找出相關題目一起練','geo'); openPanel();
@@ -804,10 +840,14 @@ function saveUIP(){ try{ localStorage.setItem('shehui-ui',JSON.stringify(UIP)); 
 function setHudMini(on,keep){ if(!keep){ UIP.hudMini=!!on; saveUIP(); } document.body.classList.toggle('hud-mini',!!on); const b=$('#hudMin'); b.textContent=on?'+':'–'; b.setAttribute('aria-expanded',String(!on)); const l=on?'展開面板':'收合面板'; b.setAttribute('aria-label',l); b.title=l; }
 function setCompact(on){ UIP.compact=!!on; saveUIP(); document.body.classList.toggle('card-compact',UIP.compact); $('#compactBtn').setAttribute('aria-pressed',String(UIP.compact)); }
 function setUiHidden(on){ document.body.classList.toggle('ui-hidden',!!on); const b=$('#eyeBtn'), l=on?'顯示介面':'隱藏介面，只看小島'; b.setAttribute('aria-pressed',String(!!on)); b.setAttribute('aria-label',l); b.title=l+'（快捷鍵 H）'; }
+const SKY_MODES=[['auto','自動',null],['day','白天',12],['dusk','黃昏',17.6],['night','夜晚',22]];
+function setSky(mode,keep){ const m=SKY_MODES.find(s=>s[0]===mode)||SKY_MODES[0]; if(!keep){ UIP.sky=m[0]; saveUIP(); } window.__skyPref=m[2]; if(typeof window.__skyHour==='function') window.__skyHour(m[2]); $('#skyBtn').textContent='天空：'+m[1]; }
+$('#skyBtn').addEventListener('click',()=>{ const i=SKY_MODES.findIndex(s=>s[0]===(UIP.sky||'auto')); setSky(SKY_MODES[(i+1)%SKY_MODES.length][0]); });
+$('#backupBtn').addEventListener('click',()=>{ markInteracted(); renderBackup(); });
 $('#hudMin').addEventListener('click',()=>setHudMini(!document.body.classList.contains('hud-mini')));
 $('#compactBtn').addEventListener('click',()=>setCompact(!UIP.compact));
 $('#eyeBtn').addEventListener('click',()=>setUiHidden(!document.body.classList.contains('ui-hidden')));
-setHudMini(hudPref(), true); setCompact(!!UIP.compact);
+setHudMini(hudPref(), true); setCompact(!!UIP.compact); setSky(UIP.sky||'auto',true);
 // 載入畫面：3D 第一次畫出來後淡出；10 秒還沒好就提供省電模式
 const loaderEl=$('#loader');
 function hideLoader(){ if(loaderEl.classList.contains('done')) return; loaderEl.classList.add('done'); setTimeout(()=>{ loaderEl.hidden=true; },700); }
@@ -871,6 +911,16 @@ function buildScene(){
 
   /* --- 模型 --- */
   const MODELS={
+    // 臺灣史島主島：清代臺北府城北門（承恩門）
+    citygate(){ const g=new T.Group();
+      g.add(box(2.4,1.0,1.6,'#9a8f7e')); g.add(box(2.5,0.08,1.7,'#857a69',0,1.0,0));
+      g.add(box(0.62,0.6,0.06,'#2e2620',0,0,0.79)); const ar=M(new T.CylinderGeometry(0.31,0.31,0.06,12,1,false,Math.PI/2,Math.PI),'#2e2620',0,0.6,0.79); ar.rotation.x=Math.PI/2; g.add(ar);
+      for(let i=0;i<6;i++) g.add(box(0.36,0.04,0.02,'#8a7f6e',-0.95+i*0.38,0.25+((i%2)*0.3),0.81));
+      g.add(box(1.5,0.62,1.0,'#b5503a',0,1.08,0)); [-0.45,0.45].forEach(x=>g.add(box(0.22,0.26,0.03,'#3b2418',x,1.25,0.51))); g.add(box(0.22,0.3,0.03,'#3b2418',0,1.08,0.51));
+      g.add(box(0.46,0.16,0.03,'#2f5d9a',0,1.5,0.53)); g.add(box(0.36,0.06,0.035,'#e3b23c',0,1.55,0.535));
+      g.add(box(1.9,0.07,1.3,'#4a3a33',0,1.7,0)); g.add(prism(0.62,1.8,'#5a463c',0,1.77+0.5*0.62*0.55,0,0.55));
+      g.add(box(1.86,0.07,0.09,'#3e302a',0,1.98,0)); [-1,1].forEach(s=>{ const t=box(0.3,0.06,0.09,'#3e302a',s*1.02,2.0,0); t.rotation.z=s*0.45; g.add(t); });
+      return g; },
     voy(){ const g=new T.Group();
       g.add(box(2.6,0.55,2.6,'#b4623d'));
       [[-1,-1],[1,-1],[-1,1],[1,1]].forEach(([sx,sz])=>{ const b=box(0.75,0.65,0.75,'#a3532f',sx*1.3,0,sz*1.3); b.rotation.y=Math.PI/4; g.add(b); });
@@ -1231,7 +1281,7 @@ function buildScene(){
     {h:24,  top:'#050c1c',bot:'#1d3352',sea:'#1f4a5e',hemi:'#8fa8d6',gnd:'#2b2a3a',hi:0.6, sun:'#b8c8ff',si:0.45,star:1,  lamp:1.3,cloud:0}
   ];
   const cA=new T.Color(), cB=new T.Color(), mixC=(a,b,t)=>cA.set(a).lerp(cB.set(b),t).clone();
-  let skyHour=null; // 測試或預覽時可指定時刻
+  let skyHour=window.__skyPref!=null?window.__skyPref:null; // 使用者選的天空模式（null＝跟著真實時間）
   function applyTheme(){
     const now=new Date(), h=skyHour!=null?skyHour:now.getHours()+now.getMinutes()/60;
     let i=0; while(i<SKY.length-2 && SKY[i+1].h<=h) i++;
