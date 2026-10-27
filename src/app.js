@@ -1221,7 +1221,7 @@ function buildScene(){
         const d=MODELS[isl.decor](); d.scale.setScalar(isl.decor==='yushan'?0.7:0.72); d.position.y=0.55; d.rotation.y=-a+Math.PI; g.add(d);
         if(!isl.ready){ const cr=MODELS.crane(); cr.scale.setScalar(0.7); cr.position.set(Math.sin(a+Math.PI/2)*2.3,0.55,Math.cos(a+Math.PI/2)*2.3); cr.rotation.y=rnd()*6; g.add(cr); }
       }
-      // 主島的成長裝飾：一半以上的章節小島升到某一級，主島就跟著升級
+      // 主島的成長裝飾：全部章節小島都升到某一級，主島才跟著升級
       if(isl.ready){
         const m1=new T.Group(), m2=new T.Group(), m3=new T.Group(), RM=3.55, pc=['#eb5757','#f2c94c','#56ccf2','#6fcf97','#bb6bd9','#f2994a'];
         for(let k=0;k<6;k++){ const t=a+k*Math.PI/3+Math.PI/6, x=Math.sin(t)*RM, z=Math.cos(t)*RM; m1.add(cyl(0.03,0.035,1.2,'#5a4a3a',x,0.55,z,6)); const pf=cone(0.13,0.42,3,pc[k],x+Math.cos(t)*0.0,1.47,z); pf.rotation.z=Math.PI/2; pf.rotation.y=-t; pf.position.x+=Math.cos(t)*0.2; pf.position.z-=Math.sin(t)*0.2; m1.add(pf); }
@@ -1615,8 +1615,8 @@ function buildScene(){
     setGrowth(map){ Object.keys(map).forEach(id=>{ const s=islets[id]; if(!s) return; const g=map[id];
       s.grow.forEach((gr,k)=>{ gr.visible=g.stage>k; }); s.fog.visible=!!g.fog;
       if(s.stage>=0 && g.stage>s.stage && !reduceMotion) s.pop=1; s.stage=g.stage; });
-      // 主島：一半以上的章節小島達到第 k 級，主島就出現第 k 層裝飾
-      ISLANDS.forEach(isl=>{ const I=islands[isl.id]; if(!I || !I.mainGrow || !isl.lms) return; const st=isl.lms.map(l=>map[l.id]?map[l.id].stage:0), need=Math.ceil(st.length/2);
+      // 主島：全部章節小島都達到第 k 級，主島才出現第 k 層裝飾
+      ISLANDS.forEach(isl=>{ const I=islands[isl.id]; if(!I || !I.mainGrow || !isl.lms) return; const st=isl.lms.map(l=>map[l.id]?map[l.id].stage:0), need=st.length;
         let lv=0; for(let k=1;k<=3;k++) if(st.filter(x=>x>=k).length>=need) lv=k;
         I.mainGrow.forEach((sg,k)=>{ sg.visible=lv>k; });
         if(I.mainStage>=0 && lv>I.mainStage && typeof window.__onMainUp==='function') window.__onMainUp(isl.name,lv); I.mainStage=lv; }); },
