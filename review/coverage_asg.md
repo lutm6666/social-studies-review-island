@@ -1,0 +1,290 @@
+# 亞洲地理島（`asg`）逐題審查清單
+
+來源：`review/questions_asg.md`，依原題序逐題檢查284題。核對地理事實、正解唯一性、三個誘答、解說、生成資料與圖表；需要當代制度及統計資料的部分另以可信來源查證。`✓` 表示本輪未發現須回報的明確缺陷，`✗` 代表已在 `findings_asg.md` 留下修正建議。
+
+`asg1-h0` ✓
+`asg1-h1` ✗ 解說錯誤
+`asg1-h2` ✓
+`asg1-h3` ✓
+`asg1-h4` ✗ 解說錯誤
+`asg1-h5` ✓
+`asg1-h6` ✓
+`asg1-h7` ✓
+`asg1-h8` ✓
+`asg1-h9` ✓
+`asg1-h10` ✓
+`asg1-h11` ✓
+`asg1-g0` ✓
+`asg1-g2` ✓
+`asg1-g3` ✓
+`asg1-g4` ✓
+`asg1-g5` ✓
+`asg1-g6` ✓
+`asg1-g7` ✓
+`asg1-g8` ✓
+`asg1-g9` ✓
+`asg1-g10` ✓
+`asg1-g11` ✓
+`asg1-g12` ✓
+`asg1-g13` ✓
+`asg1-g14` ✓
+`asg1-g15` ✓
+`asg1-g16` ✓
+`asg1-g17` ✓
+`asg1-g18` ✗ 事實錯誤
+`asg1-g20` ✓
+`asg1-g22` ✓
+`asg1-g23` ✓
+`asg1-g24` ✓
+`asg1-g25` ✓
+`asg1-g26` ✓
+`asg1-g27` ✓
+`asg1-g28` ✓
+`asg1-g29` ✓
+`asg1-g30` ✓
+`asg1-g31` ✓
+`asg1-g32` ✓
+`asg1-g33` ✓
+`asg1-g34` ✓
+`asg1-g35` ✓
+`asg1-g36` ✓
+`asg1-g37` ✓
+`asg1-g38` ✓
+`asg1-g39` ✓
+`asg1-g40` ✓
+`asg1-g41` ✓
+`asg1-g42` ✓
+`asg1-g43` ✓
+`asg1-g44` ✓
+`asg1-g45` ✓
+`asg1-g46` ✓
+`asg1-g47` ✓
+`asg1-g48` ✓
+`asg2-h0` ✓
+`asg2-h1` ✓
+`asg2-h2` ✓
+`asg2-h3` ✗ 解說錯誤
+`asg2-h4` ✓
+`asg2-h5` ✓
+`asg2-h6` ✓
+`asg2-h7` ✓
+`asg2-h8` ✓
+`asg2-h9` ✓
+`asg2-g0` ✓
+`asg2-g1` ✓
+`asg2-g2` ✓
+`asg2-g3` ✓
+`asg2-g4` ✓
+`asg2-g5` ✓
+`asg2-g6` ✓
+`asg2-g7` ✓
+`asg2-g8` ✓
+`asg2-g9` ✓
+`asg2-g10` ✓
+`asg2-g11` ✓
+`asg2-g12` ✓
+`asg2-g13` ✓
+`asg2-g14` ✗ 事實錯誤
+`asg2-g15` ✗ 事實錯誤
+`asg2-g16` ✓
+`asg2-g18` ✓
+`asg2-g19` ✓
+`asg2-g20` ✓
+`asg2-g21` ✓
+`asg2-g22` ✓
+`asg2-g24` ✓
+`asg2-g25` ✓
+`asg2-g26` ✓
+`asg2-g27` ✓
+`asg2-g28` ✓
+`asg2-g29` ✓
+`asg2-g30` ✓
+`asg2-g31` ✓
+`asg2-g32` ✓
+`asg2-g33` ✓
+`asg2-g34` ✓
+`asg2-g35` ✓
+`asg2-g36` ✓
+`asg2-g37` ✓
+`asg2-g38` ✓
+`asg2-g39` ✗ 答案不唯一
+`asg2-g40` ✗ 答案不唯一
+`asg2-g41` ✓
+`asg2-g42` ✓
+`asg2-g43` ✓
+`asg2-g44` ✓
+`asg2-g45` ✓
+`asg2-g46` ✓
+`asg2-g47` ✓
+`asg2-g48` ✗ 題目品質
+`asg2-g49` ✗ 題目品質
+`asg3-h0` ✓
+`asg3-h1` ✓
+`asg3-h2` ✓
+`asg3-h3` ✓
+`asg3-h4` ✓
+`asg3-h5` ✓
+`asg3-h6` ✓
+`asg3-h7` ✓
+`asg3-h8` ✓
+`asg3-h9` ✓
+`asg3-g0` ✗ 答案不唯一
+`asg3-g1` ✓
+`asg3-g2` ✓
+`asg3-g3` ✗ 答案不唯一
+`asg3-g4` ✓
+`asg3-g5` ✓
+`asg3-g6` ✓
+`asg3-g7` ✓
+`asg3-g8` ✓
+`asg3-g9` ✓
+`asg3-g10` ✓
+`asg3-g12` ✓
+`asg3-g13` ✓
+`asg3-g14` ✓
+`asg3-g15` ✓
+`asg3-g16` ✓
+`asg3-g17` ✓
+`asg3-g18` ✓
+`asg3-g19` ✓
+`asg3-g20` ✓
+`asg3-g21` ✓
+`asg3-g22` ✓
+`asg3-g24` ✓
+`asg3-g25` ✓
+`asg3-g26` ✓
+`asg3-g27` ✓
+`asg3-g28` ✓
+`asg3-g29` ✓
+`asg3-g30` ✓
+`asg3-g31` ✓
+`asg3-g32` ✓
+`asg3-g33` ✓
+`asg3-g34` ✓
+`asg3-g35` ✓
+`asg3-g36` ✓
+`asg3-g37` ✓
+`asg4-h0` ✓
+`asg4-h1` ✓
+`asg4-h2` ✓
+`asg4-h3` ✓
+`asg4-h4` ✓
+`asg4-h5` ✓
+`asg4-h6` ✓
+`asg4-h7` ✓
+`asg4-h8` ✓
+`asg4-h9` ✓
+`asg4-h11` ✓
+`asg4-h12` ✓
+`asg4-h13` ✓
+`asg4-g0` ✗ 答案不唯一
+`asg4-g2` ✓
+`asg4-g4` ✓
+`asg4-g5` ✓
+`asg4-g6` ✓
+`asg4-g7` ✓
+`asg4-g8` ✓
+`asg4-g9` ✗ 題目品質
+`asg4-g10` ✓
+`asg4-g11` ✓
+`asg4-g12` ✓
+`asg4-g13` ✓
+`asg4-g14` ✓
+`asg4-g15` ✓
+`asg4-g16` ✓
+`asg4-g17` ✓
+`asg4-g18` ✓
+`asg4-g19` ✓
+`asg4-g20` ✓
+`asg4-g21` ✓
+`asg4-g22` ✓
+`asg4-g23` ✓
+`asg4-g24` ✓
+`asg4-g25` ✓
+`asg4-g26` ✓
+`asg4-g27` ✓
+`asg4-g28` ✓
+`asg4-g29` ✓
+`asg4-g30` ✓
+`asg4-g31` ✓
+`asg4-g32` ✓
+`asg4-g33` ✓
+`asg4-g34` ✓
+`asg4-g35` ✓
+`asg4-g36` ✓
+`asg4-g37` ✓
+`asg4-g38` ✓
+`asg4-g39` ✓
+`asg4-g41` ✓
+`asg4-g42` ✓
+`asg4-g43` ✓
+`asg4-g44` ✓
+`asg4-g45` ✓
+`asg4-g47` ✓
+`asg4-g49` ✓
+`asg4-g50` ✓
+`asg4-g51` ✗ 答案不唯一
+`asg4-g52` ✓
+`asg4-g53` ✓
+`asg4-g54` ✗ 答案不唯一
+`asg4-g55` ✓
+`asg4-g56` ✓
+`asg4-g57` ✓
+`asg4-g58` ✓
+`asg4-g59` ✓
+`asg4-g60` ✓
+`asg5-h0` ✓
+`asg5-h1` ✓
+`asg5-h2` ✓
+`asg5-h3` ✓
+`asg5-h4` ✓
+`asg5-h5` ✓
+`asg5-h6` ✗ 題目品質
+`asg5-h7` ✗ 題目品質
+`asg5-h8` ✓
+`asg5-h10` ✓
+`asg5-h11` ✗ 題目品質
+`asg5-h12` ✓
+`asg5-g0` ✓
+`asg5-g1` ✓
+`asg5-g2` ✓
+`asg5-g3` ✓
+`asg5-g4` ✓
+`asg5-g6` ✓
+`asg5-g7` ✓
+`asg5-g8` ✓
+`asg5-g10` ✓
+`asg5-g11` ✓
+`asg5-g12` ✓
+`asg5-g13` ✓
+`asg5-g14` ✓
+`asg5-g15` ✓
+`asg5-g16` ✓
+`asg5-g17` ✓
+`asg5-g18` ✓
+`asg5-g19` ✓
+`asg5-g20` ✓
+`asg5-g21` ✓
+`asg5-g22` ✓
+`asg5-g23` ✓
+`asg5-g24` ✓
+`asg5-g25` ✓
+`asg5-g26` ✓
+`asg5-g27` ✓
+`asg5-g28` ✓
+`asg5-g30` ✓
+`asg5-g31` ✓
+`asg5-g32` ✓
+`asg5-g33` ✓
+`asg5-g34` ✓
+`asg5-g35` ✓
+`asg5-g36` ✓
+`asg5-g37` ✓
+`asg5-g38` ✗ 題目品質
+`asg5-g39` ✗ 題目品質
+`asg5-g40` ✓
+`asg5-g41` ✓
+`asg5-g42` ✗ 題目品質
+`asg5-g43` ✗ 題目品質
+
+共檢查 284 題，有問題 23 題。
