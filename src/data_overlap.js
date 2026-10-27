@@ -12,6 +12,9 @@ cnh4|江南製造局|福州船政局
 cnh5|胡適|魯迅
 cnh6|改革開放引進市場機制|設立經濟特區
 cnh6|韓戰簽訂停戰協定|冷戰美蘇對抗
+wdh5|工業革命使人口湧入城市|勞工生活困苦
+wdh6|工業國需要原料與市場|社會達爾文主義流行|列強爭奪殖民地
+wdh7|凡爾賽條約嚴厲處置德國|經濟大恐慌
 `;
 OV.trim().split('\n').forEach(l=>{ const [lm,...ks]=l.split('|'); if(!GEN[lm]) return; (GEN[lm].ov=GEN[lm].ov||[]).push(ks); });
 })();
