@@ -2,7 +2,7 @@ import pathlib
 src = pathlib.Path(__file__).parent / 'src'
 ORDER = ['cnh', 'wdh', 'twg', 'asg', 'wdg', 'soc', 'law', 'eco']
 isl_files = [f'data_{k}.js' for k in ORDER if (src / f'data_{k}.js').exists()]
-isl_files += [f for f in ['data_notes.js', 'data_fig.js', 'data_ctx.js'] if (src / f).exists()]
+isl_files += [f for f in ['data_notes.js', 'data_fig.js', 'data_ctx.js', 'data_overlap.js'] if (src / f).exists()]
 data = '\n'.join((src / f).read_text(encoding='utf-8') for f in ['hand_twh_1.js', 'hand_twh_2.js', 'hand_twh_ctx.js', 'gen_twh.js', 'links_twh.js', 'links_cross.js', 'dsl.js'] + isl_files + ['preview.js', 'engine.js'])
 app = (src / 'app.js').read_text(encoding='utf-8').replace('/*CHAPMODELS*/', (src / 'models_wip.js').read_text(encoding='utf-8')).replace('/*PEOPLE*/', (src / 'deco.js').read_text(encoding='utf-8') + '\n' + (src / 'people.js').read_text(encoding='utf-8'))
 html = (src / 'app.html').read_text(encoding='utf-8').replace('/*DATA*/', data).replace('/*APP*/', app)

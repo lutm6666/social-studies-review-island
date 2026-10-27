@@ -3,7 +3,7 @@ const fs=require('fs'), vm=require('vm');
 const ctx={console}; vm.createContext(ctx); vm.runInContext('var window=globalThis',ctx);
 const path=require('path'); const dir=path.join(__dirname,'..','src')+'/', out=__dirname+'/';
 const isl=['cnh','wdh','twg','asg','wdg','soc','law','eco'];
-for(const f of ['hand_twh_1.js','hand_twh_2.js','hand_twh_ctx.js','gen_twh.js','links_twh.js','links_cross.js','dsl.js'].concat(isl.map(k=>'data_'+k+'.js'),['data_notes.js','data_fig.js','data_ctx.js','engine.js'])) vm.runInContext(fs.readFileSync(dir+f,'utf8'),ctx,{filename:f});
+for(const f of ['hand_twh_1.js','hand_twh_2.js','hand_twh_ctx.js','gen_twh.js','links_twh.js','links_cross.js','dsl.js'].concat(isl.map(k=>'data_'+k+'.js'),['data_notes.js','data_fig.js','data_ctx.js','data_overlap.js','engine.js'])) vm.runInContext(fs.readFileSync(dir+f,'utf8'),ctx,{filename:f});
 const bank=vm.runInContext('buildBank(window.HAND,window.GEN,window.PERIODS)',ctx);
 const LINKS=vm.runInContext('window.LINKS',ctx), CROSS=vm.runInContext('window.CROSS',ctx);
 // 章節名稱（取自 app.js 的島嶼設定）
