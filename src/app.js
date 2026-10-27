@@ -725,6 +725,8 @@ function bindTour(){ tourEl.querySelectorAll('[data-t]').forEach(b=>b.addEventLi
 function tourGo(i){
   if(i>=TOUR.length){ endTour(); return; }
   tourStep=Math.max(0,i); ST.toured=1; save();
+  if(document.body.classList.contains('ui-hidden')) setUiHidden(false);
+  if(typeof setHudMini==='function') setHudMini(hudPref() && tourStep!==TOUR.length-1,true);
   focusId=null; lmFocus=null; linkFocus=null; chapFocus=null; hubFocus=false; crossFocus=null; S=null; hidePanel(); cardEl.hidden=true; $('#backBtn').hidden=true;
   document.body.classList.add('touring');
   if(scene3d) TOUR[tourStep].cam(scene3d);
@@ -732,7 +734,7 @@ function tourGo(i){
   tourEl.hidden=false; bindTour(); refreshProgress();
   const nb=tourEl.querySelector('[data-t="next"]'); if(nb) nb.focus({preventScroll:true});
 }
-function endTour(){ tourStep=-1; tourEl.hidden=true; document.body.classList.remove('touring'); if(scene3d && !focusId) scene3d.overview(); refreshProgress(); }
+function endTour(){ tourStep=-1; tourEl.hidden=true; document.body.classList.remove('touring'); if(typeof setHudMini==='function') setHudMini(hudPref(),true); if(scene3d && !focusId) scene3d.overview(); refreshProgress(); }
 // 點領航員：顯示今天的複習提示，也可以再導覽一次
 function onGuide(){
   const due=dueList().length; tourStep=-1;
@@ -751,7 +753,9 @@ $('#searchBtn').addEventListener('click',()=>{ markInteracted(); renderSearch(''
 $('#closeBtn').addEventListener('click',backToExplore);
 $('#backBtn').addEventListener('click',toOverview);
 document.addEventListener('keydown',e=>{
+  if(e.key==='Escape' && document.body.classList.contains('ui-hidden')){ setUiHidden(false); return; }
   if(e.key==='Escape' && !tourEl.hidden){ endTour(); return; }
+  if((e.key==='h'||e.key==='H') && !e.ctrlKey && !e.metaKey && !e.altKey && panel.hidden && !(e.target && /INPUT|TEXTAREA|SELECT/.test(e.target.tagName))){ setUiHidden(!document.body.classList.contains('ui-hidden')); return; }
   if(e.key==='Escape'){ if(!panel.hidden) backToExplore(); else if(crossFocus!=null||hubFocus) toOverview(); else if(lmFocus||chapFocus||linkFocus!=null) focusIsland(focusId); else if(focusId) toOverview(); return; }
   if(view==='quiz' && S && !S.answered){
     const map={'1':0,'2':1,'3':2,'4':3,'a':0,'b':1,'c':2,'d':3};
@@ -793,6 +797,17 @@ function setBig(on){ ST.big=!!on; save(); document.body.classList.toggle('big',S
 $('#liteBtn').addEventListener('click',()=>setLite(!ST.lite));
 $('#bigBtn').addEventListener('click',()=>setBig(!ST.big));
 setBig(ST.big);
+// 介面偏好只存在這台裝置（不跟帳號同步）
+const UIP=(()=>{ try{ return JSON.parse(localStorage.getItem('shehui-ui')||'{}')||{}; }catch(e){ return {}; } })();
+function hudPref(){ return UIP.hudMini===undefined ? window.innerWidth<720 : !!UIP.hudMini; }
+function saveUIP(){ try{ localStorage.setItem('shehui-ui',JSON.stringify(UIP)); }catch(e){} }
+function setHudMini(on,keep){ if(!keep){ UIP.hudMini=!!on; saveUIP(); } document.body.classList.toggle('hud-mini',!!on); const b=$('#hudMin'); b.textContent=on?'+':'–'; b.setAttribute('aria-expanded',String(!on)); const l=on?'展開面板':'收合面板'; b.setAttribute('aria-label',l); b.title=l; }
+function setCompact(on){ UIP.compact=!!on; saveUIP(); document.body.classList.toggle('card-compact',UIP.compact); $('#compactBtn').setAttribute('aria-pressed',String(UIP.compact)); }
+function setUiHidden(on){ document.body.classList.toggle('ui-hidden',!!on); const b=$('#eyeBtn'), l=on?'顯示介面':'隱藏介面，只看小島'; b.setAttribute('aria-pressed',String(!!on)); b.setAttribute('aria-label',l); b.title=l+'（快捷鍵 H）'; }
+$('#hudMin').addEventListener('click',()=>setHudMini(!document.body.classList.contains('hud-mini')));
+$('#compactBtn').addEventListener('click',()=>setCompact(!UIP.compact));
+$('#eyeBtn').addEventListener('click',()=>setUiHidden(!document.body.classList.contains('ui-hidden')));
+setHudMini(hudPref(), true); setCompact(!!UIP.compact);
 // 載入畫面：3D 第一次畫出來後淡出；10 秒還沒好就提供省電模式
 const loaderEl=$('#loader');
 function hideLoader(){ if(loaderEl.classList.contains('done')) return; loaderEl.classList.add('done'); setTimeout(()=>{ loaderEl.hidden=true; },700); }
@@ -1254,7 +1269,18 @@ function buildScene(){
   let W=1,H=1;
   function resize(){ W=window.innerWidth; H=window.innerHeight; renderer.setSize(W,H,false); camera.aspect=W/H; camera.updateProjectionMatrix(); }
   window.addEventListener('resize',resize); resize();
-  const off={x:0,y:0};
+  const off={x:0,y:0}; let fit=1, occT=-1e9, occ={l:0,r:1,t:0,b:1};
+  const shown=e=>!!e && !e.hidden && e.getClientRects().length>0 && getComputedStyle(e).visibility!=='hidden';
+  function measureOcc(){ const r={l:0,r:W,t:0,b:H};
+    if(!document.body.classList.contains('ui-hidden')){
+      const hud=document.querySelector('.hud');
+      if(panel.hidden && shown(hud)){ const b=hud.getBoundingClientRect(); if(b.width>W*0.45||b.height<H*0.15) r.t=Math.max(r.t,b.bottom); else r.l=Math.max(r.l,Math.min(b.right,W*0.3)); }
+      const dk=document.querySelector('.dock'); if(shown(dk)) r.b=Math.min(r.b,dk.getBoundingClientRect().top);
+      if(shown(cardEl)){ const b=cardEl.getBoundingClientRect(); if(b.height>0) r.b=Math.min(r.b,b.top); }
+      if(!panel.hidden){ const b=panel.getBoundingClientRect(); if(b.width<W*0.6) r.r=Math.min(r.r,b.left); else r.b=Math.min(r.b,b.top); }
+    }
+    if(r.b-r.t<H*0.25){ r.t=0; r.b=H; } if(r.r-r.l<W*0.3){ r.l=0; r.r=W; }
+    occ=r; }
 
   /* --- 操作 --- */
   const pointers=new Map(); let moved=0,pinch0=0,dist0=0,lastInput=0;
@@ -1306,14 +1332,14 @@ function buildScene(){
     if(lmF && panel.hidden && !reduceMotion && !pointers.size && now-lastInput>2500) cam.tYaw+=dt*0.22;
     const k=reduceMotion?1:1-Math.pow(0.003,dt);
     cam.yaw+=(cam.tYaw-cam.yaw)*k; cam.pitch+=(cam.tPitch-cam.pitch)*k; cam.dist+=(cam.tDist-cam.dist)*k; cam.target.lerp(cam.tTarget,k);
-    camera.position.set(cam.target.x+cam.dist*Math.cos(cam.pitch)*Math.sin(cam.yaw), cam.target.y+cam.dist*Math.sin(cam.pitch), cam.target.z+cam.dist*Math.cos(cam.pitch)*Math.cos(cam.yaw));
+    const D=cam.dist*fit; camera.position.set(cam.target.x+D*Math.cos(cam.pitch)*Math.sin(cam.yaw), cam.target.y+D*Math.sin(cam.pitch), cam.target.z+D*Math.cos(cam.pitch)*Math.cos(cam.yaw));
     camera.lookAt(cam.target);
     sky.position.copy(camera.position); stars.position.copy(camera.position); orb.position.copy(camera.position).add(orbOff); halo.position.copy(orb.position);
-    const open=!panel.hidden;
-    const tx=open&&!narrow()?Math.min(220,W*0.22):(!focusId&&!narrow()?-Math.min(150,W*0.1):0);
-    const archF=focusId&&islands[focusId].arch&&!lmF&&linkFocus==null;
-    const ty=narrow()?(open?H*0.25:(lmF||linkFocus!=null||crossFocus!=null?H*0.2:(focusId?H*(archF?0.17:0.13):-H*0.09))):((lmF||linkFocus!=null||crossFocus!=null)&&!open?H*0.13:(focusId&&!open?H*(archF?0.15:0.06):0));
-    off.x+=(tx-off.x)*k; off.y+=(ty-off.y)*k; camera.setViewOffset(W,H,off.x,off.y,W,H);
+    // 依介面實際遮住的範圍，把鏡頭目標放到「沒被擋住」的區域正中央，並在可視範圍變小時拉遠一點
+    if(now-occT>250){ occT=now; measureOcc(); }
+    const tx=W/2-(occ.l+occ.r)/2, ty=H/2-(occ.t+occ.b)/2;
+    const fitT=clamp(Math.max(H*0.8/(occ.b-occ.t), W*0.82/(occ.r-occ.l)),1,1.6);
+    off.x+=(tx-off.x)*k; off.y+=(ty-off.y)*k; fit+=(fitT-fit)*k; camera.setViewOffset(W,H,off.x,off.y,W,H);
     scene.fog.near=cam.dist*0.9; scene.fog.far=cam.dist*2.6+80;
     const sc=clamp(cam.dist*0.55,10,70), shc=sun.shadow.camera, sd=Math.max(30,sc*1.4);
     sun.position.copy(cam.target).addScaledVector(sunOff,sd/sunOff.length()); sun.target.position.copy(cam.target); sun.target.updateMatrixWorld();
