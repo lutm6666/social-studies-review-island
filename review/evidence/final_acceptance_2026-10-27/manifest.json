@@ -1,0 +1,251 @@
+{
+  "sourceSha": "19ede1cf6ca8e52bddce73e29fadc39724c33c68",
+  "publicationSourceSha": "67a82350305eee58812cfc14b31c4ca64aa8b506",
+  "files": [
+    {
+      "name": "09-exam-result.jpg",
+      "bytes": 79424,
+      "sha256": "c6ef294f89aeeecca10c925378c701264fac4d4982ad19fb56f72aec5828c288"
+    },
+    {
+      "name": "10-cross-route-result.jpg",
+      "bytes": 88623,
+      "sha256": "0bac19743c5736710d1771211c09fe176ac2a77fea9e4abbfb606fb0381a2831"
+    },
+    {
+      "name": "13-narrow-population-chart.jpg",
+      "bytes": 39658,
+      "sha256": "cc1e1b4bfec6b1ce37f5cc8ff7970bd65d1a8c19d951267219ab5c8f472c438d"
+    },
+    {
+      "name": "23-latest-chart-result.jpg",
+      "bytes": 72399,
+      "sha256": "6ce4e90db891e4e5acbde0f2b562e7d4bd9d1dbac7c627f76908d17d7e283080"
+    },
+    {
+      "name": "24-final-wrong-island-empty.jpg",
+      "bytes": 64950,
+      "sha256": "1dfb56f3ec20b8b33722c00a98a7f626a391a6ef2560989ce02571c122c51e56"
+    },
+    {
+      "name": "25-publication-wide-card.jpg",
+      "bytes": 93394,
+      "sha256": "62bd018546e94fd6c0e182e0d8f14dc695d1fcebd89784d6c617183196bd9927"
+    },
+    {
+      "name": "README.md",
+      "bytes": 1130,
+      "sha256": "65e111e6562eb9ecabb4a583beb292591e88c59c6a419fa25bd51128a6281d60"
+    },
+    {
+      "name": "bank-audit.json",
+      "bytes": 44033,
+      "sha256": "5c4d26ebd13d0769a9595dcea2f9de939e945f288b9bfb58a6d1085d72423627"
+    },
+    {
+      "name": "bank-audit.md",
+      "bytes": 4632,
+      "sha256": "626d61e0162803b07bd2bbe9676670b73e2cbaf2bccb49fc139a6ce55a6a92f6"
+    },
+    {
+      "name": "browser-console.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "chart-asg1-h8.jpg",
+      "bytes": 71766,
+      "sha256": "eb1d069b61fa5cc923ccb16b838a307e91131e1c66d3e25d1b22a33b3d1816f2"
+    },
+    {
+      "name": "chart-asg1-h9.jpg",
+      "bytes": 72101,
+      "sha256": "afaad2dada6eac488fc37b28df9a858f1b9264082258af21927d648c1515a014"
+    },
+    {
+      "name": "chart-asg4-h11.jpg",
+      "bytes": 70484,
+      "sha256": "f39d2a68fc570173e7c8638eba49c684e8ae2fbf8eeae0ec4539ca130a14f240"
+    },
+    {
+      "name": "chart-asg4-h9.jpg",
+      "bytes": 72640,
+      "sha256": "b20017eb86422f61d62be50ac0d16d1cc624483f0d267156bc5baae7ac1c7438"
+    },
+    {
+      "name": "chart-asg5-h10.jpg",
+      "bytes": 70545,
+      "sha256": "dc092ebac69776f5935dd12415e8a3d7299af2f0a94b10e524eefc0a198b4aef"
+    },
+    {
+      "name": "chart-contact-sheet-01.jpg",
+      "bytes": 226842,
+      "sha256": "80a2c6090300a69546448c9a9d643fa1c98ce66dcce2b5f8cab217c7a98711e5"
+    },
+    {
+      "name": "chart-contact-sheet-02.jpg",
+      "bytes": 230310,
+      "sha256": "a7c3a2a97d338db37cb1503db68cf79372fadd7939460896e58f331b5f0cb51d"
+    },
+    {
+      "name": "chart-contact-sheet-03.jpg",
+      "bytes": 228049,
+      "sha256": "8d0eed596fe44cda2e7f763a43787dc8a07d2b7fb2cd719036172c652aa6de89"
+    },
+    {
+      "name": "chart-contact-sheet-04.jpg",
+      "bytes": 232163,
+      "sha256": "89eab030617cae5b7fec8b527234ceca288b04ac5ca18ea78657faef0d0b8500"
+    },
+    {
+      "name": "chart-contact-sheet-05.jpg",
+      "bytes": 232176,
+      "sha256": "73f0f93f35ffa3436a921b3a24422dd51b2279dd7b300b487c8c21c2f03e4a16"
+    },
+    {
+      "name": "chart-twg3-h10.jpg",
+      "bytes": 72761,
+      "sha256": "a4a5074a46503f06ee55c428120b18667051e749a0d894e16d3308812cadbe93"
+    },
+    {
+      "name": "chart-twg3-h11.jpg",
+      "bytes": 71533,
+      "sha256": "9a4665d6028ac6d171756a2866b931f58bbe627bf5f59de1b700b6207353a3fc"
+    },
+    {
+      "name": "chart-twg3-h12.jpg",
+      "bytes": 73760,
+      "sha256": "5c9ff6b0b0e2ef45206ac32ff31e7292fbd19791181ff68c0e9f233d21461954"
+    },
+    {
+      "name": "chart-twg3-h9.jpg",
+      "bytes": 73480,
+      "sha256": "b267e172594fe16e55f50a92a752e5a366ed438db6bd78166c8cbfb14084c8b5"
+    },
+    {
+      "name": "chart-twg4-h11.jpg",
+      "bytes": 72073,
+      "sha256": "8642b3428de2d68e08e9334978076d857dec8fd3dc46330646459d720e7210e4"
+    },
+    {
+      "name": "chart-twg4-h12.jpg",
+      "bytes": 70579,
+      "sha256": "0b51a13684ad5ec0f97c2b63d288af9bfaeeb9bea8c80fb3d13c6754b1a0d6b7"
+    },
+    {
+      "name": "chart-twg4-h8.jpg",
+      "bytes": 70896,
+      "sha256": "65d12e1443459e7438eb91e473b1fb77fb5908f49bc82e61062518ef5e78cb06"
+    },
+    {
+      "name": "chart-twg5-h7.jpg",
+      "bytes": 72981,
+      "sha256": "f81fdaae9e80d1294e7b813b9ec2c6b06d151acf5aee8a8965cccf8a6934f324"
+    },
+    {
+      "name": "chart-twg5-h8.jpg",
+      "bytes": 71854,
+      "sha256": "dc8c575d0418456d6fc1832134795c9fb1a7df070cb2558fe3a6a5a99dae5f45"
+    },
+    {
+      "name": "chart-twg5-h9.jpg",
+      "bytes": 72151,
+      "sha256": "109d869d58b629c8648549ec6688b1071ceff14b71d084fb64a41043646eeacf"
+    },
+    {
+      "name": "chart-ui-results-initial.json",
+      "bytes": 110351,
+      "sha256": "37d18982e636d0b3bd8928c24d605e066c1d943902e94466465fdf14168657e3"
+    },
+    {
+      "name": "chart-ui-results.json",
+      "bytes": 111614,
+      "sha256": "9c4e1161c1fb2f4d6e4711a2461f48d0bf1df6d617dea682fff278720e9fe796"
+    },
+    {
+      "name": "chart-visual-review.md",
+      "bytes": 5661,
+      "sha256": "63b8489aa701a705230cad12ffbfbaadff80589ad59619357d6b91c37787c768"
+    },
+    {
+      "name": "chart-wdg1-h10.jpg",
+      "bytes": 72038,
+      "sha256": "21480135d553f7d2b6b0e2642716ea13c31d701f284dd6d2b9785a52650f093a"
+    },
+    {
+      "name": "chart-wdg1-h11.jpg",
+      "bytes": 72738,
+      "sha256": "09e58a4fafa487cbf1b2d4ff1c4068c8c3fb66365347467fc2bdf2a476adbffa"
+    },
+    {
+      "name": "chart-wdg1-h9.jpg",
+      "bytes": 71156,
+      "sha256": "8540f684c8c8153889bbad12ded20ddb6d8579e5ba371d33f0758c077c40b9dd"
+    },
+    {
+      "name": "chart-wdg2-h10.jpg",
+      "bytes": 72254,
+      "sha256": "d22bb079d150c1b6698474d7b293b86e30d726071557f458bbf4f047b86b154f"
+    },
+    {
+      "name": "chart-wdg3-h12.jpg",
+      "bytes": 72334,
+      "sha256": "fc5c98e45c53965c78b00ee2ff13d183dea3a5f5db83147a260a061eaab310dd"
+    },
+    {
+      "name": "deployment-verification.json",
+      "bytes": 1615,
+      "sha256": "265f987d0354cc60fea8609715f31a72d80bbae72293524605a86be8cda35404"
+    },
+    {
+      "name": "figure-dedup-diagnostic.json",
+      "bytes": 1386,
+      "sha256": "367b157eaca93990ff5b9fd4615ef4a4bcf907bd2b74968d7dc6028c024d213e"
+    },
+    {
+      "name": "manual-ten-question-results.json",
+      "bytes": 2586,
+      "sha256": "303ea97c595925af340fdc11252f927d1dbf9465c5abd78d374346e48993b036"
+    },
+    {
+      "name": "narrow-climate-chart.jpg",
+      "bytes": 43850,
+      "sha256": "2ce825d543540ec4ad16b33c2815234ed625d526fa9efd67a8857a2b01e4b1fc"
+    },
+    {
+      "name": "narrow-industry-chart.jpg",
+      "bytes": 43801,
+      "sha256": "f120630127c4a2922e1cb4a68375760df91f0ba53f43244f8f0f20cbe0a38eb2"
+    },
+    {
+      "name": "nine-island-navigation.json",
+      "bytes": 22025,
+      "sha256": "9c81c88b0bd109099eabb713a32b3d36d693ede94621b0d7237094f87facd0bc"
+    },
+    {
+      "name": "publication-smoke-67a8235.json",
+      "bytes": 11531,
+      "sha256": "620f2e51c201d757b20140cc76121e8fcfde92c54fb6f3b4e7e18bc57cbeecdc"
+    },
+    {
+      "name": "question-ui-results.json",
+      "bytes": 45184,
+      "sha256": "bfe185d8aecaea2460ff4db0fba13682ec7a706e980ffcb4f7e38f5d80d4a051"
+    },
+    {
+      "name": "source-version-comparison.json",
+      "bytes": 7833,
+      "sha256": "5a6c6cc952bd761b6d4c858d3efd1696528bf5994fd061d4964211a05e7dde01"
+    },
+    {
+      "name": "ui-observations.json",
+      "bytes": 70419,
+      "sha256": "cc5fe657a6a4bb83d2edd96fdb0b04d6abf8f5de8889c00b5f882553b3424346"
+    },
+    {
+      "name": "ui-question-coverage.json",
+      "bytes": 14389,
+      "sha256": "644eb113f973db2eabddd9b48bd6c1dfbf5d33c84df0df1768fbf18dd4985241"
+    }
+  ]
+}

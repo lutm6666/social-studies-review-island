@@ -1,0 +1,68 @@
+{
+  "sourceSha": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+  "expectedScore": "9/10",
+  "actualScore": "9/10",
+  "islandAccuracy": "90%",
+  "questions": [
+    {
+      "id": "cpd-g2",
+      "question": "「雷震」最為人所知的是？",
+      "sourceSha": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+      "expected": "故意答錯，解析及選項鎖定正確；重新載入後錯題仍在，重練答對後移除"
+    },
+    {
+      "id": "qpe-h40",
+      "question": "清廷後來陸續開放鹿港、八里坌與大陸對渡，反映了什麼？",
+      "sourceSha": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+      "expected": "答對、解析及下一題成功"
+    },
+    {
+      "id": "voy-h17",
+      "question": "1628 年日本商人因不滿荷蘭課稅而挾持荷蘭長官的事件是？",
+      "sourceSha": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+      "expected": "答對、解析及下一題成功"
+    },
+    {
+      "id": "jpe-g17",
+      "question": "「領導霧社事件的賽德克族頭目」指的是哪一位？",
+      "sourceSha": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+      "expected": "答對、解析及下一題成功"
+    },
+    {
+      "id": "jpe-g55",
+      "question": "「米糖相剋」最主要的原因是？",
+      "sourceSha": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+      "expected": "答對、解析及下一題成功"
+    },
+    {
+      "id": "ces-h30",
+      "question": "戰後臺灣產業結構的變化，最接近下列哪一種描述？",
+      "sourceSha": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+      "expected": "答對、解析及下一題成功"
+    },
+    {
+      "id": "qpe-g13",
+      "question": "「領導天地會發動清代最大規模民變」指的是哪一位？",
+      "sourceSha": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+      "expected": "答對、解析及下一題成功"
+    },
+    {
+      "id": "pre-g5",
+      "question": "代表遺址位於「臺東卑南」的史前文化是？",
+      "sourceSha": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+      "expected": "答對、解析及下一題成功"
+    },
+    {
+      "id": "qsc-g33",
+      "question": "「清代為原住民兒童設立的學校」指的是？",
+      "sourceSha": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+      "expected": "答對、解析及下一題成功"
+    },
+    {
+      "id": "qsc-h38",
+      "question": "清代宗族常設置「祭祀公業」，主要用途是？",
+      "sourceSha": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+      "expected": "答對、解析及下一題成功"
+    }
+  ]
+}

@@ -1,0 +1,1827 @@
+{
+  "version": "19ede1cf6ca8e52bddce73e29fadc39724c33c68",
+  "checkCommand": "node work/audit-bank.cjs",
+  "method": "Evaluate current source data and engine in isolated Node VM; compare committed questions.json and Markdown; recreate build.py concatenation in memory with universal-newline normalization. Repository files are read-only.",
+  "runtimeTotal": 3807,
+  "uniqueRuntimeIds": 3807,
+  "exportedTotal": 3807,
+  "exportRuntimeMismatches": [],
+  "invalidRuntime": [],
+  "markdownTotal": 3807,
+  "uniqueMarkdownIds": 3807,
+  "fileChecks": [
+    {
+      "file": "questions_asg.md",
+      "count": 284,
+      "invalid": [],
+      "blob": "5fec38128bb14f61a62d3b1b13f4c6e079c3494f"
+    },
+    {
+      "file": "questions_cnh.md",
+      "count": 450,
+      "invalid": [],
+      "blob": "572339ac63d064176fb0216f8db1651fae867f58"
+    },
+    {
+      "file": "questions_cross.md",
+      "count": 33,
+      "invalid": [],
+      "blob": "aa719906d986ebb9b42cb4d60222baad109249e6"
+    },
+    {
+      "file": "questions_eco.md",
+      "count": 288,
+      "invalid": [],
+      "blob": "e4c0f8eebfdafba52a4ef7f0bb0d7bb73649c5e0"
+    },
+    {
+      "file": "questions_law.md",
+      "count": 396,
+      "invalid": [],
+      "blob": "80bfd72c79c33a2237806c66ff65b0b3b7b004a5"
+    },
+    {
+      "file": "questions_soc.md",
+      "count": 262,
+      "invalid": [],
+      "blob": "10323af684807222cc7106a0f8755806893a054f"
+    },
+    {
+      "file": "questions_twg.md",
+      "count": 486,
+      "invalid": [],
+      "blob": "b9607fa0924a4f54ec137aea68215dfcbca70454"
+    },
+    {
+      "file": "questions_twh.md",
+      "count": 925,
+      "invalid": [],
+      "blob": "f7ab247235e0b017c93d6da07660fc4fd5a7b243"
+    },
+    {
+      "file": "questions_wdg.md",
+      "count": 239,
+      "invalid": [],
+      "blob": "3e5dc201393787dc3a7c21385f675a6d910ff68f"
+    },
+    {
+      "file": "questions_wdh.md",
+      "count": 444,
+      "invalid": [],
+      "blob": "72db77262577fef8f15afe3a54f1a45f2a5c8f59"
+    }
+  ],
+  "markdownExportSameSet": true,
+  "coverageTotal": 3807,
+  "coverageExportSameOrder": false,
+  "fixed": [
+    {
+      "id": "pre-g9",
+      "chapter": "pre",
+      "difficulty": 1,
+      "context": null,
+      "question": "代表遺址位於「臺北士林芝山岩」的史前文化是？",
+      "answer": "芝山岩文化",
+      "distractors": [
+        "十三行文化",
+        "蔦松文化",
+        "長濱文化"
+      ],
+      "explanation": "「臺北士林芝山岩」說的是「芝山岩文化」。其他選項：「十三行文化」是新北八里十三行；「蔦松文化」是臺南永康蔦松；「長濱文化」是臺東長濱八仙洞。",
+      "source": "generated",
+      "figure": null
+    },
+    {
+      "id": "twg4-h5",
+      "chapter": "twg4",
+      "difficulty": 2,
+      "context": null,
+      "question": "因婚姻、工作等原因從其他國家或地區移居臺灣、長期在此生活的人，常被稱為？",
+      "answer": "新住民",
+      "distractors": [
+        "原住民族",
+        "外省族群",
+        "觀光客"
+      ],
+      "explanation": "新住民來自東南亞、中國大陸等地，豐富了臺灣的多元文化。",
+      "source": "hand",
+      "figure": null
+    },
+    {
+      "id": "twg4-g20",
+      "chapter": "twg4",
+      "difficulty": 2,
+      "context": null,
+      "question": "「新住民」的意思是？",
+      "answer": "因婚姻、工作等原因從其他國家或地區移居臺灣、長期在此生活的人",
+      "distractors": [
+        "依年齡與性別繪製的人口結構圖",
+        "吸引人遷入某地的因素",
+        "老年人口比例持續提高"
+      ],
+      "explanation": "「新住民」的重點是：因婚姻、工作等原因從其他國家或地區移居臺灣、長期在此生活的人。容易混淆的選項：「依年齡與性別繪製的人口結構圖」說的是人口金字塔；「吸引人遷入某地的因素」說的是拉力；「老年人口比例持續提高」說的是高齡化。",
+      "source": "generated",
+      "figure": null
+    },
+    {
+      "id": "soc5-g39",
+      "chapter": "soc5",
+      "difficulty": 2,
+      "context": null,
+      "question": "「社會企業以商業模式經營」帶來的結果是？",
+      "answer": "以販售商品或服務的收入，持續追求社會或環境使命",
+      "distractors": [
+        "在國際上發揮民間的影響力",
+        "人民可以自由組成各種團體",
+        "更能表達意見、影響公共政策"
+      ],
+      "explanation": "因為「社會企業以商業模式經營」，所以以販售商品或服務的收入，持續追求社會或環境使命。其他選項也是本單元常見的結果，但原因不同：在國際上發揮民間的影響力，是因為民間組織派員參與國際會議與跨國救援；人民可以自由組成各種團體，是因為憲法保障結社自由；更能表達意見、影響公共政策，是因為倡議團體集結會員向政府陳情。",
+      "source": "generated",
+      "figure": null
+    },
+    {
+      "id": "soc5-g40",
+      "chapter": "soc5",
+      "difficulty": 3,
+      "context": null,
+      "question": "「以販售商品或服務的收入，持續追求社會或環境使命」最主要的原因是？",
+      "answer": "社會企業以商業模式經營",
+      "distractors": [
+        "憲法保障結社自由",
+        "民間組織派員參與國際會議與跨國救援",
+        "倡議團體集結會員向政府陳情"
+      ],
+      "explanation": "以販售商品或服務的收入，持續追求社會或環境使命，最主要是因為「社會企業以商業模式經營」。其他選項會帶來別的結果：「憲法保障結社自由」導致人民可以自由組成各種團體；「民間組織派員參與國際會議與跨國救援」導致在國際上發揮民間的影響力；「倡議團體集結會員向政府陳情」導致更能表達意見、影響公共政策。",
+      "source": "generated",
+      "figure": null
+    },
+    {
+      "id": "law7-g40",
+      "chapter": "law7",
+      "difficulty": 2,
+      "context": null,
+      "question": "「檢察官偵查後，證據足以認定有犯罪嫌疑，且沒有不起訴或緩起訴的情形」帶來的結果是？",
+      "answer": "依法向法院提起公訴",
+      "distractors": [
+        "不受刑罰，但可能由少年法院處理",
+        "可能觸犯誹謗罪",
+        "少年事件以保護、教育代替懲罰"
+      ],
+      "explanation": "因為「檢察官偵查後，證據足以認定有犯罪嫌疑，且沒有不起訴或緩起訴的情形」，所以依法向法院提起公訴。其他選項也是本單元常見的結果，但原因不同：不受刑罰，但可能由少年法院處理，是因為十二歲以上未滿十四歲的少年觸法；可能觸犯誹謗罪，是因為散布不實謠言損害他人名譽；少年事件以保護、教育代替懲罰，是因為少年身心尚在發展。",
+      "source": "generated",
+      "figure": null
+    },
+    {
+      "id": "law7-g41",
+      "chapter": "law7",
+      "difficulty": 3,
+      "context": null,
+      "question": "「依法向法院提起公訴」最主要的原因是？",
+      "answer": "檢察官偵查後，證據足以認定有犯罪嫌疑，且沒有不起訴或緩起訴的情形",
+      "distractors": [
+        "實施無罪推定原則",
+        "少年身心尚在發展",
+        "散布不實謠言損害他人名譽"
+      ],
+      "explanation": "依法向法院提起公訴，最主要是因為「檢察官偵查後，證據足以認定有犯罪嫌疑，且沒有不起訴或緩起訴的情形」。其他選項會帶來別的結果：「實施無罪推定原則」導致被告在判決確定前不被當作罪犯；「少年身心尚在發展」導致少年事件以保護、教育代替懲罰；「散布不實謠言損害他人名譽」導致可能觸犯誹謗罪。",
+      "source": "generated",
+      "figure": null
+    },
+    {
+      "id": "law8-g30",
+      "chapter": "law8",
+      "difficulty": 2,
+      "context": null,
+      "question": "「公務員違法執行職務造成損害」帶來的結果是？",
+      "answer": "人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權",
+      "distractors": [
+        "機關較能了解民意並改善施政",
+        "向行政法院提起行政訴訟",
+        "可以向有管轄權的機關提起訴願"
+      ],
+      "explanation": "因為「公務員違法執行職務造成損害」，所以人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權。其他選項也是本單元常見的結果，但原因不同：機關較能了解民意並改善施政，是因為人民透過陳情表達意見；向行政法院提起行政訴訟，是因為訴願決定後仍然不服；可以向有管轄權的機關提起訴願，是因為不服行政處分。",
+      "source": "generated",
+      "figure": null
+    },
+    {
+      "id": "law8-g31",
+      "chapter": "law8",
+      "difficulty": 3,
+      "context": null,
+      "question": "「人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權」最主要的原因是？",
+      "answer": "公務員違法執行職務造成損害",
+      "distractors": [
+        "訴願決定後仍然不服",
+        "不服行政處分",
+        "人民透過陳情表達意見"
+      ],
+      "explanation": "人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權，最主要是因為「公務員違法執行職務造成損害」。其他選項會帶來別的結果：「訴願決定後仍然不服」導致向行政法院提起行政訴訟；「不服行政處分」導致可以向有管轄權的機關提起訴願；「人民透過陳情表達意見」導致機關較能了解民意並改善施政。",
+      "source": "generated",
+      "figure": null
+    },
+    {
+      "id": "eco6-h8",
+      "chapter": "eco6",
+      "difficulty": 3,
+      "context": "用同樣一天的工時，甲國可以生產 10 台電腦或 20 箱香蕉，乙國可以生產 2 台電腦或 16 箱香蕉。後來甲國專門生產電腦、乙國專門生產香蕉，再互相貿易。",
+      "question": "這種分工方式依據的是？",
+      "answer": "比較利益",
+      "distractors": [
+        "供給法則",
+        "通貨膨脹",
+        "機會成本為零"
+      ],
+      "explanation": "甲國生產 1 台電腦要放棄 2 箱香蕉，乙國要放棄 8 箱，所以甲國生產電腦的機會成本較低；反過來，乙國生產香蕉的機會成本較低。即使甲國兩樣都生產得比較多，各自專門生產機會成本較低的產品再交換，雙方仍能獲利，這就是比較利益。",
+      "source": "hand",
+      "figure": null
+    }
+  ],
+  "chartData": {
+    "climates": [
+      {
+        "name": "keelung",
+        "monthsTemp": 12,
+        "monthsRain": 12,
+        "negativeRain": false,
+        "allFinite": true
+      },
+      {
+        "name": "kaohsiung",
+        "monthsTemp": 12,
+        "monthsRain": 12,
+        "negativeRain": false,
+        "allFinite": true
+      },
+      {
+        "name": "taipei",
+        "monthsTemp": 12,
+        "monthsRain": 12,
+        "negativeRain": false,
+        "allFinite": true
+      },
+      {
+        "name": "rainforest",
+        "monthsTemp": 12,
+        "monthsRain": 12,
+        "negativeRain": false,
+        "allFinite": true
+      },
+      {
+        "name": "monsoonTrop",
+        "monthsTemp": 12,
+        "monthsRain": 12,
+        "negativeRain": false,
+        "allFinite": true
+      },
+      {
+        "name": "savanna",
+        "monthsTemp": 12,
+        "monthsRain": 12,
+        "negativeRain": false,
+        "allFinite": true
+      },
+      {
+        "name": "desert",
+        "monthsTemp": 12,
+        "monthsRain": 12,
+        "negativeRain": false,
+        "allFinite": true
+      },
+      {
+        "name": "medN",
+        "monthsTemp": 12,
+        "monthsRain": 12,
+        "negativeRain": false,
+        "allFinite": true
+      },
+      {
+        "name": "medS",
+        "monthsTemp": 12,
+        "monthsRain": 12,
+        "negativeRain": false,
+        "allFinite": true
+      },
+      {
+        "name": "oceanic",
+        "monthsTemp": 12,
+        "monthsRain": 12,
+        "negativeRain": false,
+        "allFinite": true
+      },
+      {
+        "name": "continental",
+        "monthsTemp": 12,
+        "monthsRain": 12,
+        "negativeRain": false,
+        "allFinite": true
+      },
+      {
+        "name": "tundra",
+        "monthsTemp": 12,
+        "monthsRain": 12,
+        "negativeRain": false,
+        "allFinite": true
+      },
+      {
+        "name": "northChina",
+        "monthsTemp": 12,
+        "monthsRain": 12,
+        "negativeRain": false,
+        "allFinite": true
+      },
+      {
+        "name": "highland",
+        "monthsTemp": 12,
+        "monthsRain": 12,
+        "negativeRain": false,
+        "allFinite": true
+      }
+    ],
+    "pyramids": [
+      {
+        "name": "young",
+        "ages": 9,
+        "male": 9,
+        "female": 9,
+        "total": 100
+      },
+      {
+        "name": "stable",
+        "ages": 9,
+        "male": 9,
+        "female": 9,
+        "total": 100
+      },
+      {
+        "name": "aging",
+        "ages": 9,
+        "male": 9,
+        "female": 9,
+        "total": 100
+      }
+    ],
+    "industry": [
+      {
+        "name": "甲時期",
+        "total": 100
+      },
+      {
+        "name": "乙時期",
+        "total": 100
+      },
+      {
+        "name": "丙時期",
+        "total": 100
+      }
+    ],
+    "authoredFigureQuestionCount": 28,
+    "droppedFigureQuestions": [
+      {
+        "id": "twg4-h9",
+        "question": "下圖的人口金字塔屬於哪一種類型？",
+        "figure": {
+          "t": "pyramid",
+          "ages": [
+            "0-9",
+            "10-19",
+            "20-29",
+            "30-39",
+            "40-49",
+            "50-59",
+            "60-69",
+            "70-79",
+            "80+"
+          ],
+          "m": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            8,
+            6,
+            3
+          ],
+          "f": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            7,
+            7,
+            6,
+            5
+          ],
+          "s": "某地人口金字塔（示意，各組占總人口 %）"
+        }
+      },
+      {
+        "id": "twg4-h10",
+        "question": "下圖的人口金字塔屬於哪一種類型？",
+        "figure": {
+          "t": "pyramid",
+          "ages": [
+            "0-9",
+            "10-19",
+            "20-29",
+            "30-39",
+            "40-49",
+            "50-59",
+            "60-69",
+            "70-79",
+            "80+"
+          ],
+          "m": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            5,
+            3
+          ],
+          "f": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            5,
+            3
+          ],
+          "s": "某地人口金字塔（示意，各組占總人口 %）"
+        }
+      },
+      {
+        "id": "asg4-h10",
+        "question": "下圖的氣候類型最可能是？",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            24,
+            25,
+            27,
+            29,
+            30,
+            29,
+            27,
+            27,
+            27,
+            28,
+            27,
+            25
+          ],
+          "rain": [
+            2,
+            1,
+            1,
+            2,
+            15,
+            500,
+            700,
+            450,
+            300,
+            80,
+            15,
+            3
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "asg5-h9",
+        "question": "下圖的氣候類型最可能是？",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            14,
+            16,
+            20,
+            25,
+            30,
+            33,
+            34,
+            34,
+            31,
+            26,
+            20,
+            15
+          ],
+          "rain": [
+            5,
+            4,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            3,
+            5
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "wdg2-h9",
+        "question": "下圖的氣候類型最可能是？",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            26,
+            27,
+            27,
+            27,
+            26,
+            25,
+            25,
+            26,
+            27,
+            28,
+            28,
+            27
+          ],
+          "rain": [
+            200,
+            180,
+            150,
+            60,
+            10,
+            2,
+            1,
+            3,
+            15,
+            70,
+            140,
+            190
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "wdg3-h9",
+        "question": "下圖的氣候類型最可能是？",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            11,
+            12,
+            14,
+            17,
+            21,
+            25,
+            28,
+            28,
+            25,
+            20,
+            15,
+            12
+          ],
+          "rain": [
+            90,
+            80,
+            70,
+            50,
+            25,
+            8,
+            3,
+            5,
+            25,
+            70,
+            100,
+            110
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "wdg3-h10",
+        "question": "下圖的氣候類型最可能是？",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            5,
+            5,
+            7,
+            9,
+            12,
+            15,
+            17,
+            17,
+            15,
+            11,
+            7,
+            5
+          ],
+          "rain": [
+            60,
+            45,
+            50,
+            45,
+            50,
+            50,
+            55,
+            60,
+            50,
+            65,
+            65,
+            60
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "wdg3-h11",
+        "question": "下圖的氣候類型最可能是？",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            -12,
+            -9,
+            -2,
+            8,
+            15,
+            20,
+            22,
+            20,
+            14,
+            6,
+            -3,
+            -10
+          ],
+          "rain": [
+            10,
+            10,
+            15,
+            30,
+            50,
+            75,
+            90,
+            75,
+            45,
+            25,
+            15,
+            10
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      }
+    ],
+    "figureQuestionCount": 20,
+    "uniqueFigureCount": 15,
+    "figureQuestions": [
+      {
+        "id": "twg3-h9",
+        "type": "climate",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            16,
+            16,
+            17,
+            21,
+            24,
+            27,
+            29,
+            29,
+            27,
+            24,
+            21,
+            17
+          ],
+          "rain": [
+            330,
+            370,
+            300,
+            250,
+            280,
+            290,
+            150,
+            210,
+            370,
+            370,
+            380,
+            300
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "twg3-h10",
+        "type": "climate",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            19,
+            20,
+            22,
+            25,
+            27,
+            28,
+            29,
+            29,
+            28,
+            27,
+            24,
+            21
+          ],
+          "rain": [
+            20,
+            25,
+            40,
+            75,
+            180,
+            400,
+            390,
+            420,
+            220,
+            45,
+            15,
+            15
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "twg3-h11",
+        "type": "climate",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            19,
+            20,
+            22,
+            25,
+            27,
+            28,
+            29,
+            29,
+            28,
+            27,
+            24,
+            21
+          ],
+          "rain": [
+            20,
+            25,
+            40,
+            75,
+            180,
+            400,
+            390,
+            420,
+            220,
+            45,
+            15,
+            15
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "twg3-h12",
+        "type": "climate",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            16,
+            16,
+            18,
+            22,
+            25,
+            28,
+            30,
+            29,
+            27,
+            24,
+            21,
+            17
+          ],
+          "rain": [
+            90,
+            160,
+            180,
+            180,
+            240,
+            330,
+            250,
+            320,
+            360,
+            150,
+            90,
+            80
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "twg4-h8",
+        "type": "pyramid",
+        "figure": {
+          "t": "pyramid",
+          "ages": [
+            "0-9",
+            "10-19",
+            "20-29",
+            "30-39",
+            "40-49",
+            "50-59",
+            "60-69",
+            "70-79",
+            "80+"
+          ],
+          "m": [
+            12,
+            10,
+            8,
+            7,
+            5,
+            4,
+            2,
+            1,
+            1
+          ],
+          "f": [
+            12,
+            10,
+            8,
+            7,
+            5,
+            4,
+            2,
+            1,
+            1
+          ],
+          "s": "某地人口金字塔（示意，各組占總人口 %）"
+        }
+      },
+      {
+        "id": "twg4-h11",
+        "type": "pyramid",
+        "figure": {
+          "t": "pyramid",
+          "ages": [
+            "0-9",
+            "10-19",
+            "20-29",
+            "30-39",
+            "40-49",
+            "50-59",
+            "60-69",
+            "70-79",
+            "80+"
+          ],
+          "m": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            8,
+            6,
+            3
+          ],
+          "f": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            7,
+            7,
+            6,
+            5
+          ],
+          "s": "某地人口金字塔（示意，各組占總人口 %）"
+        }
+      },
+      {
+        "id": "twg4-h12",
+        "type": "pyramid",
+        "figure": {
+          "t": "pyramid",
+          "ages": [
+            "0-9",
+            "10-19",
+            "20-29",
+            "30-39",
+            "40-49",
+            "50-59",
+            "60-69",
+            "70-79",
+            "80+"
+          ],
+          "m": [
+            12,
+            10,
+            8,
+            7,
+            5,
+            4,
+            2,
+            1,
+            1
+          ],
+          "f": [
+            12,
+            10,
+            8,
+            7,
+            5,
+            4,
+            2,
+            1,
+            1
+          ],
+          "s": "某地人口金字塔（示意，各組占總人口 %）"
+        }
+      },
+      {
+        "id": "twg5-h7",
+        "type": "stack",
+        "figure": {
+          "t": "stack",
+          "labels": [
+            "甲時期",
+            "乙時期",
+            "丙時期"
+          ],
+          "series": [
+            {
+              "name": "第一級",
+              "vals": [
+                50,
+                20,
+                5
+              ]
+            },
+            {
+              "name": "第二級",
+              "vals": [
+                20,
+                40,
+                35
+              ]
+            },
+            {
+              "name": "第三級",
+              "vals": [
+                30,
+                40,
+                60
+              ]
+            }
+          ],
+          "s": "某國就業人口的產業結構（示意，單位：%）"
+        }
+      },
+      {
+        "id": "twg5-h8",
+        "type": "stack",
+        "figure": {
+          "t": "stack",
+          "labels": [
+            "甲時期",
+            "乙時期",
+            "丙時期"
+          ],
+          "series": [
+            {
+              "name": "第一級",
+              "vals": [
+                50,
+                20,
+                5
+              ]
+            },
+            {
+              "name": "第二級",
+              "vals": [
+                20,
+                40,
+                35
+              ]
+            },
+            {
+              "name": "第三級",
+              "vals": [
+                30,
+                40,
+                60
+              ]
+            }
+          ],
+          "s": "某國就業人口的產業結構（示意，單位：%）"
+        }
+      },
+      {
+        "id": "twg5-h9",
+        "type": "stack",
+        "figure": {
+          "t": "stack",
+          "labels": [
+            "甲時期",
+            "乙時期",
+            "丙時期"
+          ],
+          "series": [
+            {
+              "name": "第一級",
+              "vals": [
+                50,
+                20,
+                5
+              ]
+            },
+            {
+              "name": "第二級",
+              "vals": [
+                20,
+                40,
+                35
+              ]
+            },
+            {
+              "name": "第三級",
+              "vals": [
+                30,
+                40,
+                60
+              ]
+            }
+          ],
+          "s": "某國就業人口的產業結構（示意，單位：%）"
+        }
+      },
+      {
+        "id": "asg1-h8",
+        "type": "climate",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            -4,
+            -1,
+            6,
+            14,
+            20,
+            25,
+            26,
+            25,
+            20,
+            13,
+            4,
+            -2
+          ],
+          "rain": [
+            3,
+            5,
+            9,
+            25,
+            35,
+            75,
+            180,
+            160,
+            50,
+            25,
+            10,
+            3
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "asg1-h9",
+        "type": "climate",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            -8,
+            -5,
+            0,
+            4,
+            8,
+            12,
+            13,
+            12,
+            9,
+            3,
+            -3,
+            -7
+          ],
+          "rain": [
+            1,
+            2,
+            3,
+            8,
+            25,
+            75,
+            120,
+            120,
+            60,
+            8,
+            2,
+            1
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "asg4-h9",
+        "type": "climate",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            27,
+            27,
+            27,
+            27,
+            27,
+            27,
+            26,
+            26,
+            27,
+            27,
+            27,
+            27
+          ],
+          "rain": [
+            250,
+            230,
+            260,
+            280,
+            220,
+            180,
+            170,
+            190,
+            210,
+            230,
+            250,
+            260
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "asg4-h11",
+        "type": "climate",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            24,
+            25,
+            27,
+            29,
+            30,
+            29,
+            27,
+            27,
+            27,
+            28,
+            27,
+            25
+          ],
+          "rain": [
+            2,
+            1,
+            1,
+            2,
+            15,
+            500,
+            700,
+            450,
+            300,
+            80,
+            15,
+            3
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "asg5-h10",
+        "type": "climate",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            14,
+            16,
+            20,
+            25,
+            30,
+            33,
+            34,
+            34,
+            31,
+            26,
+            20,
+            15
+          ],
+          "rain": [
+            5,
+            4,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            3,
+            5
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "wdg1-h9",
+        "type": "climate",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            24,
+            24,
+            22,
+            19,
+            16,
+            14,
+            13,
+            13,
+            15,
+            17,
+            20,
+            22
+          ],
+          "rain": [
+            10,
+            15,
+            20,
+            40,
+            100,
+            170,
+            150,
+            120,
+            80,
+            50,
+            25,
+            15
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "wdg1-h10",
+        "type": "climate",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            24,
+            24,
+            22,
+            19,
+            16,
+            14,
+            13,
+            13,
+            15,
+            17,
+            20,
+            22
+          ],
+          "rain": [
+            10,
+            15,
+            20,
+            40,
+            100,
+            170,
+            150,
+            120,
+            80,
+            50,
+            25,
+            15
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "wdg1-h11",
+        "type": "climate",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            -25,
+            -26,
+            -22,
+            -14,
+            -3,
+            5,
+            8,
+            6,
+            1,
+            -8,
+            -17,
+            -22
+          ],
+          "rain": [
+            10,
+            8,
+            10,
+            10,
+            12,
+            20,
+            30,
+            35,
+            25,
+            18,
+            12,
+            10
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "wdg2-h10",
+        "type": "climate",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            26,
+            27,
+            27,
+            27,
+            26,
+            25,
+            25,
+            26,
+            27,
+            28,
+            28,
+            27
+          ],
+          "rain": [
+            200,
+            180,
+            150,
+            60,
+            10,
+            2,
+            1,
+            3,
+            15,
+            70,
+            140,
+            190
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      },
+      {
+        "id": "wdg3-h12",
+        "type": "climate",
+        "figure": {
+          "t": "climate",
+          "temp": [
+            11,
+            12,
+            14,
+            17,
+            21,
+            25,
+            28,
+            28,
+            25,
+            20,
+            15,
+            12
+          ],
+          "rain": [
+            90,
+            80,
+            70,
+            50,
+            25,
+            8,
+            3,
+            5,
+            25,
+            70,
+            100,
+            110
+          ],
+          "s": "某地氣候圖（示意）"
+        }
+      }
+    ],
+    "uniqueReachableFigures": [
+      {
+        "name": "keelung",
+        "type": "climate",
+        "ids": [
+          "twg3-h9"
+        ]
+      },
+      {
+        "name": "kaohsiung",
+        "type": "climate",
+        "ids": [
+          "twg3-h10",
+          "twg3-h11"
+        ]
+      },
+      {
+        "name": "taipei",
+        "type": "climate",
+        "ids": [
+          "twg3-h12"
+        ]
+      },
+      {
+        "name": "young",
+        "type": "pyramid",
+        "ids": [
+          "twg4-h8",
+          "twg4-h12"
+        ]
+      },
+      {
+        "name": "aging",
+        "type": "pyramid",
+        "ids": [
+          "twg4-h11"
+        ]
+      },
+      {
+        "name": "IND",
+        "type": "stack",
+        "ids": [
+          "twg5-h7",
+          "twg5-h8",
+          "twg5-h9"
+        ]
+      },
+      {
+        "name": "northChina",
+        "type": "climate",
+        "ids": [
+          "asg1-h8"
+        ]
+      },
+      {
+        "name": "highland",
+        "type": "climate",
+        "ids": [
+          "asg1-h9"
+        ]
+      },
+      {
+        "name": "rainforest",
+        "type": "climate",
+        "ids": [
+          "asg4-h9"
+        ]
+      },
+      {
+        "name": "monsoonTrop",
+        "type": "climate",
+        "ids": [
+          "asg4-h11"
+        ]
+      },
+      {
+        "name": "desert",
+        "type": "climate",
+        "ids": [
+          "asg5-h10"
+        ]
+      },
+      {
+        "name": "medS",
+        "type": "climate",
+        "ids": [
+          "wdg1-h9",
+          "wdg1-h10"
+        ]
+      },
+      {
+        "name": "tundra",
+        "type": "climate",
+        "ids": [
+          "wdg1-h11"
+        ]
+      },
+      {
+        "name": "savanna",
+        "type": "climate",
+        "ids": [
+          "wdg2-h10"
+        ]
+      },
+      {
+        "name": "medN",
+        "type": "climate",
+        "ids": [
+          "wdg3-h12"
+        ]
+      }
+    ],
+    "unreachableFigures": [
+      {
+        "name": "oceanic",
+        "type": "climate",
+        "ids": [
+          "wdg3-h10"
+        ]
+      },
+      {
+        "name": "continental",
+        "type": "climate",
+        "ids": [
+          "wdg3-h11"
+        ]
+      },
+      {
+        "name": "stable",
+        "type": "pyramid",
+        "ids": [
+          "twg4-h10"
+        ]
+      }
+    ]
+  },
+  "buildIndexEqualAfterNewlineNormalization": true,
+  "indexNormalizedSHA256": "18908e9c3b9c42fdd1eae4ca63cd0e9f1eb9125b36b2e6a0b3d16e3d6674aff4",
+  "limitations": [
+    "Source/static checks do not prove browser rendering or user interactions.",
+    "No external historical/legal source re-audit was performed; fixed wording is checked against recorded defect criteria."
+  ],
+  "coverageExportSameSet": true,
+  "coverageNotes": "Round2 groups cross before civics; questions.json places cross last, so order differs legitimately. Both include exactly the same 3,807 IDs.",
+  "versionComparison": {
+    "base": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+    "head": "19ede1cf6ca8e52bddce73e29fadc39724c33c68",
+    "changedFiles": [
+      "index.html",
+      "src/app.html",
+      "src/app.js"
+    ],
+    "auditedDataFiles": 32,
+    "allAuditedDataHashesUnchanged": true,
+    "dataFiles": [
+      {
+        "path": "review/questions.json",
+        "beforeBlob": "1172156079345cb62948ea74c067bdcb1ae947d8",
+        "afterBlob": "1172156079345cb62948ea74c067bdcb1ae947d8",
+        "unchanged": true
+      },
+      {
+        "path": "review/questions_asg.md",
+        "beforeBlob": "5fec38128bb14f61a62d3b1b13f4c6e079c3494f",
+        "afterBlob": "5fec38128bb14f61a62d3b1b13f4c6e079c3494f",
+        "unchanged": true
+      },
+      {
+        "path": "review/questions_cnh.md",
+        "beforeBlob": "572339ac63d064176fb0216f8db1651fae867f58",
+        "afterBlob": "572339ac63d064176fb0216f8db1651fae867f58",
+        "unchanged": true
+      },
+      {
+        "path": "review/questions_cross.md",
+        "beforeBlob": "aa719906d986ebb9b42cb4d60222baad109249e6",
+        "afterBlob": "aa719906d986ebb9b42cb4d60222baad109249e6",
+        "unchanged": true
+      },
+      {
+        "path": "review/questions_eco.md",
+        "beforeBlob": "e4c0f8eebfdafba52a4ef7f0bb0d7bb73649c5e0",
+        "afterBlob": "e4c0f8eebfdafba52a4ef7f0bb0d7bb73649c5e0",
+        "unchanged": true
+      },
+      {
+        "path": "review/questions_law.md",
+        "beforeBlob": "80bfd72c79c33a2237806c66ff65b0b3b7b004a5",
+        "afterBlob": "80bfd72c79c33a2237806c66ff65b0b3b7b004a5",
+        "unchanged": true
+      },
+      {
+        "path": "review/questions_soc.md",
+        "beforeBlob": "10323af684807222cc7106a0f8755806893a054f",
+        "afterBlob": "10323af684807222cc7106a0f8755806893a054f",
+        "unchanged": true
+      },
+      {
+        "path": "review/questions_twg.md",
+        "beforeBlob": "b9607fa0924a4f54ec137aea68215dfcbca70454",
+        "afterBlob": "b9607fa0924a4f54ec137aea68215dfcbca70454",
+        "unchanged": true
+      },
+      {
+        "path": "review/questions_twh.md",
+        "beforeBlob": "f7ab247235e0b017c93d6da07660fc4fd5a7b243",
+        "afterBlob": "f7ab247235e0b017c93d6da07660fc4fd5a7b243",
+        "unchanged": true
+      },
+      {
+        "path": "review/questions_wdg.md",
+        "beforeBlob": "3e5dc201393787dc3a7c21385f675a6d910ff68f",
+        "afterBlob": "3e5dc201393787dc3a7c21385f675a6d910ff68f",
+        "unchanged": true
+      },
+      {
+        "path": "review/questions_wdh.md",
+        "beforeBlob": "72db77262577fef8f15afe3a54f1a45f2a5c8f59",
+        "afterBlob": "72db77262577fef8f15afe3a54f1a45f2a5c8f59",
+        "unchanged": true
+      },
+      {
+        "path": "src/data_asg.js",
+        "beforeBlob": "cbc70efe6595d0e5204648baca46a0cc1328554a",
+        "afterBlob": "cbc70efe6595d0e5204648baca46a0cc1328554a",
+        "unchanged": true
+      },
+      {
+        "path": "src/data_cnh.js",
+        "beforeBlob": "57c6cb41d1b776dcb1906d34ad2604cfe3722bf5",
+        "afterBlob": "57c6cb41d1b776dcb1906d34ad2604cfe3722bf5",
+        "unchanged": true
+      },
+      {
+        "path": "src/data_ctx.js",
+        "beforeBlob": "002bd5465e12d4046830a1d0e55240845a3f1685",
+        "afterBlob": "002bd5465e12d4046830a1d0e55240845a3f1685",
+        "unchanged": true
+      },
+      {
+        "path": "src/data_eco.js",
+        "beforeBlob": "4b83f9e1606462052aabf22cbcfdfb52da8cdb28",
+        "afterBlob": "4b83f9e1606462052aabf22cbcfdfb52da8cdb28",
+        "unchanged": true
+      },
+      {
+        "path": "src/data_fig.js",
+        "beforeBlob": "3816bc7b9c2669924f7ca2faed1229085e306163",
+        "afterBlob": "3816bc7b9c2669924f7ca2faed1229085e306163",
+        "unchanged": true
+      },
+      {
+        "path": "src/data_law.js",
+        "beforeBlob": "efd3a958eb2fe018a763335bf0feda9f4a77622f",
+        "afterBlob": "efd3a958eb2fe018a763335bf0feda9f4a77622f",
+        "unchanged": true
+      },
+      {
+        "path": "src/data_notes.js",
+        "beforeBlob": "4a5b928c76d0eaf33fd9b4aaa72c50acbdcaca5b",
+        "afterBlob": "4a5b928c76d0eaf33fd9b4aaa72c50acbdcaca5b",
+        "unchanged": true
+      },
+      {
+        "path": "src/data_overlap.js",
+        "beforeBlob": "431e4db33b2061a938613d7c4ba9fd4d4603f1be",
+        "afterBlob": "431e4db33b2061a938613d7c4ba9fd4d4603f1be",
+        "unchanged": true
+      },
+      {
+        "path": "src/data_soc.js",
+        "beforeBlob": "80ade6e1a14bec3b1a41e12518d91ea9ba07c612",
+        "afterBlob": "80ade6e1a14bec3b1a41e12518d91ea9ba07c612",
+        "unchanged": true
+      },
+      {
+        "path": "src/data_twg.js",
+        "beforeBlob": "44548116338132318374e119ef7ffd37716ce1c6",
+        "afterBlob": "44548116338132318374e119ef7ffd37716ce1c6",
+        "unchanged": true
+      },
+      {
+        "path": "src/data_wdg.js",
+        "beforeBlob": "959bf07430224a9b86c7457a5e332a80aa6d726c",
+        "afterBlob": "959bf07430224a9b86c7457a5e332a80aa6d726c",
+        "unchanged": true
+      },
+      {
+        "path": "src/data_wdh.js",
+        "beforeBlob": "986c20ecfcb9e3a803429bae6fddbd095920fc77",
+        "afterBlob": "986c20ecfcb9e3a803429bae6fddbd095920fc77",
+        "unchanged": true
+      },
+      {
+        "path": "src/dsl.js",
+        "beforeBlob": "7e8ccf0dce75248dff55760e635515c40da45f08",
+        "afterBlob": "7e8ccf0dce75248dff55760e635515c40da45f08",
+        "unchanged": true
+      },
+      {
+        "path": "src/engine.js",
+        "beforeBlob": "c60f71ca1df5819c74d2e218f77d4d698692c327",
+        "afterBlob": "c60f71ca1df5819c74d2e218f77d4d698692c327",
+        "unchanged": true
+      },
+      {
+        "path": "src/gen_twh.js",
+        "beforeBlob": "1474103636ceb13e05d4e34b20583edf09a4f7d8",
+        "afterBlob": "1474103636ceb13e05d4e34b20583edf09a4f7d8",
+        "unchanged": true
+      },
+      {
+        "path": "src/hand_twh_1.js",
+        "beforeBlob": "152cb3c658ed1dbda997c465c87292c7eb785c7a",
+        "afterBlob": "152cb3c658ed1dbda997c465c87292c7eb785c7a",
+        "unchanged": true
+      },
+      {
+        "path": "src/hand_twh_2.js",
+        "beforeBlob": "2965544e284e640971c5c8ea2dd5bb264a2c7a40",
+        "afterBlob": "2965544e284e640971c5c8ea2dd5bb264a2c7a40",
+        "unchanged": true
+      },
+      {
+        "path": "src/hand_twh_ctx.js",
+        "beforeBlob": "d1f6232fcc46af708e0efd8f0b1d5fbcddaa2ed1",
+        "afterBlob": "d1f6232fcc46af708e0efd8f0b1d5fbcddaa2ed1",
+        "unchanged": true
+      },
+      {
+        "path": "src/links_cross.js",
+        "beforeBlob": "8ace0c5101ba5561395e15f6e208cfa3e38358af",
+        "afterBlob": "8ace0c5101ba5561395e15f6e208cfa3e38358af",
+        "unchanged": true
+      },
+      {
+        "path": "src/links_twh.js",
+        "beforeBlob": "4c26bfec04ff6019baab66192a3042e125275ba5",
+        "afterBlob": "4c26bfec04ff6019baab66192a3042e125275ba5",
+        "unchanged": true
+      },
+      {
+        "path": "src/preview.js",
+        "beforeBlob": "a2f3402ba8a1c352015a2fa7899fc53de9e75b88",
+        "afterBlob": "a2f3402ba8a1c352015a2fa7899fc53de9e75b88",
+        "unchanged": true
+      }
+    ],
+    "tenFixChecks": [
+      {
+        "id": "pre-g9",
+        "criterion": "正解芝山岩且排除圓山文化干擾",
+        "pass": true
+      },
+      {
+        "id": "twg4-h5",
+        "criterion": "題幹使用國家或地區",
+        "pass": true
+      },
+      {
+        "id": "twg4-g20",
+        "criterion": "生成定義使用國家或地區",
+        "pass": true
+      },
+      {
+        "id": "soc5-g39",
+        "criterion": "正反向皆持續追求使命",
+        "pass": true
+      },
+      {
+        "id": "soc5-g40",
+        "criterion": "正反向皆持續追求使命",
+        "pass": true
+      },
+      {
+        "id": "law7-g40",
+        "criterion": "正反向具證據與不起訴/緩起訴限制",
+        "pass": true
+      },
+      {
+        "id": "law7-g41",
+        "criterion": "正反向具證據與不起訴/緩起訴限制",
+        "pass": true
+      },
+      {
+        "id": "law8-g30",
+        "criterion": "正反向有求償權",
+        "pass": true
+      },
+      {
+        "id": "law8-g31",
+        "criterion": "正反向有求償權",
+        "pass": true
+      },
+      {
+        "id": "eco6-h8",
+        "criterion": "機會成本甲2/乙8香蕉且答案比較利益",
+        "pass": true
+      }
+    ]
+  }
+}

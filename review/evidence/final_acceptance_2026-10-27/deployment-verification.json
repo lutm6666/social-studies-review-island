@@ -1,0 +1,46 @@
+{
+  "checkedAtTaipei": "2026-10-27 23:43:09",
+  "site": "https://lutm6666.github.io/social-studies-review-island/",
+  "httpStatus": 200,
+  "sourceSha": "19ede1cf6ca8e52bddce73e29fadc39724c33c68",
+  "baselineSha": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+  "baselineNormalizedSha256": "6d7e941734ef797266e169861e0e989bb7e51bbe0099e7cd4e94acf0643ce041",
+  "latestNormalizedSha256": "18908e9c3b9c42fdd1eae4ca63cd0e9f1eb9125b36b2e6a0b3d16e3d6674aff4",
+  "sourceNormalizedSha256": "18908e9c3b9c42fdd1eae4ca63cd0e9f1eb9125b36b2e6a0b3d16e3d6674aff4",
+  "liveMatchesSourceAfterLineEndingNormalization": true,
+  "pagesRuns": [
+    {
+      "id": 40531392168,
+      "headSha": "19ede1cf6ca8e52bddce73e29fadc39724c33c68",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/lutm6666/social-studies-review-island/actions/runs/40531392168"
+    },
+    {
+      "id": 40528024330,
+      "headSha": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/lutm6666/social-studies-review-island/actions/runs/40528024330"
+    }
+  ],
+  "browser": "Brave on Windows",
+  "desktopViewportObserved": {
+    "width": 1228,
+    "height": 516
+  },
+  "narrowCssViewports": [
+    {
+      "width": 312,
+      "height": 675
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "physicalMobileTested": false,
+  "temporaryViewportReset": true,
+  "consoleEvidence": "browser-console.json",
+  "note": "Pages success proves deployment, not application test coverage. UI result provenance is recorded per question."
+}

@@ -1,0 +1,50 @@
+{
+  "sourceSha": "19ede1cf6ca8e52bddce73e29fadc39724c33c68",
+  "normalFigureCount": 20,
+  "diagnosticFigureCount": 28,
+  "normalUniqueFigures": 15,
+  "diagnosticUniqueFigures": 18,
+  "restoredByInMemoryDiagnostic": [
+    {
+      "id": "twg4-h9",
+      "question": "下圖的人口金字塔屬於哪一種類型？",
+      "answer": "老化型"
+    },
+    {
+      "id": "twg4-h10",
+      "question": "下圖的人口金字塔屬於哪一種類型？",
+      "answer": "穩定型"
+    },
+    {
+      "id": "asg4-h10",
+      "question": "下圖的氣候類型最可能是？",
+      "answer": "熱帶季風氣候"
+    },
+    {
+      "id": "asg5-h9",
+      "question": "下圖的氣候類型最可能是？",
+      "answer": "沙漠氣候"
+    },
+    {
+      "id": "wdg2-h9",
+      "question": "下圖的氣候類型最可能是？",
+      "answer": "熱帶草原氣候"
+    },
+    {
+      "id": "wdg3-h9",
+      "question": "下圖的氣候類型最可能是？",
+      "answer": "地中海型氣候"
+    },
+    {
+      "id": "wdg3-h10",
+      "question": "下圖的氣候類型最可能是？",
+      "answer": "溫帶海洋性氣候"
+    },
+    {
+      "id": "wdg3-h11",
+      "question": "下圖的氣候類型最可能是？",
+      "answer": "溫帶大陸性氣候"
+    }
+  ],
+  "notes": "Diagnostic comparison changes an in-memory string only; no repository source files modified."
+}

@@ -1,0 +1,387 @@
+[
+  {
+    "id": "asg1-h8",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-asg1-h8.jpg"
+  },
+  {
+    "id": "asg1-h9",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json；最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-asg1-h9.jpg"
+  },
+  {
+    "id": "asg3-g4",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "asg4-h11",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-asg4-h11.jpg"
+  },
+  {
+    "id": "asg4-h9",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-asg4-h9.jpg"
+  },
+  {
+    "id": "asg5-g24",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "asg5-h10",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-asg5-h10.jpg"
+  },
+  {
+    "id": "ces-h30",
+    "status": "成功",
+    "details": "桌機10題輪次：答對、解析及下一題成功（a4cc8cd）；manual-ten-question-results.json／ui-observations.json"
+  },
+  {
+    "id": "cnh3-g56",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "cnh4-g4",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "cnh4-g51",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "cpd-g2",
+    "status": "成功",
+    "details": "桌機10題輪次：故意答錯，解析及選項鎖定正確；重新載入後錯題仍在，重練答對後移除（a4cc8cd）；manual-ten-question-results.json／ui-observations.json"
+  },
+  {
+    "id": "cpd-h40",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（19ede1c）；question-ui-results.json"
+  },
+  {
+    "id": "cpd-h8",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（19ede1c）；question-ui-results.json"
+  },
+  {
+    "id": "cx-wdh5-eco4-0",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "cx-wdh5-eco4-1",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "cx-wdh5-eco4-2",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "eco3-g25",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "eco4-g35",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "eco6-h4",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "eco6-h8",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "jpe-g17",
+    "status": "成功",
+    "details": "桌機10題輪次：答對、解析及下一題成功（a4cc8cd）；manual-ten-question-results.json／ui-observations.json"
+  },
+  {
+    "id": "jpe-g30",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（19ede1c）；question-ui-results.json"
+  },
+  {
+    "id": "jpe-g55",
+    "status": "成功",
+    "details": "桌機10題輪次：答對、解析及下一題成功（a4cc8cd）；manual-ten-question-results.json／ui-observations.json"
+  },
+  {
+    "id": "jpe-h3",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（19ede1c）；question-ui-results.json"
+  },
+  {
+    "id": "jsc-h0",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（19ede1c）；question-ui-results.json"
+  },
+  {
+    "id": "law6-h2",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "law7-g32",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "law7-g40",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "law7-g41",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "law8-g30",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "law8-g31",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "lk-jsc-cpd-0",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "pre-g15",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "pre-g26",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（19ede1c）；question-ui-results.json"
+  },
+  {
+    "id": "pre-g5",
+    "status": "成功",
+    "details": "桌機10題輪次：答對、解析及下一題成功（a4cc8cd）；manual-ten-question-results.json／ui-observations.json"
+  },
+  {
+    "id": "pre-g9",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "qpe-g13",
+    "status": "成功",
+    "details": "桌機10題輪次：答對、解析及下一題成功（a4cc8cd）；manual-ten-question-results.json／ui-observations.json"
+  },
+  {
+    "id": "qpe-g26",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "qpe-h40",
+    "status": "成功",
+    "details": "桌機10題輪次：答對、解析及下一題成功（a4cc8cd）；manual-ten-question-results.json／ui-observations.json"
+  },
+  {
+    "id": "qsc-g33",
+    "status": "成功",
+    "details": "桌機10題輪次：答對、解析及下一題成功（a4cc8cd）；manual-ten-question-results.json／ui-observations.json"
+  },
+  {
+    "id": "qsc-g54",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（19ede1c）；question-ui-results.json"
+  },
+  {
+    "id": "qsc-g6",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（19ede1c）；question-ui-results.json"
+  },
+  {
+    "id": "qsc-h38",
+    "status": "成功",
+    "details": "桌機10題輪次：答對、解析及下一題成功（a4cc8cd）；manual-ten-question-results.json／ui-observations.json"
+  },
+  {
+    "id": "soc1-g14",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "soc3-g10",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "soc3-g11",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "soc3-g16",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "soc5-g39",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "soc5-g40",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "twg3-h10",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-twg3-h10.jpg"
+  },
+  {
+    "id": "twg3-h11",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-twg3-h11.jpg"
+  },
+  {
+    "id": "twg3-h12",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-twg3-h12.jpg"
+  },
+  {
+    "id": "twg3-h9",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-twg3-h9.jpg"
+  },
+  {
+    "id": "twg4-g20",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "twg4-h11",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-twg4-h11.jpg"
+  },
+  {
+    "id": "twg4-h12",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-twg4-h12.jpg"
+  },
+  {
+    "id": "twg4-h5",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "twg4-h8",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json；最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-twg4-h8.jpg"
+  },
+  {
+    "id": "twg5-h7",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json；最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-twg5-h7.jpg"
+  },
+  {
+    "id": "twg5-h8",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-twg5-h8.jpg"
+  },
+  {
+    "id": "twg5-h9",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-twg5-h9.jpg"
+  },
+  {
+    "id": "twg6-g20",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "twg6-h7",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "voy-g43",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（19ede1c）；question-ui-results.json"
+  },
+  {
+    "id": "voy-h17",
+    "status": "成功",
+    "details": "桌機10題輪次：答對、解析及下一題成功（a4cc8cd）；manual-ten-question-results.json／ui-observations.json"
+  },
+  {
+    "id": "wdg1-g27",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "wdg1-h10",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-wdg1-h10.jpg"
+  },
+  {
+    "id": "wdg1-h11",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-wdg1-h11.jpg"
+  },
+  {
+    "id": "wdg1-h9",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-wdg1-h9.jpg"
+  },
+  {
+    "id": "wdg2-h10",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-wdg2-h10.jpg"
+  },
+  {
+    "id": "wdg3-h12",
+    "status": "成功",
+    "details": "最新部署圖表完整渲染、實際作答及解析成功，20/20結算（19ede1c）；chart-ui-results.json／chart-wdg3-h12.jpg"
+  },
+  {
+    "id": "wdg4-g26",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "wdh1-h6",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "wdh5-g39",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "wdh5-g41",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（a4cc8cd）；question-ui-results.json"
+  },
+  {
+    "id": "x-g75",
+    "status": "成功",
+    "details": "瀏覽器點選、正解回饋與下一題／結算成功（19ede1c）；question-ui-results.json"
+  }
+]

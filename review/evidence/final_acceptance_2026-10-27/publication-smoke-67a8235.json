@@ -1,0 +1,40 @@
+{
+  "sourceSha": "67a82350305eee58812cfc14b31c4ca64aa8b506",
+  "steps": [
+    {
+      "label": "reload",
+      "text": "- generic \"可以拖曳旋轉的 3D 社會科群島\"\n- status:\n  - paragraph: 國中社會．108 課綱總複習\n  - paragraph: 社會科複習島\n  - paragraph: 正在建造群島…\n- button \"臺灣史島\":\n  - generic: 臺灣史島\n- button \"中國與東亞史島\":\n  - generic: 中國與東亞史島\n- button \"世界史島\":\n  - generic: 世界史島\n- button \"臺灣地理島\":\n  - generic: 臺灣地理島\n- button \"亞洲島\":\n  - generic: 亞洲島\n- button \"世界島\":\n  - generic: 世界島\n- button \"社會生活島\":\n  - generic: 社會生活島\n- button \"政治與法律島\":\n  - generic: 政治與法律島\n- button \"經濟與全球島\":\n  - generic: 經濟與全球島\n- button \"🍾 錯題島\":\n  - generic: 🍾 錯題島\n- button \"隱藏介面，只看小島\":\n- banner:\n  - button \"收合面板\" [expanded]: –\n  - paragraph: 國中社會．108 課綱總複習\n  - heading \"社會科複習島\" [level=1]\n  - paragraph: 已答對 77 / 3807 題．熟練 20．開放 9 / 9 座島\n  - paragraph: 進度存在這台裝置\n  - list:\n    - listitem: 歷史\n    - listitem: 地理\n    - listitem: 公民\n  - button \"今日複習 ✓\" [disabled]\n  - button \"會考模擬\"\n  - button \"搜尋題目\"\n  - button \"省電模式\"\n  - button \"大字模式\"\n  - button \"精簡卡片\"\n- paragraph: 拖曳旋轉．滾輪或雙指縮放．點一座島開始複習\n- navigation \"島嶼列表\":\n  - button \"錯題島 沒有錯題\":\n    - generic: 🍾\n    - generic: 錯題島\n    - generic: 沒有錯題\n  - button \"臺灣史島 七年級\":\n    - generic: 臺灣史島\n    - generic: 七年級\n  - button \"中國與東亞史島 八年級\":\n    - generic: 中國與東亞史島\n    - generic: 八年級\n  - button \"世界史島 九年級\":\n    - generic: 世界史島\n    - generic: 九年級\n  - button \"臺灣地理島 七年級\":\n    - generic: 臺灣地理島\n    - generic: 七年級\n  - button \"亞洲島 八年級\":\n    - generic: 亞洲島\n    - generic: 八年級\n  - button \"世界島 九年級\":\n    - generic: 世界島\n    - generic: 九年級\n  - button \"社會生活島 七年級\":\n    - generic: 社會生活島\n    - generic: 七年級\n  - button \"政治與法律島 八年級\":\n    - generic: 政治與法律島\n    - generic: 八年級\n  - button \"經濟與全球島 九年級\":\n    - generic: 經濟與全球島\n    - generic: 九年級\n  - button \"跨科航線 11 條．三科串連\":\n    - generic: ⛵\n    - generic: 跨科航線\n    - generic: 11 條．三科串連"
+    },
+    {
+      "label": "wide-island-card",
+      "text": "- generic \"可以拖曳旋轉的 3D 社會科群島\"\n- button \"臺灣史島 七年級．925 題\":\n  - generic: 臺灣史島\n  - generic: 七年級．925 題\n- button \"中國與東亞史島 八年級．450 題\":\n  - generic: 中國與東亞史島\n  - generic: 八年級．450 題\n- button \"世界史島 九年級．444 題\":\n  - generic: 世界史島\n  - generic: 九年級．444 題\n- button \"臺灣地理島 七年級．486 題\":\n  - generic: 臺灣地理島\n  - generic: 七年級．486 題\n- button \"亞洲島 八年級．284 題\":\n  - generic: 亞洲島\n  - generic: 八年級．284 題\n- button \"世界島 九年級．239 題\":\n  - generic: 世界島\n  - generic: 九年級．239 題\n- button \"社會生活島 七年級．262 題\":\n  - generic: 社會生活島\n  - generic: 七年級．262 題\n- button \"政治與法律島 八年級．396 題\":\n  - generic: 政治與法律島\n  - generic: 八年級．396 題\n- button \"經濟與全球島 九年級．288 題\":\n  - generic: 經濟與全球島\n  - generic: 九年級．288 題\n- button \"🍾 錯題島 沒有錯題\":\n  - generic: 🍾 錯題島\n  - generic: 沒有錯題\n- button \"隱藏介面，只看小島\":\n- banner:\n  - button \"‹ 回到群島\"\n- paragraph: 拖曳旋轉．滾輪或雙指縮放．點一座島開始複習\n- generic: 歷史．七年級\n- heading \"臺灣史島\" [level=2]\n- paragraph: 8 座章節小島依時代排成一圈．發光弧線是跨章節的因果題．答對越多，小島越熱鬧\n- paragraph: 925 題．做過 24 題．答對率 92%\n- button \"整座島隨機 20 題\"\n- button \"難度與統計\"\n- navigation \"島嶼列表\":\n  - button \"史前遺址 歷Ba\":\n    - generic: 史前遺址\n    - generic: 歷Ba\n  - button \"熱蘭遮城 歷Bb\":\n    - generic: 熱蘭遮城\n    - generic: 歷Bb\n  - button \"郊商碼頭 歷Ca\":\n    - generic: 郊商碼頭\n    - generic: 歷Ca\n  - button \"書院廟埕 歷Cb\":\n    - generic: 書院廟埕\n    - generic: 歷Cb\n  - button \"糖廠煙囪 歷Ea\":\n    - generic: 糖廠煙囪\n    - generic: 歷Ea\n  - button \"公學校 歷Eb\":\n    - generic: 公學校\n    - generic: 歷Eb\n  - button \"民主廣場 歷Fa\":\n    - generic: 民主廣場\n    - generic: 歷Fa\n  - button \"加工出口區 歷Fb\":\n    - generic: 加工出口區\n    - generic: 歷Fb\n  - button \"漢人移墾 熱蘭遮城 → 郊商碼頭\":\n    - generic: ⇢\n    - generic: 漢人移墾\n    - generic: 熱蘭遮城 → 郊商碼頭\n  - button \"開港帶來新文化 郊商碼頭 → 書院廟埕\":\n    - generic: ⇢\n    - generic: 開港帶來新文化\n    - generic: 郊商碼頭 → 書院廟埕\n  - button \"產業需要新教育 糖廠煙囪 → 公學校\":\n    - generic: ⇢\n    - generic: 產業需要新教育\n    - generic: 糖廠煙囪 → 公學校\n  - button \"建設奠定工業基礎 糖廠煙囪 → 加工出口區\":\n    - generic: ⇢\n    - generic: 建設奠定工業基礎\n    - generic: 糖廠煙囪 → 加工出口區\n  - button \"社會運動到民主 公學校 → 民主廣場\":\n    - generic: ⇢\n    - generic: 社會運動到民主\n    - generic: 公學校 → 民主廣場\n  - button \"經濟成長推動民主 加工出口區 → 民主廣場\":\n    - generic: ⇢\n    - generic: 經濟成長推動民主\n    - generic: 加工出口區 → 民主廣場"
+    },
+    {
+      "label": "midnight-review-due",
+      "text": "- generic \"可以拖曳旋轉的 3D 社會科群島\"\n- button \"臺灣史島\":\n  - generic: 臺灣史島\n- button \"中國與東亞史島\":\n  - generic: 中國與東亞史島\n- button \"世界史島\":\n  - generic: 世界史島\n- button \"臺灣地理島\":\n  - generic: 臺灣地理島\n- button \"亞洲島\":\n  - generic: 亞洲島\n- button \"世界島\":\n  - generic: 世界島\n- button \"社會生活島\":\n  - generic: 社會生活島\n- button \"政治與法律島\":\n  - generic: 政治與法律島\n- button \"經濟與全球島\":\n  - generic: 經濟與全球島\n- button \"🍾 錯題島\":\n  - generic: 🍾 錯題島\n- banner:\n  - button \"收合面板\" [expanded]: –\n  - paragraph: 國中社會．108 課綱總複習\n  - heading \"社會科複習島\" [level=1]\n  - paragraph: 已答對 77 / 3807 題．熟練 20．開放 9 / 9 座島\n  - paragraph: 進度存在這台裝置\n  - list:\n    - listitem: 歷史\n    - listitem: 地理\n    - listitem: 公民\n  - button \"今日複習 57 題\"\n  - button \"會考模擬\"\n  - button \"搜尋題目\"\n  - button \"省電模式\"\n  - button \"大字模式\"\n  - button \"精簡卡片\"\n- paragraph: 拖曳旋轉．滾輪或雙指縮放．點一座島開始複習\n- navigation \"島嶼列表\":\n  - button \"錯題島 沒有錯題\":\n    - generic: 🍾\n    - generic: 錯題島\n    - generic: 沒有錯題\n  - button \"臺灣史島 七年級\":\n    - generic: 臺灣史島\n    - generic: 七年級\n  - button \"中國與東亞史島 八年級\":\n    - generic: 中國與東亞史島\n    - generic: 八年級\n  - button \"世界史島 九年級\":\n    - generic: 世界史島\n    - generic: 九年級\n  - button \"臺灣地理島 七年級\":\n    - generic: 臺灣地理島\n    - generic: 七年級\n  - button \"亞洲島 八年級\":\n    - generic: 亞洲島\n    - generic: 八年級\n  - button \"世界島 九年級\":\n    - generic: 世界島\n    - generic: 九年級\n  - button \"社會生活島 七年級\":\n    - generic: 社會生活島\n    - generic: 七年級\n  - button \"政治與法律島 八年級\":\n    - generic: 政治與法律島\n    - generic: 八年級\n  - button \"經濟與全球島 九年級\":\n    - generic: 經濟與全球島\n    - generic: 九年級\n  - button \"跨科航線 11 條．三科串連\":\n    - generic: ⛵\n    - generic: 跨科航線\n    - generic: 11 條．三科串連\n- dialog \"搜尋題目\":\n  - generic: 全部島嶼\n  - button \"關閉\": ×\n  - heading \"搜尋題目\" [level=2]\n  - paragraph: 輸入關鍵字，找出相關題目一起練\n  - text: 關鍵字\n  - searchbox \"關鍵字\" [active]: 根據下圖，從甲到丙時期\n  - button \"練這些題（隨機 1 題，共 1 題）\"\n  - list:\n    - paragraph: 臺灣地理島．產業發展\n    - paragraph: 根據下圖，從甲到丙時期，該國產業結構的變化趨勢是？"
+    },
+    {
+      "label": "industry-question",
+      "text": "全部島嶼\n×\n搜尋：根據下圖，從甲到丙時期\n\n題目或選項含有「根據下圖，從甲到丙時期」\n\n1 / 1\n中等\n產業發展\n100%\n75%\n50%\n25%\n0%\n50\n20\n30\n甲時期\n20\n40\n40\n乙時期\n35\n60\n丙時期\n第一級\n第二級\n第三級\n某國就業人口的產業結構（示意，單位：%）\n\n根據下圖，從甲到丙時期，該國產業結構的變化趨勢是？\n\nA\n第一級產業比例下降，第三級產業比例上升\nB\n第一級產業比例持續上升\nC\n第二級產業比例一直最高\nD\n三級產業比例都沒有改變"
+    },
+    {
+      "label": "industry-correct-feedback",
+      "text": "全部島嶼\n×\n搜尋：根據下圖，從甲到丙時期\n\n題目或選項含有「根據下圖，從甲到丙時期」\n\n1 / 1\n中等\n產業發展\n100%\n75%\n50%\n25%\n0%\n50\n20\n30\n甲時期\n20\n40\n40\n乙時期\n35\n60\n丙時期\n第一級\n第二級\n第三級\n某國就業人口的產業結構（示意，單位：%）\n\n根據下圖，從甲到丙時期，該國產業結構的變化趨勢是？\n\nA\n第一級產業比例下降，第三級產業比例上升\nB\n第一級產業比例持續上升\nC\n第二級產業比例一直最高\nD\n三級產業比例都沒有改變\n✓\n答對了\n\n圖中第一級產業由 50% 降到 5%，第三級產業由 30% 升到 60%，是經濟發展常見的變化。\n\n下次複習：30 天後\n⚑ 這題有疑問\n看成績"
+    },
+    {
+      "label": "industry-result-1-of-1",
+      "text": "全部島嶼\n×\n搜尋：根據下圖，從甲到丙時期\n\n題目或選項含有「根據下圖，從甲到丙時期」\n\n1\n/1\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n中等\n1 / 1\n再來 20 題\n回到島上"
+    }
+  ],
+  "checkedAtTaipei": "2026-10-28 00:02:18",
+  "httpStatus": 200,
+  "liveMatchesSourceAfterLineEndingNormalization": true,
+  "normalizedLiveSha256": "b62aebb55a372101f6e11c9434ae4b6bb323129dbab9fe85834008a12d6a8573",
+  "changedFilesFrom19ede": [
+    "index.html",
+    "src/app.html",
+    "src/app.js"
+  ],
+  "questionEngineFigureAndExportFilesUnchanged": true,
+  "scope": "Limited reload/card/one existing industry question smoke; not full regression"
+}

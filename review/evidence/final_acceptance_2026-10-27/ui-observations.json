@@ -1,0 +1,314 @@
+[
+  {
+    "label": "10-question-start",
+    "text": "- generic \"可以拖曳旋轉的 3D 社會科群島\"\n- button \"臺灣史島 七年級．925 題\":\n  - generic: 臺灣史島\n  - generic: 七年級．925 題\n- button \"1 史前遺址 0/110\":\n  - generic: \"1\"\n  - text: 史前遺址\n  - generic: 0/110\n- button \"2 熱蘭遮城 0/94\":\n  - generic: \"2\"\n  - text: 熱蘭遮城\n  - generic: 0/94\n- button \"3 郊商碼頭 0/100\":\n  - generic: \"3\"\n  - text: 郊商碼頭\n  - generic: 0/100\n- button \"4 書院廟埕 0/100\":\n  - generic: \"4\"\n  - text: 書院廟埕\n  - generic: 0/100\n- button \"5 糖廠煙囪 0/107\":\n  - generic: \"5\"\n  - text: 糖廠煙囪\n  - generic: 0/107\n- button \"6 公學校 0/94\":\n  - generic: \"6\"\n  - text: 公學校\n  - generic: 0/94\n- button \"7 民主廣場 0/95\":\n  - generic: \"7\"\n  - text: 民主廣場\n  - generic: 0/95\n- button \"8 加工出口區 0/92\":\n  - generic: \"8\"\n  - text: 加工出口區\n  - generic: 0/92\n- button \"中國與東亞史島 八年級．450 題\":\n  - generic: 中國與東亞史島\n  - generic: 八年級．450 題\n- button \"世界史島 九年級．444 題\":\n  - generic: 世界史島\n  - generic: 九年級．444 題\n- button \"臺灣地理島 七年級．486 題\":\n  - generic: 臺灣地理島\n  - generic: 七年級．486 題\n- button \"亞洲島 八年級．284 題\":\n  - generic: 亞洲島\n  - generic: 八年級．284 題\n- button \"世界島 九年級．239 題\":\n  - generic: 世界島\n  - generic: 九年級．239 題\n- button \"社會生活島 七年級．262 題\":\n  - generic: 社會生活島\n  - generic: 七年級．262 題\n- button \"政治與法律島 八年級．396 題\":\n  - generic: 政治與法律島\n  - generic: 八年級．396 題\n- button \"經濟與全球島 九年級．288 題\":\n  - generic: 經濟與全球島\n  - generic: 九年級．288 題\n- button \"因果航線：漢人移墾\":\n  - generic: ⇢\n- button \"因果航線：開港帶來新文化\":\n  - generic: ⇢\n- button \"因果航線：產業需要新教育\":\n  - generic: ⇢\n- button \"因果航線：建設奠定工業基礎\":\n  - generic: ⇢\n- button \"因果航線：社會運動到民主\":\n  - generic: ⇢\n- button \"因果航線：經濟成長推動民主\":\n  - generic: ⇢\n- button \"🍾 錯題島 沒有錯題\":\n  - generic: 🍾 錯題島\n  - generic: 沒有錯題\n- banner:\n  - button \"‹ 回到群島\"\n- paragraph: 拖曳旋轉．滾輪或雙指縮放．點一座島開始複習\n- navigation \"島嶼列表\":\n  - button \"史前遺址 歷Ba\":\n    - generic: 史前遺址\n    - generic: 歷Ba\n  - button \"熱蘭遮城 歷Bb\":\n    - generic: 熱蘭遮城\n    - generic: 歷Bb\n  - button \"郊商碼頭 歷Ca\":\n    - generic: 郊商碼頭\n    - generic: 歷Ca\n  - button \"書院廟埕 歷Cb\":\n    - generic: 書院廟埕\n    - generic: 歷Cb\n  - button \"糖廠煙囪 歷Ea\":\n    - generic: 糖廠煙囪\n    - generic: 歷Ea\n  - button \"公學校 歷Eb\":\n    - generic: 公學校\n    - generic: 歷Eb\n  - button \"民主廣場 歷Fa\":\n    - generic: 民主廣場\n    - generic: 歷Fa\n  - button \"加工出口區 歷Fb\":\n    - generic: 加工出口區\n    - generic: 歷Fb\n  - button \"漢人移墾 熱蘭遮城 → 郊商碼頭\":\n    - generic: ⇢\n    - generic: 漢人移墾\n    - generic: 熱蘭遮城 → 郊商碼頭\n  - button \"開港帶來新文化 郊商碼頭 → 書院廟埕\":\n    - generic: ⇢\n    - generic: 開港帶來新文化\n    - generic: 郊商碼頭 → 書院廟埕\n  - button \"產業需要新教育 糖廠煙囪 → 公學校\":\n    - generic: ⇢\n    - generic: 產業需要新教育\n    - generic: 糖廠煙囪 → 公學校\n  - button \"建設奠定工業基礎 糖廠煙囪 → 加工出口區\":\n    - generic: ⇢\n    - generic: 建設奠定工業基礎\n    - generic: 糖廠煙囪 → 加工出口區\n  - button \"社會運動到民主 公學校 → 民主廣場\":\n    - generic: ⇢\n    - generic: 社會運動到民主\n    - generic: 公學校 → 民主廣場\n  - button \"經濟成長推動民主 加工出口區 → 民主廣場\":\n    - generic: ⇢\n    - generic: 經濟成長推動民主\n    - generic: 加工出口區 → 民主廣場\n- dialog \"整座島隨機\":\n  - generic: 臺灣史島\n  - button \"關閉\": ×\n  - heading \"整座島隨機\" [level=2]\n  - paragraph: 臺灣史島全部小主題＋跨時期與因果航線題\n  - progressbar\n  - generic: 1 / 10\n  - generic: 中等\n  - generic: 民主廣場\n  - paragraph: 「雷震」最為人所知的是？\n  - list \"「雷震」最為人所知的是？\":\n    - button \"A 擔任臺灣省行政長官\" [active]:\n      - generic: A\n      - generic: 擔任臺灣省行政長官\n    - button \"B 在第二次中央政黨輪替後就任總統\":\n      - generic: B\n      - generic: 在第二次中央政黨輪替後就任總統\n    - button \"C 首位民選總統\":\n      - generic: C\n      - generic: 首位民選總統\n    - button \"D 創辦《自由中國》、籌組新政黨被捕\":\n      - generic: D\n      - generic: 創辦《自由中國》、籌組新政黨被捕"
+  },
+  {
+    "label": "q1-wrong-feedback",
+    "text": "- generic \"可以拖曳旋轉的 3D 社會科群島\"\n- button \"臺灣史島 七年級．925 題\":\n  - generic: 臺灣史島\n  - generic: 七年級．925 題\n- button \"1 史前遺址 0/110\":\n  - generic: \"1\"\n  - text: 史前遺址\n  - generic: 0/110\n- button \"2 熱蘭遮城 0/94\":\n  - generic: \"2\"\n  - text: 熱蘭遮城\n  - generic: 0/94\n- button \"3 郊商碼頭 0/100\":\n  - generic: \"3\"\n  - text: 郊商碼頭\n  - generic: 0/100\n- button \"4 書院廟埕 0/100\":\n  - generic: \"4\"\n  - text: 書院廟埕\n  - generic: 0/100\n- button \"5 糖廠煙囪 0/107\":\n  - generic: \"5\"\n  - text: 糖廠煙囪\n  - generic: 0/107\n- button \"6 公學校 0/94\":\n  - generic: \"6\"\n  - text: 公學校\n  - generic: 0/94\n- button \"7 民主廣場 0/95\":\n  - generic: \"7\"\n  - text: 民主廣場\n  - generic: 0/95\n- button \"8 加工出口區 0/92\":\n  - generic: \"8\"\n  - text: 加工出口區\n  - generic: 0/92\n- button \"中國與東亞史島 八年級．450 題\":\n  - generic: 中國與東亞史島\n  - generic: 八年級．450 題\n- button \"世界史島 九年級．444 題\":\n  - generic: 世界史島\n  - generic: 九年級．444 題\n- button \"臺灣地理島 七年級．486 題\":\n  - generic: 臺灣地理島\n  - generic: 七年級．486 題\n- button \"亞洲島 八年級．284 題\":\n  - generic: 亞洲島\n  - generic: 八年級．284 題\n- button \"世界島 九年級．239 題\":\n  - generic: 世界島\n  - generic: 九年級．239 題\n- button \"社會生活島 七年級．262 題\":\n  - generic: 社會生活島\n  - generic: 七年級．262 題\n- button \"政治與法律島 八年級．396 題\":\n  - generic: 政治與法律島\n  - generic: 八年級．396 題\n- button \"經濟與全球島 九年級．288 題\":\n  - generic: 經濟與全球島\n  - generic: 九年級．288 題\n- button \"因果航線：漢人移墾\":\n  - generic: ⇢\n- button \"因果航線：開港帶來新文化\":\n  - generic: ⇢\n- button \"因果航線：產業需要新教育\":\n  - generic: ⇢\n- button \"因果航線：建設奠定工業基礎\":\n  - generic: ⇢\n- button \"因果航線：社會運動到民主\":\n  - generic: ⇢\n- button \"因果航線：經濟成長推動民主\":\n  - generic: ⇢\n- button \"🍾 錯題島 沒有錯題\":\n  - generic: 🍾 錯題島\n  - generic: 沒有錯題\n- banner:\n  - button \"‹ 回到群島\"\n- paragraph: 拖曳旋轉．滾輪或雙指縮放．點一座島開始複習\n- navigation \"島嶼列表\":\n  - button \"史前遺址 歷Ba\":\n    - generic: 史前遺址\n    - generic: 歷Ba\n  - button \"熱蘭遮城 歷Bb\":\n    - generic: 熱蘭遮城\n    - generic: 歷Bb\n  - button \"郊商碼頭 歷Ca\":\n    - generic: 郊商碼頭\n    - generic: 歷Ca\n  - button \"書院廟埕 歷Cb\":\n    - generic: 書院廟埕\n    - generic: 歷Cb\n  - button \"糖廠煙囪 歷Ea\":\n    - generic: 糖廠煙囪\n    - generic: 歷Ea\n  - button \"公學校 歷Eb\":\n    - generic: 公學校\n    - generic: 歷Eb\n  - button \"民主廣場 歷Fa\":\n    - generic: 民主廣場\n    - generic: 歷Fa\n  - button \"加工出口區 歷Fb\":\n    - generic: 加工出口區\n    - generic: 歷Fb\n  - button \"漢人移墾 熱蘭遮城 → 郊商碼頭\":\n    - generic: ⇢\n    - generic: 漢人移墾\n    - generic: 熱蘭遮城 → 郊商碼頭\n  - button \"開港帶來新文化 郊商碼頭 → 書院廟埕\":\n    - generic: ⇢\n    - generic: 開港帶來新文化\n    - generic: 郊商碼頭 → 書院廟埕\n  - button \"產業需要新教育 糖廠煙囪 → 公學校\":\n    - generic: ⇢\n    - generic: 產業需要新教育\n    - generic: 糖廠煙囪 → 公學校\n  - button \"建設奠定工業基礎 糖廠煙囪 → 加工出口區\":\n    - generic: ⇢\n    - generic: 建設奠定工業基礎\n    - generic: 糖廠煙囪 → 加工出口區\n  - button \"社會運動到民主 公學校 → 民主廣場\":\n    - generic: ⇢\n    - generic: 社會運動到民主\n    - generic: 公學校 → 民主廣場\n  - button \"經濟成長推動民主 加工出口區 → 民主廣場\":\n    - generic: ⇢\n    - generic: 經濟成長推動民主\n    - generic: 加工出口區 → 民主廣場\n- dialog \"整座島隨機\":\n  - generic: 臺灣史島\n  - button \"關閉\": ×\n  - heading \"整座島隨機\" [level=2]\n  - paragraph: 臺灣史島全部小主題＋跨時期與因果航線題\n  - progressbar\n  - generic: 1 / 10\n  - generic: 中等\n  - generic: 民主廣場\n  - paragraph: 「雷震」最為人所知的是？\n  - list \"「雷震」最為人所知的是？\":\n    - button \"A 擔任臺灣省行政長官\" [disabled]:\n      - generic: A\n      - generic: 擔任臺灣省行政長官\n    - button \"B 在第二次中央政黨輪替後就任總統\" [disabled]:\n      - generic: B\n      - generic: 在第二次中央政黨輪替後就任總統\n    - button \"C 首位民選總統\" [disabled]:\n      - generic: C\n      - generic: 首位民選總統\n    - button \"D 創辦《自由中國》、籌組新政黨被捕\" [disabled]:\n      - generic: D\n      - generic: 創辦《自由中國》、籌組新政黨被捕\n  - generic: ✕\n  - strong: 答錯了\n  - generic: 正解\n  - generic: 創辦《自由中國》、籌組新政黨被捕\n  - paragraph: 「雷震」的重點是：創辦《自由中國》、籌組新政黨被捕。容易混淆的選項：「擔任臺灣省行政長官」說的是陳儀；「在第二次中央政黨輪替後就任總統」說的是馬英九；「首位民選總統」說的是李登輝。\n  - generic: 下次複習：明天\n  - button \"⚑ 這題有疑問\"\n  - button \"下一題\" [active]"
+  },
+  {
+    "label": "q2",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n2 / 10\n困難\n郊商碼頭\n\n清廷後來陸續開放鹿港、八里坌與大陸對渡，反映了什麼？\n\nA\n清廷不再管理臺灣\nB\n臺灣南部人口減少\nC\n外國人要求開港\nD\n臺灣中北部逐漸開發"
+  },
+  {
+    "label": "q2-correct",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n2 / 10\n困難\n郊商碼頭\n\n清廷後來陸續開放鹿港、八里坌與大陸對渡，反映了什麼？\n\nA\n清廷不再管理臺灣\nB\n臺灣南部人口減少\nC\n外國人要求開港\nD\n臺灣中北部逐漸開發\n✓\n答對了\n\n對渡口岸北移，顯示開發由南向北擴展。\n\n下次複習：明天\n⚑ 這題有疑問\n下一題"
+  },
+  {
+    "label": "q3",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n3 / 10\n困難\n熱蘭遮城\n\n1628 年日本商人因不滿荷蘭課稅而挾持荷蘭長官的事件是？\n\nA\n牡丹社事件\nB\n霧社事件\nC\n濱田彌兵衛事件\nD\n麻豆事件"
+  },
+  {
+    "label": "q3-correct",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n3 / 10\n困難\n熱蘭遮城\n\n1628 年日本商人因不滿荷蘭課稅而挾持荷蘭長官的事件是？\n\nA\n牡丹社事件\nB\n霧社事件\nC\n濱田彌兵衛事件\nD\n麻豆事件\n✓\n答對了\n\n日本商人不滿荷蘭課稅，濱田彌兵衛挾持長官諾易茲。\n\n下次複習：明天\n⚑ 這題有疑問\n下一題"
+  },
+  {
+    "label": "q4",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n4 / 10\n簡單\n糖廠煙囪\n\n「領導霧社事件的賽德克族頭目」指的是哪一位？\n\nA\n莫那魯道\nB\n樺山資紀\nC\n後藤新平\nD\n田健治郎"
+  },
+  {
+    "label": "q4-correct",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n4 / 10\n簡單\n糖廠煙囪\n\n「領導霧社事件的賽德克族頭目」指的是哪一位？\n\nA\n莫那魯道\nB\n樺山資紀\nC\n後藤新平\nD\n田健治郎\n✓\n答對了\n\n「領導霧社事件的賽德克族頭目」說的是「莫那魯道」。其他選項：「田健治郎」是首位文官總督；「樺山資紀」是首任臺灣總督；「後藤新平」是主張生物學原則的民政長官。\n\n下次複習：明天\n⚑ 這題有疑問\n下一題"
+  },
+  {
+    "label": "q5",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n5 / 10\n困難\n糖廠煙囪\n\n「米糖相剋」最主要的原因是？\n\nA\n南進政策\nB\n縱貫鐵路通車\nC\n蓬萊米推廣種植\nD\n土地調查清查隱田"
+  },
+  {
+    "label": "q5-correct",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n5 / 10\n困難\n糖廠煙囪\n\n「米糖相剋」最主要的原因是？\n\nA\n南進政策\nB\n縱貫鐵路通車\nC\n蓬萊米推廣種植\nD\n土地調查清查隱田\n✓\n答對了\n\n米糖相剋，最主要是因為「蓬萊米推廣種植」。其他選項會帶來別的結果：「縱貫鐵路通車」導致南北交通往來便利；「南進政策」導致臺灣推動軍需工業化；「土地調查清查隱田」導致總督府稅收大增。\n\n下次複習：明天\n⚑ 這題有疑問\n下一題"
+  },
+  {
+    "label": "q6",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n6 / 10\n困難\n加工出口區\n\n戰後臺灣產業結構的變化，最接近下列哪一種描述？\n\nA\n從重化工業直接轉為農業\nB\n一直以農業為主沒有改變\nC\n以農業為主，逐步轉向工業，再升級到高科技產業\nD\n從高科技產業退回農業"
+  },
+  {
+    "label": "q6-correct",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n6 / 10\n困難\n加工出口區\n\n戰後臺灣產業結構的變化，最接近下列哪一種描述？\n\nA\n從重化工業直接轉為農業\nB\n一直以農業為主沒有改變\nC\n以農業為主，逐步轉向工業，再升級到高科技產業\nD\n從高科技產業退回農業\n✓\n答對了\n\n臺灣以農業培養工業，再逐步升級到高科技產業。\n\n下次複習：明天\n⚑ 這題有疑問\n下一題"
+  },
+  {
+    "label": "q7",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n7 / 10\n簡單\n郊商碼頭\n\n「領導天地會發動清代最大規模民變」指的是哪一位？\n\nA\n施世榜\nB\n劉銘傳\nC\n曹謹\nD\n林爽文"
+  },
+  {
+    "label": "q7-correct",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n7 / 10\n簡單\n郊商碼頭\n\n「領導天地會發動清代最大規模民變」指的是哪一位？\n\nA\n施世榜\nB\n劉銘傳\nC\n曹謹\nD\n林爽文\n✓\n答對了\n\n「領導天地會發動清代最大規模民變」說的是「林爽文」。其他選項：「曹謹」是以鳳山知縣身分主持興建水圳；「劉銘傳」是臺灣建省後首任巡撫，推動鐵路與電報；「施世榜」是興建彰化平原的八堡圳。\n\n下次複習：明天\n⚑ 這題有疑問\n下一題"
+  },
+  {
+    "label": "q8",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n8 / 10\n簡單\n史前遺址\n\n代表遺址位於「臺東卑南」的史前文化是？\n\nA\n蔦松文化\nB\n芝山岩文化\nC\n長濱文化\nD\n卑南文化"
+  },
+  {
+    "label": "q8-correct",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n8 / 10\n簡單\n史前遺址\n\n代表遺址位於「臺東卑南」的史前文化是？\n\nA\n蔦松文化\nB\n芝山岩文化\nC\n長濱文化\nD\n卑南文化\n✓\n答對了\n\n「臺東卑南」說的是「卑南文化」。其他選項：「長濱文化」是臺東長濱八仙洞；「蔦松文化」是臺南永康蔦松；「芝山岩文化」是臺北士林芝山岩。\n\n下次複習：明天\n⚑ 這題有疑問\n下一題"
+  },
+  {
+    "label": "q9",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n9 / 10\n簡單\n書院廟埕\n\n「清代為原住民兒童設立的學校」指的是？\n\nA\n番屯\nB\n社學\nC\n敬字亭\nD\n書院"
+  },
+  {
+    "label": "q9-correct",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n9 / 10\n簡單\n書院廟埕\n\n「清代為原住民兒童設立的學校」指的是？\n\nA\n番屯\nB\n社學\nC\n敬字亭\nD\n書院\n✓\n答對了\n\n「清代為原住民兒童設立的學校」說的是「社學」。其他選項：「書院」是官方或民間設立的講學機構；「敬字亭」是焚燒寫有文字紙張的設施；「番屯」是挑選平埔族人駐守邊界的制度。\n\n下次複習：明天\n⚑ 這題有疑問\n下一題"
+  },
+  {
+    "label": "q10",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n10 / 10\n中等\n書院廟埕\n\n清代宗族常設置「祭祀公業」，主要用途是？\n\nA\n設立官府\nB\n以共有財產支付祭祖費用\nC\n經營對外貿易\nD\n組織軍隊"
+  },
+  {
+    "label": "q10-correct",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n10 / 10\n中等\n書院廟埕\n\n清代宗族常設置「祭祀公業」，主要用途是？\n\nA\n設立官府\nB\n以共有財產支付祭祖費用\nC\n經營對外貿易\nD\n組織軍隊\n✓\n答對了\n\n祭祀公業是宗族共有的財產，用於祭祀與族人福利。\n\n下次複習：明天\n⚑ 這題有疑問\n看成績"
+  },
+  {
+    "label": "10-question-result",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n9\n/10\n\n表現不錯\n\n不錯！把下面答錯的題目看熟就更穩了。\n\n簡單\n4 / 4\n中等\n1 / 2\n困難\n4 / 4\n只練這次錯題（1）\n再來 10 題\n回到島上\n\n各小主題表現\n\n民主廣場\n0/1\n郊商碼頭\n2/2\n熱蘭遮城\n1/1\n糖廠煙囪\n2/2\n加工出口區\n1/1\n史前遺址\n1/1\n書院廟埕\n2/2\n\n答錯的題目\n\n「雷震」最為人所知的是？\n\n正解創辦《自由中國》、籌組新政黨被捕"
+  },
+  {
+    "label": "reload-preserves-9-correct-1-wrong",
+    "text": "- generic \"可以拖曳旋轉的 3D 社會科群島\"\n- status:\n  - paragraph: 國中社會．108 課綱總複習\n  - paragraph: 社會科複習島\n  - paragraph: 正在建造群島…\n- button \"臺灣史島\":\n  - generic: 臺灣史島\n- button \"中國與東亞史島\":\n  - generic: 中國與東亞史島\n- button \"世界史島\":\n  - generic: 世界史島\n- button \"臺灣地理島\":\n  - generic: 臺灣地理島\n- button \"亞洲島\":\n  - generic: 亞洲島\n- button \"世界島\":\n  - generic: 世界島\n- button \"社會生活島\":\n  - generic: 社會生活島\n- button \"政治與法律島\":\n  - generic: 政治與法律島\n- button \"經濟與全球島\":\n  - generic: 經濟與全球島\n- button \"🍾 錯題島\":\n  - generic: 🍾 錯題島\n- banner:\n  - paragraph: 國中社會．108 課綱總複習\n  - heading \"社會科複習島\" [level=1]\n  - paragraph: 已答對 9 / 3807 題．熟練 0．開放 9 / 9 座島\n  - paragraph: 進度存在這台裝置\n  - list:\n    - listitem: 歷史\n    - listitem: 地理\n    - listitem: 公民\n  - button \"今日複習 ✓\" [disabled]\n  - button \"會考模擬\"\n  - button \"搜尋題目\"\n  - button \"省電模式\"\n  - button \"大字模式\"\n- paragraph: 拖曳旋轉．滾輪或雙指縮放．點一座島開始複習\n- navigation \"島嶼列表\":\n  - button \"錯題島 1 題待訂正\":\n    - generic: 🍾\n    - generic: 錯題島\n    - generic: 1 題待訂正\n  - button \"臺灣史島 七年級\":\n    - generic: 臺灣史島\n    - generic: 七年級\n  - button \"中國與東亞史島 八年級\":\n    - generic: 中國與東亞史島\n    - generic: 八年級\n  - button \"世界史島 九年級\":\n    - generic: 世界史島\n    - generic: 九年級\n  - button \"臺灣地理島 七年級\":\n    - generic: 臺灣地理島\n    - generic: 七年級\n  - button \"亞洲島 八年級\":\n    - generic: 亞洲島\n    - generic: 八年級\n  - button \"世界島 九年級\":\n    - generic: 世界島\n    - generic: 九年級\n  - button \"社會生活島 七年級\":\n    - generic: 社會生活島\n    - generic: 七年級\n  - button \"政治與法律島 八年級\":\n    - generic: 政治與法律島\n    - generic: 八年級\n  - button \"經濟與全球島 九年級\":\n    - generic: 經濟與全球島\n    - generic: 九年級\n  - button \"跨科航線 11 條．三科串連\":\n    - generic: ⛵\n    - generic: 跨科航線\n    - generic: 11 條．三科串連"
+  },
+  {
+    "label": "wrong-island-after-reload",
+    "text": "- generic \"可以拖曳旋轉的 3D 社會科群島\"\n- button \"臺灣史島 七年級．925 題\":\n  - generic: 臺灣史島\n  - generic: 七年級．925 題\n- button \"中國與東亞史島 八年級．450 題\":\n  - generic: 中國與東亞史島\n  - generic: 八年級．450 題\n- button \"世界史島 九年級．444 題\":\n  - generic: 世界史島\n  - generic: 九年級．444 題\n- button \"臺灣地理島 七年級．486 題\":\n  - generic: 臺灣地理島\n  - generic: 七年級．486 題\n- button \"亞洲島 八年級．284 題\":\n  - generic: 亞洲島\n  - generic: 八年級．284 題\n- button \"世界島 九年級．239 題\":\n  - generic: 世界島\n  - generic: 九年級．239 題\n- button \"社會生活島 七年級．262 題\":\n  - generic: 社會生活島\n  - generic: 七年級．262 題\n- button \"政治與法律島 八年級．396 題\":\n  - generic: 政治與法律島\n  - generic: 八年級．396 題\n- button \"經濟與全球島 九年級．288 題\":\n  - generic: 經濟與全球島\n  - generic: 九年級．288 題\n- button \"🍾 錯題島 1 支漂流瓶\":\n  - generic: 🍾 錯題島\n  - generic: 1 支漂流瓶\n- banner:\n  - button \"‹ 回到群島\"\n- paragraph: 拖曳旋轉．滾輪或雙指縮放．點一座島開始複習\n- generic: 🍾 錯題島\n- heading \"岸邊有 1 支漂流瓶\" [level=2]\n- paragraph: 各島上次答錯的題目會變成漂流瓶擱淺在這裡，答對後就會消失\n- button \"回到群島\": ↑\n- paragraph:\n  - text: 歷史\n  - generic: \"1\"\n  - text: 地理\n  - generic: \"0\"\n  - text: 公民\n  - generic: \"0\"\n- button \"練錯題 1 題\"\n- button \"錯題本\"\n- navigation \"島嶼列表\":\n  - button \"錯題島 1 題待訂正\" [active]:\n    - generic: 🍾\n    - generic: 錯題島\n    - generic: 1 題待訂正\n  - button \"臺灣史島 七年級\":\n    - generic: 臺灣史島\n    - generic: 七年級\n  - button \"中國與東亞史島 八年級\":\n    - generic: 中國與東亞史島\n    - generic: 八年級\n  - button \"世界史島 九年級\":\n    - generic: 世界史島\n    - generic: 九年級\n  - button \"臺灣地理島 七年級\":\n    - generic: 臺灣地理島\n    - generic: 七年級\n  - button \"亞洲島 八年級\":\n    - generic: 亞洲島\n    - generic: 八年級\n  - button \"世界島 九年級\":\n    - generic: 世界島\n    - generic: 九年級\n  - button \"社會生活島 七年級\":\n    - generic: 社會生活島\n    - generic: 七年級\n  - button \"政治與法律島 八年級\":\n    - generic: 政治與法律島\n    - generic: 八年級\n  - button \"經濟與全球島 九年級\":\n    - generic: 經濟與全球島\n    - generic: 九年級\n  - button \"跨科航線 11 條．三科串連\":\n    - generic: ⛵\n    - generic: 跨科航線\n    - generic: 11 條．三科串連"
+  },
+  {
+    "label": "retry-wrong-question",
+    "text": "全部島嶼\n×\n錯題島\n\n所有島上次答錯的題目，共 1 題\n\n1 / 1\n中等\n民主廣場\n\n「雷震」最為人所知的是？\n\nA\n在第二次中央政黨輪替後就任總統\nB\n擔任臺灣省行政長官\nC\n創辦《自由中國》、籌組新政黨被捕\nD\n首位民選總統"
+  },
+  {
+    "label": "retry-correct",
+    "text": "全部島嶼\n×\n錯題島\n\n所有島上次答錯的題目，共 1 題\n\n1 / 1\n中等\n民主廣場\n\n「雷震」最為人所知的是？\n\nA\n在第二次中央政黨輪替後就任總統\nB\n擔任臺灣省行政長官\nC\n創辦《自由中國》、籌組新政黨被捕\nD\n首位民選總統\n✓\n答對了\n\n「雷震」的重點是：創辦《自由中國》、籌組新政黨被捕。容易混淆的選項：「擔任臺灣省行政長官」說的是陳儀；「在第二次中央政黨輪替後就任總統」說的是馬英九；「首位民選總統」說的是李登輝。\n\n下次複習：明天\n⚑ 這題有疑問\n看成績"
+  },
+  {
+    "label": "retry-result",
+    "text": "全部島嶼\n×\n錯題島\n\n所有島上次答錯的題目，共 1 題\n\n1\n/1\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n中等\n1 / 1\n再來 10 題\n回到島上"
+  },
+  {
+    "label": "chart-search-20-results",
+    "text": "- generic \"可以拖曳旋轉的 3D 社會科群島\"\n- button \"臺灣史島\":\n  - generic: 臺灣史島\n- button \"中國與東亞史島\":\n  - generic: 中國與東亞史島\n- button \"世界史島\":\n  - generic: 世界史島\n- button \"臺灣地理島\":\n  - generic: 臺灣地理島\n- button \"亞洲島\":\n  - generic: 亞洲島\n- button \"世界島\":\n  - generic: 世界島\n- button \"社會生活島\":\n  - generic: 社會生活島\n- button \"政治與法律島\":\n  - generic: 政治與法律島\n- button \"經濟與全球島\":\n  - generic: 經濟與全球島\n- button \"🍾 錯題島\":\n  - generic: 🍾 錯題島\n- banner:\n  - paragraph: 國中社會．108 課綱總複習\n  - heading \"社會科複習島\" [level=1]\n  - paragraph: 已答對 10 / 3807 題．熟練 0．開放 9 / 9 座島\n  - paragraph: 進度存在這台裝置\n  - list:\n    - listitem: 歷史\n    - listitem: 地理\n    - listitem: 公民\n  - button \"今日複習 ✓\" [disabled]\n  - button \"會考模擬\"\n  - button \"搜尋題目\"\n  - button \"省電模式\"\n  - button \"大字模式\"\n- paragraph: 拖曳旋轉．滾輪或雙指縮放．點一座島開始複習\n- navigation \"島嶼列表\":\n  - button \"錯題島 沒有錯題\":\n    - generic: 🍾\n    - generic: 錯題島\n    - generic: 沒有錯題\n  - button \"臺灣史島 七年級\":\n    - generic: 臺灣史島\n    - generic: 七年級\n  - button \"中國與東亞史島 八年級\":\n    - generic: 中國與東亞史島\n    - generic: 八年級\n  - button \"世界史島 九年級\":\n    - generic: 世界史島\n    - generic: 九年級\n  - button \"臺灣地理島 七年級\":\n    - generic: 臺灣地理島\n    - generic: 七年級\n  - button \"亞洲島 八年級\":\n    - generic: 亞洲島\n    - generic: 八年級\n  - button \"世界島 九年級\":\n    - generic: 世界島\n    - generic: 九年級\n  - button \"社會生活島 七年級\":\n    - generic: 社會生活島\n    - generic: 七年級\n  - button \"政治與法律島 八年級\":\n    - generic: 政治與法律島\n    - generic: 八年級\n  - button \"經濟與全球島 九年級\":\n    - generic: 經濟與全球島\n    - generic: 九年級\n  - button \"跨科航線 11 條．三科串連\":\n    - generic: ⛵\n    - generic: 跨科航線\n    - generic: 11 條．三科串連\n- dialog \"搜尋題目\":\n  - generic: 全部島嶼\n  - button \"關閉\": ×\n  - heading \"搜尋題目\" [level=2]\n  - paragraph: 輸入關鍵字，找出相關題目一起練\n  - text: 關鍵字\n  - searchbox \"關鍵字\" [active]: 下圖\n  - paragraph: 至少輸入兩個字。"
+  },
+  {
+    "label": "chart-search-resolved",
+    "text": "全部島嶼\n×\n搜尋題目\n\n輸入關鍵字，找出相關題目一起練\n\n關鍵字\n練這些題（隨機 10 題，共 20 題）\n\n臺灣地理島．氣候與水文\n\n下圖是臺灣某地的氣候圖，冬季雨量特別多，最可能是哪裡？\n\n臺灣地理島．氣候與水文\n\n下圖是臺灣某地的氣候圖，冬季乾燥、夏季多雨，最可能是哪裡？\n\n臺灣地理島．氣候與水文\n\n下圖地區冬季雨量很少，最主要的原因是？\n\n臺灣地理島．氣候與水文\n\n下圖地區五到九月雨量偏多，最主要與哪些天氣現象有關？\n\n臺灣地理島．人口與文化\n\n下圖的人口金字塔屬於哪一種類型？\n\n臺灣地理島．人口與文化\n\n下圖地區最可能面臨的人口問題是？\n\n臺灣地理島．人口與文化\n\n下圖地區若要因應人口結構，下列哪一項政策最優先？\n\n臺灣地理島．產業發展\n\n根據下圖，從甲到丙時期，該國產業結構的變化趨勢是？\n\n臺灣地理島．產業發展\n\n根據下圖，丙時期就業人口比例最高的是哪一級產業？\n\n臺灣地理島．產業發展\n\n下圖從甲到丙時期的變化，最可能反映什麼現象？\n\n亞洲島．中國（一）\n\n下圖是中國某地的氣候圖，夏季多雨、冬季寒冷乾燥，屬於哪一種氣候？\n\n亞洲島．中國（一）\n\n下圖是中國某地的氣候圖，夏季月均溫也不到十五度，最可能位於？\n\n亞洲島．東南亞與南亞\n\n下圖的氣候類型最可能是？\n\n亞洲島．東南亞與南亞\n\n下圖地區六到九月雨量特別多，最主要的原因是？\n\n亞洲島．西亞與北非\n\n在下圖這種氣候的地區，農業最可能採取哪一種方式？\n\n世界島．大洋洲與兩極\n\n下圖地區七月氣溫最低、一月氣溫最高，最可能位於？\n\n世界島．大洋洲與兩極\n\n下圖是澳洲西南部某地的氣候圖，它的氣候類型是？\n\n世界島．大洋洲與兩極\n\n下圖的氣候最可能出現在哪裡？\n\n世界島．漠南非洲\n\n下圖地區的野生動物會隨季節大規模遷徙，主要原因是？\n\n世界島．歐洲與俄羅斯\n\n下圖地區最適合種植哪一類作物？"
+  },
+  {
+    "label": "chart-6-of-20",
+    "text": "全部島嶼\n×\n搜尋：下圖\n\n題目或選項含有「下圖」\n\n6 / 20\n困難\n中國（一）\n200\n30\n150\n20\n100\n10\n50\n0\n0\n-10\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n雨量 mm\n月\n氣溫 °C\n某地氣候圖（示意）\n\n下圖是中國某地的氣候圖，夏季月均溫也不到十五度，最可能位於？\n\nA\n四川盆地\nB\n珠江三角洲\nC\n長江中下游平原\nD\n青藏高原"
+  },
+  {
+    "label": "chart-11-of-20",
+    "text": "全部島嶼\n×\n搜尋：下圖\n\n題目或選項含有「下圖」\n\n11 / 20\n中等\n東南亞與南亞\n300\n30\n200\n20\n100\n10\n0\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n雨量 mm\n月\n氣溫 °C\n某地氣候圖（示意）\n\n下圖的氣候類型最可能是？\n\nA\n熱帶雨林氣候\nB\n沙漠氣候\nC\n熱帶草原氣候\nD\n熱帶季風氣候"
+  },
+  {
+    "label": "chart-16-of-20",
+    "text": "全部島嶼\n×\n搜尋：下圖\n\n題目或選項含有「下圖」\n\n16 / 20\n困難\n氣候與水文\n375\n30\n250\n20\n125\n10\n0\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n雨量 mm\n月\n氣溫 °C\n某地氣候圖（示意）\n\n下圖地區五到九月雨量偏多，最主要與哪些天氣現象有關？\n\nA\n冬季鋒面與焚風\nB\n沙塵暴與乾季\nC\n東北季風與寒流\nD\n梅雨、颱風與夏季對流雨"
+  },
+  {
+    "label": "chart-result-20-of-20",
+    "text": "全部島嶼\n×\n搜尋：下圖\n\n題目或選項含有「下圖」\n\n20\n/20\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n簡單\n2 / 2\n中等\n8 / 8\n困難\n10 / 10\n再來 20 題\n回到島上\n\n各島表現\n\n世界島\n5/5\n臺灣地理島\n10/10\n亞洲島\n5/5"
+  },
+  {
+    "label": "law7-fix-search",
+    "text": "全部島嶼\n×\n搜尋題目\n\n輸入關鍵字，找出相關題目一起練\n\n關鍵字\n練這些題（隨機 2 題，共 2 題）\n\n政治與法律島．刑法與少年事件\n\n「檢察官偵查後，證據足以認定有犯罪嫌疑，且沒有不起訴或緩起訴的情形」帶來的結果是？\n\n政治與法律島．刑法與少年事件\n\n「依法向法院提起公訴」最主要的原因是？"
+  },
+  {
+    "label": "law7-fix-start",
+    "text": "全部島嶼\n×\n搜尋：沒有不起訴或緩起訴\n\n題目或選項含有「沒有不起訴或緩起訴」\n\n1 / 2\n中等\n刑法與少年事件\n\n「檢察官偵查後，證據足以認定有犯罪嫌疑，且沒有不起訴或緩起訴的情形」帶來的結果是？\n\nA\n可能觸犯誹謗罪\nB\n不受刑罰，但可能由少年法院處理\nC\n依法向法院提起公訴\nD\n少年事件以保護、教育代替懲罰"
+  },
+  {
+    "label": "law7-fix-result",
+    "text": "全部島嶼\n×\n搜尋：沒有不起訴或緩起訴\n\n題目或選項含有「沒有不起訴或緩起訴」\n\n2\n/2\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n中等\n1 / 1\n困難\n1 / 1\n再來 20 題\n回到島上"
+  },
+  {
+    "label": "law8-fix-search",
+    "text": "全部島嶼\n×\n搜尋題目\n\n輸入關鍵字，找出相關題目一起練\n\n關鍵字\n練這些題（隨機 2 題，共 2 題）\n\n政治與法律島．行政救濟\n\n「公務員違法執行職務造成損害」帶來的結果是？\n\n政治與法律島．行政救濟\n\n「人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權」最主要的原因是？"
+  },
+  {
+    "label": "law8-fix-result",
+    "text": "全部島嶼\n×\n搜尋：有求償權\n\n題目或選項含有「有求償權」\n\n2\n/2\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n中等\n1 / 1\n困難\n1 / 1\n再來 20 題\n回到島上"
+  },
+  {
+    "label": "soc5-fix-search",
+    "text": "全部島嶼\n×\n搜尋題目\n\n輸入關鍵字，找出相關題目一起練\n\n關鍵字\n練這些題（隨機 2 題，共 2 題）\n\n社會生活島．社會團體\n\n「社會企業以商業模式經營」帶來的結果是？\n\n社會生活島．社會團體\n\n「以販售商品或服務的收入，持續追求社會或環境使命」最主要的原因是？"
+  },
+  {
+    "label": "soc5-fix-result",
+    "text": "全部島嶼\n×\n搜尋：持續追求\n\n題目或選項含有「持續追求」\n\n2\n/2\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n中等\n1 / 1\n困難\n1 / 1\n再來 20 題\n回到島上"
+  },
+  {
+    "label": "twg4-fix-search",
+    "text": "全部島嶼\n×\n搜尋題目\n\n輸入關鍵字，找出相關題目一起練\n\n關鍵字\n練這些題（隨機 4 題，共 4 題）\n\n臺灣地理島．人口與文化\n\n因婚姻、工作等原因從其他國家或地區移居臺灣、長期在此生活的人，常被稱為？\n\n臺灣地理島．人口與文化\n\n「新住民」的意思是？\n\n社會生活島．家庭\n\n「新住民家庭」的組成是？\n\n社會生活島．家庭\n\n「父母一方是從其他國家或地區移居臺灣的新住民」指的是哪一種家庭型態？"
+  },
+  {
+    "label": "twg4-fix-result",
+    "text": "全部島嶼\n×\n搜尋：其他國家或地區\n\n題目或選項含有「其他國家或地區」\n\n4\n/4\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n簡單\n1 / 1\n中等\n3 / 3\n再來 20 題\n回到島上\n\n各島表現\n\n社會生活島\n2/2\n臺灣地理島\n2/2"
+  },
+  {
+    "label": "pre-g9-search",
+    "text": "全部島嶼\n×\n搜尋題目\n\n輸入關鍵字，找出相關題目一起練\n\n關鍵字\n練這些題（隨機 1 題，共 1 題）\n\n臺灣史島．史前遺址\n\n代表遺址位於「臺北士林芝山岩」的史前文化是？"
+  },
+  {
+    "label": "pre-g9-result",
+    "text": "全部島嶼\n×\n搜尋：代表遺址位於「臺北士林芝山岩」\n\n題目或選項含有「代表遺址位於「臺北士林芝山岩」」\n\n1\n/1\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n簡單\n1 / 1\n再來 20 題\n回到島上"
+  },
+  {
+    "label": "comparative-advantage-search",
+    "text": "全部島嶼\n×\n搜尋題目\n\n輸入關鍵字，找出相關題目一起練\n\n關鍵字\n\n找不到含有「乙國可生產」的題目。"
+  },
+  {
+    "label": "eco6-h8-search",
+    "text": "全部島嶼\n×\n搜尋題目\n\n輸入關鍵字，找出相關題目一起練\n\n關鍵字\n練這些題（隨機 1 題，共 1 題）\n\n經濟與全球島．全球化與國際關係\n\n這種分工方式依據的是？"
+  },
+  {
+    "label": "eco6-h8-new-context",
+    "text": "全部島嶼\n×\n搜尋：這種分工方式依據的是\n\n題目或選項含有「這種分工方式依據的是」\n\n1 / 1\n困難\n全球化與國際關係\n素養情境用同樣一天的工時，甲國可以生產 10 台電腦或 20 箱香蕉，乙國可以生產 2 台電腦或 16 箱香蕉。後來甲國專門生產電腦、乙國專門生產香蕉，再互相貿易。\n\n這種分工方式依據的是？\n\nA\n機會成本為零\nB\n比較利益\nC\n通貨膨脹\nD\n供給法則"
+  },
+  {
+    "label": "eco6-h8-result",
+    "text": "全部島嶼\n×\n搜尋：這種分工方式依據的是\n\n題目或選項含有「這種分工方式依據的是」\n\n1\n/1\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n困難\n1 / 1\n再來 20 題\n回到島上"
+  },
+  {
+    "label": "exam-start",
+    "text": "全部島嶼\n×\n會考模擬\n\n三科混合 20 題．計時作答\n\n1 / 20\n困難\n全球化與國際關係\n⏱ 0:00\n\n跨國企業在世界各地設廠、銷售，可能帶來的影響是？\n\nA\n讓各國文化完全相同\nB\n增加當地就業，但也可能衝擊當地小型產業\nC\n使國際貿易完全停止\nD\n一定使當地經濟衰退"
+  },
+  {
+    "label": "exam-6-of-20",
+    "text": "全部島嶼\n×\n會考模擬\n\n三科混合 20 題．計時作答\n\n6 / 20\n中等\n西亞與北非\n⏱ 0:17\n\n「土耳其」的特色是？\n\nA\n世界重要產油國，伊斯蘭教聖城麥加所在地\nB\n人口集中在尼羅河沿岸，擁有蘇伊士運河\nC\n橫跨歐亞兩洲，伊斯坦堡是重要城市\nD\n猶太人建立的國家，與巴勒斯坦長期衝突"
+  },
+  {
+    "label": "exam-11-of-20",
+    "text": "全部島嶼\n×\n會考模擬\n\n三科混合 20 題．計時作答\n\n11 / 20\n中等\n⇢ 社會運動到民主\n⏱ 1:19\n\n日治時期「臺灣議會設置請願運動」的主要訴求是？\n\nA\n設立由臺灣住民選出、可參與立法與預算的議會\nB\n讓臺灣回歸清朝統治\nC\n要求日本出兵中國\nD\n廢除所有學校"
+  },
+  {
+    "label": "exam-16-of-20",
+    "text": "全部島嶼\n×\n會考模擬\n\n三科混合 20 題．計時作答\n\n16 / 20\n中等\n晚清的挑戰與回應\n⏱ 1:47\n\n「北京條約」的重要內容是？\n\nA\n割讓香港、開放五口通商\nB\n割讓臺灣、澎湖給日本並承認朝鮮獨立\nC\n割讓九龍半島南端給英國\nD\n巨額賠款並准許外國在北京駐兵"
+  },
+  {
+    "label": "exam-result-20-of-20",
+    "text": "全部島嶼\n×\n會考模擬\n\n三科混合 20 題．計時作答\n\n20\n/20\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n簡單\n3 / 3\n中等\n14 / 14\n困難\n3 / 3\n再來 20 題\n回到島上\n\n作答時間\n\n共 2:01，平均每題 6 秒\n\n各島表現\n\n經濟與全球島\n2/2\n臺灣史島\n3/3\n政治與法律島\n2/2\n世界島\n2/2\n世界史島\n2/2\n亞洲島\n2/2\n臺灣地理島\n2/2\n社會生活島\n2/2\n中國與東亞史島\n3/3"
+  },
+  {
+    "label": "chart-visual-recheck-6",
+    "text": "全部島嶼\n×\n搜尋：下圖\n\n題目或選項含有「下圖」\n\n6 / 20\n中等\n大洋洲與兩極\n225\n30\n150\n20\n75\n10\n0\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n雨量 mm\n月\n氣溫 °C\n某地氣候圖（示意）\n\n下圖地區七月氣溫最低、一月氣溫最高，最可能位於？\n\nA\n北極圈內\nB\n南半球\nC\n北半球\nD\n赤道上"
+  },
+  {
+    "label": "chart-visual-recheck-11",
+    "text": "全部島嶼\n×\n搜尋：下圖\n\n題目或選項含有「下圖」\n\n11 / 20\n困難\n漠南非洲\n225\n30\n150\n20\n75\n10\n0\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n雨量 mm\n月\n氣溫 °C\n某地氣候圖（示意）\n\n下圖地區的野生動物會隨季節大規模遷徙，主要原因是？\n\nA\n乾濕季分明，草與水源隨季節變化\nB\n冬季下雪\nC\n全年降雨平均\nD\n氣溫終年低於零度"
+  },
+  {
+    "label": "chart-visual-recheck-16",
+    "text": "全部島嶼\n×\n搜尋：下圖\n\n題目或選項含有「下圖」\n\n16 / 20\n困難\n大洋洲與兩極\n225\n30\n150\n20\n75\n10\n0\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n雨量 mm\n月\n氣溫 °C\n某地氣候圖（示意）\n\n下圖是澳洲西南部某地的氣候圖，它的氣候類型是？\n\nA\n地中海型氣候\nB\n溫帶大陸性氣候\nC\n熱帶雨林氣候\nD\n寒帶氣候"
+  },
+  {
+    "label": "chart-visual-recheck-result",
+    "text": "全部島嶼\n×\n搜尋：下圖\n\n題目或選項含有「下圖」\n\n20\n/20\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n簡單\n2 / 2\n中等\n8 / 8\n困難\n10 / 10\n再來 20 題\n回到島上\n\n各島表現\n\n臺灣地理島\n10/10\n亞洲島\n5/5\n世界島\n5/5"
+  },
+  {
+    "label": "cross-route-list",
+    "text": "- generic \"可以拖曳旋轉的 3D 社會科群島\"\n- button \"臺灣史島\":\n  - generic: 臺灣史島\n- button \"中國與東亞史島\":\n  - generic: 中國與東亞史島\n- button \"世界史島\":\n  - generic: 世界史島\n- button \"臺灣地理島\":\n  - generic: 臺灣地理島\n- button \"亞洲島\":\n  - generic: 亞洲島\n- button \"世界島\":\n  - generic: 世界島\n- button \"社會生活島\":\n  - generic: 社會生活島\n- button \"政治與法律島\":\n  - generic: 政治與法律島\n- button \"經濟與全球島\":\n  - generic: 經濟與全球島\n- button \"🍾 錯題島\":\n  - generic: 🍾 錯題島\n- banner:\n  - paragraph: 國中社會．108 課綱總複習\n  - heading \"社會科複習島\" [level=1]\n  - paragraph: 已答對 62 / 3807 題．熟練 20．開放 9 / 9 座島\n  - paragraph: 進度存在這台裝置\n  - list:\n    - listitem: 歷史\n    - listitem: 地理\n    - listitem: 公民\n  - button \"今日複習 ✓\" [disabled]\n  - button \"會考模擬\"\n  - button \"搜尋題目\"\n  - button \"省電模式\"\n  - button \"大字模式\"\n- paragraph: 拖曳旋轉．滾輪或雙指縮放．點一座島開始複習\n- navigation \"島嶼列表\":\n  - button \"錯題島 沒有錯題\":\n    - generic: 🍾\n    - generic: 錯題島\n    - generic: 沒有錯題\n  - button \"臺灣史島 七年級\":\n    - generic: 臺灣史島\n    - generic: 七年級\n  - button \"中國與東亞史島 八年級\":\n    - generic: 中國與東亞史島\n    - generic: 八年級\n  - button \"世界史島 九年級\":\n    - generic: 世界史島\n    - generic: 九年級\n  - button \"臺灣地理島 七年級\":\n    - generic: 臺灣地理島\n    - generic: 七年級\n  - button \"亞洲島 八年級\":\n    - generic: 亞洲島\n    - generic: 八年級\n  - button \"世界島 九年級\":\n    - generic: 世界島\n    - generic: 九年級\n  - button \"社會生活島 七年級\":\n    - generic: 社會生活島\n    - generic: 七年級\n  - button \"政治與法律島 八年級\":\n    - generic: 政治與法律島\n    - generic: 八年級\n  - button \"經濟與全球島 九年級\":\n    - generic: 經濟與全球島\n    - generic: 九年級\n  - button \"跨科航線 11 條．三科串連\" [active]:\n    - generic: ⛵\n    - generic: 跨科航線\n    - generic: 11 條．三科串連\n- dialog \"跨科航線\":\n  - generic: 全部島嶼\n  - button \"關閉\": ×\n  - heading \"跨科航線\" [level=2]\n  - paragraph: 小船往返於不同島的章節之間，連起歷史、地理與公民的因果\n  - list:\n    - button \"⛵ 工業革命與勞工權益 世界史島．現代國家的建立 → 經濟與全球島．勞動\":\n      - generic: ⛵ 工業革命與勞工權益\n      - generic: 世界史島．現代國家的建立 → 經濟與全球島．勞動\n    - button \"⛵ 啟蒙思想與權力分立 世界史島．近代歐洲的興起 → 政治與法律島．權力分立與政府\":\n      - generic: ⛵ 啟蒙思想與權力分立\n      - generic: 世界史島．近代歐洲的興起 → 政治與法律島．權力分立與政府\n    - button \"⛵ 人權宣言與民主憲政 世界史島．現代國家的建立 → 政治與法律島．民主政治\":\n      - generic: ⛵ 人權宣言與民主憲政\n      - generic: 世界史島．現代國家的建立 → 政治與法律島．民主政治\n    - button \"⛵ 新航路與全球化 世界史島．多元世界的互動 → 經濟與全球島．全球化與國際關係\":\n      - generic: ⛵ 新航路與全球化\n      - generic: 世界史島．多元世界的互動 → 經濟與全球島．全球化與國際關係\n    - button \"⛵ 解嚴與政治參與 臺灣史島．民主廣場 → 政治與法律島．選舉與參與\":\n      - generic: ⛵ 解嚴與政治參與\n      - generic: 臺灣史島．民主廣場 → 政治與法律島．選舉與參與\n    - button \"⛵ 加工出口區與產業發展 臺灣史島．加工出口區 → 臺灣地理島．產業發展\":\n      - generic: ⛵ 加工出口區與產業發展\n      - generic: 臺灣史島．加工出口區 → 臺灣地理島．產業發展\n    - button \"⛵ 嘉南大圳與稻作農業 臺灣史島．糖廠煙囪 → 臺灣地理島．農業與食品安全\":\n      - generic: ⛵ 嘉南大圳與稻作農業\n      - generic: 臺灣史島．糖廠煙囪 → 臺灣地理島．農業與食品安全\n    - button \"⛵ 清代拓墾與地名 臺灣史島．郊商碼頭 → 臺灣地理島．地名文化\":\n      - generic: ⛵ 清代拓墾與地名\n      - generic: 臺灣史島．郊商碼頭 → 臺灣地理島．地名文化\n    - button \"⛵ 改革開放與世界工廠 中國與東亞史島．當代東亞局勢 → 亞洲島．中國（二）\":\n      - generic: ⛵ 改革開放與世界工廠\n      - generic: 中國與東亞史島．當代東亞局勢 → 亞洲島．中國（二）\n    - button \"⛵ 海平面上升與外部成本 世界島．大洋洲與兩極 → 經濟與全球島．政府的經濟角色\":\n      - generic: ⛵ 海平面上升與外部成本\n      - generic: 世界島．大洋洲與兩極 → 經濟與全球島．政府的經濟角色\n    - button \"⛵ 人口變化與家庭型態 臺灣地理島．人口與文化 → 社會生活島．家庭\":\n      - generic: ⛵ 人口變化與家庭型態\n      - generic: 臺灣地理島．人口與文化 → 社會生活島．家庭"
+  },
+  {
+    "label": "cross-five-start",
+    "text": "全部島嶼\n×\n跨科航線：工業革命與勞工權益\n\n現代國家的建立 → 勞動\n\n1 / 5\n困難\n現代國家的建立\n\n「爆發法國大革命」最主要的原因是？\n\nA\n光榮革命通過權利法案\nB\n英國向北美殖民地課稅\nC\n蒸汽機改良\nD\n法國財政困難、第三階級不滿"
+  },
+  {
+    "label": "cross-five-result",
+    "text": "全部島嶼\n×\n跨科航線：工業革命與勞工權益\n\n現代國家的建立 → 勞動\n\n5\n/5\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n中等\n2 / 2\n困難\n3 / 3\n再來 5 題\n回到島上\n\n各小主題表現\n\n現代國家的建立\n1/1\n跨科航線\n3/3\n勞動\n1/1"
+  },
+  {
+    "label": "narrow-population-result",
+    "text": "全部島嶼\n×\n搜尋：下圖的人口金字塔屬於哪一種類型\n\n題目或選項含有「下圖的人口金字塔屬於哪一種類型」\n\n1\n/1\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n簡單\n1 / 1\n再來 5 題\n回到島上"
+  },
+  {
+    "label": "narrow-industry-result",
+    "text": "全部島嶼\n×\n搜尋：根據下圖，從甲到丙時期\n\n題目或選項含有「根據下圖，從甲到丙時期」\n\n1\n/1\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n中等\n1 / 1\n再來 5 題\n回到島上"
+  },
+  {
+    "label": "narrow-climate-result",
+    "text": "全部島嶼\n×\n搜尋：下圖是中國某地的氣候圖，夏季月均溫也不到十五度\n\n題目或選項含有「下圖是中國某地的氣候圖，夏季月均溫也不到十五度」\n\n1\n/1\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n困難\n1 / 1\n再來 5 題\n回到島上"
+  },
+  {
+    "label": "latest-reload-settings-persisted",
+    "text": "- button \"隱藏介面，只看小島\":\n- banner:\n  - button \"收合面板\" [expanded] [active]: –\n  - paragraph: 國中社會．108 課綱總複習\n  - heading \"社會科複習島\" [level=1]\n  - paragraph: 已答對 67 / 3807 題．熟練 20．開放 9 / 9 座島\n  - paragraph: 進度存在這台裝置\n  - button \"今日複習 ✓\" [disabled]\n  - button \"會考模擬\"\n  - button \"搜尋題目\"\n  - button \"省電模式\" [pressed]\n  - button \"大字模式\" [pressed]\n  - button \"精簡卡片\" [pressed]\n- paragraph: 省電模式：3D 畫面已關閉，從下方島嶼列選擇島嶼。\n- navigation \"島嶼列表\":\n  - button \"錯題島 沒有錯題\":\n    - generic: 🍾\n    - generic: 錯題島\n    - generic: 沒有錯題\n  - button \"臺灣史島 七年級\":\n    - generic: 臺灣史島\n    - generic: 七年級\n  - button \"中國與東亞史島 八年級\":\n    - generic: 中國與東亞史島\n    - generic: 八年級\n  - button \"世界史島 九年級\":\n    - generic: 世界史島\n    - generic: 九年級\n  - button \"臺灣地理島 七年級\":\n    - generic: 臺灣地理島\n    - generic: 七年級\n  - button \"亞洲島 八年級\":\n    - generic: 亞洲島\n    - generic: 八年級\n  - button \"世界島 九年級\":\n    - generic: 世界島\n    - generic: 九年級\n  - button \"社會生活島 七年級\":\n    - generic: 社會生活島\n    - generic: 七年級\n  - button \"政治與法律島 八年級\":\n    - generic: 政治與法律島\n    - generic: 八年級\n  - button \"經濟與全球島 九年級\":\n    - generic: 經濟與全球島\n    - generic: 九年級\n  - button \"跨科航線 11 條．三科串連\":\n    - generic: ⛵\n    - generic: 跨科航線\n    - generic: 11 條．三科串連"
+  },
+  {
+    "label": "latest-hide-ui",
+    "text": "- generic \"可以拖曳旋轉的 3D 社會科群島\"\n- button \"顯示介面\" [active] [pressed]:"
+  },
+  {
+    "label": "latest-ten-start",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n1 / 10\n中等\n書院廟埕\n\n「傳教士結合醫療與教育」帶來的結果是？\n\nA\n屏東六堆組織形成\nB\n基督教逐漸被民眾接受\nC\n分類械鬥頻繁\nD\n以臺灣為認同的土著化現象"
+  },
+  {
+    "label": "latest-wrong-feedback",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n1 / 10\n中等\n書院廟埕\n\n「傳教士結合醫療與教育」帶來的結果是？\n\nA\n屏東六堆組織形成\nB\n基督教逐漸被民眾接受\nC\n分類械鬥頻繁\nD\n以臺灣為認同的土著化現象\n✕\n答錯了\n正解\n基督教逐漸被民眾接受\n\n因為「傳教士結合醫療與教育」，所以基督教逐漸被民眾接受。其他選項也是本單元常見的結果，但原因不同：以臺灣為認同的土著化現象，是因為移民在臺落地生根；屏東六堆組織形成，是因為朱一貴事件中客家庄組織自衛；分類械鬥頻繁，是因為不同祖籍移民爭奪土地與水源。\n\n下次複習：明天\n⚑ 這題有疑問\n下一題"
+  },
+  {
+    "label": "latest-ten-q6",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n6 / 10\n簡單\n公學校\n\n日治時期總督府要求革除的「三大陋習」是？\n\nA\n賭博、酗酒、吸菸\nB\n拜拜、燒香、放鞭炮\nC\n辮髮、纏足、吸食鴉片\nD\n早婚、多子、分家"
+  },
+  {
+    "label": "latest-ten-result-9-of-10",
+    "text": "臺灣史島\n×\n整座島隨機\n\n臺灣史島全部小主題＋跨時期與因果航線題\n\n9\n/10\n\n表現不錯\n\n不錯！把下面答錯的題目看熟就更穩了。\n\n簡單\n3 / 3\n中等\n4 / 5\n困難\n2 / 2\n只練這次錯題（1）\n再來 10 題\n回到島上\n\n各小主題表現\n\n書院廟埕\n1/2\n史前遺址\n1/1\n跨時期\n1/1\n糖廠煙囪\n2/2\n公學校\n1/1\n熱蘭遮城\n1/1\n民主廣場\n2/2\n\n建議下一步\n\n這一輪「書院廟埕」最需要加強。\n\n去練習\n\n答錯的題目\n\n「傳教士結合醫療與教育」帶來的結果是？\n\n正解基督教逐漸被民眾接受"
+  },
+  {
+    "label": "latest-reload-wrong-preserved",
+    "text": "- generic \"可以拖曳旋轉的 3D 社會科群島\"\n- status:\n  - paragraph: 國中社會．108 課綱總複習\n  - paragraph: 社會科複習島\n  - paragraph: 正在建造群島…\n- button \"臺灣史島\":\n  - generic: 臺灣史島\n- button \"中國與東亞史島\":\n  - generic: 中國與東亞史島\n- button \"世界史島\":\n  - generic: 世界史島\n- button \"臺灣地理島\":\n  - generic: 臺灣地理島\n- button \"亞洲島\":\n  - generic: 亞洲島\n- button \"世界島\":\n  - generic: 世界島\n- button \"社會生活島\":\n  - generic: 社會生活島\n- button \"政治與法律島\":\n  - generic: 政治與法律島\n- button \"經濟與全球島\":\n  - generic: 經濟與全球島\n- button \"🍾 錯題島\":\n  - generic: 🍾 錯題島\n- button \"隱藏介面，只看小島\":\n- banner:\n  - button \"收合面板\" [expanded]: –\n  - paragraph: 國中社會．108 課綱總複習\n  - heading \"社會科複習島\" [level=1]\n  - paragraph: 已答對 76 / 3807 題．熟練 20．開放 9 / 9 座島\n  - paragraph: 進度存在這台裝置\n  - list:\n    - listitem: 歷史\n    - listitem: 地理\n    - listitem: 公民\n  - button \"今日複習 ✓\" [disabled]\n  - button \"會考模擬\"\n  - button \"搜尋題目\"\n  - button \"省電模式\"\n  - button \"大字模式\"\n  - button \"精簡卡片\"\n- paragraph: 拖曳旋轉．滾輪或雙指縮放．點一座島開始複習\n- navigation \"島嶼列表\":\n  - button \"錯題島 1 題待訂正\":\n    - generic: 🍾\n    - generic: 錯題島\n    - generic: 1 題待訂正\n  - button \"臺灣史島 七年級\":\n    - generic: 臺灣史島\n    - generic: 七年級\n  - button \"中國與東亞史島 八年級\":\n    - generic: 中國與東亞史島\n    - generic: 八年級\n  - button \"世界史島 九年級\":\n    - generic: 世界史島\n    - generic: 九年級\n  - button \"臺灣地理島 七年級\":\n    - generic: 臺灣地理島\n    - generic: 七年級\n  - button \"亞洲島 八年級\":\n    - generic: 亞洲島\n    - generic: 八年級\n  - button \"世界島 九年級\":\n    - generic: 世界島\n    - generic: 九年級\n  - button \"社會生活島 七年級\":\n    - generic: 社會生活島\n    - generic: 七年級\n  - button \"政治與法律島 八年級\":\n    - generic: 政治與法律島\n    - generic: 八年級\n  - button \"經濟與全球島 九年級\":\n    - generic: 經濟與全球島\n    - generic: 九年級\n  - button \"跨科航線 11 條．三科串連\":\n    - generic: ⛵\n    - generic: 跨科航線\n    - generic: 11 條．三科串連"
+  },
+  {
+    "label": "latest-wrong-retry-result",
+    "text": "全部島嶼\n×\n錯題島\n\n所有島上次答錯的題目，共 1 題\n\n1\n/1\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n中等\n1 / 1\n再來 10 題\n回到島上"
+  },
+  {
+    "label": "latest-wrong-island-cleared",
+    "text": "- generic \"可以拖曳旋轉的 3D 社會科群島\"\n- button \"臺灣史島 七年級．925 題\":\n  - generic: 臺灣史島\n  - generic: 七年級．925 題\n- button \"中國與東亞史島 八年級．450 題\":\n  - generic: 中國與東亞史島\n  - generic: 八年級．450 題\n- button \"世界史島 九年級．444 題\":\n  - generic: 世界史島\n  - generic: 九年級．444 題\n- button \"臺灣地理島 七年級．486 題\":\n  - generic: 臺灣地理島\n  - generic: 七年級．486 題\n- button \"亞洲島 八年級．284 題\":\n  - generic: 亞洲島\n  - generic: 八年級．284 題\n- button \"世界島 九年級．239 題\":\n  - generic: 世界島\n  - generic: 九年級．239 題\n- button \"社會生活島 七年級．262 題\":\n  - generic: 社會生活島\n  - generic: 七年級．262 題\n- button \"政治與法律島 八年級．396 題\":\n  - generic: 政治與法律島\n  - generic: 八年級．396 題\n- button \"經濟與全球島 九年級．288 題\":\n  - generic: 經濟與全球島\n  - generic: 九年級．288 題\n- button \"🍾 錯題島 沒有錯題\":\n  - generic: 🍾 錯題島\n  - generic: 沒有錯題\n- button \"隱藏介面，只看小島\":\n- banner:\n  - button \"‹ 回到群島\"\n- paragraph: 拖曳旋轉．滾輪或雙指縮放．點一座島開始複習\n- generic: 🍾 錯題島\n- heading \"沙灘上乾乾淨淨\" [level=2]\n- paragraph: 各島上次答錯的題目會變成漂流瓶擱淺在這裡，答對後就會消失\n- button \"回到群島\": ↑\n- paragraph:\n  - text: 歷史\n  - generic: \"0\"\n  - text: 地理\n  - generic: \"0\"\n  - text: 公民\n  - generic: \"0\"\n- button \"練錯題 0 題\" [disabled]\n- button \"錯題本\"\n- navigation \"島嶼列表\":\n  - button \"錯題島 沒有錯題\":\n    - generic: 🍾\n    - generic: 錯題島\n    - generic: 沒有錯題\n  - button \"臺灣史島 七年級\":\n    - generic: 臺灣史島\n    - generic: 七年級\n  - button \"中國與東亞史島 八年級\":\n    - generic: 中國與東亞史島\n    - generic: 八年級\n  - button \"世界史島 九年級\":\n    - generic: 世界史島\n    - generic: 九年級\n  - button \"臺灣地理島 七年級\":\n    - generic: 臺灣地理島\n    - generic: 七年級\n  - button \"亞洲島 八年級\":\n    - generic: 亞洲島\n    - generic: 八年級\n  - button \"世界島 九年級\":\n    - generic: 世界島\n    - generic: 九年級\n  - button \"社會生活島 七年級\":\n    - generic: 社會生活島\n    - generic: 七年級\n  - button \"政治與法律島 八年級\":\n    - generic: 政治與法律島\n    - generic: 八年級\n  - button \"經濟與全球島 九年級\":\n    - generic: 經濟與全球島\n    - generic: 九年級\n  - button \"跨科航線 11 條．三科串連\":\n    - generic: ⛵\n    - generic: 跨科航線\n    - generic: 11 條．三科串連"
+  },
+  {
+    "label": "latest-chart-search-20",
+    "text": "全部島嶼\n×\n搜尋題目\n\n輸入關鍵字，找出相關題目一起練\n\n關鍵字\n練這些題（隨機 20 題，共 20 題）\n\n臺灣地理島．氣候與水文\n\n下圖是臺灣某地的氣候圖，冬季雨量特別多，最可能是哪裡？\n\n臺灣地理島．氣候與水文\n\n下圖是臺灣某地的氣候圖，冬季乾燥、夏季多雨，最可能是哪裡？\n\n臺灣地理島．氣候與水文\n\n下圖地區冬季雨量很少，最主要的原因是？\n\n臺灣地理島．氣候與水文\n\n下圖地區五到九月雨量偏多，最主要與哪些天氣現象有關？\n\n臺灣地理島．人口與文化\n\n下圖的人口金字塔屬於哪一種類型？\n\n臺灣地理島．人口與文化\n\n下圖地區最可能面臨的人口問題是？\n\n臺灣地理島．人口與文化\n\n下圖地區若要因應人口結構，下列哪一項政策最優先？\n\n臺灣地理島．產業發展\n\n根據下圖，從甲到丙時期，該國產業結構的變化趨勢是？\n\n臺灣地理島．產業發展\n\n根據下圖，丙時期就業人口比例最高的是哪一級產業？\n\n臺灣地理島．產業發展\n\n下圖從甲到丙時期的變化，最可能反映什麼現象？\n\n亞洲島．中國（一）\n\n下圖是中國某地的氣候圖，夏季多雨、冬季寒冷乾燥，屬於哪一種氣候？\n\n亞洲島．中國（一）\n\n下圖是中國某地的氣候圖，夏季月均溫也不到十五度，最可能位於？\n\n亞洲島．東南亞與南亞\n\n下圖的氣候類型最可能是？\n\n亞洲島．東南亞與南亞\n\n下圖地區六到九月雨量特別多，最主要的原因是？\n\n亞洲島．西亞與北非\n\n在下圖這種氣候的地區，農業最可能採取哪一種方式？\n\n世界島．大洋洲與兩極\n\n下圖地區七月氣溫最低、一月氣溫最高，最可能位於？\n\n世界島．大洋洲與兩極\n\n下圖是澳洲西南部某地的氣候圖，它的氣候類型是？\n\n世界島．大洋洲與兩極\n\n下圖的氣候最可能出現在哪裡？\n\n世界島．漠南非洲\n\n下圖地區的野生動物會隨季節大規模遷徙，主要原因是？\n\n世界島．歐洲與俄羅斯\n\n下圖地區最適合種植哪一類作物？"
+  },
+  {
+    "label": "latest-chart-6",
+    "text": "全部島嶼\n×\n搜尋：下圖\n\n題目或選項含有「下圖」\n\n6 / 20\n困難\n產業發展\n100%\n75%\n50%\n25%\n0%\n50\n20\n30\n甲時期\n20\n40\n40\n乙時期\n35\n60\n丙時期\n第一級\n第二級\n第三級\n某國就業人口的產業結構（示意，單位：%）\n\n下圖從甲到丙時期的變化，最可能反映什麼現象？\n\nA\n人口大量移往鄉村務農\nB\n工廠全部關閉，回到農業社會\nC\n農業技術退步，糧食大量減產\nD\n經濟發展、所得提高後，服務業擴大"
+  },
+  {
+    "label": "latest-chart-11",
+    "text": "全部島嶼\n×\n搜尋：下圖\n\n題目或選項含有「下圖」\n\n11 / 20\n困難\n大洋洲與兩極\n225\n30\n150\n20\n75\n10\n0\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n雨量 mm\n月\n氣溫 °C\n某地氣候圖（示意）\n\n下圖是澳洲西南部某地的氣候圖，它的氣候類型是？\n\nA\n溫帶大陸性氣候\nB\n熱帶雨林氣候\nC\n地中海型氣候\nD\n寒帶氣候"
+  },
+  {
+    "label": "latest-chart-16",
+    "text": "全部島嶼\n×\n搜尋：下圖\n\n題目或選項含有「下圖」\n\n16 / 20\n困難\n氣候與水文\n375\n30\n250\n20\n125\n10\n0\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n雨量 mm\n月\n氣溫 °C\n某地氣候圖（示意）\n\n下圖地區五到九月雨量偏多，最主要與哪些天氣現象有關？\n\nA\n梅雨、颱風與夏季對流雨\nB\n沙塵暴與乾季\nC\n東北季風與寒流\nD\n冬季鋒面與焚風"
+  },
+  {
+    "label": "latest-chart-result-20-of-20",
+    "text": "全部島嶼\n×\n搜尋：下圖\n\n題目或選項含有「下圖」\n\n20\n/20\n\n全部答對\n\n全對！這一輪的題目都掌握了。\n\n簡單\n2 / 2\n中等\n8 / 8\n困難\n10 / 10\n再來 20 題\n回到島上\n\n各島表現\n\n亞洲島\n5/5\n臺灣地理島\n10/10\n世界島\n5/5"
+  },
+  {
+    "label": "final-wrong-island-empty",
+    "text": "- generic \"可以拖曳旋轉的 3D 社會科群島\"\n- button \"臺灣史島 七年級．925 題\":\n  - generic: 臺灣史島\n  - generic: 七年級．925 題\n- button \"中國與東亞史島 八年級．450 題\":\n  - generic: 中國與東亞史島\n  - generic: 八年級．450 題\n- button \"世界史島 九年級．444 題\":\n  - generic: 世界史島\n  - generic: 九年級．444 題\n- button \"臺灣地理島 七年級．486 題\":\n  - generic: 臺灣地理島\n  - generic: 七年級．486 題\n- button \"亞洲島 八年級．284 題\":\n  - generic: 亞洲島\n  - generic: 八年級．284 題\n- button \"世界島 九年級．239 題\":\n  - generic: 世界島\n  - generic: 九年級．239 題\n- button \"社會生活島 七年級．262 題\":\n  - generic: 社會生活島\n  - generic: 七年級．262 題\n- button \"政治與法律島 八年級．396 題\":\n  - generic: 政治與法律島\n  - generic: 八年級．396 題\n- button \"經濟與全球島 九年級．288 題\":\n  - generic: 經濟與全球島\n  - generic: 九年級．288 題\n- button \"🍾 錯題島 沒有錯題\":\n  - generic: 🍾 錯題島\n  - generic: 沒有錯題\n- button \"隱藏介面，只看小島\":\n- banner:\n  - button \"‹ 回到群島\"\n- paragraph: 拖曳旋轉．滾輪或雙指縮放．點一座島開始複習\n- generic: 🍾 錯題島\n- heading \"沙灘上乾乾淨淨\" [level=2]\n- paragraph: 各島上次答錯的題目會變成漂流瓶擱淺在這裡，答對後就會消失\n- button \"回到群島\": ↑\n- paragraph:\n  - text: 歷史\n  - generic: \"0\"\n  - text: 地理\n  - generic: \"0\"\n  - text: 公民\n  - generic: \"0\"\n- button \"練錯題 0 題\" [disabled]\n- button \"錯題本\"\n- navigation \"島嶼列表\":\n  - button \"錯題島 沒有錯題\" [active]:\n    - generic: 🍾\n    - generic: 錯題島\n    - generic: 沒有錯題\n  - button \"臺灣史島 七年級\":\n    - generic: 臺灣史島\n    - generic: 七年級\n  - button \"中國與東亞史島 八年級\":\n    - generic: 中國與東亞史島\n    - generic: 八年級\n  - button \"世界史島 九年級\":\n    - generic: 世界史島\n    - generic: 九年級\n  - button \"臺灣地理島 七年級\":\n    - generic: 臺灣地理島\n    - generic: 七年級\n  - button \"亞洲島 八年級\":\n    - generic: 亞洲島\n    - generic: 八年級\n  - button \"世界島 九年級\":\n    - generic: 世界島\n    - generic: 九年級\n  - button \"社會生活島 七年級\":\n    - generic: 社會生活島\n    - generic: 七年級\n  - button \"政治與法律島 八年級\":\n    - generic: 政治與法律島\n    - generic: 八年級\n  - button \"經濟與全球島 九年級\":\n    - generic: 經濟與全球島\n    - generic: 九年級\n  - button \"跨科航線 11 條．三科串連\":\n    - generic: ⛵\n    - generic: 跨科航線\n    - generic: 11 條．三科串連"
+  },
+  {
+    "label": "final-home-77-correct",
+    "text": "- generic \"可以拖曳旋轉的 3D 社會科群島\"\n- button \"臺灣史島\":\n  - generic: 臺灣史島\n- button \"中國與東亞史島\":\n  - generic: 中國與東亞史島\n- button \"世界史島\":\n  - generic: 世界史島\n- button \"臺灣地理島\":\n  - generic: 臺灣地理島\n- button \"亞洲島\":\n  - generic: 亞洲島\n- button \"世界島\":\n  - generic: 世界島\n- button \"社會生活島\":\n  - generic: 社會生活島\n- button \"政治與法律島\":\n  - generic: 政治與法律島\n- button \"經濟與全球島\":\n  - generic: 經濟與全球島\n- button \"🍾 錯題島\":\n  - generic: 🍾 錯題島\n- button \"隱藏介面，只看小島\":\n- banner:\n  - button \"收合面板\" [expanded]: –\n  - paragraph: 國中社會．108 課綱總複習\n  - heading \"社會科複習島\" [level=1]\n  - paragraph: 已答對 77 / 3807 題．熟練 20．開放 9 / 9 座島\n  - paragraph: 進度存在這台裝置\n  - list:\n    - listitem: 歷史\n    - listitem: 地理\n    - listitem: 公民\n  - button \"今日複習 ✓\" [disabled]\n  - button \"會考模擬\"\n  - button \"搜尋題目\"\n  - button \"省電模式\"\n  - button \"大字模式\"\n  - button \"精簡卡片\"\n- paragraph: 拖曳旋轉．滾輪或雙指縮放．點一座島開始複習\n- navigation \"島嶼列表\":\n  - button \"錯題島 沒有錯題\":\n    - generic: 🍾\n    - generic: 錯題島\n    - generic: 沒有錯題\n  - button \"臺灣史島 七年級\":\n    - generic: 臺灣史島\n    - generic: 七年級\n  - button \"中國與東亞史島 八年級\":\n    - generic: 中國與東亞史島\n    - generic: 八年級\n  - button \"世界史島 九年級\":\n    - generic: 世界史島\n    - generic: 九年級\n  - button \"臺灣地理島 七年級\":\n    - generic: 臺灣地理島\n    - generic: 七年級\n  - button \"亞洲島 八年級\":\n    - generic: 亞洲島\n    - generic: 八年級\n  - button \"世界島 九年級\":\n    - generic: 世界島\n    - generic: 九年級\n  - button \"社會生活島 七年級\":\n    - generic: 社會生活島\n    - generic: 七年級\n  - button \"政治與法律島 八年級\":\n    - generic: 政治與法律島\n    - generic: 八年級\n  - button \"經濟與全球島 九年級\":\n    - generic: 經濟與全球島\n    - generic: 九年級\n  - button \"跨科航線 11 條．三科串連\":\n    - generic: ⛵\n    - generic: 跨科航線\n    - generic: 11 條．三科串連"
+  }
+]

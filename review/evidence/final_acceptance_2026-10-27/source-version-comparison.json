@@ -1,0 +1,257 @@
+{
+  "base": "a4cc8cd55748ad6e91aa5d13a3a6e6528c88afbb",
+  "head": "19ede1cf6ca8e52bddce73e29fadc39724c33c68",
+  "changedFiles": [
+    "index.html",
+    "src/app.html",
+    "src/app.js"
+  ],
+  "auditedDataFiles": 32,
+  "allAuditedDataHashesUnchanged": true,
+  "dataFiles": [
+    {
+      "path": "review/questions.json",
+      "beforeBlob": "1172156079345cb62948ea74c067bdcb1ae947d8",
+      "afterBlob": "1172156079345cb62948ea74c067bdcb1ae947d8",
+      "unchanged": true
+    },
+    {
+      "path": "review/questions_asg.md",
+      "beforeBlob": "5fec38128bb14f61a62d3b1b13f4c6e079c3494f",
+      "afterBlob": "5fec38128bb14f61a62d3b1b13f4c6e079c3494f",
+      "unchanged": true
+    },
+    {
+      "path": "review/questions_cnh.md",
+      "beforeBlob": "572339ac63d064176fb0216f8db1651fae867f58",
+      "afterBlob": "572339ac63d064176fb0216f8db1651fae867f58",
+      "unchanged": true
+    },
+    {
+      "path": "review/questions_cross.md",
+      "beforeBlob": "aa719906d986ebb9b42cb4d60222baad109249e6",
+      "afterBlob": "aa719906d986ebb9b42cb4d60222baad109249e6",
+      "unchanged": true
+    },
+    {
+      "path": "review/questions_eco.md",
+      "beforeBlob": "e4c0f8eebfdafba52a4ef7f0bb0d7bb73649c5e0",
+      "afterBlob": "e4c0f8eebfdafba52a4ef7f0bb0d7bb73649c5e0",
+      "unchanged": true
+    },
+    {
+      "path": "review/questions_law.md",
+      "beforeBlob": "80bfd72c79c33a2237806c66ff65b0b3b7b004a5",
+      "afterBlob": "80bfd72c79c33a2237806c66ff65b0b3b7b004a5",
+      "unchanged": true
+    },
+    {
+      "path": "review/questions_soc.md",
+      "beforeBlob": "10323af684807222cc7106a0f8755806893a054f",
+      "afterBlob": "10323af684807222cc7106a0f8755806893a054f",
+      "unchanged": true
+    },
+    {
+      "path": "review/questions_twg.md",
+      "beforeBlob": "b9607fa0924a4f54ec137aea68215dfcbca70454",
+      "afterBlob": "b9607fa0924a4f54ec137aea68215dfcbca70454",
+      "unchanged": true
+    },
+    {
+      "path": "review/questions_twh.md",
+      "beforeBlob": "f7ab247235e0b017c93d6da07660fc4fd5a7b243",
+      "afterBlob": "f7ab247235e0b017c93d6da07660fc4fd5a7b243",
+      "unchanged": true
+    },
+    {
+      "path": "review/questions_wdg.md",
+      "beforeBlob": "3e5dc201393787dc3a7c21385f675a6d910ff68f",
+      "afterBlob": "3e5dc201393787dc3a7c21385f675a6d910ff68f",
+      "unchanged": true
+    },
+    {
+      "path": "review/questions_wdh.md",
+      "beforeBlob": "72db77262577fef8f15afe3a54f1a45f2a5c8f59",
+      "afterBlob": "72db77262577fef8f15afe3a54f1a45f2a5c8f59",
+      "unchanged": true
+    },
+    {
+      "path": "src/data_asg.js",
+      "beforeBlob": "cbc70efe6595d0e5204648baca46a0cc1328554a",
+      "afterBlob": "cbc70efe6595d0e5204648baca46a0cc1328554a",
+      "unchanged": true
+    },
+    {
+      "path": "src/data_cnh.js",
+      "beforeBlob": "57c6cb41d1b776dcb1906d34ad2604cfe3722bf5",
+      "afterBlob": "57c6cb41d1b776dcb1906d34ad2604cfe3722bf5",
+      "unchanged": true
+    },
+    {
+      "path": "src/data_ctx.js",
+      "beforeBlob": "002bd5465e12d4046830a1d0e55240845a3f1685",
+      "afterBlob": "002bd5465e12d4046830a1d0e55240845a3f1685",
+      "unchanged": true
+    },
+    {
+      "path": "src/data_eco.js",
+      "beforeBlob": "4b83f9e1606462052aabf22cbcfdfb52da8cdb28",
+      "afterBlob": "4b83f9e1606462052aabf22cbcfdfb52da8cdb28",
+      "unchanged": true
+    },
+    {
+      "path": "src/data_fig.js",
+      "beforeBlob": "3816bc7b9c2669924f7ca2faed1229085e306163",
+      "afterBlob": "3816bc7b9c2669924f7ca2faed1229085e306163",
+      "unchanged": true
+    },
+    {
+      "path": "src/data_law.js",
+      "beforeBlob": "efd3a958eb2fe018a763335bf0feda9f4a77622f",
+      "afterBlob": "efd3a958eb2fe018a763335bf0feda9f4a77622f",
+      "unchanged": true
+    },
+    {
+      "path": "src/data_notes.js",
+      "beforeBlob": "4a5b928c76d0eaf33fd9b4aaa72c50acbdcaca5b",
+      "afterBlob": "4a5b928c76d0eaf33fd9b4aaa72c50acbdcaca5b",
+      "unchanged": true
+    },
+    {
+      "path": "src/data_overlap.js",
+      "beforeBlob": "431e4db33b2061a938613d7c4ba9fd4d4603f1be",
+      "afterBlob": "431e4db33b2061a938613d7c4ba9fd4d4603f1be",
+      "unchanged": true
+    },
+    {
+      "path": "src/data_soc.js",
+      "beforeBlob": "80ade6e1a14bec3b1a41e12518d91ea9ba07c612",
+      "afterBlob": "80ade6e1a14bec3b1a41e12518d91ea9ba07c612",
+      "unchanged": true
+    },
+    {
+      "path": "src/data_twg.js",
+      "beforeBlob": "44548116338132318374e119ef7ffd37716ce1c6",
+      "afterBlob": "44548116338132318374e119ef7ffd37716ce1c6",
+      "unchanged": true
+    },
+    {
+      "path": "src/data_wdg.js",
+      "beforeBlob": "959bf07430224a9b86c7457a5e332a80aa6d726c",
+      "afterBlob": "959bf07430224a9b86c7457a5e332a80aa6d726c",
+      "unchanged": true
+    },
+    {
+      "path": "src/data_wdh.js",
+      "beforeBlob": "986c20ecfcb9e3a803429bae6fddbd095920fc77",
+      "afterBlob": "986c20ecfcb9e3a803429bae6fddbd095920fc77",
+      "unchanged": true
+    },
+    {
+      "path": "src/dsl.js",
+      "beforeBlob": "7e8ccf0dce75248dff55760e635515c40da45f08",
+      "afterBlob": "7e8ccf0dce75248dff55760e635515c40da45f08",
+      "unchanged": true
+    },
+    {
+      "path": "src/engine.js",
+      "beforeBlob": "c60f71ca1df5819c74d2e218f77d4d698692c327",
+      "afterBlob": "c60f71ca1df5819c74d2e218f77d4d698692c327",
+      "unchanged": true
+    },
+    {
+      "path": "src/gen_twh.js",
+      "beforeBlob": "1474103636ceb13e05d4e34b20583edf09a4f7d8",
+      "afterBlob": "1474103636ceb13e05d4e34b20583edf09a4f7d8",
+      "unchanged": true
+    },
+    {
+      "path": "src/hand_twh_1.js",
+      "beforeBlob": "152cb3c658ed1dbda997c465c87292c7eb785c7a",
+      "afterBlob": "152cb3c658ed1dbda997c465c87292c7eb785c7a",
+      "unchanged": true
+    },
+    {
+      "path": "src/hand_twh_2.js",
+      "beforeBlob": "2965544e284e640971c5c8ea2dd5bb264a2c7a40",
+      "afterBlob": "2965544e284e640971c5c8ea2dd5bb264a2c7a40",
+      "unchanged": true
+    },
+    {
+      "path": "src/hand_twh_ctx.js",
+      "beforeBlob": "d1f6232fcc46af708e0efd8f0b1d5fbcddaa2ed1",
+      "afterBlob": "d1f6232fcc46af708e0efd8f0b1d5fbcddaa2ed1",
+      "unchanged": true
+    },
+    {
+      "path": "src/links_cross.js",
+      "beforeBlob": "8ace0c5101ba5561395e15f6e208cfa3e38358af",
+      "afterBlob": "8ace0c5101ba5561395e15f6e208cfa3e38358af",
+      "unchanged": true
+    },
+    {
+      "path": "src/links_twh.js",
+      "beforeBlob": "4c26bfec04ff6019baab66192a3042e125275ba5",
+      "afterBlob": "4c26bfec04ff6019baab66192a3042e125275ba5",
+      "unchanged": true
+    },
+    {
+      "path": "src/preview.js",
+      "beforeBlob": "a2f3402ba8a1c352015a2fa7899fc53de9e75b88",
+      "afterBlob": "a2f3402ba8a1c352015a2fa7899fc53de9e75b88",
+      "unchanged": true
+    }
+  ],
+  "tenFixChecks": [
+    {
+      "id": "pre-g9",
+      "criterion": "正解芝山岩且排除圓山文化干擾",
+      "pass": true
+    },
+    {
+      "id": "twg4-h5",
+      "criterion": "題幹使用國家或地區",
+      "pass": true
+    },
+    {
+      "id": "twg4-g20",
+      "criterion": "生成定義使用國家或地區",
+      "pass": true
+    },
+    {
+      "id": "soc5-g39",
+      "criterion": "正反向皆持續追求使命",
+      "pass": true
+    },
+    {
+      "id": "soc5-g40",
+      "criterion": "正反向皆持續追求使命",
+      "pass": true
+    },
+    {
+      "id": "law7-g40",
+      "criterion": "正反向具證據與不起訴/緩起訴限制",
+      "pass": true
+    },
+    {
+      "id": "law7-g41",
+      "criterion": "正反向具證據與不起訴/緩起訴限制",
+      "pass": true
+    },
+    {
+      "id": "law8-g30",
+      "criterion": "正反向有求償權",
+      "pass": true
+    },
+    {
+      "id": "law8-g31",
+      "criterion": "正反向有求償權",
+      "pass": true
+    },
+    {
+      "id": "eco6-h8",
+      "criterion": "機會成本甲2/乙8香蕉且答案比較利益",
+      "pass": true
+    }
+  ]
+}
