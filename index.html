@@ -385,6 +385,10 @@ body.card-compact .card{gap:6px;padding:10px 14px}
 body.ui-hidden .eye-btn .eye-slash{display:inline}
 body.panel-open .eye-btn,body.touring .eye-btn{display:none}
 body.ui-hidden .ui,body.ui-hidden #labels{visibility:hidden}
+.snd-btn{top:calc(64px + env(safe-area-inset-top,0px))}
+.snd-btn .snd-x{display:none}
+body.sound-off .snd-btn .snd-x{display:inline}
+body.sound-off .snd-btn .snd-wave{display:none}
 /* 寬螢幕橫式：卡片移到左側，讓出畫面中間給小島 */
 @media (min-width:1000px) and (min-aspect-ratio:7/5){
   .card{position:fixed;left:max(16px,env(safe-area-inset-left,0px));bottom:calc(env(safe-area-inset-bottom,0px) + var(--dock-h,96px) + 28px);width:min(440px,32vw);max-height:calc(100vh - var(--dock-h,96px) - 120px);overflow:auto}
@@ -400,6 +404,7 @@ body.ui-hidden .ui,body.ui-hidden #labels{visibility:hidden}
 <canvas id="scene" aria-label="可以拖曳旋轉的 3D 社會科群島"></canvas>
 <div class="loader" id="loader" role="status"><div class="ld-card"><p class="eyebrow">國中社會．108 課綱總複習</p><p class="ld-title">社會科複習島</p><p class="ld-msg" id="ldMsg">正在建造群島…</p><span class="ld-bar" aria-hidden="true"><i></i></span><button type="button" class="btn" id="ldLite" hidden>畫面跑不動？改用省電模式</button></div></div>
 <div id="labels"></div>
+<button type="button" class="eye-btn snd-btn" id="soundBtn" aria-label="關閉聲音" title="關閉聲音"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-wave" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path class="snd-x" d="M16 9l6 6M22 9l-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
 <button type="button" class="eye-btn" id="eyeBtn" aria-pressed="false" aria-label="隱藏介面，只看小島" title="隱藏介面，只看小島（快捷鍵 H）"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3" fill="currentColor"/><path class="eye-slash" d="M4 4l16 16" stroke="currentColor" stroke-width="1.8"/></svg></button>
 <div class="ui">
   <header class="hud">
@@ -416,7 +421,7 @@ body.ui-hidden .ui,body.ui-hidden #labels{visibility:hidden}
       <li><span class="dot" style="--c:var(--geo)"></span>地理</li>
       <li><span class="dot" style="--c:var(--civ)"></span>公民</li>
     </ul>
-    <div class="hud-tools"><button type="button" class="tool" id="reviewBtn" disabled>今日複習 ✓</button><button type="button" class="tool" id="examBtn">會考模擬</button><button type="button" class="tool" id="searchBtn">搜尋題目</button><button type="button" class="tool" id="liteBtn" aria-pressed="false">省電模式</button><button type="button" class="tool" id="bigBtn" aria-pressed="false">大字模式</button><button type="button" class="tool" id="compactBtn" aria-pressed="false">精簡卡片</button><button type="button" class="tool" id="skyBtn">天空：自動</button><button type="button" class="tool" id="backupBtn">進度備份</button></div>
+    <div class="hud-tools"><button type="button" class="tool" id="reviewBtn" disabled>今日複習 ✓</button><button type="button" class="tool" id="examBtn">會考模擬</button><button type="button" class="tool" id="searchBtn">搜尋題目</button><button type="button" class="tool" id="liteBtn" aria-pressed="false">省電模式</button><button type="button" class="tool" id="bigBtn" aria-pressed="false">大字模式</button><button type="button" class="tool" id="compactBtn" aria-pressed="false">精簡卡片</button><button type="button" class="tool" id="skyBtn">天空：自動</button><button type="button" class="tool" id="musicBtn" aria-pressed="true">音樂：開</button><button type="button" class="tool" id="sfxBtn" aria-pressed="true">音效：開</button><button type="button" class="tool" id="backupBtn">進度備份</button></div>
     <button type="button" class="back" id="backBtn" hidden>‹ 回到群島</button>
   </header>
   <div class="spacer"></div>
@@ -4329,10 +4334,11 @@ let toastT=0;
 function toast(msg){ toastEl.textContent=msg; toastEl.hidden=false; toastEl.classList.remove('out'); clearTimeout(toastT); toastT=setTimeout(()=>{ toastEl.classList.add('out'); setTimeout(()=>{ toastEl.hidden=true; },400); },3600); }
 // 把成長狀態交給 3D 場景；升階時跳出提示（第一次載入不提示）
 let growthPrev=null;
+window.__onMainUp=(name,lv)=>{ setTimeout(()=>{ toast(name+'的主島升級了！'+['','插上彩旗','點起燈籠','金光環繞'][lv]+'。'); if(typeof sfx==='function') sfx('level'); },1400); };
 function syncGrowth(){
   const map={}; ISLANDS.filter(i=>i.ready).forEach(isl=>isl.lms.forEach(l=>{ map[l.id]=growthOf(l.id); }));
   if(growthPrev){ Object.keys(map).forEach(id=>{ const a=growthPrev[id], b=map[id];
-    if(b.stage>a.stage) toast(LM_INFO[id].name+'升級為「'+STAGE_NAME[b.stage]+'」！');
+    if(b.stage>a.stage){ toast(LM_INFO[id].name+'升級為「'+STAGE_NAME[b.stage]+'」！'); if(typeof sfx==='function') setTimeout(()=>sfx('level'),500); }
     else if(a.fog && !b.fog) toast(LM_INFO[id].name+'的霧散了，錯題都補回來了。'); }); }
   growthPrev=map; if(scene3d) scene3d.setGrowth(map);
 }
@@ -4394,7 +4400,7 @@ function hidePanel(){ panel.hidden=true; document.body.classList.remove('panel-o
 /* 探索階段：先飛過去看，底部只留一張小卡；按下按鈕才打開面板 */
 function focusIsland(id){
   if(!tourEl.hidden && tourStep<0) tourEl.hidden=true; if(tourStep>=0) endTour();
-  focusId=id; lmFocus=null; linkFocus=null; chapFocus=null; hubFocus=false; crossFocus=null; S=null; markInteracted();
+  focusId=id; lmFocus=null; linkFocus=null; chapFocus=null; hubFocus=false; crossFocus=null; S=null; markInteracted(); if(typeof sfx==='function') sfx('whoosh');
   hidePanel();
   $('#backBtn').hidden=false;
   if(scene3d) scene3d.focus(id);
@@ -4722,7 +4728,7 @@ function answer(k){
   S.answered=true;
   const q=S.qs[S.i], ok=S.opts[k]===q.c;
   S.results.push(ok); if(!ok) S.wrong.push(q);
-  const gap=record(q.id, ok); if(ok && scene3d && scene3d.cheer) scene3d.cheer();
+  const gap=record(q.id, ok); if(ok && scene3d && scene3d.cheer) scene3d.cheer(); if(typeof sfx==='function') sfx(ok?'right':'wrong');
   body.querySelectorAll('.opt').forEach((b,idx)=>{ b.disabled=true; if(S.opts[idx]===q.c) b.classList.add('is-right'); if(idx===k && !ok) b.classList.add('is-wrong'); });
   const fb=$('#fb'); fb.hidden=false; fb.className='feedback'+(ok?'':' bad');
   fb.innerHTML='<div class="fb-head"><span class="fb-icon" aria-hidden="true">'+(ok?'✓':'✕')+'</span><strong>'+(ok?'答對了':'答錯了')+'</strong></div>'+(ok?'':'<div class="fb-ans"><span class="fb-label">正解</span><span>'+fmtOpt(q.c)+'</span></div>')+'<p class="fb-ex">'+esc(q.ex)+'</p><div class="fb-foot"><span class="nextrev">下次複習：'+(gap<=1?'明天':gap+' 天後')+'</span><button type="button" class="linkbtn" id="flagBtn" aria-pressed="'+!!ST.flag[q.id]+'">⚑ '+(ST.flag[q.id]?'已標記（再按取消）':'這題有疑問')+'</button><a class="linkbtn" href="'+esc(reportURL(q))+'" target="_blank" rel="noopener">回報錯誤 ↗</a></div>';
@@ -4740,7 +4746,7 @@ function reportURL(q){
 function next(){ if(!S) return; S.i++; if(S.i<S.qs.length) renderQ(); else renderResult(); }
 function renderResult(){
   view='result'; refreshProgress();
-  const n=S.qs.length, c=S.results.filter(Boolean).length, ratio=c/n;
+  const n=S.qs.length, c=S.results.filter(Boolean).length, ratio=c/n; if(typeof sfx==='function') setTimeout(()=>sfx(ratio>=0.7?'finish':'done'),150);
   const msg = ratio===1 ? '全對！這一輪的題目都掌握了。' : ratio>=0.7 ? '不錯！把下面答錯的題目看熟就更穩了。' : '先看看下面的錯題重點，再挑戰一次。';
   const by={1:[0,0],2:[0,0],3:[0,0]}; S.qs.forEach((q,i)=>{ by[q.d][1]++; if(S.results[i]) by[q.d][0]++; });
   const bd=[1,2,3].filter(d=>by[d][1]).map(d=>'<li><span class="pill" style="--dc:'+DIFF[d].css+'">'+DIFF[d].name+'</span>'+by[d][0]+' / '+by[d][1]+'</li>').join('');
@@ -4938,6 +4944,102 @@ $('#hudMin').addEventListener('click',()=>setHudMini(!document.body.classList.co
 $('#compactBtn').addEventListener('click',()=>setCompact(!UIP.compact));
 $('#eyeBtn').addEventListener('click',()=>setUiHidden(!document.body.classList.contains('ui-hidden')));
 setHudMini(hudPref(), true); setCompact(!!UIP.compact); setSky(UIP.sky||'auto',true);
+/* ---------- 聲音：背景音樂與互動音效（全部用 Web Audio 即時合成，不需要下載音檔，離線也能播） ---------- */
+const AU={ctx:null,master:null,music:null,sfx:null,verb:null,on:false,next:0,step:0,timer:0,sea:null,
+  musicOn:UIP.music!==false, sfxOn:UIP.sfx!==false};
+window.__au=()=>AU; window.__sfx=k=>sfx(k);
+function auCtx(){
+  if(AU.ctx) return AU.ctx;
+  const C=window.AudioContext||window.webkitAudioContext; if(!C) return null;
+  const c=AU.ctx=new C();
+  AU.master=c.createGain(); AU.master.gain.value=0.9; AU.master.connect(c.destination);
+  AU.music=c.createGain(); AU.music.gain.value=0; AU.music.connect(AU.master);
+  AU.sfx=c.createGain(); AU.sfx.gain.value=0.55; AU.sfx.connect(AU.master);
+  // 簡單的殘響：用衰減的雜訊當脈衝響應
+  const len=c.sampleRate*2.6, ir=c.createBuffer(2,len,c.sampleRate);
+  for(let ch=0;ch<2;ch++){ const d=ir.getChannelData(ch); for(let i=0;i<len;i++) d[i]=(Math.random()*2-1)*Math.pow(1-i/len,2.6); }
+  AU.verb=c.createConvolver(); AU.verb.buffer=ir; const vg=c.createGain(); vg.gain.value=0.5; AU.verb.connect(vg); vg.connect(AU.music);
+  return c;
+}
+const NOTE=m=>440*Math.pow(2,(m-69)/12);
+function tone(dest,freq,t,dur,{type='sine',vol=0.2,att=0.01,rel=null,detune=0,glide=null}={}){
+  const c=AU.ctx, o=c.createOscillator(), g=c.createGain();
+  o.type=type; o.frequency.setValueAtTime(freq,t); if(glide) o.frequency.exponentialRampToValueAtTime(glide,t+dur); o.detune.value=detune;
+  g.gain.setValueAtTime(0.0001,t); g.gain.exponentialRampToValueAtTime(vol,t+att); g.gain.exponentialRampToValueAtTime(0.0001,t+(rel||dur));
+  o.connect(g); g.connect(dest); o.start(t); o.stop(t+(rel||dur)+0.05); return g;
+}
+// 海浪聲：濾波後的雜訊，音量緩慢起伏
+function auSea(){
+  const c=AU.ctx; if(AU.sea) return;
+  const len=c.sampleRate*4, b=c.createBuffer(1,len,c.sampleRate), d=b.getChannelData(0); let last=0;
+  for(let i=0;i<len;i++){ last=(last+0.02*(Math.random()*2-1))/1.02; d[i]=last*3.5; }
+  const src=c.createBufferSource(); src.buffer=b; src.loop=true;
+  const f=c.createBiquadFilter(); f.type='lowpass'; f.frequency.value=700;
+  const g=c.createGain(); g.gain.value=0.25;
+  const lfo=c.createOscillator(), lg=c.createGain(); lfo.frequency.value=0.09; lg.gain.value=0.18; lfo.connect(lg); lg.connect(g.gain);
+  src.connect(f); f.connect(g); g.connect(AU.music); src.start(); lfo.start(); AU.sea=src;
+}
+// 和弦進行：C – Am – F – G（夜晚改成較低、較稀疏）
+const PROG=[[60,64,67,71],[57,60,64,67],[53,57,60,64],[55,59,62,65]];
+const BEAT=60/66;
+function auSchedule(){
+  const c=AU.ctx; if(!c || !AU.on) return;
+  const night=document.documentElement.dataset.skyPhase==='night';
+  while(AU.next<c.currentTime+1.2){
+    const t=AU.next, bar=Math.floor(AU.step/8)%PROG.length, beat=AU.step%8, ch=PROG[bar], sh=night?-12:0;
+    if(beat===0){
+      ch.slice(0,3).forEach((m,i)=>{ [-6,6].forEach(dt=>tone(AU.music,NOTE(m+sh),t,BEAT*8,{type:'triangle',vol:0.022,att:1.6,rel:BEAT*8.6,detune:dt})); });
+      tone(AU.music,NOTE(ch[0]-24+sh),t,BEAT*4,{type:'sine',vol:0.07,att:0.08,rel:BEAT*4});
+    }
+    if(beat===4) tone(AU.music,NOTE(ch[0]-24+sh),t,BEAT*3,{type:'sine',vol:0.05,att:0.08,rel:BEAT*3});
+    // 琴聲琶音：依和弦音隨機挑選，偶爾休息
+    if(Math.random()<(night?0.32:0.55)){
+      const pool=ch.concat([ch[0]+12,ch[2]+12]), m=pool[Math.floor(Math.random()*pool.length)]+12+sh;
+      const g=tone(AU.verb,NOTE(m),t,1.4,{type:'sine',vol:0.05,att:0.005,rel:1.6}); tone(AU.music,NOTE(m),t,0.9,{type:'triangle',vol:0.018,att:0.005,rel:0.9});
+    }
+    AU.next+=BEAT/2; AU.step++;
+  }
+}
+function auMusic(on){
+  const c=auCtx(); if(!c) return;
+  if(on){ if(c.state==='suspended') c.resume(); auSea(); AU.on=true; AU.next=Math.max(AU.next,c.currentTime+0.1);
+    AU.music.gain.cancelScheduledValues(c.currentTime); AU.music.gain.setTargetAtTime(0.9,c.currentTime,1.2);
+    if(!AU.timer) AU.timer=setInterval(auSchedule,300); auSchedule(); }
+  else { AU.on=false; if(AU.music) AU.music.gain.setTargetAtTime(0,c.currentTime,0.4); clearInterval(AU.timer); AU.timer=0; }
+}
+// 互動音效
+function sfx(kind){
+  if(!AU.sfxOn) return; const c=auCtx(); if(!c) return; if(c.state==='suspended') c.resume();
+  const t=c.currentTime+0.01, S=AU.sfx;
+  if(kind==='tap') tone(S,1320,t,0.06,{type:'sine',vol:0.08,att:0.003});
+  else if(kind==='right'){ tone(S,NOTE(76),t,0.18,{type:'triangle',vol:0.22}); tone(S,NOTE(81),t+0.09,0.35,{type:'triangle',vol:0.22}); tone(S,NOTE(88),t+0.09,0.3,{type:'sine',vol:0.06}); }
+  else if(kind==='wrong'){ tone(S,NOTE(57),t,0.22,{type:'triangle',vol:0.18,glide:NOTE(55)}); tone(S,NOTE(52),t+0.13,0.35,{type:'triangle',vol:0.16,glide:NOTE(50)}); }
+  else if(kind==='whoosh'){ const len=c.sampleRate*0.5, b=c.createBuffer(1,len,c.sampleRate), d=b.getChannelData(0); for(let i=0;i<len;i++) d[i]=(Math.random()*2-1)*Math.sin(Math.PI*i/len);
+    const s=c.createBufferSource(); s.buffer=b; const f=c.createBiquadFilter(); f.type='bandpass'; f.Q.value=1.2; f.frequency.setValueAtTime(300,t); f.frequency.exponentialRampToValueAtTime(1800,t+0.45);
+    const g=c.createGain(); g.gain.value=0.16; s.connect(f); f.connect(g); g.connect(S); s.start(t); }
+  else if(kind==='open') tone(S,NOTE(84),t,0.12,{type:'sine',vol:0.07,att:0.005,glide:NOTE(91)});
+  else if(kind==='level'){ [72,76,79,84].forEach((m,i)=>tone(S,NOTE(m),t+i*0.08,0.5,{type:'triangle',vol:0.16})); tone(S,NOTE(96),t+0.32,0.6,{type:'sine',vol:0.05}); }
+  else if(kind==='finish'){ [67,72,76,79].forEach((m,i)=>tone(S,NOTE(m),t+i*0.11,0.4,{type:'triangle',vol:0.15})); [72,76,79].forEach(m=>tone(S,NOTE(m),t+0.48,0.9,{type:'sine',vol:0.06,att:0.02})); }
+  else if(kind==='done') [64,67].forEach((m,i)=>tone(S,NOTE(m),t+i*0.12,0.35,{type:'triangle',vol:0.12}));
+}
+function setMusic(on,keep){ AU.musicOn=!!on; if(!keep){ UIP.music=AU.musicOn; saveUIP(); } $('#musicBtn').textContent='音樂：'+(AU.musicOn?'開':'關'); $('#musicBtn').setAttribute('aria-pressed',String(AU.musicOn)); updSound(); if(AU.ctx||!keep) auMusic(AU.musicOn&&!soundMuted()); }
+function setSfx(on,keep){ AU.sfxOn=!!on; if(!keep){ UIP.sfx=AU.sfxOn; saveUIP(); } $('#sfxBtn').textContent='音效：'+(AU.sfxOn?'開':'關'); $('#sfxBtn').setAttribute('aria-pressed',String(AU.sfxOn)); updSound(); }
+function soundMuted(){ return !!UIP.muted; }
+function updSound(){ const b=$('#soundBtn'), off=soundMuted()||(!AU.musicOn&&!AU.sfxOn); document.body.classList.toggle('sound-off',off); const l=off?'開啟聲音':'關閉聲音'; b.setAttribute('aria-label',l); b.title=l; }
+$('#musicBtn').addEventListener('click',()=>{ if(UIP.muted){ UIP.muted=false; saveUIP(); } setMusic(!AU.musicOn); });
+$('#sfxBtn').addEventListener('click',()=>{ if(UIP.muted){ UIP.muted=false; saveUIP(); } setSfx(!AU.sfxOn); if(AU.sfxOn) sfx('tap'); });
+$('#soundBtn').addEventListener('click',()=>{ const off=soundMuted()||(!AU.musicOn&&!AU.sfxOn);
+  if(off){ UIP.muted=false; if(!AU.musicOn&&!AU.sfxOn){ AU.musicOn=true; AU.sfxOn=true; UIP.music=true; UIP.sfx=true; } saveUIP(); setMusic(AU.musicOn,true); setSfx(AU.sfxOn,true); auMusic(AU.musicOn); }
+  else { UIP.muted=true; saveUIP(); auMusic(false); updSound(); } });
+setMusic(AU.musicOn,true); setSfx(AU.sfxOn,true);
+// 瀏覽器規定要使用者先操作過才能出聲：第一次點擊時才開始播放音樂
+function auFirst(){ document.removeEventListener('pointerdown',auFirst,true); document.removeEventListener('keydown',auFirst,true); if(AU.musicOn && !soundMuted()) auMusic(true); else auCtx(); }
+document.addEventListener('pointerdown',auFirst,true); document.addEventListener('keydown',auFirst,true);
+// 一般按鈕的點擊聲（答題選項另外有對錯音效）
+document.addEventListener('click',e=>{ const b=e.target.closest && e.target.closest('button'); if(!b || soundMuted() || b.classList.contains('opt') || b.id==='sfxBtn' || b.id==='soundBtn') return; sfx('tap'); },true);
+// 切到別的分頁時暫停，回來再繼續
+document.addEventListener('visibilitychange',()=>{ if(!AU.ctx) return; if(document.hidden) AU.ctx.suspend(); else if(AU.on||AU.sfxOn) AU.ctx.resume(); });
+
 // 載入畫面：3D 第一次畫出來後淡出；10 秒還沒好就提供省電模式
 const loaderEl=$('#loader');
 function hideLoader(){ if(loaderEl.classList.contains('done')) return; loaderEl.classList.add('done'); setTimeout(()=>{ loaderEl.hidden=true; },700); }
@@ -5532,7 +5634,7 @@ function buildScene(){
     const R=arch?ARCH.RR+ARCH.IR:6.2, ph=idx*1.7+0.3;
     const jit=t=>1+0.06*Math.sin(3*t+ph)+0.04*Math.sin(5*t+ph*2.1)+0.02*Math.sin(11*t+ph*0.7);
     const g=new T.Group(); g.position.copy(pos); g.userData.islId=isl.id; scene.add(g);
-    const pieces=[], col=SUBJ[isl.subj].color; let I_islets=[];
+    const pieces=[], col=SUBJ[isl.subj].color; let I_islets=[]; let mainGrow=null;
     if(arch){
       const {MR,IR,RR}=ARCH;
       // 主島：中央廣場與島名旗
@@ -5545,6 +5647,16 @@ function buildScene(){
         // 建造中的島：主島放代表模型與吊車
         const d=MODELS[isl.decor](); d.scale.setScalar(isl.decor==='yushan'?0.7:0.72); d.position.y=0.55; d.rotation.y=-a+Math.PI; g.add(d);
         if(!isl.ready){ const cr=MODELS.crane(); cr.scale.setScalar(0.7); cr.position.set(Math.sin(a+Math.PI/2)*2.3,0.55,Math.cos(a+Math.PI/2)*2.3); cr.rotation.y=rnd()*6; g.add(cr); }
+      }
+      // 主島的成長裝飾：一半以上的章節小島升到某一級，主島就跟著升級
+      if(isl.ready){
+        const m1=new T.Group(), m2=new T.Group(), m3=new T.Group(), RM=3.55, pc=['#eb5757','#f2c94c','#56ccf2','#6fcf97','#bb6bd9','#f2994a'];
+        for(let k=0;k<6;k++){ const t=a+k*Math.PI/3+Math.PI/6, x=Math.sin(t)*RM, z=Math.cos(t)*RM; m1.add(cyl(0.03,0.035,1.2,'#5a4a3a',x,0.55,z,6)); const pf=cone(0.13,0.42,3,pc[k],x+Math.cos(t)*0.0,1.47,z); pf.rotation.z=Math.PI/2; pf.rotation.y=-t; pf.position.x+=Math.cos(t)*0.2; pf.position.z-=Math.sin(t)*0.2; m1.add(pf); }
+        for(let k=0;k<6;k++){ const t=a+k*Math.PI/3, x=Math.sin(t)*RM, z=Math.cos(t)*RM; m2.add(cyl(0.035,0.04,1.0,'#4a3a2c',x,0.55,z,6)); m2.add(box(0.36,0.035,0.035,'#4a3a2c',x,1.52,z)); [-0.16,0.16].forEach(o=>{ const ln=M(new T.SphereGeometry(0.1,10,8),lanternMat,x+Math.cos(t)*o,1.38,z-Math.sin(t)*o); ln.scale.y=1.25; m2.add(ln); }); }
+        { const hg=new T.RingGeometry(MR*0.97,MR*1.06,64); hg.rotateX(-Math.PI/2); const h=new T.Mesh(hg,new T.MeshBasicMaterial({color:'#ffd36a',transparent:true,opacity:0.55,depthWrite:false})); h.position.y=0.5; h.raycast=()=>{}; m3.add(h); m3.userData.halo=h;
+          for(let k=0;k<4;k++){ const t=a+k*Math.PI/2+Math.PI/4, x=Math.sin(t)*(RM-0.2), z=Math.cos(t)*(RM-0.2); m3.add(cyl(0.045,0.05,2.4,'#6b4f36',x,0.55,z,6)); const fl=box(0.6,0.34,0.03,'#e3b23c',x,2.55,z); fl.rotation.y=-t+Math.PI/2; m3.add(fl); m3.add(M(new T.SphereGeometry(0.08,8,6),'#e3b23c',x,3.02,z)); } }
+        [m1,m2,m3].forEach(sg=>{ sg.visible=false; sg.traverse(o=>{ if(o.isMesh) o.raycast=()=>{}; }); g.add(sg); });
+        mainGrow=[m1,m2,m3];
       }
       const step=Math.PI*2/chaps.length, islAngles=chaps.map((c,i)=>a+Math.PI+step/2+i*step); // 鏡頭從外側看：第 1 章在左後方，依序經過前方，到右後方結束，與底部列的左右順序一致
       const myIslets=[];
@@ -5606,7 +5718,7 @@ function buildScene(){
       avoid.push({x:0,z:0,c:2.8},{x:2.8,z:-2,c:1.2});
       for(let i=0;i<14;i++){ const ta=rnd()*Math.PI*2, tr=2.6+rnd()*2.6; const x=Math.sin(ta)*tr, z=Math.cos(ta)*tr; if(avoid.some(p=>Math.hypot(p.x-x,p.z-z)<p.c)) continue; avoid.push({x,z,c:0.8}); tree(g,x,z,0.65+rnd()*0.4,isl.subj==='geo'?'pine':'round'); }
     }
-    islands[isl.id]={g,pos,R,angle:a,labelH:4.6,jit,ready:!!isl.ready,subj:isl.subj,pieces,arch,islets:I_islets};
+    islands[isl.id]={g,pos,R,angle:a,labelH:4.6,jit,ready:!!isl.ready,subj:isl.subj,pieces,arch,islets:I_islets,mainGrow,mainStage:-1};
     islPickers.push(g);
   });
 
@@ -6099,7 +6211,8 @@ function buildScene(){
         s.grow.forEach(sg=>bake(sg,c=>c===sg.userData.flag));
         bake(s.ig,c=>c===model||s.grow.includes(c)||c===s.fog,true);
       });
-      bake(I.g,c=>animated.has(c)||I.islets.some(s=>s.ig===c),true);
+      (I.mainGrow||[]).forEach(sg=>bake(sg,c=>c===sg.userData.halo));
+      bake(I.g,c=>animated.has(c)||I.islets.some(s=>s.ig===c)||(I.mainGrow||[]).includes(c),true);
     });
   }
   /* --- 主題 --- */
@@ -6339,7 +6452,12 @@ function buildScene(){
     // 成長：依熟練度顯示裝飾、起霧；升階時小島彈一下
     setGrowth(map){ Object.keys(map).forEach(id=>{ const s=islets[id]; if(!s) return; const g=map[id];
       s.grow.forEach((gr,k)=>{ gr.visible=g.stage>k; }); s.fog.visible=!!g.fog;
-      if(s.stage>=0 && g.stage>s.stage && !reduceMotion) s.pop=1; s.stage=g.stage; }); },
+      if(s.stage>=0 && g.stage>s.stage && !reduceMotion) s.pop=1; s.stage=g.stage; });
+      // 主島：一半以上的章節小島達到第 k 級，主島就出現第 k 層裝飾
+      ISLANDS.forEach(isl=>{ const I=islands[isl.id]; if(!I || !I.mainGrow || !isl.lms) return; const st=isl.lms.map(l=>map[l.id]?map[l.id].stage:0), need=Math.ceil(st.length/2);
+        let lv=0; for(let k=1;k<=3;k++) if(st.filter(x=>x>=k).length>=need) lv=k;
+        I.mainGrow.forEach((sg,k)=>{ sg.visible=lv>k; });
+        if(I.mainStage>=0 && lv>I.mainStage && typeof window.__onMainUp==='function') window.__onMainUp(isl.name,lv); I.mainStage=lv; }); },
     focusLm(id){ const g=lmGroups[id]; if(!g) return; const bb=new T.Box3().setFromObject(g), sz=new T.Vector3(), c=new T.Vector3(); bb.getSize(sz); bb.getCenter(c); const span=Math.max(sz.x,sz.y,sz.z); cam.tTarget.set(c.x,c.y,c.z); cam.tYaw=shortest(cam.tYaw,g.userData.angle); cam.tPitch=0.5; cam.tDist=(span*2.4+2.5)*(narrow()?1.45:1); lastInput=performance.now(); }
   };
 }
