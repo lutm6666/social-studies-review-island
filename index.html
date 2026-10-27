@@ -4809,6 +4809,8 @@ function renderBackup(){
     '<label class="bk-msg" for="bkCode">或貼上備份代碼</label><textarea id="bkCode" class="bk-code" placeholder="SHEHUI1:…"></textarea>'+
     '<div class="actions"><button type="button" class="btn primary" id="bkIn">匯入並合併</button></div><p class="bk-msg" id="bkInMsg" aria-live="polite">匯入會與這台裝置的紀錄合併：同一題保留作答次數較多的那一份，不會刪掉現有進度。</p></div>';
   const out=$('#bkOut'), msg=$('#bkInMsg');
+  // claude.ai 內的版本不能下載檔案，只提供備份代碼（進度也已同步到帳號）
+  if(window.claude && claude.use){ $('#bkDl').hidden=true; out.textContent='這個版本的進度會自動同步到你的帳號。若要搬到公開網址版，請複製備份代碼，到那邊貼上匯入。'; }
   $('#bkDl').addEventListener('click',()=>{ try{ const blob=new Blob([JSON.stringify(backupData())],{type:'application/json'}); const a=document.createElement('a'); const d=new Date(); a.href=URL.createObjectURL(blob); a.download='社會科複習島-進度-'+d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0')+'.json'; document.body.appendChild(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },1000); out.textContent='已開始下載備份檔。如果沒有出現下載，請改用「複製備份代碼」。'; out.className='bk-msg ok'; }catch(e){ out.textContent='這個瀏覽器無法下載檔案，請改用「複製備份代碼」。'; out.className='bk-msg err'; } });
   $('#bkCopy').addEventListener('click',async()=>{ const code=toCode(backupData()); try{ await navigator.clipboard.writeText(code); out.textContent='已複製備份代碼（'+code.length+' 字）。'; out.className='bk-msg ok'; }catch(e){ const ta=$('#bkCode'); ta.value=code; ta.select(); out.textContent='無法自動複製，代碼已放在下方的框框裡，請自己全選複製。'; out.className='bk-msg'; } });
   const doImport=txt=>{ try{ const o=fromText(txt); const before=Object.keys(ST.q).length; let upd=0; Object.keys(o.q).forEach(id=>{ const a=ST.q[id], b=o.q[id]; if(!a || b[0]>a[0]) upd++; });
