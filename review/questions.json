@@ -46422,6 +46422,38 @@
   "figure": null
  },
  {
+  "id": "soc1-h9",
+  "chapter": "soc1",
+  "difficulty": 2,
+  "context": "小婷發現自己總是跟著好朋友買一樣的東西、說一樣的流行語，連喜歡的歌手也一樣。",
+  "question": "這主要反映哪一種社會化機構的影響？",
+  "answer": "同儕團體",
+  "distractors": [
+   "家庭",
+   "學校",
+   "政府機關"
+  ],
+  "explanation": "青少年時期同儕的認同特別重要，朋友的喜好與用語容易影響自己的選擇。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "soc1-h10",
+  "chapter": "soc1",
+  "difficulty": 3,
+  "context": "班會討論校外教學的地點，班長只聽幾位好朋友的意見就做了決定，其他同學很不滿。",
+  "question": "從參與公共事務的角度，比較好的做法是？",
+  "answer": "讓全班表達意見後再依程序決定",
+  "distractors": [
+   "由班長一人決定最有效率",
+   "只讓成績好的同學投票",
+   "乾脆不再舉辦校外教學"
+  ],
+  "explanation": "公共事務應讓相關的人都有表達意見的機會，再依程序做決定，這是參與公共事務的基本態度。",
+  "source": "hand",
+  "figure": null
+ },
+ {
   "id": "soc1-g0",
   "chapter": "soc1",
   "difficulty": 2,
@@ -46546,22 +46578,6 @@
    "了解並接納自己是怎樣的人"
   ],
   "explanation": "「同儕團體」的重點是：年齡相近、互相影響的朋友群體。容易混淆的選項：「關心公益、守法、尊重他人等公民應有的品格」說的是公民德行；「學習社會價值觀與規範的過程」說的是社會化；「了解並接納自己是怎樣的人」說的是自我認同。",
-  "source": "generated",
-  "figure": null
- },
- {
-  "id": "soc1-g9",
-  "chapter": "soc1",
-  "difficulty": 1,
-  "context": null,
-  "question": "「年齡相近、互相影響的朋友群體」指的是？",
-  "answer": "同儕團體",
-  "distractors": [
-   "公共事務",
-   "公民德行",
-   "基本人權"
-  ],
-  "explanation": "「年齡相近、互相影響的朋友群體」說的是「同儕團體」。其他選項：「公共事務」是與大眾生活相關、需要共同處理的事務；「公民德行」是關心公益、守法、尊重他人等公民應有的品格；「基本人權」是每個人生而享有、不可任意剝奪的權利。",
   "source": "generated",
   "figure": null
  },
@@ -47026,6 +47042,38 @@
    "罪刑法定主義"
   ],
   "explanation": "性別平等工作法禁止雇主因性別而在薪資、升遷等方面給予差別待遇。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "soc2-h8",
+  "chapter": "soc2",
+  "difficulty": 2,
+  "context": "小安的爸爸是護理師，媽媽是工程師，有同學笑說：「你們家爸媽的工作是不是顛倒了？」",
+  "question": "這位同學的說法反映了什麼？",
+  "answer": "性別刻板印象",
+  "distractors": [
+   "性別平等",
+   "性傾向",
+   "多元文化"
+  ],
+  "explanation": "把護理師當成女性的工作、工程師當成男性的工作，是把職業固定歸給某一性別的刻板印象。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "soc2-h9",
+  "chapter": "soc2",
+  "difficulty": 3,
+  "context": "某公司招募主管時規定「限男性」，理由是「女性結婚後會分心」。",
+  "question": "依我國法律，這樣的規定最可能違反什麼？",
+  "answer": "雇主不得因性別而在招募上差別待遇",
+  "distractors": [
+   "公司可以自由決定，沒有問題",
+   "罪刑法定主義",
+   "地方自治原則"
+  ],
+  "explanation": "性別平等工作法規定，雇主在招募、升遷、薪資等事項上，不得因性別而有差別待遇。",
   "source": "hand",
   "figure": null
  },
@@ -47702,6 +47750,38 @@
   "figure": null
  },
  {
+  "id": "soc3-h9",
+  "chapter": "soc3",
+  "difficulty": 2,
+  "context": "小婕家裡是爺爺奶奶、爸爸媽媽和她與弟弟，三代住在同一個屋簷下。",
+  "question": "小婕的家庭型態最接近？",
+  "answer": "折衷家庭",
+  "distractors": [
+   "核心家庭",
+   "單親家庭",
+   "隔代教養家庭"
+  ],
+  "explanation": "祖父母、父母與子女三代同住，屬於折衷家庭。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "soc3-h10",
+  "chapter": "soc3",
+  "difficulty": 3,
+  "context": "阿凱的爸媽工作很忙，但每天晚餐一定全家一起吃，聊聊學校和工作發生的事。",
+  "question": "一起吃飯、聊天最能發揮家庭的哪一種功能？",
+  "answer": "情感功能",
+  "distractors": [
+   "經濟功能",
+   "生育功能",
+   "教育功能以外的所有功能"
+  ],
+  "explanation": "家人互相關心、彼此陪伴與支持，是家庭的情感功能。",
+  "source": "hand",
+  "figure": null
+ },
+ {
   "id": "soc3-g0",
   "chapter": "soc3",
   "difficulty": 2,
@@ -47730,22 +47810,6 @@
    "由祖父母照顧孫子女"
   ],
   "explanation": "「折衷家庭」的重點是：祖父母、父母與子女三代同住。補充：祖父母、父母、子女三代同住，但只有一對已婚子女同住。容易混淆的選項：「父母與未婚子女」說的是核心家庭；「夫妻都有工作收入、沒有子女」說的是頂客族家庭；「由祖父母照顧孫子女」說的是隔代教養家庭。",
-  "source": "generated",
-  "figure": null
- },
- {
-  "id": "soc3-g3",
-  "chapter": "soc3",
-  "difficulty": 1,
-  "context": null,
-  "question": "「祖父母、父母與子女三代同住」指的是哪一種家庭型態？",
-  "answer": "折衷家庭",
-  "distractors": [
-   "隔代教養家庭",
-   "新住民家庭",
-   "單親家庭"
-  ],
-  "explanation": "「祖父母、父母與子女三代同住」說的是「折衷家庭」。補充：祖父母、父母、子女三代同住，但只有一對已婚子女同住。其他選項：「隔代教養家庭」是由祖父母照顧孫子女；「新住民家庭」是父母一方是從其他國家或地區移居臺灣的新住民；「單親家庭」是由父親或母親一人與子女組成。",
   "source": "generated",
   "figure": null
  },
@@ -48102,22 +48166,6 @@
   "figure": null
  },
  {
-  "id": "soc3-g27",
-  "chapter": "soc3",
-  "difficulty": 1,
-  "context": null,
-  "question": "「家人互相關心、提供支持」是家庭的哪一種功能？",
-  "answer": "情感功能",
-  "distractors": [
-   "保護功能",
-   "教育功能",
-   "休閒功能"
-  ],
-  "explanation": "「家人互相關心、提供支持」說的是「情感功能」。其他選項：「保護功能」是照顧幼兒、老人與生病的家人；「教育功能」是教導孩子生活規範與價值觀；「休閒功能」是一起出遊、共享休閒時光。",
-  "source": "generated",
-  "figure": null
- },
- {
   "id": "soc3-g28",
   "chapter": "soc3",
   "difficulty": 2,
@@ -48466,6 +48514,38 @@
    "都市計畫徵收"
   ],
   "explanation": "居民主動參與，發掘在地文化、營造社區特色，正是社區總體營造的精神。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "soc4-h8",
+  "chapter": "soc4",
+  "difficulty": 2,
+  "context": "學生會選出各班代表，和學校討論制服與午餐的問題，再把討論結果告訴全校同學。",
+  "question": "學生會在這件事上發揮的功能是？",
+  "answer": "代表學生參與校園事務",
+  "distractors": [
+   "決定學校的人事任用",
+   "制定國家的教育法律",
+   "處理學生的刑事案件"
+  ],
+  "explanation": "學生自治組織由學生選出代表，參與並反映學生對校園事務的意見。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "soc4-h9",
+  "chapter": "soc4",
+  "difficulty": 3,
+  "context": "某社區巷口常有機車亂停，居民先在里民大會討論，再由里長向區公所反映，最後畫設了機車停車格。",
+  "question": "這個過程最能說明什麼？",
+  "answer": "居民參與能改善社區的公共問題",
+  "distractors": [
+   "社區問題只能交給警察處理",
+   "里長可以自己制定法律",
+   "社區事務和居民沒有關係"
+  ],
+  "explanation": "居民透過討論與基層管道反映，讓社區公共問題獲得改善，是社區參與的例子。",
   "source": "hand",
   "figure": null
  },
@@ -49046,6 +49126,38 @@
   "figure": null
  },
  {
+  "id": "soc5-h8",
+  "chapter": "soc5",
+  "difficulty": 2,
+  "context": "小芳利用暑假到偏鄉小學陪孩子讀書，沒有領任何報酬，卻覺得自己學到很多。",
+  "question": "小芳參與的是？",
+  "answer": "志願服務",
+  "distractors": [
+   "打工",
+   "義務教育",
+   "政黨活動"
+  ],
+  "explanation": "自願、不求報酬地付出時間服務他人，就是志願服務。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "soc5-h9",
+  "chapter": "soc5",
+  "difficulty": 3,
+  "context": "一家咖啡店專門雇用身心障礙者，用營業收入支付員工薪水、維持經營，希望讓更多身障者有工作機會。",
+  "question": "這家咖啡店最接近哪一種組織？",
+  "answer": "社會企業",
+  "distractors": [
+   "政府機關",
+   "政黨",
+   "宗教團體"
+  ],
+  "explanation": "以商業模式經營、同時追求社會使命的組織，稱為社會企業。",
+  "source": "hand",
+  "figure": null
+ },
+ {
   "id": "soc5-g0",
   "chapter": "soc5",
   "difficulty": 1,
@@ -49286,22 +49398,6 @@
   "figure": null
  },
  {
-  "id": "soc5-g16",
-  "chapter": "soc5",
-  "difficulty": 1,
-  "context": null,
-  "question": "「自願、不求報酬地服務他人」指的是？",
-  "answer": "志願服務",
-  "distractors": [
-   "公民社會",
-   "社會企業",
-   "非營利組織"
-  ],
-  "explanation": "「自願、不求報酬地服務他人」說的是「志願服務」。其他選項：「公民社會」是人民主動組織、參與公共事務的社會；「社會企業」是以商業方式解決社會問題的組織；「非營利組織」是以公益為目的、盈餘不分配給成員的組織。",
-  "source": "generated",
-  "figure": null
- },
- {
   "id": "soc5-g17",
   "chapter": "soc5",
   "difficulty": 2,
@@ -49362,22 +49458,6 @@
    "人民主動組織、參與公共事務的社會"
   ],
   "explanation": "「社會企業」的重點是：以商業方式解決社會問題的組織。容易混淆的選項：「自願、不求報酬地服務他人」說的是志願服務；「人民組織團體的自由」說的是結社自由；「人民主動組織、參與公共事務的社會」說的是公民社會。",
-  "source": "generated",
-  "figure": null
- },
- {
-  "id": "soc5-g22",
-  "chapter": "soc5",
-  "difficulty": 1,
-  "context": null,
-  "question": "「以商業方式解決社會問題的組織」指的是？",
-  "answer": "社會企業",
-  "distractors": [
-   "志願服務",
-   "公民社會",
-   "結社自由"
-  ],
-  "explanation": "「以商業方式解決社會問題的組織」說的是「社會企業」。其他選項：「志願服務」是自願、不求報酬地服務他人；「公民社會」是人民主動組織、參與公共事務的社會；「結社自由」是人民組織團體的自由。",
   "source": "generated",
   "figure": null
  },
@@ -49830,6 +49910,38 @@
   "figure": null
  },
  {
+  "id": "soc6-h8",
+  "chapter": "soc6",
+  "difficulty": 2,
+  "context": "小凱家裡過年一定會圍爐吃年夜飯、發紅包，這些習慣代代相傳。",
+  "question": "這屬於哪一種社會規範？",
+  "answer": "風俗習慣",
+  "distractors": [
+   "法律",
+   "宗教規範",
+   "校規"
+  ],
+  "explanation": "長期流傳、大家習慣遵守的生活方式，是風俗習慣。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "soc6-h9",
+  "chapter": "soc6",
+  "difficulty": 3,
+  "context": "阿德覺得某個國家的人用手吃飯「很落後」，同學提醒他那是當地的飲食文化，有它的背景。",
+  "question": "同學是在提醒阿德應該抱持哪一種態度？",
+  "answer": "文化相對論",
+  "distractors": [
+   "我族中心主義",
+   "文化優越感",
+   "流行文化"
+  ],
+  "explanation": "以當地的文化脈絡理解不同文化，而不是用自己的標準評斷，是文化相對論的態度。",
+  "source": "hand",
+  "figure": null
+ },
+ {
   "id": "soc6-g0",
   "chapter": "soc6",
   "difficulty": 1,
@@ -50022,22 +50134,6 @@
   "figure": null
  },
  {
-  "id": "soc6-g12",
-  "chapter": "soc6",
-  "difficulty": 1,
-  "context": null,
-  "question": "「長期流傳、大家習慣遵守的生活方式」指的是？",
-  "answer": "風俗習慣",
-  "distractors": [
-   "社會規範",
-   "文化創新",
-   "法律"
-  ],
-  "explanation": "「長期流傳、大家習慣遵守的生活方式」說的是「風俗習慣」。其他選項：「社會規範」是引導人們行為的各種規則；「文化創新」是在傳統中加入新元素，使文化持續發展；「法律」是國家制定、具有強制力的規範。",
-  "source": "generated",
-  "figure": null
- },
- {
   "id": "soc6-g13",
   "chapter": "soc6",
   "difficulty": 2,
@@ -50114,22 +50210,6 @@
    "認為自己文化最優越的態度"
   ],
   "explanation": "「文化相對論」的重點是：以當地文化脈絡理解不同文化的態度。容易混淆的選項：「尊重並包容不同文化並存」說的是多元文化；「國家制定、具有強制力的規範」說的是法律；「認為自己文化最優越的態度」說的是我族中心主義。",
-  "source": "generated",
-  "figure": null
- },
- {
-  "id": "soc6-g18",
-  "chapter": "soc6",
-  "difficulty": 1,
-  "context": null,
-  "question": "「以當地文化脈絡理解不同文化的態度」指的是？",
-  "answer": "文化相對論",
-  "distractors": [
-   "社會規範",
-   "流行文化",
-   "風俗習慣"
-  ],
-  "explanation": "「以當地文化脈絡理解不同文化的態度」說的是「文化相對論」。其他選項：「社會規範」是引導人們行為的各種規則；「流行文化」是在一段時間內廣受大眾喜愛的文化現象；「風俗習慣」是長期流傳、大家習慣遵守的生活方式。",
   "source": "generated",
   "figure": null
  },
@@ -50614,6 +50694,38 @@
   "figure": null
  },
  {
+  "id": "law1-h9",
+  "chapter": "law1",
+  "difficulty": 2,
+  "context": "某國領導人宣布取消下一次總統選舉，並下令關閉批評政府的報社。",
+  "question": "這些做法最符合哪一種政治體制的特徵？",
+  "answer": "專制政治",
+  "distractors": [
+   "民主政治",
+   "地方自治",
+   "權力分立"
+  ],
+  "explanation": "取消定期選舉、壓制新聞自由，是專制政治的特徵。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "law1-h10",
+  "chapter": "law1",
+  "difficulty": 3,
+  "context": "政府為了防疫，要求民眾在特定場所戴口罩，而不是要求全民一律不得出門。",
+  "question": "政府選擇限制較小的手段，最符合哪一項原則？",
+  "answer": "比例原則",
+  "distractors": [
+   "罪刑法定主義",
+   "多數決",
+   "法律優位原則"
+  ],
+  "explanation": "限制人民權利時，手段要有助於達成目的，並選擇侵害最小的方式，這是比例原則。",
+  "source": "hand",
+  "figure": null
+ },
+ {
   "id": "law1-g0",
   "chapter": "law1",
   "difficulty": 2,
@@ -51062,22 +51174,6 @@
   "figure": null
  },
  {
-  "id": "law1-g30",
-  "chapter": "law1",
-  "difficulty": 1,
-  "context": null,
-  "question": "「限制人民權利時，手段必須適當且必要」指的是？",
-  "answer": "比例原則",
-  "distractors": [
-   "人民主權",
-   "法治",
-   "公民投票"
-  ],
-  "explanation": "「限制人民權利時，手段必須適當且必要」說的是「比例原則」。補充：政府限制人權時，手段要有助目的、選最小侵害的方式，而且損害不能大於利益。其他選項：「人民主權」是人民是國家最高權力的擁有者；「法治」是政府與人民都必須依法行事；「公民投票」是人民對重大議題直接投票表決。",
-  "source": "generated",
-  "figure": null
- },
- {
   "id": "law1-g31",
   "chapter": "law1",
   "difficulty": 1,
@@ -51474,6 +51570,38 @@
    "釋憲"
   ],
   "explanation": "監察院可以對違法失職的公務人員提出彈劾，移送懲戒法院審理。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "law2-h10",
+  "chapter": "law2",
+  "difficulty": 2,
+  "context": "新聞報導：總統提名了新的大法官人選，但被提名人還不能直接上任。",
+  "question": "大法官人選還需要經過哪一個機關同意？",
+  "answer": "立法院",
+  "distractors": [
+   "監察院",
+   "行政院",
+   "考試院"
+  ],
+  "explanation": "司法院大法官由總統提名，經立法院同意後任命。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "law2-h11",
+  "chapter": "law2",
+  "difficulty": 3,
+  "context": "監察院審核政府各機關的決算時，發現某機關有不當的支出。",
+  "question": "監察院行使的是哪一種職權？",
+  "answer": "審計權",
+  "distractors": [
+   "立法權",
+   "考試權",
+   "司法審判權"
+  ],
+  "explanation": "監察院設有審計部，負責審核政府的決算，屬於審計權。",
   "source": "hand",
   "figure": null
  },
@@ -52326,6 +52454,38 @@
   "figure": null
  },
  {
+  "id": "law3-h10",
+  "chapter": "law3",
+  "difficulty": 2,
+  "context": "選舉當天，小明看到有人在圈票處旁邊偷看別人投票，馬上向工作人員反映。",
+  "question": "偷看別人投票，破壞了哪一項選舉原則？",
+  "answer": "秘密投票",
+  "distractors": [
+   "普通選舉",
+   "平等選舉",
+   "直接選舉"
+  ],
+  "explanation": "選民投票的內容不能被他人知道，這是秘密投票原則。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "law3-h11",
+  "chapter": "law3",
+  "difficulty": 3,
+  "context": "某位市議員在任期中多次被發現收受不當利益，選民發起連署，希望在任期屆滿前讓他下台。",
+  "question": "選民行使的是哪一種權利？",
+  "answer": "罷免權",
+  "distractors": [
+   "創制權",
+   "複決權",
+   "請願權"
+  ],
+  "explanation": "人民在任期中解除民選公職人員職務的權利，是罷免權。",
+  "source": "hand",
+  "figure": null
+ },
+ {
   "id": "law3-g0",
   "chapter": "law3",
   "difficulty": 2,
@@ -52434,22 +52594,6 @@
    "人民對重大議題直接投票表決"
   ],
   "explanation": "「秘密投票」的重點是：選民投票內容不被他人知道。容易混淆的選項：「每人一票、每票等值」說的是平等選舉；「以金錢或利益交換選票」說的是賄選；「人民對重大議題直接投票表決」說的是公民投票。",
-  "source": "generated",
-  "figure": null
- },
- {
-  "id": "law3-g7",
-  "chapter": "law3",
-  "difficulty": 1,
-  "context": null,
-  "question": "「選民投票內容不被他人知道」指的是？",
-  "answer": "秘密投票",
-  "distractors": [
-   "賄選",
-   "創制",
-   "平等選舉"
-  ],
-  "explanation": "「選民投票內容不被他人知道」說的是「秘密投票」。其他選項：「賄選」是以金錢或利益交換選票；「創制」是人民提出法律或政策的權利；「平等選舉」是每人一票、每票等值。",
   "source": "generated",
   "figure": null
  },
@@ -53110,6 +53254,38 @@
   "figure": null
  },
  {
+  "id": "law4-h8",
+  "chapter": "law4",
+  "difficulty": 2,
+  "context": "某縣議會通過一項關於公園管理的規定，並由縣政府公布實施。",
+  "question": "這項規定屬於哪一種地方法規？",
+  "answer": "自治條例",
+  "distractors": [
+   "中央法律",
+   "憲法增修條文",
+   "國際條約"
+  ],
+  "explanation": "經地方議會通過、由地方政府公布的地方法規，稱為自治條例。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "law4-h9",
+  "chapter": "law4",
+  "difficulty": 3,
+  "context": "某縣的稅收不足，蓋學校、修道路的經費大多要靠中央補助。",
+  "question": "這種情形顯示地方自治面臨什麼問題？",
+  "answer": "地方財政自主性不足",
+  "distractors": [
+   "地方議會權力太大",
+   "中央政府沒有收入",
+   "地方居民不需要繳稅"
+  ],
+  "explanation": "地方自有財源不足時，須仰賴中央的統籌分配稅款與補助，會影響地方施政的自主性。",
+  "source": "hand",
+  "figure": null
+ },
+ {
   "id": "law4-g0",
   "chapter": "law4",
   "difficulty": 2,
@@ -53250,22 +53426,6 @@
    "依法辦理自治事項、具有法人地位的地方團體"
   ],
   "explanation": "「自治條例」的重點是：經地方議會通過的地方法規。容易混淆的選項：「人口較多、由中央直接管轄的城市」說的是直轄市；「地方最基層的組織，由村里長服務居民」說的是村里；「依法辦理自治事項、具有法人地位的地方團體」說的是地方自治團體。",
-  "source": "generated",
-  "figure": null
- },
- {
-  "id": "law4-g11",
-  "chapter": "law4",
-  "difficulty": 1,
-  "context": null,
-  "question": "「經地方議會通過的地方法規」指的是？",
-  "answer": "自治條例",
-  "distractors": [
-   "地方自治團體",
-   "統籌分配稅款",
-   "地方行政機關"
-  ],
-  "explanation": "「經地方議會通過的地方法規」說的是「自治條例」。其他選項：「地方自治團體」是依法辦理自治事項、具有法人地位的地方團體；「統籌分配稅款」是由中央統一分配給地方的稅收；「地方行政機關」是縣市政府等負責執行地方事務的機關。",
   "source": "generated",
   "figure": null
  },
@@ -53830,6 +53990,38 @@
   "figure": null
  },
  {
+  "id": "law5-h8",
+  "chapter": "law5",
+  "difficulty": 2,
+  "context": "立法院三讀通過一項新的法律，送請總統公布。",
+  "question": "下列哪一個名稱，最可能是這項法律的名稱？",
+  "answer": "○○條例",
+  "distractors": [
+   "○○辦法",
+   "○○規則",
+   "○○細則"
+  ],
+  "explanation": "法律的名稱可以是法、律、條例或通則；辦法、規則、細則屬於命令的名稱。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "law5-h9",
+  "chapter": "law5",
+  "difficulty": 3,
+  "context": "某機關想限制人民在特定區域集會，只發布了一項行政命令，卻沒有法律依據。",
+  "question": "這樣的做法違反哪一項原則？",
+  "answer": "法律保留原則",
+  "distractors": [
+   "比例原則",
+   "多數決原則",
+   "無罪推定原則"
+  ],
+  "explanation": "限制人民權利的重要事項，必須以法律或法律明確授權的命令規定，這是法律保留原則。",
+  "source": "hand",
+  "figure": null
+ },
+ {
   "id": "law5-g0",
   "chapter": "law5",
   "difficulty": 2,
@@ -54098,22 +54290,6 @@
    "命令不得牴觸憲法與法律"
   ],
   "explanation": "「法律保留原則」的重點是：限制人民權利的重要事項必須以法律規定。補充：限制人民權利的事要用法律規定，不能只靠行政命令。容易混淆的選項：「法律案在立法院審議的程序」說的是三讀；「國家根本大法，位階最高」說的是憲法；「命令不得牴觸憲法與法律」說的是法律優位原則。",
-  "source": "generated",
-  "figure": null
- },
- {
-  "id": "law5-g18",
-  "chapter": "law5",
-  "difficulty": 1,
-  "context": null,
-  "question": "「限制人民權利的重要事項必須以法律規定」指的是？",
-  "answer": "法律保留原則",
-  "distractors": [
-   "法律優位原則",
-   "法律",
-   "憲法"
-  ],
-  "explanation": "「限制人民權利的重要事項必須以法律規定」說的是「法律保留原則」。補充：限制人民權利的事要用法律規定，不能只靠行政命令。其他選項：「法律優位原則」是命令不得牴觸憲法與法律；「法律」是經立法院通過、總統公布的規範；「憲法」是國家根本大法，位階最高。",
   "source": "generated",
   "figure": null
  },
@@ -54630,6 +54806,38 @@
   "figure": null
  },
  {
+  "id": "law6-h9",
+  "chapter": "law6",
+  "difficulty": 2,
+  "context": "小英在網路上賣二手書，買家已經匯款，她卻說最近太忙忘了寄，拖了一個月還沒寄出。",
+  "question": "買家最適合依哪一種法律請求她出貨或賠償？",
+  "answer": "民法",
+  "distractors": [
+   "刑法",
+   "憲法",
+   "行政法"
+  ],
+  "explanation": "買賣是私人之間的契約，一方沒有依約交付，屬於民事糾紛，可以依民法請求履行或賠償。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "law6-h10",
+  "chapter": "law6",
+  "difficulty": 3,
+  "context": "小美和樓上鄰居因為漏水吵了很久，後來雙方一起到區公所的調解委員會，在調解委員協助下達成協議。",
+  "question": "這種解決紛爭的方式是？",
+  "answer": "調解",
+  "distractors": [
+   "和解",
+   "訴訟",
+   "訴願"
+  ],
+  "explanation": "由第三人（調解委員）居中協調、解決紛爭，稱為調解。",
+  "source": "hand",
+  "figure": null
+ },
+ {
   "id": "law6-g0",
   "chapter": "law6",
   "difficulty": 2,
@@ -55010,22 +55218,6 @@
    "填補他人所受損害的責任"
   ],
   "explanation": "「調解」的重點是：由第三人居中協調解決紛爭。補充：由鄉鎮市區調解委員會辦理，免費，成立後經法院核定具有效力。容易混淆的選項：「未滿七歲的人，或受監護宣告的人」說的是無行為能力人；「同意對方要約的意思表示」說的是承諾；「填補他人所受損害的責任」說的是損害賠償。",
-  "source": "generated",
-  "figure": null
- },
- {
-  "id": "law6-g25",
-  "chapter": "law6",
-  "difficulty": 1,
-  "context": null,
-  "question": "「由第三人居中協調解決紛爭」指的是？",
-  "answer": "調解",
-  "distractors": [
-   "契約",
-   "損害賠償",
-   "權利能力"
-  ],
-  "explanation": "「由第三人居中協調解決紛爭」說的是「調解」。補充：由鄉鎮市區調解委員會辦理，免費，成立後經法院核定具有效力。其他選項：「契約」是雙方意思表示一致而成立的約定；「損害賠償」是填補他人所受損害的責任；「權利能力」是享受權利、負擔義務的資格。",
   "source": "generated",
   "figure": null
  },
@@ -55526,6 +55718,38 @@
   "figure": null
  },
  {
+  "id": "law7-h9",
+  "chapter": "law7",
+  "difficulty": 2,
+  "context": "法院審理刑事案件時，被告請了一位律師在法庭上為他說明、辯論。",
+  "question": "這位律師的角色是？",
+  "answer": "辯護人",
+  "distractors": [
+   "檢察官",
+   "法官",
+   "書記官"
+  ],
+  "explanation": "在刑事訴訟中協助被告、為被告辯護的律師，稱為辯護人。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "law7-h10",
+  "chapter": "law7",
+  "difficulty": 3,
+  "context": "阿明和人起口角，推了對方一把造成輕微擦傷。對方後來和阿明和解，撤回了告訴。",
+  "question": "如果這是普通傷害罪，撤回告訴後通常會怎樣？",
+  "answer": "國家原則上不再追究",
+  "distractors": [
+   "檢察官仍然一定要起訴",
+   "改由民事法院判刑",
+   "阿明一定要坐牢"
+  ],
+  "explanation": "普通傷害罪是告訴乃論罪，被害人撤回告訴後，國家原則上不再追究。",
+  "source": "hand",
+  "figure": null
+ },
+ {
   "id": "law7-g0",
   "chapter": "law7",
   "difficulty": 2,
@@ -55730,22 +55954,6 @@
    "判決確定有罪前推定為無罪"
   ],
   "explanation": "「辯護人」的重點是：在刑事訴訟中協助被告的律師。容易混淆的選項：「代表國家偵查犯罪、提起公訴」說的是檢察官；「依法審判、做出判決」說的是法官；「判決確定有罪前推定為無罪」說的是無罪推定原則。",
-  "source": "generated",
-  "figure": null
- },
- {
-  "id": "law7-g16",
-  "chapter": "law7",
-  "difficulty": 1,
-  "context": null,
-  "question": "「在刑事訴訟中協助被告的律師」指的是？",
-  "answer": "辯護人",
-  "distractors": [
-   "感化教育",
-   "少年事件處理法",
-   "無罪推定原則"
-  ],
-  "explanation": "「在刑事訴訟中協助被告的律師」說的是「辯護人」。其他選項：「感化教育」是將少年安置於矯正學校接受教育的保護處分；「少年事件處理法」是處理少年觸法行為、重視保護教育的法律；「無罪推定原則」是判決確定有罪前推定為無罪。",
   "source": "generated",
   "figure": null
  },
@@ -56274,6 +56482,38 @@
    "公民投票"
   ],
   "explanation": "公有公共設施因設置或管理有欠缺，使人民受損害時，國家應負賠償責任。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "law8-h8",
+  "chapter": "law8",
+  "difficulty": 2,
+  "context": "交通警察開了一張罰單給違規停車的小陳，要他繳納罰鍰。",
+  "question": "這張罰單屬於哪一種處罰？",
+  "answer": "行政罰",
+  "distractors": [
+   "刑罰",
+   "民事賠償",
+   "學校懲處"
+  ],
+  "explanation": "罰鍰是對違反行政法上義務的處罰，屬於行政罰。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "law8-h9",
+  "chapter": "law8",
+  "difficulty": 3,
+  "context": "小李不服國稅局要他補稅的處分，提起訴願後被駁回，他仍然認為處分違法。",
+  "question": "小李接下來可以採取的救濟途徑是？",
+  "answer": "向行政法院提起行政訴訟",
+  "distractors": [
+   "向立法院提起訴願",
+   "請監察院直接撤銷處分",
+   "向調解委員會申請調解"
+  ],
+  "explanation": "不服訴願決定時，可以向行政法院提起行政訴訟。",
   "source": "hand",
   "figure": null
  },
@@ -56930,6 +57170,38 @@
    "沉沒成本可以全部收回"
   ],
   "explanation": "已經付出且無法收回的錢是沉沒成本，理性決策應著眼於接下來的效益與代價。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "eco1-h8",
+  "chapter": "eco1",
+  "difficulty": 2,
+  "context": "小凱有一筆壓歲錢，可以買新球鞋或一套參考書，但錢只夠買其中一樣。",
+  "question": "小凱必須做選擇，根本的原因是？",
+  "answer": "資源有限",
+  "distractors": [
+   "慾望有限",
+   "商品都是免費的",
+   "價格並不重要"
+  ],
+  "explanation": "資源有限而慾望無窮，所以人們必須在不同選項之間做選擇。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "eco1-h9",
+  "chapter": "eco1",
+  "difficulty": 3,
+  "context": "阿華週末可以去打工賺 1000 元、去上已經繳費且不能退費的補習課，或在家休息。他最後選擇去補習。",
+  "question": "分析阿華的選擇，下列敘述何者正確？",
+  "answer": "已繳的學費是沉沒成本，不應影響決定",
+  "distractors": [
+   "已繳的學費就是補習的機會成本",
+   "打工的 1000 元和這個選擇無關",
+   "在家休息完全沒有價值"
+  ],
+  "explanation": "已經付出且無法收回的學費是沉沒成本；去補習的機會成本，是放棄的選項中價值最高者，例如打工的 1000 元。",
   "source": "hand",
   "figure": null
  },
@@ -57750,6 +58022,38 @@
   "figure": null
  },
  {
+  "id": "eco2-h9",
+  "chapter": "eco2",
+  "difficulty": 2,
+  "context": "某款手機大受歡迎，店家大排長龍、到處缺貨。",
+  "question": "在其他條件不變下，這款手機的價格最可能？",
+  "answer": "上漲",
+  "distractors": [
+   "下跌",
+   "維持不變",
+   "變成免費"
+  ],
+  "explanation": "需求大增造成供不應求，價格傾向上漲。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "eco2-h10",
+  "chapter": "eco2",
+  "difficulty": 3,
+  "context": "手機的價格大幅下降後，手機殼的銷售量也跟著增加。",
+  "question": "手機和手機殼是什麼關係？",
+  "answer": "互補品",
+  "distractors": [
+   "替代品",
+   "公共財",
+   "自由財"
+  ],
+  "explanation": "需要一起使用的商品是互補品；手機變便宜、買的人變多，手機殼的需求也跟著增加。",
+  "source": "hand",
+  "figure": null
+ },
+ {
   "id": "eco2-g0",
   "chapter": "eco2",
   "difficulty": 2,
@@ -57858,22 +58162,6 @@
    "需求量大於供給量，供不應求"
   ],
   "explanation": "「互補品」的重點是：需要一起使用的商品。補充：一個變貴，另一個的需求會減少，例如汽車與汽油。容易混淆的選項：「功能相近、可以互相取代的商品」說的是替代品；「其他條件不變下，商品價格上漲時需求量減少」說的是需求法則；「需求量大於供給量，供不應求」說的是超額需求。",
-  "source": "generated",
-  "figure": null
- },
- {
-  "id": "eco2-g9",
-  "chapter": "eco2",
-  "difficulty": 1,
-  "context": null,
-  "question": "「需要一起使用的商品」指的是？",
-  "answer": "互補品",
-  "distractors": [
-   "需求法則",
-   "獨占",
-   "均衡價格"
-  ],
-  "explanation": "「需要一起使用的商品」說的是「互補品」。補充：一個變貴，另一個的需求會減少，例如汽車與汽油。其他選項：「需求法則」是其他條件不變下，商品價格上漲時需求量減少；「獨占」是市場上只有一家廠商供應某商品；「均衡價格」是需求量等於供給量時的價格。",
   "source": "generated",
   "figure": null
  },
@@ -58450,6 +58738,38 @@
    "通貨緊縮"
   ],
   "explanation": "信用卡未全額繳清，剩下的金額會產生循環利息，利率很高，欠款會越滾越大。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "eco3-h9",
+  "chapter": "eco3",
+  "difficulty": 2,
+  "context": "小美把一萬元存進銀行的定期存款，一年後拿回的錢比一萬元多一些。",
+  "question": "多出來的錢稱為？",
+  "answer": "利息",
+  "distractors": [
+   "本金",
+   "稅金",
+   "股利"
+  ],
+  "explanation": "把錢借給銀行使用所得到的報酬，稱為利息。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "eco3-h10",
+  "chapter": "eco3",
+  "difficulty": 3,
+  "context": "小明想投資：股票可能賺很多也可能虧損，定期存款報酬較低但相對穩定。",
+  "question": "這說明投資理財時要考慮什麼？",
+  "answer": "報酬與風險之間的取捨",
+  "distractors": [
+   "所有投資都保證獲利",
+   "風險越高一定賺越多",
+   "股票一定比存款好"
+  ],
+  "explanation": "一般來說，可能報酬越高的投資風險也越高，理財時要依自己的需要在報酬與風險之間取捨。",
   "source": "hand",
   "figure": null
  },
@@ -59254,6 +59574,38 @@
   "figure": null
  },
  {
+  "id": "eco4-h9",
+  "chapter": "eco4",
+  "difficulty": 2,
+  "context": "某餐廳要求員工每天工作十四小時，卻不給加班費，員工向勞工局檢舉。",
+  "question": "員工的權益主要受到哪一部法律保障？",
+  "answer": "勞動基準法",
+  "distractors": [
+   "民法",
+   "刑法",
+   "公司法"
+  ],
+  "explanation": "勞動基準法規定工時、工資、加班費等最低勞動條件。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "eco4-h10",
+  "chapter": "eco4",
+  "difficulty": 3,
+  "context": "小傑十七歲，想在暑假到商店打工。",
+  "question": "依勞動基準法，下列敘述何者正確？",
+  "answer": "未滿十八歲者不得從事危險性或有害性的工作",
+  "distractors": [
+   "未滿十八歲的人完全不能工作",
+   "只要本人同意，就可以從事危險性的工作",
+   "打工不受勞動基準法保障"
+  ],
+  "explanation": "未滿十八歲的人可以受僱，但不得從事危險性或有害性的工作。",
+  "source": "hand",
+  "figure": null
+ },
+ {
   "id": "eco4-g0",
   "chapter": "eco4",
   "difficulty": 2,
@@ -59986,6 +60338,38 @@
    "比較利益"
   ],
   "explanation": "生產活動使旁人受損卻未負擔代價，稱為外部成本，政府可以用管制、罰款或收費改善。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "eco5-h9",
+  "chapter": "eco5",
+  "difficulty": 2,
+  "context": "政府在偏鄉興建道路與橋梁，讓居民交通更方便，也帶動了觀光。",
+  "question": "這主要表現政府的哪一種經濟角色？",
+  "answer": "提供公共建設",
+  "distractors": [
+   "制定刑法",
+   "審判民事案件",
+   "發行股票"
+  ],
+  "explanation": "政府提供道路、橋梁等公共建設，補足市場不容易提供的部分。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "eco5-h10",
+  "chapter": "eco5",
+  "difficulty": 3,
+  "context": "某人一年的所得越高，適用的所得稅稅率也越高。",
+  "question": "這種課稅方式稱為？",
+  "answer": "累進稅率",
+  "distractors": [
+   "比例稅率",
+   "定額稅",
+   "關稅"
+  ],
+  "explanation": "所得越高、適用稅率越高的課稅方式是累進稅率，有助於縮小貧富差距。",
   "source": "hand",
   "figure": null
  },
@@ -60758,6 +61142,38 @@
   "figure": null
  },
  {
+  "id": "eco6-h10",
+  "chapter": "eco6",
+  "difficulty": 2,
+  "context": "小琳的衣服是越南製造，手機的零件來自好幾個國家，在其他地方組裝後賣到全世界。",
+  "question": "這個現象最能說明什麼？",
+  "answer": "經濟全球化",
+  "distractors": [
+   "都市化",
+   "保護主義",
+   "去殖民化"
+  ],
+  "explanation": "商品在世界各地分工生產與銷售、各國經濟互相依賴，是經濟全球化。",
+  "source": "hand",
+  "figure": null
+ },
+ {
+  "id": "eco6-h11",
+  "chapter": "eco6",
+  "difficulty": 3,
+  "context": "某國為了保護國內的稻農，對進口稻米課徵很高的關稅，國內米價因此比較高。",
+  "question": "這種政策屬於？",
+  "answer": "保護主義",
+  "distractors": [
+   "自由貿易",
+   "比較利益",
+   "區域經濟整合"
+  ],
+  "explanation": "以關稅等措施保護國內產業的做法是保護主義，但消費者可能要付出較高的價格。",
+  "source": "hand",
+  "figure": null
+ },
+ {
   "id": "eco6-g1",
   "chapter": "eco6",
   "difficulty": 1,
@@ -60882,22 +61298,6 @@
    "各國生產機會成本較低的產品再互相交換"
   ],
   "explanation": "「保護主義」的重點是：以關稅等措施保護國內產業。補充：提高關稅可以保護國內產業，但消費者要付出較高的價格。容易混淆的選項：「在多個國家設廠、經營的企業」說的是跨國企業；「減少關稅與貿易障礙的貿易方式」說的是自由貿易；「各國生產機會成本較低的產品再互相交換」說的是比較利益。",
-  "source": "generated",
-  "figure": null
- },
- {
-  "id": "eco6-g11",
-  "chapter": "eco6",
-  "difficulty": 1,
-  "context": null,
-  "question": "「以關稅等措施保護國內產業」指的是？",
-  "answer": "保護主義",
-  "distractors": [
-   "全球化",
-   "世界衛生組織",
-   "國際非政府組織"
-  ],
-  "explanation": "「以關稅等措施保護國內產業」說的是「保護主義」。補充：提高關稅可以保護國內產業，但消費者要付出較高的價格。其他選項：「全球化」是世界各地交流與互相依賴越來越密切；「世界衛生組織」是聯合國下負責國際衛生事務的組織；「國際非政府組織」是由民間組成、跨國運作的組織。",
   "source": "generated",
   "figure": null
  },

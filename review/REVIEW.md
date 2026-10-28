@@ -12,9 +12,9 @@
 | `questions_twg.md` | 臺灣地理島（七年級地理） | 488 |
 | `questions_asg.md` | 亞洲島（八年級地理） | 286 |
 | `questions_wdg.md` | 世界島（九年級地理） | 243 |
-| `questions_soc.md` | 社會生活島（七年級公民） | 262 |
-| `questions_law.md` | 政治與法律島（八年級公民） | 396 |
-| `questions_eco.md` | 經濟與全球島（九年級公民） | 288 |
+| `questions_soc.md` | 社會生活島（七年級公民） | 267 |
+| `questions_law.md` | 政治與法律島（八年級公民） | 406 |
+| `questions_eco.md` | 經濟與全球島（九年級公民） | 298 |
 | `questions_cross.md` | 跨科航線 | 33 |
 
 `questions.json` 是同樣內容的機器可讀版本。
