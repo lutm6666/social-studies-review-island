@@ -16,7 +16,7 @@ function buildBank(HAND,GEN,PERIODS){
     let tags=[];
     // 重疊的資料互不當誘答；先洗牌整個候選池再過濾，未受影響的題目選項維持不變
     const ov=spec.ov||[], clash=(a,b)=>a&&b&&a!==b&&ov.some(g=>g.includes(a)&&g.includes(b));
-    const pick=(pool,ok)=>sample(pool,pool.length,r).filter(ok).slice(0,3);
+    const pick=(pool,ok,pref)=>{ let a=sample(pool,pool.length,r).filter(ok); if(pref) a=a.filter(pref).concat(a.filter(x=>!pref(x))); return a.slice(0,3); };
     // tags：同一筆資料（鍵與值）出的題目共用標籤，同一輪抽題時避免同時出現
     const add=(d,q,c,w,ex,t)=>{ if(w.length<3||new Set([c].concat(w)).size<4) return false; list.push({id:lm+'-g'+(n++),lm,d,q,c,w,ex,src:'g',t:t||null,tags}); return true; };
 
@@ -39,10 +39,12 @@ function buildBank(HAND,GEN,PERIODS){
           add(set.da||3, '「'+v+'」最主要的原因是？', k, wk, v+'，最主要是因為「'+k+'」。'+tip+'其他選項會帶來別的結果：'+wk.map(x=>'「'+x+'」導致'+valOf(x)).join('；')+'。','cause');
           return;
         }
-        if(set.qb){ const pool=uniq(vals.filter(x=>x!==v).concat(set.pool||[])); const w=pick(pool,x=>!clash(k,keyOf(x)));
+        // 主題分群：同主題的資料優先當誘答（data_groups.js）
+        const g=set.grp&&set.grp[k], same=g?(kk=>!!kk&&set.grp[kk]===g):null;
+        if(set.qb){ const pool=uniq(vals.filter(x=>x!==v).concat(set.pool||[])); const w=pick(pool,x=>!clash(k,keyOf(x)),same&&(x=>same(keyOf(x))));
           const other=set.oneway?'':w.map(x=>{ const kk=keyOf(x); return kk?'「'+x+'」說的是'+kk:null; }).filter(Boolean).join('；');
           add(set.db||2, fill(set.qb,k,v), v, w, set.oneway ? '「'+k+'」→ '+v+'。'+tip : '「'+k+'」的重點是：'+v+'。'+tip+(other?'容易混淆的選項：'+other+'。':'')); }
-        if(set.qa && !set.oneway){ const keys=set.items.filter(i=>i[1]!==v).map(i=>i[0]); const w=pick(keys,x=>!clash(k,x));
+        if(set.qa && !set.oneway){ const keys=set.items.filter(i=>i[1]!==v).map(i=>i[0]); const w=pick(keys,x=>!clash(k,x),same);
           const other=w.map(x=>'「'+x+'」是'+valOf(x)).join('；');
           add(set.da||1, fill(set.qa,k,v), k, w, '「'+v+'」說的是「'+k+'」。'+tip+'其他選項：'+other+'。'); }
       });
