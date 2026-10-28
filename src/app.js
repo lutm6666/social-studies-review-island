@@ -85,7 +85,7 @@ async function pushNow(){
     const [db,user]=await Promise.all([claude.use('db'),claude.use('user')]);
     if(!db || !user) return;
     const uid=await user.id(); if(!uid) return;
-    const ref=db.doc('data/users/'+uid+'/progress');
+    reportDb=db; const ref=db.doc('data/users/'+uid+'/progress');
     syncLabel('正在讀取帳號進度…');
     const snap=await ref.get();
     let remote=null; if(snap.exists){ try{ remote=JSON.parse(snap.data().st); }catch(e){} }
@@ -688,7 +688,8 @@ function answer(k){
   const gap=record(q.id, ok); if(ok && scene3d && scene3d.cheer) scene3d.cheer(); if(typeof sfx==='function') sfx(ok?'right':'wrong');
   body.querySelectorAll('.opt').forEach((b,idx)=>{ b.disabled=true; if(S.opts[idx]===q.c) b.classList.add('is-right'); if(idx===k && !ok) b.classList.add('is-wrong'); });
   const fb=$('#fb'); fb.hidden=false; fb.className='feedback'+(ok?'':' bad');
-  fb.innerHTML='<div class="fb-head"><span class="fb-icon" aria-hidden="true">'+(ok?'✓':'✕')+'</span><strong>'+(ok?'答對了':'答錯了')+'</strong></div>'+(ok?'':'<div class="fb-ans"><span class="fb-label">正解</span><span>'+fmtOpt(q.c)+'</span></div>')+'<p class="fb-ex">'+esc(q.ex)+'</p><div class="fb-foot"><span class="nextrev">下次複習：'+(gap<=1?'明天':gap+' 天後')+'</span><button type="button" class="linkbtn" id="flagBtn" aria-pressed="'+!!ST.flag[q.id]+'">⚑ '+(ST.flag[q.id]?'已標記（再按取消）':'這題有疑問')+'</button><a class="linkbtn" href="'+esc(reportURL(q))+'" target="_blank" rel="noopener">回報錯誤 ↗</a></div>';
+  fb.innerHTML='<div class="fb-head"><span class="fb-icon" aria-hidden="true">'+(ok?'✓':'✕')+'</span><strong>'+(ok?'答對了':'答錯了')+'</strong></div>'+(ok?'':'<div class="fb-ans"><span class="fb-label">正解</span><span>'+fmtOpt(q.c)+'</span></div>')+'<p class="fb-ex">'+esc(q.ex)+'</p><div class="fb-foot"><span class="nextrev">下次複習：'+(gap<=1?'明天':gap+' 天後')+'</span><button type="button" class="linkbtn" id="flagBtn" aria-pressed="'+!!ST.flag[q.id]+'">⚑ '+(ST.flag[q.id]?'已標記（再按取消）':'這題有疑問')+'</button><button type="button" class="linkbtn" id="rptBtn">'+(reportedIds()[q.id]?'已回報 ✓':'回報錯誤')+'</button></div>';
+  $('#rptBtn').addEventListener('click',()=>openReport(q));
   $('#flagBtn').addEventListener('click',e=>{ if(ST.flag[q.id]) delete ST.flag[q.id]; else ST.flag[q.id]=1; save(); e.currentTarget.setAttribute('aria-pressed',String(!!ST.flag[q.id])); e.currentTarget.textContent='⚑ '+(ST.flag[q.id]?'已標記（再按取消）':'這題有疑問'); });
   $('#qact').hidden=false; const nb=$('#nextBtn'); nb.focus({preventScroll:true});
   fb.scrollIntoView({block:'nearest',behavior:reduceMotion?'auto':'smooth'});
@@ -696,6 +697,50 @@ function answer(k){
 }
 // 回報錯誤：開啟 GitHub 的回報頁，題號與題目內容已經填好
 const REPO_URL='https://github.com/lutm6666/social-studies-review-island';
+// 不用登入的回報：
+//  1. Claude artifact 版：直接寫進 artifact 的資料庫（reports 集合）
+//  2. 公開網址版：送到 Google 表單（REPORT_FORM 設定好之後啟用）
+//  3. 兩者都不能用時：複製回報內容，或改走 GitHub
+let reportDb=null;
+const REPORT_FORM=null; // 例：{action:'https://docs.google.com/forms/d/e/…/formResponse', f:{qid:'entry.1',type:'entry.2',note:'entry.3',info:'entry.4'}}
+const RPT_KEY='shehui-reported';
+const RPT_TYPES=['正解有誤','不只一個答案','選項不相干','錯字或用詞','解析有誤','太難或超出課綱','其他'];
+function reportedIds(){ try{ return JSON.parse(localStorage.getItem(RPT_KEY))||{}; }catch(e){ return {}; } }
+function markReported(id){ const m=reportedIds(); m[id]=Date.now(); try{ localStorage.setItem(RPT_KEY,JSON.stringify(m)); }catch(e){} }
+function reportText(q,type,note){ return '題號：'+q.id+'\n問題類型：'+type+(note?'\n說明：'+note:'')+'\n'+(q.ctx?'情境：'+q.ctx+'\n':'')+'題目：'+q.q+'\n標示的正解：'+q.c+'\n其他選項：'+q.w.join('／'); }
+async function sendReport(q,type,note){
+  const row={qid:q.id,type,note:note||'',q:q.q,c:q.c,w:q.w.join('／'),at:Date.now(),v:1};
+  if(reportDb){ await reportDb.collection('reports').add(row); return 'db'; }
+  if(REPORT_FORM){ const fd=new URLSearchParams(); fd.set(REPORT_FORM.f.qid,q.id); fd.set(REPORT_FORM.f.type,type); fd.set(REPORT_FORM.f.note,note||''); fd.set(REPORT_FORM.f.info,'題目：'+q.q+'｜正解：'+q.c+'｜其他：'+row.w);
+    await fetch(REPORT_FORM.action,{method:'POST',mode:'no-cors',body:fd}); return 'form'; }
+  return null;
+}
+function openReport(q){
+  const old=document.getElementById('rpt'); if(old) old.remove();
+  const el=document.createElement('div'); el.id='rpt'; el.className='rpt'; el.setAttribute('role','dialog'); el.setAttribute('aria-modal','true'); el.setAttribute('aria-labelledby','rptT');
+  const can=!!(reportDb||REPORT_FORM);
+  el.innerHTML='<div class="rpt-card"><div class="rpt-head"><h3 id="rptT">回報這一題</h3><button type="button" class="icon-btn" data-r="x" aria-label="關閉">✕</button></div>'+
+    '<p class="rpt-q">'+esc(q.q)+'</p><p class="rpt-lab">哪裡有問題？</p><div class="rpt-types">'+RPT_TYPES.map((t,i)=>'<button type="button" class="rpt-t" aria-pressed="false" data-i="'+i+'">'+t+'</button>').join('')+'</div>'+
+    '<label class="rpt-lab" for="rptNote">補充說明（可不填）</label><textarea id="rptNote" maxlength="300" rows="3" placeholder="例如：正確答案應該是……，課本第幾頁有寫"></textarea>'+
+    '<p class="rpt-fine">'+(can?'不用登入，只會送出題號、問題類型和你寫的說明。':'這個版本還不能直接送出：可以複製回報內容傳給老師或作者，或改用 GitHub 回報。')+'</p>'+
+    '<div class="rpt-act">'+(can?'<button type="button" class="btn primary" data-r="send" disabled>送出回報</button>':'<button type="button" class="btn primary" data-r="copy" disabled>複製回報內容</button><a class="btn" href="'+esc(reportURL(q))+'" target="_blank" rel="noopener">GitHub 回報 ↗</a>')+'<button type="button" class="btn" data-r="x">取消</button></div><p class="rpt-msg" role="status"></p></div>';
+  document.body.appendChild(el);
+  let type=null; const msg=el.querySelector('.rpt-msg'), main=el.querySelector('[data-r=send],[data-r=copy]');
+  const close=()=>{ el.remove(); document.removeEventListener('keydown',kd,true); const b=$('#rptBtn'); if(b) b.focus({preventScroll:true}); };
+  const kd=e=>{ if(e.key==='Escape'){ e.stopPropagation(); close(); } };
+  document.addEventListener('keydown',kd,true);
+  el.addEventListener('click',async e=>{
+    if(e.target===el) return close();
+    const t=e.target.closest('.rpt-t'); if(t){ el.querySelectorAll('.rpt-t').forEach(b=>b.setAttribute('aria-pressed',String(b===t))); type=RPT_TYPES[+t.dataset.i]; main.disabled=false; return; }
+    const r=e.target.closest('[data-r]'); if(!r) return; const note=el.querySelector('#rptNote').value.trim();
+    if(r.dataset.r==='x') return close();
+    if(r.dataset.r==='copy'){ try{ await navigator.clipboard.writeText(reportText(q,type,note)); msg.textContent='已複製，可以貼到訊息裡傳出去。'; }catch(err){ msg.textContent='無法自動複製，請改用 GitHub 回報。'; } return; }
+    if(r.dataset.r==='send'){ r.disabled=true; msg.textContent='送出中…';
+      try{ await sendReport(q,type,note); markReported(q.id); const b=$('#rptBtn'); if(b) b.textContent='已回報 ✓'; msg.textContent='收到了，謝謝你！'; setTimeout(close,1100); }
+      catch(err){ r.disabled=false; msg.textContent=(err&&err.code==='rate_limited')?'送出太頻繁，請稍後再試。':'送出失敗，請稍後再試。'; } }
+  });
+  setTimeout(()=>el.querySelector('.rpt-t').focus({preventScroll:true}),30);
+}
 function reportURL(q){
   const opts=[q.c].concat(q.w);
   const bodyTxt='題號：'+q.id+'\n'+(q.ctx?'情境：'+q.ctx+'\n':'')+'題目：'+q.q+'\n標示的正解：'+q.c+'\n其他選項：'+q.w.join('／')+'\n解說：'+q.ex+'\n\n## 問題說明\n（請寫下哪裡有錯、正確應該是什麼，有資料來源更好）\n';
