@@ -164,9 +164,13 @@ function draw(list,n,diff){
   const scored=pool.map(q=>{ const r=ST.q[q.id]; let p = !r ? 0 : (!r[2] ? 1 : (streakOf(r)<MASTER ? 1.5 : 2.2+r[0]*0.25)); return {q, p:p+Math.random()*0.95}; });
   scored.sort((a,b)=>a.p-b.p);
   // 同一輪避免出現考同一件事的題目（同一筆資料的正反題、精寫題與生成題重疊）
-  const used=new Set(), pick=[], rest=[];
-  scored.forEach(x=>{ if(pick.length>=n) return; const tg=x.q.tags||[]; if(tg.some(g=>used.has(g))){ rest.push(x); return; } tg.forEach(g=>used.add(g)); pick.push(x); });
-  for(let i=0;pick.length<n && i<rest.length;i++) pick.push(rest[i]);
+  // 也避免選項輪替：不選「選項含本輪已出現的正解」或「與已選題共用 2 個以上選項」的題目；不夠時逐步放寬
+  const used=new Set(), seen=new Set(), ans=new Set(), pick=[], taken=new Set();
+  const opts=q=>[q.c].concat(q.w||[]);
+  const clash=q=>{ const o=opts(q); let k=0; for(const v of o){ if(seen.has(v)) k++; if(ans.has(v)) return true; } return k>=2 || seen.has(q.c); };
+  const add=x=>{ pick.push(x); taken.add(x); (x.q.tags||[]).forEach(g=>used.add(g)); opts(x.q).forEach(v=>seen.add(v)); ans.add(x.q.c); };
+  [[1,1],[0,1],[0,0]].forEach(([tg,cl])=>{ scored.forEach(x=>{ if(pick.length>=n || taken.has(x)) return;
+    if(tg && (x.q.tags||[]).some(g=>used.has(g))) return; if(cl && clash(x.q)) return; add(x); }); });
   return shuffle(pick.map(x=>x.q));
 }
 
