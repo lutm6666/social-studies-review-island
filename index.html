@@ -120,6 +120,8 @@ h1{margin:2px 0 12px;font-family:var(--f-display);font-weight:700;font-size:var(
 .rl-mark.ok{color:var(--ok)} .rl-mark.bad{color:var(--bad)}
 .rl-q{flex:1;min-width:0}
 .round-list .rl-rpt{flex:none;margin-top:0;white-space:nowrap}
+.fest-badge{display:inline-block;margin:4px 0 0;padding:3px 10px;border-radius:999px;background:#c8402f;color:#fff6dc;font-size:var(--fs-2);font-weight:700}
+:root[data-theme=dark] .fest-badge{background:#a8352a}
 .rpt-msg{min-height:1.2em;margin:8px 0 0;font-size:var(--fs-2);color:var(--muted)}
 body.big .qtext{font-size:var(--fs-7)}
 body.big .ctx{font-size:var(--fs-5)}
@@ -464,6 +466,7 @@ body.sound-off .snd-btn .snd-wave{display:none}
     <button type="button" class="hud-min" id="hudMin" aria-expanded="true" aria-label="收合面板" title="收合面板">–</button>
     <p class="eyebrow">國中社會．108 課綱總複習</p>
     <h1>社會科複習島</h1>
+    <p id="festBadge" class="fest-badge" hidden></p>
     <div class="progress">
       <div class="bar"><span id="barFill"></span></div>
       <p id="progressText">讀取中…</p>
@@ -5646,7 +5649,12 @@ function saveUIP(){ try{ localStorage.setItem('shehui-ui',JSON.stringify(UIP)); 
 // 節慶：依日期自動出現（網址加 ?fest=halloween 可預覽）；可在工具列關閉
 // 農曆節日的國曆日期（以 Intl 中國曆法計算）：春節、端午、七夕、中秋
 const LUNAR={2025:['0129','0531','0829','1006'],2026:['0217','0619','0819','0925'],2027:['0207','0609','0808','0915'],2028:['0126','0528','0826','1003'],2029:['0213','0616','0816','0922'],2030:['0202','0605','0805','0912'],2031:['0123','0624','0824','1001'],2032:['0211','0612','0812','0919'],2033:['0131','0601','0801','0908'],2034:['0219','0620','0820','0927'],2035:['0208','0610','0810','0916'],2036:['0128','0530','0828','1004'],2037:['0215','0618','0817','0924'],2038:['0204','0607','0807','0913'],2039:['0124','0527','0826','1002'],2040:['0212','0614','0814','0920']};
+// 國中教育會考日期（官方公告）；未公告的年份以「五月第三個星期六」估計
+const EXAM={2026:'0516',2027:'0515'};
+function examDate(y){ if(EXAM[y]) return new Date(y,+EXAM[y].slice(0,2)-1,+EXAM[y].slice(2)); const d=new Date(y,4,1); let sat=0; while(true){ if(d.getDay()===6 && ++sat===3) return d; d.setDate(d.getDate()+1); } }
 const FESTS=[
+  {id:'exam',name:'會考倒數',icon:'✏️',exam:true,before:30,after:1,msg:'會考倒數一個月！錯題島上空出現了倒數看板，每座島都插上加油旗。最後衝刺，一起加油！',tip:'✏️ 會考快到了！每天練一輪「會考模擬」，再把錯題島清空，就是最好的衝刺。放輕鬆，你已經準備很久了。'},
+  {id:'newyear',name:'跨年',icon:'🎆',from:1229,to:102,msg:'跨年快樂！錯題島上空有倒數看板，島上飄著氣球，煙火會越放越多。',tip:'🎆 跨年快樂！新的一年，給自己訂一個小目標：把一座島升到繁榮之島吧。'},
   {id:'cny',name:'農曆新年',icon:'🧧',lunar:0,before:3,after:14,msg:'新年快樂！島上掛起了紅燈籠，入夜後還會放煙火，祝你考試順利、步步高升。',tip:'🧧 新年快樂！晚上回來看看，各島上空會放煙火喔。新的一年也一起把錯題島清空吧！'},
   {id:'duanwu',name:'端午節',icon:'🐉',lunar:1,before:3,after:1,msg:'端午節快樂！龍舟在中央海域競渡，每座島都放了一顆粽子。',tip:'🐉 端午節快樂！聽說龍舟隊划一圈要很久，就像複習一樣，持之以恆才會到終點。'},
   {id:'qixi',name:'七夕情人節',icon:'💕',lunar:2,before:3,after:1,msg:'七夕快樂！島上飄著愛心，晚上抬頭找找牛郎星和織女星。',tip:'💕 七夕快樂！牛郎和織女一年見一次，我們天天見面複習，應該比他們幸運吧？'},
@@ -5654,13 +5662,22 @@ const FESTS=[
   {id:'halloween',name:'萬聖節',icon:'🎃',from:1024,to:1101,msg:'萬聖節快樂！島上冒出了南瓜燈，蝙蝠在海面上飛，錯題島還來了幾隻小幽靈。',tip:'🎃 萬聖節快樂！聽說錯題島上的小幽靈，最喜歡收集大家答錯的漂流瓶。把錯題答對，它們就會開心地飄走喔。'},
   {id:'christmas',name:'聖誕節',icon:'🎄',from:1218,to:1226,msg:'聖誕快樂！每座島都立起了聖誕樹，雪花飄落，錯題島上還有雪人和禮物。',tip:'🎄 聖誕快樂！今年的禮物是：把錯題全部答對的成就感。（雪人說它也想要。）'}
 ];
-function festRange(f,y){ if(f.from) return [f.from,f.to]; const L=LUNAR[y]; if(!L) return null; const d=L[f.lunar], base=new Date(y,+d.slice(0,2)-1,+d.slice(2)); const a=new Date(base), b=new Date(base); a.setDate(a.getDate()-f.before); b.setDate(b.getDate()+f.after); return [a,b]; }
+function festRange(f,y){ if(f.from) return [f.from,f.to]; if(f.exam){ const e=examDate(y), a=new Date(e), b=new Date(e); a.setDate(a.getDate()-f.before); b.setDate(b.getDate()+f.after); return [a,b]; } const L=LUNAR[y]; if(!L) return null; const d=L[f.lunar], base=new Date(y,+d.slice(0,2)-1,+d.slice(2)); const a=new Date(base), b=new Date(base); a.setDate(a.getDate()-f.before); b.setDate(b.getDate()+f.after); return [a,b]; }
 const FEST=(()=>{ try{ const q=new URLSearchParams(location.search).get('fest'); if(q) return FESTS.find(f=>f.id===q)||null; }catch(e){}
   const now=new Date(), y=now.getFullYear(), md=(now.getMonth()+1)*100+now.getDate(), day=new Date(y,now.getMonth(),now.getDate());
-  return FESTS.find(f=>{ const r=festRange(f,y); if(!r) return false; if(f.from) return md>=r[0]&&md<=r[1]; return day>=r[0]&&day<=r[1]; })||null; })();
+  return FESTS.find(f=>{ const r=festRange(f,y); if(!r) return false; if(f.from) return r[0]<=r[1]?(md>=r[0]&&md<=r[1]):(md>=r[0]||md<=r[1]); return day>=r[0]&&day<=r[1]; })||null; })();
+// 倒數看板與工具列徽章的文字：[小標, 大字]
+window.__festText=()=>{ if(!FEST) return null; const now=new Date(), today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  if(FEST.id==='exam'){ let ey=now.getFullYear(), e=examDate(ey); if(today-e>864e5){ ey++; e=examDate(ey); } const d=Math.round((e-today)/864e5), est=!EXAM[ey];
+    if(d>0) return [ey+' 國中教育會考'+(est?'（預計）':''),'倒數 '+d+' 天']; if(d===0) return ['會考第一天','加油！']; if(d===-1) return ['會考第二天','加油！']; return ['會考辛苦了','好好休息']; }
+  if(FEST.id==='newyear'){ const ny=now.getMonth()===0?now.getFullYear():now.getFullYear()+1;
+    if(now.getMonth()===0) return ['Happy New Year',ny+' 新年快樂'];
+    const target=new Date(ny,0,1), ms=target-now, days=Math.floor((target-today-1)/864e5);
+    if(now.getDate()===31){ const h=Math.floor(ms/36e5), m=Math.floor(ms%36e5/6e4); return ['距離 '+ny+' 年還有',h+' 小時 '+m+' 分']; } return ['距離 '+ny+' 年還有',(days+1)+' 天']; }
+  return null; };
 window.__fest=FEST?FEST.id:null;
 window.__festOn=FEST&&UIP.fest!==false?FEST.id:null;
-function setFest(on,keep){ if(!FEST) return; if(!keep){ UIP.fest=!!on; saveUIP(); } window.__festOn=on?FEST.id:null; const b=$('#festBtn'); if(b){ b.textContent=FEST.icon+' 節慶裝飾：'+(on?'開':'關'); b.setAttribute('aria-pressed',String(!!on)); }
+function setFest(on,keep){ if(!FEST) return; if(!keep){ UIP.fest=!!on; saveUIP(); } window.__festOn=on?FEST.id:null; if(typeof updFestBadge==='function') updFestBadge(); const b=$('#festBtn'); if(b){ b.textContent=FEST.icon+' 節慶裝飾：'+(on?'開':'關'); b.setAttribute('aria-pressed',String(!!on)); }
   if(scene3d&&scene3d.setFest) scene3d.setFest(!!on); if(typeof window.__skyApply==='function') window.__skyApply(); }
 function setHudMini(on,keep){ if(!keep){ UIP.hudMini=!!on; saveUIP(); } document.body.classList.toggle('hud-mini',!!on); const b=$('#hudMin'); b.textContent=on?'+':'–'; b.setAttribute('aria-expanded',String(!on)); const l=on?'展開面板':'收合面板'; b.setAttribute('aria-label',l); b.title=l; }
 function setCompact(on){ UIP.compact=!!on; saveUIP(); document.body.classList.toggle('card-compact',UIP.compact); $('#compactBtn').setAttribute('aria-pressed',String(UIP.compact)); }
@@ -5673,6 +5690,9 @@ $('#hudMin').addEventListener('click',()=>setHudMini(!document.body.classList.co
 $('#compactBtn').addEventListener('click',()=>setCompact(!UIP.compact));
 $('#eyeBtn').addEventListener('click',()=>setUiHidden(!document.body.classList.contains('ui-hidden')));
 setHudMini(hudPref(), true); setCompact(!!UIP.compact); setSky(UIP.sky||'auto',true);
+// 跨年、會考期間：面板標題下方顯示倒數徽章
+function updFestBadge(){ const b=$('#festBadge'); if(!b) return; const t=window.__festOn&&(FEST.id==='exam'||FEST.id==='newyear')?window.__festText():null; b.hidden=!t; if(t) b.textContent=FEST.icon+' '+(FEST.id==='exam'?'會考'+t[1]:(t[0].indexOf('距離')===0?'跨年倒數 '+t[1]:t[1])); }
+if(FEST){ setInterval(updFestBadge,60000); }
 if(FEST){ $('#festBtn').hidden=false; setFest(!!window.__festOn,true); $('#festBtn').addEventListener('click',()=>setFest(!window.__festOn));
   const seenKey=FEST.id+new Date().getFullYear(); if(window.__festOn && UIP.festSeen!==seenKey){ UIP.festSeen=seenKey; saveUIP(); setTimeout(()=>toast(FEST.icon+' '+FEST.msg),2500); } }
 /* ---------- 聲音：背景音樂與互動音效（全部用 Web Audio 即時合成，不需要下載音檔，離線也能播） ---------- */
@@ -5729,6 +5749,8 @@ const THEMES={
   cny:{prog:[[62,66,69],[59,62,66],[55,62,67],[57,64,69]],beat:60/84,arp:0.5,voice:'pluck',pool:[74,76,78,81,83,86],cut:2400,drum:1},
   duanwu:{prog:[[55,62,67],[52,59,64],[48,55,60],[50,57,62]],beat:60/88,arp:0.42,voice:'pluck',pool:[67,69,71,74,76,79,81],cut:2200,drum:2},
   qixi:{prog:[[53,57,60,64],[50,53,57,60],[46,50,53,57],[48,52,55,58]],beat:60/50,arp:0.26,voice:'flute',pool:null,cut:1600},
+  newyear:{prog:[[60,64,67],[57,60,64],[53,57,60],[55,59,62]],beat:60/80,arp:0.5,voice:'bell',pool:[72,74,76,79,81,84],cut:2400,jingle:true},
+  exam:{prog:[[62,66,69],[59,62,66],[55,59,62],[57,61,64]],beat:60/72,arp:0.34,voice:'soft',pool:null,cut:2000},
   midautumn:{prog:[[48,55,60,64],[45,52,57,60],[41,48,53,57],[43,50,55,59]],beat:60/50,arp:0.28,voice:'flute',pool:[72,74,76,79,81,84],cut:1700}
 };
 function auZone(){
@@ -6864,6 +6886,43 @@ function buildScene(){
       rb.scale.setScalar(1.4); rb.traverse(o=>{ o.raycast=()=>{}; }); festGroup.add(rb); festAnim.push(t=>{ rb.position.y=0.42+Math.max(0,Math.sin(t*2.2))*0.25; });
       [[1.8,-1.8],[2.5,-1.0],[1.2,-2.6]].forEach(([x,z])=>{ const mc=new T.Mesh(new T.CylinderGeometry(0.35,0.38,0.22,12),std('#c98a3c')); mc.position.set(x,0.53,z); festGroup.add(mc); const tp=new T.Mesh(new T.CylinderGeometry(0.2,0.2,0.02,10),std('#e0a65a')); tp.position.set(x,0.65,z); festGroup.add(tp); });
     }
+    // 倒數看板（跨年、會考）：浮在錯題島上空、永遠面向鏡頭，每 30 秒更新文字
+    function festBoard(bg,fg){ const cv=document.createElement('canvas'); cv.width=512; cv.height=200; const x=cv.getContext('2d'); const tex=new T.CanvasTexture(cv);
+      const draw=()=>{ const txt=(typeof window.__festText==='function'?window.__festText():null)||['','']; x.clearRect(0,0,512,200); x.fillStyle=bg; x.strokeStyle='rgba(255,255,255,0.85)'; x.lineWidth=8; const r=36;
+        x.beginPath(); x.moveTo(r,6); x.arcTo(506,6,506,194,r); x.arcTo(506,194,6,194,r); x.arcTo(6,194,6,6,r); x.arcTo(6,6,506,6,r); x.closePath(); x.fill(); x.stroke();
+        x.fillStyle=fg; x.textAlign='center'; x.textBaseline='middle'; x.font='bold 40px "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif'; x.fillText(txt[0],256,62); x.font='bold 64px "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif'; x.fillText(txt[1],256,138); tex.needsUpdate=true; };
+      draw(); setInterval(draw,30000);
+      const sp=new T.Sprite(new T.SpriteMaterial({map:tex,transparent:true,depthWrite:false,fog:false})); sp.scale.set(12,4.7,1); sp.position.set(0,17,0); sp.renderOrder=6; festGroup.add(sp);
+      festAnim.push(t=>{ sp.position.y=17+Math.sin(t*1.2)*0.3; }); return draw; }
+    // 文字旗（會考加油旗）：同一張貼圖一次畫在所有位置
+    function textFlags(text,bg,fg){ const cv=document.createElement('canvas'); cv.width=128; cv.height=96; const x=cv.getContext('2d'); x.fillStyle=bg; x.fillRect(0,0,128,96); x.fillStyle=fg; x.textAlign='center'; x.textBaseline='middle'; x.font='bold 44px "Noto Sans TC","PingFang TC",sans-serif'; x.fillText(text,64,50);
+      const tex=new T.CanvasTexture(cv); const flagG=new T.PlaneGeometry(0.7,0.52); flagG.translate(0.37,1.25,0);
+      inst([[tr(new T.CylinderGeometry(0.035,0.04,1.55,6),0,0.78,0),std('#6b4f36')],[flagG,new T.MeshBasicMaterial({map:tex,side:T.DoubleSide})],[tr(new T.SphereGeometry(0.06,6,5),0,1.58,0),std('#e3b23c')]],ALL); }
+    if(FID==='newyear'){
+      festBoard('#1b2a50','#ffe08a');
+      // 金銀氣球
+      const bal=(x,y,z)=>tr(new T.SphereGeometry(0.2,10,8).scale(1,1.2,1),x,y,z), str=(x,z)=>tr(new T.CylinderGeometry(0.008,0.008,1.0,3),x,0.95,z);
+      inst([[bal(-0.15,1.55,0),std('#e3b23c',{metalness:0.5,roughness:0.3})],[bal(0.18,1.7,0.05),std('#d8dde6',{metalness:0.6,roughness:0.25})],[bal(0.02,1.85,-0.15),std('#d04a35',{roughness:0.4})],[str(-0.15,0),std('#ddd')],[str(0.1,0.03),std('#ddd')]],ALL);
+      // 煙火：越接近跨年越密集；午夜跨過新年時來一場連發
+      let next=2, last=null; const isl=Object.values(islands);
+      festAnim.push((t,dt)=>{ next-=dt; const ph=document.documentElement.dataset.skyPhase, txt=(window.__festText&&window.__festText()[1])||'';
+        if(last!==null && last.indexOf('快樂')<0 && txt.indexOf('快樂')>=0 && typeof burst==='function'){ for(let k=0;k<24;k++) setTimeout(()=>burst(isl[k%isl.length].pos,true),k*220); } last=txt;
+        if(next>0) return; next=(ph==='night'||ph==='dusk')?2+Math.random()*2.5:6+Math.random()*4; if(typeof burst==='function') burst(isl[Math.floor(Math.random()*isl.length)].pos,true); });
+    }
+    if(FID==='exam'){
+      festBoard('#8b1e1e','#fff3c4');
+      textFlags('加油','#d42b1e','#ffe08a');
+      // 錯題島：大鉛筆與「包中」粽子
+      const pc=new T.Group(); pc.position.set(2.4,0.42,1.6); pc.rotation.z=-0.35;
+      const bodyP=new T.Mesh(new T.CylinderGeometry(0.28,0.28,2.6,6),std('#f2c94c')); bodyP.position.y=1.5; pc.add(bodyP);
+      const tipW=new T.Mesh(new T.ConeGeometry(0.28,0.55,6),std('#f1d6a8')); tipW.position.y=3.08; pc.add(tipW);
+      const lead=new T.Mesh(new T.ConeGeometry(0.09,0.18,6),std('#333')); lead.position.y=3.3; pc.add(lead);
+      const band=new T.Mesh(new T.CylinderGeometry(0.29,0.29,0.18,6),std('#c0c4cc',{metalness:0.5})); band.position.y=0.25; pc.add(band);
+      const eras=new T.Mesh(new T.CylinderGeometry(0.28,0.28,0.25,6),std('#f28b9a')); eras.position.y=0.05; pc.add(eras);
+      pc.traverse(o=>{ o.raycast=()=>{}; }); festGroup.add(pc);
+      const zz=new T.TetrahedronGeometry(0.4,0); zz.rotateX(-Math.atan(Math.SQRT1_2)); zz.rotateZ(Math.PI/4); zz.translate(0,0.3,0);
+      [[-2.3,1.8],[-1.7,2.5],[-2.8,2.6]].forEach(([x,z])=>{ const m=new T.Mesh(zz,std('#5e8f3a')); m.position.set(x,0.42,z); m.rotation.y=x*2; m.raycast=()=>{}; festGroup.add(m); });
+    }
     decoUpdaters.push((t,dt)=>{ if(festGroup.visible && !reduceMotion) festAnim.forEach(f=>f(t,dt||0.016)); });
   }catch(err){ console.warn('節慶裝飾載入失敗',err); scene.remove(festGroup); }
 
@@ -7225,7 +7284,7 @@ function buildScene(){
     document.documentElement.dataset.skyPhase = day?(h<7.5?'dawn':(h>16.5?'dusk':'day')):'night';
     // 萬聖節：天空偏紫、月亮變成橘色
     // 節慶天空：萬聖節偏紫、新年偏紅、七夕偏粉紅、中秋大月亮
-    const FS={halloween:{c:'#3a1a55',k:[0.12,0.45,0.55],moon:'#ffb45a',halo:'#ff9a3c'},cny:{c:'#5a1a24',k:[0,0.3,0.3]},qixi:{c:'#5a2a5a',k:[0.05,0.35,0.35]},midautumn:{c:'#2a2050',k:[0,0.15,0.2],moon:'#ffd76a',halo:'#ffe7a0',big:1.8},christmas:{c:'#1a2a50',k:[0,0.1,0.2]}}[window.__festOn];
+    const FS={halloween:{c:'#3a1a55',k:[0.12,0.45,0.55],moon:'#ffb45a',halo:'#ff9a3c'},cny:{c:'#5a1a24',k:[0,0.3,0.3]},qixi:{c:'#5a2a5a',k:[0.05,0.35,0.35]},midautumn:{c:'#2a2050',k:[0,0.15,0.2],moon:'#ffd76a',halo:'#ffe7a0',big:1.8},christmas:{c:'#1a2a50',k:[0,0.1,0.2]},newyear:{c:'#1a1a50',k:[0,0.15,0.3]}}[window.__festOn];
     orb.scale.setScalar(1); halo.scale.setScalar(1);
     if(FS){ const fk=day?(h>16.5?FS.k[1]:FS.k[0]):FS.k[2]; if(fk) skyUni.top.value.lerp(new T.Color(FS.c),fk);
       if(!day){ if(FS.moon){ orbMat.color.set(FS.moon); haloMat.color.set(FS.halo); haloMat.opacity=0.22; } if(FS.big){ orb.scale.setScalar(FS.big); halo.scale.setScalar(FS.big*1.1); } } }

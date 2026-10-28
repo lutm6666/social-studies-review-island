@@ -266,5 +266,42 @@
       rb.scale.setScalar(1.4); rb.traverse(o=>{ o.raycast=()=>{}; }); festGroup.add(rb); festAnim.push(t=>{ rb.position.y=0.42+Math.max(0,Math.sin(t*2.2))*0.25; });
       [[1.8,-1.8],[2.5,-1.0],[1.2,-2.6]].forEach(([x,z])=>{ const mc=new T.Mesh(new T.CylinderGeometry(0.35,0.38,0.22,12),std('#c98a3c')); mc.position.set(x,0.53,z); festGroup.add(mc); const tp=new T.Mesh(new T.CylinderGeometry(0.2,0.2,0.02,10),std('#e0a65a')); tp.position.set(x,0.65,z); festGroup.add(tp); });
     }
+    // 倒數看板（跨年、會考）：浮在錯題島上空、永遠面向鏡頭，每 30 秒更新文字
+    function festBoard(bg,fg){ const cv=document.createElement('canvas'); cv.width=512; cv.height=200; const x=cv.getContext('2d'); const tex=new T.CanvasTexture(cv);
+      const draw=()=>{ const txt=(typeof window.__festText==='function'?window.__festText():null)||['','']; x.clearRect(0,0,512,200); x.fillStyle=bg; x.strokeStyle='rgba(255,255,255,0.85)'; x.lineWidth=8; const r=36;
+        x.beginPath(); x.moveTo(r,6); x.arcTo(506,6,506,194,r); x.arcTo(506,194,6,194,r); x.arcTo(6,194,6,6,r); x.arcTo(6,6,506,6,r); x.closePath(); x.fill(); x.stroke();
+        x.fillStyle=fg; x.textAlign='center'; x.textBaseline='middle'; x.font='bold 40px "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif'; x.fillText(txt[0],256,62); x.font='bold 64px "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif'; x.fillText(txt[1],256,138); tex.needsUpdate=true; };
+      draw(); setInterval(draw,30000);
+      const sp=new T.Sprite(new T.SpriteMaterial({map:tex,transparent:true,depthWrite:false,fog:false})); sp.scale.set(12,4.7,1); sp.position.set(0,17,0); sp.renderOrder=6; festGroup.add(sp);
+      festAnim.push(t=>{ sp.position.y=17+Math.sin(t*1.2)*0.3; }); return draw; }
+    // 文字旗（會考加油旗）：同一張貼圖一次畫在所有位置
+    function textFlags(text,bg,fg){ const cv=document.createElement('canvas'); cv.width=128; cv.height=96; const x=cv.getContext('2d'); x.fillStyle=bg; x.fillRect(0,0,128,96); x.fillStyle=fg; x.textAlign='center'; x.textBaseline='middle'; x.font='bold 44px "Noto Sans TC","PingFang TC",sans-serif'; x.fillText(text,64,50);
+      const tex=new T.CanvasTexture(cv); const flagG=new T.PlaneGeometry(0.7,0.52); flagG.translate(0.37,1.25,0);
+      inst([[tr(new T.CylinderGeometry(0.035,0.04,1.55,6),0,0.78,0),std('#6b4f36')],[flagG,new T.MeshBasicMaterial({map:tex,side:T.DoubleSide})],[tr(new T.SphereGeometry(0.06,6,5),0,1.58,0),std('#e3b23c')]],ALL); }
+    if(FID==='newyear'){
+      festBoard('#1b2a50','#ffe08a');
+      // 金銀氣球
+      const bal=(x,y,z)=>tr(new T.SphereGeometry(0.2,10,8).scale(1,1.2,1),x,y,z), str=(x,z)=>tr(new T.CylinderGeometry(0.008,0.008,1.0,3),x,0.95,z);
+      inst([[bal(-0.15,1.55,0),std('#e3b23c',{metalness:0.5,roughness:0.3})],[bal(0.18,1.7,0.05),std('#d8dde6',{metalness:0.6,roughness:0.25})],[bal(0.02,1.85,-0.15),std('#d04a35',{roughness:0.4})],[str(-0.15,0),std('#ddd')],[str(0.1,0.03),std('#ddd')]],ALL);
+      // 煙火：越接近跨年越密集；午夜跨過新年時來一場連發
+      let next=2, last=null; const isl=Object.values(islands);
+      festAnim.push((t,dt)=>{ next-=dt; const ph=document.documentElement.dataset.skyPhase, txt=(window.__festText&&window.__festText()[1])||'';
+        if(last!==null && last.indexOf('快樂')<0 && txt.indexOf('快樂')>=0 && typeof burst==='function'){ for(let k=0;k<24;k++) setTimeout(()=>burst(isl[k%isl.length].pos,true),k*220); } last=txt;
+        if(next>0) return; next=(ph==='night'||ph==='dusk')?2+Math.random()*2.5:6+Math.random()*4; if(typeof burst==='function') burst(isl[Math.floor(Math.random()*isl.length)].pos,true); });
+    }
+    if(FID==='exam'){
+      festBoard('#8b1e1e','#fff3c4');
+      textFlags('加油','#d42b1e','#ffe08a');
+      // 錯題島：大鉛筆與「包中」粽子
+      const pc=new T.Group(); pc.position.set(2.4,0.42,1.6); pc.rotation.z=-0.35;
+      const bodyP=new T.Mesh(new T.CylinderGeometry(0.28,0.28,2.6,6),std('#f2c94c')); bodyP.position.y=1.5; pc.add(bodyP);
+      const tipW=new T.Mesh(new T.ConeGeometry(0.28,0.55,6),std('#f1d6a8')); tipW.position.y=3.08; pc.add(tipW);
+      const lead=new T.Mesh(new T.ConeGeometry(0.09,0.18,6),std('#333')); lead.position.y=3.3; pc.add(lead);
+      const band=new T.Mesh(new T.CylinderGeometry(0.29,0.29,0.18,6),std('#c0c4cc',{metalness:0.5})); band.position.y=0.25; pc.add(band);
+      const eras=new T.Mesh(new T.CylinderGeometry(0.28,0.28,0.25,6),std('#f28b9a')); eras.position.y=0.05; pc.add(eras);
+      pc.traverse(o=>{ o.raycast=()=>{}; }); festGroup.add(pc);
+      const zz=new T.TetrahedronGeometry(0.4,0); zz.rotateX(-Math.atan(Math.SQRT1_2)); zz.rotateZ(Math.PI/4); zz.translate(0,0.3,0);
+      [[-2.3,1.8],[-1.7,2.5],[-2.8,2.6]].forEach(([x,z])=>{ const m=new T.Mesh(zz,std('#5e8f3a')); m.position.set(x,0.42,z); m.rotation.y=x*2; m.raycast=()=>{}; festGroup.add(m); });
+    }
     decoUpdaters.push((t,dt)=>{ if(festGroup.visible && !reduceMotion) festAnim.forEach(f=>f(t,dt||0.016)); });
   }catch(err){ console.warn('節慶裝飾載入失敗',err); scene.remove(festGroup); }

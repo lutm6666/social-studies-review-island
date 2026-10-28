@@ -120,6 +120,8 @@ h1{margin:2px 0 12px;font-family:var(--f-display);font-weight:700;font-size:var(
 .rl-mark.ok{color:var(--ok)} .rl-mark.bad{color:var(--bad)}
 .rl-q{flex:1;min-width:0}
 .round-list .rl-rpt{flex:none;margin-top:0;white-space:nowrap}
+.fest-badge{display:inline-block;margin:4px 0 0;padding:3px 10px;border-radius:999px;background:#c8402f;color:#fff6dc;font-size:var(--fs-2);font-weight:700}
+:root[data-theme=dark] .fest-badge{background:#a8352a}
 .rpt-msg{min-height:1.2em;margin:8px 0 0;font-size:var(--fs-2);color:var(--muted)}
 body.big .qtext{font-size:var(--fs-7)}
 body.big .ctx{font-size:var(--fs-5)}
@@ -464,6 +466,7 @@ body.sound-off .snd-btn .snd-wave{display:none}
     <button type="button" class="hud-min" id="hudMin" aria-expanded="true" aria-label="收合面板" title="收合面板">–</button>
     <p class="eyebrow">國中社會．108 課綱總複習</p>
     <h1>社會科複習島</h1>
+    <p id="festBadge" class="fest-badge" hidden></p>
     <div class="progress">
       <div class="bar"><span id="barFill"></span></div>
       <p id="progressText">讀取中…</p>
