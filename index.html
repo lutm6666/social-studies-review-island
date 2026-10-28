@@ -4444,7 +4444,6 @@ let toastT=0;
 function toast(msg){ toastEl.textContent=msg; toastEl.hidden=false; toastEl.classList.remove('out'); clearTimeout(toastT); toastT=setTimeout(()=>{ toastEl.classList.add('out'); setTimeout(()=>{ toastEl.hidden=true; },400); },3600); }
 // 把成長狀態交給 3D 場景；升階時跳出提示（第一次載入不提示）
 let growthPrev=null;
-window.__onMainUpOld=(name,lv)=>{ setTimeout(()=>{ toast(name+'的主島升級了！'+['','插上彩旗','點起燈籠','金光環繞'][lv]+'。'); if(typeof sfx==='function') sfx('level'); },1400); };
 function syncGrowth(){
   const map={}; ISLANDS.filter(i=>i.ready).forEach(isl=>isl.lms.forEach(l=>{ map[l.id]=growthOf(l.id); }));
   if(growthPrev){ Object.keys(map).forEach(id=>{ const a=growthPrev[id], b=map[id];
@@ -5009,7 +5008,8 @@ const TOUR=[
   {cam:s=>s.focusLm('pre'), text:'答對越多，小島會長出房子、燈籠和金旗；最近錯很多的小島會起霧，提醒你回來複習。'},
   {cam:s=>s.focusLink(0), text:'臺灣史島上的橘色弧線是「因果航線」，連起原因和結果，點它就能練跨章節的因果題。'},
   {cam:s=>s.focusCross(5), text:'島與島之間來回的小船是「跨科航線」，把歷史、地理、公民串成同一張知識網。點小船就能練習。'},
-  {cam:s=>s.overview(), text:'左上角的「今日複習」會整理今天該複習的題目，還有「會考模擬」和「搜尋題目」。天空會跟著真實時間變成清晨、白天、黃昏或夜晚。想再找我，點中央沙洲上的我就好！'}
+  {cam:s=>s.overview(), text:'左上角的「今日複習」會整理今天該複習的題目，還有「會考模擬」和「搜尋題目」。'},
+  {cam:s=>s.overview(), text:'一座島的小島全部升級，主島也會跟著升級、放煙火！換手機前記得用「進度備份」存起來；右上角的眼睛可以只看小島，喇叭可以開關音樂。想再找我，點中央沙洲上的我就好！'}
 ];
 let tourStep=-1;
 function guideHTML(text,buttons){ return '<div class="tour-head"><span class="tour-av" aria-hidden="true">🧭</span><b>領航員</b>'+(tourStep>=0?'<span class="tour-step">'+(tourStep+1)+' / '+TOUR.length+'</span>':'')+'<button type="button" class="icon-btn tour-x" data-t="end" aria-label="關閉">✕</button></div><p class="tour-text">'+text+'</p><div class="tour-btns">'+buttons+'</div>'; }
@@ -5108,7 +5108,7 @@ setHudMini(hudPref(), true); setCompact(!!UIP.compact); setSky(UIP.sky||'auto',t
 /* ---------- 聲音：背景音樂與互動音效（全部用 Web Audio 即時合成，不需要下載音檔，離線也能播） ---------- */
 const AU={ctx:null,master:null,music:null,sfx:null,verb:null,on:false,next:0,step:0,timer:0,sea:null,
   musicOn:UIP.music!==false, sfxOn:UIP.sfx!==false};
-window.__au=()=>AU; window.__sfx=k=>sfx(k);
+window.__sfx=k=>sfx(k); // 3D 場景（煙火）用來播放音效
 function auCtx(){
   if(AU.ctx) return AU.ctx;
   const C=window.AudioContext||window.webkitAudioContext; if(!C) return null;
@@ -6441,7 +6441,6 @@ function buildScene(){
     document.documentElement.dataset.skyPhase = day?(h<7.5?'dawn':(h>16.5?'dusk':'day')):'night';
   }
   window.__skyHour=h=>{ skyHour=h; applyTheme(); };
-  window.__perf=()=>({calls:renderer.info.render.calls,tris:renderer.info.render.triangles,geos:renderer.info.memory.geometries,tex:renderer.info.memory.textures,walkers:walkers.length,scene});
   setInterval(applyTheme,60000);
   applyTheme();
   if(window.matchMedia){ const mq=matchMedia('(prefers-color-scheme: dark)'); if(mq.addEventListener) mq.addEventListener('change',applyTheme); else if(mq.addListener) mq.addListener(applyTheme); }
