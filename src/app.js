@@ -878,7 +878,7 @@ function endTour(){ tourStep=-1; tourEl.hidden=true; document.body.classList.rem
 // 點領航員：顯示今天的複習提示，也可以再導覽一次
 function onGuide(){
   const due=dueList().length; tourStep=-1;
-  const tips=(window.__festOn==='halloween'?['🎃 萬聖節快樂！聽說錯題島上的小幽靈，最喜歡收集大家答錯的漂流瓶。把錯題答對，它們就會開心地飄走喔。']:[]).concat(['連續答對 2 次才算熟練，熟練的題目會隔幾天再出現一次。','做完一輪後，看看「各小主題表現」，就知道下一步該練哪裡。','覺得題目有問題，可以按「這題有疑問」標記，之後一起修正。','會考常考圖表題，地理的氣候圖和人口金字塔記得多練。']);
+  const tips=(window.__festOn&&FEST?[FEST.tip]:[]).concat(['連續答對 2 次才算熟練，熟練的題目會隔幾天再出現一次。','做完一輪後，看看「各小主題表現」，就知道下一步該練哪裡。','覺得題目有問題，可以按「這題有疑問」標記，之後一起修正。','會考常考圖表題，地理的氣候圖和人口金字塔記得多練。']);
   // 隱藏第四階的暗示：只講傳聞，不講條件
   { const all=Object.values(growthPrev||{}), n4=all.filter(g=>g.stage>=4).length, n3=all.filter(g=>g.stage===3).length;
     const legend=ISLANDS.some(isl=>isl.ready&&mainStageOf(isl,growthPrev||{})>=4);
@@ -947,9 +947,20 @@ const UIP=(()=>{ try{ return JSON.parse(localStorage.getItem('shehui-ui')||'{}')
 function hudPref(){ return UIP.hudMini===undefined ? window.innerWidth<720 : !!UIP.hudMini; }
 function saveUIP(){ try{ localStorage.setItem('shehui-ui',JSON.stringify(UIP)); }catch(e){} }
 // 節慶：依日期自動出現（網址加 ?fest=halloween 可預覽）；可在工具列關閉
-const FESTS=[{id:'halloween',name:'萬聖節',icon:'🎃',from:1024,to:1101,msg:'萬聖節快樂！島上冒出了南瓜燈，蝙蝠在海面上飛，錯題島還來了幾隻小幽靈。'}];
+// 農曆節日的國曆日期（以 Intl 中國曆法計算）：春節、端午、七夕、中秋
+const LUNAR={2025:['0129','0531','0829','1006'],2026:['0217','0619','0819','0925'],2027:['0207','0609','0808','0915'],2028:['0126','0528','0826','1003'],2029:['0213','0616','0816','0922'],2030:['0202','0605','0805','0912'],2031:['0123','0624','0824','1001'],2032:['0211','0612','0812','0919'],2033:['0131','0601','0801','0908'],2034:['0219','0620','0820','0927'],2035:['0208','0610','0810','0916'],2036:['0128','0530','0828','1004'],2037:['0215','0618','0817','0924'],2038:['0204','0607','0807','0913'],2039:['0124','0527','0826','1002'],2040:['0212','0614','0814','0920']};
+const FESTS=[
+  {id:'cny',name:'農曆新年',icon:'🧧',lunar:0,before:3,after:14,msg:'新年快樂！島上掛起了紅燈籠，入夜後還會放煙火，祝你考試順利、步步高升。',tip:'🧧 新年快樂！晚上回來看看，各島上空會放煙火喔。新的一年也一起把錯題島清空吧！'},
+  {id:'duanwu',name:'端午節',icon:'🐉',lunar:1,before:3,after:1,msg:'端午節快樂！龍舟在中央海域競渡，每座島都放了一顆粽子。',tip:'🐉 端午節快樂！聽說龍舟隊划一圈要很久，就像複習一樣，持之以恆才會到終點。'},
+  {id:'qixi',name:'七夕情人節',icon:'💕',lunar:2,before:3,after:1,msg:'七夕快樂！島上飄著愛心，晚上抬頭找找牛郎星和織女星。',tip:'💕 七夕快樂！牛郎和織女一年見一次，我們天天見面複習，應該比他們幸運吧？'},
+  {id:'midautumn',name:'中秋節',icon:'🥮',lunar:3,before:4,after:2,msg:'中秋節快樂！月亮又圓又大，島上點起了燈籠，玉兔也跑來錯題島了。',tip:'🥮 中秋節快樂！今晚的月亮特別圓，玉兔說牠也想來複習，不過牠只會背「月」字開頭的名詞。'},
+  {id:'halloween',name:'萬聖節',icon:'🎃',from:1024,to:1101,msg:'萬聖節快樂！島上冒出了南瓜燈，蝙蝠在海面上飛，錯題島還來了幾隻小幽靈。',tip:'🎃 萬聖節快樂！聽說錯題島上的小幽靈，最喜歡收集大家答錯的漂流瓶。把錯題答對，它們就會開心地飄走喔。'},
+  {id:'christmas',name:'聖誕節',icon:'🎄',from:1218,to:1226,msg:'聖誕快樂！每座島都立起了聖誕樹，雪花飄落，錯題島上還有雪人和禮物。',tip:'🎄 聖誕快樂！今年的禮物是：把錯題全部答對的成就感。（雪人說它也想要。）'}
+];
+function festRange(f,y){ if(f.from) return [f.from,f.to]; const L=LUNAR[y]; if(!L) return null; const d=L[f.lunar], base=new Date(y,+d.slice(0,2)-1,+d.slice(2)); const a=new Date(base), b=new Date(base); a.setDate(a.getDate()-f.before); b.setDate(b.getDate()+f.after); return [a,b]; }
 const FEST=(()=>{ try{ const q=new URLSearchParams(location.search).get('fest'); if(q) return FESTS.find(f=>f.id===q)||null; }catch(e){}
-  const d=new Date(), md=(d.getMonth()+1)*100+d.getDate(); return FESTS.find(f=>f.from<=f.to?(md>=f.from&&md<=f.to):(md>=f.from||md<=f.to))||null; })();
+  const now=new Date(), y=now.getFullYear(), md=(now.getMonth()+1)*100+now.getDate(), day=new Date(y,now.getMonth(),now.getDate());
+  return FESTS.find(f=>{ const r=festRange(f,y); if(!r) return false; if(f.from) return md>=r[0]&&md<=r[1]; return day>=r[0]&&day<=r[1]; })||null; })();
 window.__fest=FEST?FEST.id:null;
 window.__festOn=FEST&&UIP.fest!==false?FEST.id:null;
 function setFest(on,keep){ if(!FEST) return; if(!keep){ UIP.fest=!!on; saveUIP(); } window.__festOn=on?FEST.id:null; const b=$('#festBtn'); if(b){ b.textContent=FEST.icon+' 節慶裝飾：'+(on?'開':'關'); b.setAttribute('aria-pressed',String(!!on)); }
@@ -1016,12 +1027,17 @@ const THEMES={
   civ:{prog:[[55,59,62,66],[52,55,59,62],[48,55,60,64],[50,54,57,62]],beat:60/62,arp:0.34,voice:'bell',pool:null,cut:2400},
   hub:{prog:[[57,60,64],[53,57,60],[48,52,55],[52,56,59]],beat:60/50,arp:0.22,voice:'soft',pool:null,cut:1500},
   // 萬聖節：A 和聲小調，音樂盒加上偶爾滑音，有點神秘但不嚇人
-  halloween:{prog:[[57,60,64],[53,57,60],[50,53,57],[52,56,59]],beat:60/54,arp:0.32,voice:'bell',pool:[69,71,72,74,76,77,80,81],cut:1800,glide:true}
+  halloween:{prog:[[57,60,64],[53,57,60],[50,53,57],[52,56,59]],beat:60/54,arp:0.32,voice:'bell',pool:[69,71,72,74,76,77,80,81],cut:1800,glide:true},
+  christmas:{prog:[[60,64,67],[53,57,60],[55,59,62],[60,64,67]],beat:60/76,arp:0.48,voice:'bell',pool:[72,74,76,77,79,81,84],cut:2400,jingle:true},
+  cny:{prog:[[62,66,69],[59,62,66],[55,62,67],[57,64,69]],beat:60/84,arp:0.5,voice:'pluck',pool:[74,76,78,81,83,86],cut:2400,drum:1},
+  duanwu:{prog:[[55,62,67],[52,59,64],[48,55,60],[50,57,62]],beat:60/88,arp:0.42,voice:'pluck',pool:[67,69,71,74,76,79,81],cut:2200,drum:2},
+  qixi:{prog:[[53,57,60,64],[50,53,57,60],[46,50,53,57],[48,52,55,58]],beat:60/50,arp:0.26,voice:'flute',pool:null,cut:1600},
+  midautumn:{prog:[[48,55,60,64],[45,52,57,60],[41,48,53,57],[43,50,55,59]],beat:60/50,arp:0.28,voice:'flute',pool:[72,74,76,79,81,84],cut:1700}
 };
 function auZone(){
-  const fest=window.__festOn==='halloween';
-  try{ if(hubFocus) return fest?'halloween':'hub'; const id=focusId||(S&&S.info&&S.info.isl); if(id&&ISL[id]) return ISL[id].subj; }catch(e){}
-  return fest?'halloween':'sea';
+  const fest=window.__festOn&&THEMES[window.__festOn]?window.__festOn:null;
+  try{ if(hubFocus) return fest||'hub'; const id=focusId||(S&&S.info&&S.info.isl); if(id&&ISL[id]) return ISL[id].subj; }catch(e){}
+  return fest||'sea';
 }
 function auVoice(kind,f,t){
   const M=AU.music, V=AU.verb;
@@ -1051,6 +1067,9 @@ function auSchedule(){
       auVoice(th.voice,NOTE(m),t);
       if(th.glide && Math.random()<0.12) tone(AU.verb,NOTE(m),t,1.6,{type:'sine',vol:0.03,att:0.3,rel:1.8,glide:NOTE(m)*0.94});
     }
+    // 節慶打擊：新年、端午的鼓聲，聖誕節的小鈴聲
+    if(th.drum && beat%(th.drum===2?2:4)===0) tone(AU.music,110,t,0.35,{type:'sine',vol:th.drum===2?0.13:0.09,att:0.005,rel:0.4,glide:50});
+    if(th.jingle && beat%2===1) tone(AU.music,NOTE(100),t,0.08,{type:'triangle',vol:0.006,att:0.002,rel:0.1});
     AU.next+=B/2; AU.step++;
   }
 }
@@ -1582,14 +1601,14 @@ function buildScene(){
   const beam=new T.Mesh(new T.CylinderGeometry(2.2,3.6,40,24,1,true),new T.MeshBasicMaterial({color:'#ffe08a',transparent:true,opacity:0,depthWrite:false,side:T.DoubleSide,blending:T.AdditiveBlending}));
   beam.geometry.translate(0,20,0); beam.visible=false; beam.raycast=()=>{}; scene.add(beam);
   let sparkT=null; function sparkTex(){ if(sparkT) return sparkT; const cv=document.createElement('canvas'); cv.width=cv.height=64; const x=cv.getContext('2d'); const gr=x.createRadialGradient(32,32,0,32,32,32); gr.addColorStop(0,'rgba(255,255,255,1)'); gr.addColorStop(0.35,'rgba(255,255,255,0.9)'); gr.addColorStop(1,'rgba(255,255,255,0)'); x.fillStyle=gr; x.fillRect(0,0,64,64); sparkT=new T.CanvasTexture(cv); return sparkT; }
-  function burst(c){ const N=90, pos=new Float32Array(N*3), vel=[], col=new Float32Array(N*3);
+  function burst(c,quiet){ const N=90, pos=new Float32Array(N*3), vel=[], col=new Float32Array(N*3);
     const pal=[[1,0.82,0.3],[0.92,0.34,0.34],[0.34,0.8,0.95],[0.44,0.81,0.59],[0.73,0.42,0.85],[1,0.6,0.29]], base=pal[Math.floor(Math.random()*pal.length)];
     const o=new T.Vector3(c.x+(Math.random()*2-1)*5, 5.5+Math.random()*3, c.z+(Math.random()*2-1)*5);
     for(let i=0;i<N;i++){ pos[i*3]=o.x; pos[i*3+1]=o.y; pos[i*3+2]=o.z; const u=Math.random()*2-1, th=Math.random()*Math.PI*2, s=Math.sqrt(1-u*u), sp=5+Math.random()*3; vel.push(new T.Vector3(s*Math.cos(th)*sp,u*sp+1.5,s*Math.sin(th)*sp)); const w=Math.random()<0.25?1:0; col[i*3]=base[0]*(1-w)+w; col[i*3+1]=base[1]*(1-w)+w; col[i*3+2]=base[2]*(1-w)+w; }
     const g=new T.BufferGeometry(); g.setAttribute('position',new T.BufferAttribute(pos,3)); g.setAttribute('color',new T.BufferAttribute(col,3));
     const m=new T.PointsMaterial({size:0.7,map:sparkTex(),vertexColors:true,transparent:true,opacity:1,depthWrite:false,alphaTest:0.02,sizeAttenuation:true});
     const p=new T.Points(g,m); p.raycast=()=>{}; scene.add(p); bursts.push({p,vel,t:0});
-    if(typeof window.__sfx==='function') window.__sfx('pop'); }
+    if(!quiet && typeof window.__sfx==='function') window.__sfx('pop'); }
   function stepFx(dt){
     for(let b=bursts.length-1;b>=0;b--){ const B=bursts[b]; B.t+=dt; const a=B.p.geometry.attributes.position;
       for(let i=0;i<B.vel.length;i++){ const v=B.vel[i]; v.y-=4.5*dt; v.multiplyScalar(1-1.2*dt); a.array[i*3]+=v.x*dt; a.array[i*3+1]+=v.y*dt; a.array[i*3+2]+=v.z*dt; }
@@ -1630,8 +1649,11 @@ function buildScene(){
     sunOff.set(-Math.cos(th)*20, Math.max(18,34*Math.sin(th)), 14);
     document.documentElement.dataset.skyPhase = day?(h<7.5?'dawn':(h>16.5?'dusk':'day')):'night';
     // 萬聖節：天空偏紫、月亮變成橘色
-    if(window.__festOn==='halloween'){ const fk=day?(h>16.5?0.45:0.12):0.55; skyUni.top.value.lerp(new T.Color('#3a1a55'),fk);
-      if(!day){ orbMat.color.set('#ffb45a'); haloMat.color.set('#ff9a3c'); haloMat.opacity=0.2; } }
+    // 節慶天空：萬聖節偏紫、新年偏紅、七夕偏粉紅、中秋大月亮
+    const FS={halloween:{c:'#3a1a55',k:[0.12,0.45,0.55],moon:'#ffb45a',halo:'#ff9a3c'},cny:{c:'#5a1a24',k:[0,0.3,0.3]},qixi:{c:'#5a2a5a',k:[0.05,0.35,0.35]},midautumn:{c:'#2a2050',k:[0,0.15,0.2],moon:'#ffd76a',halo:'#ffe7a0',big:1.8},christmas:{c:'#1a2a50',k:[0,0.1,0.2]}}[window.__festOn];
+    orb.scale.setScalar(1); halo.scale.setScalar(1);
+    if(FS){ const fk=day?(h>16.5?FS.k[1]:FS.k[0]):FS.k[2]; if(fk) skyUni.top.value.lerp(new T.Color(FS.c),fk);
+      if(!day){ if(FS.moon){ orbMat.color.set(FS.moon); haloMat.color.set(FS.halo); haloMat.opacity=0.22; } if(FS.big){ orb.scale.setScalar(FS.big); halo.scale.setScalar(FS.big*1.1); } } }
   }
   window.__skyApply=applyTheme;
   window.__skyHour=h=>{ skyHour=h; applyTheme(); };
