@@ -333,6 +333,7 @@ body.focused .back{margin-top:0}
 .gdots{display:inline-flex;gap:3px}
 .gdots i{width:9px;height:9px;border-radius:50%;background:var(--track);border:1px solid var(--line)}
 .gdots i.on{background:#e3b23c;border-color:#c99a24}
+.gdots i.legend{background:radial-gradient(circle at 35% 30%,#fffbe6,#ffd36a 50%,#e3a21a);border-color:#e3a21a;box-shadow:0 0 6px 1px rgba(255,200,80,.8);transform:rotate(45deg);border-radius:2px}
 .fogtag{padding:1px 8px;border-radius:99px;background:var(--paper2);border:1px solid var(--line);color:var(--ink)}
 .toast{position:fixed;left:50%;top:calc(16px + env(safe-area-inset-top,0px));transform:translateX(-50%);z-index:500;max-width:calc(100% - 32px);padding:8px 16px;border-radius:99px;background:var(--ink);color:var(--paper);font-size:var(--fs-3);font-weight:600;box-shadow:var(--shadow-lg);animation:toastIn .35s ease;transition:opacity .4s}
 .toast.out{opacity:0}
@@ -395,6 +396,8 @@ body.ui-hidden .ui,body.ui-hidden #labels{visibility:hidden}
 .celeb-card{position:relative;width:min(420px,100%);box-sizing:border-box;text-align:center;padding:56px 24px 22px;border-radius:20px;background:var(--paper);color:var(--ink);border:2px solid #e3b23c;box-shadow:0 24px 60px rgba(0,0,0,.35),0 0 0 6px rgba(227,178,60,.18);animation:celebPop .55s cubic-bezier(.2,1.4,.4,1)}
 @keyframes celebPop{from{transform:scale(.6) translateY(30px);opacity:0}to{transform:none;opacity:1}}
 .celeb-badge{position:absolute;left:50%;top:-44px;width:88px;height:88px;margin-left:-44px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#fff3c4,#e3b23c 55%,#b8861b);box-shadow:0 8px 20px rgba(184,134,27,.5),inset 0 -4px 0 rgba(0,0,0,.12);animation:celebSpin 1.2s ease}
+.celeb-badge.legend{background:radial-gradient(circle at 35% 30%,#ffffff,#ffe9a0 40%,#f2b632 70%,#a8740f);box-shadow:0 0 34px 8px rgba(255,214,110,.75),inset 0 -4px 0 rgba(0,0,0,.12)}
+.celeb-stars span.crown{color:#f2b632;text-shadow:0 0 10px rgba(255,200,80,.9)}
 .celeb-badge span{font-family:var(--f-display);font-size:30px;font-weight:700;color:#6b4a0c}
 .celeb-badge::before{content:"";position:absolute;inset:-14px;border-radius:50%;background:conic-gradient(from 0deg,transparent 0 10deg,rgba(255,215,110,.55) 10deg 20deg,transparent 20deg 40deg,rgba(255,215,110,.55) 40deg 50deg,transparent 50deg 70deg,rgba(255,215,110,.55) 70deg 80deg,transparent 80deg 100deg,rgba(255,215,110,.55) 100deg 110deg,transparent 110deg 130deg,rgba(255,215,110,.55) 130deg 140deg,transparent 140deg 160deg,rgba(255,215,110,.55) 160deg 170deg,transparent 170deg 190deg,rgba(255,215,110,.55) 190deg 200deg,transparent 200deg 220deg,rgba(255,215,110,.55) 220deg 230deg,transparent 230deg 250deg,rgba(255,215,110,.55) 250deg 260deg,transparent 260deg 280deg,rgba(255,215,110,.55) 280deg 290deg,transparent 290deg 310deg,rgba(255,215,110,.55) 310deg 320deg,transparent 320deg 340deg,rgba(255,215,110,.55) 340deg 350deg,transparent 350deg);z-index:-1;animation:celebRays 8s linear infinite}
 @keyframes celebRays{to{transform:rotate(360deg)}} @keyframes celebSpin{from{transform:rotate(-200deg) scale(.3)}to{transform:none}}
@@ -4699,9 +4702,10 @@ function statsOf(list){
 const pct=x=>x==null?'—':Math.round(x*100)+'%';
 // 島嶼成長：看「目前答對中」的題數（最近一次答對就算），達 8%／25%／50% 各長出一階
 // 答錯會把那題扣回來；最近答錯 4 題以上且答對率低於七成會起霧
-const STAGES=[0.08,0.25,0.5], STAGE_NAME=['荒島','小聚落','熱鬧聚落','繁榮之島'];
+// 隱藏的第四階：小島上每一題都處於答對狀態，就會成為「傳說之島」（介面不明講，由領航員暗示）
+const STAGES=[0.08,0.25,0.5], STAGE_NAME=['荒島','小聚落','熱鬧聚落','繁榮之島','傳說之島'];
 function growthOf(id){ const list=BANK[id], t=statsOf(list);
-  const ok=list.filter(q=>ST.q[q.id]&&ST.q[q.id][2]).length, m=ok/t.total; let stage=0; STAGES.forEach((x,i)=>{ if(m>=x) stage=i+1; });
+  const ok=list.filter(q=>ST.q[q.id]&&ST.q[q.id][2]).length, m=ok/t.total; let stage=0; STAGES.forEach((x,i)=>{ if(m>=x) stage=i+1; }); if(t.total && ok>=t.total) stage=4;
   const wrong=list.filter(q=>ST.q[q.id]&&!ST.q[q.id][2]).length;
   const need=stage<3?Math.max(1,Math.ceil(STAGES[stage]*t.total)-ok):0;
   return {stage, fog: wrong>=4 && t.acc!=null && t.acc<0.7, wrong, m, ok, need}; }
@@ -4828,14 +4832,14 @@ let growthPrev=null;
 function syncGrowth(){
   const map={}; ISLANDS.filter(i=>i.ready).forEach(isl=>isl.lms.forEach(l=>{ map[l.id]=growthOf(l.id); }));
   if(growthPrev){ Object.keys(map).forEach(id=>{ const a=growthPrev[id], b=map[id];
-    if(b.stage>a.stage){ toast(LM_INFO[id].name+'升級為「'+STAGE_NAME[b.stage]+'」！'); if(typeof sfx==='function') setTimeout(()=>sfx('level'),500); }
+    if(b.stage>a.stage){ if(b.stage===4){ toast('✦ '+LM_INFO[id].name+'的每一題都答對了……小島化為「傳說之島」！'); if(typeof sfx==='function') setTimeout(()=>sfx('fanfare'),400); } else { toast(LM_INFO[id].name+'升級為「'+STAGE_NAME[b.stage]+'」！'); if(typeof sfx==='function') setTimeout(()=>sfx('level'),500); } }
     else if(a.fog && !b.fog) toast(LM_INFO[id].name+'的霧散了，錯題都補回來了。'); }); }
   if(growthPrev) ISLANDS.forEach(isl=>{ if(!isl.ready) return; const a=mainStageOf(isl,growthPrev), b=mainStageOf(isl,map); if(b>a) queueCelebrate(isl.id,b); });
   growthPrev=map; if(scene3d) scene3d.setGrowth(map);
 }
 // 主島等級＝全部章節小島中最低的等級（全部小島都升級，主島才升級）
 function mainStageOf(isl,map){ if(!isl.lms||!isl.lms.length) return 0; return Math.min.apply(null,isl.lms.map(l=>map&&map[l.id]?map[l.id].stage:0)); }
-const MAIN_TIER=[null,{t:'插上彩旗',d:'主島插上了一圈彩旗'},{t:'點起燈籠',d:'主島點起了成對的紅燈籠'},{t:'金光環繞',d:'主島燃起聖火、插上金旗，金色光環圍繞全島'}];
+const MAIN_TIER=[null,{t:'插上彩旗',d:'主島插上了一圈彩旗'},{t:'點起燈籠',d:'主島點起了成對的紅燈籠'},{t:'金光環繞',d:'主島燃起聖火、插上金旗，金色光環圍繞全島'},{t:'傳說降臨',d:'主島上空浮現旋轉的金色水晶，整座島成為傳說'}];
 const celebQ=[];
 function queueCelebrate(id,lv){ if(celebQ.some(c=>c.id===id&&c.lv>=lv)) return; celebQ.push({id,lv}); if(panel.hidden) setTimeout(showCelebrate,600); }
 function showCelebrate(){
@@ -4844,11 +4848,11 @@ function showCelebrate(){
   const el=document.createElement('div'); el.id='celeb'; el.className='celeb'; el.setAttribute('role','dialog'); el.setAttribute('aria-modal','true'); el.setAttribute('aria-labelledby','celebT');
   let conf=''; for(let i=0;i<48;i++){ const c=['#f2c94c','#eb5757','#56ccf2','#6fcf97','#bb6bd9','#f2994a'][i%6]; conf+='<i style="--x:'+(Math.random()*100).toFixed(1)+'vw;--d:'+(2.4+Math.random()*2.2).toFixed(2)+'s;--w:'+(Math.random()*1.4).toFixed(2)+'s;--r:'+Math.floor(Math.random()*720-360)+'deg;--c:'+c+'"></i>'; }
   el.innerHTML='<div class="celeb-conf" aria-hidden="true">'+conf+'</div><div class="celeb-card" style="--c:'+SUBJ[isl.subj].css+'">'+
-    '<div class="celeb-badge" aria-hidden="true"><span>'+['','I','II','III'][lv]+'</span></div>'+
-    '<p class="celeb-eye">主島升級</p><h2 class="celeb-title" id="celebT">'+esc(isl.name)+'</h2>'+
-    '<p class="celeb-stars" aria-label="主島等級 '+lv+' / 3">'+[1,2,3].map(k=>'<span class="'+(k<=lv?'on':'')+'">★</span>').join('')+'</p>'+
-    '<p class="celeb-tier">第 '+lv+' 級．'+tier.t+'</p>'+
-    '<p class="celeb-msg">全部 '+n+' 座章節小島都升到「'+STAGE_NAME[lv]+'」，'+tier.d+'。'+(lv<3?'下一級：全部小島都升到「'+STAGE_NAME[lv+1]+'」。':'這座島已經完全征服了！')+'</p>'+
+    '<div class="celeb-badge'+(lv>=4?' legend':'')+'" aria-hidden="true"><span>'+['','I','II','III','✦'][lv]+'</span></div>'+
+    '<p class="celeb-eye">'+(lv>=4?'隱藏階段解鎖':'主島升級')+'</p><h2 class="celeb-title" id="celebT">'+esc(isl.name)+'</h2>'+
+    '<p class="celeb-stars" aria-label="主島等級 '+Math.min(lv,3)+' / 3'+(lv>=4?'，傳說':'')+'">'+[1,2,3].map(k=>'<span class="'+(k<=lv?'on':'')+'">★</span>').join('')+(lv>=4?'<span class="on crown">♛</span>':'')+'</p>'+
+    '<p class="celeb-tier">'+(lv>=4?'傳說之島':'第 '+lv+' 級')+'．'+tier.t+'</p>'+
+    '<p class="celeb-msg">'+(lv>=4?'全部 '+n+' 座章節小島的每一題都答對了，'+tier.d+'。你找到了這座島最深的秘密！':'全部 '+n+' 座章節小島都升到「'+STAGE_NAME[lv]+'」，'+tier.d+'。'+(lv<3?'下一級：全部小島都升到「'+STAGE_NAME[lv+1]+'」。':'看起來已經是最高等級了……真的嗎？'))+'</p>'+
     '<div class="celeb-act"><button type="button" class="btn primary" id="celebGo">去看看</button><button type="button" class="btn" id="celebLater">稍後</button></div></div>';
   document.body.appendChild(el);
   if(typeof sfx==='function') sfx('fanfare');
@@ -4867,7 +4871,7 @@ function refreshProgress(){
       sub.textContent=isl.grade; chipEl[isl.id].querySelector('.mini i').style.width=p.toFixed(1)+'%'; chipEl[isl.id].title=isl.name+'：答對 '+Math.round(p)+'%';
       ls.textContent=isl.grade+'．'+s.total+' 題';
       islLabel[isl.id].style.setProperty('--p',p.toFixed(1));
-      { const lv=mainStageOf(isl,growthPrev||{}); islLabel[isl.id].querySelector('.mstars').textContent=lv?' '+'★'.repeat(lv):''; if(lv) chipEl[isl.id].title+='．主島第 '+lv+' 級'; }
+      { const lv=mainStageOf(isl,growthPrev||{}); islLabel[isl.id].querySelector('.mstars').textContent=lv?' '+'★'.repeat(Math.min(lv,3))+(lv>=4?'♛':''):''; if(lv) chipEl[isl.id].title+=lv>=4?'．傳說之島':'．主島第 '+lv+' 級'; }
       isl.lms.forEach(l=>{ const t=statsOf(BANK[l.id]); lmLabel[l.id].querySelector('.sc').textContent=t.ok+'/'+t.total; lmLabel[l.id].style.setProperty('--p',(t.ok/t.total*100).toFixed(1)); });
     } else {
       sub.textContent=isl.grade+'．建造中'; ls.textContent=isl.grade+'．建造中'; chipEl[isl.id].querySelector('.mini').hidden=true;
@@ -5077,7 +5081,7 @@ function renderCard(){
     $('#cGo').addEventListener('click',()=>startQuiz({scope:'link',id:linkFocus}));
   } else if(lmFocus){
     const l=LM_INFO[lmFocus], t=statsOf(BANK[lmFocus]), gr=growthOf(lmFocus);
-    const dots=[1,2,3].map(k=>'<i class="'+(gr.stage>=k?'on':'')+'"></i>').join('');
+    const dots=[1,2,3].map(k=>'<i class="'+(gr.stage>=k?'on':'')+'"></i>').join('')+(gr.stage>=4?'<i class="on legend"></i>':'');
     const nxt=gr.stage<3?'．再答對 '+gr.need+' 題升級':'';
     cardEl.innerHTML=
       '<div class="card-top"><div>'+tag+'<h2 class="card-title">'+l.name+'</h2><p class="card-sub">'+l.unit+'</p></div>'+
@@ -5386,7 +5390,7 @@ const tourEl=document.createElement('div'); tourEl.className='tour'; tourEl.hidd
 const TOUR=[
   {cam:s=>s.overview(), text:'嗨！我是領航員。這裡有 9 座島：橘色是歷史、綠色是地理、藍灰色是公民，每一科分成七、八、九年級三座島。'},
   {cam:s=>s.focus('twh'), text:'每座島中央是主島，周圍的小島是章節。點小島可以近看代表模型，按「開始答題」就能練習。'},
-  {cam:s=>s.focusLm('pre'), text:'答對越多，小島會長出房子、燈籠和金旗；最近錯很多的小島會起霧，提醒你回來複習。'},
+  {cam:s=>s.focusLm('pre'), text:'答對越多，小島會長出房子、燈籠和金旗；最近錯很多的小島會起霧，提醒你回來複習。<br><span class="tour-tip">（老水手說，金旗還不是盡頭……不過他們從來不肯多講。）</span>'},
   {cam:s=>s.focusLink(0), text:'臺灣史島上的橘色弧線是「因果航線」，連起原因和結果，點它就能練跨章節的因果題。'},
   {cam:s=>s.focusCross(5), text:'島與島之間來回的小船是「跨科航線」，把歷史、地理、公民串成同一張知識網。點小船就能練習。'},
   {cam:s=>s.overview(), text:'左上角的「今日複習」會整理今天該複習的題目，還有「會考模擬」和「搜尋題目」。'},
@@ -5413,6 +5417,11 @@ function endTour(){ tourStep=-1; tourEl.hidden=true; document.body.classList.rem
 function onGuide(){
   const due=dueList().length; tourStep=-1;
   const tips=['連續答對 2 次才算熟練，熟練的題目會隔幾天再出現一次。','做完一輪後，看看「各小主題表現」，就知道下一步該練哪裡。','覺得題目有問題，可以按「這題有疑問」標記，之後一起修正。','會考常考圖表題，地理的氣候圖和人口金字塔記得多練。'];
+  // 隱藏第四階的暗示：只講傳聞，不講條件
+  { const all=Object.values(growthPrev||{}), n4=all.filter(g=>g.stage>=4).length, n3=all.filter(g=>g.stage===3).length;
+    const legend=ISLANDS.some(isl=>isl.ready&&mainStageOf(isl,growthPrev||{})>=4);
+    const hint=legend?'你連主島都喚醒了……老實說，我也是第一次看到那顆水晶。':n4?'你看到那道金光了嗎？傳說如果一座島上的小島全都變成那樣，主島也會醒過來。':n3?'聽說有些「繁榮之島」後來又變了模樣——據說是島上的人一個問題也答不倒的時候。我只聽過，沒親眼看過。':'';
+    if(hint) tips.push(hint,hint,hint); }
   tourEl.innerHTML=guideHTML((due?'今天有 '+due+' 題到期要複習，現在花幾分鐘把它們複習完吧！':'今天沒有到期的題目，做得好！')+'<br><span class="tour-tip">小提醒：'+tips[Math.floor(Math.random()*tips.length)]+'</span>',(due?'<button type="button" class="btn primary" data-t="review">開始今日複習</button>':'')+'<button type="button" class="btn" data-t="start">再導覽一次</button>');
   tourEl.hidden=false; bindTour();
 }
@@ -6202,8 +6211,16 @@ function buildScene(){
           for(let k=0;k<4;k++){ const t=a+k*Math.PI/2+Math.PI/4, x=Math.sin(t)*(RM-0.2), z=Math.cos(t)*(RM-0.2); m3.add(cyl(0.045,0.05,2.4,'#6b4f36',x,0.55,z,6)); const fl=box(0.6,0.34,0.03,'#e3b23c',x,2.55,z); fl.rotation.y=-t+Math.PI/2; m3.add(fl); m3.add(M(new T.SphereGeometry(0.08,8,6),'#e3b23c',x,3.02,z)); } }
         { const tz=[Math.sin(a)*2.3,Math.cos(a)*2.3]; m3.add(cyl(0.22,0.3,0.25,'#8a7a5a',tz[0],0.55,tz[1],8)); m3.add(cyl(0.12,0.16,1.5,'#c9a227',tz[0],0.8,tz[1],8)); m3.add(cyl(0.3,0.16,0.22,'#e3b23c',tz[0],2.3,tz[1],10));
           const fl=M(new T.ConeGeometry(0.22,0.6,8),new T.MeshStandardMaterial({color:'#ffb347',emissive:'#ff7a1a',emissiveIntensity:1.2,flatShading:true}),tz[0],2.82,tz[1]); m3.add(fl); }
-        [m1,m2,m3].forEach(sg=>{ sg.visible=false; sg.traverse(o=>{ if(o.isMesh) o.raycast=()=>{}; }); g.add(sg); });
-        mainGrow=[m1,m2,m3];
+        // 隱藏第四階：主島上空的金色水晶與光環
+        const m4=new T.Group();
+        { const gold=new T.MeshStandardMaterial({color:'#ffd36a',emissive:'#e3a21a',emissiveIntensity:0.9,metalness:0.4,roughness:0.25,flatShading:true});
+          const sp=new T.Group(); sp.position.y=6.2; const cr=new T.Mesh(new T.OctahedronGeometry(1.35,0),gold); cr.scale.y=1.6; sp.add(cr);
+          for(let k=0;k<6;k++){ const t=k/6*Math.PI*2, sm=new T.Mesh(new T.OctahedronGeometry(0.32,0),gold); sm.position.set(Math.sin(t)*2.6,Math.sin(k*2.1)*0.4,Math.cos(t)*2.6); sp.add(sm); }
+          m4.add(sp); m4.userData.spin=sp;
+          const rg=new T.RingGeometry(MR*1.12,MR*1.22,64); rg.rotateX(-Math.PI/2); const r2=new T.Mesh(rg,new T.MeshBasicMaterial({color:'#fff1b8',transparent:true,opacity:0.7,depthWrite:false})); r2.position.y=0.52; m4.add(r2);
+          const bm=new T.Mesh(new T.CylinderGeometry(0.35,0.9,5.2,16,1,true),new T.MeshBasicMaterial({color:'#ffe9a0',transparent:true,opacity:0.18,depthWrite:false,side:T.DoubleSide})); bm.position.y=3.3; m4.add(bm); m4.userData.halo=bm; }
+        [m1,m2,m3,m4].forEach(sg=>{ sg.visible=false; sg.traverse(o=>{ if(o.isMesh) o.raycast=()=>{}; }); g.add(sg); });
+        mainGrow=[m1,m2,m3,m4];
       }
       const step=Math.PI*2/chaps.length, islAngles=chaps.map((c,i)=>a+Math.PI+step/2+i*step); // 鏡頭從外側看：第 1 章在左後方，依序經過前方，到右後方結束，與底部列的左右順序一致
       const myIslets=[];
@@ -6233,12 +6250,19 @@ function buildScene(){
         [Math.PI-1.75,Math.PI+1.75].forEach(rel=>{ const [x,z]=slot(rel,2.2); s2.add(M(new T.CylinderGeometry(0.32,0.36,0.12,8),'#7b6d5c',x,0.6,z)); for(let k=0;k<4;k++) s2.add(M(new T.IcosahedronGeometry(0.08,0),['#f2c94c','#eb5757','#bb6bd9','#f2994a'][k],x+Math.cos(k*1.6)*0.17,0.72,z+Math.sin(k*1.6)*0.17)); });
         { const [x,z]=slot(Math.PI,2.45); s3.add(cyl(0.04,0.05,2.6,'#6b4f36',x,0.55,z,6)); const fl=box(0.75,0.4,0.03,'#e3b23c',x+0.38,2.65,z); s3.add(fl); s3.userData.flag=fl; s3.add(M(new T.SphereGeometry(0.09,8,6),'#e3b23c',x,3.2,z)); }
         const haloG=new T.RingGeometry(IR*0.93,IR*1.0,48); haloG.rotateX(-Math.PI/2); const halo=new T.Mesh(haloG,new T.MeshBasicMaterial({color:'#ffd36a',transparent:true,opacity:0.5,depthWrite:false})); halo.position.y=0.57; halo.raycast=()=>{}; s3.add(halo); s3.userData.halo=halo;
-        [s1,s2,s3].forEach(sg=>{ sg.visible=false; sg.traverse(o=>{ if(o.isMesh) o.raycast=()=>{}; }); ig.add(sg); });
+        // 隱藏第四階：漂浮的金色水晶與金色光環
+        const s4=new T.Group();
+        { const gold=new T.MeshStandardMaterial({color:'#ffd36a',emissive:'#e3a21a',emissiveIntensity:0.9,metalness:0.4,roughness:0.25,flatShading:true});
+          const [x,z]=slot(Math.PI,1.35); const sp=new T.Group(); sp.position.set(x,3.6,z); const cr=new T.Mesh(new T.OctahedronGeometry(0.6,0),gold); cr.scale.y=1.5; sp.add(cr);
+          for(let k=0;k<3;k++){ const t=k/3*Math.PI*2, sm=new T.Mesh(new T.OctahedronGeometry(0.16,0),gold); sm.position.set(Math.sin(t)*1.1,0,Math.cos(t)*1.1); sp.add(sm); }
+          s4.add(sp); s4.userData.spin=sp;
+          const rg=new T.RingGeometry(IR*1.04,IR*1.14,48); rg.rotateX(-Math.PI/2); const r2=new T.Mesh(rg,new T.MeshBasicMaterial({color:'#fff1b8',transparent:true,opacity:0.65,depthWrite:false})); r2.position.y=0.5; r2.raycast=()=>{}; s4.add(r2); s4.userData.ring=r2; }
+        [s1,s2,s3,s4].forEach(sg=>{ sg.visible=false; sg.traverse(o=>{ if(o.isMesh) o.raycast=()=>{}; }); ig.add(sg); });
         // 起霧：最近答錯較多時出現
         const fogM=fogMat.clone(); const fog=new T.Group(); fog.visible=false; fog.userData.mat=fogM;
         for(let k=0;k<7;k++){ const fm=new T.Mesh(new T.IcosahedronGeometry(0.75+rnd()*0.45,0),fogM); const fa=k/7*Math.PI*2; fm.position.set(Math.sin(fa)*(1.6+rnd()*1.1),1.2+rnd()*1.1,Math.cos(fa)*(1.6+rnd()*1.1)); fm.scale.y=0.55; fm.raycast=()=>{}; fm.castShadow=false; fog.add(fm); }
         ig.add(fog);
-        islets[l.id]={ig,c,la,grow:[s1,s2,s3],fog,stage:-1,pop:0}; myIslets.push(islets[l.id]);
+        islets[l.id]={ig,c,la,grow:[s1,s2,s3,s4],fog,stage:-1,pop:0}; myIslets.push(islets[l.id]);
         // 棧橋：主島到小島
         const L0=MR*0.92, L1=RR-IR*0.92, len=L1-L0, sp=new T.Group(); sp.rotation.y=la;
         const nP=Math.ceil(len/0.5); for(let k=0;k<nP;k++){ const t=(k+0.5)/nP, zz=L0+t*len, y=0.6+0.28*Math.sin(Math.PI*t); const pl=M(new T.BoxGeometry(0.9,0.06,len/nP+0.03),'#8b6a46',0,y,zz); pl.castShadow=false; sp.add(pl); }
@@ -6294,19 +6318,52 @@ function buildScene(){
   });
 
   /* --- 跨科航線：小船在不同島的章節之間往返 --- */
+  // 海上航道：從章節小島外側出發，繞開所有島嶼（其他群島整片避開；起訖群島避開主島、棧橋與各小島）
+  // 群島之間的橋（與 people.js 相同算法），船不能從橋下穿過
+  let _seaBr=null;
+  function seaBridgeObs(){ if(_seaBr) return _seaBr; _seaBr=[];
+    const end=(I,toward)=>{ let c=I.pos, r=I.R*0.8; if(I.arch){ let bd=1e9; I.islets.forEach(s=>{ const w=I.pos.clone().add(s.c); const d=w.distanceTo(toward); if(d<bd){ bd=d; c=w; } }); r=ARCH.IR*0.8; } const dir=new T.Vector3().subVectors(toward,c); dir.y=0; dir.normalize(); return c.clone().addScaledVector(dir,r); };
+    const ring=ISLANDS.map(isl=>({id:isl.id,a:((islands[isl.id].angle%(Math.PI*2))+Math.PI*2)%(Math.PI*2)})).sort((p,q)=>p.a-q.a);
+    ring.forEach((p,i)=>{ const A0=islands[p.id], B0=islands[ring[(i+1)%ring.length].id], A=end(A0,B0.pos), B=end(B0,A); const n=Math.ceil(A.distanceTo(B)/1.2);
+      for(let k=0;k<=n;k++){ const t=k/n; _seaBr.push({x:A.x+(B.x-A.x)*t,z:A.z+(B.z-A.z)*t,r:2.2}); } });
+    return _seaBr; }
+  function seaPath(IA,A,IB,B){
+    const CLR=1.6, obs=[];
+    Object.keys(islands).forEach(id=>{ const I=islands[id];
+      if(I===IA||I===IB){ if(I.arch){ obs.push({x:I.pos.x,z:I.pos.z,r:ARCH.RR+0.6}); I.pieces.forEach(p=>{ if(!p.main) obs.push({x:p.x,z:p.z,r:p.R+CLR}); }); } else I.pieces.forEach(p=>obs.push({x:p.x,z:p.z,r:p.R+CLR})); }
+      else { const r=I.arch?ARCH.RR+ARCH.IR+CLR:Math.max(...I.pieces.map(p=>Math.hypot(p.x-I.pos.x,p.z-I.pos.z)+p.R))+CLR; obs.push({x:I.pos.x,z:I.pos.z,r}); } });
+    obs.push({x:0,z:0,r:7.2*1.15+CLR}); // 中央錯題島
+    seaBridgeObs().forEach(o=>obs.push(o));
+    // 出港點：小島在群島內側（面向中央海域）就從小島外緣出發；在外側則改從群島內側的海面出發，避免穿越群島之間的橋
+    const out=(I,c)=>{ const inA=Math.atan2(-I.pos.x,-I.pos.z); let a=Math.atan2(c.x,c.z), da=Math.atan2(Math.sin(a-inA),Math.cos(a-inA)); const lim=Math.PI*0.22;
+      if(Math.abs(da)<=lim) return I.pos.clone().add(c).addScaledVector(c.clone().setY(0).normalize(),ARCH.IR+CLR+0.3).setY(0);
+      a=inA+Math.sign(da)*lim; const rr=ARCH.RR+ARCH.IR+CLR+0.3; return new T.Vector3(I.pos.x+Math.sin(a)*rr,0,I.pos.z+Math.cos(a)*rr); };
+    const pa=out(IA,A.c), pb=out(IB,B.c);
+    // 起始路線：先駛入中央海域，沿著環形海面走較短的一側，再駛向目的地
+    const N=72, P=[], a0=Math.atan2(pa.x,pa.z); let dA=Math.atan2(pb.x,pb.z)-a0; dA=Math.atan2(Math.sin(dA),Math.cos(dA));
+    const r0=Math.hypot(pa.x,pa.z), r1=Math.hypot(pb.x,pb.z), RM=22;
+    for(let k=0;k<=N;k++){ const t=k/N, a=a0+dA*t, rr=t<0.15?r0+(RM-r0)*t/0.15:t>0.85?RM+(r1-RM)*(t-0.85)/0.15:RM; P.push(new T.Vector3(Math.sin(a)*rr,0,Math.cos(a)*rr)); }
+    const push=p=>{ obs.forEach(o=>{ const dx=p.x-o.x, dz=p.z-o.z, d=Math.hypot(dx,dz); if(d<o.r){ if(d<1e-3){ p.x+=o.r; return; } p.x=o.x+dx/d*o.r; p.z=o.z+dz/d*o.r; } }); };
+    for(let it=0;it<260;it++){
+      for(let k=1;k<N;k++) push(P[k]);
+      const Q=P.map(v=>v.clone());
+      for(let k=1;k<N;k++){ P[k].x=Q[k].x*0.5+(Q[k-1].x+Q[k+1].x)*0.25; P[k].z=Q[k].z*0.5+(Q[k-1].z+Q[k+1].z)*0.25; }
+    }
+    for(let r=0;r<4;r++) for(let k=1;k<N;k++) push(P[k]);
+    const pts=P.filter((v,k)=>k%3===0||k===N);
+    const cv=new T.CatmullRomCurve3(pts,false,'centripetal');
+    return cv;
+  }
   const crossObjs=[];
   CROSS.forEach((L,i)=>{
     const A=islets[L.a], B=islets[L.b]; if(!A||!B) return;
     const IA=islands[LM_INFO[L.a].isl], IB=islands[LM_INFO[L.b].isl];
     const wa=IA.pos.clone().add(A.c), wb=IB.pos.clone().add(B.c);
-    const mid=wa.clone().add(wb).multiplyScalar(0.5); let ctrl=mid.clone().multiplyScalar(0.25).setY(0);
-    { const need=2*(7.2*1.75)-mid.length(); if(ctrl.length()<need){ const dir=mid.length()>1?mid.clone().setY(0).normalize():new T.Vector3(-(wb.z-wa.z),0,wb.x-wa.x).normalize(); ctrl=dir.multiplyScalar(Math.max(need,ctrl.length())); } }
-    const pa=wa.clone().add(ctrl.clone().sub(wa).setY(0).normalize().multiplyScalar(ARCH.IR*1.25)).setY(0), pb=wb.clone().add(ctrl.clone().sub(wb).setY(0).normalize().multiplyScalar(ARCH.IR*1.25)).setY(0);
-    const curve=new T.QuadraticBezierCurve3(pa,ctrl,pb), len=curve.getLength();
+    const curve=seaPath(IA,A,IB,B), len=curve.getLength();
     const nd=Math.max(8,Math.floor(len/2.2)), dm=new T.Object3D();
     const wm=new T.MeshBasicMaterial({color:'#ffffff',transparent:true,opacity:0.45,depthWrite:false});
     const wake=new T.InstancedMesh(new T.CircleGeometry(0.22,8),wm,nd); wake.raycast=()=>{}; wake.renderOrder=2;
-    for(let k=0;k<nd;k++){ const pt=curve.getPoint((k+0.5)/nd); dm.position.set(pt.x,0.16,pt.z); dm.rotation.set(-Math.PI/2,0,0); dm.updateMatrix(); wake.setMatrixAt(k,dm.matrix); }
+    for(let k=0;k<nd;k++){ const pt=curve.getPointAt((k+0.5)/nd); dm.position.set(pt.x,0.16,pt.z); dm.rotation.set(-Math.PI/2,0,0); dm.updateMatrix(); wake.setMatrixAt(k,dm.matrix); }
     scene.add(wake);
     const boat=new T.Group(), body=new T.Group(); boat.add(body);
     body.add(box(1.5,0.32,0.6,'#7a4a2c',0,0,0)); const bow=prism(0.3,0.6,'#7a4a2c',0.95,0.2,0,1.0); bow.rotation.y=Math.PI/2; bow.scale.set(1,1,0.6); body.add(bow);
@@ -6317,7 +6374,7 @@ function buildScene(){
     const crate=box(0.32,0.26,0.32,'#c89a5a',0.55,0.16,0); body.add(crate);
     boat.scale.setScalar(1.35); boat.traverse(o=>{ o.raycast=()=>{}; });
     scene.add(boat);
-    crossObjs.push({i,curve,len,boat,flag,wm,t:rnd(),dir:1,wait:0,op:0.45,pa,pb,mid:curve.getPoint(0.5)});
+    crossObjs.push({i,curve,len,boat,flag,wm,t:rnd(),dir:1,wait:0,op:0.45,pa:curve.getPointAt(0),pb:curve.getPointAt(1),mid:curve.getPointAt(0.5)});
   });
 
   const TAU0=Math.PI*2;
@@ -6764,7 +6821,7 @@ function buildScene(){
         s.grow.forEach(sg=>bake(sg,c=>c===sg.userData.flag));
         bake(s.ig,c=>c===model||s.grow.includes(c)||c===s.fog,true);
       });
-      (I.mainGrow||[]).forEach(sg=>bake(sg,c=>c===sg.userData.halo));
+      (I.mainGrow||[]).forEach(sg=>bake(sg,c=>c===sg.userData.halo||c===sg.userData.spin));
       bake(I.g,c=>animated.has(c)||I.islets.some(s=>s.ig===c)||(I.mainGrow||[]).includes(c),true);
     });
   }
@@ -6786,7 +6843,7 @@ function buildScene(){
       for(let i=0;i<B.vel.length;i++){ const v=B.vel[i]; v.y-=4.5*dt; v.multiplyScalar(1-1.2*dt); a.array[i*3]+=v.x*dt; a.array[i*3+1]+=v.y*dt; a.array[i*3+2]+=v.z*dt; }
       a.needsUpdate=true; B.p.material.opacity=Math.max(0,1-B.t/1.8); if(B.t>1.8){ scene.remove(B.p); B.p.geometry.dispose(); B.p.material.dispose(); bursts.splice(b,1); } }
     if(celebT>=0){ celebT+=dt; const u=celebT<0.8?celebT/0.8:(celebT<4.5?1:Math.max(0,1-(celebT-4.5)/1.5)); beam.material.opacity=0.32*u; beam.scale.set(1,0.6+0.4*Math.min(1,celebT/0.8),1); if(celebT>6){ celebT=-1; beam.visible=false; } }
-    Object.keys(islands).forEach(k=>{ const I=islands[k]; (I.mainGrow||[]).forEach(sg=>{ const pp=sg.userData.pop; if(pp>0){ const t=1-pp; const s=t<0.6?(t/0.6)*1.18:1.18-0.18*((t-0.6)/0.4); sg.scale.setScalar(Math.max(0.01,s)); sg.userData.pop=Math.max(0,pp-dt*1.1); if(sg.userData.pop===0) sg.scale.setScalar(1); } }); });
+    Object.keys(islands).forEach(k=>{ const I=islands[k]; (I.mainGrow||[]).forEach(sg=>{ const pp=sg.userData.pop; if(pp>0){ const t=1-pp; const s=t<0.6?(t/0.6)*1.18:1.18-0.18*((t-0.6)/0.4); sg.scale.setScalar(Math.max(0.01,s)); sg.userData.pop=Math.max(0,pp-dt*1.1); if(sg.userData.pop===0) sg.scale.setScalar(1); } if(sg.userData.spin && sg.visible && !reduceMotion){ sg.userData.spin.rotation.y+=dt*0.8; sg.userData.spin.position.y=6.2+Math.sin(performance.now()/700)*0.25; } }); });
   }
   /* --- 主題 --- */
   function isDark(){ const t=document.documentElement.getAttribute('data-theme'); if(t==='dark') return true; if(t==='light') return false; return !!(window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches); }
@@ -6937,7 +6994,7 @@ function buildScene(){
     crossObjs.forEach(o=>{
       const want=crossFocus!=null?(o.i===crossFocus?0.95:0.15):((hover&&hover.cross===o.i)?0.9:0.4); o.op+=(want-o.op)*k; o.wm.opacity=o.op;
       if(!reduceMotion){ if(o.wait>0) o.wait-=dt; else { o.t+=o.dir*dt*2.6/o.len; if(o.t>1||o.t<0){ o.t=Math.max(0,Math.min(1,o.t)); o.dir*=-1; o.wait=2.5; } } }
-      const pt=o.curve.getPoint(o.t), tg=o.curve.getTangent(o.t).multiplyScalar(o.dir);
+      const pt=o.curve.getPointAt(o.t), tg=o.curve.getTangentAt(o.t).multiplyScalar(o.dir);
       o.boat.position.set(pt.x,-0.12+Math.sin(time*1.6+o.i)*0.06,pt.z); o.boat.rotation.y=Math.atan2(-tg.z,tg.x); o.boat.rotation.z=Math.sin(time*1.2+o.i)*0.05;
       if(!reduceMotion) o.flag.rotation.y=Math.sin(time*3+o.i)*0.3;
     });
@@ -6945,6 +7002,7 @@ function buildScene(){
     Object.values(islets).forEach(s=>{
       if(s.fog && s.fog.visible){ if(!reduceMotion) s.fog.rotation.y+=dt*0.12; const fm=s.fog.userData.mat, fw=lmF&&lmGroups[lmF]&&lmGroups[lmF].parent===s.ig?0.1:0.6; fm.opacity+=(fw-fm.opacity)*k; }
       if(s.pop>0){ s.pop=Math.max(0,s.pop-dt*1.4); s.ig.position.y=Math.sin(s.pop*Math.PI)*0.6; }
+      const s4=s.grow[3]; if(s4 && s4.visible && !reduceMotion){ const sp=s4.userData.spin; sp.rotation.y+=dt*1.2; sp.position.y=3.6+Math.sin(time*1.5+s.la)*0.18; s4.userData.ring.material.opacity=0.45+0.25*Math.sin(time*2.4+s.la); }
       const s3=s.grow[2]; if(s3 && s3.visible && s3.userData.flag && !reduceMotion){ s3.userData.flag.rotation.y=Math.sin(time*1.8+s.la)*0.25; s3.userData.halo.material.opacity=0.35+0.2*Math.sin(time*2+s.la); }
     });
     if(!reduceMotion){ animateWater(time); spinners.forEach(o=>o.o.rotation[o.ax]+=dt*o.sp); beams.forEach(b=>b.rotation.y+=dt*0.9); clouds.forEach(c=>c.userData.a+=dt*c.userData.sp); }
@@ -7045,7 +7103,7 @@ function buildScene(){
       if(s.stage>=0 && g.stage>s.stage && !reduceMotion) s.pop=1; s.stage=g.stage; });
       // 主島：全部章節小島都達到第 k 級，主島才出現第 k 層裝飾
       ISLANDS.forEach(isl=>{ const I=islands[isl.id]; if(!I || !I.mainGrow || !isl.lms) return; const st=isl.lms.map(l=>map[l.id]?map[l.id].stage:0), need=st.length;
-        let lv=0; for(let k=1;k<=3;k++) if(st.filter(x=>x>=k).length>=need) lv=k;
+        let lv=0; for(let k=1;k<=4;k++) if(st.filter(x=>x>=k).length>=need) lv=k;
         I.mainGrow.forEach((sg,k)=>{ sg.visible=lv>k; });
         if(I.mainStage>=0 && lv>I.mainStage && !reduceMotion){ I.mainGrow[lv-1].userData.pop=1; } I.mainStage=lv; }); },
     focusLm(id){ const g=lmGroups[id]; if(!g) return; const bb=new T.Box3().setFromObject(g), sz=new T.Vector3(), c=new T.Vector3(); bb.getSize(sz); bb.getCenter(c); const span=Math.max(sz.x,sz.y,sz.z); cam.tTarget.set(c.x,c.y,c.z); cam.tYaw=shortest(cam.tYaw,g.userData.angle); cam.tPitch=0.5; cam.tDist=(span*2.4+2.5)*(narrow()?1.45:1); lastInput=performance.now(); }
