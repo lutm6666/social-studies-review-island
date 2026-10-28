@@ -61,6 +61,10 @@ eco6|交通與網路發達|人員跨國頻繁流動
 eco6|交通與網路發達|各國依比較利益分工
 eco6|各國依比較利益分工|全球化競爭加劇
 eco6|跨國企業在當地設廠|全球化競爭加劇
+cnh6|改革開放|經濟特區
+twg1|經線|本初子午線
+twg1|緯線|赤道|北回歸線
+law6|契約|和解
 `;
 OV.trim().split('\n').forEach(l=>{ const [lm,...ks]=l.split('|'); if(!GEN[lm]) return; (GEN[lm].ov=GEN[lm].ov||[]).push(ks); });
 })();
