@@ -1,0 +1,18 @@
+{
+  "sourceSha": "7206fdb147893cd63e699c1b933cd88f333c810b",
+  "total": 3840,
+  "unique": 3840,
+  "engineTotal": 3840,
+  "mismatches": [],
+  "changedSinceD4": 1240,
+  "causeChanged": 706,
+  "causeRows": 365,
+  "termChanged": 534,
+  "stemsKeysChanged": [],
+  "unaffectedCauseFromPrior708": [
+    "pre-g64",
+    "pre-g65"
+  ],
+  "structureFailures": [],
+  "snapshotNotice": "Copied d4 source for unchanged bank modules, replaced two changed bank modules; app UI files in this scratch directory are old and are NOT used as current UI/build proof."
+}

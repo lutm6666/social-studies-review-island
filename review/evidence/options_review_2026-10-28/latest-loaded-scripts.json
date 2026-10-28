@@ -1,0 +1,63 @@
+{
+  "latestSourceSha": "a2a81c28374f903610176b91532c589b387ba5fc",
+  "actual": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "characters": 0,
+      "domLength": 0
+    },
+    {
+      "src": "",
+      "sha256": "c0ba3027bba048f052fcdcb262188a7946d50744d60dfab57f77000ecaf1dcf5",
+      "characters": 123,
+      "domLength": 123
+    },
+    {
+      "src": "",
+      "sha256": "8e52282eded3de6681f66d7be9c9242eca3e9512dd73ce17c92044c4f8b5ee30",
+      "characters": 202171,
+      "domLength": 202171
+    },
+    {
+      "src": "",
+      "sha256": "a1a1bf01596384d9cdab54995cbf7cc42b30808be9542a2a535c108b3dc4e298",
+      "characters": 260147,
+      "domLength": 260147
+    },
+    {
+      "src": "",
+      "sha256": "d4603f049ac60d8b9b73f6169d4b3d01a8096709317c1bf31afd00fa475ef459",
+      "characters": 166,
+      "domLength": 166
+    }
+  ],
+  "expected": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "characters": 0
+    },
+    {
+      "src": "",
+      "sha256": "c0ba3027bba048f052fcdcb262188a7946d50744d60dfab57f77000ecaf1dcf5",
+      "characters": 123
+    },
+    {
+      "src": "",
+      "sha256": "8e52282eded3de6681f66d7be9c9242eca3e9512dd73ce17c92044c4f8b5ee30",
+      "characters": 202171
+    },
+    {
+      "src": "",
+      "sha256": "a1a1bf01596384d9cdab54995cbf7cc42b30808be9542a2a535c108b3dc4e298",
+      "characters": 260147
+    },
+    {
+      "src": "",
+      "sha256": "d4603f049ac60d8b9b73f6169d4b3d01a8096709317c1bf31afd00fa475ef459",
+      "characters": 166
+    }
+  ],
+  "matches": true
+}

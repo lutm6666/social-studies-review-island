@@ -1,0 +1,19 @@
+{
+  "sourceSha": "7206fdb147893cd63e699c1b933cd88f333c810b",
+  "reviewedUniqueIDs": 1752,
+  "latestChangedUniqueIDs": 1240,
+  "coverageUniqueIDs": 3840,
+  "counts": {
+    "pass": 1726,
+    "optional": 19,
+    "uncertain": 3,
+    "needs_fix": 4
+  },
+  "latestUIUniqueIDs": 36,
+  "priorChartIDs": 28,
+  "visualFigures": 18,
+  "termMappings": 3105,
+  "errors": [],
+  "brokenLinks": [],
+  "questionProgramModified": false
+}

@@ -1,0 +1,45 @@
+{
+  "sourceSha": "7206fdb147893cd63e699c1b933cd88f333c810b",
+  "previousUISourceSha": "a2a81c28374f903610176b91532c589b387ba5fc",
+  "nonReviewChanged": [
+    {
+      "path": "index.html",
+      "sha": "a78995ff3f81ec04e0f202eaaad91c5f824102a7",
+      "before": "8d78fee1eb2ae2d3d7564edf9724a155df8dc133"
+    },
+    {
+      "path": "src/data_foils.js",
+      "sha": "9504e8488d61c5968bb1758c5455b06d0a0e7887",
+      "before": "aecb8f3f2f6d231651a5cb962ba3117663f5036d"
+    },
+    {
+      "path": "src/data_groups.js",
+      "sha": "44b0f706ec4066b7229555291228bf8e9aaa166c",
+      "before": "4788841442b60fc7553ab8c361797c20e6387caa"
+    },
+    {
+      "path": "sw.js",
+      "sha": "bb0caca7e9392982b6335defceef7bc743e76239",
+      "before": "93c37e78c64275b2fe742e53fffdc520641749ed"
+    }
+  ],
+  "unchangedVerified": [
+    "src/engine.js",
+    "src/data_fig.js",
+    "src/app.js",
+    "src/app.html",
+    "src/deco.js",
+    "build.py"
+  ],
+  "workflowRuns": [
+    {
+      "id": 40704877673,
+      "name": "pages build and deployment",
+      "head_sha": "7206fdb147893cd63e699c1b933cd88f333c810b",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/lutm6666/social-studies-review-island/actions/runs/40704877673"
+    }
+  ],
+  "moduleValidation": "Compared immutable Git tree objects; all bank modules except data_foils.js and data_groups.js and all rendering/answer/scoring/persistence modules unchanged from a2; bank-only VM snapshot retains old UI and is not used for current HTML/build proof."
+}

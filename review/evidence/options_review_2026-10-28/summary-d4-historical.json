@@ -1,0 +1,76 @@
+{
+  "sourceSha": "d4a66e538f06e5c67425b893c86c835f3fc418c7",
+  "baselineSha": "b31dce5d021186eb2fd2e2b6bdf0beaa53be1e63",
+  "actualChangedIds": 1217,
+  "pendingListedIds": 1209,
+  "reviewScopeIds": 1218,
+  "unchangedPendingId": "jsc-g34",
+  "outsidePendingChanged": [
+    "qpe-g24",
+    "soc3-h10",
+    "law1-h10",
+    "law4-h9",
+    "law7-h10",
+    "law8-h8",
+    "law8-h9",
+    "eco2-h10",
+    "eco5-h10"
+  ],
+  "reviewedCauseIds": 708,
+  "causeStatusCounts": {
+    "pass": 599,
+    "optional": 77,
+    "needs_fix": 22,
+    "uncertain": 10
+  },
+  "reviewedTermIds": 501,
+  "termStatusCounts": {
+    "pass": 501
+  },
+  "extraStatusCounts": {
+    "pass": 9
+  },
+  "reviewStatusCounts": {
+    "pass": 1109,
+    "optional": 77,
+    "needs_fix": 22,
+    "uncertain": 10
+  },
+  "statusDefinitions": {
+    "pass": "本輪變更人工閱讀未發現阻擋問題；不等於全知識點外部重新查證",
+    "needs_fix": "確認需修誘答或解析的內容缺陷；不等於全部是雙最佳答案",
+    "uncertain": "已閱讀但證據/情境仍不足判定；不當作通過或確證失敗",
+    "optional": "可選品質或精確度建議；不計阻擋"
+  },
+  "rootOverride": [
+    {
+      "id": "eco2-g34",
+      "from": "needs_fix",
+      "to": "uncertain",
+      "reason": "市場與條件不明；汽油價格上漲本身是價格變動實例，不等於證明其他商品價格的直接成因。投入成本傳導仍有條件，現有證據不足認定第二個同等直接答案。"
+    }
+  ],
+  "totalBank": 3840,
+  "currentUIUniqueIds": 56,
+  "currentUIFailures": [],
+  "chartQuestions": 28,
+  "chartDistinctFigures": 18,
+  "visualCaptured": 18,
+  "uiNotTested": 3784,
+  "contentNotReReviewed": 2622,
+  "manualQuestionReviewComplete": 1218,
+  "questionProgramModified": false,
+  "scope": "Source content review and real Brave desktop UI automation are recorded separately; no physical-device or all3840 content revalidation claim.",
+  "latestSourceSha": "a2a81c28374f903610176b91532c589b387ba5fc",
+  "latestQuestionBankUnchanged": true,
+  "latestLoadedProgramMatchesSource": true,
+  "latestUILimitedSubset": [
+    "twg4-h9",
+    "twg4-h10",
+    "twg4-h8"
+  ],
+  "latestRoundResumeSuccess": true,
+  "mainUISnapshot": "d4a66e5 question bank and main UI run; full56 not replayed on late a2a81c2 UI",
+  "consoleMessages": 3,
+  "consoleOrigin": "未定位，不宣告console零錯誤"
+}

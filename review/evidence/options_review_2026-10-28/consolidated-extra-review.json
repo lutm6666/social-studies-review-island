@@ -1,0 +1,222 @@
+{
+  "sourceSha": "d4a66e538f06e5c67425b893c86c835f3fc418c7",
+  "questions": [
+    {
+      "id": "soc3-h10",
+      "status": "pass",
+      "current": {
+        "id": "soc3-h10",
+        "chapter": "soc3",
+        "difficulty": 3,
+        "context": "阿凱的爸媽工作很忙，但每天晚餐一定全家一起吃，聽彼此說說心情，遇到煩惱時互相安慰。",
+        "question": "一起吃飯、聊天最能發揮家庭的哪一種功能？",
+        "answer": "情感功能",
+        "distractors": [
+          "經濟功能",
+          "生育功能",
+          "保護功能"
+        ],
+        "explanation": "家人互相關心、彼此陪伴與支持，是家庭的情感功能。",
+        "source": "hand",
+        "figure": null
+      },
+      "reviewer": "root and civics",
+      "comment": "加入分享心情及互相安慰，使情感與經濟、生育、保護功能可辨；已移除原荒謬誘答。",
+      "evidence": []
+    },
+    {
+      "id": "law1-h10",
+      "status": "pass",
+      "current": {
+        "id": "law1-h10",
+        "chapter": "law1",
+        "difficulty": 3,
+        "context": "政府為了防疫，在同樣能達成防疫目的的情況下，選擇要求民眾在特定場所戴口罩，而不是要求全民一律不得出門。",
+        "question": "政府選擇限制較小的手段，最符合哪一項原則？",
+        "answer": "比例原則",
+        "distractors": [
+          "罪刑法定主義",
+          "多數決",
+          "法律優位原則"
+        ],
+        "explanation": "限制人民權利時，手段要有助於達成目的，在同樣有效的手段中選擇侵害最小的，而且造成的損害不能和想達成的利益顯失均衡，這是比例原則。",
+        "source": "hand",
+        "figure": null
+      },
+      "reviewer": "root and civics",
+      "comment": "限定同樣達目的，可辨最小侵害；解析完整呈現適合、必要與狹義比例。",
+      "evidence": [
+        "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030055"
+      ]
+    },
+    {
+      "id": "law4-h9",
+      "status": "pass",
+      "current": {
+        "id": "law4-h9",
+        "chapter": "law4",
+        "difficulty": 3,
+        "context": "某縣的稅收不足，蓋學校、修道路的經費大多要靠中央補助。",
+        "question": "這種情形顯示地方自治面臨什麼問題？",
+        "answer": "地方財政自主性不足",
+        "distractors": [
+          "地方議會權力太大",
+          "中央政府沒有收入",
+          "地方居民不需要繳稅"
+        ],
+        "explanation": "地方自籌財源不足時，要靠中央統籌分配稅款與補助來補充；如果過度依賴指定用途或需要核定的補助，地方能自主決定的施政空間就會被壓縮。",
+        "source": "hand",
+        "figure": null
+      },
+      "reviewer": "root and civics",
+      "comment": "自籌不足以中央分配款及補助補充，僅指定用途或須核定補助限制自主空間；不再混淆所有中央財源。",
+      "evidence": []
+    },
+    {
+      "id": "law7-h10",
+      "status": "pass",
+      "current": {
+        "id": "law7-h10",
+        "chapter": "law7",
+        "difficulty": 3,
+        "context": "阿明和人起口角，推了對方一把造成輕微擦傷。對方後來和阿明和解，在第一審辯論終結前依法撤回了告訴。",
+        "question": "如果這是普通傷害罪，撤回告訴後通常會怎樣？",
+        "answer": "國家原則上不再追究",
+        "distractors": [
+          "檢察官仍然一定要起訴",
+          "改由民事法院判刑",
+          "阿明一定要坐牢"
+        ],
+        "explanation": "普通傷害罪是告訴乃論罪，被害人依法撤回告訴後，國家原則上不再追究：偵查中檢察官會不起訴，審判中法院會判決不受理。",
+        "source": "hand",
+        "figure": null
+      },
+      "reviewer": "root and civics",
+      "comment": "限定普通傷害、第一審辯論終結前合法撤告；偵查不起訴、審判不受理正確。",
+      "evidence": [
+        "https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=C0010001"
+      ]
+    },
+    {
+      "id": "law8-h8",
+      "status": "pass",
+      "current": {
+        "id": "law8-h8",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": "小陳違規停車被交通警察舉發，最後要繳納罰鍰。",
+        "question": "違規停車所受的罰鍰，屬於哪一種處罰？",
+        "answer": "行政罰",
+        "distractors": [
+          "刑罰",
+          "民事賠償",
+          "學校懲處"
+        ],
+        "explanation": "罰鍰是對違反行政法上義務的處罰，屬於行政罰。",
+        "source": "hand",
+        "figure": null
+      },
+      "reviewer": "root and civics",
+      "comment": "改問最終罰鍰性質，舉發與行政罰已分開，行政罰正解可辨。",
+      "evidence": []
+    },
+    {
+      "id": "law8-h9",
+      "status": "pass",
+      "current": {
+        "id": "law8-h9",
+        "chapter": "law8",
+        "difficulty": 3,
+        "context": "小李不服國稅局要他補稅的處分，依法申請復查仍不服，提起訴願又被駁回，他仍然認為處分違法。",
+        "question": "小李接下來可以採取的救濟途徑是？",
+        "answer": "向行政法院提起行政訴訟",
+        "distractors": [
+          "向立法院提起訴願",
+          "請監察院直接撤銷處分",
+          "向調解委員會申請調解"
+        ],
+        "explanation": "不服訴願決定時，可以向行政法院提起行政訴訟。",
+        "source": "hand",
+        "figure": null
+      },
+      "reviewer": "root and civics",
+      "comment": "加入核定稅捐先復查再訴願程序；下一步行政訴訟正確。",
+      "evidence": [
+        "https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-q-and-a/national/profit-seeking-enterprise-income-tax/refund-and-complaint-procedure/xVr1xrn"
+      ]
+    },
+    {
+      "id": "eco2-h10",
+      "status": "pass",
+      "current": {
+        "id": "eco2-h10",
+        "chapter": "eco2",
+        "difficulty": 3,
+        "context": "手機的價格大幅下降後，手機殼的銷售量也跟著增加。",
+        "question": "手機和手機殼是什麼關係？",
+        "answer": "互補品",
+        "distractors": [
+          "替代品",
+          "公共財",
+          "自由財"
+        ],
+        "explanation": "常搭配使用、能提升彼此使用效果的商品是互補品；手機變便宜、買的人變多，手機殼的需求也跟著增加。",
+        "source": "hand",
+        "figure": null
+      },
+      "reviewer": "root and civics",
+      "comment": "常搭配、提升彼此使用效果取代必須一起使用；手機與手機殼互補情境合理。",
+      "evidence": [
+        "https://openstax.org/books/principles-economics-3e/pages/3-2-shifts-in-demand-and-supply-for-goods-and-services"
+      ]
+    },
+    {
+      "id": "eco5-h10",
+      "status": "pass",
+      "current": {
+        "id": "eco5-h10",
+        "chapter": "eco5",
+        "difficulty": 3,
+        "context": "某人一年的所得淨額越高，超過較高級距的部分，適用的所得稅稅率也越高。",
+        "question": "這種課稅方式稱為？",
+        "answer": "累進稅率",
+        "distractors": [
+          "比例稅率",
+          "定額稅",
+          "關稅"
+        ],
+        "explanation": "所得越高、超過級距的部分適用越高稅率，這種課稅方式是累進稅率（不是全部所得都套最高稅率），有助於縮小貧富差距。",
+        "source": "hand",
+        "figure": null
+      },
+      "reviewer": "root and civics",
+      "comment": "以所得淨額超級距部分描述累進，且明言非全所得套最高稅率，已排除邊際平均混淆。",
+      "evidence": [
+        "https://www.etax.nat.gov.tw/etwmain/alien-tax-service/alien-individual-income-tax/Zv7zzqa"
+      ]
+    },
+    {
+      "id": "qpe-g24",
+      "status": "pass",
+      "current": {
+        "id": "qpe-g24",
+        "chapter": "qpe",
+        "difficulty": 2,
+        "context": null,
+        "question": "「大租戶」指的是？",
+        "answer": "取得墾照、收取大租的業主",
+        "distractors": [
+          "清代無家無業的單身男性",
+          "清代守衛山區隘口的人員",
+          "清代同業商人組成的商業團體"
+        ],
+        "explanation": "「大租戶」的重點是：取得墾照、收取大租的業主。容易混淆的選項：「清代無家無業的單身男性」說的是羅漢腳；「清代守衛山區隘口的人員」說的是隘丁；「清代同業商人組成的商業團體」說的是郊。",
+        "source": "generated",
+        "figure": null
+      },
+      "reviewer": "root and history",
+      "comment": "待審清單外新增改動；三誘答分別指羅漢腳、隘丁、郊，新增郊及解析配對成立，答案可區分。",
+      "evidence": []
+    }
+  ]
+}

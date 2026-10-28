@@ -1,0 +1,92 @@
+{
+  "sourceSha": "d4a66e538f06e5c67425b893c86c835f3fc418c7",
+  "id": "qpe-g24",
+  "status": "pass",
+  "type": "通過",
+  "comment": "已核對latest-extra與唯讀快照review/questions.json原文完全一致。大租戶的正解為取得墾照、收取大租的業主；三誘答與新增解析各指羅漢腳、隘丁、郊，均非大租戶定義，答案可唯一區分。把渡臺禁令改為郊，改善由政策法令跨到人物／社會組織的比較，無新語義錯誤。",
+  "current": {
+    "id": "qpe-g24",
+    "chapter": "qpe",
+    "difficulty": 2,
+    "context": null,
+    "question": "「大租戶」指的是？",
+    "answer": "取得墾照、收取大租的業主",
+    "distractors": [
+      "清代無家無業的單身男性",
+      "清代守衛山區隘口的人員",
+      "清代同業商人組成的商業團體"
+    ],
+    "explanation": "「大租戶」的重點是：取得墾照、收取大租的業主。容易混淆的選項：「清代無家無業的單身男性」說的是羅漢腳；「清代守衛山區隘口的人員」說的是隘丁；「清代同業商人組成的商業團體」說的是郊。",
+    "source": "generated",
+    "figure": null
+  },
+  "before": {
+    "id": "qpe-g24",
+    "chapter": "qpe",
+    "difficulty": 2,
+    "context": null,
+    "question": "「大租戶」指的是？",
+    "answer": "取得墾照、收取大租的業主",
+    "distractors": [
+      "清代無家無業的單身男性",
+      "清代守衛山區隘口的人員",
+      "清初限制人民渡海來臺的規定"
+    ],
+    "explanation": "「大租戶」的重點是：取得墾照、收取大租的業主。容易混淆的選項：「清代無家無業的單身男性」說的是羅漢腳；「清代守衛山區隘口的人員」說的是隘丁；「清初限制人民渡海來臺的規定」說的是渡臺禁令。",
+    "source": "generated",
+    "figure": null
+  },
+  "changedFields": [
+    "distractors",
+    "explanation"
+  ],
+  "change": {
+    "removed": "清初限制人民渡海來臺的規定",
+    "removed_means": "渡臺禁令",
+    "added": "清代同業商人組成的商業團體",
+    "added_means": "郊",
+    "other_two_distractors": "維持原文不變",
+    "explanation": "第三誘答的詞義解說同步由渡臺禁令換成郊，配對正確。"
+  },
+  "answer_check": {
+    "status": "pass",
+    "comment": "臺史博館藏說明區分墾戶向佃戶收大租、佃戶向現耕者收小租；客委會典藏原始研究亦說墾首申請墾照、向小租戶收大租。",
+    "evidence_urls": [
+      "https://collections.nmth.gov.tw/CollectionContent.aspx?a=132&rno=2017.017.0423",
+      "https://cloud.hakka.gov.tw/Attachment/1/1121914265771.pdf"
+    ]
+  },
+  "distractor_checks": [
+    {
+      "option": "清代無家無業的單身男性",
+      "means": "羅漢腳",
+      "verdict": "correct_distractor",
+      "comment": "形容清代移民社會無家無業的單身男性，非指持墾照、向小租戶收大租的業主。",
+      "evidence_urls": [
+        "https://www.th.gov.tw/new_site/05publish/03publishquery/02journal/01download.php?COLLECNUM=401058303"
+      ]
+    },
+    {
+      "option": "清代守衛山區隘口的人員",
+      "means": "隘丁",
+      "verdict": "correct_distractor",
+      "comment": "負責山區隘口守備的人員，與地主收租權利不同。現行解析用詞是隘丁，並非隘勇；本筆以實際原文為準。",
+      "evidence_urls": [
+        "https://ihc.cip.gov.tw/EJournal/EJournalCat/371",
+        "https://www.th.gov.tw/Epaper_Content/237/7813/"
+      ]
+    },
+    {
+      "option": "清代同業商人組成的商業團體",
+      "means": "郊",
+      "verdict": "correct_distractor",
+      "comment": "同業商人組成的商業團體，不是個別大租戶的地權／收租身分。即使商人也可能置產，不會使組織定義變成大租戶定義。",
+      "evidence_urls": [
+        "https://the.nmth.gov.tw/nmth/zh-TW/Item/Detail/f49e570a-a878-46cf-a4c9-d49352120776",
+        "https://the.nmth.gov.tw/nmth/zh-TW/Location/fc8096a5-41a5-461d-bda6-f186da375a5a"
+      ]
+    }
+  ],
+  "suggestion": null,
+  "scope_note": "補核漏列的1題，不改158歷史名詞解析清單原本範圍；此題另存，不冒充原501待審清單已包含。未修改題庫或正式文件。"
+}

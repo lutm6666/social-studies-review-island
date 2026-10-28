@@ -1,0 +1,439 @@
+{
+  "sourceSha": "7206fdb147893cd63e699c1b933cd88f333c810b",
+  "prompt": "Browser tab: 1796463322, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\n1 AXWebArea 社會科複習島, URL: lutm6666.github.io/social-studies-review-island/\n\t2 container\n\t\t3 image Description: 可以拖曳旋轉的 3D 社會科群島, ID: scene\n\t\t8 container labels\n\t\t\t9 button 臺灣史島\n\t\t\t10 button 中國與東亞史島\n\t\t\t11 button 世界史島\n\t\t\t12 button 臺灣地理島\n\t\t\t13 button 亞洲島\n\t\t\t14 button 世界島\n\t\t\t15 button 社會生活島\n\t\t\t16 button 政治與法律島\n\t\t\t17 button 經濟與全球島\n\t\t\t18 button 🍾 錯題島\n\t\t21 container\n\t\t\t22 button (expanded) Description: 收合面板, ID: hudMin, Secondary Actions: Collapse\n\t\t\t23 text 國中社會．108 課綱總複習\n\t\t\t24 heading 社會科複習島, Value: 1\n\t\t\t\t25 text 社會科複習島\n\t\t\t26 text 已答對 166 / 3840 題．熟練 47．開放 9 / 9 座島\n\t\t\t27 text 進度存在這台裝置\n\t\t\t28 content list\n\t\t\t\t29 text 歷史\n\t\t\t\t30 text 地理\n\t\t\t\t31 text 公民\n\t\t\t32 button 今日複習 56 題, Help: 今天到期該複習的題目, ID: reviewBtn\n\t\t\t33 button 會考模擬, ID: examBtn\n\t\t\t34 button 搜尋題目, ID: searchBtn\n\t\t\t35 checkbox 省電模式, Value: 0, ID: liteBtn\n\t\t\t36 checkbox 大字模式, Value: 1, ID: bigBtn\n\t\t\t37 checkbox 精簡卡片, Value: 0, ID: compactBtn\n\t\t\t38 button 天空：自動, ID: skyBtn\n\t\t\t39 checkbox 音樂：開, Value: 1, ID: musicBtn\n\t\t\t40 checkbox 音效：開, Value: 1, ID: sfxBtn\n\t\t\t41 checkbox 🎃 節慶裝飾：開, Value: 1, ID: festBtn\n\t\t\t42 button 進度備份, ID: backupBtn\n\t\t43 text 拖曳旋轉．滾輪或雙指縮放．點一座島開始複習\n\t\t44 container 島嶼列表\n\t\t\t45 container dock\n\t\t\t\t46 button 錯題島 3 題待訂正, ID: hubChip\n\t\t\t\t\t47 text 錯題島\n\t\t\t\t\t48 text 3 題待訂正\n\t\t\t\t49 button 臺灣史島 七年級, Help: 臺灣史島：答對 3%\n\t\t\t\t\t50 text 臺灣史島\n\t\t\t\t\t51 text 七年級\n\t\t\t\t52 button 中國與東亞史島 八年級, Help: 中國與東亞史島：答對 2%\n\t\t\t\t\t53 text 中國與東亞史島\n\t\t\t\t\t54 text 八年級\n\t\t\t\t55 button 世界史島 九年級, Help: 世界史島：答對 2%\n\t\t\t\t\t56 text 世界史島\n\t\t\t\t\t57 text 九年級\n\t\t\t\t58 button 臺灣地理島 七年級, Help: 臺灣地理島：答對 5%\n\t\t\t\t\t59 text 臺灣地理島\n\t\t\t\t\t60 text 七年級\n\t\t\t\t61 button 亞洲島 八年級, Help: 亞洲島：答對 5%\n\t\t\t\t\t62 text 亞洲島\n\t\t\t\t\t63 text 八年級\n\t\t\t\t64 button 世界島 九年級, Help: 世界島：答對 6%\n\t\t\t\t\t65 text 世界島\n\t\t\t\t\t66 text 九年級\n\t\t\t\t67 button 社會生活島 七年級, Help: 社會生活島：答對 8%\n\t\t\t\t\t68 text 社會生活島\n\t\t\t\t\t69 text 七年級\n\t\t\t\t70 button 政治與法律島 八年級, Help: 政治與法律島：答對 6%\n\t\t\t\t\t71 text 政治與法律島\n\t\t\t\t\t72 text 八年級\n\t\t\t\t73 button 經濟與全球島 九年級, Help: 經濟與全球島：答對 7%\n\t\t\t\t\t74 text 經濟與全球島\n\t\t\t\t\t75 text 九年級\n\t\t\t\t76 button 跨科航線 11 條．三科串連, ID: crossChip\n\t\t\t\t\t77 text 跨科航線\n\t\t\t\t\t78 text 11 條．三科串連\n\t\t79 container 搜尋：下圖的人口金字塔屬於哪一種類型？, ID: panel\n\t\t\t80 text 全部島嶼\n\t\t\t81 button Description: 關閉, ID: closeBtn\n\t\t\t82 heading 搜尋：下圖的人口金字塔屬於哪一種類型？, Value: 2, ID: panelTitle\n\t\t\t\t83 text 搜尋：下圖的人口金字塔屬於哪一種類型？\n\t\t\t84 text 上次還沒答完\n\t\t\t85 container panelBody\n\t\t\t\t86 text 「搜尋：下圖的人口金字塔屬於哪一種類型？」答到第 2 / 3 題就中斷了（答對 1 題）。要從中斷的地方繼續嗎？\n\t\t\t\t87 button 繼續作答, ID: rsGo\n\t\t\t\t88 button 放棄這一輪, ID: rsNo\n\nThe focused UI element is 1 AXWebArea 社會科複習島, URL: lutm6666.github.io/social-studies-review-island/",
+  "pendingBefore": "twg4-h10",
+  "pendingAfter": "twg4-h10",
+  "charts": [
+    {
+      "id": "twg4-h9",
+      "sourceSha": "7206fdb147893cd63e699c1b933cd88f333c810b",
+      "figure": {
+        "t": "pyramid",
+        "ages": [
+          "0-9",
+          "10-19",
+          "20-29",
+          "30-39",
+          "40-49",
+          "50-59",
+          "60-69",
+          "70-79",
+          "80+"
+        ],
+        "m": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          8,
+          6,
+          3
+        ],
+        "f": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          7,
+          7,
+          6,
+          5
+        ],
+        "s": "某地人口金字塔（示意，各組占總人口 %）"
+      },
+      "dom": {
+        "height": 225.34999084472656,
+        "label": "某地人口金字塔（示意，各組占總人口 %）",
+        "rects": [
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 39.75
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 39.75
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 53
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 53
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 66.25
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 66.25
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 79.5
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 79.5
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 92.75
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 92.75
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 92.75
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 92.75
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 79.5
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 79.5
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 39.75
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 66.25
+          }
+        ],
+        "text": "0-910-1920-2930-3940-4950-5960-6970-7980+男女年齡",
+        "width": 360.55999755859375
+      },
+      "dataMatch": true,
+      "before": "Browser tab: 1796463322, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 120 button A 老化型",
+      "feedback": "Browser tab: 1796463322, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 122, 125, 128, 131\n~\t\t\t\t\t120 button (disabled) A 老化型\n~\t\t\t\t\t\t121 text A 老化型\n~\t\t\t\t\t123 button (disabled) B 移民型\n~\t\t\t\t\t\t124 text B 移民型\n~\t\t\t\t\t126 button (disabled) C 年輕型\n~\t\t\t\t\t\t127 text C 年輕型\n~\t\t\t\t\t129 button (disabled) D 穩定型\n~\t\t\t\t\t\t130 text D 穩定型\n+\t\t\t\t131 container fb\n+\t\t\t\t\t132 text 答對了\n+\t\t\t\t\t133 text 底部窄、中老年人口比例高，表示出生率低、人口老化，屬於老化型。\n+\t\t\t\t\t134 text 下次複習：14 天後\n+\t\t\t\t\t135 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t136 button 回報錯誤, ID: rptBtn\n+\t\t\t\t137 button 下一題, ID: nextBtn\nThe focused UI element is 137 button 下一題, ID: nextBtn",
+      "selected": "老化型"
+    },
+    {
+      "id": "twg4-h10",
+      "sourceSha": "7206fdb147893cd63e699c1b933cd88f333c810b",
+      "figure": {
+        "t": "pyramid",
+        "ages": [
+          "0-9",
+          "10-19",
+          "20-29",
+          "30-39",
+          "40-49",
+          "50-59",
+          "60-69",
+          "70-79",
+          "80+"
+        ],
+        "m": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          5,
+          3
+        ],
+        "f": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          5,
+          3
+        ],
+        "s": "某地人口金字塔（示意，各組占總人口 %）"
+      },
+      "dom": {
+        "height": 225.34999084472656,
+        "label": "某地人口金字塔（示意，各組占總人口 %）",
+        "rects": [
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 88.33333333333334
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 88.33333333333334
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 53
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 53
+          }
+        ],
+        "text": "0-910-1920-2930-3940-4950-5960-6970-7980+男女年齡",
+        "width": 360.55999755859375
+      },
+      "dataMatch": true,
+      "before": "Browser tab: 1796463322, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 96 button A 老化型",
+      "feedback": "Browser tab: 1796463322, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 98, 101, 104, 107\n~\t\t\t\t\t96 button (disabled) A 老化型\n~\t\t\t\t\t\t97 text A 老化型\n~\t\t\t\t\t99 button (disabled) B 年輕型\n~\t\t\t\t\t\t100 text B 年輕型\n~\t\t\t\t\t102 button (disabled) C 穩定型\n~\t\t\t\t\t\t103 text C 穩定型\n~\t\t\t\t\t105 button (disabled) D 移民型\n~\t\t\t\t\t\t106 text D 移民型\n+\t\t\t\t107 container fb\n+\t\t\t\t\t108 text 答對了\n+\t\t\t\t\t109 text 各年齡層比例相近，出生與死亡都低，人口數量變化不大，屬於穩定型。\n+\t\t\t\t\t110 text 下次複習：14 天後\n+\t\t\t\t\t111 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t112 button 回報錯誤, ID: rptBtn\n+\t\t\t\t113 button 下一題, ID: nextBtn\nThe focused UI element is 113 button 下一題, ID: nextBtn",
+      "selected": "穩定型"
+    },
+    {
+      "id": "twg4-h8",
+      "sourceSha": "7206fdb147893cd63e699c1b933cd88f333c810b",
+      "figure": {
+        "t": "pyramid",
+        "ages": [
+          "0-9",
+          "10-19",
+          "20-29",
+          "30-39",
+          "40-49",
+          "50-59",
+          "60-69",
+          "70-79",
+          "80+"
+        ],
+        "m": [
+          12,
+          10,
+          8,
+          7,
+          5,
+          4,
+          2,
+          1,
+          1
+        ],
+        "f": [
+          12,
+          10,
+          8,
+          7,
+          5,
+          4,
+          2,
+          1,
+          1
+        ],
+        "s": "某地人口金字塔（示意，各組占總人口 %）"
+      },
+      "dom": {
+        "height": 225.34999084472656,
+        "label": "某地人口金字塔（示意，各組占總人口 %）",
+        "rects": [
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 106
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 88.33333333333334
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 88.33333333333334
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 70.66666666666666
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 70.66666666666666
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 61.833333333333336
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 61.833333333333336
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 44.16666666666667
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 44.16666666666667
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 35.33333333333333
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 35.33333333333333
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 17.666666666666664
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 17.666666666666664
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 8.833333333333332
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 8.833333333333332
+          },
+          {
+            "c": "fm",
+            "h": 15.333333333333332,
+            "w": 8.833333333333332
+          },
+          {
+            "c": "ff",
+            "h": 15.333333333333332,
+            "w": 8.833333333333332
+          }
+        ],
+        "text": "0-910-1920-2930-3940-4950-5960-6970-7980+男女年齡",
+        "width": 360.55999755859375
+      },
+      "dataMatch": true,
+      "before": "Browser tab: 1796463322, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 96 button A 老化型",
+      "feedback": "Browser tab: 1796463322, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 98, 101, 104, 107\n~\t\t\t\t\t96 button (disabled) A 老化型\n~\t\t\t\t\t\t97 text A 老化型\n~\t\t\t\t\t99 button (disabled) B 移民型\n~\t\t\t\t\t\t100 text B 移民型\n~\t\t\t\t\t102 button (disabled) C 穩定型\n~\t\t\t\t\t\t103 text C 穩定型\n~\t\t\t\t\t105 button (disabled) D 年輕型\n~\t\t\t\t\t\t106 text D 年輕型\n+\t\t\t\t107 container fb\n+\t\t\t\t\t108 text 答對了\n+\t\t\t\t\t109 text 底部最寬、越往上越窄，表示出生率高、幼年人口多，屬於年輕型。\n+\t\t\t\t\t110 text 下次複習：60 天後\n+\t\t\t\t\t111 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t112 button 回報錯誤, ID: rptBtn\n+\t\t\t\t113 button 看成績, ID: nextBtn\nThe focused UI element is 113 button 看成績, ID: nextBtn",
+      "selected": "年輕型"
+    }
+  ],
+  "result": "Browser tab: 1796463322, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 26, 48, 51, 54, 57, 60, 63, 66, 69, 72, 75, 89-97, 99-100, 102-103, 105-113\n+\t\t\t89 text 已答對 166 / 3840 題．熟練 47．開放 9 / 9 座島\n+\t\t\t\t\t90 text 3 題待訂正\n+\t\t\t\t\t91 text 七年級\n+\t\t\t\t\t92 text 八年級\n+\t\t\t\t\t93 text 九年級\n+\t\t\t\t\t94 text 七年級\n+\t\t\t\t\t95 text 八年級\n+\t\t\t\t\t96 text 九年級\n+\t\t\t\t\t97 text 七年級\n+\t\t\t\t\t98 text 八年級\n+\t\t\t\t\t99 text 九年級\n+\t\t\t\t100 container 答對 3 題，共 3 題\n+\t\t\t\t101 text 全部答對\n+\t\t\t\t102 text 全對！這一輪的題目都掌握了。\n+\t\t\t\t103 content list\n+\t\t\t\t\t104 container\n+\t\t\t\t\t\t105 text 簡單 2 / 2\n+\t\t\t\t\t106 container\n+\t\t\t\t\t\t107 text 中等 1 / 1\n+\t\t\t\t108 button 再來 20 題, ID: rMore\n+\t\t\t\t109 button 回到島上, ID: rBack\n+\t\t\t\t110 button (collapsed) 這一輪的 3 題．覺得哪題有問題可以回報, Secondary Actions: Expand\n+\t\t\t\t\t111 text 這一輪的 3 題．覺得哪題有問題可以回報\nThe focused UI element is 108 button 再來 20 題, ID: rMore",
+  "success": true
+}

@@ -1,0 +1,18 @@
+{
+  "sourceSha": "d4a66e538f06e5c67425b893c86c835f3fc418c7",
+  "buildReturnCode": 0,
+  "files": {
+    "index.html": {
+      "matchesAfterNewlineNormalization": true,
+      "sourceSHA256": "3914c9d43a0603aa9e1b514e12b47a9451aa18e03b3b50b5ea7c901722b5224d"
+    },
+    "sw.js": {
+      "matchesAfterNewlineNormalization": true,
+      "sourceSHA256": "ba14f1c9e51ea9dc9168d74099bdc0ba2b8ca47d0d46d54cbfe429a1cac35e2a"
+    },
+    "manifest.webmanifest": {
+      "matchesAfterNewlineNormalization": true,
+      "sourceSHA256": "1cc846ca51affa300410a641c4551d67f349759b8a4f4ee367735b9e04bef5b5"
+    }
+  }
+}

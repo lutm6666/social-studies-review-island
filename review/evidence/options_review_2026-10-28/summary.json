@@ -1,0 +1,72 @@
+{
+  "sourceSha": "7206fdb147893cd63e699c1b933cd88f333c810b",
+  "previousSnapshot": "d4a66e538f06e5c67425b893c86c835f3fc418c7",
+  "total": 3840,
+  "deltaQuestions": 1240,
+  "deltaCause": 706,
+  "deltaCauseRows": 365,
+  "deltaTerms": 534,
+  "cumulativeContentReviewed": 1752,
+  "causeReviewed": 708,
+  "termsReviewed": 1035,
+  "extraReviewed": 9,
+  "contentNotReviewed": 2088,
+  "counts": {
+    "pass": 1726,
+    "optional": 19,
+    "uncertain": 3,
+    "needs_fix": 4
+  },
+  "deltaCounts": {
+    "pass": 1214,
+    "optional": 19,
+    "uncertain": 3,
+    "needs_fix": 4
+  },
+  "oldRequiredCount": 22,
+  "oldRequiredResolved": 21,
+  "currentRequired": [
+    "twg8-g28",
+    "law1-g11",
+    "law1-g23",
+    "law1-g24"
+  ],
+  "currentUncertain": [
+    "voy-g46",
+    "cnh3-g56",
+    "wdh5-g48"
+  ],
+  "mappingQuestions": 1035,
+  "mappingPairs": 3105,
+  "mappingFailures": [],
+  "groups": {
+    "before": 72,
+    "after": 151,
+    "added": 79
+  },
+  "method": "人工完整讀取365組因果的兩側選項，以及534個更動名詞題的題幹、正解與三誘答；特別疑點讀完整解析、查原始資料。新解析詞義以獨立TBL核對，不宣稱534篇新增解析均另逐字人工精讀或所有知識重新外部查證。未變動的已審題以完整欄位相等確認後保留來源。",
+  "latestUIUniqueIds": 36,
+  "latestUISingleQuestionSamples": 33,
+  "latestUIChartQuestions": 3,
+  "latestUIMechanicsFailures": [],
+  "latestUIUntested": 3804,
+  "latestUISourceSha": "7206fdb147893cd63e699c1b933cd88f333c810b",
+  "latestLoadedScriptsMatch": true,
+  "latestRoundResumeSuccess": true,
+  "latestWrongRetrySuccess": true,
+  "priorUISnapshot": "d4a66e538f06e5c67425b893c86c835f3fc418c7",
+  "priorUIUniqueIds": 56,
+  "priorChartQuestions": 28,
+  "priorDistinctFigureVisuals": 18,
+  "chartSourceAndRendererUnchanged": true,
+  "questionProgramModified": false,
+  "consoleMessages": 3,
+  "consoleOrigin": "未定位；舊時間戳記，已測流程未見失效，不能稱console零錯誤。",
+  "statusDefinitions": {
+    "pass": "已述範圍內容覆核未見阻擋，並非每一原始知識點重新外部查證",
+    "needs_fix": "確證誘答或解析缺陷；不等於每題都雙最佳答案",
+    "uncertain": "已審但證據或情境不足，既不列成功也不算確證失敗",
+    "optional": "精確度／品質建議，不作阻擋",
+    "unreviewed": "本輪未進行內容覆審"
+  }
+}
