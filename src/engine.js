@@ -28,6 +28,13 @@ function buildBank(HAND,GEN,PERIODS){
         tags=[lm+':'+k].concat(set.oneway?[]:[lm+':'+v]);
         if(set.rel==='cause'){
           const wv=pick(vals.filter(x=>x!==v),x=>!clash(k,keyOf(x))), wk=pick(set.items.filter(i=>i[0]!==k).map(i=>i[0]),x=>!clash(k,x));
+          // 有專屬誘答時改用同主題的錯誤選項（仍先呼叫 pick，維持亂數序列不變）
+          const fo=(spec.foils||{})[k];
+          if(fo){
+            add(set.db||2, '「'+k+'」帶來的結果是？', v, fo[1], '因為「'+k+'」，所以'+v+'。'+tip+'其他選項雖然和本單元有關，但都不是「'+k+'」直接造成的結果。','cause');
+            add(set.da||3, '「'+v+'」最主要的原因是？', k, fo[0], v+'，最主要是因為「'+k+'」。'+tip+'其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。','cause');
+            return;
+          }
           add(set.db||2, '「'+k+'」帶來的結果是？', v, wv, '因為「'+k+'」，所以'+v+'。'+tip+'其他選項也是本單元常見的結果，但原因不同：'+wv.map(x=>x+'，是因為'+keyOf(x)).join('；')+'。','cause');
           add(set.da||3, '「'+v+'」最主要的原因是？', k, wk, v+'，最主要是因為「'+k+'」。'+tip+'其他選項會帶來別的結果：'+wk.map(x=>'「'+x+'」導致'+valOf(x)).join('；')+'。','cause');
           return;
