@@ -141,3 +141,53 @@
     placeBoats(0);
     decoUpdaters.push((t,dt)=>{ boats.forEach(b=>{ b.userData.a+=b.userData.sp*dt; }); gulls.forEach(g=>{ g.userData.a+=g.userData.sp*dt; }); placeBoats(t); });
   }
+
+  /* --- 節慶裝飾：目前有萬聖節（南瓜燈、蝙蝠、小幽靈）；只在節慶期間建立，可在工具列關閉 --- */
+  const festGroup=new T.Group(); festGroup.visible=false; scene.add(festGroup);
+  const festAnim=[];
+  if(window.__fest==='halloween'){
+    const dm=new T.Object3D(), spots=[];
+    const addSpot=(parent,x,y,z,ry,s)=>{ const o=new T.Object3D(); o.position.set(x,y,z); o.rotation.y=ry; o.scale.setScalar(s); parent.add(o); o.updateWorldMatrix(true,false); spots.push(o.matrixWorld.clone()); parent.remove(o); };
+    scene.updateMatrixWorld(true);
+    ISLANDS.forEach(isl=>{ const I=islands[isl.id]; if(!I) return;
+      // 章節小島：朝外側的岸邊放一顆南瓜燈
+      (I.islets||[]).forEach(s=>{ const t=s.la+0.35, r=2.35; addSpot(s.ig,Math.sin(t)*r,0.55,Math.cos(t)*r,t,0.62); });
+      // 主島：面向外側放兩顆
+      [-0.55,0.55].forEach(d=>{ const t=I.angle+d, r=I.arch?3.0:I.R*0.75; addSpot(I.g,Math.sin(t)*r,0.55,Math.cos(t)*r,t,0.8); });
+    });
+    // 中央錯題島：一圈南瓜燈
+    for(let k=0;k<6;k++){ const t=k/6*Math.PI*2+0.5, r=HUB_R*0.62; addSpot(scene,Math.sin(t)*r,0.42,Math.cos(t)*r,t,0.75); }
+    const N=spots.length;
+    const orange=new T.MeshStandardMaterial({color:'#f07a1a',flatShading:true,roughness:0.75});
+    const stemM=new T.MeshStandardMaterial({color:'#4f6b2a',flatShading:true});
+    const faceM=new T.MeshBasicMaterial({color:'#ffd35c'});
+    const glowM=new T.MeshBasicMaterial({color:'#ffb347',transparent:true,opacity:0.18,depthWrite:false});
+    const bodyG=new T.SphereGeometry(0.5,10,7); bodyG.scale(1,0.78,1); bodyG.translate(0,0.38,0);
+    const stemG=new T.CylinderGeometry(0.05,0.08,0.22,6); stemG.translate(0,0.86,0);
+    const eye=s=>{ const g=new T.ConeGeometry(0.1,0.14,3); g.rotateX(Math.PI/2); g.rotateZ(Math.PI); g.translate(s*0.17,0.46,0.47); return g; };
+    const mouthG=new T.BoxGeometry(0.34,0.07,0.04); mouthG.translate(0,0.27,0.47);
+    const glowG=new T.SphereGeometry(0.75,10,8); glowG.translate(0,0.4,0);
+    [[bodyG,orange],[stemG,stemM],[eye(-1),faceM],[eye(1),faceM],[mouthG,faceM],[glowG,glowM]].forEach(([g,m])=>{ const im=new T.InstancedMesh(g,m,N); spots.forEach((mx,i)=>im.setMatrixAt(i,mx)); im.raycast=()=>{}; im.castShadow=m===orange; festGroup.add(im); });
+    // 蝙蝠：繞著群島飛
+    const bats=[], NB=16, batM=new T.MeshBasicMaterial({color:'#1f1a2a',side:T.DoubleSide});
+    const wingShape=new T.Shape(); wingShape.moveTo(0,0); wingShape.lineTo(0.9,0.25); wingShape.lineTo(0.75,-0.05); wingShape.lineTo(0.55,0.05); wingShape.lineTo(0.35,-0.1); wingShape.lineTo(0,0);
+    const wingG=new T.ShapeGeometry(wingShape); wingG.rotateX(-Math.PI/2);
+    const bodyB=new T.InstancedMesh(new T.SphereGeometry(0.16,6,5),batM,NB), wings=new T.InstancedMesh(wingG,batM,NB*2);
+    bodyB.raycast=wings.raycast=()=>{}; festGroup.add(bodyB); festGroup.add(wings);
+    for(let i=0;i<NB;i++) bats.push({a:Math.random()*Math.PI*2, r:14+Math.random()*48, y:7+Math.random()*7, sp:(0.12+Math.random()*0.12)*(i%2?1:-1), ph:Math.random()*6});
+    const tmp=new T.Object3D();
+    festAnim.push((t,dt)=>{ bats.forEach((b,i)=>{ b.a+=b.sp*dt; const x=Math.sin(b.a)*b.r, z=Math.cos(b.a)*b.r, y=b.y+Math.sin(t*1.3+b.ph)*0.6, yaw=b.a+(b.sp>0?Math.PI/2:-Math.PI/2), f=Math.sin(t*14+b.ph)*0.7;
+      dm.position.set(x,y,z); dm.rotation.set(0,yaw,0); dm.scale.setScalar(2.4); dm.updateMatrix(); bodyB.setMatrixAt(i,dm.matrix);
+      [1,-1].forEach((s,k)=>{ tmp.position.set(x,y,z); tmp.rotation.set(0,yaw,0); tmp.scale.set(2.4*s,2.4,2.4); tmp.updateMatrix(); const w=new T.Matrix4().makeRotationZ(f*s); tmp.matrix.multiply(w); wings.setMatrixAt(i*2+k,tmp.matrix); }); });
+      bodyB.instanceMatrix.needsUpdate=true; wings.instanceMatrix.needsUpdate=true; });
+    // 小幽靈：在錯題島上飄
+    const ghostM=new T.MeshStandardMaterial({color:'#f6f4ff',transparent:true,opacity:0.88,roughness:0.6,flatShading:true});
+    const eyeM=new T.MeshBasicMaterial({color:'#222'});
+    [[2.6,1.2],[-2.2,-2.4],[0.6,3.0]].forEach(([x,z],i)=>{ const gh=new T.Group(); gh.position.set(x,1.5,z); gh.scale.setScalar(1.6);
+      const hd=new T.Mesh(new T.SphereGeometry(0.42,10,8),ghostM); hd.position.y=0.35; gh.add(hd);
+      const cl=new T.Mesh(new T.ConeGeometry(0.46,0.9,10,1,true),ghostM); cl.rotation.x=Math.PI; cl.position.y=-0.05; gh.add(cl);
+      [-0.13,0.13].forEach(ex=>{ const e=new T.Mesh(new T.SphereGeometry(0.06,6,5),eyeM); e.position.set(ex,0.42,0.37); gh.add(e); });
+      gh.traverse(o=>{ o.raycast=()=>{}; }); festGroup.add(gh);
+      festAnim.push(t=>{ gh.position.y=1.9+Math.sin(t*1.4+i*2)*0.3; gh.rotation.y=Math.sin(t*0.5+i)*0.8; }); });
+    decoUpdaters.push((t,dt)=>{ if(festGroup.visible && !reduceMotion) festAnim.forEach(f=>f(t,dt||0.016)); });
+  }

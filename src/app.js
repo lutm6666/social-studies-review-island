@@ -878,7 +878,7 @@ function endTour(){ tourStep=-1; tourEl.hidden=true; document.body.classList.rem
 // 點領航員：顯示今天的複習提示，也可以再導覽一次
 function onGuide(){
   const due=dueList().length; tourStep=-1;
-  const tips=['連續答對 2 次才算熟練，熟練的題目會隔幾天再出現一次。','做完一輪後，看看「各小主題表現」，就知道下一步該練哪裡。','覺得題目有問題，可以按「這題有疑問」標記，之後一起修正。','會考常考圖表題，地理的氣候圖和人口金字塔記得多練。'];
+  const tips=(window.__festOn==='halloween'?['🎃 萬聖節快樂！聽說錯題島上的小幽靈，最喜歡收集大家答錯的漂流瓶。把錯題答對，它們就會開心地飄走喔。']:[]).concat(['連續答對 2 次才算熟練，熟練的題目會隔幾天再出現一次。','做完一輪後，看看「各小主題表現」，就知道下一步該練哪裡。','覺得題目有問題，可以按「這題有疑問」標記，之後一起修正。','會考常考圖表題，地理的氣候圖和人口金字塔記得多練。']);
   // 隱藏第四階的暗示：只講傳聞，不講條件
   { const all=Object.values(growthPrev||{}), n4=all.filter(g=>g.stage>=4).length, n3=all.filter(g=>g.stage===3).length;
     const legend=ISLANDS.some(isl=>isl.ready&&mainStageOf(isl,growthPrev||{})>=4);
@@ -924,7 +924,7 @@ function setHover(h){
 /* ---------- 3D 群島 ---------- */
 let scene3d=null;
 function startScene(){
-  try{ scene3d=buildScene(); if(growthPrev) scene3d.setGrowth(growthPrev); return true; }catch(err){
+  try{ scene3d=buildScene(); if(growthPrev) scene3d.setGrowth(growthPrev); if(scene3d.setFest) scene3d.setFest(!!window.__festOn); return true; }catch(err){
     console.error(err); labelsEl.hidden=true; $('#scene').hidden=true; document.body.classList.add('no3d');
     $('#hint').textContent=(window.THREE?'這台裝置無法顯示 3D 群島':'3D 引擎沒有載入成功（可能是網路擋住了）')+'，所有題目照常可以練：從下方的島嶼列選一座島開始。'; $('#hint').classList.remove('gone');
     return false;
@@ -946,6 +946,14 @@ setBig(ST.big);
 const UIP=(()=>{ try{ return JSON.parse(localStorage.getItem('shehui-ui')||'{}')||{}; }catch(e){ return {}; } })();
 function hudPref(){ return UIP.hudMini===undefined ? window.innerWidth<720 : !!UIP.hudMini; }
 function saveUIP(){ try{ localStorage.setItem('shehui-ui',JSON.stringify(UIP)); }catch(e){} }
+// 節慶：依日期自動出現（網址加 ?fest=halloween 可預覽）；可在工具列關閉
+const FESTS=[{id:'halloween',name:'萬聖節',icon:'🎃',from:1024,to:1101,msg:'萬聖節快樂！島上冒出了南瓜燈，蝙蝠在海面上飛，錯題島還來了幾隻小幽靈。'}];
+const FEST=(()=>{ try{ const q=new URLSearchParams(location.search).get('fest'); if(q) return FESTS.find(f=>f.id===q)||null; }catch(e){}
+  const d=new Date(), md=(d.getMonth()+1)*100+d.getDate(); return FESTS.find(f=>f.from<=f.to?(md>=f.from&&md<=f.to):(md>=f.from||md<=f.to))||null; })();
+window.__fest=FEST?FEST.id:null;
+window.__festOn=FEST&&UIP.fest!==false?FEST.id:null;
+function setFest(on,keep){ if(!FEST) return; if(!keep){ UIP.fest=!!on; saveUIP(); } window.__festOn=on?FEST.id:null; const b=$('#festBtn'); if(b){ b.textContent=FEST.icon+' 節慶裝飾：'+(on?'開':'關'); b.setAttribute('aria-pressed',String(!!on)); }
+  if(scene3d&&scene3d.setFest) scene3d.setFest(!!on); if(typeof window.__skyApply==='function') window.__skyApply(); }
 function setHudMini(on,keep){ if(!keep){ UIP.hudMini=!!on; saveUIP(); } document.body.classList.toggle('hud-mini',!!on); const b=$('#hudMin'); b.textContent=on?'+':'–'; b.setAttribute('aria-expanded',String(!on)); const l=on?'展開面板':'收合面板'; b.setAttribute('aria-label',l); b.title=l; }
 function setCompact(on){ UIP.compact=!!on; saveUIP(); document.body.classList.toggle('card-compact',UIP.compact); $('#compactBtn').setAttribute('aria-pressed',String(UIP.compact)); }
 function setUiHidden(on){ document.body.classList.toggle('ui-hidden',!!on); const b=$('#eyeBtn'), l=on?'顯示介面':'隱藏介面，只看小島'; b.setAttribute('aria-pressed',String(!!on)); b.setAttribute('aria-label',l); b.title=l+'（快捷鍵 H）'; }
@@ -957,6 +965,8 @@ $('#hudMin').addEventListener('click',()=>setHudMini(!document.body.classList.co
 $('#compactBtn').addEventListener('click',()=>setCompact(!UIP.compact));
 $('#eyeBtn').addEventListener('click',()=>setUiHidden(!document.body.classList.contains('ui-hidden')));
 setHudMini(hudPref(), true); setCompact(!!UIP.compact); setSky(UIP.sky||'auto',true);
+if(FEST){ $('#festBtn').hidden=false; setFest(!!window.__festOn,true); $('#festBtn').addEventListener('click',()=>setFest(!window.__festOn));
+  const seenKey=FEST.id+new Date().getFullYear(); if(window.__festOn && UIP.festSeen!==seenKey){ UIP.festSeen=seenKey; saveUIP(); setTimeout(()=>toast(FEST.icon+' '+FEST.msg),2500); } }
 /* ---------- 聲音：背景音樂與互動音效（全部用 Web Audio 即時合成，不需要下載音檔，離線也能播） ---------- */
 const AU={ctx:null,master:null,music:null,sfx:null,verb:null,on:false,next:0,step:0,timer:0,sea:null,
   musicOn:UIP.music!==false, sfxOn:UIP.sfx!==false};
@@ -1004,11 +1014,14 @@ const THEMES={
   hist:{prog:[[62,69,74],[59,66,71],[55,62,67],[57,64,69]],beat:60/58,arp:0.42,voice:'pluck',pool:[62,64,66,69,71,74,76,78],cut:2100},
   geo:{prog:[[53,60,64,69],[55,62,67,71],[53,57,64,69],[50,57,62,65]],beat:60/52,arp:0.26,voice:'flute',pool:null,cut:1700},
   civ:{prog:[[55,59,62,66],[52,55,59,62],[48,55,60,64],[50,54,57,62]],beat:60/62,arp:0.34,voice:'bell',pool:null,cut:2400},
-  hub:{prog:[[57,60,64],[53,57,60],[48,52,55],[52,56,59]],beat:60/50,arp:0.22,voice:'soft',pool:null,cut:1500}
+  hub:{prog:[[57,60,64],[53,57,60],[48,52,55],[52,56,59]],beat:60/50,arp:0.22,voice:'soft',pool:null,cut:1500},
+  // 萬聖節：A 和聲小調，音樂盒加上偶爾滑音，有點神秘但不嚇人
+  halloween:{prog:[[57,60,64],[53,57,60],[50,53,57],[52,56,59]],beat:60/54,arp:0.32,voice:'bell',pool:[69,71,72,74,76,77,80,81],cut:1800,glide:true}
 };
 function auZone(){
-  try{ if(hubFocus) return 'hub'; const id=focusId||(S&&S.info&&S.info.isl); if(id&&ISL[id]) return ISL[id].subj; }catch(e){}
-  return 'sea';
+  const fest=window.__festOn==='halloween';
+  try{ if(hubFocus) return fest?'halloween':'hub'; const id=focusId||(S&&S.info&&S.info.isl); if(id&&ISL[id]) return ISL[id].subj; }catch(e){}
+  return fest?'halloween':'sea';
 }
 function auVoice(kind,f,t){
   const M=AU.music, V=AU.verb;
@@ -1036,6 +1049,7 @@ function auSchedule(){
     if(Math.random()<th.arp*(night?0.6:1)*(quiz?0.55:1)){
       const pool=th.pool||ch.concat([ch[0]+12,ch[2]+12]), m=pool[Math.floor(Math.random()*pool.length)]+(th.pool?0:12)+sh;
       auVoice(th.voice,NOTE(m),t);
+      if(th.glide && Math.random()<0.12) tone(AU.verb,NOTE(m),t,1.6,{type:'sine',vol:0.03,att:0.3,rel:1.8,glide:NOTE(m)*0.94});
     }
     AU.next+=B/2; AU.step++;
   }
@@ -1615,7 +1629,11 @@ function buildScene(){
     orbMat.color.set(day?(h<7.5||h>16.5?'#ffd3a0':'#fff2c2'):'#e8eefc'); haloMat.color.set(day?'#fff6d8':'#9fb4dd'); haloMat.opacity=day?0.22:0.12;
     sunOff.set(-Math.cos(th)*20, Math.max(18,34*Math.sin(th)), 14);
     document.documentElement.dataset.skyPhase = day?(h<7.5?'dawn':(h>16.5?'dusk':'day')):'night';
+    // 萬聖節：天空偏紫、月亮變成橘色
+    if(window.__festOn==='halloween'){ const fk=day?(h>16.5?0.45:0.12):0.55; skyUni.top.value.lerp(new T.Color('#3a1a55'),fk);
+      if(!day){ orbMat.color.set('#ffb45a'); haloMat.color.set('#ff9a3c'); haloMat.opacity=0.2; } }
   }
+  window.__skyApply=applyTheme;
   window.__skyHour=h=>{ skyHour=h; applyTheme(); };
   setInterval(applyTheme,60000);
   applyTheme();
@@ -1836,6 +1854,7 @@ function buildScene(){
       let yaw=off2.length()>1.5?Math.atan2(off2.x,off2.z):Math.atan2(o.pb.z-o.pa.z,-(o.pb.x-o.pa.x));
       cam.tYaw=shortest(cam.tYaw,yaw); cam.tPitch=0.55; cam.tDist=(d*1.1+9)*(narrow()?1.55:1); lastInput=performance.now(); },
     // 成長：依熟練度顯示裝飾、起霧；升階時小島彈一下
+    setFest(on){ festGroup.visible=!!on; },
     setGrowth(map){ Object.keys(map).forEach(id=>{ const s=islets[id]; if(!s) return; const g=map[id];
       s.grow.forEach((gr,k)=>{ gr.visible=g.stage>k; }); s.fog.visible=!!g.fog;
       if(s.stage>=0 && g.stage>s.stage && !reduceMotion) s.pop=1; s.stage=g.stage; });
