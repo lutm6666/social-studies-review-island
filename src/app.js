@@ -966,7 +966,7 @@ function auCtx(){
   const C=window.AudioContext||window.webkitAudioContext; if(!C) return null;
   const c=AU.ctx=new C();
   AU.master=c.createGain(); AU.master.gain.value=0.9; AU.master.connect(c.destination);
-  AU.music=c.createGain(); AU.music.gain.value=0; AU.music.connect(AU.master);
+  AU.music=c.createGain(); AU.music.gain.value=0; AU.lp=c.createBiquadFilter(); AU.lp.type='lowpass'; AU.lp.frequency.value=1900; AU.lp.Q.value=0.5; AU.music.connect(AU.lp); AU.lp.connect(AU.master);
   AU.sfx=c.createGain(); AU.sfx.gain.value=0.55; AU.sfx.connect(AU.master);
   // 簡單的殘響：用衰減的雜訊當脈衝響應
   const len=c.sampleRate*2.6, ir=c.createBuffer(2,len,c.sampleRate);
@@ -992,31 +992,58 @@ function auSea(){
   const lfo=c.createOscillator(), lg=c.createGain(); lfo.frequency.value=0.08; lg.gain.value=0.02; lfo.connect(lg); lg.connect(g.gain);
   src.connect(f); f.connect(g); g.connect(AU.music); src.start(); lfo.start(); AU.sea=src;
 }
-// 和弦進行：C – Am – F – G（夜晚改成較低、較稀疏）
-const PROG=[[60,64,67,71],[57,60,64,67],[53,57,60,64],[55,59,62,65]];
-const BEAT=60/66;
+// 背景音樂依所在區域切換（夜晚整體降八度、更稀疏）；整體經過低通濾波，聽起來較柔和
+//  sea 群島海面：C 大調，平靜的琴聲
+//  hist 歷史島：D 宮調五聲音階，撥弦（像古箏）
+//  geo 地理島：F 利地亞，空靈的長音與笛聲
+//  civ 公民島：G 大調，輕柔的音樂盒鐘聲
+//  hub 錯題島：A 小調，慢而沉靜
+//  答題時：同一首曲子音量降低、音符更少，不干擾思考
+const THEMES={
+  sea:{prog:[[60,64,67,71],[57,60,64,67],[53,57,60,64],[55,59,62,65]],beat:60/60,arp:0.36,voice:'soft',pool:null,cut:1900},
+  hist:{prog:[[62,69,74],[59,66,71],[55,62,67],[57,64,69]],beat:60/58,arp:0.42,voice:'pluck',pool:[62,64,66,69,71,74,76,78],cut:2100},
+  geo:{prog:[[53,60,64,69],[55,62,67,71],[53,57,64,69],[50,57,62,65]],beat:60/52,arp:0.26,voice:'flute',pool:null,cut:1700},
+  civ:{prog:[[55,59,62,66],[52,55,59,62],[48,55,60,64],[50,54,57,62]],beat:60/62,arp:0.34,voice:'bell',pool:null,cut:2400},
+  hub:{prog:[[57,60,64],[53,57,60],[48,52,55],[52,56,59]],beat:60/50,arp:0.22,voice:'soft',pool:null,cut:1500}
+};
+function auZone(){
+  try{ if(hubFocus) return 'hub'; const id=focusId||(S&&S.info&&S.info.isl); if(id&&ISL[id]) return ISL[id].subj; }catch(e){}
+  return 'sea';
+}
+function auVoice(kind,f,t){
+  const M=AU.music, V=AU.verb;
+  if(kind==='pluck'){ const g=tone(V,f,t,1.6,{type:'sine',vol:0.07,att:0.004,rel:1.8}); tone(M,f,t,0.9,{type:'triangle',vol:0.035,att:0.004,rel:0.9}); tone(M,f*2,t,0.35,{type:'sine',vol:0.012,att:0.003,rel:0.35}); return g; }
+  if(kind==='bell'){ tone(V,f,t,2.2,{type:'sine',vol:0.055,att:0.004,rel:2.4}); tone(M,f*2.01,t,0.9,{type:'sine',vol:0.014,att:0.003,rel:0.9}); return; }
+  if(kind==='flute'){ tone(V,f,t,1.8,{type:'sine',vol:0.05,att:0.18,rel:2.0}); tone(M,f,t,1.4,{type:'sine',vol:0.03,att:0.2,rel:1.5,detune:4}); return; }
+  tone(V,f,t,1.5,{type:'sine',vol:0.06,att:0.01,rel:1.7}); tone(M,f,t,1.0,{type:'sine',vol:0.04,att:0.01,rel:1.0});
+}
 function auSchedule(){
   const c=AU.ctx; if(!c || !AU.on) return;
   const night=document.documentElement.dataset.skyPhase==='night';
+  const quiz=typeof view!=='undefined' && view==='quiz';
+  // 答題時降低音量
+  const wantG=quiz?0.5:0.85; if(Math.abs((AU.wantG||0)-wantG)>0.01){ AU.wantG=wantG; AU.music.gain.setTargetAtTime(wantG,c.currentTime,1.5); }
   while(AU.next<c.currentTime+1.2){
-    const t=AU.next, bar=Math.floor(AU.step/8)%PROG.length, beat=AU.step%8, ch=PROG[bar], sh=night?-12:0;
+    const beat=AU.step%8;
+    if(beat===0){ const z=auZone(); if(z!==AU.zone){ AU.zone=z; AU.bar=0; AU.lp.frequency.setTargetAtTime(THEMES[z].cut,c.currentTime,2); } else AU.bar=(AU.bar||0)+1; }
+    const th=THEMES[AU.zone||'sea'], B=th.beat, t=AU.next, ch=th.prog[(AU.bar||0)%th.prog.length], sh=night?-12:0;
     if(beat===0){
-      ch.slice(0,3).forEach((m,i)=>{ [-6,6].forEach(dt=>tone(AU.music,NOTE(m+sh),t,BEAT*8,{type:'triangle',vol:0.045,att:1.6,rel:BEAT*8.6,detune:dt})); });
-      tone(AU.music,NOTE(ch[0]-12+sh),t,BEAT*4,{type:'sine',vol:0.11,att:0.08,rel:BEAT*4});
+      ch.slice(0,3).forEach(m=>{ [-5,5].forEach(dt=>tone(AU.music,NOTE(m+sh),t,B*8,{type:'sine',vol:0.04,att:2.2,rel:B*9,detune:dt})); });
+      tone(AU.music,NOTE(ch[0]-12+sh),t,B*4,{type:'sine',vol:0.075,att:0.25,rel:B*4.5});
     }
-    if(beat===4) tone(AU.music,NOTE(ch[0]-12+sh),t,BEAT*3,{type:'sine',vol:0.08,att:0.08,rel:BEAT*3});
-    // 琴聲琶音：依和弦音隨機挑選，偶爾休息
-    if(Math.random()<(night?0.32:0.55)){
-      const pool=ch.concat([ch[0]+12,ch[2]+12]), m=pool[Math.floor(Math.random()*pool.length)]+12+sh;
-      tone(AU.verb,NOTE(m),t,1.4,{type:'sine',vol:0.09,att:0.005,rel:1.6}); tone(AU.music,NOTE(m),t,1.1,{type:'triangle',vol:0.07,att:0.005,rel:1.1});
+    if(beat===4) tone(AU.music,NOTE(ch[0]-12+sh),t,B*3,{type:'sine',vol:0.055,att:0.25,rel:B*3.5});
+    // 旋律音：依和弦音（或五聲音階）隨機挑選，經常休息
+    if(Math.random()<th.arp*(night?0.6:1)*(quiz?0.55:1)){
+      const pool=th.pool||ch.concat([ch[0]+12,ch[2]+12]), m=pool[Math.floor(Math.random()*pool.length)]+(th.pool?0:12)+sh;
+      auVoice(th.voice,NOTE(m),t);
     }
-    AU.next+=BEAT/2; AU.step++;
+    AU.next+=B/2; AU.step++;
   }
 }
 function auMusic(on){
   const c=auCtx(); if(!c) return;
   if(on){ if(c.state==='suspended') c.resume(); auSea(); AU.on=true; AU.next=Math.max(AU.next,c.currentTime+0.1);
-    AU.music.gain.cancelScheduledValues(c.currentTime); AU.music.gain.setTargetAtTime(0.9,c.currentTime,1.2);
+    AU.music.gain.cancelScheduledValues(c.currentTime); AU.wantG=0.85; AU.music.gain.setTargetAtTime(0.85,c.currentTime,1.2);
     if(!AU.timer) AU.timer=setInterval(auSchedule,300); auSchedule(); }
   else { AU.on=false; if(AU.music) AU.music.gain.setTargetAtTime(0,c.currentTime,0.4); clearInterval(AU.timer); AU.timer=0; }
 }
