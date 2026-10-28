@@ -237,8 +237,14 @@
   bridges.forEach((b,i)=>{ const [top,bot]=TRAVELER_COLORS[i%TRAVELER_COLORS.length];
     addWalker({n:'跨島旅人',d:'沿著橋往來各島。跨單元、跨時代比較，是複習的好方法',top,bottom:bot,skin:['#e8c4a0','#d9a77c','#b9805a'][i%3],hat:'cap',hatC:bot,pack:1,packC:'#6b4f36',prop:'none'},'連接 '+ISL[b.from].name+' 與 '+ISL[b.to].name,{bridge:b}); });
 
+  // 效能：鏡頭拉遠時小人太小看不到，只畫鏡頭附近的小人（領航員一直顯示）
+  let lodT=0;
   function updateWalkers(dt){
+    lodT-=dt; const doLod=lodT<=0; if(doLod) lodT=0.25;
+    let far=false, R2=1e12, tx=0, tz=0; try{ far=cam.dist>95; R2=Math.pow(cam.dist*0.8+12,2); tx=cam.target.x; tz=cam.target.z; }catch(e){ /* 建場景時鏡頭還沒建立 */ }
     walkers.forEach(w=>{
+      if(doLod){ const on=w.guide || (!far && ((w.pos.x-tx)**2+(w.pos.z-tz)**2)<R2); if(w.p.g.visible!==on){ w.p.g.visible=on; w.p.blob.visible=on; } }
+      if(!w.p.g.visible) return;
       let moving=false;
       if(w.bridge){
         const b=w.bridge;

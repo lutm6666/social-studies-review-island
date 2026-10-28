@@ -20,7 +20,7 @@ self.addEventListener('fetch',e=>{
     return;
   }
   // 3D 引擎、字型、圖示：先用存起來的，沒有再上網抓並存起來
-  const cacheable = url.origin===location.origin || url.href===THREE_URL || /fonts\.(googleapis|gstatic)\.com$/.test(url.hostname);
+  const cacheable = url.origin===location.origin || url.href===THREE_URL || url.href.indexOf('cdn.jsdelivr.net/npm/three@0.128.0')>=0 || /fonts\.(googleapis|gstatic)\.com$/.test(url.hostname);
   if(!cacheable) return;
   e.respondWith(caches.match(req).then(hit=>hit||fetch(req).then(r=>{ if(r && (r.ok||r.type==='opaque')){ const cp=r.clone(); caches.open(CACHE).then(c=>c.put(req,cp)); } return r; })));
 });

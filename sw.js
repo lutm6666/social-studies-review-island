@@ -1,5 +1,5 @@
 // 離線功能：第一次開啟後，網頁、3D 引擎與字型都會存到這台裝置，沒有網路也能複習
-const CACHE='shehui-a6bdb3b3ad';
+const CACHE='shehui-388175bccb';
 const CORE=['./','index.html','manifest.webmanifest','icon-192.png','icon-512.png','favicon.png','apple-touch-icon.png'];
 const THREE_URL='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
 self.addEventListener('install',e=>{
@@ -20,7 +20,7 @@ self.addEventListener('fetch',e=>{
     return;
   }
   // 3D 引擎、字型、圖示：先用存起來的，沒有再上網抓並存起來
-  const cacheable = url.origin===location.origin || url.href===THREE_URL || /fonts\.(googleapis|gstatic)\.com$/.test(url.hostname);
+  const cacheable = url.origin===location.origin || url.href===THREE_URL || url.href.indexOf('cdn.jsdelivr.net/npm/three@0.128.0')>=0 || /fonts\.(googleapis|gstatic)\.com$/.test(url.hostname);
   if(!cacheable) return;
   e.respondWith(caches.match(req).then(hit=>hit||fetch(req).then(r=>{ if(r && (r.ok||r.type==='opaque')){ const cp=r.clone(); caches.open(CACHE).then(c=>c.put(req,cp)); } return r; })));
 });

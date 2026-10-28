@@ -190,7 +190,7 @@ ISLANDS.forEach(isl=>{
   (isl.lms||[]).forEach(l=>{
     const t=document.createElement('button');
     t.type='button'; t.className='tag3d'; t.style.setProperty('--c',SUBJ[isl.subj].css); t.hidden=true;
-    t.innerHTML='<span class="ring"></span><span class="nm">'+(isl.ready?'<span class="no">'+(isl.lms.indexOf(l)+1)+'</span>':'')+l.name+'</span><span class="sc"></span>';
+    t.innerHTML='<span class="ring"></span><span class="nm">'+(isl.ready?'<span class="no">'+(isl.lms.indexOf(l)+1)+'</span>':'')+'<span class="lt">'+l.name+'</span></span><span class="sc"></span>';
     t.addEventListener('click',()=>focusLm(l.id));
     t.addEventListener('pointerenter',()=>setHover({lm:l.id}));
     t.addEventListener('pointerleave',()=>setHover(null));
@@ -210,7 +210,7 @@ CROSS.forEach((L,i)=>{ const t=document.createElement('button'); t.type='button'
 Object.keys(CHAP_INFO).forEach(id=>{
   const ci=CHAP_INFO[id], isl=ISL[ci.isl];
   const t=document.createElement('button'); t.type='button'; t.className='tag3d wip'; t.style.setProperty('--c',SUBJ[isl.subj].css); t.hidden=true;
-  t.innerHTML='<span class="ring"></span><span class="nm"><span class="no">'+(ci.i+1)+'</span>'+esc(ci.name)+'</span>';
+  t.innerHTML='<span class="ring"></span><span class="nm"><span class="no">'+(ci.i+1)+'</span><span class="lt">'+esc(ci.name)+'</span></span>';
   t.addEventListener('click',()=>focusChap(id));
   t.addEventListener('pointerenter',()=>setHover({lm:id})); t.addEventListener('pointerleave',()=>setHover(null));
   labelsEl.appendChild(t); chapLabel[id]=t;
@@ -322,6 +322,27 @@ const panel=$('#panel'), body=$('#panelBody');
 let focusId=null, lmFocus=null, linkFocus=null, chapFocus=null, crossFocus=null, hubFocus=false, view=null, S=null;
 const cardEl=$('#card');
 
+/* ---------- 未完成的一輪：重新整理或不小心關掉分頁後，可以從中斷的地方繼續 ---------- */
+const ROUND_KEY='shehui-round';
+function saveRound(){ if(!S||!S.qs) return; try{ const o=Object.assign({},S.o); delete o.list;
+  localStorage.setItem(ROUND_KEY,JSON.stringify({o,head:S.head,isl:S.info&&S.info.isl||null,diff:S.diff,ids:S.qs.map(q=>q.id),i:S.i,res:S.results,el:Date.now()-S.t0,at:Date.now()})); }catch(e){} }
+function clearRound(){ try{ localStorage.removeItem(ROUND_KEY); }catch(e){} }
+function qById(id){ if(!qById.m){ qById.m={}; Object.keys(BANK).forEach(k=>(BANK[k]||[]).forEach(q=>{ qById.m[q.id]=q; })); } return qById.m[id]; }
+function offerResume(){
+  let R=null; try{ R=JSON.parse(localStorage.getItem(ROUND_KEY)||'null'); }catch(e){}
+  if(!R || !R.ids || !R.ids.length || Date.now()-R.at>3*864e5 || !panel.hidden) return;
+  const qs=R.ids.map(qById); if(qs.some(q=>!q)){ clearRound(); return; }
+  const done=R.res.length; if(done>=qs.length){ clearRound(); return; }
+  view='resume'; setHead.apply(null,R.head||['全部島嶼','繼續上一輪','','hist']); $('#panelSub').textContent='上次還沒答完'; openPanel();
+  body.innerHTML='<p class="note">「'+esc((R.head&&R.head[1])||'上一輪')+'」答到第 '+(done+1)+' / '+qs.length+' 題就中斷了（答對 '+R.res.filter(Boolean).length+' 題）。要從中斷的地方繼續嗎？</p><div class="actions"><button type="button" class="btn primary" id="rsGo">繼續作答</button><button type="button" class="btn" id="rsNo">放棄這一輪</button></div>';
+  $('#rsGo').addEventListener('click',()=>{
+    S={o:R.o, info:{isl:R.isl,title:R.head&&R.head[1],sub:R.head&&R.head[2],list:[]}, qs, i:done, results:R.res.slice(), wrong:qs.filter((q,k)=>k<done&&!R.res[k]), answered:false, opts:[], diff:R.diff, t0:Date.now()-(R.el||0), head:R.head};
+    view='quiz'; if(R.isl && focusId!==R.isl){ focusId=R.isl; $('#backBtn').hidden=false; if(scene3d) scene3d.focus(R.isl); }
+    clearInterval(timerT); if(R.o.scope==='exam') timerT=setInterval(()=>{ const el=document.getElementById('qtimer'); if(!S||S.o.scope!=='exam'||view!=='quiz'){ clearInterval(timerT); return; } if(el) el.textContent='⏱ '+fmtTime(Date.now()-S.t0); },1000);
+    setHead.apply(null,S.head); renderQ(); });
+  $('#rsNo').addEventListener('click',()=>{ clearRound(); backToExplore(); });
+}
+setTimeout(offerResume,2200);
 function setHead(tag,title,sub,subj){
   $('#panelTag').innerHTML='<span class="dot" style="--c:'+SUBJ[subj].css+'"></span>'+esc(tag);
   $('#panelTitle').textContent=title; $('#panelSub').textContent=sub;
@@ -405,7 +426,7 @@ function renderCrossList(){
 }
 function stepLink(dir){ focusLink((linkFocus+dir+LINKS.length)%LINKS.length); }
 function backToExplore(){
-  S=null; hidePanel();
+  if(view==='quiz') clearRound(); S=null; hidePanel();
   if(hubFocus && scene3d) scene3d.focusHub(); else if(crossFocus!=null && scene3d) scene3d.focusCross(crossFocus); else if(linkFocus!=null && scene3d) scene3d.focusLink(linkFocus); else if(chapFocus && scene3d) scene3d.focusLm(chapFocus); else if(lmFocus && scene3d) scene3d.focusLm(lmFocus); else if(focusId && scene3d) scene3d.focus(focusId);
   renderCard(); refreshProgress();
 }
@@ -631,7 +652,8 @@ function startQuiz(o){
   S={o, info, qs, i:0, results:[], wrong:[], answered:false, opts:[], diff, t0:Date.now()};
   view='quiz'; markInteracted();
   const isl=info.isl?ISL[info.isl]:null;
-  setHead(isl?isl.name+(diff==='mix'?'':'．'+DIFF[diff].name):'全部島嶼', info.title, info.sub, isl?isl.subj:(o.subj&&o.subj!=='all'?o.subj:'hist'));
+  S.head=[isl?isl.name+(diff==='mix'?'':'．'+DIFF[diff].name):'全部島嶼', info.title, info.sub, isl?isl.subj:(o.subj&&o.subj!=='all'?o.subj:'hist')];
+  setHead.apply(null,S.head);
   clearInterval(timerT);
   if(o.scope==='exam') timerT=setInterval(()=>{ const el=document.getElementById('qtimer'); if(!S||S.o.scope!=='exam'||view!=='quiz'){ clearInterval(timerT); return; } if(el) el.textContent='⏱ '+fmtTime(Date.now()-S.t0); },1000);
   openPanel(); renderQ(); refreshProgress();
@@ -640,6 +662,7 @@ function startQuiz(o){
   if(o.scope==='cross'){ crossFocus=o.id; if(scene3d) scene3d.focusCross(o.id); }
 }
 function renderQ(){
+  saveRound();
   const q=S.qs[S.i]; S.opts=shuffle([q.c].concat(q.w)); S.answered=false;
   const segs=S.qs.map((_,k)=>{ let c=''; if(k<S.i) c=S.results[k]?'right':'wrong'; else if(k===S.i) c='now'; return '<i class="'+c+'"></i>'; }).join('');
   const lmTag = q.lm==='_cx' ? '<span class="tagchip lk">⛵ '+esc(CROSS[q.cx].title)+'</span>' : q.lm==='_lk' ? '<span class="tagchip lk">⇢ '+esc(LINKS[q.link].title)+'</span>' : ((S.o.scope!=='lm' && lmName(q.lm)) ? '<span class="tagchip">'+lmName(q.lm)+'</span>' : '');
@@ -669,6 +692,7 @@ function answer(k){
   $('#flagBtn').addEventListener('click',e=>{ if(ST.flag[q.id]) delete ST.flag[q.id]; else ST.flag[q.id]=1; save(); e.currentTarget.setAttribute('aria-pressed',String(!!ST.flag[q.id])); e.currentTarget.textContent='⚑ '+(ST.flag[q.id]?'已標記（再按取消）':'這題有疑問'); });
   $('#qact').hidden=false; const nb=$('#nextBtn'); nb.focus({preventScroll:true});
   fb.scrollIntoView({block:'nearest',behavior:reduceMotion?'auto':'smooth'});
+  saveRound();
 }
 // 回報錯誤：開啟 GitHub 的回報頁，題號與題目內容已經填好
 const REPO_URL='https://github.com/lutm6666/social-studies-review-island';
@@ -679,7 +703,7 @@ function reportURL(q){
 }
 function next(){ if(!S) return; S.i++; if(S.i<S.qs.length) renderQ(); else renderResult(); }
 function renderResult(){
-  view='result'; refreshProgress();
+  view='result'; clearRound(); refreshProgress();
   const n=S.qs.length, c=S.results.filter(Boolean).length, ratio=c/n; if(typeof sfx==='function') setTimeout(()=>sfx(ratio>=0.7?'finish':'done'),150);
   const msg = ratio===1 ? '全對！這一輪的題目都掌握了。' : ratio>=0.7 ? '不錯！把下面答錯的題目看熟就更穩了。' : '先看看下面的錯題重點，再挑戰一次。';
   const by={1:[0,0],2:[0,0],3:[0,0]}; S.qs.forEach((q,i)=>{ by[q.d][1]++; if(S.results[i]) by[q.d][0]++; });
@@ -846,8 +870,8 @@ function setHover(h){
 let scene3d=null;
 function startScene(){
   try{ scene3d=buildScene(); if(growthPrev) scene3d.setGrowth(growthPrev); return true; }catch(err){
-    console.error(err); labelsEl.hidden=true;
-    $('#hint').textContent='這台裝置無法顯示 3D 群島，可以直接從下方的島嶼列開始。';
+    console.error(err); labelsEl.hidden=true; $('#scene').hidden=true; document.body.classList.add('no3d');
+    $('#hint').textContent=(window.THREE?'這台裝置無法顯示 3D 群島':'3D 引擎沒有載入成功（可能是網路擋住了）')+'，所有題目照常可以練：從下方的島嶼列選一座島開始。'; $('#hint').classList.remove('gone');
     return false;
   }
 }
@@ -1463,6 +1487,7 @@ function buildScene(){
     document.documentElement.dataset.skyPhase = day?(h<7.5?'dawn':(h>16.5?'dusk':'day')):'night';
   }
   window.__skyHour=h=>{ skyHour=h; applyTheme(); };
+  window.__perf=()=>({calls:renderer.info.render.calls,tris:renderer.info.render.triangles,geos:renderer.info.memory.geometries,tex:renderer.info.memory.textures,walkers:walkers.length,scene});
   setInterval(applyTheme,60000);
   applyTheme();
   if(window.matchMedia){ const mq=matchMedia('(prefers-color-scheme: dark)'); if(mq.addEventListener) mq.addEventListener('change',applyTheme); else if(mq.addListener) mq.addListener(applyTheme); }
@@ -1611,6 +1636,7 @@ function buildScene(){
     // 小人說明泡泡
     if(bubbleW!=null){ const w=walkers[bubbleW]; if(now>bubbleUntil || cam.dist>80){ bubbleEl.hidden=true; bubbleW=null; } else { v.set(w.pos.x,w.pos.y+1.0,w.pos.z).project(camera); bubbleEl.style.transform='translate('+((v.x*0.5+0.5)*W).toFixed(1)+'px,'+((-v.y*0.5+0.5)*H).toFixed(1)+'px) translate(-50%,calc(-100% - 8px))'; bubbleEl.style.opacity=v.z>1?0:1; } }
     // 地標標籤（只在飛到該島時顯示）
+    const labs=[];
     Object.keys(lmGroups).forEach(id=>{
       const g=lmGroups[id], el=lmLabel[id]||chapLabel[id], islId=(LM_INFO[id]||CHAP_INFO[id]).isl;
       const show=focusId===islId && cam.dist<(islands[islId].arch?90:70);
@@ -1624,7 +1650,18 @@ function buildScene(){
       let op=(v.z>1||(!arch&&face<-0.15)||lmF||linkFocus!=null||sx<40||sx>W-40||sy<50||sy>H-20)?0:1;
       el.style.transform='translate('+((v.x*0.5+0.5)*W).toFixed(1)+'px,'+((-v.y*0.5+0.5)*H).toFixed(1)+'px) translate(-50%,calc(-100% - 10px))';
       el.style.opacity=op.toFixed(2); el.style.pointerEvents=op>0.5?'auto':'none'; el.style.zIndex=String(Math.round((face+1)*50));
+      if(op>0) labs.push({el,sx,sy,face}); else el.classList.remove('tight');
     });
+    // 標籤避讓：重疊時先往上錯開，還是擠就縮成只顯示編號（滑過或點進該小島時恢復）
+    if(labs.length>1){ labs.sort((a,b)=>b.face-a.face); const kept=[];
+      const hit=r=>kept.some(k=>r.x0<k.x1+4&&r.x1>k.x0-4&&r.y0<k.y1+3&&r.y1>k.y0-3);
+      labs.forEach(L=>{ const el=L.el; if(!el._mt||now-el._mt>1200){ const was=el.classList.contains('tight'); if(was) el.classList.remove('tight'); el._w=el.offsetWidth; el._h=el.offsetHeight; el._tw=(el.querySelector('.no')?34:el._w); if(was) el.classList.add('tight'); el._mt=now; }
+        const h=el._h, cand=[[el._w,0,false],[el._w,-(h+6),false],[el._tw,0,true],[el._tw,-(h+6),true]];
+        let pick=cand[2]; for(const c of cand){ const r={x0:L.sx-c[0]/2,x1:L.sx+c[0]/2,y0:L.sy-h-10+c[1],y1:L.sy-10+c[1]}; if(!hit(r)){ pick=c; break; } }
+        const r={x0:L.sx-pick[0]/2,x1:L.sx+pick[0]/2,y0:L.sy-h-10+pick[1],y1:L.sy-10+pick[1]}; kept.push(r);
+        el.classList.toggle('tight',pick[2] && !el.classList.contains('hover'));
+        if(pick[1]) el.style.transform='translate('+L.sx.toFixed(1)+'px,'+(L.sy+pick[1]).toFixed(1)+'px) translate(-50%,calc(-100% - 10px))'; }); }
+    else labs.forEach(L=>L.el.classList.remove('tight'));
     // 錯題島標籤
     { v.set(0,6.2,0).project(camera); const sx=(v.x*0.5+0.5)*W, sy=(-v.y*0.5+0.5)*H; const vis=v.z<1 && !hubFocus && !(focusId && cam.dist<85) && crossFocus==null;
       hubLabel.style.transform='translate('+sx.toFixed(1)+'px,'+sy.toFixed(1)+'px) translate(-50%,calc(-100% - 10px))'; hubLabel.style.opacity=vis?1:0; hubLabel.style.pointerEvents=vis?'auto':'none'; }
