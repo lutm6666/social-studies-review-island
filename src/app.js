@@ -702,7 +702,7 @@ const REPO_URL='https://github.com/lutm6666/social-studies-review-island';
 //  2. 公開網址版：送到 Google 表單（REPORT_FORM 設定好之後啟用）
 //  3. 兩者都不能用時：複製回報內容，或改走 GitHub
 let reportDb=null;
-const REPORT_FORM=null; // 例：{action:'https://docs.google.com/forms/d/e/…/formResponse', f:{qid:'entry.1',type:'entry.2',note:'entry.3'}}
+const REPORT_FORM={action:'https://docs.google.com/forms/d/e/1FAIpQLSeg7HGXDnpfTb3rUQ8PJXLLpG_gng4kKz-vQNj3aTWDM6I9oA/formResponse', f:{qid:'entry.1586019792',type:'entry.388283254',note:'entry.1112889216'}};
 const RPT_KEY='shehui-reported';
 const RPT_TYPES=['正解有誤','不只一個答案','選項不相干','錯字或用詞','解析有誤','太難或超出課綱','其他'];
 function reportedIds(){ try{ return JSON.parse(localStorage.getItem(RPT_KEY))||{}; }catch(e){ return {}; } }
