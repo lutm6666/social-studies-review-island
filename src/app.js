@@ -715,7 +715,8 @@ async function sendReport(q,type,note){
     await fetch(REPORT_FORM.action,{method:'POST',mode:'no-cors',body:fd}); return 'form'; }
   return null;
 }
-function openReport(q){
+function openReport(q,src){
+  src=src||$('#rptBtn');
   const old=document.getElementById('rpt'); if(old) old.remove();
   const el=document.createElement('div'); el.id='rpt'; el.className='rpt'; el.setAttribute('role','dialog'); el.setAttribute('aria-modal','true'); el.setAttribute('aria-labelledby','rptT');
   const can=!!(reportDb||REPORT_FORM);
@@ -726,7 +727,7 @@ function openReport(q){
     '<div class="rpt-act">'+(can?'<button type="button" class="btn primary" data-r="send" disabled>送出回報</button>':'<button type="button" class="btn primary" data-r="copy" disabled>複製回報內容</button><a class="btn" href="'+esc(reportURL(q))+'" target="_blank" rel="noopener">GitHub 回報 ↗</a>')+'<button type="button" class="btn" data-r="x">取消</button></div><p class="rpt-msg" role="status"></p></div>';
   document.body.appendChild(el);
   let type=null; const msg=el.querySelector('.rpt-msg'), main=el.querySelector('[data-r=send],[data-r=copy]');
-  const close=()=>{ el.remove(); document.removeEventListener('keydown',kd,true); const b=$('#rptBtn'); if(b) b.focus({preventScroll:true}); };
+  const close=()=>{ el.remove(); document.removeEventListener('keydown',kd,true); if(src&&src.isConnected) src.focus({preventScroll:true}); };
   const kd=e=>{ if(e.key==='Escape'){ e.stopPropagation(); close(); } };
   document.addEventListener('keydown',kd,true);
   el.addEventListener('click',async e=>{
@@ -736,7 +737,7 @@ function openReport(q){
     if(r.dataset.r==='x') return close();
     if(r.dataset.r==='copy'){ try{ await navigator.clipboard.writeText(reportText(q,type,note)); msg.textContent='已複製，可以貼到訊息裡傳出去。'; }catch(err){ msg.textContent='無法自動複製，請改用 GitHub 回報。'; } return; }
     if(r.dataset.r==='send'){ r.disabled=true; msg.textContent='送出中…';
-      try{ await sendReport(q,type,note); markReported(q.id); const b=$('#rptBtn'); if(b) b.textContent='已回報 ✓'; msg.textContent='收到了，謝謝你！'; setTimeout(close,1100); }
+      try{ await sendReport(q,type,note); markReported(q.id); if(src&&src.isConnected) src.textContent='已回報 ✓'; msg.textContent='收到了，謝謝你！'; setTimeout(close,1100); }
       catch(err){ r.disabled=false; msg.textContent=(err&&err.code==='rate_limited')?'送出太頻繁，請稍後再試。':'送出失敗，請稍後再試。'; } }
   });
   setTimeout(()=>el.querySelector('.rpt-t').focus({preventScroll:true}),30);
@@ -775,7 +776,10 @@ function renderResult(){
       (S.o.scope!=='retry' ? '<button type="button" class="btn'+(S.wrong.length?'':' primary')+'" id="rMore">再來 '+(S.o.scope==='exam'?S.o.n:ST.n)+' 題</button>' : '')+
       '<button type="button" class="btn" id="rBack">回到島上</button>'+
     '</div>'+diag+
-    (S.wrong.length ? '<p class="section-label">答錯的題目</p><ul class="wrong-list">'+S.wrong.map(q=>'<li>'+(q.ctx?'<p class="nb-ctx">'+esc(q.ctx)+'</p>':'')+'<p class="wq">'+esc(q.q)+'</p><div class="wa"><span class="fb-label">正解</span>'+fmtOpt(q.c)+'</div></li>').join('')+'</ul>' : '');
+    (S.wrong.length ? '<p class="section-label">答錯的題目</p><ul class="wrong-list">'+S.wrong.map(q=>'<li>'+(q.ctx?'<p class="nb-ctx">'+esc(q.ctx)+'</p>':'')+'<p class="wq">'+esc(q.q)+'</p><div class="wa"><span class="fb-label">正解</span>'+fmtOpt(q.c)+'</div></li>').join('')+'</ul>' : '')+
+    // 這一輪全部題目：學生不知道題號，也能在做完後回報任何一題（答對的題目也可能有問題）
+    '<details class="round-list"><summary>這一輪的 '+n+' 題．覺得哪題有問題可以回報</summary><ol>'+S.qs.map((q,i)=>'<li><span class="rl-mark '+(S.results[i]?'ok':'bad')+'" aria-label="'+(S.results[i]?'答對':'答錯')+'">'+(S.results[i]?'✓':'✕')+'</span><span class="rl-q">'+esc(q.q)+'</span><button type="button" class="linkbtn rl-rpt" data-i="'+i+'">'+(reportedIds()[q.id]?'已回報 ✓':'回報')+'</button></li>').join('')+'</ol></details>';
+  body.querySelectorAll('.rl-rpt').forEach(b=>b.addEventListener('click',()=>openReport(S.qs[+b.dataset.i],b)));
   const w=$('#rWrong'); if(w){ const list=S.wrong.slice(), il=S.info.isl; w.addEventListener('click',()=>startQuiz({scope:'retry', isl:il, list})); }
   const m=$('#rMore'); if(m){ const o=S.o; m.addEventListener('click',()=>startQuiz(o)); }
   $('#rBack').addEventListener('click',backToExplore);
