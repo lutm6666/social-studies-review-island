@@ -1,0 +1,17 @@
+{
+  "buildReturnCode": 0,
+  "files": {
+    "index.html": {
+      "matchesCommittedAfterNewlineNormalization": true,
+      "normalizedSHA256": "8fbdb22319bc72c177c93f418476fa24901e5f0e8e35fad0288c6fa41a71f170"
+    },
+    "sw.js": {
+      "matchesCommittedAfterNewlineNormalization": true,
+      "normalizedSHA256": "24d6ada72d5de5638f3cc74acfffb008cdeb23f353853b3390a878a38d900d9a"
+    },
+    "manifest.webmanifest": {
+      "matchesCommittedAfterNewlineNormalization": true,
+      "normalizedSHA256": "1cc846ca51affa300410a641c4551d67f349759b8a4f4ee367735b9e04bef5b5"
+    }
+  }
+}

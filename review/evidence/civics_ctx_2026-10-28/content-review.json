@@ -1,0 +1,1422 @@
+{
+  "reviewDate": "2026-10-28 Asia/Taipei",
+  "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+  "summary": {
+    "newQuestions": 40,
+    "contentPassed": 40,
+    "mustFix": 0,
+    "confirmedMultipleAnswers": 0,
+    "optionalRefinements": 8,
+    "uiPassed": 40,
+    "uiFailed": 0,
+    "uiUntested": 0,
+    "allActualOptionsMatchSource": true
+  },
+  "method": "Read every context, stem, answer, distractor and explanation; verify applicable primary sources; execute one-question UI rounds for every added ID.",
+  "independentReviews": {
+    "soc": {
+      "reviewed_at": "2026-10-28 Asia/Taipei",
+      "source_commit_as_supplied_by_parent": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+      "source_json_sha256": "f197c7a2eba79b32e5c82cec4961df94f37a72d044261ba53fa663c4681bfd95",
+      "scope": "12 new soc context questions only",
+      "counts": {
+        "reviewed": 12,
+        "clear_error": 0,
+        "ambiguity": 0,
+        "optional_quality_improvement": 1,
+        "pass_without_issue": 11,
+        "content_pass": 12,
+        "blocking_failure": 0
+      },
+      "limitations": [
+        "本次內容審查，未做網站操作、Git操作或全題庫結構驗證。",
+        "三個來源僅取得官方搜尋索引摘要，已在source basis明示，未以全文逾時偽稱全文驗證。"
+      ],
+      "sources": {
+        "peer": {
+          "title": "教育部教育百科／國家教育研究院教育大辭書：同儕團體的功能",
+          "url": "https://pedia.cloud.edu.tw/Entry/Detail?title=%E5%90%8C%E5%84%95%E5%9C%98%E9%AB%94%E7%9A%84%E5%8A%9F%E8%83%BD",
+          "basis": "全文確認：同儕為社會化單位與參照團體，傳遞文化模式並提供認同。"
+        },
+        "democracy": {
+          "title": "臺北市教育e報：國中學生代表參與校務會議之教育意涵與作為",
+          "url": "https://enews.tiec.tp.edu.tw/EduNote/Detail/490",
+          "basis": "全文確認：班會按民主程序形成共識，校外教學地點、服裝與午餐等可由學生參與表達。僅引概念，未引用該舊文對現行法規配套的時點說明。"
+        },
+        "gender": {
+          "title": "桃園市政府：性別刻板印象",
+          "url": "https://mental.tycg.gov.tw/News_Content.aspx?n=524&s=333420&sms=8120",
+          "basis": "官方搜尋索引摘要明列把工程師、護理職業固定連結性別的刻板印象；不採其舊稱護士作題目建議。"
+        },
+        "employment": {
+          "title": "全國法規資料庫：性別平等工作法",
+          "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0030014",
+          "basis": "全文第7條招募／陞遷不得性別差別待遇，特殊工作性質例外；第10條薪資不得因性別差別待遇。2026-10-28查閱頁面修正日期112-08-16。"
+        },
+        "family": {
+          "title": "教育部重編國語辭典修訂本：折衷家庭",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=114902&la=0&powerMode=0",
+          "basis": "全文確認夫妻、父母及未婚子女構成三代／主幹家庭。"
+        },
+        "emotion": {
+          "title": "衛生福利部社會及家庭署社區發展季刊：兒少照顧與親職教育：開展以家庭為中心的實務",
+          "url": "https://cdj.sfaa.gov.tw/Journal/Content?gno=9317",
+          "basis": "官方搜尋索引摘要確認家庭提供情感關懷、心靈支持與安全歸屬；全文開啟逾時，因此未宣稱完整逐頁核讀。"
+        },
+        "community": {
+          "title": "基隆市政府法規：基隆市辦理里民大會暨基層建設座談會自治條例",
+          "url": "https://exlaw.klcg.gov.tw/LawContent.aspx?id=FL019339",
+          "basis": "官方法規搜尋內容確認里民大會以解決本里公共事務為討論範圍；僅用以證明公民參與管道，不把單一地方程序推為全國一致。"
+        },
+        "volunteer": {
+          "title": "全國法規資料庫：志願服務法",
+          "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050131",
+          "basis": "全文第3條確認自由意志、不以報酬為目的、以時間等貢獻公益；第2條法定適用計畫範圍與生活概念分開。"
+        },
+        "socialenterprise": {
+          "title": "勞動部：您適合創立社會企業嗎？",
+          "url": "https://www.mol.gov.tw/1607/1632/1640/43677/",
+          "basis": "全文確認用商業模式處理社會／環境問題，例含弱勢就業機會，盈餘支持使命與持續經營。"
+        },
+        "custom": {
+          "title": "教育部重編國語辭典修訂本：風俗習慣",
+          "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=37271&la=0&powerMode=0",
+          "basis": "全文確認為較長時間形成流行的風尚、習慣。"
+        },
+        "culture": {
+          "title": "教育部教育百科／國家教育研究院教育大辭書：文化相對論",
+          "url": "https://pedia.cloud.edu.tw/Entry/Detail/?search=%E8%A9%95%E5%AE%9A&title=%E6%96%87%E5%8C%96%E7%9B%B8%E5%B0%8D%E8%AB%96",
+          "basis": "全文確認應在當地社會文化背景理解文化，不預設自己的標準評斷其他文化。"
+        }
+      },
+      "questions": [
+        {
+          "id": "soc1-h9",
+          "status": "通過",
+          "blocking": false,
+          "content_status": "通過",
+          "issue": null,
+          "evidence_urls": [
+            "https://pedia.cloud.edu.tw/Entry/Detail?title=%E5%90%8C%E5%84%95%E5%9C%98%E9%AB%94%E7%9A%84%E5%8A%9F%E8%83%BD"
+          ],
+          "評語": "直接描寫朋友對消費、語言與偶像喜好的影響；正解同儕團體最直接。學校可能提供朋友相識場域，但題目問主要影響來源，未形成雙解。",
+          "checked_fields": [
+            "context",
+            "question",
+            "answer",
+            "distractors[0..2]",
+            "explanation"
+          ],
+          "pending_json_equal": true,
+          "question_snapshot": {
+            "id": "soc1-h9",
+            "chapter": "soc1",
+            "difficulty": 2,
+            "context": "小婷發現自己總是跟著好朋友買一樣的東西、說一樣的流行語，連喜歡的歌手也一樣。",
+            "question": "這主要反映哪一種社會化機構的影響？",
+            "answer": "同儕團體",
+            "distractors": [
+              "家庭",
+              "學校",
+              "政府機關"
+            ],
+            "explanation": "青少年時期同儕的認同特別重要，朋友的喜好與用語容易影響自己的選擇。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "soc1-h10",
+          "status": "通過",
+          "blocking": false,
+          "content_status": "通過",
+          "issue": null,
+          "evidence_urls": [
+            "https://enews.tiec.tp.edu.tw/EduNote/Detail/490"
+          ],
+          "評語": "正解保障相關成員先表達意見、再依程序決定，符合公共參與；其餘選項排除多數人或放棄處理，均非較好做法。未將程序簡化為班長或成績優先。",
+          "checked_fields": [
+            "context",
+            "question",
+            "answer",
+            "distractors[0..2]",
+            "explanation"
+          ],
+          "pending_json_equal": true,
+          "question_snapshot": {
+            "id": "soc1-h10",
+            "chapter": "soc1",
+            "difficulty": 3,
+            "context": "班會討論校外教學的地點，班長只聽幾位好朋友的意見就做了決定，其他同學很不滿。",
+            "question": "從參與公共事務的角度，比較好的做法是？",
+            "answer": "讓全班表達意見後再依程序決定",
+            "distractors": [
+              "由班長一人決定最有效率",
+              "只讓成績好的同學投票",
+              "乾脆不再舉辦校外教學"
+            ],
+            "explanation": "公共事務應讓相關的人都有表達意見的機會，再依程序做決定，這是參與公共事務的基本態度。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "soc2-h8",
+          "status": "通過",
+          "blocking": false,
+          "content_status": "通過",
+          "issue": null,
+          "evidence_urls": [
+            "https://mental.tycg.gov.tw/News_Content.aspx?n=524&s=333420&sms=8120"
+          ],
+          "評語": "將護理師與工程師預設為特定性別的職業，屬性別刻板印象；不同於性傾向、平等或多元文化。情境與解析沒有再認同性別偏見。",
+          "checked_fields": [
+            "context",
+            "question",
+            "answer",
+            "distractors[0..2]",
+            "explanation"
+          ],
+          "pending_json_equal": true,
+          "question_snapshot": {
+            "id": "soc2-h8",
+            "chapter": "soc2",
+            "difficulty": 2,
+            "context": "小安的爸爸是護理師，媽媽是工程師，有同學笑說：「你們家爸媽的工作是不是顛倒了？」",
+            "question": "這位同學的說法反映了什麼？",
+            "answer": "性別刻板印象",
+            "distractors": [
+              "性別平等",
+              "性傾向",
+              "多元文化"
+            ],
+            "explanation": "把護理師當成女性的工作、工程師當成男性的工作，是把職業固定歸給某一性別的刻板印象。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "soc2-h9",
+          "status": "通過",
+          "blocking": false,
+          "content_status": "通過",
+          "issue": null,
+          "evidence_urls": [
+            "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=N0030014"
+          ],
+          "評語": "以女性婚後分心為由限制主管職招募，構成題述性別差別待遇。第7條特殊工作性質例外不適用此刻板印象理由；第10條亦支持解析提及薪資。無須把所有例外展開才可通過國中情境題。",
+          "checked_fields": [
+            "context",
+            "question",
+            "answer",
+            "distractors[0..2]",
+            "explanation"
+          ],
+          "pending_json_equal": true,
+          "question_snapshot": {
+            "id": "soc2-h9",
+            "chapter": "soc2",
+            "difficulty": 3,
+            "context": "某公司招募主管時規定「限男性」，理由是「女性結婚後會分心」。",
+            "question": "依我國法律，這樣的規定最可能違反什麼？",
+            "answer": "雇主不得因性別而在招募上差別待遇",
+            "distractors": [
+              "公司可以自由決定，沒有問題",
+              "罪刑法定主義",
+              "地方自治原則"
+            ],
+            "explanation": "性別平等工作法規定，雇主在招募、升遷、薪資等事項上，不得因性別而有差別待遇。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "soc3-h9",
+          "status": "通過",
+          "blocking": false,
+          "content_status": "通過",
+          "issue": null,
+          "evidence_urls": [
+            "https://dict.revised.moe.edu.tw/dictView.jsp?ID=114902&la=0&powerMode=0"
+          ],
+          "評語": "祖父母、父母與她和弟弟三代同住，在此國中情境下符合折衷家庭。父母實際同住排除隔代教養；也非核心或單親。題目用最接近，沒有宣稱所有三代家庭不論旁系組成都必然同型。",
+          "checked_fields": [
+            "context",
+            "question",
+            "answer",
+            "distractors[0..2]",
+            "explanation"
+          ],
+          "pending_json_equal": true,
+          "question_snapshot": {
+            "id": "soc3-h9",
+            "chapter": "soc3",
+            "difficulty": 2,
+            "context": "小婕家裡是爺爺奶奶、爸爸媽媽和她與弟弟，三代住在同一個屋簷下。",
+            "question": "小婕的家庭型態最接近？",
+            "answer": "折衷家庭",
+            "distractors": [
+              "核心家庭",
+              "單親家庭",
+              "隔代教養家庭"
+            ],
+            "explanation": "祖父母、父母與子女三代同住，屬於折衷家庭。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "soc3-h10",
+          "status": "低品質改善",
+          "blocking": false,
+          "content_status": "通過",
+          "issue": "第三誘答「教育功能以外的所有功能」是把多種功能綑綁的非平行選項，且「所有」易用絕對詞刪去，難以診斷是否理解家庭功能。",
+          "evidence_urls": [
+            "https://cdj.sfaa.gov.tw/Journal/Content?gno=9317"
+          ],
+          "評語": "情感功能的標示正解與解析可成立。不能因第三誘答包含情感字面範圍就判雙解，因該選項還宣稱同時發揮其他所有功能，情境不支持生育等全部功能。此為可選品質改善，非答案錯誤或必修失敗。可改為單一功能名（如教育功能），並把情境補為傾聽心情、互相安慰，以保持情感功能最突出。",
+          "checked_fields": [
+            "context",
+            "question",
+            "answer",
+            "distractors[0..2]",
+            "explanation"
+          ],
+          "pending_json_equal": true,
+          "question_snapshot": {
+            "id": "soc3-h10",
+            "chapter": "soc3",
+            "difficulty": 3,
+            "context": "阿凱的爸媽工作很忙，但每天晚餐一定全家一起吃，聊聊學校和工作發生的事。",
+            "question": "一起吃飯、聊天最能發揮家庭的哪一種功能？",
+            "answer": "情感功能",
+            "distractors": [
+              "經濟功能",
+              "生育功能",
+              "教育功能以外的所有功能"
+            ],
+            "explanation": "家人互相關心、彼此陪伴與支持，是家庭的情感功能。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "soc4-h8",
+          "status": "通過",
+          "blocking": false,
+          "content_status": "通過",
+          "issue": null,
+          "evidence_urls": [
+            "https://enews.tiec.tp.edu.tw/EduNote/Detail/490"
+          ],
+          "評語": "學生代表討論制服與午餐、反映並回報意見，正是參與校園事務。題目未宣稱學生會能獨立決定所有規則，也未授予其人事、國家立法或刑事職權。情境選出代表的措辭不影響所問功能。",
+          "checked_fields": [
+            "context",
+            "question",
+            "answer",
+            "distractors[0..2]",
+            "explanation"
+          ],
+          "pending_json_equal": true,
+          "question_snapshot": {
+            "id": "soc4-h8",
+            "chapter": "soc4",
+            "difficulty": 2,
+            "context": "學生會選出各班代表，和學校討論制服與午餐的問題，再把討論結果告訴全校同學。",
+            "question": "學生會在這件事上發揮的功能是？",
+            "answer": "代表學生參與校園事務",
+            "distractors": [
+              "決定學校的人事任用",
+              "制定國家的教育法律",
+              "處理學生的刑事案件"
+            ],
+            "explanation": "學生自治組織由學生選出代表，參與並反映學生對校園事務的意見。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "soc4-h9",
+          "status": "通過",
+          "blocking": false,
+          "content_status": "通過",
+          "issue": null,
+          "evidence_urls": [
+            "https://exlaw.klcg.gov.tw/LawContent.aspx?id=FL019339"
+          ],
+          "評語": "居民討論後透過里長與公所反映公共停車問題，是社區參與例子。題幹沒有說停車格由里長自行核定，亦未宣稱里長有立法權；故沒有機關權責錯誤可據以判失敗。",
+          "checked_fields": [
+            "context",
+            "question",
+            "answer",
+            "distractors[0..2]",
+            "explanation"
+          ],
+          "pending_json_equal": true,
+          "question_snapshot": {
+            "id": "soc4-h9",
+            "chapter": "soc4",
+            "difficulty": 3,
+            "context": "某社區巷口常有機車亂停，居民先在里民大會討論，再由里長向區公所反映，最後畫設了機車停車格。",
+            "question": "這個過程最能說明什麼？",
+            "answer": "居民參與能改善社區的公共問題",
+            "distractors": [
+              "社區問題只能交給警察處理",
+              "里長可以自己制定法律",
+              "社區事務和居民沒有關係"
+            ],
+            "explanation": "居民透過討論與基層管道反映，讓社區公共問題獲得改善，是社區參與的例子。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "soc5-h8",
+          "status": "通過",
+          "blocking": false,
+          "content_status": "通過",
+          "issue": null,
+          "evidence_urls": [
+            "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050131"
+          ],
+          "評語": "自願於偏鄉陪讀、無償付出時間且對外服務，符合志願服務概念。題目不是詢問法定志工證、保險或備案資格，因此未交代第2條計畫程序不構成錯誤。解析不求報酬並未主張志工不得補助交通餐費。",
+          "checked_fields": [
+            "context",
+            "question",
+            "answer",
+            "distractors[0..2]",
+            "explanation"
+          ],
+          "pending_json_equal": true,
+          "question_snapshot": {
+            "id": "soc5-h8",
+            "chapter": "soc5",
+            "difficulty": 2,
+            "context": "小芳利用暑假到偏鄉小學陪孩子讀書，沒有領任何報酬，卻覺得自己學到很多。",
+            "question": "小芳參與的是？",
+            "answer": "志願服務",
+            "distractors": [
+              "打工",
+              "義務教育",
+              "政黨活動"
+            ],
+            "explanation": "自願、不求報酬地付出時間服務他人，就是志願服務。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "soc5-h9",
+          "status": "通過",
+          "blocking": false,
+          "content_status": "通過",
+          "issue": null,
+          "evidence_urls": [
+            "https://www.mol.gov.tw/1607/1632/1640/43677/"
+          ],
+          "評語": "有持續營業收入、支付薪資與弱勢就業使命，四選項中社會企業最接近。不是只憑雇身障者就斷言任何企業皆是社企，也未把獲利或完全解決問題寫成保證結果。無須誤解為社會企業是一種獨立法定登記類型。",
+          "checked_fields": [
+            "context",
+            "question",
+            "answer",
+            "distractors[0..2]",
+            "explanation"
+          ],
+          "pending_json_equal": true,
+          "question_snapshot": {
+            "id": "soc5-h9",
+            "chapter": "soc5",
+            "difficulty": 3,
+            "context": "一家咖啡店專門雇用身心障礙者，用營業收入支付員工薪水、維持經營，希望讓更多身障者有工作機會。",
+            "question": "這家咖啡店最接近哪一種組織？",
+            "answer": "社會企業",
+            "distractors": [
+              "政府機關",
+              "政黨",
+              "宗教團體"
+            ],
+            "explanation": "以商業模式經營、同時追求社會使命的組織，稱為社會企業。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "soc6-h8",
+          "status": "通過",
+          "blocking": false,
+          "content_status": "通過",
+          "issue": null,
+          "evidence_urls": [
+            "https://dict.revised.moe.edu.tw/dictView.jsp?ID=37271&la=0&powerMode=0"
+          ],
+          "評語": "代代相傳的圍爐與紅包習慣可歸風俗習慣；情境未含特定宗教教義或祭祀義務，故其餘三類不是同樣合理答案。",
+          "checked_fields": [
+            "context",
+            "question",
+            "answer",
+            "distractors[0..2]",
+            "explanation"
+          ],
+          "pending_json_equal": true,
+          "question_snapshot": {
+            "id": "soc6-h8",
+            "chapter": "soc6",
+            "difficulty": 2,
+            "context": "小凱家裡過年一定會圍爐吃年夜飯、發紅包，這些習慣代代相傳。",
+            "question": "這屬於哪一種社會規範？",
+            "answer": "風俗習慣",
+            "distractors": [
+              "法律",
+              "宗教規範",
+              "校規"
+            ],
+            "explanation": "長期流傳、大家習慣遵守的生活方式，是風俗習慣。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "soc6-h9",
+          "status": "通過",
+          "blocking": false,
+          "content_status": "通過",
+          "issue": null,
+          "evidence_urls": [
+            "https://pedia.cloud.edu.tw/Entry/Detail/?search=%E8%A9%95%E5%AE%9A&title=%E6%96%87%E5%8C%96%E7%9B%B8%E5%B0%8D%E8%AB%96"
+          ],
+          "評語": "以文化背景理解飲食方式、避免以本身標準認為落後，符合文化相對論。題目將偏見作為應反思的角色發言，解析沒有認同偏見，也未延伸為對侵害人權行為一概不可批判。",
+          "checked_fields": [
+            "context",
+            "question",
+            "answer",
+            "distractors[0..2]",
+            "explanation"
+          ],
+          "pending_json_equal": true,
+          "question_snapshot": {
+            "id": "soc6-h9",
+            "chapter": "soc6",
+            "difficulty": 3,
+            "context": "阿德覺得某個國家的人用手吃飯「很落後」，同學提醒他那是當地的飲食文化，有它的背景。",
+            "question": "同學是在提醒阿德應該抱持哪一種態度？",
+            "answer": "文化相對論",
+            "distractors": [
+              "我族中心主義",
+              "文化優越感",
+              "流行文化"
+            ],
+            "explanation": "以當地的文化脈絡理解不同文化，而不是用自己的標準評斷，是文化相對論的態度。",
+            "source": "hand",
+            "figure": null
+          }
+        }
+      ]
+    },
+    "law": [
+      {
+        "id": "law1-h9",
+        "status": "通過",
+        "issue": null,
+        "URLs": [
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000001&flno=1",
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000001&flno=11",
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000001&flno=129"
+        ],
+        "評語": "情境同時取消定期選舉並關閉批評政府的報社，指向壓制政治參與與言論自由的專制特徵；四選項中專制政治為唯一適當答案。不是單純延期選舉或一般新聞管理的灰區。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law1-h9",
+          "chapter": "law1",
+          "difficulty": 2,
+          "context": "某國領導人宣布取消下一次總統選舉，並下令關閉批評政府的報社。",
+          "question": "這些做法最符合哪一種政治體制的特徵？",
+          "answer": "專制政治",
+          "distractors": [
+            "民主政治",
+            "地方自治",
+            "權力分立"
+          ],
+          "explanation": "取消定期選舉、壓制新聞自由，是專制政治的特徵。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law1-h10",
+        "status": "通過（可選改善）",
+        "issue": "比例原則的必要性應以同樣能達成目的為比較前提；原解說未完整列出均衡性，但沒有相反陳述。",
+        "URLs": [
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0030055&flno=7",
+          "https://terms.judicial.gov.tw/TermContent.aspx?SYS=V&TRMTERM=%E6%AF%94%E4%BE%8B%E5%8E%9F%E5%89%87"
+        ],
+        "評語": "問的是較小限制手段所反映的原則，比例原則仍唯一正解；不能因未完整背誦適當、必要、均衡三層而判錯。此例不等於證明口罩在每種疫情下都可替代禁足。",
+        "suggestion": "若要補強，情境加「在同樣能達成防疫目的的前提下」，解說補「且損害不得與利益顯失均衡」。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law1-h10",
+          "chapter": "law1",
+          "difficulty": 3,
+          "context": "政府為了防疫，要求民眾在特定場所戴口罩，而不是要求全民一律不得出門。",
+          "question": "政府選擇限制較小的手段，最符合哪一項原則？",
+          "answer": "比例原則",
+          "distractors": [
+            "罪刑法定主義",
+            "多數決",
+            "法律優位原則"
+          ],
+          "explanation": "限制人民權利時，手段要有助於達成目的，並選擇侵害最小的方式，這是比例原則。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law2-h10",
+        "status": "通過",
+        "issue": null,
+        "URLs": [
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000002&flno=5"
+        ],
+        "評語": "憲法增修條文第5條第1項明定總統提名、立法院同意任命；不是監察院歷史上的同意權。題幹、正解與解說均相符。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law2-h10",
+          "chapter": "law2",
+          "difficulty": 2,
+          "context": "新聞報導：總統提名了新的大法官人選，但被提名人還不能直接上任。",
+          "question": "大法官人選還需要經過哪一個機關同意？",
+          "answer": "立法院",
+          "distractors": [
+            "監察院",
+            "行政院",
+            "考試院"
+          ],
+          "explanation": "司法院大法官由總統提名，經立法院同意後任命。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law2-h11",
+        "status": "通過",
+        "issue": null,
+        "URLs": [
+          "https://www.cy.gov.tw/cp.aspx?Create=1&n=95",
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000001&flno=105"
+        ],
+        "評語": "監察院官方說明其審計職權，並載審計部辦理中央政府與所屬機關財務審計、審核決算。以監察院作制度歸屬的國中表述可接受，未把審計誤寫成審判。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law2-h11",
+          "chapter": "law2",
+          "difficulty": 3,
+          "context": "監察院審核政府各機關的決算時，發現某機關有不當的支出。",
+          "question": "監察院行使的是哪一種職權？",
+          "answer": "審計權",
+          "distractors": [
+            "立法權",
+            "考試權",
+            "司法審判權"
+          ],
+          "explanation": "監察院設有審計部，負責審核政府的決算，屬於審計權。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law3-h10",
+        "status": "通過",
+        "issue": null,
+        "URLs": [
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000001&flno=129",
+          "https://web.cec.gov.tw/central/article/41279"
+        ],
+        "評語": "偷看圈票內容破壞投票秘密，對應無記名／秘密投票。解說是在說明保密保障，不應機械解讀成投票人事後絕對不得自願表達支持誰。其他三個原則不符。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law3-h10",
+          "chapter": "law3",
+          "difficulty": 2,
+          "context": "選舉當天，小明看到有人在圈票處旁邊偷看別人投票，馬上向工作人員反映。",
+          "question": "偷看別人投票，破壞了哪一項選舉原則？",
+          "answer": "秘密投票",
+          "distractors": [
+            "普通選舉",
+            "平等選舉",
+            "直接選舉"
+          ],
+          "explanation": "選民投票的內容不能被他人知道，這是秘密投票原則。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law3-h11",
+        "status": "通過",
+        "issue": null,
+        "URLs": [
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000001&flno=133",
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0020010&flno=75"
+        ],
+        "評語": "原選舉區選民以連署促使市議員任期中去職，是罷免權。題目未主張免除就職滿一年、提議連署或投票門檻；識別權利無須全列程序。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law3-h11",
+          "chapter": "law3",
+          "difficulty": 3,
+          "context": "某位市議員在任期中多次被發現收受不當利益，選民發起連署，希望在任期屆滿前讓他下台。",
+          "question": "選民行使的是哪一種權利？",
+          "answer": "罷免權",
+          "distractors": [
+            "創制權",
+            "複決權",
+            "請願權"
+          ],
+          "explanation": "人民在任期中解除民選公職人員職務的權利，是罷免權。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law4-h8",
+        "status": "通過",
+        "issue": null,
+        "URLs": [
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0040003&flno=25"
+        ],
+        "評語": "地方制度法第25條正是地方立法機關通過、行政機關公布稱自治條例；行政機關自行訂定並發布或下達則是自治規則。縣議會／縣政府情境明確，四選項唯一。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law4-h8",
+          "chapter": "law4",
+          "difficulty": 2,
+          "context": "某縣議會通過一項關於公園管理的規定，並由縣政府公布實施。",
+          "question": "這項規定屬於哪一種地方法規？",
+          "answer": "自治條例",
+          "distractors": [
+            "中央法律",
+            "憲法增修條文",
+            "國際條約"
+          ],
+          "explanation": "經地方議會通過、由地方政府公布的地方法規，稱為自治條例。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law4-h9",
+        "status": "通過（可選改善）",
+        "issue": "解說若把統籌分配稅款視為自有財源之外的款項，或等同指定用途補助，會混淆財政統計定義；原文未明確下這種定義，故不列正解錯。",
+        "URLs": [
+          "https://web02.mof.gov.tw/njswww/webMain.aspx?k=i5100",
+          "https://www.nta.gov.tw/singlehtml/238?cntId=4d08d6a117544ca38ff53882ff3e5398",
+          "https://www.ly.gov.tw/Pages/List.aspx?nodeid=56699"
+        ],
+        "評語": "題幹明寫經費大多依賴中央補助，財政自主性不足是唯一合理答案。財政部定義自有財源為歲入減補助及協助收入，自籌財源才是再扣中央統籌分配稅款；統籌款本身是地方稅課收入。宜精準化解說，但題意不因此翻轉。",
+        "suggestion": "改為「地方自籌財源不足時，常需統籌分配稅款與補助補充；若過度依賴有指定用途或須核定的補助，可能減少自主安排施政的空間」。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law4-h9",
+          "chapter": "law4",
+          "difficulty": 3,
+          "context": "某縣的稅收不足，蓋學校、修道路的經費大多要靠中央補助。",
+          "question": "這種情形顯示地方自治面臨什麼問題？",
+          "answer": "地方財政自主性不足",
+          "distractors": [
+            "地方議會權力太大",
+            "中央政府沒有收入",
+            "地方居民不需要繳稅"
+          ],
+          "explanation": "地方自有財源不足時，須仰賴中央的統籌分配稅款與補助，會影響地方施政的自主性。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law5-h8",
+        "status": "通過",
+        "issue": null,
+        "URLs": [
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0030133&flno=2",
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0030133&flno=3"
+        ],
+        "評語": "中央法規標準法第2條法律名稱含條例，第3條命令名稱含辦法、規則、細則。題幹已限定立法院三讀／總統公布，並未把自治條例也說成中央法律，正解唯一。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law5-h8",
+          "chapter": "law5",
+          "difficulty": 2,
+          "context": "立法院三讀通過一項新的法律，送請總統公布。",
+          "question": "下列哪一個名稱，最可能是這項法律的名稱？",
+          "answer": "○○條例",
+          "distractors": [
+            "○○辦法",
+            "○○規則",
+            "○○細則"
+          ],
+          "explanation": "法律的名稱可以是法、律、條例或通則；辦法、規則、細則屬於命令的名稱。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law5-h9",
+        "status": "通過",
+        "issue": null,
+        "URLs": [
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0030133&flno=5",
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0030133&flno=6",
+          "https://terms.judicial.gov.tw/TermContent.aspx?SYS=A&TRMTERM=%E6%B3%95%E5%BE%8B%E4%BF%9D%E7%95%99%E5%8E%9F%E5%89%87"
+        ],
+        "評語": "情境明指限制集會的重要事項卻完全欠缺法律依據，直接違反法律保留；解說承認法律明確授權之命令，未誤稱一切權利限制均須法律親自鉅細靡遺規定。沒有手段與目的的資料可另判比例違反。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law5-h9",
+          "chapter": "law5",
+          "difficulty": 3,
+          "context": "某機關想限制人民在特定區域集會，只發布了一項行政命令，卻沒有法律依據。",
+          "question": "這樣的做法違反哪一項原則？",
+          "answer": "法律保留原則",
+          "distractors": [
+            "比例原則",
+            "多數決原則",
+            "無罪推定原則"
+          ],
+          "explanation": "限制人民權利的重要事項，必須以法律或法律明確授權的命令規定，這是法律保留原則。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law6-h9",
+        "status": "通過",
+        "issue": null,
+        "URLs": [
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0000001&flno=348",
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0000001&flno=231"
+        ],
+        "評語": "私人買賣的出賣人有交付義務，遲延損害賠償屬民法。題目問適用哪類法律請求履行或賠償，不是保證只要一個月就自動成立所有損害賠償要件；也沒有足以改判詐欺的起初不法意圖。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law6-h9",
+          "chapter": "law6",
+          "difficulty": 2,
+          "context": "小英在網路上賣二手書，買家已經匯款，她卻說最近太忙忘了寄，拖了一個月還沒寄出。",
+          "question": "買家最適合依哪一種法律請求她出貨或賠償？",
+          "answer": "民法",
+          "distractors": [
+            "刑法",
+            "憲法",
+            "行政法"
+          ],
+          "explanation": "買賣是私人之間的契約，一方沒有依約交付，屬於民事糾紛，可以依民法請求履行或賠償。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law6-h10",
+        "status": "通過",
+        "issue": null,
+        "URLs": [
+          "https://www.judicial.gov.tw/tw/cp-1654-4869-5fe7d-1.html",
+          "https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=I0020003"
+        ],
+        "評語": "情境明列區公所調解委員會、調解委員居中協調，程序就是調解；鄉鎮市調解條例第35條準用於市之區。雖調解可產生和解性協議，不因此使程序名稱在本題四選項中不唯一。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law6-h10",
+          "chapter": "law6",
+          "difficulty": 3,
+          "context": "小美和樓上鄰居因為漏水吵了很久，後來雙方一起到區公所的調解委員會，在調解委員協助下達成協議。",
+          "question": "這種解決紛爭的方式是？",
+          "answer": "調解",
+          "distractors": [
+            "和解",
+            "訴訟",
+            "訴願"
+          ],
+          "explanation": "由第三人（調解委員）居中協調、解決紛爭，稱為調解。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law7-h9",
+        "status": "通過",
+        "issue": null,
+        "URLs": [
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0010001&flno=27",
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0010001&flno=29"
+        ],
+        "評語": "刑事被告為防禦而選任的律師是辯護人；刑事訴訟法第27、29條直接支持。未把檢察官或法院書記官角色混同。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law7-h9",
+          "chapter": "law7",
+          "difficulty": 2,
+          "context": "法院審理刑事案件時，被告請了一位律師在法庭上為他說明、辯論。",
+          "question": "這位律師的角色是？",
+          "answer": "辯護人",
+          "distractors": [
+            "檢察官",
+            "法官",
+            "書記官"
+          ],
+          "explanation": "在刑事訴訟中協助被告、為被告辯護的律師，稱為辯護人。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law7-h10",
+        "status": "通過（可選改善）",
+        "issue": "合法撤回的時點限第一審辯論終結前。原題沒有明寫時點，但也沒有聲稱任何時點或二審後皆可。",
+        "URLs": [
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0000001&flno=287",
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0010001&flno=238",
+          "https://terms.judicial.gov.tw/TermContent.aspx?SYS=M&TRMTERM=%E6%92%A4%E5%9B%9E%E5%91%8A%E8%A8%B4"
+        ],
+        "評語": "題目已限定普通傷害、已撤回告訴，且使用「通常／原則上」。依有效撤回的正常解讀，標示答案正確，另外三項均錯。普通傷害是否成立也已用「如果」限定，不必另猜過失傷害。不能拿題目未述的第一審辯論終結後撤回情境，直接列作已確證正解錯。",
+        "suggestion": "建議情境改「在第一審辯論終結前，依法撤回告訴」；解說可補偵查中不起訴、審判中不受理。這是補充重要邊界，不要求更換正解。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law7-h10",
+          "chapter": "law7",
+          "difficulty": 3,
+          "context": "阿明和人起口角，推了對方一把造成輕微擦傷。對方後來和阿明和解，撤回了告訴。",
+          "question": "如果這是普通傷害罪，撤回告訴後通常會怎樣？",
+          "answer": "國家原則上不再追究",
+          "distractors": [
+            "檢察官仍然一定要起訴",
+            "改由民事法院判刑",
+            "阿明一定要坐牢"
+          ],
+          "explanation": "普通傷害罪是告訴乃論罪，被害人撤回告訴後，國家原則上不再追究。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law8-h8",
+        "status": "通過（可選改善）",
+        "issue": "「這張罰單屬於哪一種處罰」把文書與制裁類型略作口語合併，宜直接問罰鍰類型。",
+        "URLs": [
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0030210&flno=1",
+          "https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=K0040012",
+          "https://www.motc.gov.tw/ch/app/data/view?id=14&module=news&serno=77ac4361-6202-4cbf-9130-8b883ee9cf79"
+        ],
+        "評語": "違規停車罰鍰屬行政罰，非刑罰或民事賠償，正解唯一。警察通常製發舉發通知單，與裁決機關裁決書不是同一文書；但道交條例第9條也允許接獲通知後不經裁決繳納結案，不能一概宣稱通知單與行政罰完全無關，或用程序區別否定本題罰鍰分類。",
+        "suggestion": "問句改「違規停車所受的罰鍰，屬於哪一種處罰？」；若要考救濟，再另清楚區分舉發通知／裁決。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law8-h8",
+          "chapter": "law8",
+          "difficulty": 2,
+          "context": "交通警察開了一張罰單給違規停車的小陳，要他繳納罰鍰。",
+          "question": "這張罰單屬於哪一種處罰？",
+          "answer": "行政罰",
+          "distractors": [
+            "刑罰",
+            "民事賠償",
+            "學校懲處"
+          ],
+          "explanation": "罰鍰是對違反行政法上義務的處罰，屬於行政罰。",
+          "source": "hand",
+          "figure": null
+        }
+      },
+      {
+        "id": "law8-h9",
+        "status": "通過（可選改善）",
+        "issue": "稅捐核定的救濟通常須先復查；題目只敘述已提訴願且遭駁回，未交代前置復查。",
+        "URLs": [
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340001&flno=35",
+          "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340001&flno=38",
+          "https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-q-and-a/local/administrative-remedy/rJrGrzq",
+          "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030154"
+        ],
+        "評語": "若已合法完成復查與訴願，向行政法院提行政訴訟是正確下一步。原題未寫「未經復查／直接提訴願」，不能僅由省略前段就斷言程序違法或正解錯；但補稅是有特殊前置的案例，補一語可避免學生誤學成補稅直接訴願。",
+        "suggestion": "情境改「小李不服補稅處分，依法申請復查仍不服，提起訴願後又被駁回……」；解說補「稅捐核定通常依復查→訴願→行政訴訟救濟」。",
+        "mustFix": false,
+        "checkedAt": "2026-10-28",
+        "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+        "sourceMatchedPending": true,
+        "structure": "成功",
+        "formalQuestion": {
+          "id": "law8-h9",
+          "chapter": "law8",
+          "difficulty": 3,
+          "context": "小李不服國稅局要他補稅的處分，提起訴願後被駁回，他仍然認為處分違法。",
+          "question": "小李接下來可以採取的救濟途徑是？",
+          "answer": "向行政法院提起行政訴訟",
+          "distractors": [
+            "向立法院提起訴願",
+            "請監察院直接撤銷處分",
+            "向調解委員會申請調解"
+          ],
+          "explanation": "不服訴願決定時，可以向行政法院提起行政訴訟。",
+          "source": "hand",
+          "figure": null
+        }
+      }
+    ],
+    "eco": {
+      "sourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+      "reviewDate": "2026-10-28",
+      "scope": "12新增經濟與全球島情境題；內容審查，不含UI",
+      "summary": {
+        "reviewed": 12,
+        "passed": 12,
+        "failed": 0,
+        "optionalImprovements": 2
+      },
+      "questions": [
+        {
+          "id": "eco1-h8",
+          "status": "通過",
+          "issue": null,
+          "severity": null,
+          "blocking": false,
+          "comment": "情境明確是預算無法同時滿足兩種用途；稀少資源迫使選擇，資源有限是唯一適合的答案。未把稀少性誤解為物品完全不存在。",
+          "advisory": null,
+          "evidence": [
+            {
+              "title": "OpenStax 經濟學3e：預算限制、機會成本與沉沒成本",
+              "url": "https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint"
+            }
+          ],
+          "question": {
+            "id": "eco1-h8",
+            "chapter": "eco1",
+            "difficulty": 2,
+            "context": "小凱有一筆壓歲錢，可以買新球鞋或一套參考書，但錢只夠買其中一樣。",
+            "question": "小凱必須做選擇，根本的原因是？",
+            "answer": "資源有限",
+            "distractors": [
+              "慾望有限",
+              "商品都是免費的",
+              "價格並不重要"
+            ],
+            "explanation": "資源有限而慾望無窮，所以人們必須在不同選項之間做選擇。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "eco1-h9",
+          "status": "通過",
+          "issue": null,
+          "severity": null,
+          "blocking": false,
+          "comment": "不能退費的已繳學費屬過去不可回收支出，與未來選擇的機會成本分開，答案成立。解說使用「最高者，例如1000元」，沒有斷言打工必然比休息更有價值；不需補寫休息的主觀估價才能選本題正解。",
+          "advisory": null,
+          "evidence": [
+            {
+              "title": "OpenStax 經濟學3e：預算限制、機會成本與沉沒成本",
+              "url": "https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint"
+            }
+          ],
+          "question": {
+            "id": "eco1-h9",
+            "chapter": "eco1",
+            "difficulty": 3,
+            "context": "阿華週末可以去打工賺 1000 元、去上已經繳費且不能退費的補習課，或在家休息。他最後選擇去補習。",
+            "question": "分析阿華的選擇，下列敘述何者正確？",
+            "answer": "已繳的學費是沉沒成本，不應影響決定",
+            "distractors": [
+              "已繳的學費就是補習的機會成本",
+              "打工的 1000 元和這個選擇無關",
+              "在家休息完全沒有價值"
+            ],
+            "explanation": "已經付出且無法收回的學費是沉沒成本；去補習的機會成本，是放棄的選項中價值最高者，例如打工的 1000 元。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "eco2-h9",
+          "status": "通過",
+          "issue": null,
+          "severity": null,
+          "blocking": false,
+          "comment": "商品受歡迎、缺貨指向需求增加；在其餘相關條件不變下，價格上漲是標準均衡推論。題目未把商品自身降價誤稱為需求增加。",
+          "advisory": null,
+          "evidence": [
+            {
+              "title": "OpenStax 經濟學3e：需求供給與市場均衡",
+              "url": "https://openstax.org/books/principles-economics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services"
+            },
+            {
+              "title": "OpenStax 經濟學3e：需求與供給的移動",
+              "url": "https://openstax.org/books/principles-economics-3e/pages/3-2-shifts-in-demand-and-supply-for-goods-and-services"
+            }
+          ],
+          "question": {
+            "id": "eco2-h9",
+            "chapter": "eco2",
+            "difficulty": 2,
+            "context": "某款手機大受歡迎，店家大排長龍、到處缺貨。",
+            "question": "在其他條件不變下，這款手機的價格最可能？",
+            "answer": "上漲",
+            "distractors": [
+              "下跌",
+              "維持不變",
+              "變成免費"
+            ],
+            "explanation": "需求大增造成供不應求，價格傾向上漲。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "eco2-h10",
+          "status": "通過",
+          "issue": null,
+          "severity": null,
+          "blocking": false,
+          "comment": "手機與手機殼為常搭配使用的互補品；手機價格降低可增加手機購買量並帶動手機殼需求，答案唯一。",
+          "advisory": "可選改善：解說「需要一起使用」可改「常搭配使用，能提升使用效果」，避免學生誤認所有互補品都必須彼此同時使用。現有手機／殼例子與四選項仍有清楚唯一答案，不列為事實或正解失敗。",
+          "evidence": [
+            {
+              "title": "OpenStax 經濟學3e：需求與供給的移動",
+              "url": "https://openstax.org/books/principles-economics-3e/pages/3-2-shifts-in-demand-and-supply-for-goods-and-services"
+            }
+          ],
+          "question": {
+            "id": "eco2-h10",
+            "chapter": "eco2",
+            "difficulty": 3,
+            "context": "手機的價格大幅下降後，手機殼的銷售量也跟著增加。",
+            "question": "手機和手機殼是什麼關係？",
+            "answer": "互補品",
+            "distractors": [
+              "替代品",
+              "公共財",
+              "自由財"
+            ],
+            "explanation": "需要一起使用的商品是互補品；手機變便宜、買的人變多，手機殼的需求也跟著增加。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "eco3-h9",
+          "status": "通過",
+          "issue": null,
+          "severity": null,
+          "blocking": false,
+          "comment": "題設為存款到期取回超過本金的金額，利息為唯一對應名稱；本金、稅金與股利不符合一般定存情境。",
+          "advisory": null,
+          "evidence": [
+            {
+              "title": "合作金庫：新臺幣存款計息方式",
+              "url": "https://www.tcb-bank.com.tw/personal-banking/deposit-exchange/deposit-rate/deposit-loans-rate/twd-deposit-rate/interest-calculate"
+            }
+          ],
+          "question": {
+            "id": "eco3-h9",
+            "chapter": "eco3",
+            "difficulty": 2,
+            "context": "小美把一萬元存進銀行的定期存款，一年後拿回的錢比一萬元多一些。",
+            "question": "多出來的錢稱為？",
+            "answer": "利息",
+            "distractors": [
+              "本金",
+              "稅金",
+              "股利"
+            ],
+            "explanation": "把錢借給銀行使用所得到的報酬，稱為利息。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "eco3-h10",
+          "status": "通過",
+          "issue": null,
+          "severity": null,
+          "blocking": false,
+          "comment": "題目要求辨識報酬與風險取捨，情境及解說均保留「可能」「一般來說」「相對」等限制，未保證高風險一定高報酬。",
+          "advisory": null,
+          "evidence": [
+            {
+              "title": "臺灣證券交易所：交易風險提示",
+              "url": "https://investoredu.twse.com.tw/Pages/TWSE_InvestmentRisk8_2.aspx"
+            }
+          ],
+          "question": {
+            "id": "eco3-h10",
+            "chapter": "eco3",
+            "difficulty": 3,
+            "context": "小明想投資：股票可能賺很多也可能虧損，定期存款報酬較低但相對穩定。",
+            "question": "這說明投資理財時要考慮什麼？",
+            "answer": "報酬與風險之間的取捨",
+            "distractors": [
+              "所有投資都保證獲利",
+              "風險越高一定賺越多",
+              "股票一定比存款好"
+            ],
+            "explanation": "一般來說，可能報酬越高的投資風險也越高，理財時要依自己的需要在報酬與風險之間取捨。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "eco4-h9",
+          "status": "通過",
+          "issue": null,
+          "severity": null,
+          "blocking": false,
+          "comment": "勞基法訂最低勞動條件，第24條規範加班費，第30、32條規範工時；以每日14小時且不給加班費的餐廳雇傭情境，主要法律選勞基法合理。民法一般契約規定也可能補充適用，題幹「主要」已避免把它等同最直接的專門保護法。",
+          "advisory": null,
+          "evidence": [
+            {
+              "title": "全國法規資料庫：勞動基準法第1、24、30、32、44至46條",
+              "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=N0030001"
+            }
+          ],
+          "question": {
+            "id": "eco4-h9",
+            "chapter": "eco4",
+            "difficulty": 2,
+            "context": "某餐廳要求員工每天工作十四小時，卻不給加班費，員工向勞工局檢舉。",
+            "question": "員工的權益主要受到哪一部法律保障？",
+            "answer": "勞動基準法",
+            "distractors": [
+              "民法",
+              "刑法",
+              "公司法"
+            ],
+            "explanation": "勞動基準法規定工時、工資、加班費等最低勞動條件。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "eco4-h10",
+          "status": "通過",
+          "issue": null,
+          "severity": null,
+          "blocking": false,
+          "comment": "17歲屬16歲以上未18歲受僱者，勞基法44條明禁危險性／有害性工作，45條的15歲以下限制亦不會排除17歲一般受僱；法定代理人或本人同意不能免除禁止。第46條另有同意書與年齡文件要求，但本題不是完整列舉所有僱用要件，未列不致使正解失效。",
+          "advisory": null,
+          "evidence": [
+            {
+              "title": "全國法規資料庫：勞動基準法第1、24、30、32、44至46條",
+              "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=N0030001"
+            },
+            {
+              "title": "勞動部：保護兒少，不得從事危害作業",
+              "url": "https://www.mol.gov.tw/1607/1632/1640/61514/post"
+            }
+          ],
+          "question": {
+            "id": "eco4-h10",
+            "chapter": "eco4",
+            "difficulty": 3,
+            "context": "小傑十七歲，想在暑假到商店打工。",
+            "question": "依勞動基準法，下列敘述何者正確？",
+            "answer": "未滿十八歲者不得從事危險性或有害性的工作",
+            "distractors": [
+              "未滿十八歲的人完全不能工作",
+              "只要本人同意，就可以從事危險性的工作",
+              "打工不受勞動基準法保障"
+            ],
+            "explanation": "未滿十八歲的人可以受僱，但不得從事危險性或有害性的工作。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "eco5-h9",
+          "status": "通過",
+          "issue": null,
+          "severity": null,
+          "blocking": false,
+          "comment": "偏鄉道路與橋梁建設直接屬政府提供公共建設；解說只說市場不容易提供的部分，沒有把每一條道路都斷言為純公共財。",
+          "advisory": null,
+          "evidence": [
+            {
+              "title": "美國政府總統經濟報告2016第6章：公共基礎設施的經濟原則",
+              "url": "https://www.gpo.gov/fdsys/pkg/ERP-2016/pdf/ERP-2016-chapter6.pdf"
+            }
+          ],
+          "question": {
+            "id": "eco5-h9",
+            "chapter": "eco5",
+            "difficulty": 2,
+            "context": "政府在偏鄉興建道路與橋梁，讓居民交通更方便，也帶動了觀光。",
+            "question": "這主要表現政府的哪一種經濟角色？",
+            "answer": "提供公共建設",
+            "distractors": [
+              "制定刑法",
+              "審判民事案件",
+              "發行股票"
+            ],
+            "explanation": "政府提供道路、橋梁等公共建設，補足市場不容易提供的部分。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "eco5-h10",
+          "status": "通過",
+          "issue": null,
+          "severity": null,
+          "blocking": false,
+          "comment": "題目辨認所得較高適用較高稅率的制度，累進稅率正確；國稅局級距及累進差額表也證明分級課稅，而非全額套用最高級距。現題沒有要求稅額計算，不能只因未解釋邊際稅率就判錯。",
+          "advisory": "可選改善：若要更精準，可將情境改為「所得淨額跨越較高級距時，超過部分適用較高稅率」；避免誤以為每增加1元都升級，或全部所得改用最高稅率。此為教學精確化，不列阻擋缺陷。",
+          "evidence": [
+            {
+              "title": "財政部稅務入口網：累進稅率速算公式",
+              "url": "https://www.etax.nat.gov.tw/etwmain/alien-tax-service/alien-individual-income-tax/Zv7zzqa"
+            }
+          ],
+          "question": {
+            "id": "eco5-h10",
+            "chapter": "eco5",
+            "difficulty": 3,
+            "context": "某人一年的所得越高，適用的所得稅稅率也越高。",
+            "question": "這種課稅方式稱為？",
+            "answer": "累進稅率",
+            "distractors": [
+              "比例稅率",
+              "定額稅",
+              "關稅"
+            ],
+            "explanation": "所得越高、適用稅率越高的課稅方式是累進稅率，有助於縮小貧富差距。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "eco6-h10",
+          "status": "通過",
+          "issue": null,
+          "severity": null,
+          "blocking": false,
+          "comment": "跨國零組件、生產組裝與全球銷售是全球價值鏈／經濟全球化的典型情境，與都市化、保護主義、去殖民化無同題競爭正解。",
+          "advisory": null,
+          "evidence": [
+            {
+              "title": "世界銀行：2020世界發展報告，全球價值鏈",
+              "url": "https://documents1.worldbank.org/curated/en/310211570690546749/pdf/World-Development-Report-2020-Trading-for-Development-in-the-Age-of-Global-Value-Chains.pdf"
+            }
+          ],
+          "question": {
+            "id": "eco6-h10",
+            "chapter": "eco6",
+            "difficulty": 2,
+            "context": "小琳的衣服是越南製造，手機的零件來自好幾個國家，在其他地方組裝後賣到全世界。",
+            "question": "這個現象最能說明什麼？",
+            "answer": "經濟全球化",
+            "distractors": [
+              "都市化",
+              "保護主義",
+              "去殖民化"
+            ],
+            "explanation": "商品在世界各地分工生產與銷售、各國經濟互相依賴，是經濟全球化。",
+            "source": "hand",
+            "figure": null
+          }
+        },
+        {
+          "id": "eco6-h11",
+          "status": "通過",
+          "issue": null,
+          "severity": null,
+          "blocking": false,
+          "comment": "題設明確以高關稅保護本國稻農，辨認保護主義正確；消費者可能承擔較高價格的解說保留條件，沒有宣稱保護必定帶來淨福利增加。",
+          "advisory": null,
+          "evidence": [
+            {
+              "title": "WTO：Tariffs",
+              "url": "https://www.wto.org/english/tratop_e/tariffs_e/tariffs_e.htm"
+            }
+          ],
+          "question": {
+            "id": "eco6-h11",
+            "chapter": "eco6",
+            "difficulty": 3,
+            "context": "某國為了保護國內的稻農，對進口稻米課徵很高的關稅，國內米價因此比較高。",
+            "question": "這種政策屬於？",
+            "answer": "保護主義",
+            "distractors": [
+              "自由貿易",
+              "比較利益",
+              "區域經濟整合"
+            ],
+            "explanation": "以關稅等措施保護國內產業的做法是保護主義，但消費者可能要付出較高的價格。",
+            "source": "hand",
+            "figure": null
+          }
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Only the 40 newly added civics questions received full content re-review.",
+    "UI success confirms keyed-answer mechanics, not content correctness by itself.",
+    "Some SOC reference pages were verified by official indexed excerpts rather than full text; individual source notes preserve that limit."
+  ]
+}

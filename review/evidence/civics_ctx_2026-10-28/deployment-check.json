@@ -1,0 +1,16 @@
+{
+  "checkedAtTaipei": "2026-10-28 10:22:23",
+  "questionSourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+  "servedRepositoryHeadAtCheck": "8f0fbdc34ba2644034efbd9c058c06134a606509",
+  "httpStatus": 200,
+  "normalizedFetchedHtmlMatchesServedHead": true,
+  "normalizedHtmlSHA256": "b12155f324ce55862c0a7a1b7b6332625a457033feb0e4bbcf4d1fd70438ef6c",
+  "changedFilesSinceQuestionCommit": [
+    "index.html",
+    "src/app.js",
+    "sw.js"
+  ],
+  "questionAndEngineFilesUnchanged": true,
+  "pendingNew40FullFieldMismatches": [],
+  "scope": "Browser UI assertions compare all 40 question contents against questionSourceSha; live HTML download/version check is separate from browser cache/runtime provenance."
+}

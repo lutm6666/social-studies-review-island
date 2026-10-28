@@ -1,0 +1,40 @@
+{
+  "questionSourceSha": "69d755dc998f2408d15d60f5097aa5e1e3aa4555",
+  "files": [
+    {
+      "name": "browser-console.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "browser-new40.json",
+      "bytes": 82425,
+      "sha256": "ffc5e1b8d210c7a3af094eeb17203dcb7488401472de9867099292ccdb087a26"
+    },
+    {
+      "name": "browser-result.jpg",
+      "bytes": 92258,
+      "sha256": "21d834e69461a91365ed4fc997ab7a456814b6cc7ab165f207e43cf601f413fa"
+    },
+    {
+      "name": "build-verification.json",
+      "bytes": 595,
+      "sha256": "bc38dfff0d79b08c28ec22e9d2e40df62653fd434f8a2f6c810622382bb39b1c"
+    },
+    {
+      "name": "content-review.json",
+      "bytes": 65639,
+      "sha256": "391748298cd2b1ea36a16d054bd7a80f5e75d6244b938a56270259c634f31ac9"
+    },
+    {
+      "name": "deployment-check.json",
+      "bytes": 711,
+      "sha256": "a954d018d0620c55c9ad3b9e0bfed8d0df3232a0fcafa59d6628f72c6df84784"
+    },
+    {
+      "name": "source-audit.json",
+      "bytes": 1790,
+      "sha256": "10bd37f5f4d13d5135d3d071e635e747f39cb7dd28f588e58192948a65079e40"
+    }
+  ]
+}
