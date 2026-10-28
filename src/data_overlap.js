@@ -65,6 +65,7 @@ cnh6|改革開放|經濟特區
 twg1|經線|本初子午線
 twg1|緯線|赤道|北回歸線
 law6|契約|和解
+law1|主權在民|人民主權
 `;
 OV.trim().split('\n').forEach(l=>{ const [lm,...ks]=l.split('|'); if(!GEN[lm]) return; (GEN[lm].ov=GEN[lm].ov||[]).push(ks); });
 })();
