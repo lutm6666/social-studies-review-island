@@ -1,0 +1,79 @@
+{
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 833200,
+      "sha": "399afd8dbed3bbdbf43bc82f13fe69a5b18d7aa1"
+    },
+    {
+      "path": "review/pending_small_term_foils.md",
+      "bytes": 23818,
+      "sha": "675f734b978b22d73635f553c24f41ca4da871d4"
+    },
+    {
+      "path": "review/questions.json",
+      "bytes": 2187645,
+      "sha": "2bc179e9d20fea098c94db97a75ae6e8dacd7c7b"
+    },
+    {
+      "path": "review/responses.md",
+      "bytes": 36784,
+      "sha": "896b66ccb93d6f73163116cc949b1f230d101bb9"
+    },
+    {
+      "path": "src/app.js",
+      "bytes": 185593,
+      "sha": "f97ea872ad3b444d4c56659b879adef582be2e45"
+    },
+    {
+      "path": "src/data_cnh.js",
+      "bytes": 29529,
+      "sha": "53d00d92cb9d6abdfb7b90e3300dc1f9b10172b9"
+    },
+    {
+      "path": "src/data_ctx.js",
+      "bytes": 48884,
+      "sha": "45b00e46ea26ddc8e341020a82917fe923f2d314"
+    },
+    {
+      "path": "src/data_eco.js",
+      "bytes": 20523,
+      "sha": "6c4f8f15e330fe6cfbd0690d800f687fc40366d4"
+    },
+    {
+      "path": "src/data_foils.js",
+      "bytes": 74559,
+      "sha": "797dce67dcfe0ccd108caf544427433260c8dd2a"
+    },
+    {
+      "path": "src/data_twg.js",
+      "bytes": 29093,
+      "sha": "f0ddd769fb200b73eb897d24be0acac7fd674f91"
+    },
+    {
+      "path": "src/data_wdh.js",
+      "bytes": 30594,
+      "sha": "6a065b81eb008339022f5a2d8c5a406feaf3a78a"
+    },
+    {
+      "path": "src/engine.js",
+      "bytes": 6555,
+      "sha": "a9bf960edd943583b18cdb65b5c781085da60ff1"
+    },
+    {
+      "path": "src/hand_twh_1.js",
+      "bytes": 43230,
+      "sha": "a961e46a5f448048e06121d88ee32e9eceb2a0db"
+    },
+    {
+      "path": "src/hand_twh_2.js",
+      "bytes": 43807,
+      "sha": "e0c5a0025964afd11393634750832c9bc384beea"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 1748,
+      "sha": "90c5795613f2232dd7768a5cb7ba525b000fd325"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "sourceSha": "e743ac12233a48fd68a3b6ba8147216d4be3c761",
+  "idSetsEqual": true,
+  "storageKeyBefore": "'shehui-archipelago-v2'",
+  "storageKeyAfter": "'shehui-archipelago-v2'",
+  "storageKeyUnchanged": true,
+  "drawSourceUnchanged": true,
+  "refreshSameQuestion": true,
+  "refreshSameOptionSet": true,
+  "refreshChoiceOrderPreserved": true,
+  "wrongPersistedAcrossReload": true,
+  "retryPass": true,
+  "wrongCleared": true,
+  "individualExistingStudentDevicesTested": false
+}

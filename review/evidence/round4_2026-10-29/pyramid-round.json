@@ -1,0 +1,43 @@
+{
+  "chapter": "twg4",
+  "samples": [
+    {
+      "id": "twg4-h9",
+      "question": "下圖的人口金字塔屬於哪一種類型？",
+      "options": [
+        "老化型",
+        "穩定型",
+        "移民型",
+        "年輕型"
+      ],
+      "answer": "老化型",
+      "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 199, 202, 205, 208\n~\t\t\t\t\t197 button (disabled) A 老化型\n~\t\t\t\t\t\t198 text A 老化型\n~\t\t\t\t\t200 button (disabled) B 穩定型\n~\t\t\t\t\t\t201 text B 穩定型\n~\t\t\t\t\t203 button (disabled) C 移民型\n~\t\t\t\t\t\t204 text C 移民型\n~\t\t\t\t\t206 button (disabled) D 年輕型\n~\t\t\t\t\t\t207 text D 年輕型\n+\t\t\t\t208 container fb\n+\t\t\t\t\t209 text 答對了\n+\t\t\t\t\t210 text 底部窄、中老年人口比例高，表示出生率低、人口老化，屬於老化型。\n+\t\t\t\t\t211 text 下次複習：明天\n+\t\t\t\t\t212 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t213 button 回報錯誤, ID: rptBtn\n+\t\t\t\t214 button 下一題, ID: nextBtn\nThe focused UI element is 214 button 下一題, ID: nextBtn"
+    },
+    {
+      "id": "twg4-h10",
+      "question": "下圖的人口金字塔屬於哪一種類型？",
+      "options": [
+        "穩定型",
+        "年輕型",
+        "移民型",
+        "老化型"
+      ],
+      "answer": "穩定型",
+      "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 199, 202, 205, 208\n~\t\t\t\t\t197 button (disabled) A 穩定型\n~\t\t\t\t\t\t198 text A 穩定型\n~\t\t\t\t\t200 button (disabled) B 年輕型\n~\t\t\t\t\t\t201 text B 年輕型\n~\t\t\t\t\t203 button (disabled) C 移民型\n~\t\t\t\t\t\t204 text C 移民型\n~\t\t\t\t\t206 button (disabled) D 老化型\n~\t\t\t\t\t\t207 text D 老化型\n+\t\t\t\t208 container fb\n+\t\t\t\t\t209 text 答對了\n+\t\t\t\t\t210 text 各年齡層比例相近，出生與死亡都低，人口數量變化不大，屬於穩定型。\n+\t\t\t\t\t211 text 下次複習：明天\n+\t\t\t\t\t212 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t213 button 回報錯誤, ID: rptBtn\n+\t\t\t\t214 button 下一題, ID: nextBtn\nThe focused UI element is 214 button 下一題, ID: nextBtn"
+    },
+    {
+      "id": "twg4-h8",
+      "question": "下圖的人口金字塔屬於哪一種類型？",
+      "options": [
+        "穩定型",
+        "老化型",
+        "年輕型",
+        "移民型"
+      ],
+      "answer": "年輕型",
+      "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 199, 202, 205, 208\n~\t\t\t\t\t197 button (disabled) A 穩定型\n~\t\t\t\t\t\t198 text A 穩定型\n~\t\t\t\t\t200 button (disabled) B 老化型\n~\t\t\t\t\t\t201 text B 老化型\n~\t\t\t\t\t203 button (disabled) C 年輕型\n~\t\t\t\t\t\t204 text C 年輕型\n~\t\t\t\t\t206 button (disabled) D 移民型\n~\t\t\t\t\t\t207 text D 移民型\n+\t\t\t\t208 container fb\n+\t\t\t\t\t209 text 答對了\n+\t\t\t\t\t210 text 底部最寬、越往上越窄，表示出生率高、幼年人口多，屬於年輕型。\n+\t\t\t\t\t211 text 下次複習：明天\n+\t\t\t\t\t212 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t213 button 回報錯誤, ID: rptBtn\n+\t\t\t\t214 button 看成績, ID: nextBtn\nThe focused UI element is 214 button 看成績, ID: nextBtn"
+    }
+  ],
+  "lastState": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 186, 190, 193-198, 200-201, 203-204, 206-214\n+\t\t\t190 text 已答對 190 / 3840 題．熟練 17．開放 9 / 9 座島\n~\t\t\t\t191 container 答對 3 題，共 3 題\n~\t\t\t\t192 text 全部答對\n+\t\t\t\t193 text 全對！這一輪的題目都掌握了。\n+\t\t\t\t194 content list\n+\t\t\t\t\t195 container\n+\t\t\t\t\t\t196 text 簡單 2 / 2\n+\t\t\t\t\t197 container\n+\t\t\t\t\t\t198 text 中等 1 / 1\n+\t\t\t\t199 button 再來 20 題, ID: rMore\n+\t\t\t\t200 button 回到島上, ID: rBack\n+\t\t\t\t201 button (collapsed) 這一輪的 3 題．覺得哪題有問題可以回報, Secondary Actions: Expand\n+\t\t\t\t\t202 text 這一輪的 3 題．覺得哪題有問題可以回報\nThe focused UI element is 199 button 再來 20 題, ID: rMore",
+  "scorePass": true
+}

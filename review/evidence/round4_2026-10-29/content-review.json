@@ -1,0 +1,3590 @@
+{
+  "summary": {
+    "sourceSha": "e743ac12233a48fd68a3b6ba8147216d4be3c761",
+    "baseline": "7ee6394c5ee2ef9b353c387eff0099abb3758028",
+    "reviewedChangedIDs": 71,
+    "statusCounts": {
+      "pass": 70,
+      "optional": 1
+    },
+    "previous12": [
+      {
+        "id": "qpe-h49",
+        "status": "pass"
+      },
+      {
+        "id": "jsc-h40",
+        "status": "pass"
+      },
+      {
+        "id": "cnh2-h10",
+        "status": "pass"
+      },
+      {
+        "id": "cnh6-h2",
+        "status": "pass"
+      },
+      {
+        "id": "wdh6-h4",
+        "status": "pass"
+      },
+      {
+        "id": "wdh6-h7",
+        "status": "pass"
+      },
+      {
+        "id": "twg5-h5",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g46",
+        "status": "pass"
+      },
+      {
+        "id": "eco1-h7",
+        "status": "pass"
+      },
+      {
+        "id": "eco1-h9",
+        "status": "pass"
+      },
+      {
+        "id": "eco1-g40",
+        "status": "pass"
+      },
+      {
+        "id": "eco2-h2",
+        "status": "pass"
+      }
+    ],
+    "term59": [
+      {
+        "id": "soc3-g0",
+        "status": "optional"
+      },
+      {
+        "id": "soc3-g2",
+        "status": "pass"
+      },
+      {
+        "id": "soc3-g4",
+        "status": "pass"
+      },
+      {
+        "id": "soc3-g6",
+        "status": "pass"
+      },
+      {
+        "id": "soc3-g8",
+        "status": "pass"
+      },
+      {
+        "id": "soc3-g10",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g0",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g2",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g4",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g6",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g8",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g10",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g22",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g24",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g26",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g28",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g30",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g32",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g34",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g36",
+        "status": "pass"
+      },
+      {
+        "id": "law2-g38",
+        "status": "pass"
+      },
+      {
+        "id": "law8-g0",
+        "status": "pass"
+      },
+      {
+        "id": "law8-g2",
+        "status": "pass"
+      },
+      {
+        "id": "law8-g4",
+        "status": "pass"
+      },
+      {
+        "id": "law8-g6",
+        "status": "pass"
+      },
+      {
+        "id": "law8-g8",
+        "status": "pass"
+      },
+      {
+        "id": "law8-g10",
+        "status": "pass"
+      },
+      {
+        "id": "law8-g12",
+        "status": "pass"
+      },
+      {
+        "id": "law8-g14",
+        "status": "pass"
+      },
+      {
+        "id": "eco2-g0",
+        "status": "pass"
+      },
+      {
+        "id": "eco2-g2",
+        "status": "pass"
+      },
+      {
+        "id": "eco2-g4",
+        "status": "pass"
+      },
+      {
+        "id": "eco2-g6",
+        "status": "pass"
+      },
+      {
+        "id": "eco2-g8",
+        "status": "pass"
+      },
+      {
+        "id": "eco2-g10",
+        "status": "pass"
+      },
+      {
+        "id": "eco2-g12",
+        "status": "pass"
+      },
+      {
+        "id": "eco2-g14",
+        "status": "pass"
+      },
+      {
+        "id": "eco2-g16",
+        "status": "pass"
+      },
+      {
+        "id": "eco2-g18",
+        "status": "pass"
+      },
+      {
+        "id": "eco4-g0",
+        "status": "pass"
+      },
+      {
+        "id": "eco4-g2",
+        "status": "pass"
+      },
+      {
+        "id": "eco4-g4",
+        "status": "pass"
+      },
+      {
+        "id": "eco4-g6",
+        "status": "pass"
+      },
+      {
+        "id": "eco4-g8",
+        "status": "pass"
+      },
+      {
+        "id": "eco4-g10",
+        "status": "pass"
+      },
+      {
+        "id": "eco4-g12",
+        "status": "pass"
+      },
+      {
+        "id": "eco4-g14",
+        "status": "pass"
+      },
+      {
+        "id": "eco4-g16",
+        "status": "pass"
+      },
+      {
+        "id": "eco4-g18",
+        "status": "pass"
+      },
+      {
+        "id": "eco5-g0",
+        "status": "pass"
+      },
+      {
+        "id": "eco5-g2",
+        "status": "pass"
+      },
+      {
+        "id": "eco5-g4",
+        "status": "pass"
+      },
+      {
+        "id": "eco5-g6",
+        "status": "pass"
+      },
+      {
+        "id": "eco5-g8",
+        "status": "pass"
+      },
+      {
+        "id": "eco5-g10",
+        "status": "pass"
+      },
+      {
+        "id": "eco5-g12",
+        "status": "pass"
+      },
+      {
+        "id": "eco5-g14",
+        "status": "pass"
+      },
+      {
+        "id": "eco5-g16",
+        "status": "pass"
+      },
+      {
+        "id": "eco5-g18",
+        "status": "pass"
+      }
+    ],
+    "unionCumulative": 1868,
+    "cumulativeCounts": {
+      "pass": 1867,
+      "optional": 1
+    },
+    "unreviewedContent": 1972,
+    "manualCheckpoint": {
+      "reviewer": "/root",
+      "date": "2026-10-29",
+      "termCompactRead": [
+        [
+          1,
+          30
+        ],
+        [
+          31,
+          59
+        ]
+      ],
+      "previousCompactRead": [
+        1,
+        12
+      ],
+      "all59ChangedExplanationsRead": true,
+      "all4NonNullContextsRead": true
+    },
+    "programModified": false
+  },
+  "records": [
+    {
+      "id": "qpe-h49",
+      "status": "pass",
+      "comment": "已核對上輪指出的改動；新版誘答與正解互異，原問題複驗通過。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "previous12"
+      ],
+      "changedFields": [
+        "distractors"
+      ],
+      "before": {
+        "id": "qpe-h49",
+        "chapter": "qpe",
+        "difficulty": 3,
+        "context": null,
+        "question": "清代臺灣米、糖輸往大陸，大陸的布匹、日用品輸入臺灣，這種貿易型態反映？",
+        "answer": "兩岸經濟分工互補",
+        "distractors": [
+          "臺灣工業化程度高於大陸",
+          "臺灣工業比大陸發達",
+          "臺灣只與歐洲貿易"
+        ],
+        "explanation": "臺灣出口農產品、進口手工業品，形成區域分工。",
+        "source": "hand",
+        "figure": null
+      },
+      "current": {
+        "id": "qpe-h49",
+        "chapter": "qpe",
+        "difficulty": 3,
+        "context": null,
+        "question": "清代臺灣米、糖輸往大陸，大陸的布匹、日用品輸入臺灣，這種貿易型態反映？",
+        "answer": "兩岸經濟分工互補",
+        "distractors": [
+          "臺灣工業化程度高於大陸",
+          "大陸向臺灣大量輸出稻米",
+          "臺灣只與歐洲貿易"
+        ],
+        "explanation": "臺灣出口農產品、進口手工業品，形成區域分工。",
+        "source": "hand",
+        "figure": null
+      }
+    },
+    {
+      "id": "jsc-h40",
+      "status": "pass",
+      "comment": "已核對上輪指出的改動；新版誘答與正解互異，原問題複驗通過。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "previous12"
+      ],
+      "changedFields": [
+        "distractors"
+      ],
+      "before": {
+        "id": "jsc-h40",
+        "chapter": "jsc",
+        "difficulty": 3,
+        "context": null,
+        "question": "日治時期有人接受新式教育後反而積極參與抗日運動，這反映出什麼？",
+        "answer": "新式教育也帶來民主、民族自決等思想",
+        "distractors": [
+          "總督府鼓勵臺灣人抗日",
+          "日本政府鼓勵抗日",
+          "抗日運動由日本人領導"
+        ],
+        "explanation": "知識分子接觸近代思想後，更積極爭取權利。",
+        "source": "hand",
+        "figure": null
+      },
+      "current": {
+        "id": "jsc-h40",
+        "chapter": "jsc",
+        "difficulty": 3,
+        "context": null,
+        "question": "日治時期有人接受新式教育後反而積極參與抗日運動，這反映出什麼？",
+        "answer": "新式教育也帶來民主、民族自決等思想",
+        "distractors": [
+          "新式教育只教授職業技能",
+          "日本政府鼓勵抗日",
+          "抗日運動由日本人領導"
+        ],
+        "explanation": "知識分子接觸近代思想後，更積極爭取權利。",
+        "source": "hand",
+        "figure": null
+      }
+    },
+    {
+      "id": "cnh2-h10",
+      "status": "pass",
+      "comment": "已核對上輪指出的改動；新版誘答與正解互異，原問題複驗通過。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "previous12"
+      ],
+      "changedFields": [
+        "distractors"
+      ],
+      "before": {
+        "id": "cnh2-h10",
+        "chapter": "cnh2",
+        "difficulty": 3,
+        "context": "日本奈良的寺院建築、律令制度與漢字使用，都可以看到唐朝文化的影子。",
+        "question": "造成這種現象最主要的原因是？",
+        "answer": "日本派遣遣唐使到唐朝學習",
+        "distractors": [
+          "唐朝出兵占領日本",
+          "唐朝派軍占領日本",
+          "唐朝禁止日本使用自己的文字"
+        ],
+        "explanation": "遣唐使與留學生把唐朝的制度、文化、佛教帶回日本，日本因而推行大化革新。",
+        "source": "hand",
+        "figure": null
+      },
+      "current": {
+        "id": "cnh2-h10",
+        "chapter": "cnh2",
+        "difficulty": 3,
+        "context": "日本奈良的寺院建築、律令制度與漢字使用，都可以看到唐朝文化的影子。",
+        "question": "造成這種現象最主要的原因是？",
+        "answer": "日本派遣遣唐使到唐朝學習",
+        "distractors": [
+          "唐朝出兵占領日本",
+          "日本與唐朝使用相同的語言",
+          "唐朝禁止日本使用自己的文字"
+        ],
+        "explanation": "遣唐使與留學生把唐朝的制度、文化、佛教帶回日本，日本因而推行大化革新。",
+        "source": "hand",
+        "figure": null
+      }
+    },
+    {
+      "id": "cnh6-h2",
+      "status": "pass",
+      "comment": "已核對上輪指出的改動；新版誘答與正解互異，原問題複驗通過。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "previous12"
+      ],
+      "changedFields": [
+        "distractors"
+      ],
+      "before": {
+        "id": "cnh6-h2",
+        "chapter": "cnh6",
+        "difficulty": 2,
+        "context": null,
+        "question": "鄧小平主導的「改革開放」，主要內容是？",
+        "answer": "引進市場機制並設立經濟特區，吸引外資",
+        "distractors": [
+          "恢復人民公社",
+          "推行人民公社",
+          "推動多黨民主選舉"
+        ],
+        "explanation": "改革開放推行家庭聯產承包責任制、設立深圳等經濟特區，使中國經濟快速成長。",
+        "source": "hand",
+        "figure": null
+      },
+      "current": {
+        "id": "cnh6-h2",
+        "chapter": "cnh6",
+        "difficulty": 2,
+        "context": null,
+        "question": "鄧小平主導的「改革開放」，主要內容是？",
+        "answer": "引進市場機制並設立經濟特區，吸引外資",
+        "distractors": [
+          "恢復人民公社",
+          "發動文化大革命",
+          "推動多黨民主選舉"
+        ],
+        "explanation": "改革開放推行家庭聯產承包責任制、設立深圳等經濟特區，使中國經濟快速成長。",
+        "source": "hand",
+        "figure": null
+      }
+    },
+    {
+      "id": "wdh6-h4",
+      "status": "pass",
+      "comment": "已核對上輪指出的改動；新版誘答與正解互異，原問題複驗通過。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "previous12"
+      ],
+      "changedFields": [
+        "distractors"
+      ],
+      "before": {
+        "id": "wdh6-h4",
+        "chapter": "wdh6",
+        "difficulty": 3,
+        "context": null,
+        "question": "甘地領導印度獨立運動，採取的主要方式是？",
+        "answer": "非暴力不合作",
+        "distractors": [
+          "武裝起義",
+          "請求日本出兵",
+          "武裝起義推翻英國統治"
+        ],
+        "explanation": "甘地主張以不使用暴力的方式抵制英國，例如抵制英國商品、拒絕合作，獲得廣大支持。",
+        "source": "hand",
+        "figure": null
+      },
+      "current": {
+        "id": "wdh6-h4",
+        "chapter": "wdh6",
+        "difficulty": 3,
+        "context": null,
+        "question": "甘地領導印度獨立運動，採取的主要方式是？",
+        "answer": "非暴力不合作",
+        "distractors": [
+          "武裝起義",
+          "請求日本出兵",
+          "接受殖民統治、放棄獨立"
+        ],
+        "explanation": "甘地主張以不使用暴力的方式抵制英國，例如抵制英國商品、拒絕合作，獲得廣大支持。",
+        "source": "hand",
+        "figure": null
+      }
+    },
+    {
+      "id": "wdh6-h7",
+      "status": "pass",
+      "comment": "已核對上輪指出的改動；新版誘答與正解互異，原問題複驗通過。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "previous12"
+      ],
+      "changedFields": [
+        "distractors"
+      ],
+      "before": {
+        "id": "wdh6-h7",
+        "chapter": "wdh6",
+        "difficulty": 3,
+        "context": "一位印度領袖帶領民眾自己紡紗織布、拒買英國布料，並徒步到海邊自行製鹽，抗議殖民政府的鹽稅。",
+        "question": "這位領袖採取的抗爭方式是？",
+        "answer": "非暴力不合作",
+        "distractors": [
+          "武裝起義",
+          "請求外國出兵",
+          "武裝起義推翻英國統治"
+        ],
+        "explanation": "甘地以非暴力不合作的方式抵制英國，例如食鹽進軍，獲得廣大支持。",
+        "source": "hand",
+        "figure": null
+      },
+      "current": {
+        "id": "wdh6-h7",
+        "chapter": "wdh6",
+        "difficulty": 3,
+        "context": "一位印度領袖帶領民眾自己紡紗織布、拒買英國布料，並徒步到海邊自行製鹽，抗議殖民政府的鹽稅。",
+        "question": "這位領袖採取的抗爭方式是？",
+        "answer": "非暴力不合作",
+        "distractors": [
+          "武裝起義",
+          "請求外國出兵",
+          "接受殖民統治、放棄獨立"
+        ],
+        "explanation": "甘地以非暴力不合作的方式抵制英國，例如食鹽進軍，獲得廣大支持。",
+        "source": "hand",
+        "figure": null
+      }
+    },
+    {
+      "id": "twg5-h5",
+      "status": "pass",
+      "comment": "已核對上輪指出的改動；新版誘答與正解互異，原問題複驗通過。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "previous12"
+      ],
+      "changedFields": [
+        "distractors"
+      ],
+      "before": {
+        "id": "twg5-h5",
+        "chapter": "twg5",
+        "difficulty": 3,
+        "context": null,
+        "question": "臺灣的遠洋漁業與沿岸漁業相比，特色是？",
+        "answer": "船隻較大、可航行到遠方公海作業",
+        "distractors": [
+          "只在海岸附近作業",
+          "只在魚塭養殖",
+          "只在臺灣沿岸作業"
+        ],
+        "explanation": "遠洋漁業使用大型漁船到太平洋、印度洋等遠洋作業，臺灣的遠洋漁獲量在世界占重要地位。",
+        "source": "hand",
+        "figure": null
+      },
+      "current": {
+        "id": "twg5-h5",
+        "chapter": "twg5",
+        "difficulty": 3,
+        "context": null,
+        "question": "臺灣的遠洋漁業與沿岸漁業相比，特色是？",
+        "answer": "船隻較大、可航行到遠方公海作業",
+        "distractors": [
+          "只在海岸附近作業",
+          "只在魚塭養殖",
+          "主要在內陸河川作業"
+        ],
+        "explanation": "遠洋漁業使用大型漁船到太平洋、印度洋等遠洋作業，臺灣的遠洋漁獲量在世界占重要地位。",
+        "source": "hand",
+        "figure": null
+      }
+    },
+    {
+      "id": "soc3-g0",
+      "status": "optional",
+      "comment": "國中教案通常將再婚且帶子女的家庭另稱繼親／重組家庭，故本輪不判成已證實的第二正解。但新誘答「父母再婚後與雙方子女同住」混用婚姻歷程與成員結構；若夫妻及子女同住、子女均未婚，也可能落在廣義核心家庭的結構描述。題庫自己的正解未加親生或初婚條件，不宜讓學生理解成兩種分類必然互斥。這是可選的消歧建議，非已確證的知識錯誤。",
+      "suggestion": "把該誘答換成成員結構明顯不同的「只有未婚兄弟姊妹同住，沒有父母同住」；毋須改正解或題號。",
+      "sources": [
+        "https://www.yjjh.tp.edu.tw/wp-content/uploads/doc/yjjhoaacom01/%E6%B0%B8%E5%90%89%E5%9C%8B%E4%B8%AD_%E6%95%99%E6%A1%88%E7%94%84%E9%81%B8_v3.pdf",
+        "https://ws.dgbas.gov.tw/001/Upload/466/relfile/11503/235296/113.pdf"
+      ],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "soc3-g0",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「核心家庭」的組成是？",
+        "answer": "父母與未婚子女",
+        "distractors": [
+          "由父親或母親一人與子女組成",
+          "由祖父母照顧孫子女",
+          "夫妻都有工作收入、沒有子女"
+        ],
+        "explanation": "「核心家庭」的重點是：父母與未婚子女。容易混淆的選項：「由父親或母親一人與子女組成」說的是單親家庭；「由祖父母照顧孫子女」說的是隔代教養家庭；「夫妻都有工作收入、沒有子女」說的是頂客族家庭。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "soc3-g0",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「核心家庭」的組成是？",
+        "answer": "父母與未婚子女",
+        "distractors": [
+          "祖父母、父母與叔伯等多房親戚同住",
+          "父母再婚後與雙方子女同住",
+          "子女由社福機構安排到其他家庭照顧"
+        ],
+        "explanation": "「核心家庭」的重點是：父母與未婚子女。其他選項是常見的誤解，都不是「核心家庭」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "soc3-g2",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "soc3-g2",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「折衷家庭」的組成是？",
+        "answer": "祖父母、父母與子女三代同住",
+        "distractors": [
+          "父母與未婚子女",
+          "夫妻都有工作收入、沒有子女",
+          "由祖父母照顧孫子女"
+        ],
+        "explanation": "「折衷家庭」的重點是：祖父母、父母與子女三代同住。補充：祖父母、父母、子女三代同住，但只有一對已婚子女同住。容易混淆的選項：「父母與未婚子女」說的是核心家庭；「夫妻都有工作收入、沒有子女」說的是頂客族家庭；「由祖父母照顧孫子女」說的是隔代教養家庭。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "soc3-g2",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「折衷家庭」的組成是？",
+        "answer": "祖父母、父母與子女三代同住",
+        "distractors": [
+          "多個已婚兄弟的家庭與父母同住",
+          "父母再婚後組成的家庭",
+          "子女暫時寄住在親戚家"
+        ],
+        "explanation": "「折衷家庭」的重點是：祖父母、父母與子女三代同住。補充：祖父母、父母、子女三代同住，但只有一對已婚子女同住。其他選項是常見的誤解，都不是「折衷家庭」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "soc3-g4",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "soc3-g4",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「單親家庭」的組成是？",
+        "answer": "由父親或母親一人與子女組成",
+        "distractors": [
+          "夫妻都有工作收入、沒有子女",
+          "由祖父母照顧孫子女",
+          "父母一方是從其他國家或地區移居臺灣的新住民"
+        ],
+        "explanation": "「單親家庭」的重點是：由父親或母親一人與子女組成。容易混淆的選項：「夫妻都有工作收入、沒有子女」說的是頂客族家庭；「由祖父母照顧孫子女」說的是隔代教養家庭；「父母一方是從其他國家或地區移居臺灣的新住民」說的是新住民家庭。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "soc3-g4",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「單親家庭」的組成是？",
+        "answer": "由父親或母親一人與子女組成",
+        "distractors": [
+          "父母離婚後各自再婚組成的家庭",
+          "子女由寄養家庭照顧",
+          "未婚的兄弟姊妹一起生活"
+        ],
+        "explanation": "「單親家庭」的重點是：由父親或母親一人與子女組成。其他選項是常見的誤解，都不是「單親家庭」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "soc3-g6",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "soc3-g6",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「隔代教養家庭」的組成是？",
+        "answer": "由祖父母照顧孫子女",
+        "distractors": [
+          "父母一方是從其他國家或地區移居臺灣的新住民",
+          "父母與未婚子女",
+          "由父親或母親一人與子女組成"
+        ],
+        "explanation": "「隔代教養家庭」的重點是：由祖父母照顧孫子女。容易混淆的選項：「父母一方是從其他國家或地區移居臺灣的新住民」說的是新住民家庭；「父母與未婚子女」說的是核心家庭；「由父親或母親一人與子女組成」說的是單親家庭。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "soc3-g6",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「隔代教養家庭」的組成是？",
+        "answer": "由祖父母照顧孫子女",
+        "distractors": [
+          "子女白天由保母照顧",
+          "子女暫時寄住在社福機構",
+          "祖父母每逢過年才與孫子女團聚"
+        ],
+        "explanation": "「隔代教養家庭」的重點是：由祖父母照顧孫子女。其他選項是常見的誤解，都不是「隔代教養家庭」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "soc3-g8",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "soc3-g8",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「頂客族家庭」的組成是？",
+        "answer": "夫妻都有工作收入、沒有子女",
+        "distractors": [
+          "由祖父母照顧孫子女",
+          "父母與未婚子女",
+          "父母一方是從其他國家或地區移居臺灣的新住民"
+        ],
+        "explanation": "「頂客族家庭」的重點是：夫妻都有工作收入、沒有子女。容易混淆的選項：「由祖父母照顧孫子女」說的是隔代教養家庭；「父母與未婚子女」說的是核心家庭；「父母一方是從其他國家或地區移居臺灣的新住民」說的是新住民家庭。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "soc3-g8",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「頂客族家庭」的組成是？",
+        "answer": "夫妻都有工作收入、沒有子女",
+        "distractors": [
+          "夫妻一方工作、一方照顧子女",
+          "單身獨居、不打算結婚",
+          "夫妻收養子女共同生活"
+        ],
+        "explanation": "「頂客族家庭」的重點是：夫妻都有工作收入、沒有子女。其他選項是常見的誤解，都不是「頂客族家庭」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "soc3-g10",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "soc3-g10",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「新住民家庭」的組成是？",
+        "answer": "父母一方是從其他國家或地區移居臺灣的新住民",
+        "distractors": [
+          "由父親或母親一人與子女組成",
+          "祖父母、父母與子女三代同住",
+          "由祖父母照顧孫子女"
+        ],
+        "explanation": "「新住民家庭」的重點是：父母一方是從其他國家或地區移居臺灣的新住民。容易混淆的選項：「由父親或母親一人與子女組成」說的是單親家庭；「祖父母、父母與子女三代同住」說的是折衷家庭；「由祖父母照顧孫子女」說的是隔代教養家庭。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "soc3-g10",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「新住民家庭」的組成是？",
+        "answer": "父母一方是從其他國家或地區移居臺灣的新住民",
+        "distractors": [
+          "原住民族的家庭",
+          "全家移民到國外的臺灣家庭",
+          "父母都在外縣市工作的家庭"
+        ],
+        "explanation": "「新住民家庭」的重點是：父母一方是從其他國家或地區移居臺灣的新住民。其他選項是常見的誤解，都不是「新住民家庭」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g0",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g0",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「總統」的主要職權是？",
+        "answer": "國家元首，統率全國陸海空軍",
+        "distractors": [
+          "行使彈劾、糾舉與審計權",
+          "國家最高行政機關，推動各項政策",
+          "掌理公務人員的考試與銓敘"
+        ],
+        "explanation": "「總統」的重點是：國家元首，統率全國陸海空軍。容易混淆的選項：「行使彈劾、糾舉與審計權」說的是監察院；「國家最高行政機關，推動各項政策」說的是行政院；「掌理公務人員的考試與銓敘」說的是考試院。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g0",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「總統」的主要職權是？",
+        "answer": "國家元首，統率全國陸海空軍",
+        "distractors": [
+          "擔任立法院院長、主持院會",
+          "任命所有法官並指揮審判",
+          "主持行政院會議、編列各部會預算"
+        ],
+        "explanation": "「總統」的重點是：國家元首，統率全國陸海空軍。其他選項是常見的誤解，都不是「總統」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g2",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g2",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「行政院」的主要職權是？",
+        "answer": "國家最高行政機關，推動各項政策",
+        "distractors": [
+          "國家元首，統率全國陸海空軍",
+          "掌理審判與解釋憲法等司法權",
+          "行使彈劾、糾舉與審計權"
+        ],
+        "explanation": "「行政院」的重點是：國家最高行政機關，推動各項政策。容易混淆的選項：「國家元首，統率全國陸海空軍」說的是總統；「掌理審判與解釋憲法等司法權」說的是司法院；「行使彈劾、糾舉與審計權」說的是監察院。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g2",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「行政院」的主要職權是？",
+        "answer": "國家最高行政機關，推動各項政策",
+        "distractors": [
+          "制定與修改憲法",
+          "選舉總統與副總統",
+          "審判行政訴訟案件"
+        ],
+        "explanation": "「行政院」的重點是：國家最高行政機關，推動各項政策。其他選項是常見的誤解，都不是「行政院」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g4",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g4",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「立法院」的主要職權是？",
+        "answer": "審議法律案與預算案，監督行政院",
+        "distractors": [
+          "國家元首，統率全國陸海空軍",
+          "掌理審判與解釋憲法等司法權",
+          "掌理公務人員的考試與銓敘"
+        ],
+        "explanation": "「立法院」的重點是：審議法律案與預算案，監督行政院。容易混淆的選項：「國家元首，統率全國陸海空軍」說的是總統；「掌理審判與解釋憲法等司法權」說的是司法院；「掌理公務人員的考試與銓敘」說的是考試院。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g4",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「立法院」的主要職權是？",
+        "answer": "審議法律案與預算案，監督行政院",
+        "distractors": [
+          "任命行政院院長",
+          "公布法律並發布命令",
+          "指揮國軍作戰"
+        ],
+        "explanation": "「立法院」的重點是：審議法律案與預算案，監督行政院。其他選項是常見的誤解，都不是「立法院」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g6",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g6",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「司法院」的主要職權是？",
+        "answer": "掌理審判與解釋憲法等司法權",
+        "distractors": [
+          "掌理公務人員的考試與銓敘",
+          "國家元首，統率全國陸海空軍",
+          "行使彈劾、糾舉與審計權"
+        ],
+        "explanation": "「司法院」的重點是：掌理審判與解釋憲法等司法權。容易混淆的選項：「掌理公務人員的考試與銓敘」說的是考試院；「國家元首，統率全國陸海空軍」說的是總統；「行使彈劾、糾舉與審計權」說的是監察院。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g6",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「司法院」的主要職權是？",
+        "answer": "掌理審判與解釋憲法等司法權",
+        "distractors": [
+          "制定民法與刑法",
+          "指揮警察偵查犯罪",
+          "監督地方政府施政"
+        ],
+        "explanation": "「司法院」的重點是：掌理審判與解釋憲法等司法權。其他選項是常見的誤解，都不是「司法院」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g8",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g8",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「考試院」的主要職權是？",
+        "answer": "掌理公務人員的考試與銓敘",
+        "distractors": [
+          "審議法律案與預算案，監督行政院",
+          "掌理審判與解釋憲法等司法權",
+          "國家元首，統率全國陸海空軍"
+        ],
+        "explanation": "「考試院」的重點是：掌理公務人員的考試與銓敘。容易混淆的選項：「審議法律案與預算案，監督行政院」說的是立法院；「掌理審判與解釋憲法等司法權」說的是司法院；「國家元首，統率全國陸海空軍」說的是總統。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g8",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「考試院」的主要職權是？",
+        "answer": "掌理公務人員的考試與銓敘",
+        "distractors": [
+          "舉辦大學學測與國中會考",
+          "制定全國教育政策",
+          "負責公務員的懲戒審判"
+        ],
+        "explanation": "「考試院」的重點是：掌理公務人員的考試與銓敘。其他選項是常見的誤解，都不是「考試院」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g10",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g10",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「監察院」的主要職權是？",
+        "answer": "行使彈劾、糾舉與審計權",
+        "distractors": [
+          "國家元首，統率全國陸海空軍",
+          "審議法律案與預算案，監督行政院",
+          "掌理審判與解釋憲法等司法權"
+        ],
+        "explanation": "「監察院」的重點是：行使彈劾、糾舉與審計權。容易混淆的選項：「國家元首，統率全國陸海空軍」說的是總統；「審議法律案與預算案，監督行政院」說的是立法院；「掌理審判與解釋憲法等司法權」說的是司法院。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g10",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「監察院」的主要職權是？",
+        "answer": "行使彈劾、糾舉與審計權",
+        "distractors": [
+          "審理公務員的刑事案件",
+          "舉辦公職人員選舉",
+          "罷免不適任的民選首長"
+        ],
+        "explanation": "「監察院」的重點是：行使彈劾、糾舉與審計權。其他選項是常見的誤解，都不是「監察院」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g22",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g22",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「權力分立」的意思是？",
+        "answer": "把國家權力分給不同機關，互相制衡",
+        "distractors": [
+          "制定法律的權力",
+          "依法審判、解決紛爭的權力",
+          "執行法律、推動政策的權力"
+        ],
+        "explanation": "「權力分立」的重點是：把國家權力分給不同機關，互相制衡。容易混淆的選項：「制定法律的權力」說的是立法權；「依法審判、解決紛爭的權力」說的是司法權；「執行法律、推動政策的權力」說的是行政權。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g22",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「權力分立」的意思是？",
+        "answer": "把國家權力分給不同機關，互相制衡",
+        "distractors": [
+          "中央與地方政府平均分配預算",
+          "權力集中於總統以提高效率",
+          "政黨輪流執政"
+        ],
+        "explanation": "「權力分立」的重點是：把國家權力分給不同機關，互相制衡。其他選項是常見的誤解，都不是「權力分立」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g24",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g24",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「立法權」的意思是？",
+        "answer": "制定法律的權力",
+        "distractors": [
+          "把國家權力分給不同機關，互相制衡",
+          "依法審判、解決紛爭的權力",
+          "執行法律、推動政策的權力"
+        ],
+        "explanation": "「立法權」的重點是：制定法律的權力。容易混淆的選項：「把國家權力分給不同機關，互相制衡」說的是權力分立；「依法審判、解決紛爭的權力」說的是司法權；「執行法律、推動政策的權力」說的是行政權。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g24",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「立法權」的意思是？",
+        "answer": "制定法律的權力",
+        "distractors": [
+          "人民選舉民意代表的權力",
+          "政府徵收稅金的權力",
+          "總統任命官員的權力"
+        ],
+        "explanation": "「立法權」的重點是：制定法律的權力。其他選項是常見的誤解，都不是「立法權」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g26",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g26",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「行政權」的意思是？",
+        "answer": "執行法律、推動政策的權力",
+        "distractors": [
+          "把國家權力分給不同機關，互相制衡",
+          "制定法律的權力",
+          "依法審判、解決紛爭的權力"
+        ],
+        "explanation": "「行政權」的重點是：執行法律、推動政策的權力。容易混淆的選項：「把國家權力分給不同機關，互相制衡」說的是權力分立；「制定法律的權力」說的是立法權；「依法審判、解決紛爭的權力」說的是司法權。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g26",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「行政權」的意思是？",
+        "answer": "執行法律、推動政策的權力",
+        "distractors": [
+          "人民集會遊行的權力",
+          "監察院彈劾官員的權力",
+          "人民申請公民投票的權力"
+        ],
+        "explanation": "「行政權」的重點是：執行法律、推動政策的權力。其他選項是常見的誤解，都不是「行政權」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g28",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g28",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「司法權」的意思是？",
+        "answer": "依法審判、解決紛爭的權力",
+        "distractors": [
+          "執行法律、推動政策的權力",
+          "制定法律的權力",
+          "把國家權力分給不同機關，互相制衡"
+        ],
+        "explanation": "「司法權」的重點是：依法審判、解決紛爭的權力。容易混淆的選項：「執行法律、推動政策的權力」說的是行政權；「制定法律的權力」說的是立法權；「把國家權力分給不同機關，互相制衡」說的是權力分立。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g28",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「司法權」的意思是？",
+        "answer": "依法審判、解決紛爭的權力",
+        "distractors": [
+          "警察維持治安的權力",
+          "地方議會審議預算的權力",
+          "總統發布緊急命令的權力"
+        ],
+        "explanation": "「司法權」的重點是：依法審判、解決紛爭的權力。其他選項是常見的誤解，都不是「司法權」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g30",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g30",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「彈劾」的意思是？",
+        "answer": "監察院對違法失職官員提出追究",
+        "distractors": [
+          "立法院對行政院院長表示不信任的方式",
+          "立法委員詢問行政官員施政情形",
+          "審理憲法案件的法官"
+        ],
+        "explanation": "「彈劾」的重點是：監察院對違法失職官員提出追究。容易混淆的選項：「立法院對行政院院長表示不信任的方式」說的是不信任案；「立法委員詢問行政官員施政情形」說的是質詢；「審理憲法案件的法官」說的是大法官。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g30",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「彈劾」的意思是？",
+        "answer": "監察院對違法失職官員提出追究",
+        "distractors": [
+          "人民投票讓民選官員去職",
+          "行政院院長要求部長辭職",
+          "法院判處公務員刑罰"
+        ],
+        "explanation": "「彈劾」的重點是：監察院對違法失職官員提出追究。其他選項是常見的誤解，都不是「彈劾」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g32",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g32",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「質詢」的意思是？",
+        "answer": "立法委員詢問行政官員施政情形",
+        "distractors": [
+          "行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議",
+          "審理憲法案件的法官",
+          "監察院對違法失職官員提出追究"
+        ],
+        "explanation": "「質詢」的重點是：立法委員詢問行政官員施政情形。容易混淆的選項：「行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議」說的是覆議；「審理憲法案件的法官」說的是大法官；「監察院對違法失職官員提出追究」說的是彈劾。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g32",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「質詢」的意思是？",
+        "answer": "立法委員詢問行政官員施政情形",
+        "distractors": [
+          "人民向機關陳情表達意見",
+          "監察委員調查官員是否違法",
+          "記者訪問官員施政情形"
+        ],
+        "explanation": "「質詢」的重點是：立法委員詢問行政官員施政情形。其他選項是常見的誤解，都不是「質詢」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g34",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g34",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「覆議」的意思是？",
+        "answer": "行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議",
+        "distractors": [
+          "立法委員詢問行政官員施政情形",
+          "立法院對行政院院長表示不信任的方式",
+          "監察院對違法失職官員提出追究"
+        ],
+        "explanation": "「覆議」的重點是：行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議。補充：限於法律案、預算案、條約案；立法院維持原決議時，行政院院長應即接受。容易混淆的選項：「立法委員詢問行政官員施政情形」說的是質詢；「立法院對行政院院長表示不信任的方式」說的是不信任案；「監察院對違法失職官員提出追究」說的是彈劾。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g34",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「覆議」的意思是？",
+        "answer": "行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議",
+        "distractors": [
+          "總統要求大法官重新解釋憲法",
+          "立法院要求行政院重新編列預算",
+          "人民對法律提出公民投票"
+        ],
+        "explanation": "「覆議」的重點是：行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議。補充：限於法律案、預算案、條約案；立法院維持原決議時，行政院院長應即接受。其他選項是常見的誤解，都不是「覆議」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g36",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g36",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「不信任案」的意思是？",
+        "answer": "立法院對行政院院長表示不信任的方式",
+        "distractors": [
+          "行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議",
+          "審理憲法案件的法官",
+          "立法委員詢問行政官員施政情形"
+        ],
+        "explanation": "「不信任案」的重點是：立法院對行政院院長表示不信任的方式。補充：通過後行政院院長須在十日內辭職，並得同時呈請總統解散立法院，由總統決定是否解散。容易混淆的選項：「行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議」說的是覆議；「審理憲法案件的法官」說的是大法官；「立法委員詢問行政官員施政情形」說的是質詢。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g36",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「不信任案」的意思是？",
+        "answer": "立法院對行政院院長表示不信任的方式",
+        "distractors": [
+          "人民連署罷免立法委員",
+          "總統下令解散行政院",
+          "立法委員要求院長到院報告"
+        ],
+        "explanation": "「不信任案」的重點是：立法院對行政院院長表示不信任的方式。補充：通過後行政院院長須在十日內辭職，並得同時呈請總統解散立法院，由總統決定是否解散。其他選項是常見的誤解，都不是「不信任案」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g38",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law2-g38",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「大法官」的意思是？",
+        "answer": "審理憲法案件的法官",
+        "distractors": [
+          "立法委員詢問行政官員施政情形",
+          "立法院對行政院院長表示不信任的方式",
+          "監察院對違法失職官員提出追究"
+        ],
+        "explanation": "「大法官」的重點是：審理憲法案件的法官。容易混淆的選項：「立法委員詢問行政官員施政情形」說的是質詢；「立法院對行政院院長表示不信任的方式」說的是不信任案；「監察院對違法失職官員提出追究」說的是彈劾。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g38",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「大法官」的意思是？",
+        "answer": "審理憲法案件的法官",
+        "distractors": [
+          "審理民事與刑事案件的一般法官",
+          "負責起訴犯罪的檢察官",
+          "立法院負責審查法案的委員"
+        ],
+        "explanation": "「大法官」的重點是：審理憲法案件的法官。其他選項是常見的誤解，都不是「大法官」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law2-g46",
+      "status": "pass",
+      "comment": "誘答已補「超過判決指定失效日」；不再把定期失效前仍有效的情況一概判錯。依憲法訴訟法第52、54條，原問題修正通過。",
+      "suggestion": null,
+      "sources": [
+        "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030159",
+        "https://cons.judicial.gov.tw/docdata.aspx?fid=21"
+      ],
+      "groups": [
+        "previous12"
+      ],
+      "changedFields": [
+        "distractors"
+      ],
+      "before": {
+        "id": "law2-g46",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「憲法法庭宣告法律違憲」帶來的結果是？",
+        "answer": "該法律依判決指定的時間失去效力",
+        "distractors": [
+          "違憲法律繼續有效",
+          "違憲法律須由總統簽署才失效",
+          "立法院不能修改法律"
+        ],
+        "explanation": "因為「憲法法庭宣告法律違憲」，所以該法律依判決指定的時間失去效力。其他選項雖然和本單元有關，但都不是「憲法法庭宣告法律違憲」直接造成的結果。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law2-g46",
+        "chapter": "law2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「憲法法庭宣告法律違憲」帶來的結果是？",
+        "answer": "該法律依判決指定的時間失去效力",
+        "distractors": [
+          "超過判決指定失效日，該法律仍繼續有效",
+          "違憲法律須由總統簽署才失效",
+          "立法院不能修改法律"
+        ],
+        "explanation": "因為「憲法法庭宣告法律違憲」，所以該法律依判決指定的時間失去效力。其他選項雖然和本單元有關，但都不是「憲法法庭宣告法律違憲」直接造成的結果。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law8-g0",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law8-g0",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「訴願」的內容是？",
+        "answer": "不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查",
+        "distractors": [
+          "公務員違法或公共設施欠缺造成損害時，向國家請求賠償",
+          "人民對國家政策或公共利益向機關表達希望",
+          "人民向機關反映意見或建議"
+        ],
+        "explanation": "「訴願」的重點是：不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查。補充：通常向原處分機關的「上級機關」請求審查，是行政救濟的第一步。容易混淆的選項：「公務員違法或公共設施欠缺造成損害時，向國家請求賠償」說的是國家賠償；「人民對國家政策或公共利益向機關表達希望」說的是請願；「人民向機關反映意見或建議」說的是陳情。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law8-g0",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「訴願」的內容是？",
+        "answer": "不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查",
+        "distractors": [
+          "不服法院判決時，向上級法院請求重新審理",
+          "對公務員違法失職向監察院提出檢舉",
+          "人民向立法委員反映施政意見"
+        ],
+        "explanation": "「訴願」的重點是：不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查。補充：通常向原處分機關的「上級機關」請求審查，是行政救濟的第一步。其他選項是常見的誤解，都不是「訴願」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law8-g2",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law8-g2",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「行政訴訟」的內容是？",
+        "answer": "人民與行政機關發生公法上的爭議時，向行政法院請求救濟",
+        "distractors": [
+          "人民對國家政策或公共利益向機關表達希望",
+          "不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查",
+          "人民向機關反映意見或建議"
+        ],
+        "explanation": "「行政訴訟」的重點是：人民與行政機關發生公法上的爭議時，向行政法院請求救濟。補充：訴願結果仍不服時，向「行政法院」提起。容易混淆的選項：「人民對國家政策或公共利益向機關表達希望」說的是請願；「不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查」說的是訴願；「人民向機關反映意見或建議」說的是陳情。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law8-g2",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「行政訴訟」的內容是？",
+        "answer": "人民與行政機關發生公法上的爭議時，向行政法院請求救濟",
+        "distractors": [
+          "人民之間發生財產糾紛時，向地方法院請求判決",
+          "檢察官對犯罪嫌疑人提起公訴",
+          "向鄉鎮市調解委員會申請調解"
+        ],
+        "explanation": "「行政訴訟」的重點是：人民與行政機關發生公法上的爭議時，向行政法院請求救濟。補充：訴願結果仍不服時，向「行政法院」提起。其他選項是常見的誤解，都不是「行政訴訟」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law8-g4",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law8-g4",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「國家賠償」的內容是？",
+        "answer": "公務員違法或公共設施欠缺造成損害時，向國家請求賠償",
+        "distractors": [
+          "人民對國家政策或公共利益向機關表達希望",
+          "人民與行政機關發生公法上的爭議時，向行政法院請求救濟",
+          "人民向機關反映意見或建議"
+        ],
+        "explanation": "「國家賠償」的重點是：公務員違法或公共設施欠缺造成損害時，向國家請求賠償。容易混淆的選項：「人民對國家政策或公共利益向機關表達希望」說的是請願；「人民與行政機關發生公法上的爭議時，向行政法院請求救濟」說的是行政訴訟；「人民向機關反映意見或建議」說的是陳情。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law8-g4",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「國家賠償」的內容是？",
+        "answer": "公務員違法或公共設施欠缺造成損害時，向國家請求賠償",
+        "distractors": [
+          "人民被判刑後向國家繳納罰金",
+          "政府徵收私人土地時，依法給予的補償",
+          "因天然災害受損時，政府發放的救助金"
+        ],
+        "explanation": "「國家賠償」的重點是：公務員違法或公共設施欠缺造成損害時，向國家請求賠償。其他選項是常見的誤解，都不是「國家賠償」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law8-g6",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law8-g6",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「請願」的內容是？",
+        "answer": "人民對國家政策或公共利益向機關表達希望",
+        "distractors": [
+          "人民與行政機關發生公法上的爭議時，向行政法院請求救濟",
+          "不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查",
+          "公務員違法或公共設施欠缺造成損害時，向國家請求賠償"
+        ],
+        "explanation": "「請願」的重點是：人民對國家政策或公共利益向機關表達希望。容易混淆的選項：「人民與行政機關發生公法上的爭議時，向行政法院請求救濟」說的是行政訴訟；「不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查」說的是訴願；「公務員違法或公共設施欠缺造成損害時，向國家請求賠償」說的是國家賠償。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law8-g6",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「請願」的內容是？",
+        "answer": "人民對國家政策或公共利益向機關表達希望",
+        "distractors": [
+          "不服行政處分時，向上級機關請求撤銷",
+          "向法院請求國家賠償損害",
+          "人民連署罷免民意代表"
+        ],
+        "explanation": "「請願」的重點是：人民對國家政策或公共利益向機關表達希望。其他選項是常見的誤解，都不是「請願」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law8-g8",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law8-g8",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「陳情」的內容是？",
+        "answer": "人民向機關反映意見或建議",
+        "distractors": [
+          "不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查",
+          "人民與行政機關發生公法上的爭議時，向行政法院請求救濟",
+          "公務員違法或公共設施欠缺造成損害時，向國家請求賠償"
+        ],
+        "explanation": "「陳情」的重點是：人民向機關反映意見或建議。補充：陳情與請願不像訴願有法定效力，主要是表達意見。容易混淆的選項：「不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查」說的是訴願；「人民與行政機關發生公法上的爭議時，向行政法院請求救濟」說的是行政訴訟；「公務員違法或公共設施欠缺造成損害時，向國家請求賠償」說的是國家賠償。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law8-g8",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「陳情」的內容是？",
+        "answer": "人民向機關反映意見或建議",
+        "distractors": [
+          "依法向行政法院提起訴訟",
+          "公務員對長官的命令提出異議",
+          "立法委員在議會詢問官員"
+        ],
+        "explanation": "「陳情」的重點是：人民向機關反映意見或建議。補充：陳情與請願不像訴願有法定效力，主要是表達意見。其他選項是常見的誤解，都不是「陳情」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law8-g10",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law8-g10",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「行政處分」的內容是？",
+        "answer": "行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定",
+        "distractors": [
+          "審理行政訴訟案件的法院",
+          "人民向機關反映意見或建議",
+          "人民對國家政策或公共利益向機關表達希望"
+        ],
+        "explanation": "「行政處分」的重點是：行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定。容易混淆的選項：「審理行政訴訟案件的法院」說的是行政法院；「人民向機關反映意見或建議」說的是陳情；「人民對國家政策或公共利益向機關表達希望」說的是請願。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law8-g10",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「行政處分」的內容是？",
+        "answer": "行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定",
+        "distractors": [
+          "立法院通過的法律案",
+          "法院對案件作出的判決",
+          "行政機關內部的工作分配"
+        ],
+        "explanation": "「行政處分」的重點是：行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定。其他選項是常見的誤解，都不是「行政處分」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law8-g12",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law8-g12",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「行政罰」的內容是？",
+        "answer": "對違反行政法上義務的處罰，例如罰鍰",
+        "distractors": [
+          "審理行政訴訟案件的法院",
+          "公務員違法或公共設施欠缺造成損害時，向國家請求賠償",
+          "人民向機關反映意見或建議"
+        ],
+        "explanation": "「行政罰」的重點是：對違反行政法上義務的處罰，例如罰鍰。容易混淆的選項：「審理行政訴訟案件的法院」說的是行政法院；「公務員違法或公共設施欠缺造成損害時，向國家請求賠償」說的是國家賠償；「人民向機關反映意見或建議」說的是陳情。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law8-g12",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「行政罰」的內容是？",
+        "answer": "對違反行政法上義務的處罰，例如罰鍰",
+        "distractors": [
+          "違反契約時應付給對方的損害賠償",
+          "學校對違規學生的記過處分",
+          "鄰居之間協議的補償金"
+        ],
+        "explanation": "「行政罰」的重點是：對違反行政法上義務的處罰，例如罰鍰。其他選項是常見的誤解，都不是「行政罰」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "law8-g14",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "law8-g14",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「行政法院」的內容是？",
+        "answer": "審理行政訴訟案件的法院",
+        "distractors": [
+          "對違反行政法上義務的處罰，例如罰鍰",
+          "行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定",
+          "人民與行政機關發生公法上的爭議時，向行政法院請求救濟"
+        ],
+        "explanation": "「行政法院」的重點是：審理行政訴訟案件的法院。容易混淆的選項：「對違反行政法上義務的處罰，例如罰鍰」說的是行政罰；「行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定」說的是行政處分；「人民與行政機關發生公法上的爭議時，向行政法院請求救濟」說的是行政訴訟。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "law8-g14",
+        "chapter": "law8",
+        "difficulty": 2,
+        "context": null,
+        "question": "「行政法院」的內容是？",
+        "answer": "審理行政訴訟案件的法院",
+        "distractors": [
+          "審理民事與刑事案件的法院",
+          "負責彈劾失職官員的機關",
+          "受理訴願的上級行政機關"
+        ],
+        "explanation": "「行政法院」的重點是：審理行政訴訟案件的法院。其他選項是常見的誤解，都不是「行政法院」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco1-h7",
+      "status": "pass",
+      "comment": "已核對上輪指出的改動；新版誘答與正解互異，原問題複驗通過。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "previous12"
+      ],
+      "changedFields": [
+        "distractors"
+      ],
+      "before": {
+        "id": "eco1-h7",
+        "chapter": "eco1",
+        "difficulty": 3,
+        "context": "小傑買了不能退的演唱會門票，演唱會當天他發高燒，但他想：「票都買了，不去很浪費。」",
+        "question": "從經濟學的角度，小傑應該怎麼思考？",
+        "answer": "門票錢是沉沒成本，應依當下身體狀況做決定",
+        "distractors": [
+          "一定要去，否則錢白花了",
+          "應該再買一張票",
+          "應該去看，才不會浪費門票錢"
+        ],
+        "explanation": "已經付出且無法收回的錢是沉沒成本，理性決策應著眼於接下來的效益與代價。",
+        "source": "hand",
+        "figure": null
+      },
+      "current": {
+        "id": "eco1-h7",
+        "chapter": "eco1",
+        "difficulty": 3,
+        "context": "小傑買了不能退的演唱會門票，演唱會當天他發高燒，但他想：「票都買了，不去很浪費。」",
+        "question": "從經濟學的角度，小傑應該怎麼思考？",
+        "answer": "門票錢是沉沒成本，應依當下身體狀況做決定",
+        "distractors": [
+          "一定要去，否則錢白花了",
+          "應該再買一張票",
+          "只看門票價格高低來決定"
+        ],
+        "explanation": "已經付出且無法收回的錢是沉沒成本，理性決策應著眼於接下來的效益與代價。",
+        "source": "hand",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco1-h9",
+      "status": "pass",
+      "comment": "已核對上輪指出的改動；新版誘答與正解互異，原問題複驗通過。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "previous12"
+      ],
+      "changedFields": [
+        "distractors"
+      ],
+      "before": {
+        "id": "eco1-h9",
+        "chapter": "eco1",
+        "difficulty": 3,
+        "context": "阿華週末可以去打工賺 1000 元、去上已經繳費且不能退費的補習課，或在家休息。他最後選擇去補習。",
+        "question": "分析阿華的選擇，下列敘述何者正確？",
+        "answer": "已繳的學費是沉沒成本，不應影響決定",
+        "distractors": [
+          "已繳的學費就是補習的機會成本",
+          "打工的 1000 元和這個選擇無關",
+          "已繳的學費應列入機會成本"
+        ],
+        "explanation": "已經付出且無法收回的學費是沉沒成本；去補習的機會成本，是放棄的選項中價值最高者，例如打工的 1000 元。",
+        "source": "hand",
+        "figure": null
+      },
+      "current": {
+        "id": "eco1-h9",
+        "chapter": "eco1",
+        "difficulty": 3,
+        "context": "阿華週末可以去打工賺 1000 元、去上已經繳費且不能退費的補習課，或在家休息。他最後選擇去補習。",
+        "question": "分析阿華的選擇，下列敘述何者正確？",
+        "answer": "已繳的學費是沉沒成本，不應影響決定",
+        "distractors": [
+          "已繳的學費就是補習的機會成本",
+          "打工的 1000 元和這個選擇無關",
+          "在家休息沒有任何機會成本"
+        ],
+        "explanation": "已經付出且無法收回的學費是沉沒成本；去補習的機會成本，是放棄的選項中價值最高者，例如打工的 1000 元。",
+        "source": "hand",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco1-g40",
+      "status": "pass",
+      "comment": "誘答已改為「不需取捨就能同時推動所有公共建設」，可與有限預算須取捨明確區分，原品質建議結案。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "previous12"
+      ],
+      "changedFields": [
+        "distractors"
+      ],
+      "before": {
+        "id": "eco1-g40",
+        "chapter": "eco1",
+        "difficulty": 2,
+        "context": null,
+        "question": "「政府預算有限」帶來的結果是？",
+        "answer": "公共建設也必須取捨",
+        "distractors": [
+          "公共建設可以同時推動",
+          "政府不必排定優先順序",
+          "政府可以多印鈔票支應所有建設"
+        ],
+        "explanation": "因為「政府預算有限」，所以公共建設也必須取捨。其他選項雖然和本單元有關，但都不是「政府預算有限」直接造成的結果。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco1-g40",
+        "chapter": "eco1",
+        "difficulty": 2,
+        "context": null,
+        "question": "「政府預算有限」帶來的結果是？",
+        "answer": "公共建設也必須取捨",
+        "distractors": [
+          "不需取捨就能同時推動所有公共建設",
+          "政府不必排定優先順序",
+          "政府可以多印鈔票支應所有建設"
+        ],
+        "explanation": "因為「政府預算有限」，所以公共建設也必須取捨。其他選項雖然和本單元有關，但都不是「政府預算有限」直接造成的結果。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco2-h2",
+      "status": "pass",
+      "comment": "已核對上輪指出的改動；新版誘答與正解互異，原問題複驗通過。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "previous12"
+      ],
+      "changedFields": [
+        "distractors"
+      ],
+      "before": {
+        "id": "eco2-h2",
+        "chapter": "eco2",
+        "difficulty": 3,
+        "context": null,
+        "question": "颱風過後菜價大漲，最主要的原因是？",
+        "answer": "蔬菜產量減少，供給減少",
+        "distractors": [
+          "消費者突然不想吃菜",
+          "政府規定菜價必須上漲",
+          "消費者對蔬菜的需求減少"
+        ],
+        "explanation": "颱風造成農作物受損，供給減少，在需求不變下，市場價格上升。",
+        "source": "hand",
+        "figure": null
+      },
+      "current": {
+        "id": "eco2-h2",
+        "chapter": "eco2",
+        "difficulty": 3,
+        "context": null,
+        "question": "颱風過後菜價大漲，最主要的原因是？",
+        "answer": "蔬菜產量減少，供給減少",
+        "distractors": [
+          "消費者突然不想吃菜",
+          "政府規定菜價必須上漲",
+          "政府調降蔬菜進口關稅"
+        ],
+        "explanation": "颱風造成農作物受損，供給減少，在需求不變下，市場價格上升。",
+        "source": "hand",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco2-g0",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco2-g0",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「需求法則」的意思是？",
+        "answer": "其他條件不變下，商品價格上漲時需求量減少",
+        "distractors": [
+          "其他條件不變下，商品價格上漲時供給量增加",
+          "需求量大於供給量，供不應求",
+          "供給量大於需求量，供過於求"
+        ],
+        "explanation": "「需求法則」的重點是：其他條件不變下，商品價格上漲時需求量減少。容易混淆的選項：「其他條件不變下，商品價格上漲時供給量增加」說的是供給法則；「需求量大於供給量，供不應求」說的是超額需求；「供給量大於需求量，供過於求」說的是超額供給。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco2-g0",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「需求法則」的意思是？",
+        "answer": "其他條件不變下，商品價格上漲時需求量減少",
+        "distractors": [
+          "其他條件不變下，價格上漲時需求量增加",
+          "所得增加時，商品價格一定下跌",
+          "商品價格由政府決定的原則"
+        ],
+        "explanation": "「需求法則」的重點是：其他條件不變下，商品價格上漲時需求量減少。其他選項是常見的誤解，都不是「需求法則」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco2-g2",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco2-g2",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「供給法則」的意思是？",
+        "answer": "其他條件不變下，商品價格上漲時供給量增加",
+        "distractors": [
+          "價格自動調節供給與需求的作用",
+          "其他條件不變下，商品價格上漲時需求量減少",
+          "需求量大於供給量，供不應求"
+        ],
+        "explanation": "「供給法則」的重點是：其他條件不變下，商品價格上漲時供給量增加。容易混淆的選項：「價格自動調節供給與需求的作用」說的是價格機能；「其他條件不變下，商品價格上漲時需求量減少」說的是需求法則；「需求量大於供給量，供不應求」說的是超額需求。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco2-g2",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「供給法則」的意思是？",
+        "answer": "其他條件不變下，商品價格上漲時供給量增加",
+        "distractors": [
+          "其他條件不變下，價格上漲時供給量減少",
+          "廠商生產越多，價格一定越高",
+          "政府規定廠商產量的原則"
+        ],
+        "explanation": "「供給法則」的重點是：其他條件不變下，商品價格上漲時供給量增加。其他選項是常見的誤解，都不是「供給法則」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco2-g4",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco2-g4",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「均衡價格」的意思是？",
+        "answer": "需求量等於供給量時的價格",
+        "distractors": [
+          "價格自動調節供給與需求的作用",
+          "需求量大於供給量，供不應求",
+          "供給量大於需求量，供過於求"
+        ],
+        "explanation": "「均衡價格」的重點是：需求量等於供給量時的價格。容易混淆的選項：「價格自動調節供給與需求的作用」說的是價格機能；「需求量大於供給量，供不應求」說的是超額需求；「供給量大於需求量，供過於求」說的是超額供給。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco2-g4",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「均衡價格」的意思是？",
+        "answer": "需求量等於供給量時的價格",
+        "distractors": [
+          "政府規定的商品最高價格",
+          "廠商希望賣到的最高價格",
+          "消費者願意支付的最低價格"
+        ],
+        "explanation": "「均衡價格」的重點是：需求量等於供給量時的價格。其他選項是常見的誤解，都不是「均衡價格」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco2-g6",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco2-g6",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「替代品」的意思是？",
+        "answer": "功能相近、可以互相取代的商品",
+        "distractors": [
+          "市場上只有一家廠商供應某商品",
+          "需要一起使用的商品",
+          "買賣雙方進行交易的機制或場所"
+        ],
+        "explanation": "「替代品」的重點是：功能相近、可以互相取代的商品。補充：一個變貴，另一個的需求會增加，例如咖啡與茶。容易混淆的選項：「市場上只有一家廠商供應某商品」說的是獨占；「需要一起使用的商品」說的是互補品；「買賣雙方進行交易的機制或場所」說的是市場。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco2-g6",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「替代品」的意思是？",
+        "answer": "功能相近、可以互相取代的商品",
+        "distractors": [
+          "價格相同的兩種商品",
+          "同一家公司生產的商品",
+          "外觀相似但用途不同的商品"
+        ],
+        "explanation": "「替代品」的重點是：功能相近、可以互相取代的商品。補充：一個變貴，另一個的需求會增加，例如咖啡與茶。其他選項是常見的誤解，都不是「替代品」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco2-g8",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco2-g8",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「互補品」的意思是？",
+        "answer": "需要一起使用的商品",
+        "distractors": [
+          "功能相近、可以互相取代的商品",
+          "市場上只有一家廠商供應某商品",
+          "買賣雙方進行交易的機制或場所"
+        ],
+        "explanation": "「互補品」的重點是：需要一起使用的商品。補充：一個變貴，另一個的需求會減少，例如汽車與汽油。容易混淆的選項：「功能相近、可以互相取代的商品」說的是替代品；「市場上只有一家廠商供應某商品」說的是獨占；「買賣雙方進行交易的機制或場所」說的是市場。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco2-g8",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「互補品」的意思是？",
+        "answer": "需要一起使用的商品",
+        "distractors": [
+          "品牌相同的商品",
+          "在同一家店販售的商品",
+          "價格總是一起上漲的商品"
+        ],
+        "explanation": "「互補品」的重點是：需要一起使用的商品。補充：一個變貴，另一個的需求會減少，例如汽車與汽油。其他選項是常見的誤解，都不是「互補品」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco2-g10",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco2-g10",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「超額需求」的意思是？",
+        "answer": "需求量大於供給量，供不應求",
+        "distractors": [
+          "價格自動調節供給與需求的作用",
+          "供給量大於需求量，供過於求",
+          "其他條件不變下，商品價格上漲時供給量增加"
+        ],
+        "explanation": "「超額需求」的重點是：需求量大於供給量，供不應求。補充：供不應求，價格傾向上漲。容易混淆的選項：「價格自動調節供給與需求的作用」說的是價格機能；「供給量大於需求量，供過於求」說的是超額供給；「其他條件不變下，商品價格上漲時供給量增加」說的是供給法則。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco2-g10",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「超額需求」的意思是？",
+        "answer": "需求量大於供給量，供不應求",
+        "distractors": [
+          "商品需求增加時，價格一定下跌",
+          "消費者的存款多於商品總價值",
+          "政府要求消費者增加購買"
+        ],
+        "explanation": "「超額需求」的重點是：需求量大於供給量，供不應求。補充：供不應求，價格傾向上漲。其他選項是常見的誤解，都不是「超額需求」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco2-g12",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco2-g12",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「超額供給」的意思是？",
+        "answer": "供給量大於需求量，供過於求",
+        "distractors": [
+          "價格自動調節供給與需求的作用",
+          "需求量等於供給量時的價格",
+          "其他條件不變下，商品價格上漲時需求量減少"
+        ],
+        "explanation": "「超額供給」的重點是：供給量大於需求量，供過於求。補充：供過於求，價格傾向下跌。容易混淆的選項：「價格自動調節供給與需求的作用」說的是價格機能；「需求量等於供給量時的價格」說的是均衡價格；「其他條件不變下，商品價格上漲時需求量減少」說的是需求法則。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco2-g12",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「超額供給」的意思是？",
+        "answer": "供給量大於需求量，供過於求",
+        "distractors": [
+          "廠商的庫存剛好全部賣完",
+          "政府增加商品進口配額",
+          "生產成本上升使產量減少"
+        ],
+        "explanation": "「超額供給」的重點是：供給量大於需求量，供過於求。補充：供過於求，價格傾向下跌。其他選項是常見的誤解，都不是「超額供給」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco2-g14",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco2-g14",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「市場」的意思是？",
+        "answer": "買賣雙方進行交易的機制或場所",
+        "distractors": [
+          "市場上只有一家廠商供應某商品",
+          "功能相近、可以互相取代的商品",
+          "需要一起使用的商品"
+        ],
+        "explanation": "「市場」的重點是：買賣雙方進行交易的機制或場所。容易混淆的選項：「市場上只有一家廠商供應某商品」說的是獨占；「功能相近、可以互相取代的商品」說的是替代品；「需要一起使用的商品」說的是互補品。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco2-g14",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「市場」的意思是？",
+        "answer": "買賣雙方進行交易的機制或場所",
+        "distractors": [
+          "只能在實體店面進行的交易",
+          "政府分配物資給人民的制度",
+          "商品從工廠運送到倉庫的過程"
+        ],
+        "explanation": "「市場」的重點是：買賣雙方進行交易的機制或場所。其他選項是常見的誤解，都不是「市場」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco2-g16",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco2-g16",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「價格機能」的意思是？",
+        "answer": "價格自動調節供給與需求的作用",
+        "distractors": [
+          "其他條件不變下，商品價格上漲時供給量增加",
+          "需求量等於供給量時的價格",
+          "供給量大於需求量，供過於求"
+        ],
+        "explanation": "「價格機能」的重點是：價格自動調節供給與需求的作用。容易混淆的選項：「其他條件不變下，商品價格上漲時供給量增加」說的是供給法則；「需求量等於供給量時的價格」說的是均衡價格；「供給量大於需求量，供過於求」說的是超額供給。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco2-g16",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「價格機能」的意思是？",
+        "answer": "價格自動調節供給與需求的作用",
+        "distractors": [
+          "政府規定商品價格的制度",
+          "廠商聯合訂定統一價格",
+          "商品價格長期固定不變"
+        ],
+        "explanation": "「價格機能」的重點是：價格自動調節供給與需求的作用。其他選項是常見的誤解，都不是「價格機能」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco2-g18",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco2-g18",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「獨占」的意思是？",
+        "answer": "市場上只有一家廠商供應某商品",
+        "distractors": [
+          "功能相近、可以互相取代的商品",
+          "買賣雙方進行交易的機制或場所",
+          "需要一起使用的商品"
+        ],
+        "explanation": "「獨占」的重點是：市場上只有一家廠商供應某商品。容易混淆的選項：「功能相近、可以互相取代的商品」說的是替代品；「買賣雙方進行交易的機制或場所」說的是市場；「需要一起使用的商品」說的是互補品。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco2-g18",
+        "chapter": "eco2",
+        "difficulty": 2,
+        "context": null,
+        "question": "「獨占」的意思是？",
+        "answer": "市場上只有一家廠商供應某商品",
+        "distractors": [
+          "市場上有許多廠商販售相同商品",
+          "少數幾家廠商控制市場",
+          "消費者只購買同一個品牌"
+        ],
+        "explanation": "「獨占」的重點是：市場上只有一家廠商供應某商品。其他選項是常見的誤解，都不是「獨占」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco4-g0",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco4-g0",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「勞動基準法」的意思是？",
+        "answer": "規定最低勞動條件的法律",
+        "distractors": [
+          "十五歲以上未滿十六歲的受僱者",
+          "勞工的工資依法不得低於政府公告的金額",
+          "不因性別、種族等因素在就業上受到歧視"
+        ],
+        "explanation": "「勞動基準法」的重點是：規定最低勞動條件的法律。容易混淆的選項：「十五歲以上未滿十六歲的受僱者」說的是童工；「勞工的工資依法不得低於政府公告的金額」說的是最低工資；「不因性別、種族等因素在就業上受到歧視」說的是就業平等。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco4-g0",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「勞動基準法」的意思是？",
+        "answer": "規定最低勞動條件的法律",
+        "distractors": [
+          "規定企業最高利潤的法律",
+          "規範勞工之間私人借貸的法律",
+          "規定公務員考試與任用的法律"
+        ],
+        "explanation": "「勞動基準法」的重點是：規定最低勞動條件的法律。其他選項是常見的誤解，都不是「勞動基準法」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco4-g2",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco4-g2",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「工會」的意思是？",
+        "answer": "勞工為維護權益組成的團體",
+        "distractors": [
+          "勞工組織與參加工會的權利",
+          "工會與雇主集體協商勞動條件的權利",
+          "協商不成時依法進行罷工等爭議行為的權利"
+        ],
+        "explanation": "「工會」的重點是：勞工為維護權益組成的團體。容易混淆的選項：「勞工組織與參加工會的權利」說的是團結權；「工會與雇主集體協商勞動條件的權利」說的是協商權；「協商不成時依法進行罷工等爭議行為的權利」說的是爭議權。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco4-g2",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「工會」的意思是？",
+        "answer": "勞工為維護權益組成的團體",
+        "distractors": [
+          "雇主為管理員工而設立的部門",
+          "政府監督企業的行政機關",
+          "企業之間協調價格的組織"
+        ],
+        "explanation": "「工會」的重點是：勞工為維護權益組成的團體。其他選項是常見的誤解，都不是「工會」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco4-g4",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco4-g4",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「團結權」的意思是？",
+        "answer": "勞工組織與參加工會的權利",
+        "distractors": [
+          "協商不成時依法進行罷工等爭議行為的權利",
+          "勞工為維護權益組成的團體",
+          "工會與雇主集體協商勞動條件的權利"
+        ],
+        "explanation": "「團結權」的重點是：勞工組織與參加工會的權利。容易混淆的選項：「協商不成時依法進行罷工等爭議行為的權利」說的是爭議權；「勞工為維護權益組成的團體」說的是工會；「工會與雇主集體協商勞動條件的權利」說的是協商權。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco4-g4",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「團結權」的意思是？",
+        "answer": "勞工組織與參加工會的權利",
+        "distractors": [
+          "勞工個人與雇主談判薪資的權利",
+          "雇主組成同業公會的權利",
+          "勞工可以隨時離職的權利"
+        ],
+        "explanation": "「團結權」的重點是：勞工組織與參加工會的權利。其他選項是常見的誤解，都不是「團結權」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco4-g6",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco4-g6",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「協商權」的意思是？",
+        "answer": "工會與雇主集體協商勞動條件的權利",
+        "distractors": [
+          "協商不成時依法進行罷工等爭議行為的權利",
+          "勞工為維護權益組成的團體",
+          "勞工組織與參加工會的權利"
+        ],
+        "explanation": "「協商權」的重點是：工會與雇主集體協商勞動條件的權利。補充：工會和資方談判、簽訂團體協約。容易混淆的選項：「協商不成時依法進行罷工等爭議行為的權利」說的是爭議權；「勞工為維護權益組成的團體」說的是工會；「勞工組織與參加工會的權利」說的是團結權。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco4-g6",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「協商權」的意思是？",
+        "answer": "工會與雇主集體協商勞動條件的權利",
+        "distractors": [
+          "勞工個人與主管私下約定加班費的權利",
+          "政府替勞工決定工資的權利",
+          "雇主單方面制定工作規則的權利"
+        ],
+        "explanation": "「協商權」的重點是：工會與雇主集體協商勞動條件的權利。補充：工會和資方談判、簽訂團體協約。其他選項是常見的誤解，都不是「協商權」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco4-g8",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco4-g8",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「爭議權」的意思是？",
+        "answer": "協商不成時依法進行罷工等爭議行為的權利",
+        "distractors": [
+          "勞工為維護權益組成的團體",
+          "勞工組織與參加工會的權利",
+          "工會與雇主集體協商勞動條件的權利"
+        ],
+        "explanation": "「爭議權」的重點是：協商不成時依法進行罷工等爭議行為的權利。補充：協商不成時，依法可以罷工。容易混淆的選項：「勞工為維護權益組成的團體」說的是工會；「勞工組織與參加工會的權利」說的是團結權；「工會與雇主集體協商勞動條件的權利」說的是協商權。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco4-g8",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「爭議權」的意思是？",
+        "answer": "協商不成時依法進行罷工等爭議行為的權利",
+        "distractors": [
+          "勞工可以任意破壞雇主財產的權利",
+          "雇主可以隨時解僱勞工的權利",
+          "勞工向法院提起刑事告訴的權利"
+        ],
+        "explanation": "「爭議權」的重點是：協商不成時依法進行罷工等爭議行為的權利。補充：協商不成時，依法可以罷工。其他選項是常見的誤解，都不是「爭議權」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco4-g10",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。 童工年齡與勞基法第44條相符；不把未滿18歲全數視為本條童工。",
+      "suggestion": null,
+      "sources": [
+        "https://laws.mol.gov.tw/FLAW/PrintFLAWDOC01.aspx?flno=44&id=FL014930"
+      ],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco4-g10",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「童工」的意思是？",
+        "answer": "十五歲以上未滿十六歲的受僱者",
+        "distractors": [
+          "勞工因工作而受傷、生病或死亡",
+          "勞工發生傷病、老年等情況時的保險",
+          "勞工的工資依法不得低於政府公告的金額"
+        ],
+        "explanation": "「童工」的重點是：十五歲以上未滿十六歲的受僱者。容易混淆的選項：「勞工因工作而受傷、生病或死亡」說的是職業災害；「勞工發生傷病、老年等情況時的保險」說的是勞工保險；「勞工的工資依法不得低於政府公告的金額」說的是最低工資。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco4-g10",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「童工」的意思是？",
+        "answer": "十五歲以上未滿十六歲的受僱者",
+        "distractors": [
+          "未滿十二歲、在家幫忙做家事的孩子",
+          "十六歲以上未滿十八歲的受僱者",
+          "已滿十八歲、第一次工作的新進員工"
+        ],
+        "explanation": "「童工」的重點是：十五歲以上未滿十六歲的受僱者。其他選項是常見的誤解，都不是「童工」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco4-g12",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco4-g12",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「最低工資」的意思是？",
+        "answer": "勞工的工資依法不得低於政府公告的金額",
+        "distractors": [
+          "規定最低勞動條件的法律",
+          "勞工發生傷病、老年等情況時的保險",
+          "勞工因工作而受傷、生病或死亡"
+        ],
+        "explanation": "「最低工資」的重點是：勞工的工資依法不得低於政府公告的金額。容易混淆的選項：「規定最低勞動條件的法律」說的是勞動基準法；「勞工發生傷病、老年等情況時的保險」說的是勞工保險；「勞工因工作而受傷、生病或死亡」說的是職業災害。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco4-g12",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「最低工資」的意思是？",
+        "answer": "勞工的工資依法不得低於政府公告的金額",
+        "distractors": [
+          "企業依獲利發給員工的年終獎金",
+          "勞工與雇主自由約定、沒有下限的工資",
+          "政府規定所有勞工都領相同的薪水"
+        ],
+        "explanation": "「最低工資」的重點是：勞工的工資依法不得低於政府公告的金額。其他選項是常見的誤解，都不是「最低工資」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco4-g14",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco4-g14",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「勞工保險」的意思是？",
+        "answer": "勞工發生傷病、老年等情況時的保險",
+        "distractors": [
+          "勞工的工資依法不得低於政府公告的金額",
+          "規定最低勞動條件的法律",
+          "勞工因工作而受傷、生病或死亡"
+        ],
+        "explanation": "「勞工保險」的重點是：勞工發生傷病、老年等情況時的保險。容易混淆的選項：「勞工的工資依法不得低於政府公告的金額」說的是最低工資；「規定最低勞動條件的法律」說的是勞動基準法；「勞工因工作而受傷、生病或死亡」說的是職業災害。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco4-g14",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「勞工保險」的意思是？",
+        "answer": "勞工發生傷病、老年等情況時的保險",
+        "distractors": [
+          "由勞工自行購買的商業人壽保險",
+          "政府發給低收入戶的生活補助",
+          "企業為保護設備投保的火災保險"
+        ],
+        "explanation": "「勞工保險」的重點是：勞工發生傷病、老年等情況時的保險。其他選項是常見的誤解，都不是「勞工保險」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco4-g16",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco4-g16",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「職業災害」的意思是？",
+        "answer": "勞工因工作而受傷、生病或死亡",
+        "distractors": [
+          "勞工發生傷病、老年等情況時的保險",
+          "不因性別、種族等因素在就業上受到歧視",
+          "十五歲以上未滿十六歲的受僱者"
+        ],
+        "explanation": "「職業災害」的重點是：勞工因工作而受傷、生病或死亡。容易混淆的選項：「勞工發生傷病、老年等情況時的保險」說的是勞工保險；「不因性別、種族等因素在就業上受到歧視」說的是就業平等；「十五歲以上未滿十六歲的受僱者」說的是童工。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco4-g16",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「職業災害」的意思是？",
+        "answer": "勞工因工作而受傷、生病或死亡",
+        "distractors": [
+          "勞工下班後私人旅遊時受傷",
+          "企業因經營不善而倒閉",
+          "工廠機器因老舊而故障"
+        ],
+        "explanation": "「職業災害」的重點是：勞工因工作而受傷、生病或死亡。其他選項是常見的誤解，都不是「職業災害」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco4-g18",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco4-g18",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「就業平等」的意思是？",
+        "answer": "不因性別、種族等因素在就業上受到歧視",
+        "distractors": [
+          "勞工的工資依法不得低於政府公告的金額",
+          "規定最低勞動條件的法律",
+          "勞工發生傷病、老年等情況時的保險"
+        ],
+        "explanation": "「就業平等」的重點是：不因性別、種族等因素在就業上受到歧視。容易混淆的選項：「勞工的工資依法不得低於政府公告的金額」說的是最低工資；「規定最低勞動條件的法律」說的是勞動基準法；「勞工發生傷病、老年等情況時的保險」說的是勞工保險。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco4-g18",
+        "chapter": "eco4",
+        "difficulty": 2,
+        "context": null,
+        "question": "「就業平等」的意思是？",
+        "answer": "不因性別、種族等因素在就業上受到歧視",
+        "distractors": [
+          "所有勞工的薪水都必須相同",
+          "雇主可以依年齡優先錄取年輕人",
+          "只有女性才能申請育嬰假"
+        ],
+        "explanation": "「就業平等」的重點是：不因性別、種族等因素在就業上受到歧視。其他選項是常見的誤解，都不是「就業平等」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco5-g0",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco5-g0",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「公共財」的意思是？",
+        "answer": "多人可同時使用、難以排除他人使用的財貨",
+        "distractors": [
+          "行為使旁人受益卻未獲得報酬",
+          "行為使旁人受損卻未負擔代價",
+          "可以排除他人使用，且一人使用會減少他人可用數量的財貨"
+        ],
+        "explanation": "「公共財」的重點是：多人可同時使用、難以排除他人使用的財貨。容易混淆的選項：「行為使旁人受益卻未獲得報酬」說的是外部效益；「行為使旁人受損卻未負擔代價」說的是外部成本；「可以排除他人使用，且一人使用會減少他人可用數量的財貨」說的是私有財。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco5-g0",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「公共財」的意思是？",
+        "answer": "多人可同時使用、難以排除他人使用的財貨",
+        "distractors": [
+          "只要是政府提供的財貨就是公共財",
+          "必須付費才能使用的財貨",
+          "數量有限、先搶先贏的財貨"
+        ],
+        "explanation": "「公共財」的重點是：多人可同時使用、難以排除他人使用的財貨。其他選項是常見的誤解，都不是「公共財」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco5-g2",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco5-g2",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「私有財」的意思是？",
+        "answer": "可以排除他人使用，且一人使用會減少他人可用數量的財貨",
+        "distractors": [
+          "行為使旁人受損卻未負擔代價",
+          "行為使旁人受益卻未獲得報酬",
+          "多人可同時使用、難以排除他人使用的財貨"
+        ],
+        "explanation": "「私有財」的重點是：可以排除他人使用，且一人使用會減少他人可用數量的財貨。容易混淆的選項：「行為使旁人受損卻未負擔代價」說的是外部成本；「行為使旁人受益卻未獲得報酬」說的是外部效益；「多人可同時使用、難以排除他人使用的財貨」說的是公共財。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco5-g2",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「私有財」的意思是？",
+        "answer": "可以排除他人使用，且一人使用會減少他人可用數量的財貨",
+        "distractors": [
+          "不需付出代價就能取得的財貨",
+          "政府免費提供給民眾的財貨",
+          "由社區居民共同擁有的財貨"
+        ],
+        "explanation": "「私有財」的重點是：可以排除他人使用，且一人使用會減少他人可用數量的財貨。其他選項是常見的誤解，都不是「私有財」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco5-g4",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco5-g4",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「外部成本」的意思是？",
+        "answer": "行為使旁人受損卻未負擔代價",
+        "distractors": [
+          "多人可同時使用、難以排除他人使用的財貨",
+          "行為使旁人受益卻未獲得報酬",
+          "可以排除他人使用，且一人使用會減少他人可用數量的財貨"
+        ],
+        "explanation": "「外部成本」的重點是：行為使旁人受損卻未負擔代價。補充：例如工廠污染讓附近居民受害，工廠卻沒付出代價。容易混淆的選項：「多人可同時使用、難以排除他人使用的財貨」說的是公共財；「行為使旁人受益卻未獲得報酬」說的是外部效益；「可以排除他人使用，且一人使用會減少他人可用數量的財貨」說的是私有財。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco5-g4",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「外部成本」的意思是？",
+        "answer": "行為使旁人受損卻未負擔代價",
+        "distractors": [
+          "企業生產商品所付出的原料費用",
+          "消費者購買商品時支付的價格",
+          "政府對污染工廠收取的罰款"
+        ],
+        "explanation": "「外部成本」的重點是：行為使旁人受損卻未負擔代價。補充：例如工廠污染讓附近居民受害，工廠卻沒付出代價。其他選項是常見的誤解，都不是「外部成本」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco5-g6",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco5-g6",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「外部效益」的意思是？",
+        "answer": "行為使旁人受益卻未獲得報酬",
+        "distractors": [
+          "可以排除他人使用，且一人使用會減少他人可用數量的財貨",
+          "行為使旁人受損卻未負擔代價",
+          "多人可同時使用、難以排除他人使用的財貨"
+        ],
+        "explanation": "「外部效益」的重點是：行為使旁人受益卻未獲得報酬。容易混淆的選項：「可以排除他人使用，且一人使用會減少他人可用數量的財貨」說的是私有財；「行為使旁人受損卻未負擔代價」說的是外部成本；「多人可同時使用、難以排除他人使用的財貨」說的是公共財。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco5-g6",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「外部效益」的意思是？",
+        "answer": "行為使旁人受益卻未獲得報酬",
+        "distractors": [
+          "企業販售商品獲得的利潤",
+          "消費者購買商品時得到的折扣",
+          "行為人因幫助他人而獲得的報酬"
+        ],
+        "explanation": "「外部效益」的重點是：行為使旁人受益卻未獲得報酬。其他選項是常見的誤解，都不是「外部效益」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco5-g8",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco5-g8",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「直接稅」的意思是？",
+        "answer": "由納稅人自己負擔、無法轉嫁的稅",
+        "distractors": [
+          "可以轉嫁給他人負擔的稅",
+          "所得越高、稅率越高的課稅方式",
+          "政府對一年收入與支出的計畫"
+        ],
+        "explanation": "「直接稅」的重點是：由納稅人自己負擔、無法轉嫁的稅。補充：納稅的人就是負擔的人，例如所得稅。容易混淆的選項：「可以轉嫁給他人負擔的稅」說的是間接稅；「所得越高、稅率越高的課稅方式」說的是累進稅率；「政府對一年收入與支出的計畫」說的是政府預算。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco5-g8",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「直接稅」的意思是？",
+        "answer": "由納稅人自己負擔、無法轉嫁的稅",
+        "distractors": [
+          "隨商品價格一起由消費者支付的稅",
+          "政府向進口商品課徵的關稅",
+          "使用公共服務時繳交的規費"
+        ],
+        "explanation": "「直接稅」的重點是：由納稅人自己負擔、無法轉嫁的稅。補充：納稅的人就是負擔的人，例如所得稅。其他選項是常見的誤解，都不是「直接稅」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco5-g10",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco5-g10",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「間接稅」的意思是？",
+        "answer": "可以轉嫁給他人負擔的稅",
+        "distractors": [
+          "政府對一年收入與支出的計畫",
+          "政府照顧人民基本生活的措施",
+          "符合資格的民眾納保後，生病時能獲得醫療給付的社會保險"
+        ],
+        "explanation": "「間接稅」的重點是：可以轉嫁給他人負擔的稅。補充：可以轉嫁給別人負擔，例如營業稅包含在售價裡。容易混淆的選項：「政府對一年收入與支出的計畫」說的是政府預算；「政府照顧人民基本生活的措施」說的是社會福利；「符合資格的民眾納保後，生病時能獲得醫療給付的社會保險」說的是全民健康保險。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco5-g10",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「間接稅」的意思是？",
+        "answer": "可以轉嫁給他人負擔的稅",
+        "distractors": [
+          "依個人所得多寡直接課徵的稅",
+          "違規時繳交的罰鍰",
+          "向政府申請證件時繳交的規費"
+        ],
+        "explanation": "「間接稅」的重點是：可以轉嫁給他人負擔的稅。補充：可以轉嫁給別人負擔，例如營業稅包含在售價裡。其他選項是常見的誤解，都不是「間接稅」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco5-g12",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco5-g12",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「累進稅率」的意思是？",
+        "answer": "所得越高、稅率越高的課稅方式",
+        "distractors": [
+          "政府照顧人民基本生活的措施",
+          "可以轉嫁給他人負擔的稅",
+          "政府對一年收入與支出的計畫"
+        ],
+        "explanation": "「累進稅率」的重點是：所得越高、稅率越高的課稅方式。容易混淆的選項：「政府照顧人民基本生活的措施」說的是社會福利；「可以轉嫁給他人負擔的稅」說的是間接稅；「政府對一年收入與支出的計畫」說的是政府預算。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco5-g12",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「累進稅率」的意思是？",
+        "answer": "所得越高、稅率越高的課稅方式",
+        "distractors": [
+          "每個人不論所得都繳相同金額的稅",
+          "所得越高、稅率越低的課稅方式",
+          "依商品價格固定比例課徵的稅"
+        ],
+        "explanation": "「累進稅率」的重點是：所得越高、稅率越高的課稅方式。其他選項是常見的誤解，都不是「累進稅率」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco5-g14",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco5-g14",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「社會福利」的意思是？",
+        "answer": "政府照顧人民基本生活的措施",
+        "distractors": [
+          "政府對一年收入與支出的計畫",
+          "可以轉嫁給他人負擔的稅",
+          "由納稅人自己負擔、無法轉嫁的稅"
+        ],
+        "explanation": "「社會福利」的重點是：政府照顧人民基本生活的措施。容易混淆的選項：「政府對一年收入與支出的計畫」說的是政府預算；「可以轉嫁給他人負擔的稅」說的是間接稅；「由納稅人自己負擔、無法轉嫁的稅」說的是直接稅。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco5-g14",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「社會福利」的意思是？",
+        "answer": "政府照顧人民基本生活的措施",
+        "distractors": [
+          "企業提供給員工的福利",
+          "民間慈善團體的募款活動",
+          "政府向人民課稅以支應國防"
+        ],
+        "explanation": "「社會福利」的重點是：政府照顧人民基本生活的措施。其他選項是常見的誤解，都不是「社會福利」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco5-g16",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco5-g16",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「全民健康保險」的意思是？",
+        "answer": "符合資格的民眾納保後，生病時能獲得醫療給付的社會保險",
+        "distractors": [
+          "可以轉嫁給他人負擔的稅",
+          "政府對一年收入與支出的計畫",
+          "所得越高、稅率越高的課稅方式"
+        ],
+        "explanation": "「全民健康保險」的重點是：符合資格的民眾納保後，生病時能獲得醫療給付的社會保險。容易混淆的選項：「可以轉嫁給他人負擔的稅」說的是間接稅；「政府對一年收入與支出的計畫」說的是政府預算；「所得越高、稅率越高的課稅方式」說的是累進稅率。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco5-g16",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「全民健康保險」的意思是？",
+        "answer": "符合資格的民眾納保後，生病時能獲得醫療給付的社會保險",
+        "distractors": [
+          "民眾自行向保險公司購買的醫療保險",
+          "只有低收入戶才能參加的醫療補助",
+          "政府為公務員設立的退休金制度"
+        ],
+        "explanation": "「全民健康保險」的重點是：符合資格的民眾納保後，生病時能獲得醫療給付的社會保險。其他選項是常見的誤解，都不是「全民健康保險」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "eco5-g18",
+      "status": "pass",
+      "comment": "已逐題閱讀題幹、正解、三個新版誘答及完整解析；以國中單元定義判斷，未見新增的錯誤正解或明確第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "groups": [
+        "terms59"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "eco5-g18",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「政府預算」的意思是？",
+        "answer": "政府對一年收入與支出的計畫",
+        "distractors": [
+          "政府照顧人民基本生活的措施",
+          "所得越高、稅率越高的課稅方式",
+          "符合資格的民眾納保後，生病時能獲得醫療給付的社會保險"
+        ],
+        "explanation": "「政府預算」的重點是：政府對一年收入與支出的計畫。容易混淆的選項：「政府照顧人民基本生活的措施」說的是社會福利；「所得越高、稅率越高的課稅方式」說的是累進稅率；「符合資格的民眾納保後，生病時能獲得醫療給付的社會保險」說的是全民健康保險。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "eco5-g18",
+        "chapter": "eco5",
+        "difficulty": 2,
+        "context": null,
+        "question": "「政府預算」的意思是？",
+        "answer": "政府對一年收入與支出的計畫",
+        "distractors": [
+          "政府已經花完的實際支出紀錄",
+          "企業年度的營收計畫",
+          "政府向人民借款發行的債券"
+        ],
+        "explanation": "「政府預算」的重點是：政府對一年收入與支出的計畫。其他選項是常見的誤解，都不是「政府預算」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    }
+  ]
+}

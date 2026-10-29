@@ -1,0 +1,22 @@
+{
+  "sourceSha": "e743ac12233a48fd68a3b6ba8147216d4be3c761",
+  "baseline": "7ee6394c5ee2ef9b353c387eff0099abb3758028",
+  "total": 3840,
+  "unique": 3840,
+  "runtime": 3840,
+  "changed": 71,
+  "listedTerms": 59,
+  "priorFindings": 12,
+  "requestedUnique": 71,
+  "outsideScope": [],
+  "requestedUnchanged": [],
+  "added": [],
+  "removed": [],
+  "engineExportMismatches": [],
+  "structureFailures": [],
+  "figureChanges": [],
+  "fields": {
+    "distractors": 71,
+    "explanation": 59
+  }
+}

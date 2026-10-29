@@ -1,0 +1,25 @@
+{
+  "sourceSha": "e743ac12233a48fd68a3b6ba8147216d4be3c761",
+  "exitCode": 0,
+  "files": [
+    {
+      "path": "index.html",
+      "matchAfterLineEndingNormalization": true,
+      "sourceSha256": "1a10a59812d93a9c2ef7de5659495e1aa94760bc1b879e7f551f352279707000",
+      "builtSha256": "1a10a59812d93a9c2ef7de5659495e1aa94760bc1b879e7f551f352279707000"
+    },
+    {
+      "path": "sw.js",
+      "matchAfterLineEndingNormalization": true,
+      "sourceSha256": "48d86b969287ae18bb0362fbf2b4efa94258eb889b21ba6d16d37b116bce3a0d",
+      "builtSha256": "48d86b969287ae18bb0362fbf2b4efa94258eb889b21ba6d16d37b116bce3a0d"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "matchAfterLineEndingNormalization": true,
+      "sourceSha256": "1cc846ca51affa300410a641c4551d67f349759b8a4f4ee367735b9e04bef5b5",
+      "builtSha256": "1cc846ca51affa300410a641c4551d67f349759b8a4f4ee367735b9e04bef5b5"
+    }
+  ],
+  "allMatch": true
+}

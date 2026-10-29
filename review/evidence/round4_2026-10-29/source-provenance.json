@@ -1,0 +1,233 @@
+{
+  "sourceSha": "e743ac12233a48fd68a3b6ba8147216d4be3c761",
+  "baseSnapshot": "7ee6394c5ee2ef9b353c387eff0099abb3758028",
+  "method": "Reuse hash-verified R3 blobs where unchanged; replace all selected changed blobs, then compare every available source blob with the R4 Git tree.",
+  "files": [
+    {
+      "path": "build.py",
+      "expected": "eb0030a4beb95c85b3b500412c92f08a168c63fe",
+      "actual": "eb0030a4beb95c85b3b500412c92f08a168c63fe",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "expected": "399afd8dbed3bbdbf43bc82f13fe69a5b18d7aa1",
+      "actual": "399afd8dbed3bbdbf43bc82f13fe69a5b18d7aa1",
+      "matches": true
+    },
+    {
+      "path": "manifest.webmanifest",
+      "expected": "c3bb39d5df569e58c1991b5b88ffb05ba120c797",
+      "actual": "c3bb39d5df569e58c1991b5b88ffb05ba120c797",
+      "matches": true
+    },
+    {
+      "path": "review/pending_small_term_foils.md",
+      "expected": "675f734b978b22d73635f553c24f41ca4da871d4",
+      "actual": "675f734b978b22d73635f553c24f41ca4da871d4",
+      "matches": true
+    },
+    {
+      "path": "review/questions.json",
+      "expected": "2bc179e9d20fea098c94db97a75ae6e8dacd7c7b",
+      "actual": "2bc179e9d20fea098c94db97a75ae6e8dacd7c7b",
+      "matches": true
+    },
+    {
+      "path": "review/responses.md",
+      "expected": "896b66ccb93d6f73163116cc949b1f230d101bb9",
+      "actual": "896b66ccb93d6f73163116cc949b1f230d101bb9",
+      "matches": true
+    },
+    {
+      "path": "src/app.html",
+      "expected": "9cabec668b46faea13051da609d3315f5a5db3f6",
+      "actual": "9cabec668b46faea13051da609d3315f5a5db3f6",
+      "matches": true
+    },
+    {
+      "path": "src/app.js",
+      "expected": "f97ea872ad3b444d4c56659b879adef582be2e45",
+      "actual": "f97ea872ad3b444d4c56659b879adef582be2e45",
+      "matches": true
+    },
+    {
+      "path": "src/data_asg.js",
+      "expected": "1915f047096bb1f73e14a5d6c619a407a2b00516",
+      "actual": "1915f047096bb1f73e14a5d6c619a407a2b00516",
+      "matches": true
+    },
+    {
+      "path": "src/data_cnh.js",
+      "expected": "53d00d92cb9d6abdfb7b90e3300dc1f9b10172b9",
+      "actual": "53d00d92cb9d6abdfb7b90e3300dc1f9b10172b9",
+      "matches": true
+    },
+    {
+      "path": "src/data_ctx.js",
+      "expected": "45b00e46ea26ddc8e341020a82917fe923f2d314",
+      "actual": "45b00e46ea26ddc8e341020a82917fe923f2d314",
+      "matches": true
+    },
+    {
+      "path": "src/data_eco.js",
+      "expected": "6c4f8f15e330fe6cfbd0690d800f687fc40366d4",
+      "actual": "6c4f8f15e330fe6cfbd0690d800f687fc40366d4",
+      "matches": true
+    },
+    {
+      "path": "src/data_fig.js",
+      "expected": "362c3bd460e0f6288b0a7fbf823dc251cf15a4d0",
+      "actual": "362c3bd460e0f6288b0a7fbf823dc251cf15a4d0",
+      "matches": true
+    },
+    {
+      "path": "src/data_foils.js",
+      "expected": "797dce67dcfe0ccd108caf544427433260c8dd2a",
+      "actual": "797dce67dcfe0ccd108caf544427433260c8dd2a",
+      "matches": true
+    },
+    {
+      "path": "src/data_groups.js",
+      "expected": "44b0f706ec4066b7229555291228bf8e9aaa166c",
+      "actual": "44b0f706ec4066b7229555291228bf8e9aaa166c",
+      "matches": true
+    },
+    {
+      "path": "src/data_law.js",
+      "expected": "9b1314791689fefe3bd45cbad6535ab584b95f31",
+      "actual": "9b1314791689fefe3bd45cbad6535ab584b95f31",
+      "matches": true
+    },
+    {
+      "path": "src/data_notes.js",
+      "expected": "4a5b928c76d0eaf33fd9b4aaa72c50acbdcaca5b",
+      "actual": "4a5b928c76d0eaf33fd9b4aaa72c50acbdcaca5b",
+      "matches": true
+    },
+    {
+      "path": "src/data_overlap.js",
+      "expected": "4c7efe64532bd925ae448c9f08178b40d2e10f2e",
+      "actual": "4c7efe64532bd925ae448c9f08178b40d2e10f2e",
+      "matches": true
+    },
+    {
+      "path": "src/data_soc.js",
+      "expected": "03f3489d4b6546f8d4a5f821ebed661020b263f1",
+      "actual": "03f3489d4b6546f8d4a5f821ebed661020b263f1",
+      "matches": true
+    },
+    {
+      "path": "src/data_twg.js",
+      "expected": "f0ddd769fb200b73eb897d24be0acac7fd674f91",
+      "actual": "f0ddd769fb200b73eb897d24be0acac7fd674f91",
+      "matches": true
+    },
+    {
+      "path": "src/data_wdg.js",
+      "expected": "5534e70155c717269cb992de7a047046b7db7356",
+      "actual": "5534e70155c717269cb992de7a047046b7db7356",
+      "matches": true
+    },
+    {
+      "path": "src/data_wdh.js",
+      "expected": "6a065b81eb008339022f5a2d8c5a406feaf3a78a",
+      "actual": "6a065b81eb008339022f5a2d8c5a406feaf3a78a",
+      "matches": true
+    },
+    {
+      "path": "src/deco.js",
+      "expected": "dc83d36eecfc494c5257e304b7e82502e59f7295",
+      "actual": "dc83d36eecfc494c5257e304b7e82502e59f7295",
+      "matches": true
+    },
+    {
+      "path": "src/dsl.js",
+      "expected": "7e8ccf0dce75248dff55760e635515c40da45f08",
+      "actual": "7e8ccf0dce75248dff55760e635515c40da45f08",
+      "matches": true
+    },
+    {
+      "path": "src/engine.js",
+      "expected": "a9bf960edd943583b18cdb65b5c781085da60ff1",
+      "actual": "a9bf960edd943583b18cdb65b5c781085da60ff1",
+      "matches": true
+    },
+    {
+      "path": "src/gen_twh.js",
+      "expected": "1943b65e4e3954921b0f94a3544137328efb29e5",
+      "actual": "1943b65e4e3954921b0f94a3544137328efb29e5",
+      "matches": true
+    },
+    {
+      "path": "src/hand_twh_1.js",
+      "expected": "a961e46a5f448048e06121d88ee32e9eceb2a0db",
+      "actual": "a961e46a5f448048e06121d88ee32e9eceb2a0db",
+      "matches": true
+    },
+    {
+      "path": "src/hand_twh_2.js",
+      "expected": "e0c5a0025964afd11393634750832c9bc384beea",
+      "actual": "e0c5a0025964afd11393634750832c9bc384beea",
+      "matches": true
+    },
+    {
+      "path": "src/hand_twh_ctx.js",
+      "expected": "d1f6232fcc46af708e0efd8f0b1d5fbcddaa2ed1",
+      "actual": "d1f6232fcc46af708e0efd8f0b1d5fbcddaa2ed1",
+      "matches": true
+    },
+    {
+      "path": "src/links_cross.js",
+      "expected": "8ace0c5101ba5561395e15f6e208cfa3e38358af",
+      "actual": "8ace0c5101ba5561395e15f6e208cfa3e38358af",
+      "matches": true
+    },
+    {
+      "path": "src/links_twh.js",
+      "expected": "4c26bfec04ff6019baab66192a3042e125275ba5",
+      "actual": "4c26bfec04ff6019baab66192a3042e125275ba5",
+      "matches": true
+    },
+    {
+      "path": "src/models_wip.js",
+      "expected": "61543d5b82559aa3923bae9e2730118c964140d5",
+      "actual": "61543d5b82559aa3923bae9e2730118c964140d5",
+      "matches": true
+    },
+    {
+      "path": "src/people.js",
+      "expected": "8c5e1db704f6d90fa98c71fc39b8f0a277e0f574",
+      "actual": "8c5e1db704f6d90fa98c71fc39b8f0a277e0f574",
+      "matches": true
+    },
+    {
+      "path": "src/preview.js",
+      "expected": "a2f3402ba8a1c352015a2fa7899fc53de9e75b88",
+      "actual": "a2f3402ba8a1c352015a2fa7899fc53de9e75b88",
+      "matches": true
+    },
+    {
+      "path": "src/sw.js",
+      "expected": "4583c105d1ca04bd5954d995912c8812464d8c60",
+      "actual": "4583c105d1ca04bd5954d995912c8812464d8c60",
+      "matches": true
+    },
+    {
+      "path": "sw.js",
+      "expected": "90c5795613f2232dd7768a5cb7ba525b000fd325",
+      "actual": "90c5795613f2232dd7768a5cb7ba525b000fd325",
+      "matches": true
+    }
+  ],
+  "runs": [
+    {
+      "id": 40806464178,
+      "name": "pages build and deployment",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "e743ac12233a48fd68a3b6ba8147216d4be3c761",
+      "url": "https://github.com/lutm6666/social-studies-review-island/actions/runs/40806464178"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "law2-g46",
+    "question": "「憲法法庭宣告法律違憲」帶來的結果是？",
+    "choices": [
+      "A立法院不能修改法律",
+      "B超過判決指定失效日，該法律仍繼續有效",
+      "C該法律依判決指定的時間失去效力",
+      "D違憲法律須由總統簽署才失效"
+    ],
+    "options": [
+      "立法院不能修改法律",
+      "超過判決指定失效日，該法律仍繼續有效",
+      "該法律依判決指定的時間失去效力",
+      "違憲法律須由總統簽署才失效"
+    ],
+    "answer": "該法律依判決指定的時間失去效力",
+    "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 532, 535, 538, 541\n~\t\t\t\t\t530 button (disabled) A 立法院不能修改法律\n~\t\t\t\t\t\t531 text A 立法院不能修改法律\n~\t\t\t\t\t533 button (disabled) B 超過判決指定失效日，該法律仍繼續有效\n~\t\t\t\t\t\t534 text B 超過判決指定失效日，該法律仍繼續有效\n~\t\t\t\t\t536 button (disabled) C 該法律依判決指定的時間失去效力\n~\t\t\t\t\t\t537 text C 該法律依判決指定的時間失去效力\n~\t\t\t\t\t539 button (disabled) D 違憲法律須由總統簽署才失效\n~\t\t\t\t\t\t540 text D 違憲法律須由總統簽署才失效\n+\t\t\t\t541 container fb\n+\t\t\t\t\t542 text 答錯了\n+\t\t\t\t\t543 text 正解 該法律依判決指定的時間失去效力\n+\t\t\t\t\t544 text 因為「憲法法庭宣告法律違憲」，所以該法律依判決指定的時間失去效力。其他選項雖然和本單元有關，但都不是「憲法法庭宣告法律違憲」直接造成的結果。\n+\t\t\t\t\t545 text 下次複習：明天\n+\t\t\t\t\t546 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t547 button 回報錯誤, ID: rptBtn\n+\t\t\t\t548 button 下一題, ID: nextBtn\nThe focused UI element is 548 button 下一題, ID: nextBtn",
+    "intentionallyWrong": true
+  },
+  {
+    "id": "law2-g47",
+    "question": "「該法律依判決指定的時間失去效力」最主要的原因是？",
+    "choices": [
+      "A中央政府設有各部會",
+      "B政府發布颱風假",
+      "C國家設置國家公園",
+      "D憲法法庭宣告法律違憲"
+    ],
+    "options": [
+      "中央政府設有各部會",
+      "政府發布颱風假",
+      "國家設置國家公園",
+      "憲法法庭宣告法律違憲"
+    ],
+    "answer": "憲法法庭宣告法律違憲",
+    "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 532, 535, 538, 541\n~\t\t\t\t\t530 button (disabled) A 中央政府設有各部會\n~\t\t\t\t\t\t531 text A 中央政府設有各部會\n~\t\t\t\t\t533 button (disabled) B 政府發布颱風假\n~\t\t\t\t\t\t534 text B 政府發布颱風假\n~\t\t\t\t\t536 button (disabled) C 國家設置國家公園\n~\t\t\t\t\t\t537 text C 國家設置國家公園\n~\t\t\t\t\t539 button (disabled) D 憲法法庭宣告法律違憲\n~\t\t\t\t\t\t540 text D 憲法法庭宣告法律違憲\n+\t\t\t\t541 container fb\n+\t\t\t\t\t542 text 答對了\n+\t\t\t\t\t543 text 該法律依判決指定的時間失去效力，最主要是因為「憲法法庭宣告法律違憲」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t544 text 下次複習：3 天後\n+\t\t\t\t\t545 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t546 button 回報錯誤, ID: rptBtn\n+\t\t\t\t547 button 看成績, ID: nextBtn\nThe focused UI element is 547 button 看成績, ID: nextBtn",
+    "intentionallyWrong": false
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "sourceSha": "e743ac12233a48fd68a3b6ba8147216d4be3c761",
+  "total": 28,
+  "types": {
+    "climate": 20,
+    "pyramid": 5,
+    "stack": 3
+  },
+  "all28FiguresUnchanged": true,
+  "browserRendered": [
+    {
+      "id": "twg3-h9",
+      "type": "climate",
+      "width": 284,
+      "height": 177.5
+    },
+    {
+      "id": "twg4-h9",
+      "type": "pyramid",
+      "width": 284,
+      "height": 177.5
+    },
+    {
+      "id": "twg5-h8",
+      "type": "stack",
+      "width": 284,
+      "height": 177.5
+    },
+    {
+      "id": "twg4-h10",
+      "type": "pyramid",
+      "width": 284,
+      "height": 177.5
+    },
+    {
+      "id": "twg4-h8",
+      "type": "pyramid",
+      "width": 284,
+      "height": 177.5
+    }
+  ],
+  "allPositiveDimensions": true,
+  "pyramidExactSvgMatchedToData": true,
+  "pyramidThreeTypesScorePass": true,
+  "all28IndividuallyRenderedThisRound": false
+}

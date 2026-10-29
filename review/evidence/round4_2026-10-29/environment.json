@@ -1,0 +1,20 @@
+{
+  "sourceSha": "e743ac12233a48fd68a3b6ba8147216d4be3c761",
+  "date": "2026-10-29",
+  "browser": "ChatGPT in-app browser (IAB)",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "mode": "桌面瀏覽器窄畫面；僅改viewport，非實體手機，也非Android模擬器",
+  "physicalPhone": "未測試：沒有連接可操作的實體手機",
+  "androidEmulator": "未測試：前輪啟動LDPlayer授權逾時；本輪未啟動，未繞過授權",
+  "viewportOverrideReset": true,
+  "questionCountSettingRestoredTo": 10,
+  "consoleWarningsOrErrors": 0,
+  "automationNotes": [
+    "搜尋不支援以law2-g46題號命中；改用可見題幹搜尋成功，未列為產品缺陷。",
+    "人口圖三題題幹／選項相同，首次自動辨識不唯一；改比對可見SVG與離線來源才繼續，未跳過或放寬正確答案斷言。"
+  ],
+  "programModified": false
+}

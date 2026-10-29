@@ -1,0 +1,2204 @@
+[
+  {
+    "chapter": "law8",
+    "samples": [
+      {
+        "id": "law8-g31",
+        "question": "「人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權」最主要的原因是？",
+        "choices": [
+          "A政府公告都市計畫",
+          "B公務員違法執行職務造成損害",
+          "C環保局稽查噪音",
+          "D稅捐處寄發稅單"
+        ],
+        "options": [
+          "政府公告都市計畫",
+          "公務員違法執行職務造成損害",
+          "環保局稽查噪音",
+          "稅捐處寄發稅單"
+        ],
+        "answer": "公務員違法執行職務造成損害",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 116, 119, 122, 125\n~\t\t\t\t\t114 button (disabled) A 政府公告都市計畫\n~\t\t\t\t\t\t115 text A 政府公告都市計畫\n~\t\t\t\t\t117 button (disabled) B 公務員違法執行職務造成損害\n~\t\t\t\t\t\t118 text B 公務員違法執行職務造成損害\n~\t\t\t\t\t120 button (disabled) C 環保局稽查噪音\n~\t\t\t\t\t\t121 text C 環保局稽查噪音\n~\t\t\t\t\t123 button (disabled) D 稅捐處寄發稅單\n~\t\t\t\t\t\t124 text D 稅捐處寄發稅單\n+\t\t\t\t125 container fb\n+\t\t\t\t\t126 text 答對了\n+\t\t\t\t\t127 text 人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權，最主要是因為「公務員違法執行職務造成損害」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t128 text 下次複習：3 天後\n+\t\t\t\t\t129 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t130 button 回報錯誤, ID: rptBtn\n+\t\t\t\t131 button 下一題, ID: nextBtn\nThe focused UI element is 131 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g6",
+        "question": "「請願」的內容是？",
+        "choices": [
+          "A人民對國家政策或公共利益向機關表達希望",
+          "B人民連署罷免民意代表",
+          "C不服行政處分時，向上級機關請求撤銷",
+          "D向法院請求國家賠償損害"
+        ],
+        "options": [
+          "人民對國家政策或公共利益向機關表達希望",
+          "人民連署罷免民意代表",
+          "不服行政處分時，向上級機關請求撤銷",
+          "向法院請求國家賠償損害"
+        ],
+        "answer": "人民對國家政策或公共利益向機關表達希望",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 116, 119, 122, 125\n~\t\t\t\t\t114 button (disabled) A 人民對國家政策或公共利益向機關表達希望\n~\t\t\t\t\t\t115 text A 人民對國家政策或公共利益向機關表達希望\n~\t\t\t\t\t117 button (disabled) B 人民連署罷免民意代表\n~\t\t\t\t\t\t118 text B 人民連署罷免民意代表\n~\t\t\t\t\t120 button (disabled) C 不服行政處分時，向上級機關請求撤銷\n~\t\t\t\t\t\t121 text C 不服行政處分時，向上級機關請求撤銷\n~\t\t\t\t\t123 button (disabled) D 向法院請求國家賠償損害\n~\t\t\t\t\t\t124 text D 向法院請求國家賠償損害\n+\t\t\t\t125 container fb\n+\t\t\t\t\t126 text 答對了\n+\t\t\t\t\t127 text 「請願」的重點是：人民對國家政策或公共利益向機關表達希望。其他選項是常見的誤解，都不是「請願」的意思。\n+\t\t\t\t\t128 text 下次複習：3 天後\n+\t\t\t\t\t129 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t130 button 回報錯誤, ID: rptBtn\n+\t\t\t\t131 button 下一題, ID: nextBtn\nThe focused UI element is 131 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g11",
+        "question": "「行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定」指的是哪一種救濟或參與方式？",
+        "choices": [
+          "A國家賠償",
+          "B行政處分",
+          "C行政法院",
+          "D訴願"
+        ],
+        "options": [
+          "國家賠償",
+          "行政處分",
+          "行政法院",
+          "訴願"
+        ],
+        "answer": "行政處分",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 116, 119, 122, 125\n~\t\t\t\t\t114 button (disabled) A 國家賠償\n~\t\t\t\t\t\t115 text A 國家賠償\n~\t\t\t\t\t117 button (disabled) B 行政處分\n~\t\t\t\t\t\t118 text B 行政處分\n~\t\t\t\t\t120 button (disabled) C 行政法院\n~\t\t\t\t\t\t121 text C 行政法院\n~\t\t\t\t\t123 button (disabled) D 訴願\n~\t\t\t\t\t\t124 text D 訴願\n+\t\t\t\t125 container fb\n+\t\t\t\t\t126 text 答對了\n+\t\t\t\t\t127 text 「行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定」說的是「行政處分」。其他選項：「行政法院」是審理行政訴訟案件的法院；「國家賠償」是公務員違法或公共設施欠缺造成損害時，向國家請求賠償；「訴願」是不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查。\n+\t\t\t\t\t128 text 下次複習：明天\n+\t\t\t\t\t129 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t130 button 回報錯誤, ID: rptBtn\n+\t\t\t\t131 button 下一題, ID: nextBtn\nThe focused UI element is 131 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g30",
+        "question": "「公務員違法執行職務造成損害」帶來的結果是？",
+        "choices": [
+          "A人民只能自認倒楣",
+          "B由受害人自行負擔損失",
+          "C公務員不必負任何責任",
+          "D人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權"
+        ],
+        "options": [
+          "人民只能自認倒楣",
+          "由受害人自行負擔損失",
+          "公務員不必負任何責任",
+          "人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權"
+        ],
+        "answer": "人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 116, 119, 122, 125\n~\t\t\t\t\t114 button (disabled) A 人民只能自認倒楣\n~\t\t\t\t\t\t115 text A 人民只能自認倒楣\n~\t\t\t\t\t117 button (disabled) B 由受害人自行負擔損失\n~\t\t\t\t\t\t118 text B 由受害人自行負擔損失\n~\t\t\t\t\t120 button (disabled) C 公務員不必負任何責任\n~\t\t\t\t\t\t121 text C 公務員不必負任何責任\n~\t\t\t\t\t123 button (disabled) D 人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權\n~\t\t\t\t\t\t124 text D 人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權\n+\t\t\t\t125 container fb\n+\t\t\t\t\t126 text 答對了\n+\t\t\t\t\t127 text 因為「公務員違法執行職務造成損害」，所以人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權。其他選項雖然和本單元有關，但都不是「公務員違法執行職務造成損害」直接造成的結果。\n+\t\t\t\t\t128 text 下次複習：3 天後\n+\t\t\t\t\t129 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t130 button 回報錯誤, ID: rptBtn\n+\t\t\t\t131 button 下一題, ID: nextBtn\nThe focused UI element is 131 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g32",
+        "question": "「公共設施管理有欠缺造成傷害」帶來的結果是？",
+        "choices": [
+          "A只能自行負擔醫藥費",
+          "B人民可以向管理機關請求國家賠償",
+          "C向設施旁的商店求償",
+          "D不能向任何機關求償"
+        ],
+        "options": [
+          "只能自行負擔醫藥費",
+          "人民可以向管理機關請求國家賠償",
+          "向設施旁的商店求償",
+          "不能向任何機關求償"
+        ],
+        "answer": "人民可以向管理機關請求國家賠償",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 116, 119, 122, 125\n~\t\t\t\t\t114 button (disabled) A 只能自行負擔醫藥費\n~\t\t\t\t\t\t115 text A 只能自行負擔醫藥費\n~\t\t\t\t\t117 button (disabled) B 人民可以向管理機關請求國家賠償\n~\t\t\t\t\t\t118 text B 人民可以向管理機關請求國家賠償\n~\t\t\t\t\t120 button (disabled) C 向設施旁的商店求償\n~\t\t\t\t\t\t121 text C 向設施旁的商店求償\n~\t\t\t\t\t123 button (disabled) D 不能向任何機關求償\n~\t\t\t\t\t\t124 text D 不能向任何機關求償\n+\t\t\t\t125 container fb\n+\t\t\t\t\t126 text 答對了\n+\t\t\t\t\t127 text 因為「公共設施管理有欠缺造成傷害」，所以人民可以向管理機關請求國家賠償。其他選項雖然和本單元有關，但都不是「公共設施管理有欠缺造成傷害」直接造成的結果。\n+\t\t\t\t\t128 text 下次複習：3 天後\n+\t\t\t\t\t129 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t130 button 回報錯誤, ID: rptBtn\n+\t\t\t\t131 button 下一題, ID: nextBtn\nThe focused UI element is 131 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g29",
+        "question": "「向行政法院提起行政訴訟」最主要的原因是？",
+        "choices": [
+          "A訴願決定後仍然不服",
+          "B監理站辦理駕照",
+          "C健保署發行健保卡",
+          "D國家考試放榜"
+        ],
+        "options": [
+          "訴願決定後仍然不服",
+          "監理站辦理駕照",
+          "健保署發行健保卡",
+          "國家考試放榜"
+        ],
+        "answer": "訴願決定後仍然不服",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 116, 119, 122, 125\n~\t\t\t\t\t114 button (disabled) A 訴願決定後仍然不服\n~\t\t\t\t\t\t115 text A 訴願決定後仍然不服\n~\t\t\t\t\t117 button (disabled) B 監理站辦理駕照\n~\t\t\t\t\t\t118 text B 監理站辦理駕照\n~\t\t\t\t\t120 button (disabled) C 健保署發行健保卡\n~\t\t\t\t\t\t121 text C 健保署發行健保卡\n~\t\t\t\t\t123 button (disabled) D 國家考試放榜\n~\t\t\t\t\t\t124 text D 國家考試放榜\n+\t\t\t\t125 container fb\n+\t\t\t\t\t126 text 答對了\n+\t\t\t\t\t127 text 向行政法院提起行政訴訟，最主要是因為「訴願決定後仍然不服」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t128 text 下次複習：3 天後\n+\t\t\t\t\t129 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t130 button 回報錯誤, ID: rptBtn\n+\t\t\t\t131 button 下一題, ID: nextBtn\nThe focused UI element is 131 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g4",
+        "question": "「國家賠償」的內容是？",
+        "choices": [
+          "A公務員違法或公共設施欠缺造成損害時，向國家請求賠償",
+          "B因天然災害受損時，政府發放的救助金",
+          "C人民被判刑後向國家繳納罰金",
+          "D政府徵收私人土地時，依法給予的補償"
+        ],
+        "options": [
+          "公務員違法或公共設施欠缺造成損害時，向國家請求賠償",
+          "因天然災害受損時，政府發放的救助金",
+          "人民被判刑後向國家繳納罰金",
+          "政府徵收私人土地時，依法給予的補償"
+        ],
+        "answer": "公務員違法或公共設施欠缺造成損害時，向國家請求賠償",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 116, 119, 122, 125\n~\t\t\t\t\t114 button (disabled) A 公務員違法或公共設施欠缺造成損害時，向國家請求賠償\n~\t\t\t\t\t\t115 text A 公務員違法或公共設施欠缺造成損害時，向國家請求賠償\n~\t\t\t\t\t117 button (disabled) B 因天然災害受損時，政府發放的救助金\n~\t\t\t\t\t\t118 text B 因天然災害受損時，政府發放的救助金\n~\t\t\t\t\t120 button (disabled) C 人民被判刑後向國家繳納罰金\n~\t\t\t\t\t\t121 text C 人民被判刑後向國家繳納罰金\n~\t\t\t\t\t123 button (disabled) D 政府徵收私人土地時，依法給予的補償\n~\t\t\t\t\t\t124 text D 政府徵收私人土地時，依法給予的補償\n+\t\t\t\t125 container fb\n+\t\t\t\t\t126 text 答對了\n+\t\t\t\t\t127 text 「國家賠償」的重點是：公務員違法或公共設施欠缺造成損害時，向國家請求賠償。其他選項是常見的誤解，都不是「國家賠償」的意思。\n+\t\t\t\t\t128 text 下次複習：明天\n+\t\t\t\t\t129 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t130 button 回報錯誤, ID: rptBtn\n+\t\t\t\t131 button 下一題, ID: nextBtn\nThe focused UI element is 131 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g2",
+        "question": "「行政訴訟」的內容是？",
+        "choices": [
+          "A人民與行政機關發生公法上的爭議時，向行政法院請求救濟",
+          "B向鄉鎮市調解委員會申請調解",
+          "C檢察官對犯罪嫌疑人提起公訴",
+          "D人民之間發生財產糾紛時，向地方法院請求判決"
+        ],
+        "options": [
+          "人民與行政機關發生公法上的爭議時，向行政法院請求救濟",
+          "向鄉鎮市調解委員會申請調解",
+          "檢察官對犯罪嫌疑人提起公訴",
+          "人民之間發生財產糾紛時，向地方法院請求判決"
+        ],
+        "answer": "人民與行政機關發生公法上的爭議時，向行政法院請求救濟",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 116, 119, 122, 125\n~\t\t\t\t\t114 button (disabled) A 人民與行政機關發生公法上的爭議時，向行政法院請求救濟\n~\t\t\t\t\t\t115 text A 人民與行政機關發生公法上的爭議時，向行政法院請求救濟\n~\t\t\t\t\t117 button (disabled) B 向鄉鎮市調解委員會申請調解\n~\t\t\t\t\t\t118 text B 向鄉鎮市調解委員會申請調解\n~\t\t\t\t\t120 button (disabled) C 檢察官對犯罪嫌疑人提起公訴\n~\t\t\t\t\t\t121 text C 檢察官對犯罪嫌疑人提起公訴\n~\t\t\t\t\t123 button (disabled) D 人民之間發生財產糾紛時，向地方法院請求判決\n~\t\t\t\t\t\t124 text D 人民之間發生財產糾紛時，向地方法院請求判決\n+\t\t\t\t125 container fb\n+\t\t\t\t\t126 text 答對了\n+\t\t\t\t\t127 text 「行政訴訟」的重點是：人民與行政機關發生公法上的爭議時，向行政法院請求救濟。補充：訴願結果仍不服時，向「行政法院」提起。其他選項是常見的誤解，都不是「行政訴訟」的意思。\n+\t\t\t\t\t128 text 下次複習：明天\n+\t\t\t\t\t129 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t130 button 回報錯誤, ID: rptBtn\n+\t\t\t\t131 button 下一題, ID: nextBtn\nThe focused UI element is 131 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g0",
+        "question": "「訴願」的內容是？",
+        "choices": [
+          "A對公務員違法失職向監察院提出檢舉",
+          "B不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查",
+          "C不服法院判決時，向上級法院請求重新審理",
+          "D人民向立法委員反映施政意見"
+        ],
+        "options": [
+          "對公務員違法失職向監察院提出檢舉",
+          "不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查",
+          "不服法院判決時，向上級法院請求重新審理",
+          "人民向立法委員反映施政意見"
+        ],
+        "answer": "不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 116, 119, 122, 125\n~\t\t\t\t\t114 button (disabled) A 對公務員違法失職向監察院提出檢舉\n~\t\t\t\t\t\t115 text A 對公務員違法失職向監察院提出檢舉\n~\t\t\t\t\t117 button (disabled) B 不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查\n~\t\t\t\t\t\t118 text B 不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查\n~\t\t\t\t\t120 button (disabled) C 不服法院判決時，向上級法院請求重新審理\n~\t\t\t\t\t\t121 text C 不服法院判決時，向上級法院請求重新審理\n~\t\t\t\t\t123 button (disabled) D 人民向立法委員反映施政意見\n~\t\t\t\t\t\t124 text D 人民向立法委員反映施政意見\n+\t\t\t\t125 container fb\n+\t\t\t\t\t126 text 答對了\n+\t\t\t\t\t127 text 「訴願」的重點是：不服行政處分時，向有管轄權的機關（通常是上級機關）請求審查。補充：通常向原處分機關的「上級機關」請求審查，是行政救濟的第一步。其他選項是常見的誤解，都不是「訴願」的意思。\n+\t\t\t\t\t128 text 下次複習：明天\n+\t\t\t\t\t129 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t130 button 回報錯誤, ID: rptBtn\n+\t\t\t\t131 button 下一題, ID: nextBtn\nThe focused UI element is 131 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g10",
+        "question": "「行政處分」的內容是？",
+        "choices": [
+          "A行政機關內部的工作分配",
+          "B行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定",
+          "C立法院通過的法律案",
+          "D法院對案件作出的判決"
+        ],
+        "options": [
+          "行政機關內部的工作分配",
+          "行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定",
+          "立法院通過的法律案",
+          "法院對案件作出的判決"
+        ],
+        "answer": "行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 116, 119, 122, 125\n~\t\t\t\t\t114 button (disabled) A 行政機關內部的工作分配\n~\t\t\t\t\t\t115 text A 行政機關內部的工作分配\n~\t\t\t\t\t117 button (disabled) B 行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定\n~\t\t\t\t\t\t118 text B 行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定\n~\t\t\t\t\t120 button (disabled) C 立法院通過的法律案\n~\t\t\t\t\t\t121 text C 立法院通過的法律案\n~\t\t\t\t\t123 button (disabled) D 法院對案件作出的判決\n~\t\t\t\t\t\t124 text D 法院對案件作出的判決\n+\t\t\t\t125 container fb\n+\t\t\t\t\t126 text 答對了\n+\t\t\t\t\t127 text 「行政處分」的重點是：行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定。其他選項是常見的誤解，都不是「行政處分」的意思。\n+\t\t\t\t\t128 text 下次複習：明天\n+\t\t\t\t\t129 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t130 button 回報錯誤, ID: rptBtn\n+\t\t\t\t131 button 下一題, ID: nextBtn\nThe focused UI element is 131 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g12",
+        "question": "「行政罰」的內容是？",
+        "choices": [
+          "A學校對違規學生的記過處分",
+          "B違反契約時應付給對方的損害賠償",
+          "C鄰居之間協議的補償金",
+          "D對違反行政法上義務的處罰，例如罰鍰"
+        ],
+        "options": [
+          "學校對違規學生的記過處分",
+          "違反契約時應付給對方的損害賠償",
+          "鄰居之間協議的補償金",
+          "對違反行政法上義務的處罰，例如罰鍰"
+        ],
+        "answer": "對違反行政法上義務的處罰，例如罰鍰",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 學校對違規學生的記過處分\n~\t\t\t\t\t\t55 text A 學校對違規學生的記過處分\n~\t\t\t\t\t57 button (disabled) B 違反契約時應付給對方的損害賠償\n~\t\t\t\t\t\t58 text B 違反契約時應付給對方的損害賠償\n~\t\t\t\t\t60 button (disabled) C 鄰居之間協議的補償金\n~\t\t\t\t\t\t61 text C 鄰居之間協議的補償金\n~\t\t\t\t\t63 button (disabled) D 對違反行政法上義務的處罰，例如罰鍰\n~\t\t\t\t\t\t64 text D 對違反行政法上義務的處罰，例如罰鍰\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 「行政罰」的重點是：對違反行政法上義務的處罰，例如罰鍰。其他選項是常見的誤解，都不是「行政罰」的意思。\n+\t\t\t\t\t68 text 下次複習：3 天後\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g35",
+        "question": "「機關較能了解民意並改善施政」最主要的原因是？",
+        "choices": [
+          "A戶政事務所辦理戶籍登記",
+          "B稅捐處寄發稅單",
+          "C監理站辦理駕照",
+          "D人民透過陳情表達意見"
+        ],
+        "options": [
+          "戶政事務所辦理戶籍登記",
+          "稅捐處寄發稅單",
+          "監理站辦理駕照",
+          "人民透過陳情表達意見"
+        ],
+        "answer": "人民透過陳情表達意見",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 戶政事務所辦理戶籍登記\n~\t\t\t\t\t\t55 text A 戶政事務所辦理戶籍登記\n~\t\t\t\t\t57 button (disabled) B 稅捐處寄發稅單\n~\t\t\t\t\t\t58 text B 稅捐處寄發稅單\n~\t\t\t\t\t60 button (disabled) C 監理站辦理駕照\n~\t\t\t\t\t\t61 text C 監理站辦理駕照\n~\t\t\t\t\t63 button (disabled) D 人民透過陳情表達意見\n~\t\t\t\t\t\t64 text D 人民透過陳情表達意見\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 機關較能了解民意並改善施政，最主要是因為「人民透過陳情表達意見」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g26",
+        "question": "「不服行政處分」帶來的結果是？",
+        "choices": [
+          "A向民事法院提起訴訟",
+          "B只能接受、無法救濟",
+          "C可以向有管轄權的機關提起訴願",
+          "D直接向監察院提出彈劾"
+        ],
+        "options": [
+          "向民事法院提起訴訟",
+          "只能接受、無法救濟",
+          "可以向有管轄權的機關提起訴願",
+          "直接向監察院提出彈劾"
+        ],
+        "answer": "可以向有管轄權的機關提起訴願",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 向民事法院提起訴訟\n~\t\t\t\t\t\t55 text A 向民事法院提起訴訟\n~\t\t\t\t\t57 button (disabled) B 只能接受、無法救濟\n~\t\t\t\t\t\t58 text B 只能接受、無法救濟\n~\t\t\t\t\t60 button (disabled) C 可以向有管轄權的機關提起訴願\n~\t\t\t\t\t\t61 text C 可以向有管轄權的機關提起訴願\n~\t\t\t\t\t63 button (disabled) D 直接向監察院提出彈劾\n~\t\t\t\t\t\t64 text D 直接向監察院提出彈劾\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 因為「不服行政處分」，所以可以向有管轄權的機關提起訴願。其他選項雖然和本單元有關，但都不是「不服行政處分」直接造成的結果。\n+\t\t\t\t\t68 text 下次複習：3 天後\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g8",
+        "question": "「陳情」的內容是？",
+        "choices": [
+          "A人民向機關反映意見或建議",
+          "B依法向行政法院提起訴訟",
+          "C立法委員在議會詢問官員",
+          "D公務員對長官的命令提出異議"
+        ],
+        "options": [
+          "人民向機關反映意見或建議",
+          "依法向行政法院提起訴訟",
+          "立法委員在議會詢問官員",
+          "公務員對長官的命令提出異議"
+        ],
+        "answer": "人民向機關反映意見或建議",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 人民向機關反映意見或建議\n~\t\t\t\t\t\t55 text A 人民向機關反映意見或建議\n~\t\t\t\t\t57 button (disabled) B 依法向行政法院提起訴訟\n~\t\t\t\t\t\t58 text B 依法向行政法院提起訴訟\n~\t\t\t\t\t60 button (disabled) C 立法委員在議會詢問官員\n~\t\t\t\t\t\t61 text C 立法委員在議會詢問官員\n~\t\t\t\t\t63 button (disabled) D 公務員對長官的命令提出異議\n~\t\t\t\t\t\t64 text D 公務員對長官的命令提出異議\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 「陳情」的重點是：人民向機關反映意見或建議。補充：陳情與請願不像訴願有法定效力，主要是表達意見。其他選項是常見的誤解，都不是「陳情」的意思。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g27",
+        "question": "「可以向有管轄權的機關提起訴願」最主要的原因是？",
+        "choices": [
+          "A法院審理刑事案件",
+          "B地方議會開會",
+          "C戶政事務所辦理戶籍登記",
+          "D不服行政處分"
+        ],
+        "options": [
+          "法院審理刑事案件",
+          "地方議會開會",
+          "戶政事務所辦理戶籍登記",
+          "不服行政處分"
+        ],
+        "answer": "不服行政處分",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 法院審理刑事案件\n~\t\t\t\t\t\t55 text A 法院審理刑事案件\n~\t\t\t\t\t57 button (disabled) B 地方議會開會\n~\t\t\t\t\t\t58 text B 地方議會開會\n~\t\t\t\t\t60 button (disabled) C 戶政事務所辦理戶籍登記\n~\t\t\t\t\t\t61 text C 戶政事務所辦理戶籍登記\n~\t\t\t\t\t63 button (disabled) D 不服行政處分\n~\t\t\t\t\t\t64 text D 不服行政處分\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 可以向有管轄權的機關提起訴願，最主要是因為「不服行政處分」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g14",
+        "question": "「行政法院」的內容是？",
+        "choices": [
+          "A審理民事與刑事案件的法院",
+          "B受理訴願的上級行政機關",
+          "C負責彈劾失職官員的機關",
+          "D審理行政訴訟案件的法院"
+        ],
+        "options": [
+          "審理民事與刑事案件的法院",
+          "受理訴願的上級行政機關",
+          "負責彈劾失職官員的機關",
+          "審理行政訴訟案件的法院"
+        ],
+        "answer": "審理行政訴訟案件的法院",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 審理民事與刑事案件的法院\n~\t\t\t\t\t\t55 text A 審理民事與刑事案件的法院\n~\t\t\t\t\t57 button (disabled) B 受理訴願的上級行政機關\n~\t\t\t\t\t\t58 text B 受理訴願的上級行政機關\n~\t\t\t\t\t60 button (disabled) C 負責彈劾失職官員的機關\n~\t\t\t\t\t\t61 text C 負責彈劾失職官員的機關\n~\t\t\t\t\t63 button (disabled) D 審理行政訴訟案件的法院\n~\t\t\t\t\t\t64 text D 審理行政訴訟案件的法院\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 「行政法院」的重點是：審理行政訴訟案件的法院。其他選項是常見的誤解，都不是「行政法院」的意思。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-h1",
+        "question": "訴願被駁回後仍然不服，下一步可以怎麼做？",
+        "choices": [
+          "A向監察院申請判決",
+          "B向立法院提起上訴",
+          "C向行政法院提起行政訴訟",
+          "D向民事法院提起刑事告訴"
+        ],
+        "options": [
+          "向監察院申請判決",
+          "向立法院提起上訴",
+          "向行政法院提起行政訴訟",
+          "向民事法院提起刑事告訴"
+        ],
+        "answer": "向行政法院提起行政訴訟",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 向監察院申請判決\n~\t\t\t\t\t\t55 text A 向監察院申請判決\n~\t\t\t\t\t57 button (disabled) B 向立法院提起上訴\n~\t\t\t\t\t\t58 text B 向立法院提起上訴\n~\t\t\t\t\t60 button (disabled) C 向行政法院提起行政訴訟\n~\t\t\t\t\t\t61 text C 向行政法院提起行政訴訟\n~\t\t\t\t\t63 button (disabled) D 向民事法院提起刑事告訴\n~\t\t\t\t\t\t64 text D 向民事法院提起刑事告訴\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 訴願決定後仍不服，可以向行政法院提起行政訴訟，由法院審查行政處分是否違法。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-h4",
+        "question": "人民向政府機關表達對政策的希望或意見，稱為？",
+        "choices": [
+          "A上訴",
+          "B請願或陳情",
+          "C起訴",
+          "D罷免"
+        ],
+        "options": [
+          "上訴",
+          "請願或陳情",
+          "起訴",
+          "罷免"
+        ],
+        "answer": "請願或陳情",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 上訴\n~\t\t\t\t\t\t55 text A 上訴\n~\t\t\t\t\t57 button (disabled) B 請願或陳情\n~\t\t\t\t\t\t58 text B 請願或陳情\n~\t\t\t\t\t60 button (disabled) C 起訴\n~\t\t\t\t\t\t61 text C 起訴\n~\t\t\t\t\t63 button (disabled) D 罷免\n~\t\t\t\t\t\t64 text D 罷免\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 請願、陳情是人民向機關表達意見的方式，雖不一定能改變處分，但能讓機關了解民意。\n+\t\t\t\t\t68 text 下次複習：3 天後\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g23",
+        "question": "「有期徒刑」屬於哪一種處罰？",
+        "choices": [
+          "A刑罰",
+          "B行政罰",
+          "C民事賠償",
+          "D學校懲處"
+        ],
+        "options": [
+          "刑罰",
+          "行政罰",
+          "民事賠償",
+          "學校懲處"
+        ],
+        "answer": "刑罰",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 刑罰\n~\t\t\t\t\t\t55 text A 刑罰\n~\t\t\t\t\t57 button (disabled) B 行政罰\n~\t\t\t\t\t\t58 text B 行政罰\n~\t\t\t\t\t60 button (disabled) C 民事賠償\n~\t\t\t\t\t\t61 text C 民事賠償\n~\t\t\t\t\t63 button (disabled) D 學校懲處\n~\t\t\t\t\t\t64 text D 學校懲處\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 「有期徒刑」→ 刑罰。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law8-g17",
+        "question": "遇到「訴願被駁回仍然不服」，最適合採取哪一種管道？",
+        "choices": [
+          "A彈劾",
+          "B陳情",
+          "C罷免",
+          "D行政訴訟"
+        ],
+        "options": [
+          "彈劾",
+          "陳情",
+          "罷免",
+          "行政訴訟"
+        ],
+        "answer": "行政訴訟",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 彈劾\n~\t\t\t\t\t\t55 text A 彈劾\n~\t\t\t\t\t57 button (disabled) B 陳情\n~\t\t\t\t\t\t58 text B 陳情\n~\t\t\t\t\t60 button (disabled) C 罷免\n~\t\t\t\t\t\t61 text C 罷免\n~\t\t\t\t\t63 button (disabled) D 行政訴訟\n~\t\t\t\t\t\t64 text D 行政訴訟\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 「訴願被駁回仍然不服」→ 行政訴訟。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 看成績, ID: nextBtn\nThe focused UI element is 71 button 看成績, ID: nextBtn"
+      }
+    ],
+    "lastState": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\n1 AXWebArea 社會科複習島, URL: lutm6666.github.io/social-studies-review-island/\n\t2 container\n\t\t3 image Description: 可以拖曳旋轉的 3D 社會科群島, ID: scene\n\t\t8 container labels\n\t\t\t9 button 臺灣史島 七年級．925 題\n\t\t\t\t50 text 臺灣史島\n\t\t\t\t51 text 七年級．925 題\n\t\t\t10 button 中國與東亞史島 八年級．450 題\n\t\t\t\t52 text 中國與東亞史島\n\t\t\t\t53 text 八年級．450 題\n\t\t\t11 button 世界史島 九年級．444 題\n\t\t\t\t54 text 世界史島\n\t\t\t\t55 text 九年級．444 題\n\t\t\t12 button 臺灣地理島 七年級．488 題\n\t\t\t\t56 text 臺灣地理島\n\t\t\t\t57 text 七年級．488 題\n\t\t\t13 button 亞洲島 八年級．286 題\n\t\t\t\t58 text 亞洲島\n\t\t\t\t59 text 八年級．286 題\n\t\t\t14 button 世界島 九年級．243 題\n\t\t\t\t60 text 世界島\n\t\t\t\t61 text 九年級．243 題\n\t\t\t15 button 社會生活島 七年級．267 題\n\t\t\t\t62 text 社會生活島\n\t\t\t\t63 text 七年級．267 題\n\t\t\t16 button 政治與法律島 八年級．406 題\n\t\t\t\t64 text 政治與法律島\n\t\t\t\t65 text 八年級．406 題\n\t\t\t17 button 經濟與全球島 九年級．298 題\n\t\t\t\t66 text 經濟與全球島\n\t\t\t\t67 text 九年級．298 題\n\t\t\t18 button 🍾 錯題島 沒有錯題\n\t\t\t\t68 text 🍾 錯題島\n\t\t\t\t69 text 沒有錯題\n\t\t70 button ‹ 回到群島, ID: backBtn\n\t\t39 container 行政救濟, ID: panel\n\t\t\t47 text 政治與法律島\n\t\t\t41 button Description: 關閉, ID: closeBtn\n\t\t\t42 heading 行政救濟, Value: 2, ID: panelTitle\n\t\t\t\t48 text 行政救濟\n\t\t\t49 text 第8章 行政救濟\n\t\t\t45 container panelBody\n\t\t\t\t71 container 答對 20 題，共 20 題\n\t\t\t\t72 text 全部答對\n\t\t\t\t73 text 全對！這一輪的題目都掌握了。\n\t\t\t\t74 content list\n\t\t\t\t\t75 container\n\t\t\t\t\t\t76 text 簡單 1 / 1\n\t\t\t\t\t77 container\n\t\t\t\t\t\t78 text 中等 14 / 14\n\t\t\t\t\t79 container\n\t\t\t\t\t\t80 text 困難 5 / 5\n\t\t\t\t81 button 再來 20 題, ID: rMore\n\t\t\t\t82 button 回到島上, ID: rBack\n\t\t\t\t83 button (collapsed) 這一輪的 20 題．覺得哪題有問題可以回報, Secondary Actions: Expand\n\t\t\t\t\t84 text 這一輪的 20 題．覺得哪題有問題可以回報\n\nThe focused UI element is 81 button 再來 20 題, ID: rMore",
+    "scorePass": true
+  },
+  {
+    "chapter": "law2",
+    "samples": [
+      {
+        "id": "law2-g27",
+        "question": "「執行法律、推動政策的權力」指的是？",
+        "choices": [
+          "A立法權",
+          "B行政權",
+          "C權力分立",
+          "D司法權"
+        ],
+        "options": [
+          "立法權",
+          "行政權",
+          "權力分立",
+          "司法權"
+        ],
+        "answer": "行政權",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 立法權\n~\t\t\t\t\t\t171 text A 立法權\n~\t\t\t\t\t173 button (disabled) B 行政權\n~\t\t\t\t\t\t174 text B 行政權\n~\t\t\t\t\t176 button (disabled) C 權力分立\n~\t\t\t\t\t\t177 text C 權力分立\n~\t\t\t\t\t179 button (disabled) D 司法權\n~\t\t\t\t\t\t180 text D 司法權\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 「執行法律、推動政策的權力」說的是「行政權」。其他選項：「權力分立」是把國家權力分給不同機關，互相制衡；「立法權」是制定法律的權力；「司法權」是依法審判、解決紛爭的權力。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g40",
+        "question": "「國家權力分立、互相制衡」帶來的結果是？",
+        "choices": [
+          "A權力集中於總統一人",
+          "B法律不需經立法院通過",
+          "C行政、立法、司法等權力由不同機關行使",
+          "D法院必須聽從行政院"
+        ],
+        "options": [
+          "權力集中於總統一人",
+          "法律不需經立法院通過",
+          "行政、立法、司法等權力由不同機關行使",
+          "法院必須聽從行政院"
+        ],
+        "answer": "行政、立法、司法等權力由不同機關行使",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 權力集中於總統一人\n~\t\t\t\t\t\t171 text A 權力集中於總統一人\n~\t\t\t\t\t173 button (disabled) B 法律不需經立法院通過\n~\t\t\t\t\t\t174 text B 法律不需經立法院通過\n~\t\t\t\t\t176 button (disabled) C 行政、立法、司法等權力由不同機關行使\n~\t\t\t\t\t\t177 text C 行政、立法、司法等權力由不同機關行使\n~\t\t\t\t\t179 button (disabled) D 法院必須聽從行政院\n~\t\t\t\t\t\t180 text D 法院必須聽從行政院\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 因為「國家權力分立、互相制衡」，所以行政、立法、司法等權力由不同機關行使。其他選項雖然和本單元有關，但都不是「國家權力分立、互相制衡」直接造成的結果。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g30",
+        "question": "「彈劾」的意思是？",
+        "choices": [
+          "A人民投票讓民選官員去職",
+          "B法院判處公務員刑罰",
+          "C行政院院長要求部長辭職",
+          "D監察院對違法失職官員提出追究"
+        ],
+        "options": [
+          "人民投票讓民選官員去職",
+          "法院判處公務員刑罰",
+          "行政院院長要求部長辭職",
+          "監察院對違法失職官員提出追究"
+        ],
+        "answer": "監察院對違法失職官員提出追究",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 人民投票讓民選官員去職\n~\t\t\t\t\t\t171 text A 人民投票讓民選官員去職\n~\t\t\t\t\t173 button (disabled) B 法院判處公務員刑罰\n~\t\t\t\t\t\t174 text B 法院判處公務員刑罰\n~\t\t\t\t\t176 button (disabled) C 行政院院長要求部長辭職\n~\t\t\t\t\t\t177 text C 行政院院長要求部長辭職\n~\t\t\t\t\t179 button (disabled) D 監察院對違法失職官員提出追究\n~\t\t\t\t\t\t180 text D 監察院對違法失職官員提出追究\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 「彈劾」的重點是：監察院對違法失職官員提出追究。其他選項是常見的誤解，都不是「彈劾」的意思。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g45",
+        "question": "「違法失職的公務人員受到追究」最主要的原因是？",
+        "choices": [
+          "A監察院行使彈劾權",
+          "B總統府舉行升旗典禮",
+          "C立法院設有委員會",
+          "D中央選舉委員會辦理選舉"
+        ],
+        "options": [
+          "監察院行使彈劾權",
+          "總統府舉行升旗典禮",
+          "立法院設有委員會",
+          "中央選舉委員會辦理選舉"
+        ],
+        "answer": "監察院行使彈劾權",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 監察院行使彈劾權\n~\t\t\t\t\t\t171 text A 監察院行使彈劾權\n~\t\t\t\t\t173 button (disabled) B 總統府舉行升旗典禮\n~\t\t\t\t\t\t174 text B 總統府舉行升旗典禮\n~\t\t\t\t\t176 button (disabled) C 立法院設有委員會\n~\t\t\t\t\t\t177 text C 立法院設有委員會\n~\t\t\t\t\t179 button (disabled) D 中央選舉委員會辦理選舉\n~\t\t\t\t\t\t180 text D 中央選舉委員會辦理選舉\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 違法失職的公務人員受到追究，最主要是因為「監察院行使彈劾權」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g34",
+        "question": "「覆議」的意思是？",
+        "choices": [
+          "A總統要求大法官重新解釋憲法",
+          "B人民對法律提出公民投票",
+          "C行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議",
+          "D立法院要求行政院重新編列預算"
+        ],
+        "options": [
+          "總統要求大法官重新解釋憲法",
+          "人民對法律提出公民投票",
+          "行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議",
+          "立法院要求行政院重新編列預算"
+        ],
+        "answer": "行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 總統要求大法官重新解釋憲法\n~\t\t\t\t\t\t171 text A 總統要求大法官重新解釋憲法\n~\t\t\t\t\t173 button (disabled) B 人民對法律提出公民投票\n~\t\t\t\t\t\t174 text B 人民對法律提出公民投票\n~\t\t\t\t\t176 button (disabled) C 行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議\n~\t\t\t\t\t\t177 text C 行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議\n~\t\t\t\t\t179 button (disabled) D 立法院要求行政院重新編列預算\n~\t\t\t\t\t\t180 text D 立法院要求行政院重新編列預算\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 「覆議」的重點是：行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議。補充：限於法律案、預算案、條約案；立法院維持原決議時，行政院院長應即接受。其他選項是常見的誤解，都不是「覆議」的意思。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-h7",
+        "question": "總統的產生方式與任期是？",
+        "choices": [
+          "A由人民直接選舉，任期四年，連選得連任一次",
+          "B終身職",
+          "C由行政院院長兼任",
+          "D由立法院選出，任期六年"
+        ],
+        "options": [
+          "由人民直接選舉，任期四年，連選得連任一次",
+          "終身職",
+          "由行政院院長兼任",
+          "由立法院選出，任期六年"
+        ],
+        "answer": "由人民直接選舉，任期四年，連選得連任一次",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 由人民直接選舉，任期四年，連選得連任一次\n~\t\t\t\t\t\t171 text A 由人民直接選舉，任期四年，連選得連任一次\n~\t\t\t\t\t173 button (disabled) B 終身職\n~\t\t\t\t\t\t174 text B 終身職\n~\t\t\t\t\t176 button (disabled) C 由行政院院長兼任\n~\t\t\t\t\t\t177 text C 由行政院院長兼任\n~\t\t\t\t\t179 button (disabled) D 由立法院選出，任期六年\n~\t\t\t\t\t\t180 text D 由立法院選出，任期六年\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 中華民國總統由全體人民直接選舉，任期四年，連選得連任一次。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g32",
+        "question": "「質詢」的意思是？",
+        "choices": [
+          "A立法委員詢問行政官員施政情形",
+          "B人民向機關陳情表達意見",
+          "C記者訪問官員施政情形",
+          "D監察委員調查官員是否違法"
+        ],
+        "options": [
+          "立法委員詢問行政官員施政情形",
+          "人民向機關陳情表達意見",
+          "記者訪問官員施政情形",
+          "監察委員調查官員是否違法"
+        ],
+        "answer": "立法委員詢問行政官員施政情形",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 立法委員詢問行政官員施政情形\n~\t\t\t\t\t\t171 text A 立法委員詢問行政官員施政情形\n~\t\t\t\t\t173 button (disabled) B 人民向機關陳情表達意見\n~\t\t\t\t\t\t174 text B 人民向機關陳情表達意見\n~\t\t\t\t\t176 button (disabled) C 記者訪問官員施政情形\n~\t\t\t\t\t\t177 text C 記者訪問官員施政情形\n~\t\t\t\t\t179 button (disabled) D 監察委員調查官員是否違法\n~\t\t\t\t\t\t180 text D 監察委員調查官員是否違法\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 「質詢」的重點是：立法委員詢問行政官員施政情形。其他選項是常見的誤解，都不是「質詢」的意思。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g2",
+        "question": "「行政院」的主要職權是？",
+        "choices": [
+          "A國家最高行政機關，推動各項政策",
+          "B審判行政訴訟案件",
+          "C選舉總統與副總統",
+          "D制定與修改憲法"
+        ],
+        "options": [
+          "國家最高行政機關，推動各項政策",
+          "審判行政訴訟案件",
+          "選舉總統與副總統",
+          "制定與修改憲法"
+        ],
+        "answer": "國家最高行政機關，推動各項政策",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 國家最高行政機關，推動各項政策\n~\t\t\t\t\t\t171 text A 國家最高行政機關，推動各項政策\n~\t\t\t\t\t173 button (disabled) B 審判行政訴訟案件\n~\t\t\t\t\t\t174 text B 審判行政訴訟案件\n~\t\t\t\t\t176 button (disabled) C 選舉總統與副總統\n~\t\t\t\t\t\t177 text C 選舉總統與副總統\n~\t\t\t\t\t179 button (disabled) D 制定與修改憲法\n~\t\t\t\t\t\t180 text D 制定與修改憲法\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 「行政院」的重點是：國家最高行政機關，推動各項政策。其他選項是常見的誤解，都不是「行政院」的意思。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-h0",
+        "question": "將國家權力分為不同部門、互相制衡，主要目的是？",
+        "choices": [
+          "A防止權力集中而被濫用",
+          "B讓政府效率最低",
+          "C減少人民的權利",
+          "D提高行政效率"
+        ],
+        "options": [
+          "防止權力集中而被濫用",
+          "讓政府效率最低",
+          "減少人民的權利",
+          "提高行政效率"
+        ],
+        "answer": "防止權力集中而被濫用",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 防止權力集中而被濫用\n~\t\t\t\t\t\t171 text A 防止權力集中而被濫用\n~\t\t\t\t\t173 button (disabled) B 讓政府效率最低\n~\t\t\t\t\t\t174 text B 讓政府效率最低\n~\t\t\t\t\t176 button (disabled) C 減少人民的權利\n~\t\t\t\t\t\t177 text C 減少人民的權利\n~\t\t\t\t\t179 button (disabled) D 提高行政效率\n~\t\t\t\t\t\t180 text D 提高行政效率\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 權力分立讓各部門互相監督制衡，避免任何一方獨攬大權而侵害人民權利。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g22",
+        "question": "「權力分立」的意思是？",
+        "choices": [
+          "A把國家權力分給不同機關，互相制衡",
+          "B權力集中於總統以提高效率",
+          "C中央與地方政府平均分配預算",
+          "D政黨輪流執政"
+        ],
+        "options": [
+          "把國家權力分給不同機關，互相制衡",
+          "權力集中於總統以提高效率",
+          "中央與地方政府平均分配預算",
+          "政黨輪流執政"
+        ],
+        "answer": "把國家權力分給不同機關，互相制衡",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 把國家權力分給不同機關，互相制衡\n~\t\t\t\t\t\t171 text A 把國家權力分給不同機關，互相制衡\n~\t\t\t\t\t173 button (disabled) B 權力集中於總統以提高效率\n~\t\t\t\t\t\t174 text B 權力集中於總統以提高效率\n~\t\t\t\t\t176 button (disabled) C 中央與地方政府平均分配預算\n~\t\t\t\t\t\t177 text C 中央與地方政府平均分配預算\n~\t\t\t\t\t179 button (disabled) D 政黨輪流執政\n~\t\t\t\t\t\t180 text D 政黨輪流執政\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 「權力分立」的重點是：把國家權力分給不同機關，互相制衡。其他選項是常見的誤解，都不是「權力分立」的意思。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g24",
+        "question": "「立法權」的意思是？",
+        "choices": [
+          "A制定法律的權力",
+          "B人民選舉民意代表的權力",
+          "C總統任命官員的權力",
+          "D政府徵收稅金的權力"
+        ],
+        "options": [
+          "制定法律的權力",
+          "人民選舉民意代表的權力",
+          "總統任命官員的權力",
+          "政府徵收稅金的權力"
+        ],
+        "answer": "制定法律的權力",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 制定法律的權力\n~\t\t\t\t\t\t171 text A 制定法律的權力\n~\t\t\t\t\t173 button (disabled) B 人民選舉民意代表的權力\n~\t\t\t\t\t\t174 text B 人民選舉民意代表的權力\n~\t\t\t\t\t176 button (disabled) C 總統任命官員的權力\n~\t\t\t\t\t\t177 text C 總統任命官員的權力\n~\t\t\t\t\t179 button (disabled) D 政府徵收稅金的權力\n~\t\t\t\t\t\t180 text D 政府徵收稅金的權力\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 「立法權」的重點是：制定法律的權力。其他選項是常見的誤解，都不是「立法權」的意思。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g28",
+        "question": "「司法權」的意思是？",
+        "choices": [
+          "A總統發布緊急命令的權力",
+          "B警察維持治安的權力",
+          "C地方議會審議預算的權力",
+          "D依法審判、解決紛爭的權力"
+        ],
+        "options": [
+          "總統發布緊急命令的權力",
+          "警察維持治安的權力",
+          "地方議會審議預算的權力",
+          "依法審判、解決紛爭的權力"
+        ],
+        "answer": "依法審判、解決紛爭的權力",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 總統發布緊急命令的權力\n~\t\t\t\t\t\t171 text A 總統發布緊急命令的權力\n~\t\t\t\t\t173 button (disabled) B 警察維持治安的權力\n~\t\t\t\t\t\t174 text B 警察維持治安的權力\n~\t\t\t\t\t176 button (disabled) C 地方議會審議預算的權力\n~\t\t\t\t\t\t177 text C 地方議會審議預算的權力\n~\t\t\t\t\t179 button (disabled) D 依法審判、解決紛爭的權力\n~\t\t\t\t\t\t180 text D 依法審判、解決紛爭的權力\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 「司法權」的重點是：依法審判、解決紛爭的權力。其他選項是常見的誤解，都不是「司法權」的意思。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g48",
+        "question": "「總統由人民直接選舉」帶來的結果是？",
+        "choices": [
+          "A總統不必對任何人負責",
+          "B總統由立法院指派",
+          "C總統可以終身任職",
+          "D總統必須對選民負責"
+        ],
+        "options": [
+          "總統不必對任何人負責",
+          "總統由立法院指派",
+          "總統可以終身任職",
+          "總統必須對選民負責"
+        ],
+        "answer": "總統必須對選民負責",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 總統不必對任何人負責\n~\t\t\t\t\t\t171 text A 總統不必對任何人負責\n~\t\t\t\t\t173 button (disabled) B 總統由立法院指派\n~\t\t\t\t\t\t174 text B 總統由立法院指派\n~\t\t\t\t\t176 button (disabled) C 總統可以終身任職\n~\t\t\t\t\t\t177 text C 總統可以終身任職\n~\t\t\t\t\t179 button (disabled) D 總統必須對選民負責\n~\t\t\t\t\t\t180 text D 總統必須對選民負責\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 因為「總統由人民直接選舉」，所以總統必須對選民負責。其他選項雖然和本單元有關，但都不是「總統由人民直接選舉」直接造成的結果。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g47",
+        "question": "「該法律依判決指定的時間失去效力」最主要的原因是？",
+        "choices": [
+          "A中央政府設有各部會",
+          "B政府發布颱風假",
+          "C國家設置國家公園",
+          "D憲法法庭宣告法律違憲"
+        ],
+        "options": [
+          "中央政府設有各部會",
+          "政府發布颱風假",
+          "國家設置國家公園",
+          "憲法法庭宣告法律違憲"
+        ],
+        "answer": "憲法法庭宣告法律違憲",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 中央政府設有各部會\n~\t\t\t\t\t\t171 text A 中央政府設有各部會\n~\t\t\t\t\t173 button (disabled) B 政府發布颱風假\n~\t\t\t\t\t\t174 text B 政府發布颱風假\n~\t\t\t\t\t176 button (disabled) C 國家設置國家公園\n~\t\t\t\t\t\t177 text C 國家設置國家公園\n~\t\t\t\t\t179 button (disabled) D 憲法法庭宣告法律違憲\n~\t\t\t\t\t\t180 text D 憲法法庭宣告法律違憲\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 該法律依判決指定的時間失去效力，最主要是因為「憲法法庭宣告法律違憲」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g14",
+        "question": "「彈劾失職官員」主要由哪一個機關負責？",
+        "choices": [
+          "A監察院",
+          "B考試院",
+          "C行政院",
+          "D總統"
+        ],
+        "options": [
+          "監察院",
+          "考試院",
+          "行政院",
+          "總統"
+        ],
+        "answer": "監察院",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 監察院\n~\t\t\t\t\t\t171 text A 監察院\n~\t\t\t\t\t173 button (disabled) B 考試院\n~\t\t\t\t\t\t174 text B 考試院\n~\t\t\t\t\t176 button (disabled) C 行政院\n~\t\t\t\t\t\t177 text C 行政院\n~\t\t\t\t\t179 button (disabled) D 總統\n~\t\t\t\t\t\t180 text D 總統\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 「彈劾失職官員」→ 監察院。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g37",
+        "question": "「立法院對行政院院長表示不信任的方式」指的是？",
+        "choices": [
+          "A質詢",
+          "B不信任案",
+          "C大法官",
+          "D覆議"
+        ],
+        "options": [
+          "質詢",
+          "不信任案",
+          "大法官",
+          "覆議"
+        ],
+        "answer": "不信任案",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 質詢\n~\t\t\t\t\t\t171 text A 質詢\n~\t\t\t\t\t173 button (disabled) B 不信任案\n~\t\t\t\t\t\t174 text B 不信任案\n~\t\t\t\t\t176 button (disabled) C 大法官\n~\t\t\t\t\t\t177 text C 大法官\n~\t\t\t\t\t179 button (disabled) D 覆議\n~\t\t\t\t\t\t180 text D 覆議\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 「立法院對行政院院長表示不信任的方式」說的是「不信任案」。補充：通過後行政院院長須在十日內辭職，並得同時呈請總統解散立法院，由總統決定是否解散。其他選項：「質詢」是立法委員詢問行政官員施政情形；「覆議」是行政院認為立法院通過的法律案、預算案或條約案窒礙難行，經總統核可後請立法院重新審議；「大法官」是審理憲法案件的法官。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g8",
+        "question": "「考試院」的主要職權是？",
+        "choices": [
+          "A掌理公務人員的考試與銓敘",
+          "B制定全國教育政策",
+          "C負責公務員的懲戒審判",
+          "D舉辦大學學測與國中會考"
+        ],
+        "options": [
+          "掌理公務人員的考試與銓敘",
+          "制定全國教育政策",
+          "負責公務員的懲戒審判",
+          "舉辦大學學測與國中會考"
+        ],
+        "answer": "掌理公務人員的考試與銓敘",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 掌理公務人員的考試與銓敘\n~\t\t\t\t\t\t171 text A 掌理公務人員的考試與銓敘\n~\t\t\t\t\t173 button (disabled) B 制定全國教育政策\n~\t\t\t\t\t\t174 text B 制定全國教育政策\n~\t\t\t\t\t176 button (disabled) C 負責公務員的懲戒審判\n~\t\t\t\t\t\t177 text C 負責公務員的懲戒審判\n~\t\t\t\t\t179 button (disabled) D 舉辦大學學測與國中會考\n~\t\t\t\t\t\t180 text D 舉辦大學學測與國中會考\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 「考試院」的重點是：掌理公務人員的考試與銓敘。其他選項是常見的誤解，都不是「考試院」的意思。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g42",
+        "question": "「立法委員質詢行政官員」帶來的結果是？",
+        "choices": [
+          "A行政官員可以拒絕質詢",
+          "B行政院施政不受監督",
+          "C立法院不能審查預算",
+          "D行政院的施政受到監督"
+        ],
+        "options": [
+          "行政官員可以拒絕質詢",
+          "行政院施政不受監督",
+          "立法院不能審查預算",
+          "行政院的施政受到監督"
+        ],
+        "answer": "行政院的施政受到監督",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 行政官員可以拒絕質詢\n~\t\t\t\t\t\t171 text A 行政官員可以拒絕質詢\n~\t\t\t\t\t173 button (disabled) B 行政院施政不受監督\n~\t\t\t\t\t\t174 text B 行政院施政不受監督\n~\t\t\t\t\t176 button (disabled) C 立法院不能審查預算\n~\t\t\t\t\t\t177 text C 立法院不能審查預算\n~\t\t\t\t\t179 button (disabled) D 行政院的施政受到監督\n~\t\t\t\t\t\t180 text D 行政院的施政受到監督\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 因為「立法委員質詢行政官員」，所以行政院的施政受到監督。其他選項雖然和本單元有關，但都不是「立法委員質詢行政官員」直接造成的結果。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 下一題, ID: nextBtn\nThe focused UI element is 187 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-h11",
+        "question": "監察院行使的是哪一種職權？",
+        "choices": [
+          "A考試權",
+          "B立法權",
+          "C審計權",
+          "D司法審判權"
+        ],
+        "options": [
+          "考試權",
+          "立法權",
+          "審計權",
+          "司法審判權"
+        ],
+        "answer": "審計權",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 174, 177, 180, 183\n~\t\t\t\t\t172 button (disabled) A 考試權\n~\t\t\t\t\t\t173 text A 考試權\n~\t\t\t\t\t175 button (disabled) B 立法權\n~\t\t\t\t\t\t176 text B 立法權\n~\t\t\t\t\t178 button (disabled) C 審計權\n~\t\t\t\t\t\t179 text C 審計權\n~\t\t\t\t\t181 button (disabled) D 司法審判權\n~\t\t\t\t\t\t182 text D 司法審判權\n+\t\t\t\t183 container fb\n+\t\t\t\t\t184 text 答對了\n+\t\t\t\t\t185 text 監察院設有審計部，負責審核政府的決算，屬於審計權。\n+\t\t\t\t\t186 text 下次複習：明天\n+\t\t\t\t\t187 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t188 button 回報錯誤, ID: rptBtn\n+\t\t\t\t189 button 下一題, ID: nextBtn\nThe focused UI element is 189 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "law2-g4",
+        "question": "「立法院」的主要職權是？",
+        "choices": [
+          "A公布法律並發布命令",
+          "B任命行政院院長",
+          "C指揮國軍作戰",
+          "D審議法律案與預算案，監督行政院"
+        ],
+        "options": [
+          "公布法律並發布命令",
+          "任命行政院院長",
+          "指揮國軍作戰",
+          "審議法律案與預算案，監督行政院"
+        ],
+        "answer": "審議法律案與預算案，監督行政院",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 172, 175, 178, 181\n~\t\t\t\t\t170 button (disabled) A 公布法律並發布命令\n~\t\t\t\t\t\t171 text A 公布法律並發布命令\n~\t\t\t\t\t173 button (disabled) B 任命行政院院長\n~\t\t\t\t\t\t174 text B 任命行政院院長\n~\t\t\t\t\t176 button (disabled) C 指揮國軍作戰\n~\t\t\t\t\t\t177 text C 指揮國軍作戰\n~\t\t\t\t\t179 button (disabled) D 審議法律案與預算案，監督行政院\n~\t\t\t\t\t\t180 text D 審議法律案與預算案，監督行政院\n+\t\t\t\t181 container fb\n+\t\t\t\t\t182 text 答對了\n+\t\t\t\t\t183 text 「立法院」的重點是：審議法律案與預算案，監督行政院。其他選項是常見的誤解，都不是「立法院」的意思。\n+\t\t\t\t\t184 text 下次複習：明天\n+\t\t\t\t\t185 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t186 button 回報錯誤, ID: rptBtn\n+\t\t\t\t187 button 看成績, ID: nextBtn\nThe focused UI element is 187 button 看成績, ID: nextBtn"
+      }
+    ],
+    "lastState": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 149-158, 166-171, 173-174, 176-177, 179-186\n+\t\t\t\t166 text 七年級．925 題\n+\t\t\t\t167 text 八年級．450 題\n+\t\t\t\t168 text 九年級．444 題\n+\t\t\t\t169 text 七年級．488 題\n+\t\t\t\t170 text 八年級．286 題\n+\t\t\t\t171 text 九年級．243 題\n+\t\t\t\t172 text 七年級．267 題\n+\t\t\t\t173 text 八年級．406 題\n+\t\t\t\t174 text 九年級．298 題\n+\t\t\t\t175 text 沒有錯題\n+\t\t\t\t176 container 答對 20 題，共 20 題\n+\t\t\t\t177 text 全部答對\n+\t\t\t\t178 text 全對！這一輪的題目都掌握了。\n+\t\t\t\t179 content list\n+\t\t\t\t\t180 container\n+\t\t\t\t\t\t181 text 簡單 2 / 2\n+\t\t\t\t\t182 container\n+\t\t\t\t\t\t183 text 中等 15 / 15\n+\t\t\t\t\t184 container\n+\t\t\t\t\t\t185 text 困難 3 / 3\n+\t\t\t\t186 button 再來 20 題, ID: rMore\n~\t\t\t\t187 button 回到島上, ID: rBack\n+\t\t\t\t188 button (collapsed) 這一輪的 20 題．覺得哪題有問題可以回報, Secondary Actions: Expand\n+\t\t\t\t\t189 text 這一輪的 20 題．覺得哪題有問題可以回報\n+\t\t190 text 權力分立與政府升級為「熱鬧聚落」！\nThe focused UI element is 186 button 再來 20 題, ID: rMore",
+    "scorePass": true
+  },
+  {
+    "chapter": "eco4",
+    "samples": [
+      {
+        "id": "eco4-g39",
+        "question": "「勞工的基本權益受到保障」最主要的原因是？",
+        "choices": [
+          "A政府推動觀光",
+          "B企業舉辦尾牙",
+          "C勞動基準法規定最低勞動條件",
+          "D勞工參加員工旅遊"
+        ],
+        "options": [
+          "政府推動觀光",
+          "企業舉辦尾牙",
+          "勞動基準法規定最低勞動條件",
+          "勞工參加員工旅遊"
+        ],
+        "answer": "勞動基準法規定最低勞動條件",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 政府推動觀光\n~\t\t\t\t\t\t312 text A 政府推動觀光\n~\t\t\t\t\t314 button (disabled) B 企業舉辦尾牙\n~\t\t\t\t\t\t315 text B 企業舉辦尾牙\n~\t\t\t\t\t317 button (disabled) C 勞動基準法規定最低勞動條件\n~\t\t\t\t\t\t318 text C 勞動基準法規定最低勞動條件\n~\t\t\t\t\t320 button (disabled) D 勞工參加員工旅遊\n~\t\t\t\t\t\t321 text D 勞工參加員工旅遊\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 勞工的基本權益受到保障，最主要是因為「勞動基準法規定最低勞動條件」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g36",
+        "question": "「政府提供職業訓練」帶來的結果是？",
+        "choices": [
+          "A勞工技能逐漸落後",
+          "B失業時間拉長",
+          "C失業勞工更難轉業",
+          "D失業勞工較容易轉業"
+        ],
+        "options": [
+          "勞工技能逐漸落後",
+          "失業時間拉長",
+          "失業勞工更難轉業",
+          "失業勞工較容易轉業"
+        ],
+        "answer": "失業勞工較容易轉業",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 勞工技能逐漸落後\n~\t\t\t\t\t\t312 text A 勞工技能逐漸落後\n~\t\t\t\t\t314 button (disabled) B 失業時間拉長\n~\t\t\t\t\t\t315 text B 失業時間拉長\n~\t\t\t\t\t317 button (disabled) C 失業勞工更難轉業\n~\t\t\t\t\t\t318 text C 失業勞工更難轉業\n~\t\t\t\t\t320 button (disabled) D 失業勞工較容易轉業\n~\t\t\t\t\t\t321 text D 失業勞工較容易轉業\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 因為「政府提供職業訓練」，所以失業勞工較容易轉業。其他選項雖然和本單元有關，但都不是「政府提供職業訓練」直接造成的結果。\n+\t\t\t\t\t325 text 下次複習：3 天後\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g12",
+        "question": "「最低工資」的意思是？",
+        "choices": [
+          "A勞工與雇主自由約定、沒有下限的工資",
+          "B勞工的工資依法不得低於政府公告的金額",
+          "C企業依獲利發給員工的年終獎金",
+          "D政府規定所有勞工都領相同的薪水"
+        ],
+        "options": [
+          "勞工與雇主自由約定、沒有下限的工資",
+          "勞工的工資依法不得低於政府公告的金額",
+          "企業依獲利發給員工的年終獎金",
+          "政府規定所有勞工都領相同的薪水"
+        ],
+        "answer": "勞工的工資依法不得低於政府公告的金額",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 勞工與雇主自由約定、沒有下限的工資\n~\t\t\t\t\t\t312 text A 勞工與雇主自由約定、沒有下限的工資\n~\t\t\t\t\t314 button (disabled) B 勞工的工資依法不得低於政府公告的金額\n~\t\t\t\t\t\t315 text B 勞工的工資依法不得低於政府公告的金額\n~\t\t\t\t\t317 button (disabled) C 企業依獲利發給員工的年終獎金\n~\t\t\t\t\t\t318 text C 企業依獲利發給員工的年終獎金\n~\t\t\t\t\t320 button (disabled) D 政府規定所有勞工都領相同的薪水\n~\t\t\t\t\t\t321 text D 政府規定所有勞工都領相同的薪水\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「最低工資」的重點是：勞工的工資依法不得低於政府公告的金額。其他選項是常見的誤解，都不是「最低工資」的意思。\n+\t\t\t\t\t325 text 下次複習：3 天後\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g8",
+        "question": "「爭議權」的意思是？",
+        "choices": [
+          "A勞工向法院提起刑事告訴的權利",
+          "B協商不成時依法進行罷工等爭議行為的權利",
+          "C雇主可以隨時解僱勞工的權利",
+          "D勞工可以任意破壞雇主財產的權利"
+        ],
+        "options": [
+          "勞工向法院提起刑事告訴的權利",
+          "協商不成時依法進行罷工等爭議行為的權利",
+          "雇主可以隨時解僱勞工的權利",
+          "勞工可以任意破壞雇主財產的權利"
+        ],
+        "answer": "協商不成時依法進行罷工等爭議行為的權利",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 勞工向法院提起刑事告訴的權利\n~\t\t\t\t\t\t312 text A 勞工向法院提起刑事告訴的權利\n~\t\t\t\t\t314 button (disabled) B 協商不成時依法進行罷工等爭議行為的權利\n~\t\t\t\t\t\t315 text B 協商不成時依法進行罷工等爭議行為的權利\n~\t\t\t\t\t317 button (disabled) C 雇主可以隨時解僱勞工的權利\n~\t\t\t\t\t\t318 text C 雇主可以隨時解僱勞工的權利\n~\t\t\t\t\t320 button (disabled) D 勞工可以任意破壞雇主財產的權利\n~\t\t\t\t\t\t321 text D 勞工可以任意破壞雇主財產的權利\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「爭議權」的重點是：協商不成時依法進行罷工等爭議行為的權利。補充：協商不成時，依法可以罷工。其他選項是常見的誤解，都不是「爭議權」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g6",
+        "question": "「協商權」的意思是？",
+        "choices": [
+          "A雇主單方面制定工作規則的權利",
+          "B政府替勞工決定工資的權利",
+          "C勞工個人與主管私下約定加班費的權利",
+          "D工會與雇主集體協商勞動條件的權利"
+        ],
+        "options": [
+          "雇主單方面制定工作規則的權利",
+          "政府替勞工決定工資的權利",
+          "勞工個人與主管私下約定加班費的權利",
+          "工會與雇主集體協商勞動條件的權利"
+        ],
+        "answer": "工會與雇主集體協商勞動條件的權利",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 雇主單方面制定工作規則的權利\n~\t\t\t\t\t\t312 text A 雇主單方面制定工作規則的權利\n~\t\t\t\t\t314 button (disabled) B 政府替勞工決定工資的權利\n~\t\t\t\t\t\t315 text B 政府替勞工決定工資的權利\n~\t\t\t\t\t317 button (disabled) C 勞工個人與主管私下約定加班費的權利\n~\t\t\t\t\t\t318 text C 勞工個人與主管私下約定加班費的權利\n~\t\t\t\t\t320 button (disabled) D 工會與雇主集體協商勞動條件的權利\n~\t\t\t\t\t\t321 text D 工會與雇主集體協商勞動條件的權利\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「協商權」的重點是：工會與雇主集體協商勞動條件的權利。補充：工會和資方談判、簽訂團體協約。其他選項是常見的誤解，都不是「協商權」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g0",
+        "question": "「勞動基準法」的意思是？",
+        "choices": [
+          "A規定最低勞動條件的法律",
+          "B規範勞工之間私人借貸的法律",
+          "C規定企業最高利潤的法律",
+          "D規定公務員考試與任用的法律"
+        ],
+        "options": [
+          "規定最低勞動條件的法律",
+          "規範勞工之間私人借貸的法律",
+          "規定企業最高利潤的法律",
+          "規定公務員考試與任用的法律"
+        ],
+        "answer": "規定最低勞動條件的法律",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 規定最低勞動條件的法律\n~\t\t\t\t\t\t312 text A 規定最低勞動條件的法律\n~\t\t\t\t\t314 button (disabled) B 規範勞工之間私人借貸的法律\n~\t\t\t\t\t\t315 text B 規範勞工之間私人借貸的法律\n~\t\t\t\t\t317 button (disabled) C 規定企業最高利潤的法律\n~\t\t\t\t\t\t318 text C 規定企業最高利潤的法律\n~\t\t\t\t\t320 button (disabled) D 規定公務員考試與任用的法律\n~\t\t\t\t\t\t321 text D 規定公務員考試與任用的法律\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「勞動基準法」的重點是：規定最低勞動條件的法律。其他選項是常見的誤解，都不是「勞動基準法」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-h1",
+        "question": "保障勞工最低工作條件的重要法律是？",
+        "choices": [
+          "A刑法",
+          "B勞動基準法",
+          "C民法親屬編",
+          "D公民投票法"
+        ],
+        "options": [
+          "刑法",
+          "勞動基準法",
+          "民法親屬編",
+          "公民投票法"
+        ],
+        "answer": "勞動基準法",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 刑法\n~\t\t\t\t\t\t312 text A 刑法\n~\t\t\t\t\t314 button (disabled) B 勞動基準法\n~\t\t\t\t\t\t315 text B 勞動基準法\n~\t\t\t\t\t317 button (disabled) C 民法親屬編\n~\t\t\t\t\t\t318 text C 民法親屬編\n~\t\t\t\t\t320 button (disabled) D 公民投票法\n~\t\t\t\t\t\t321 text D 公民投票法\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 勞動基準法規定工資、工時、休假、加班費、退休等最低勞動條件，雇主不得低於此標準。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g18",
+        "question": "「就業平等」的意思是？",
+        "choices": [
+          "A雇主可以依年齡優先錄取年輕人",
+          "B所有勞工的薪水都必須相同",
+          "C不因性別、種族等因素在就業上受到歧視",
+          "D只有女性才能申請育嬰假"
+        ],
+        "options": [
+          "雇主可以依年齡優先錄取年輕人",
+          "所有勞工的薪水都必須相同",
+          "不因性別、種族等因素在就業上受到歧視",
+          "只有女性才能申請育嬰假"
+        ],
+        "answer": "不因性別、種族等因素在就業上受到歧視",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 雇主可以依年齡優先錄取年輕人\n~\t\t\t\t\t\t312 text A 雇主可以依年齡優先錄取年輕人\n~\t\t\t\t\t314 button (disabled) B 所有勞工的薪水都必須相同\n~\t\t\t\t\t\t315 text B 所有勞工的薪水都必須相同\n~\t\t\t\t\t317 button (disabled) C 不因性別、種族等因素在就業上受到歧視\n~\t\t\t\t\t\t318 text C 不因性別、種族等因素在就業上受到歧視\n~\t\t\t\t\t320 button (disabled) D 只有女性才能申請育嬰假\n~\t\t\t\t\t\t321 text D 只有女性才能申請育嬰假\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「就業平等」的重點是：不因性別、種族等因素在就業上受到歧視。其他選項是常見的誤解，都不是「就業平等」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-h3",
+        "question": "國中生想要打工，下列觀念何者正確？",
+        "choices": [
+          "A雇主可以不給加班費",
+          "B未成年人可以從事危險工作",
+          "C未滿十五歲原則上不得受僱，打工應注意勞動條件與安全",
+          "D國中生打工不受任何法律保障"
+        ],
+        "options": [
+          "雇主可以不給加班費",
+          "未成年人可以從事危險工作",
+          "未滿十五歲原則上不得受僱，打工應注意勞動條件與安全",
+          "國中生打工不受任何法律保障"
+        ],
+        "answer": "未滿十五歲原則上不得受僱，打工應注意勞動條件與安全",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 雇主可以不給加班費\n~\t\t\t\t\t\t312 text A 雇主可以不給加班費\n~\t\t\t\t\t314 button (disabled) B 未成年人可以從事危險工作\n~\t\t\t\t\t\t315 text B 未成年人可以從事危險工作\n~\t\t\t\t\t317 button (disabled) C 未滿十五歲原則上不得受僱，打工應注意勞動條件與安全\n~\t\t\t\t\t\t318 text C 未滿十五歲原則上不得受僱，打工應注意勞動條件與安全\n~\t\t\t\t\t320 button (disabled) D 國中生打工不受任何法律保障\n~\t\t\t\t\t\t321 text D 國中生打工不受任何法律保障\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 勞動基準法原則上禁止僱用未滿十五歲的人；十五歲以上未滿十六歲的受僱者稱為童工，工時與工作性質受到較嚴格的限制；未滿十八歲的工作者也不得從事危險性或有害性的工作。\n+\t\t\t\t\t325 text 下次複習：3 天後\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g31",
+        "question": "「勞工組成工會集體協商」最主要的原因是？",
+        "choices": [
+          "A政府調漲最低工資",
+          "B企業實施週休二日",
+          "C企業舉辦尾牙",
+          "D個別勞工力量較小"
+        ],
+        "options": [
+          "政府調漲最低工資",
+          "企業實施週休二日",
+          "企業舉辦尾牙",
+          "個別勞工力量較小"
+        ],
+        "answer": "個別勞工力量較小",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 政府調漲最低工資\n~\t\t\t\t\t\t312 text A 政府調漲最低工資\n~\t\t\t\t\t314 button (disabled) B 企業實施週休二日\n~\t\t\t\t\t\t315 text B 企業實施週休二日\n~\t\t\t\t\t317 button (disabled) C 企業舉辦尾牙\n~\t\t\t\t\t\t318 text C 企業舉辦尾牙\n~\t\t\t\t\t320 button (disabled) D 個別勞工力量較小\n~\t\t\t\t\t\t321 text D 個別勞工力量較小\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 勞工組成工會集體協商，最主要是因為「個別勞工力量較小」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g35",
+        "question": "「企業裁員，出現循環性失業」最主要的原因是？",
+        "choices": [
+          "A企業發放年終獎金",
+          "B工廠舉辦家庭日",
+          "C景氣衰退",
+          "D政府推行全民健保"
+        ],
+        "options": [
+          "企業發放年終獎金",
+          "工廠舉辦家庭日",
+          "景氣衰退",
+          "政府推行全民健保"
+        ],
+        "answer": "景氣衰退",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 企業發放年終獎金\n~\t\t\t\t\t\t312 text A 企業發放年終獎金\n~\t\t\t\t\t314 button (disabled) B 工廠舉辦家庭日\n~\t\t\t\t\t\t315 text B 工廠舉辦家庭日\n~\t\t\t\t\t317 button (disabled) C 景氣衰退\n~\t\t\t\t\t\t318 text C 景氣衰退\n~\t\t\t\t\t320 button (disabled) D 政府推行全民健保\n~\t\t\t\t\t\t321 text D 政府推行全民健保\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 企業裁員，出現循環性失業，最主要是因為「景氣衰退」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t325 text 下次複習：3 天後\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g2",
+        "question": "「工會」的意思是？",
+        "choices": [
+          "A企業之間協調價格的組織",
+          "B雇主為管理員工而設立的部門",
+          "C政府監督企業的行政機關",
+          "D勞工為維護權益組成的團體"
+        ],
+        "options": [
+          "企業之間協調價格的組織",
+          "雇主為管理員工而設立的部門",
+          "政府監督企業的行政機關",
+          "勞工為維護權益組成的團體"
+        ],
+        "answer": "勞工為維護權益組成的團體",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 企業之間協調價格的組織\n~\t\t\t\t\t\t312 text A 企業之間協調價格的組織\n~\t\t\t\t\t314 button (disabled) B 雇主為管理員工而設立的部門\n~\t\t\t\t\t\t315 text B 雇主為管理員工而設立的部門\n~\t\t\t\t\t317 button (disabled) C 政府監督企業的行政機關\n~\t\t\t\t\t\t318 text C 政府監督企業的行政機關\n~\t\t\t\t\t320 button (disabled) D 勞工為維護權益組成的團體\n~\t\t\t\t\t\t321 text D 勞工為維護權益組成的團體\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「工會」的重點是：勞工為維護權益組成的團體。其他選項是常見的誤解，都不是「工會」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g4",
+        "question": "「團結權」的意思是？",
+        "choices": [
+          "A勞工可以隨時離職的權利",
+          "B勞工個人與雇主談判薪資的權利",
+          "C雇主組成同業公會的權利",
+          "D勞工組織與參加工會的權利"
+        ],
+        "options": [
+          "勞工可以隨時離職的權利",
+          "勞工個人與雇主談判薪資的權利",
+          "雇主組成同業公會的權利",
+          "勞工組織與參加工會的權利"
+        ],
+        "answer": "勞工組織與參加工會的權利",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 勞工可以隨時離職的權利\n~\t\t\t\t\t\t312 text A 勞工可以隨時離職的權利\n~\t\t\t\t\t314 button (disabled) B 勞工個人與雇主談判薪資的權利\n~\t\t\t\t\t\t315 text B 勞工個人與雇主談判薪資的權利\n~\t\t\t\t\t317 button (disabled) C 雇主組成同業公會的權利\n~\t\t\t\t\t\t318 text C 雇主組成同業公會的權利\n~\t\t\t\t\t320 button (disabled) D 勞工組織與參加工會的權利\n~\t\t\t\t\t\t321 text D 勞工組織與參加工會的權利\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「團結權」的重點是：勞工組織與參加工會的權利。其他選項是常見的誤解，都不是「團結權」的意思。\n+\t\t\t\t\t325 text 下次複習：3 天後\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g11",
+        "question": "「十五歲以上未滿十六歲的受僱者」指的是？",
+        "choices": [
+          "A童工",
+          "B職業災害",
+          "C就業平等",
+          "D勞工保險"
+        ],
+        "options": [
+          "童工",
+          "職業災害",
+          "就業平等",
+          "勞工保險"
+        ],
+        "answer": "童工",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 童工\n~\t\t\t\t\t\t312 text A 童工\n~\t\t\t\t\t314 button (disabled) B 職業災害\n~\t\t\t\t\t\t315 text B 職業災害\n~\t\t\t\t\t317 button (disabled) C 就業平等\n~\t\t\t\t\t\t318 text C 就業平等\n~\t\t\t\t\t320 button (disabled) D 勞工保險\n~\t\t\t\t\t\t321 text D 勞工保險\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「十五歲以上未滿十六歲的受僱者」說的是「童工」。其他選項：「勞工保險」是勞工發生傷病、老年等情況時的保險；「就業平等」是不因性別、種族等因素在就業上受到歧視；「職業災害」是勞工因工作而受傷、生病或死亡。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g14",
+        "question": "「勞工保險」的意思是？",
+        "choices": [
+          "A由勞工自行購買的商業人壽保險",
+          "B勞工發生傷病、老年等情況時的保險",
+          "C政府發給低收入戶的生活補助",
+          "D企業為保護設備投保的火災保險"
+        ],
+        "options": [
+          "由勞工自行購買的商業人壽保險",
+          "勞工發生傷病、老年等情況時的保險",
+          "政府發給低收入戶的生活補助",
+          "企業為保護設備投保的火災保險"
+        ],
+        "answer": "勞工發生傷病、老年等情況時的保險",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 由勞工自行購買的商業人壽保險\n~\t\t\t\t\t\t312 text A 由勞工自行購買的商業人壽保險\n~\t\t\t\t\t314 button (disabled) B 勞工發生傷病、老年等情況時的保險\n~\t\t\t\t\t\t315 text B 勞工發生傷病、老年等情況時的保險\n~\t\t\t\t\t317 button (disabled) C 政府發給低收入戶的生活補助\n~\t\t\t\t\t\t318 text C 政府發給低收入戶的生活補助\n~\t\t\t\t\t320 button (disabled) D 企業為保護設備投保的火災保險\n~\t\t\t\t\t\t321 text D 企業為保護設備投保的火災保險\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「勞工保險」的重點是：勞工發生傷病、老年等情況時的保險。其他選項是常見的誤解，都不是「勞工保險」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g32",
+        "question": "「產業轉型、技術更新」帶來的結果是？",
+        "choices": [
+          "A勞工技能需求不變",
+          "B失業率下降",
+          "C部分勞工面臨結構性失業",
+          "D勞工都更容易就業"
+        ],
+        "options": [
+          "勞工技能需求不變",
+          "失業率下降",
+          "部分勞工面臨結構性失業",
+          "勞工都更容易就業"
+        ],
+        "answer": "部分勞工面臨結構性失業",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 勞工技能需求不變\n~\t\t\t\t\t\t312 text A 勞工技能需求不變\n~\t\t\t\t\t314 button (disabled) B 失業率下降\n~\t\t\t\t\t\t315 text B 失業率下降\n~\t\t\t\t\t317 button (disabled) C 部分勞工面臨結構性失業\n~\t\t\t\t\t\t318 text C 部分勞工面臨結構性失業\n~\t\t\t\t\t320 button (disabled) D 勞工都更容易就業\n~\t\t\t\t\t\t321 text D 勞工都更容易就業\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 因為「產業轉型、技術更新」，所以部分勞工面臨結構性失業。其他選項雖然和本單元有關，但都不是「產業轉型、技術更新」直接造成的結果。\n+\t\t\t\t\t325 text 下次複習：3 天後\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g27",
+        "question": "「參加工會」屬於勞動三權中的哪一項？",
+        "choices": [
+          "A財產權",
+          "B協商權",
+          "C爭議權",
+          "D團結權"
+        ],
+        "options": [
+          "財產權",
+          "協商權",
+          "爭議權",
+          "團結權"
+        ],
+        "answer": "團結權",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 財產權\n~\t\t\t\t\t\t312 text A 財產權\n~\t\t\t\t\t314 button (disabled) B 協商權\n~\t\t\t\t\t\t315 text B 協商權\n~\t\t\t\t\t317 button (disabled) C 爭議權\n~\t\t\t\t\t\t318 text C 爭議權\n~\t\t\t\t\t320 button (disabled) D 團結權\n~\t\t\t\t\t\t321 text D 團結權\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「參加工會」→ 團結權。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g16",
+        "question": "「職業災害」的意思是？",
+        "choices": [
+          "A勞工因工作而受傷、生病或死亡",
+          "B企業因經營不善而倒閉",
+          "C工廠機器因老舊而故障",
+          "D勞工下班後私人旅遊時受傷"
+        ],
+        "options": [
+          "勞工因工作而受傷、生病或死亡",
+          "企業因經營不善而倒閉",
+          "工廠機器因老舊而故障",
+          "勞工下班後私人旅遊時受傷"
+        ],
+        "answer": "勞工因工作而受傷、生病或死亡",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 勞工因工作而受傷、生病或死亡\n~\t\t\t\t\t\t312 text A 勞工因工作而受傷、生病或死亡\n~\t\t\t\t\t314 button (disabled) B 企業因經營不善而倒閉\n~\t\t\t\t\t\t315 text B 企業因經營不善而倒閉\n~\t\t\t\t\t317 button (disabled) C 工廠機器因老舊而故障\n~\t\t\t\t\t\t318 text C 工廠機器因老舊而故障\n~\t\t\t\t\t320 button (disabled) D 勞工下班後私人旅遊時受傷\n~\t\t\t\t\t\t321 text D 勞工下班後私人旅遊時受傷\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「職業災害」的重點是：勞工因工作而受傷、生病或死亡。其他選項是常見的誤解，都不是「職業災害」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g20",
+        "question": "「產業轉型使勞工技能不符」屬於哪一種失業？",
+        "choices": [
+          "A結構性失業",
+          "B季節性失業",
+          "C循環性失業",
+          "D自願退休"
+        ],
+        "options": [
+          "結構性失業",
+          "季節性失業",
+          "循環性失業",
+          "自願退休"
+        ],
+        "answer": "結構性失業",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 結構性失業\n~\t\t\t\t\t\t312 text A 結構性失業\n~\t\t\t\t\t314 button (disabled) B 季節性失業\n~\t\t\t\t\t\t315 text B 季節性失業\n~\t\t\t\t\t317 button (disabled) C 循環性失業\n~\t\t\t\t\t\t318 text C 循環性失業\n~\t\t\t\t\t320 button (disabled) D 自願退休\n~\t\t\t\t\t\t321 text D 自願退休\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「產業轉型使勞工技能不符」→ 結構性失業。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco4-g10",
+        "question": "「童工」的意思是？",
+        "choices": [
+          "A十六歲以上未滿十八歲的受僱者",
+          "B十五歲以上未滿十六歲的受僱者",
+          "C已滿十八歲、第一次工作的新進員工",
+          "D未滿十二歲、在家幫忙做家事的孩子"
+        ],
+        "options": [
+          "十六歲以上未滿十八歲的受僱者",
+          "十五歲以上未滿十六歲的受僱者",
+          "已滿十八歲、第一次工作的新進員工",
+          "未滿十二歲、在家幫忙做家事的孩子"
+        ],
+        "answer": "十五歲以上未滿十六歲的受僱者",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 十六歲以上未滿十八歲的受僱者\n~\t\t\t\t\t\t312 text A 十六歲以上未滿十八歲的受僱者\n~\t\t\t\t\t314 button (disabled) B 十五歲以上未滿十六歲的受僱者\n~\t\t\t\t\t\t315 text B 十五歲以上未滿十六歲的受僱者\n~\t\t\t\t\t317 button (disabled) C 已滿十八歲、第一次工作的新進員工\n~\t\t\t\t\t\t318 text C 已滿十八歲、第一次工作的新進員工\n~\t\t\t\t\t320 button (disabled) D 未滿十二歲、在家幫忙做家事的孩子\n~\t\t\t\t\t\t321 text D 未滿十二歲、在家幫忙做家事的孩子\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「童工」的重點是：十五歲以上未滿十六歲的受僱者。其他選項是常見的誤解，都不是「童工」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 看成績, ID: nextBtn\nThe focused UI element is 328 button 看成績, ID: nextBtn"
+      }
+    ],
+    "lastState": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 290-299, 307-312, 314-315, 317-318, 320-327\n+\t\t\t\t307 text 七年級．925 題\n+\t\t\t\t308 text 八年級．450 題\n+\t\t\t\t309 text 九年級．444 題\n+\t\t\t\t310 text 七年級．488 題\n+\t\t\t\t311 text 八年級．286 題\n+\t\t\t\t312 text 九年級．243 題\n+\t\t\t\t313 text 七年級．267 題\n+\t\t\t\t314 text 八年級．406 題\n+\t\t\t\t315 text 九年級．298 題\n+\t\t\t\t316 text 沒有錯題\n+\t\t\t\t317 container 答對 20 題，共 20 題\n+\t\t\t\t318 text 全部答對\n+\t\t\t\t319 text 全對！這一輪的題目都掌握了。\n+\t\t\t\t320 content list\n+\t\t\t\t\t321 container\n+\t\t\t\t\t\t322 text 簡單 1 / 1\n+\t\t\t\t\t323 container\n+\t\t\t\t\t\t324 text 中等 16 / 16\n+\t\t\t\t\t325 container\n+\t\t\t\t\t\t326 text 困難 3 / 3\n+\t\t\t\t327 button 再來 20 題, ID: rMore\n~\t\t\t\t328 button 回到島上, ID: rBack\n+\t\t\t\t329 button (collapsed) 這一輪的 20 題．覺得哪題有問題可以回報, Secondary Actions: Expand\n+\t\t\t\t\t330 text 這一輪的 20 題．覺得哪題有問題可以回報\n+\t\t331 text 勞動升級為「繁榮之島」！\nThe focused UI element is 327 button 再來 20 題, ID: rMore",
+    "scorePass": true
+  },
+  {
+    "chapter": "eco5",
+    "samples": [
+      {
+        "id": "eco5-h8",
+        "question": "這種現象在經濟學上稱為？",
+        "choices": [
+          "A外部成本",
+          "B機會成本",
+          "C沉沒成本",
+          "D比較利益"
+        ],
+        "options": [
+          "外部成本",
+          "機會成本",
+          "沉沒成本",
+          "比較利益"
+        ],
+        "answer": "外部成本",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 315, 318, 321, 324\n~\t\t\t\t\t313 button (disabled) A 外部成本\n~\t\t\t\t\t\t314 text A 外部成本\n~\t\t\t\t\t316 button (disabled) B 機會成本\n~\t\t\t\t\t\t317 text B 機會成本\n~\t\t\t\t\t319 button (disabled) C 沉沒成本\n~\t\t\t\t\t\t320 text C 沉沒成本\n~\t\t\t\t\t322 button (disabled) D 比較利益\n~\t\t\t\t\t\t323 text D 比較利益\n+\t\t\t\t324 container fb\n+\t\t\t\t\t325 text 答對了\n+\t\t\t\t\t326 text 生產活動使旁人受損卻未負擔代價，稱為外部成本，政府可以用管制、罰款或收費改善。\n+\t\t\t\t\t327 text 下次複習：明天\n+\t\t\t\t\t328 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t329 button 回報錯誤, ID: rptBtn\n+\t\t\t\t330 button 下一題, ID: nextBtn\nThe focused UI element is 330 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-g2",
+        "question": "「私有財」的意思是？",
+        "choices": [
+          "A政府免費提供給民眾的財貨",
+          "B由社區居民共同擁有的財貨",
+          "C不需付出代價就能取得的財貨",
+          "D可以排除他人使用，且一人使用會減少他人可用數量的財貨"
+        ],
+        "options": [
+          "政府免費提供給民眾的財貨",
+          "由社區居民共同擁有的財貨",
+          "不需付出代價就能取得的財貨",
+          "可以排除他人使用，且一人使用會減少他人可用數量的財貨"
+        ],
+        "answer": "可以排除他人使用，且一人使用會減少他人可用數量的財貨",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 政府免費提供給民眾的財貨\n~\t\t\t\t\t\t312 text A 政府免費提供給民眾的財貨\n~\t\t\t\t\t314 button (disabled) B 由社區居民共同擁有的財貨\n~\t\t\t\t\t\t315 text B 由社區居民共同擁有的財貨\n~\t\t\t\t\t317 button (disabled) C 不需付出代價就能取得的財貨\n~\t\t\t\t\t\t318 text C 不需付出代價就能取得的財貨\n~\t\t\t\t\t320 button (disabled) D 可以排除他人使用，且一人使用會減少他人可用數量的財貨\n~\t\t\t\t\t\t321 text D 可以排除他人使用，且一人使用會減少他人可用數量的財貨\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「私有財」的重點是：可以排除他人使用，且一人使用會減少他人可用數量的財貨。其他選項是常見的誤解，都不是「私有財」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-h10",
+        "question": "這種課稅方式稱為？",
+        "choices": [
+          "A關稅",
+          "B定額稅",
+          "C累進稅率",
+          "D比例稅率"
+        ],
+        "options": [
+          "關稅",
+          "定額稅",
+          "累進稅率",
+          "比例稅率"
+        ],
+        "answer": "累進稅率",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 315, 318, 321, 324\n~\t\t\t\t\t313 button (disabled) A 關稅\n~\t\t\t\t\t\t314 text A 關稅\n~\t\t\t\t\t316 button (disabled) B 定額稅\n~\t\t\t\t\t\t317 text B 定額稅\n~\t\t\t\t\t319 button (disabled) C 累進稅率\n~\t\t\t\t\t\t320 text C 累進稅率\n~\t\t\t\t\t322 button (disabled) D 比例稅率\n~\t\t\t\t\t\t323 text D 比例稅率\n+\t\t\t\t324 container fb\n+\t\t\t\t\t325 text 答對了\n+\t\t\t\t\t326 text 所得越高、超過級距的部分適用越高稅率，這種課稅方式是累進稅率（不是全部所得都套最高稅率），有助於縮小貧富差距。\n+\t\t\t\t\t327 text 下次複習：明天\n+\t\t\t\t\t328 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t329 button 回報錯誤, ID: rptBtn\n+\t\t\t\t330 button 下一題, ID: nextBtn\nThe focused UI element is 330 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-h5",
+        "question": "政府的主要收入來源是？",
+        "choices": [
+          "A稅收",
+          "B外國的無償贈與",
+          "C官員私人捐款",
+          "D販售國土"
+        ],
+        "options": [
+          "稅收",
+          "外國的無償贈與",
+          "官員私人捐款",
+          "販售國土"
+        ],
+        "answer": "稅收",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 稅收\n~\t\t\t\t\t\t312 text A 稅收\n~\t\t\t\t\t314 button (disabled) B 外國的無償贈與\n~\t\t\t\t\t\t315 text B 外國的無償贈與\n~\t\t\t\t\t317 button (disabled) C 官員私人捐款\n~\t\t\t\t\t\t318 text C 官員私人捐款\n~\t\t\t\t\t320 button (disabled) D 販售國土\n~\t\t\t\t\t\t321 text D 販售國土\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 稅收是政府最主要的收入，用來支付國防、教育、社會福利與公共建設等支出。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-h6",
+        "question": "政府在景氣衰退時擴大公共建設，主要目的是？",
+        "choices": [
+          "A讓物價大跌",
+          "B增加就業機會、刺激經濟",
+          "C提高失業率",
+          "D減少就業機會"
+        ],
+        "options": [
+          "讓物價大跌",
+          "增加就業機會、刺激經濟",
+          "提高失業率",
+          "減少就業機會"
+        ],
+        "answer": "增加就業機會、刺激經濟",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 讓物價大跌\n~\t\t\t\t\t\t312 text A 讓物價大跌\n~\t\t\t\t\t314 button (disabled) B 增加就業機會、刺激經濟\n~\t\t\t\t\t\t315 text B 增加就業機會、刺激經濟\n~\t\t\t\t\t317 button (disabled) C 提高失業率\n~\t\t\t\t\t\t318 text C 提高失業率\n~\t\t\t\t\t320 button (disabled) D 減少就業機會\n~\t\t\t\t\t\t321 text D 減少就業機會\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 景氣差時政府增加支出，例如興建交通建設，可以創造工作機會、帶動消費與投資。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-h3",
+        "question": "下列哪一種稅屬於「間接稅」？",
+        "choices": [
+          "A綜合所得稅",
+          "B營業稅",
+          "C房屋稅",
+          "D遺產稅"
+        ],
+        "options": [
+          "綜合所得稅",
+          "營業稅",
+          "房屋稅",
+          "遺產稅"
+        ],
+        "answer": "營業稅",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 綜合所得稅\n~\t\t\t\t\t\t312 text A 綜合所得稅\n~\t\t\t\t\t314 button (disabled) B 營業稅\n~\t\t\t\t\t\t315 text B 營業稅\n~\t\t\t\t\t317 button (disabled) C 房屋稅\n~\t\t\t\t\t\t318 text C 房屋稅\n~\t\t\t\t\t320 button (disabled) D 遺產稅\n~\t\t\t\t\t\t321 text D 遺產稅\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 間接稅是可以轉嫁給他人負擔的稅，例如營業稅常包含在商品價格中，由消費者負擔。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-g41",
+        "question": "「實施全民健康保險」帶來的結果是？",
+        "choices": [
+          "A納保民眾生病時能以較低的費用就醫",
+          "B只有富人能看病",
+          "C醫療服務減少",
+          "D民眾就醫費用增加"
+        ],
+        "options": [
+          "納保民眾生病時能以較低的費用就醫",
+          "只有富人能看病",
+          "醫療服務減少",
+          "民眾就醫費用增加"
+        ],
+        "answer": "納保民眾生病時能以較低的費用就醫",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 納保民眾生病時能以較低的費用就醫\n~\t\t\t\t\t\t312 text A 納保民眾生病時能以較低的費用就醫\n~\t\t\t\t\t314 button (disabled) B 只有富人能看病\n~\t\t\t\t\t\t315 text B 只有富人能看病\n~\t\t\t\t\t317 button (disabled) C 醫療服務減少\n~\t\t\t\t\t\t318 text C 醫療服務減少\n~\t\t\t\t\t320 button (disabled) D 民眾就醫費用增加\n~\t\t\t\t\t\t321 text D 民眾就醫費用增加\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 因為「實施全民健康保險」，所以納保民眾生病時能以較低的費用就醫。其他選項雖然和本單元有關，但都不是「實施全民健康保險」直接造成的結果。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-g8",
+        "question": "「直接稅」的意思是？",
+        "choices": [
+          "A使用公共服務時繳交的規費",
+          "B政府向進口商品課徵的關稅",
+          "C由納稅人自己負擔、無法轉嫁的稅",
+          "D隨商品價格一起由消費者支付的稅"
+        ],
+        "options": [
+          "使用公共服務時繳交的規費",
+          "政府向進口商品課徵的關稅",
+          "由納稅人自己負擔、無法轉嫁的稅",
+          "隨商品價格一起由消費者支付的稅"
+        ],
+        "answer": "由納稅人自己負擔、無法轉嫁的稅",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 使用公共服務時繳交的規費\n~\t\t\t\t\t\t312 text A 使用公共服務時繳交的規費\n~\t\t\t\t\t314 button (disabled) B 政府向進口商品課徵的關稅\n~\t\t\t\t\t\t315 text B 政府向進口商品課徵的關稅\n~\t\t\t\t\t317 button (disabled) C 由納稅人自己負擔、無法轉嫁的稅\n~\t\t\t\t\t\t318 text C 由納稅人自己負擔、無法轉嫁的稅\n~\t\t\t\t\t320 button (disabled) D 隨商品價格一起由消費者支付的稅\n~\t\t\t\t\t\t321 text D 隨商品價格一起由消費者支付的稅\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「直接稅」的重點是：由納稅人自己負擔、無法轉嫁的稅。補充：納稅的人就是負擔的人，例如所得稅。其他選項是常見的誤解，都不是「直接稅」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-g29",
+        "question": "「遺產稅」屬於直接稅還是間接稅？",
+        "choices": [
+          "A罰鍰",
+          "B規費",
+          "C間接稅",
+          "D直接稅"
+        ],
+        "options": [
+          "罰鍰",
+          "規費",
+          "間接稅",
+          "直接稅"
+        ],
+        "answer": "直接稅",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 罰鍰\n~\t\t\t\t\t\t312 text A 罰鍰\n~\t\t\t\t\t314 button (disabled) B 規費\n~\t\t\t\t\t\t315 text B 規費\n~\t\t\t\t\t317 button (disabled) C 間接稅\n~\t\t\t\t\t\t318 text C 間接稅\n~\t\t\t\t\t320 button (disabled) D 直接稅\n~\t\t\t\t\t\t321 text D 直接稅\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「遺產稅」→ 直接稅。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-g35",
+        "question": "「工廠排放污染讓附近居民受害」帶來的結果是？",
+        "choices": [
+          "A產生外部成本，政府可以透過管制或收費改善",
+          "B居民因此獲得補償",
+          "C污染成本由工廠自行吸收",
+          "D產生外部效益"
+        ],
+        "options": [
+          "產生外部成本，政府可以透過管制或收費改善",
+          "居民因此獲得補償",
+          "污染成本由工廠自行吸收",
+          "產生外部效益"
+        ],
+        "answer": "產生外部成本，政府可以透過管制或收費改善",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 產生外部成本，政府可以透過管制或收費改善\n~\t\t\t\t\t\t312 text A 產生外部成本，政府可以透過管制或收費改善\n~\t\t\t\t\t314 button (disabled) B 居民因此獲得補償\n~\t\t\t\t\t\t315 text B 居民因此獲得補償\n~\t\t\t\t\t317 button (disabled) C 污染成本由工廠自行吸收\n~\t\t\t\t\t\t318 text C 污染成本由工廠自行吸收\n~\t\t\t\t\t320 button (disabled) D 產生外部效益\n~\t\t\t\t\t\t321 text D 產生外部效益\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 因為「工廠排放污染讓附近居民受害」，所以產生外部成本，政府可以透過管制或收費改善。其他選項雖然和本單元有關，但都不是「工廠排放污染讓附近居民受害」直接造成的結果。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-g38",
+        "question": "「有助縮小貧富差距」最主要的原因是？",
+        "choices": [
+          "A綜合所得稅採累進稅率",
+          "B銀行推出新信用卡",
+          "C咖啡店推出新口味",
+          "D政府發放消費券"
+        ],
+        "options": [
+          "綜合所得稅採累進稅率",
+          "銀行推出新信用卡",
+          "咖啡店推出新口味",
+          "政府發放消費券"
+        ],
+        "answer": "綜合所得稅採累進稅率",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 綜合所得稅採累進稅率\n~\t\t\t\t\t\t312 text A 綜合所得稅採累進稅率\n~\t\t\t\t\t314 button (disabled) B 銀行推出新信用卡\n~\t\t\t\t\t\t315 text B 銀行推出新信用卡\n~\t\t\t\t\t317 button (disabled) C 咖啡店推出新口味\n~\t\t\t\t\t\t318 text C 咖啡店推出新口味\n~\t\t\t\t\t320 button (disabled) D 政府發放消費券\n~\t\t\t\t\t\t321 text D 政府發放消費券\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 有助縮小貧富差距，最主要是因為「綜合所得稅採累進稅率」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-h0",
+        "question": "「公共財」的特色是？",
+        "choices": [
+          "A多人可以同時使用，且難以排除他人使用",
+          "B只能一個人使用",
+          "C由私人企業獨占",
+          "D一定要付費才能使用"
+        ],
+        "options": [
+          "多人可以同時使用，且難以排除他人使用",
+          "只能一個人使用",
+          "由私人企業獨占",
+          "一定要付費才能使用"
+        ],
+        "answer": "多人可以同時使用，且難以排除他人使用",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 多人可以同時使用，且難以排除他人使用\n~\t\t\t\t\t\t312 text A 多人可以同時使用，且難以排除他人使用\n~\t\t\t\t\t314 button (disabled) B 只能一個人使用\n~\t\t\t\t\t\t315 text B 只能一個人使用\n~\t\t\t\t\t317 button (disabled) C 由私人企業獨占\n~\t\t\t\t\t\t318 text C 由私人企業獨占\n~\t\t\t\t\t320 button (disabled) D 一定要付費才能使用\n~\t\t\t\t\t\t321 text D 一定要付費才能使用\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 路燈、國防等公共財，一個人使用不會減少他人的使用，也難以排除不付費的人，因此多由政府提供。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-g18",
+        "question": "「政府預算」的意思是？",
+        "choices": [
+          "A政府向人民借款發行的債券",
+          "B企業年度的營收計畫",
+          "C政府已經花完的實際支出紀錄",
+          "D政府對一年收入與支出的計畫"
+        ],
+        "options": [
+          "政府向人民借款發行的債券",
+          "企業年度的營收計畫",
+          "政府已經花完的實際支出紀錄",
+          "政府對一年收入與支出的計畫"
+        ],
+        "answer": "政府對一年收入與支出的計畫",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 政府向人民借款發行的債券\n~\t\t\t\t\t\t312 text A 政府向人民借款發行的債券\n~\t\t\t\t\t314 button (disabled) B 企業年度的營收計畫\n~\t\t\t\t\t\t315 text B 企業年度的營收計畫\n~\t\t\t\t\t317 button (disabled) C 政府已經花完的實際支出紀錄\n~\t\t\t\t\t\t318 text C 政府已經花完的實際支出紀錄\n~\t\t\t\t\t320 button (disabled) D 政府對一年收入與支出的計畫\n~\t\t\t\t\t\t321 text D 政府對一年收入與支出的計畫\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「政府預算」的重點是：政府對一年收入與支出的計畫。其他選項是常見的誤解，都不是「政府預算」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-g37",
+        "question": "「綜合所得稅採累進稅率」帶來的結果是？",
+        "choices": [
+          "A有助縮小貧富差距",
+          "B高所得者稅率較低",
+          "C每個人繳一樣多的稅",
+          "D貧富差距擴大"
+        ],
+        "options": [
+          "有助縮小貧富差距",
+          "高所得者稅率較低",
+          "每個人繳一樣多的稅",
+          "貧富差距擴大"
+        ],
+        "answer": "有助縮小貧富差距",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 有助縮小貧富差距\n~\t\t\t\t\t\t312 text A 有助縮小貧富差距\n~\t\t\t\t\t314 button (disabled) B 高所得者稅率較低\n~\t\t\t\t\t\t315 text B 高所得者稅率較低\n~\t\t\t\t\t317 button (disabled) C 每個人繳一樣多的稅\n~\t\t\t\t\t\t318 text C 每個人繳一樣多的稅\n~\t\t\t\t\t320 button (disabled) D 貧富差距擴大\n~\t\t\t\t\t\t321 text D 貧富差距擴大\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 因為「綜合所得稅採累進稅率」，所以有助縮小貧富差距。其他選項雖然和本單元有關，但都不是「綜合所得稅採累進稅率」直接造成的結果。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-g6",
+        "question": "「外部效益」的意思是？",
+        "choices": [
+          "A企業販售商品獲得的利潤",
+          "B行為人因幫助他人而獲得的報酬",
+          "C行為使旁人受益卻未獲得報酬",
+          "D消費者購買商品時得到的折扣"
+        ],
+        "options": [
+          "企業販售商品獲得的利潤",
+          "行為人因幫助他人而獲得的報酬",
+          "行為使旁人受益卻未獲得報酬",
+          "消費者購買商品時得到的折扣"
+        ],
+        "answer": "行為使旁人受益卻未獲得報酬",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 企業販售商品獲得的利潤\n~\t\t\t\t\t\t312 text A 企業販售商品獲得的利潤\n~\t\t\t\t\t314 button (disabled) B 行為人因幫助他人而獲得的報酬\n~\t\t\t\t\t\t315 text B 行為人因幫助他人而獲得的報酬\n~\t\t\t\t\t317 button (disabled) C 行為使旁人受益卻未獲得報酬\n~\t\t\t\t\t\t318 text C 行為使旁人受益卻未獲得報酬\n~\t\t\t\t\t320 button (disabled) D 消費者購買商品時得到的折扣\n~\t\t\t\t\t\t321 text D 消費者購買商品時得到的折扣\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「外部效益」的重點是：行為使旁人受益卻未獲得報酬。其他選項是常見的誤解，都不是「外部效益」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-g36",
+        "question": "「產生外部成本，政府可以透過管制或收費改善」最主要的原因是？",
+        "choices": [
+          "A工廠排放污染讓附近居民受害",
+          "B體育館舉辦比賽",
+          "C演唱會門票熱賣",
+          "D美術館舉辦展覽"
+        ],
+        "options": [
+          "工廠排放污染讓附近居民受害",
+          "體育館舉辦比賽",
+          "演唱會門票熱賣",
+          "美術館舉辦展覽"
+        ],
+        "answer": "工廠排放污染讓附近居民受害",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 工廠排放污染讓附近居民受害\n~\t\t\t\t\t\t312 text A 工廠排放污染讓附近居民受害\n~\t\t\t\t\t314 button (disabled) B 體育館舉辦比賽\n~\t\t\t\t\t\t315 text B 體育館舉辦比賽\n~\t\t\t\t\t317 button (disabled) C 演唱會門票熱賣\n~\t\t\t\t\t\t318 text C 演唱會門票熱賣\n~\t\t\t\t\t320 button (disabled) D 美術館舉辦展覽\n~\t\t\t\t\t\t321 text D 美術館舉辦展覽\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 產生外部成本，政府可以透過管制或收費改善，最主要是因為「工廠排放污染讓附近居民受害」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-g21",
+        "question": "「國防」屬於公共財還是私有財？",
+        "choices": [
+          "A勞務",
+          "B私有財",
+          "C自由財",
+          "D公共財"
+        ],
+        "options": [
+          "勞務",
+          "私有財",
+          "自由財",
+          "公共財"
+        ],
+        "answer": "公共財",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 勞務\n~\t\t\t\t\t\t312 text A 勞務\n~\t\t\t\t\t314 button (disabled) B 私有財\n~\t\t\t\t\t\t315 text B 私有財\n~\t\t\t\t\t317 button (disabled) C 自由財\n~\t\t\t\t\t\t318 text C 自由財\n~\t\t\t\t\t320 button (disabled) D 公共財\n~\t\t\t\t\t\t321 text D 公共財\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「國防」→ 公共財。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-g33",
+        "question": "「公共財難以排除不付費者使用」帶來的結果是？",
+        "choices": [
+          "A公共財多由私人企業提供",
+          "B公共財只賣給付費的人",
+          "C公共財多由政府提供",
+          "D沒有人需要公共財"
+        ],
+        "options": [
+          "公共財多由私人企業提供",
+          "公共財只賣給付費的人",
+          "公共財多由政府提供",
+          "沒有人需要公共財"
+        ],
+        "answer": "公共財多由政府提供",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 公共財多由私人企業提供\n~\t\t\t\t\t\t312 text A 公共財多由私人企業提供\n~\t\t\t\t\t314 button (disabled) B 公共財只賣給付費的人\n~\t\t\t\t\t\t315 text B 公共財只賣給付費的人\n~\t\t\t\t\t317 button (disabled) C 公共財多由政府提供\n~\t\t\t\t\t\t318 text C 公共財多由政府提供\n~\t\t\t\t\t320 button (disabled) D 沒有人需要公共財\n~\t\t\t\t\t\t321 text D 沒有人需要公共財\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 因為「公共財難以排除不付費者使用」，所以公共財多由政府提供。其他選項雖然和本單元有關，但都不是「公共財難以排除不付費者使用」直接造成的結果。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-h9",
+        "question": "這主要表現政府的哪一種經濟角色？",
+        "choices": [
+          "A制定刑法",
+          "B審判民事案件",
+          "C發行股票",
+          "D提供公共建設"
+        ],
+        "options": [
+          "制定刑法",
+          "審判民事案件",
+          "發行股票",
+          "提供公共建設"
+        ],
+        "answer": "提供公共建設",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 315, 318, 321, 324\n~\t\t\t\t\t313 button (disabled) A 制定刑法\n~\t\t\t\t\t\t314 text A 制定刑法\n~\t\t\t\t\t316 button (disabled) B 審判民事案件\n~\t\t\t\t\t\t317 text B 審判民事案件\n~\t\t\t\t\t319 button (disabled) C 發行股票\n~\t\t\t\t\t\t320 text C 發行股票\n~\t\t\t\t\t322 button (disabled) D 提供公共建設\n~\t\t\t\t\t\t323 text D 提供公共建設\n+\t\t\t\t324 container fb\n+\t\t\t\t\t325 text 答對了\n+\t\t\t\t\t326 text 政府提供道路、橋梁等公共建設，補足市場不容易提供的部分。\n+\t\t\t\t\t327 text 下次複習：明天\n+\t\t\t\t\t328 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t329 button 回報錯誤, ID: rptBtn\n+\t\t\t\t330 button 下一題, ID: nextBtn\nThe focused UI element is 330 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco5-h4",
+        "question": "全民健康保險屬於政府的哪一種經濟功能？",
+        "choices": [
+          "A提供社會福利、照顧人民健康",
+          "B管理貨幣",
+          "C提供公共財的路燈",
+          "D維持國防"
+        ],
+        "options": [
+          "提供社會福利、照顧人民健康",
+          "管理貨幣",
+          "提供公共財的路燈",
+          "維持國防"
+        ],
+        "answer": "提供社會福利、照顧人民健康",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 提供社會福利、照顧人民健康\n~\t\t\t\t\t\t312 text A 提供社會福利、照顧人民健康\n~\t\t\t\t\t314 button (disabled) B 管理貨幣\n~\t\t\t\t\t\t315 text B 管理貨幣\n~\t\t\t\t\t317 button (disabled) C 提供公共財的路燈\n~\t\t\t\t\t\t318 text C 提供公共財的路燈\n~\t\t\t\t\t320 button (disabled) D 維持國防\n~\t\t\t\t\t\t321 text D 維持國防\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 全民健保讓全體國民在生病時都能獲得醫療照顧，是重要的社會福利制度。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 看成績, ID: nextBtn\nThe focused UI element is 328 button 看成績, ID: nextBtn"
+      }
+    ],
+    "lastState": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 290-299, 307-312, 314-315, 317-318, 320-327\n+\t\t\t\t307 text 七年級．925 題\n+\t\t\t\t308 text 八年級．450 題\n+\t\t\t\t309 text 九年級．444 題\n+\t\t\t\t310 text 七年級．488 題\n+\t\t\t\t311 text 八年級．286 題\n+\t\t\t\t312 text 九年級．243 題\n+\t\t\t\t313 text 七年級．267 題\n+\t\t\t\t314 text 八年級．406 題\n+\t\t\t\t315 text 九年級．298 題\n+\t\t\t\t316 text 沒有錯題\n+\t\t\t\t317 container 答對 20 題，共 20 題\n+\t\t\t\t318 text 全部答對\n+\t\t\t\t319 text 全對！這一輪的題目都掌握了。\n+\t\t\t\t320 content list\n+\t\t\t\t\t321 container\n+\t\t\t\t\t\t322 text 簡單 1 / 1\n+\t\t\t\t\t323 container\n+\t\t\t\t\t\t324 text 中等 12 / 12\n+\t\t\t\t\t325 container\n+\t\t\t\t\t\t326 text 困難 7 / 7\n+\t\t\t\t327 button 再來 20 題, ID: rMore\n~\t\t\t\t328 button 回到島上, ID: rBack\n+\t\t\t\t329 button (collapsed) 這一輪的 20 題．覺得哪題有問題可以回報, Secondary Actions: Expand\n+\t\t\t\t\t330 text 這一輪的 20 題．覺得哪題有問題可以回報\n+\t\t331 text 政府的經濟角色升級為「熱鬧聚落」！\nThe focused UI element is 327 button 再來 20 題, ID: rMore",
+    "scorePass": true
+  },
+  {
+    "chapter": "eco2",
+    "samples": [
+      {
+        "id": "eco2-g26",
+        "question": "「菜價上漲」最主要的原因是？",
+        "choices": [
+          "A颱風使蔬菜供給減少",
+          "B外送平台普及",
+          "C電影院推出優惠",
+          "D電子支付普及"
+        ],
+        "options": [
+          "颱風使蔬菜供給減少",
+          "外送平台普及",
+          "電影院推出優惠",
+          "電子支付普及"
+        ],
+        "answer": "颱風使蔬菜供給減少",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 颱風使蔬菜供給減少\n~\t\t\t\t\t\t312 text A 颱風使蔬菜供給減少\n~\t\t\t\t\t314 button (disabled) B 外送平台普及\n~\t\t\t\t\t\t315 text B 外送平台普及\n~\t\t\t\t\t317 button (disabled) C 電影院推出優惠\n~\t\t\t\t\t\t318 text C 電影院推出優惠\n~\t\t\t\t\t320 button (disabled) D 電子支付普及\n~\t\t\t\t\t\t321 text D 電子支付普及\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 菜價上漲，最主要是因為「颱風使蔬菜供給減少」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g16",
+        "question": "「價格機能」的意思是？",
+        "choices": [
+          "A廠商聯合訂定統一價格",
+          "B商品價格長期固定不變",
+          "C價格自動調節供給與需求的作用",
+          "D政府規定商品價格的制度"
+        ],
+        "options": [
+          "廠商聯合訂定統一價格",
+          "商品價格長期固定不變",
+          "價格自動調節供給與需求的作用",
+          "政府規定商品價格的制度"
+        ],
+        "answer": "價格自動調節供給與需求的作用",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 廠商聯合訂定統一價格\n~\t\t\t\t\t\t312 text A 廠商聯合訂定統一價格\n~\t\t\t\t\t314 button (disabled) B 商品價格長期固定不變\n~\t\t\t\t\t\t315 text B 商品價格長期固定不變\n~\t\t\t\t\t317 button (disabled) C 價格自動調節供給與需求的作用\n~\t\t\t\t\t\t318 text C 價格自動調節供給與需求的作用\n~\t\t\t\t\t320 button (disabled) D 政府規定商品價格的制度\n~\t\t\t\t\t\t321 text D 政府規定商品價格的制度\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「價格機能」的重點是：價格自動調節供給與需求的作用。其他選項是常見的誤解，都不是「價格機能」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g6",
+        "question": "「替代品」的意思是？",
+        "choices": [
+          "A外觀相似但用途不同的商品",
+          "B價格相同的兩種商品",
+          "C功能相近、可以互相取代的商品",
+          "D同一家公司生產的商品"
+        ],
+        "options": [
+          "外觀相似但用途不同的商品",
+          "價格相同的兩種商品",
+          "功能相近、可以互相取代的商品",
+          "同一家公司生產的商品"
+        ],
+        "answer": "功能相近、可以互相取代的商品",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 外觀相似但用途不同的商品\n~\t\t\t\t\t\t312 text A 外觀相似但用途不同的商品\n~\t\t\t\t\t314 button (disabled) B 價格相同的兩種商品\n~\t\t\t\t\t\t315 text B 價格相同的兩種商品\n~\t\t\t\t\t317 button (disabled) C 功能相近、可以互相取代的商品\n~\t\t\t\t\t\t318 text C 功能相近、可以互相取代的商品\n~\t\t\t\t\t320 button (disabled) D 同一家公司生產的商品\n~\t\t\t\t\t\t321 text D 同一家公司生產的商品\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「替代品」的重點是：功能相近、可以互相取代的商品。補充：一個變貴，另一個的需求會增加，例如咖啡與茶。其他選項是常見的誤解，都不是「替代品」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-h2",
+        "question": "颱風過後菜價大漲，最主要的原因是？",
+        "choices": [
+          "A政府調降蔬菜進口關稅",
+          "B政府規定菜價必須上漲",
+          "C消費者突然不想吃菜",
+          "D蔬菜產量減少，供給減少"
+        ],
+        "options": [
+          "政府調降蔬菜進口關稅",
+          "政府規定菜價必須上漲",
+          "消費者突然不想吃菜",
+          "蔬菜產量減少，供給減少"
+        ],
+        "answer": "蔬菜產量減少，供給減少",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 政府調降蔬菜進口關稅\n~\t\t\t\t\t\t312 text A 政府調降蔬菜進口關稅\n~\t\t\t\t\t314 button (disabled) B 政府規定菜價必須上漲\n~\t\t\t\t\t\t315 text B 政府規定菜價必須上漲\n~\t\t\t\t\t317 button (disabled) C 消費者突然不想吃菜\n~\t\t\t\t\t\t318 text C 消費者突然不想吃菜\n~\t\t\t\t\t320 button (disabled) D 蔬菜產量減少，供給減少\n~\t\t\t\t\t\t321 text D 蔬菜產量減少，供給減少\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 颱風造成農作物受損，供給減少，在需求不變下，市場價格上升。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g31",
+        "question": "「汽油價格上漲」帶來的結果是？",
+        "choices": [
+          "A汽車價格必定上漲",
+          "B互補品汽車的需求減少",
+          "C汽油需求量增加",
+          "D汽車的需求增加"
+        ],
+        "options": [
+          "汽車價格必定上漲",
+          "互補品汽車的需求減少",
+          "汽油需求量增加",
+          "汽車的需求增加"
+        ],
+        "answer": "互補品汽車的需求減少",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 汽車價格必定上漲\n~\t\t\t\t\t\t312 text A 汽車價格必定上漲\n~\t\t\t\t\t314 button (disabled) B 互補品汽車的需求減少\n~\t\t\t\t\t\t315 text B 互補品汽車的需求減少\n~\t\t\t\t\t317 button (disabled) C 汽油需求量增加\n~\t\t\t\t\t\t318 text C 汽油需求量增加\n~\t\t\t\t\t320 button (disabled) D 汽車的需求增加\n~\t\t\t\t\t\t321 text D 汽車的需求增加\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 因為「汽油價格上漲」，所以互補品汽車的需求減少。其他選項雖然和本單元有關，但都不是「汽油價格上漲」直接造成的結果。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g30",
+        "question": "「替代品茶的需求增加」最主要的原因是？",
+        "choices": [
+          "A農會舉辦農產展售",
+          "B量販店會員日",
+          "C寵物用品熱賣",
+          "D咖啡價格上漲"
+        ],
+        "options": [
+          "農會舉辦農產展售",
+          "量販店會員日",
+          "寵物用品熱賣",
+          "咖啡價格上漲"
+        ],
+        "answer": "咖啡價格上漲",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 農會舉辦農產展售\n~\t\t\t\t\t\t312 text A 農會舉辦農產展售\n~\t\t\t\t\t314 button (disabled) B 量販店會員日\n~\t\t\t\t\t\t315 text B 量販店會員日\n~\t\t\t\t\t317 button (disabled) C 寵物用品熱賣\n~\t\t\t\t\t\t318 text C 寵物用品熱賣\n~\t\t\t\t\t320 button (disabled) D 咖啡價格上漲\n~\t\t\t\t\t\t321 text D 咖啡價格上漲\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 替代品茶的需求增加，最主要是因為「咖啡價格上漲」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g27",
+        "question": "「水果大豐收使供給增加」帶來的結果是？",
+        "choices": [
+          "A水果需求減少",
+          "B水果供不應求",
+          "C水果價格下跌",
+          "D水果價格上揚"
+        ],
+        "options": [
+          "水果需求減少",
+          "水果供不應求",
+          "水果價格下跌",
+          "水果價格上揚"
+        ],
+        "answer": "水果價格下跌",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 水果需求減少\n~\t\t\t\t\t\t312 text A 水果需求減少\n~\t\t\t\t\t314 button (disabled) B 水果供不應求\n~\t\t\t\t\t\t315 text B 水果供不應求\n~\t\t\t\t\t317 button (disabled) C 水果價格下跌\n~\t\t\t\t\t\t318 text C 水果價格下跌\n~\t\t\t\t\t320 button (disabled) D 水果價格上揚\n~\t\t\t\t\t\t321 text D 水果價格上揚\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 因為「水果大豐收使供給增加」，所以水果價格下跌。其他選項雖然和本單元有關，但都不是「水果大豐收使供給增加」直接造成的結果。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-h1",
+        "question": "「供給法則」是指在其他條件不變下？",
+        "choices": [
+          "A價格與供給量無關",
+          "B價格上漲，供給量增加",
+          "C價格上漲，供給量減少",
+          "D價格下跌，供給量增加"
+        ],
+        "options": [
+          "價格與供給量無關",
+          "價格上漲，供給量增加",
+          "價格上漲，供給量減少",
+          "價格下跌，供給量增加"
+        ],
+        "answer": "價格上漲，供給量增加",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 價格與供給量無關\n~\t\t\t\t\t\t312 text A 價格與供給量無關\n~\t\t\t\t\t314 button (disabled) B 價格上漲，供給量增加\n~\t\t\t\t\t\t315 text B 價格上漲，供給量增加\n~\t\t\t\t\t317 button (disabled) C 價格上漲，供給量減少\n~\t\t\t\t\t\t318 text C 價格上漲，供給量減少\n~\t\t\t\t\t320 button (disabled) D 價格下跌，供給量增加\n~\t\t\t\t\t\t321 text D 價格下跌，供給量增加\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 價格越高，生產者越願意多生產、多銷售，供給量增加，這是供給法則。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g20",
+        "question": "在其他條件不變下，發生「颱風使蔬菜產量大減」時，該商品的價格最可能？",
+        "choices": [
+          "A上漲",
+          "B下跌",
+          "C不受影響",
+          "D一定變成免費"
+        ],
+        "options": [
+          "上漲",
+          "下跌",
+          "不受影響",
+          "一定變成免費"
+        ],
+        "answer": "上漲",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 上漲\n~\t\t\t\t\t\t312 text A 上漲\n~\t\t\t\t\t314 button (disabled) B 下跌\n~\t\t\t\t\t\t315 text B 下跌\n~\t\t\t\t\t317 button (disabled) C 不受影響\n~\t\t\t\t\t\t318 text C 不受影響\n~\t\t\t\t\t320 button (disabled) D 一定變成免費\n~\t\t\t\t\t\t321 text D 一定變成免費\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「颱風使蔬菜產量大減」→ 上漲。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g36",
+        "question": "「價格下跌」最主要的原因是？",
+        "choices": [
+          "A寵物用品熱賣",
+          "B商品供過於求",
+          "C健身房開幕",
+          "D網紅推薦商品"
+        ],
+        "options": [
+          "寵物用品熱賣",
+          "商品供過於求",
+          "健身房開幕",
+          "網紅推薦商品"
+        ],
+        "answer": "商品供過於求",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 寵物用品熱賣\n~\t\t\t\t\t\t312 text A 寵物用品熱賣\n~\t\t\t\t\t314 button (disabled) B 商品供過於求\n~\t\t\t\t\t\t315 text B 商品供過於求\n~\t\t\t\t\t317 button (disabled) C 健身房開幕\n~\t\t\t\t\t\t318 text C 健身房開幕\n~\t\t\t\t\t320 button (disabled) D 網紅推薦商品\n~\t\t\t\t\t\t321 text D 網紅推薦商品\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 價格下跌，最主要是因為「商品供過於求」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g10",
+        "question": "「超額需求」的意思是？",
+        "choices": [
+          "A消費者的存款多於商品總價值",
+          "B商品需求增加時，價格一定下跌",
+          "C政府要求消費者增加購買",
+          "D需求量大於供給量，供不應求"
+        ],
+        "options": [
+          "消費者的存款多於商品總價值",
+          "商品需求增加時，價格一定下跌",
+          "政府要求消費者增加購買",
+          "需求量大於供給量，供不應求"
+        ],
+        "answer": "需求量大於供給量，供不應求",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 消費者的存款多於商品總價值\n~\t\t\t\t\t\t312 text A 消費者的存款多於商品總價值\n~\t\t\t\t\t314 button (disabled) B 商品需求增加時，價格一定下跌\n~\t\t\t\t\t\t315 text B 商品需求增加時，價格一定下跌\n~\t\t\t\t\t317 button (disabled) C 政府要求消費者增加購買\n~\t\t\t\t\t\t318 text C 政府要求消費者增加購買\n~\t\t\t\t\t320 button (disabled) D 需求量大於供給量，供不應求\n~\t\t\t\t\t\t321 text D 需求量大於供給量，供不應求\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「超額需求」的重點是：需求量大於供給量，供不應求。補充：供不應求，價格傾向上漲。其他選項是常見的誤解，都不是「超額需求」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g4",
+        "question": "「均衡價格」的意思是？",
+        "choices": [
+          "A消費者願意支付的最低價格",
+          "B廠商希望賣到的最高價格",
+          "C需求量等於供給量時的價格",
+          "D政府規定的商品最高價格"
+        ],
+        "options": [
+          "消費者願意支付的最低價格",
+          "廠商希望賣到的最高價格",
+          "需求量等於供給量時的價格",
+          "政府規定的商品最高價格"
+        ],
+        "answer": "需求量等於供給量時的價格",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 消費者願意支付的最低價格\n~\t\t\t\t\t\t312 text A 消費者願意支付的最低價格\n~\t\t\t\t\t314 button (disabled) B 廠商希望賣到的最高價格\n~\t\t\t\t\t\t315 text B 廠商希望賣到的最高價格\n~\t\t\t\t\t317 button (disabled) C 需求量等於供給量時的價格\n~\t\t\t\t\t\t318 text C 需求量等於供給量時的價格\n~\t\t\t\t\t320 button (disabled) D 政府規定的商品最高價格\n~\t\t\t\t\t\t321 text D 政府規定的商品最高價格\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「均衡價格」的重點是：需求量等於供給量時的價格。其他選項是常見的誤解，都不是「均衡價格」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g12",
+        "question": "「超額供給」的意思是？",
+        "choices": [
+          "A生產成本上升使產量減少",
+          "B供給量大於需求量，供過於求",
+          "C政府增加商品進口配額",
+          "D廠商的庫存剛好全部賣完"
+        ],
+        "options": [
+          "生產成本上升使產量減少",
+          "供給量大於需求量，供過於求",
+          "政府增加商品進口配額",
+          "廠商的庫存剛好全部賣完"
+        ],
+        "answer": "供給量大於需求量，供過於求",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 生產成本上升使產量減少\n~\t\t\t\t\t\t312 text A 生產成本上升使產量減少\n~\t\t\t\t\t314 button (disabled) B 供給量大於需求量，供過於求\n~\t\t\t\t\t\t315 text B 供給量大於需求量，供過於求\n~\t\t\t\t\t317 button (disabled) C 政府增加商品進口配額\n~\t\t\t\t\t\t318 text C 政府增加商品進口配額\n~\t\t\t\t\t320 button (disabled) D 廠商的庫存剛好全部賣完\n~\t\t\t\t\t\t321 text D 廠商的庫存剛好全部賣完\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「超額供給」的重點是：供給量大於需求量，供過於求。補充：供過於求，價格傾向下跌。其他選項是常見的誤解，都不是「超額供給」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g8",
+        "question": "「互補品」的意思是？",
+        "choices": [
+          "A價格總是一起上漲的商品",
+          "B品牌相同的商品",
+          "C在同一家店販售的商品",
+          "D需要一起使用的商品"
+        ],
+        "options": [
+          "價格總是一起上漲的商品",
+          "品牌相同的商品",
+          "在同一家店販售的商品",
+          "需要一起使用的商品"
+        ],
+        "answer": "需要一起使用的商品",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 價格總是一起上漲的商品\n~\t\t\t\t\t\t312 text A 價格總是一起上漲的商品\n~\t\t\t\t\t314 button (disabled) B 品牌相同的商品\n~\t\t\t\t\t\t315 text B 品牌相同的商品\n~\t\t\t\t\t317 button (disabled) C 在同一家店販售的商品\n~\t\t\t\t\t\t318 text C 在同一家店販售的商品\n~\t\t\t\t\t320 button (disabled) D 需要一起使用的商品\n~\t\t\t\t\t\t321 text D 需要一起使用的商品\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「互補品」的重點是：需要一起使用的商品。補充：一個變貴，另一個的需求會減少，例如汽車與汽油。其他選項是常見的誤解，都不是「互補品」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-h7",
+        "question": "高麗菜漲價最主要的原因是？",
+        "choices": [
+          "A政府規定菜價上漲",
+          "B消費者都不想吃高麗菜",
+          "C冷凍蔬菜太便宜",
+          "D颱風造成產量減少，供給減少"
+        ],
+        "options": [
+          "政府規定菜價上漲",
+          "消費者都不想吃高麗菜",
+          "冷凍蔬菜太便宜",
+          "颱風造成產量減少，供給減少"
+        ],
+        "answer": "颱風造成產量減少，供給減少",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 315, 318, 321, 324\n~\t\t\t\t\t313 button (disabled) A 政府規定菜價上漲\n~\t\t\t\t\t\t314 text A 政府規定菜價上漲\n~\t\t\t\t\t316 button (disabled) B 消費者都不想吃高麗菜\n~\t\t\t\t\t\t317 text B 消費者都不想吃高麗菜\n~\t\t\t\t\t319 button (disabled) C 冷凍蔬菜太便宜\n~\t\t\t\t\t\t320 text C 冷凍蔬菜太便宜\n~\t\t\t\t\t322 button (disabled) D 颱風造成產量減少，供給減少\n~\t\t\t\t\t\t323 text D 颱風造成產量減少，供給減少\n+\t\t\t\t324 container fb\n+\t\t\t\t\t325 text 答對了\n+\t\t\t\t\t326 text 颱風使蔬菜受損、供給減少，在需求變化不大的情況下，價格上漲。\n+\t\t\t\t\t327 text 下次複習：明天\n+\t\t\t\t\t328 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t329 button 回報錯誤, ID: rptBtn\n+\t\t\t\t330 button 下一題, ID: nextBtn\nThe focused UI element is 330 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-h0",
+        "question": "「需求法則」是指在其他條件不變下？",
+        "choices": [
+          "A價格上漲，需求量增加",
+          "B價格與需求量無關",
+          "C價格上漲，需求量減少",
+          "D價格下跌，需求量減少"
+        ],
+        "options": [
+          "價格上漲，需求量增加",
+          "價格與需求量無關",
+          "價格上漲，需求量減少",
+          "價格下跌，需求量減少"
+        ],
+        "answer": "價格上漲，需求量減少",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 價格上漲，需求量增加\n~\t\t\t\t\t\t312 text A 價格上漲，需求量增加\n~\t\t\t\t\t314 button (disabled) B 價格與需求量無關\n~\t\t\t\t\t\t315 text B 價格與需求量無關\n~\t\t\t\t\t317 button (disabled) C 價格上漲，需求量減少\n~\t\t\t\t\t\t318 text C 價格上漲，需求量減少\n~\t\t\t\t\t320 button (disabled) D 價格下跌，需求量減少\n~\t\t\t\t\t\t321 text D 價格下跌，需求量減少\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 價格越高，消費者願意購買的數量越少；價格越低，購買數量越多，這是需求法則。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g14",
+        "question": "「市場」的意思是？",
+        "choices": [
+          "A政府分配物資給人民的制度",
+          "B買賣雙方進行交易的機制或場所",
+          "C商品從工廠運送到倉庫的過程",
+          "D只能在實體店面進行的交易"
+        ],
+        "options": [
+          "政府分配物資給人民的制度",
+          "買賣雙方進行交易的機制或場所",
+          "商品從工廠運送到倉庫的過程",
+          "只能在實體店面進行的交易"
+        ],
+        "answer": "買賣雙方進行交易的機制或場所",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 政府分配物資給人民的制度\n~\t\t\t\t\t\t312 text A 政府分配物資給人民的制度\n~\t\t\t\t\t314 button (disabled) B 買賣雙方進行交易的機制或場所\n~\t\t\t\t\t\t315 text B 買賣雙方進行交易的機制或場所\n~\t\t\t\t\t317 button (disabled) C 商品從工廠運送到倉庫的過程\n~\t\t\t\t\t\t318 text C 商品從工廠運送到倉庫的過程\n~\t\t\t\t\t320 button (disabled) D 只能在實體店面進行的交易\n~\t\t\t\t\t\t321 text D 只能在實體店面進行的交易\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「市場」的重點是：買賣雙方進行交易的機制或場所。其他選項是常見的誤解，都不是「市場」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g3",
+        "question": "「其他條件不變下，商品價格上漲時供給量增加」指的是？",
+        "choices": [
+          "A超額供給",
+          "B需求法則",
+          "C供給法則",
+          "D超額需求"
+        ],
+        "options": [
+          "超額供給",
+          "需求法則",
+          "供給法則",
+          "超額需求"
+        ],
+        "answer": "供給法則",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 超額供給\n~\t\t\t\t\t\t312 text A 超額供給\n~\t\t\t\t\t314 button (disabled) B 需求法則\n~\t\t\t\t\t\t315 text B 需求法則\n~\t\t\t\t\t317 button (disabled) C 供給法則\n~\t\t\t\t\t\t318 text C 供給法則\n~\t\t\t\t\t320 button (disabled) D 超額需求\n~\t\t\t\t\t\t321 text D 超額需求\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「其他條件不變下，商品價格上漲時供給量增加」說的是「供給法則」。其他選項：「需求法則」是其他條件不變下，商品價格上漲時需求量減少；「超額供給」是供給量大於需求量，供過於求；「超額需求」是需求量大於供給量，供不應求。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g18",
+        "question": "「獨占」的意思是？",
+        "choices": [
+          "A市場上有許多廠商販售相同商品",
+          "B少數幾家廠商控制市場",
+          "C市場上只有一家廠商供應某商品",
+          "D消費者只購買同一個品牌"
+        ],
+        "options": [
+          "市場上有許多廠商販售相同商品",
+          "少數幾家廠商控制市場",
+          "市場上只有一家廠商供應某商品",
+          "消費者只購買同一個品牌"
+        ],
+        "answer": "市場上只有一家廠商供應某商品",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 市場上有許多廠商販售相同商品\n~\t\t\t\t\t\t312 text A 市場上有許多廠商販售相同商品\n~\t\t\t\t\t314 button (disabled) B 少數幾家廠商控制市場\n~\t\t\t\t\t\t315 text B 少數幾家廠商控制市場\n~\t\t\t\t\t317 button (disabled) C 市場上只有一家廠商供應某商品\n~\t\t\t\t\t\t318 text C 市場上只有一家廠商供應某商品\n~\t\t\t\t\t320 button (disabled) D 消費者只購買同一個品牌\n~\t\t\t\t\t\t321 text D 消費者只購買同一個品牌\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 「獨占」的重點是：市場上只有一家廠商供應某商品。其他選項是常見的誤解，都不是「獨占」的意思。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 下一題, ID: nextBtn\nThe focused UI element is 328 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "eco2-g33",
+        "question": "「商品供不應求」帶來的結果是？",
+        "choices": [
+          "A廠商減少生產",
+          "B商品大量滯銷",
+          "C價格上漲",
+          "D價格滑落"
+        ],
+        "options": [
+          "廠商減少生產",
+          "商品大量滯銷",
+          "價格上漲",
+          "價格滑落"
+        ],
+        "answer": "價格上漲",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 313, 316, 319, 322\n~\t\t\t\t\t311 button (disabled) A 廠商減少生產\n~\t\t\t\t\t\t312 text A 廠商減少生產\n~\t\t\t\t\t314 button (disabled) B 商品大量滯銷\n~\t\t\t\t\t\t315 text B 商品大量滯銷\n~\t\t\t\t\t317 button (disabled) C 價格上漲\n~\t\t\t\t\t\t318 text C 價格上漲\n~\t\t\t\t\t320 button (disabled) D 價格滑落\n~\t\t\t\t\t\t321 text D 價格滑落\n+\t\t\t\t322 container fb\n+\t\t\t\t\t323 text 答對了\n+\t\t\t\t\t324 text 因為「商品供不應求」，所以價格上漲。其他選項雖然和本單元有關，但都不是「商品供不應求」直接造成的結果。\n+\t\t\t\t\t325 text 下次複習：明天\n+\t\t\t\t\t326 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t327 button 回報錯誤, ID: rptBtn\n+\t\t\t\t328 button 看成績, ID: nextBtn\nThe focused UI element is 328 button 看成績, ID: nextBtn"
+      }
+    ],
+    "lastState": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 290-299, 307-312, 314-315, 317-318, 320-327\n+\t\t\t\t307 text 七年級．925 題\n+\t\t\t\t308 text 八年級．450 題\n+\t\t\t\t309 text 九年級．444 題\n+\t\t\t\t310 text 七年級．488 題\n+\t\t\t\t311 text 八年級．286 題\n+\t\t\t\t312 text 九年級．243 題\n+\t\t\t\t313 text 七年級．267 題\n+\t\t\t\t314 text 八年級．406 題\n+\t\t\t\t315 text 九年級．298 題\n+\t\t\t\t316 text 沒有錯題\n+\t\t\t\t317 container 答對 20 題，共 20 題\n+\t\t\t\t318 text 全部答對\n+\t\t\t\t319 text 全對！這一輪的題目都掌握了。\n+\t\t\t\t320 content list\n+\t\t\t\t\t321 container\n+\t\t\t\t\t\t322 text 簡單 1 / 1\n+\t\t\t\t\t323 container\n+\t\t\t\t\t\t324 text 中等 14 / 14\n+\t\t\t\t\t325 container\n+\t\t\t\t\t\t326 text 困難 5 / 5\n+\t\t\t\t327 button 再來 20 題, ID: rMore\n~\t\t\t\t328 button 回到島上, ID: rBack\n+\t\t\t\t329 button (collapsed) 這一輪的 20 題．覺得哪題有問題可以回報, Secondary Actions: Expand\n+\t\t\t\t\t330 text 這一輪的 20 題．覺得哪題有問題可以回報\n+\t\t331 text 市場與價格升級為「熱鬧聚落」！\nThe focused UI element is 327 button 再來 20 題, ID: rMore",
+    "scorePass": true
+  },
+  {
+    "chapter": "soc3",
+    "samples": [
+      {
+        "id": "soc3-g10",
+        "question": "「新住民家庭」的組成是？",
+        "choices": [
+          "A原住民族的家庭",
+          "B父母一方是從其他國家或地區移居臺灣的新住民",
+          "C全家移民到國外的臺灣家庭",
+          "D父母都在外縣市工作的家庭"
+        ],
+        "options": [
+          "原住民族的家庭",
+          "父母一方是從其他國家或地區移居臺灣的新住民",
+          "全家移民到國外的臺灣家庭",
+          "父母都在外縣市工作的家庭"
+        ],
+        "answer": "父母一方是從其他國家或地區移居臺灣的新住民",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 原住民族的家庭\n~\t\t\t\t\t\t451 text A 原住民族的家庭\n~\t\t\t\t\t453 button (disabled) B 父母一方是從其他國家或地區移居臺灣的新住民\n~\t\t\t\t\t\t454 text B 父母一方是從其他國家或地區移居臺灣的新住民\n~\t\t\t\t\t456 button (disabled) C 全家移民到國外的臺灣家庭\n~\t\t\t\t\t\t457 text C 全家移民到國外的臺灣家庭\n~\t\t\t\t\t459 button (disabled) D 父母都在外縣市工作的家庭\n~\t\t\t\t\t\t460 text D 父母都在外縣市工作的家庭\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 「新住民家庭」的重點是：父母一方是從其他國家或地區移居臺灣的新住民。其他選項是常見的誤解，都不是「新住民家庭」的意思。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h10",
+        "question": "一起吃飯、聊天最能發揮家庭的哪一種功能？",
+        "choices": [
+          "A經濟功能",
+          "B保護功能",
+          "C情感功能",
+          "D生育功能"
+        ],
+        "options": [
+          "經濟功能",
+          "保護功能",
+          "情感功能",
+          "生育功能"
+        ],
+        "answer": "情感功能",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 454, 457, 460, 463\n~\t\t\t\t\t452 button (disabled) A 經濟功能\n~\t\t\t\t\t\t453 text A 經濟功能\n~\t\t\t\t\t455 button (disabled) B 保護功能\n~\t\t\t\t\t\t456 text B 保護功能\n~\t\t\t\t\t458 button (disabled) C 情感功能\n~\t\t\t\t\t\t459 text C 情感功能\n~\t\t\t\t\t461 button (disabled) D 生育功能\n~\t\t\t\t\t\t462 text D 生育功能\n+\t\t\t\t463 container fb\n+\t\t\t\t\t464 text 答對了\n+\t\t\t\t\t465 text 家人互相關心、彼此陪伴與支持，是家庭的情感功能。\n+\t\t\t\t\t466 text 下次複習：明天\n+\t\t\t\t\t467 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t468 button 回報錯誤, ID: rptBtn\n+\t\t\t\t469 button 下一題, ID: nextBtn\nThe focused UI element is 469 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h2",
+        "question": "依照民法，下列何者屬於「姻親」？",
+        "choices": [
+          "A配偶的父母",
+          "B自己的子女",
+          "C自己的兄弟姊妹",
+          "D自己的父母"
+        ],
+        "options": [
+          "配偶的父母",
+          "自己的子女",
+          "自己的兄弟姊妹",
+          "自己的父母"
+        ],
+        "answer": "配偶的父母",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 配偶的父母\n~\t\t\t\t\t\t451 text A 配偶的父母\n~\t\t\t\t\t453 button (disabled) B 自己的子女\n~\t\t\t\t\t\t454 text B 自己的子女\n~\t\t\t\t\t456 button (disabled) C 自己的兄弟姊妹\n~\t\t\t\t\t\t457 text C 自己的兄弟姊妹\n~\t\t\t\t\t459 button (disabled) D 自己的父母\n~\t\t\t\t\t\t460 text D 自己的父母\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 姻親是因婚姻關係產生的親屬，例如配偶的父母、兄弟姊妹；父母子女、兄弟姊妹屬於血親。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g41",
+        "question": "「新住民家庭增加，文化更加多元」最主要的原因是？",
+        "choices": [
+          "A跨國婚姻增加",
+          "B學校舉辦親師座談",
+          "C社區舉辦運動會",
+          "D政府發放育兒津貼"
+        ],
+        "options": [
+          "跨國婚姻增加",
+          "學校舉辦親師座談",
+          "社區舉辦運動會",
+          "政府發放育兒津貼"
+        ],
+        "answer": "跨國婚姻增加",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 跨國婚姻增加\n~\t\t\t\t\t\t451 text A 跨國婚姻增加\n~\t\t\t\t\t453 button (disabled) B 學校舉辦親師座談\n~\t\t\t\t\t\t454 text B 學校舉辦親師座談\n~\t\t\t\t\t456 button (disabled) C 社區舉辦運動會\n~\t\t\t\t\t\t457 text C 社區舉辦運動會\n~\t\t\t\t\t459 button (disabled) D 政府發放育兒津貼\n~\t\t\t\t\t\t460 text D 政府發放育兒津貼\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 新住民家庭增加，文化更加多元，最主要是因為「跨國婚姻增加」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g4",
+        "question": "「單親家庭」的組成是？",
+        "choices": [
+          "A子女由寄養家庭照顧",
+          "B由父親或母親一人與子女組成",
+          "C未婚的兄弟姊妹一起生活",
+          "D父母離婚後各自再婚組成的家庭"
+        ],
+        "options": [
+          "子女由寄養家庭照顧",
+          "由父親或母親一人與子女組成",
+          "未婚的兄弟姊妹一起生活",
+          "父母離婚後各自再婚組成的家庭"
+        ],
+        "answer": "由父親或母親一人與子女組成",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 子女由寄養家庭照顧\n~\t\t\t\t\t\t451 text A 子女由寄養家庭照顧\n~\t\t\t\t\t453 button (disabled) B 由父親或母親一人與子女組成\n~\t\t\t\t\t\t454 text B 由父親或母親一人與子女組成\n~\t\t\t\t\t456 button (disabled) C 未婚的兄弟姊妹一起生活\n~\t\t\t\t\t\t457 text C 未婚的兄弟姊妹一起生活\n~\t\t\t\t\t459 button (disabled) D 父母離婚後各自再婚組成的家庭\n~\t\t\t\t\t\t460 text D 父母離婚後各自再婚組成的家庭\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 「單親家庭」的重點是：由父親或母親一人與子女組成。其他選項是常見的誤解，都不是「單親家庭」的意思。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g11",
+        "question": "「父母一方是從其他國家或地區移居臺灣的新住民」指的是哪一種家庭型態？",
+        "choices": [
+          "A折衷家庭",
+          "B新住民家庭",
+          "C隔代教養家庭",
+          "D頂客族家庭"
+        ],
+        "options": [
+          "折衷家庭",
+          "新住民家庭",
+          "隔代教養家庭",
+          "頂客族家庭"
+        ],
+        "answer": "新住民家庭",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 折衷家庭\n~\t\t\t\t\t\t451 text A 折衷家庭\n~\t\t\t\t\t453 button (disabled) B 新住民家庭\n~\t\t\t\t\t\t454 text B 新住民家庭\n~\t\t\t\t\t456 button (disabled) C 隔代教養家庭\n~\t\t\t\t\t\t457 text C 隔代教養家庭\n~\t\t\t\t\t459 button (disabled) D 頂客族家庭\n~\t\t\t\t\t\t460 text D 頂客族家庭\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 「父母一方是從其他國家或地區移居臺灣的新住民」說的是「新住民家庭」。其他選項：「折衷家庭」是祖父母、父母與子女三代同住；「隔代教養家庭」是由祖父母照顧孫子女；「頂客族家庭」是夫妻都有工作收入、沒有子女。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g40",
+        "question": "「跨國婚姻增加」帶來的結果是？",
+        "choices": [
+          "A新住民家庭增加，文化更加多元",
+          "B家庭文化變得單一",
+          "C本地出生人口比例提高",
+          "D新住民家庭減少"
+        ],
+        "options": [
+          "新住民家庭增加，文化更加多元",
+          "家庭文化變得單一",
+          "本地出生人口比例提高",
+          "新住民家庭減少"
+        ],
+        "answer": "新住民家庭增加，文化更加多元",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 新住民家庭增加，文化更加多元\n~\t\t\t\t\t\t451 text A 新住民家庭增加，文化更加多元\n~\t\t\t\t\t453 button (disabled) B 家庭文化變得單一\n~\t\t\t\t\t\t454 text B 家庭文化變得單一\n~\t\t\t\t\t456 button (disabled) C 本地出生人口比例提高\n~\t\t\t\t\t\t457 text C 本地出生人口比例提高\n~\t\t\t\t\t459 button (disabled) D 新住民家庭減少\n~\t\t\t\t\t\t460 text D 新住民家庭減少\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 因為「跨國婚姻增加」，所以新住民家庭增加，文化更加多元。其他選項雖然和本單元有關，但都不是「跨國婚姻增加」直接造成的結果。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h3",
+        "question": "家庭成員遭受家庭暴力時，可以向法院聲請什麼來保護自己？",
+        "choices": [
+          "A保護令",
+          "B搜索票",
+          "C營業執照",
+          "D支付命令"
+        ],
+        "options": [
+          "保護令",
+          "搜索票",
+          "營業執照",
+          "支付命令"
+        ],
+        "answer": "保護令",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 保護令\n~\t\t\t\t\t\t451 text A 保護令\n~\t\t\t\t\t453 button (disabled) B 搜索票\n~\t\t\t\t\t\t454 text B 搜索票\n~\t\t\t\t\t456 button (disabled) C 營業執照\n~\t\t\t\t\t\t457 text C 營業執照\n~\t\t\t\t\t459 button (disabled) D 支付命令\n~\t\t\t\t\t\t460 text D 支付命令\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 依家庭暴力防治法，被害人可以向法院聲請保護令，禁止加害人接近或騷擾。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g2",
+        "question": "「折衷家庭」的組成是？",
+        "choices": [
+          "A父母再婚後組成的家庭",
+          "B多個已婚兄弟的家庭與父母同住",
+          "C祖父母、父母與子女三代同住",
+          "D子女暫時寄住在親戚家"
+        ],
+        "options": [
+          "父母再婚後組成的家庭",
+          "多個已婚兄弟的家庭與父母同住",
+          "祖父母、父母與子女三代同住",
+          "子女暫時寄住在親戚家"
+        ],
+        "answer": "祖父母、父母與子女三代同住",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 父母再婚後組成的家庭\n~\t\t\t\t\t\t451 text A 父母再婚後組成的家庭\n~\t\t\t\t\t453 button (disabled) B 多個已婚兄弟的家庭與父母同住\n~\t\t\t\t\t\t454 text B 多個已婚兄弟的家庭與父母同住\n~\t\t\t\t\t456 button (disabled) C 祖父母、父母與子女三代同住\n~\t\t\t\t\t\t457 text C 祖父母、父母與子女三代同住\n~\t\t\t\t\t459 button (disabled) D 子女暫時寄住在親戚家\n~\t\t\t\t\t\t460 text D 子女暫時寄住在親戚家\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 「折衷家庭」的重點是：祖父母、父母與子女三代同住。補充：祖父母、父母、子女三代同住，但只有一對已婚子女同住。其他選項是常見的誤解，都不是「折衷家庭」的意思。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h5",
+        "question": "現代臺灣家庭型態的變化，下列敘述何者正確？",
+        "choices": [
+          "A家庭人數越來越多",
+          "B家庭型態更加多元，例如單親、隔代教養、新住民家庭",
+          "C三代同堂家庭比例越來越高",
+          "D家庭不再有任何功能"
+        ],
+        "options": [
+          "家庭人數越來越多",
+          "家庭型態更加多元，例如單親、隔代教養、新住民家庭",
+          "三代同堂家庭比例越來越高",
+          "家庭不再有任何功能"
+        ],
+        "answer": "家庭型態更加多元，例如單親、隔代教養、新住民家庭",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 家庭人數越來越多\n~\t\t\t\t\t\t451 text A 家庭人數越來越多\n~\t\t\t\t\t453 button (disabled) B 家庭型態更加多元，例如單親、隔代教養、新住民家庭\n~\t\t\t\t\t\t454 text B 家庭型態更加多元，例如單親、隔代教養、新住民家庭\n~\t\t\t\t\t456 button (disabled) C 三代同堂家庭比例越來越高\n~\t\t\t\t\t\t457 text C 三代同堂家庭比例越來越高\n~\t\t\t\t\t459 button (disabled) D 家庭不再有任何功能\n~\t\t\t\t\t\t460 text D 家庭不再有任何功能\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 社會變遷使小家庭增加，也出現單親、隔代教養、跨國婚姻等多元家庭型態。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g37",
+        "question": "「較能化解親子衝突」最主要的原因是？",
+        "choices": [
+          "A政府推行全民健保",
+          "B家人之間理性溝通",
+          "C家中添購電腦",
+          "D社區設立公園"
+        ],
+        "options": [
+          "政府推行全民健保",
+          "家人之間理性溝通",
+          "家中添購電腦",
+          "社區設立公園"
+        ],
+        "answer": "家人之間理性溝通",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 政府推行全民健保\n~\t\t\t\t\t\t451 text A 政府推行全民健保\n~\t\t\t\t\t453 button (disabled) B 家人之間理性溝通\n~\t\t\t\t\t\t454 text B 家人之間理性溝通\n~\t\t\t\t\t456 button (disabled) C 家中添購電腦\n~\t\t\t\t\t\t457 text C 家中添購電腦\n~\t\t\t\t\t459 button (disabled) D 社區設立公園\n~\t\t\t\t\t\t460 text D 社區設立公園\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 較能化解親子衝突，最主要是因為「家人之間理性溝通」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g33",
+        "question": "「小家庭增加，家庭型態更加多元」最主要的原因是？",
+        "choices": [
+          "A學校實施營養午餐",
+          "B政府推動長期照顧",
+          "C都市化使居住與工作型態改變",
+          "D政府發放育兒津貼"
+        ],
+        "options": [
+          "學校實施營養午餐",
+          "政府推動長期照顧",
+          "都市化使居住與工作型態改變",
+          "政府發放育兒津貼"
+        ],
+        "answer": "都市化使居住與工作型態改變",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 學校實施營養午餐\n~\t\t\t\t\t\t451 text A 學校實施營養午餐\n~\t\t\t\t\t453 button (disabled) B 政府推動長期照顧\n~\t\t\t\t\t\t454 text B 政府推動長期照顧\n~\t\t\t\t\t456 button (disabled) C 都市化使居住與工作型態改變\n~\t\t\t\t\t\t457 text C 都市化使居住與工作型態改變\n~\t\t\t\t\t459 button (disabled) D 政府發放育兒津貼\n~\t\t\t\t\t\t460 text D 政府發放育兒津貼\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 小家庭增加，家庭型態更加多元，最主要是因為「都市化使居住與工作型態改變」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g6",
+        "question": "「隔代教養家庭」的組成是？",
+        "choices": [
+          "A子女暫時寄住在社福機構",
+          "B祖父母每逢過年才與孫子女團聚",
+          "C子女白天由保母照顧",
+          "D由祖父母照顧孫子女"
+        ],
+        "options": [
+          "子女暫時寄住在社福機構",
+          "祖父母每逢過年才與孫子女團聚",
+          "子女白天由保母照顧",
+          "由祖父母照顧孫子女"
+        ],
+        "answer": "由祖父母照顧孫子女",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 子女暫時寄住在社福機構\n~\t\t\t\t\t\t451 text A 子女暫時寄住在社福機構\n~\t\t\t\t\t453 button (disabled) B 祖父母每逢過年才與孫子女團聚\n~\t\t\t\t\t\t454 text B 祖父母每逢過年才與孫子女團聚\n~\t\t\t\t\t456 button (disabled) C 子女白天由保母照顧\n~\t\t\t\t\t\t457 text C 子女白天由保母照顧\n~\t\t\t\t\t459 button (disabled) D 由祖父母照顧孫子女\n~\t\t\t\t\t\t460 text D 由祖父母照顧孫子女\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 「隔代教養家庭」的重點是：由祖父母照顧孫子女。其他選項是常見的誤解，都不是「隔代教養家庭」的意思。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g28",
+        "question": "「保護功能」的例子是？",
+        "choices": [
+          "A一起出遊、共享休閒時光",
+          "B家人互相關心、提供支持",
+          "C教導孩子生活規範與價值觀",
+          "D照顧幼兒、老人與生病的家人"
+        ],
+        "options": [
+          "一起出遊、共享休閒時光",
+          "家人互相關心、提供支持",
+          "教導孩子生活規範與價值觀",
+          "照顧幼兒、老人與生病的家人"
+        ],
+        "answer": "照顧幼兒、老人與生病的家人",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 一起出遊、共享休閒時光\n~\t\t\t\t\t\t451 text A 一起出遊、共享休閒時光\n~\t\t\t\t\t453 button (disabled) B 家人互相關心、提供支持\n~\t\t\t\t\t\t454 text B 家人互相關心、提供支持\n~\t\t\t\t\t456 button (disabled) C 教導孩子生活規範與價值觀\n~\t\t\t\t\t\t457 text C 教導孩子生活規範與價值觀\n~\t\t\t\t\t459 button (disabled) D 照顧幼兒、老人與生病的家人\n~\t\t\t\t\t\t460 text D 照顧幼兒、老人與生病的家人\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 「保護功能」的重點是：照顧幼兒、老人與生病的家人。容易混淆的選項：「教導孩子生活規範與價值觀」說的是教育功能；「家人互相關心、提供支持」說的是情感功能；「一起出遊、共享休閒時光」說的是休閒功能。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h4",
+        "question": "全國保護專線的號碼是？",
+        "choices": [
+          "A165",
+          "B113",
+          "C110",
+          "D119"
+        ],
+        "options": [
+          "165",
+          "113",
+          "110",
+          "119"
+        ],
+        "answer": "113",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 165\n~\t\t\t\t\t\t451 text A 165\n~\t\t\t\t\t453 button (disabled) B 113\n~\t\t\t\t\t\t454 text B 113\n~\t\t\t\t\t456 button (disabled) C 110\n~\t\t\t\t\t\t457 text C 110\n~\t\t\t\t\t459 button (disabled) D 119\n~\t\t\t\t\t\t460 text D 119\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 遭遇家庭暴力、兒少虐待或性侵害，可撥打 113 保護專線求助；110 是報案電話，119 是消防救護。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h0",
+        "question": "家庭最基本的功能之一，是讓孩子學習生活規範與價值觀，這屬於什麼功能？",
+        "choices": [
+          "A宗教功能",
+          "B娛樂功能",
+          "C經濟功能",
+          "D教育與社會化功能"
+        ],
+        "options": [
+          "宗教功能",
+          "娛樂功能",
+          "經濟功能",
+          "教育與社會化功能"
+        ],
+        "answer": "教育與社會化功能",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 宗教功能\n~\t\t\t\t\t\t451 text A 宗教功能\n~\t\t\t\t\t453 button (disabled) B 娛樂功能\n~\t\t\t\t\t\t454 text B 娛樂功能\n~\t\t\t\t\t456 button (disabled) C 經濟功能\n~\t\t\t\t\t\t457 text C 經濟功能\n~\t\t\t\t\t459 button (disabled) D 教育與社會化功能\n~\t\t\t\t\t\t460 text D 教育與社會化功能\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 家庭是社會化的起點，父母透過日常生活教導孩子規範、價值觀與待人處事的方法。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g38",
+        "question": "「雙薪家庭增加」帶來的結果是？",
+        "choices": [
+          "A托育需求減少",
+          "B父母全天在家照顧孩子",
+          "C祖父母或托育機構協助照顧孩子",
+          "D祖父母較少參與照顧"
+        ],
+        "options": [
+          "托育需求減少",
+          "父母全天在家照顧孩子",
+          "祖父母或托育機構協助照顧孩子",
+          "祖父母較少參與照顧"
+        ],
+        "answer": "祖父母或托育機構協助照顧孩子",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 托育需求減少\n~\t\t\t\t\t\t451 text A 托育需求減少\n~\t\t\t\t\t453 button (disabled) B 父母全天在家照顧孩子\n~\t\t\t\t\t\t454 text B 父母全天在家照顧孩子\n~\t\t\t\t\t456 button (disabled) C 祖父母或托育機構協助照顧孩子\n~\t\t\t\t\t\t457 text C 祖父母或托育機構協助照顧孩子\n~\t\t\t\t\t459 button (disabled) D 祖父母較少參與照顧\n~\t\t\t\t\t\t460 text D 祖父母較少參與照顧\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 因為「雙薪家庭增加」，所以祖父母或托育機構協助照顧孩子。其他選項雖然和本單元有關，但都不是「雙薪家庭增加」直接造成的結果。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g8",
+        "question": "「頂客族家庭」的組成是？",
+        "choices": [
+          "A夫妻都有工作收入、沒有子女",
+          "B夫妻收養子女共同生活",
+          "C夫妻一方工作、一方照顧子女",
+          "D單身獨居、不打算結婚"
+        ],
+        "options": [
+          "夫妻都有工作收入、沒有子女",
+          "夫妻收養子女共同生活",
+          "夫妻一方工作、一方照顧子女",
+          "單身獨居、不打算結婚"
+        ],
+        "answer": "夫妻都有工作收入、沒有子女",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 夫妻都有工作收入、沒有子女\n~\t\t\t\t\t\t451 text A 夫妻都有工作收入、沒有子女\n~\t\t\t\t\t453 button (disabled) B 夫妻收養子女共同生活\n~\t\t\t\t\t\t454 text B 夫妻收養子女共同生活\n~\t\t\t\t\t456 button (disabled) C 夫妻一方工作、一方照顧子女\n~\t\t\t\t\t\t457 text C 夫妻一方工作、一方照顧子女\n~\t\t\t\t\t459 button (disabled) D 單身獨居、不打算結婚\n~\t\t\t\t\t\t460 text D 單身獨居、不打算結婚\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 「頂客族家庭」的重點是：夫妻都有工作收入、沒有子女。其他選項是常見的誤解，都不是「頂客族家庭」的意思。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g0",
+        "question": "「核心家庭」的組成是？",
+        "choices": [
+          "A子女由社福機構安排到其他家庭照顧",
+          "B父母與未婚子女",
+          "C父母再婚後與雙方子女同住",
+          "D祖父母、父母與叔伯等多房親戚同住"
+        ],
+        "options": [
+          "子女由社福機構安排到其他家庭照顧",
+          "父母與未婚子女",
+          "父母再婚後與雙方子女同住",
+          "祖父母、父母與叔伯等多房親戚同住"
+        ],
+        "answer": "父母與未婚子女",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 子女由社福機構安排到其他家庭照顧\n~\t\t\t\t\t\t451 text A 子女由社福機構安排到其他家庭照顧\n~\t\t\t\t\t453 button (disabled) B 父母與未婚子女\n~\t\t\t\t\t\t454 text B 父母與未婚子女\n~\t\t\t\t\t456 button (disabled) C 父母再婚後與雙方子女同住\n~\t\t\t\t\t\t457 text C 父母再婚後與雙方子女同住\n~\t\t\t\t\t459 button (disabled) D 祖父母、父母與叔伯等多房親戚同住\n~\t\t\t\t\t\t460 text D 祖父母、父母與叔伯等多房親戚同住\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 「核心家庭」的重點是：父母與未婚子女。其他選項是常見的誤解，都不是「核心家庭」的意思。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 下一題, ID: nextBtn\nThe focused UI element is 467 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g19",
+        "question": "「叔叔」屬於血親還是姻親？",
+        "choices": [
+          "A朋友關係",
+          "B血親",
+          "C鄰里關係",
+          "D姻親"
+        ],
+        "options": [
+          "朋友關係",
+          "血親",
+          "鄰里關係",
+          "姻親"
+        ],
+        "answer": "血親",
+        "feedback": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 452, 455, 458, 461\n~\t\t\t\t\t450 button (disabled) A 朋友關係\n~\t\t\t\t\t\t451 text A 朋友關係\n~\t\t\t\t\t453 button (disabled) B 血親\n~\t\t\t\t\t\t454 text B 血親\n~\t\t\t\t\t456 button (disabled) C 鄰里關係\n~\t\t\t\t\t\t457 text C 鄰里關係\n~\t\t\t\t\t459 button (disabled) D 姻親\n~\t\t\t\t\t\t460 text D 姻親\n+\t\t\t\t461 container fb\n+\t\t\t\t\t462 text 答對了\n+\t\t\t\t\t463 text 「叔叔」→ 血親。\n+\t\t\t\t\t464 text 下次複習：明天\n+\t\t\t\t\t465 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t466 button 回報錯誤, ID: rptBtn\n+\t\t\t\t467 button 看成績, ID: nextBtn\nThe focused UI element is 467 button 看成績, ID: nextBtn"
+      }
+    ],
+    "lastState": "Browser tab: 2, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 429-438, 446-451, 453-454, 456-457, 459-466\n+\t\t\t\t446 text 七年級．925 題\n+\t\t\t\t447 text 八年級．450 題\n+\t\t\t\t448 text 九年級．444 題\n+\t\t\t\t449 text 七年級．488 題\n+\t\t\t\t450 text 八年級．286 題\n+\t\t\t\t451 text 九年級．243 題\n+\t\t\t\t452 text 七年級．267 題\n+\t\t\t\t453 text 八年級．406 題\n+\t\t\t\t454 text 九年級．298 題\n+\t\t\t\t455 text 沒有錯題\n+\t\t\t\t456 container 答對 20 題，共 20 題\n+\t\t\t\t457 text 全部答對\n+\t\t\t\t458 text 全對！這一輪的題目都掌握了。\n+\t\t\t\t459 content list\n+\t\t\t\t\t460 container\n+\t\t\t\t\t\t461 text 簡單 1 / 1\n+\t\t\t\t\t462 container\n+\t\t\t\t\t\t463 text 中等 13 / 13\n+\t\t\t\t\t464 container\n+\t\t\t\t\t\t465 text 困難 6 / 6\n+\t\t\t\t466 button 再來 20 題, ID: rMore\n~\t\t\t\t467 button 回到島上, ID: rBack\n+\t\t\t\t468 button (collapsed) 這一輪的 20 題．覺得哪題有問題可以回報, Secondary Actions: Expand\n+\t\t\t\t\t469 text 這一輪的 20 題．覺得哪題有問題可以回報\n+\t\t470 text 家庭升級為「熱鬧聚落」！\nThe focused UI element is 466 button 再來 20 題, ID: rMore",
+    "scorePass": true
+  }
+]

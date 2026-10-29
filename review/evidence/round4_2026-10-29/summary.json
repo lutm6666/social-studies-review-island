@@ -1,0 +1,331 @@
+{
+  "sourceSha": "e743ac12233a48fd68a3b6ba8147216d4be3c761",
+  "baseline": "7ee6394c5ee2ef9b353c387eff0099abb3758028",
+  "reviewedChangedIDs": 71,
+  "statusCounts": {
+    "pass": 70,
+    "optional": 1
+  },
+  "previous12": [
+    {
+      "id": "qpe-h49",
+      "status": "pass"
+    },
+    {
+      "id": "jsc-h40",
+      "status": "pass"
+    },
+    {
+      "id": "cnh2-h10",
+      "status": "pass"
+    },
+    {
+      "id": "cnh6-h2",
+      "status": "pass"
+    },
+    {
+      "id": "wdh6-h4",
+      "status": "pass"
+    },
+    {
+      "id": "wdh6-h7",
+      "status": "pass"
+    },
+    {
+      "id": "twg5-h5",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g46",
+      "status": "pass"
+    },
+    {
+      "id": "eco1-h7",
+      "status": "pass"
+    },
+    {
+      "id": "eco1-h9",
+      "status": "pass"
+    },
+    {
+      "id": "eco1-g40",
+      "status": "pass"
+    },
+    {
+      "id": "eco2-h2",
+      "status": "pass"
+    }
+  ],
+  "term59": [
+    {
+      "id": "soc3-g0",
+      "status": "optional"
+    },
+    {
+      "id": "soc3-g2",
+      "status": "pass"
+    },
+    {
+      "id": "soc3-g4",
+      "status": "pass"
+    },
+    {
+      "id": "soc3-g6",
+      "status": "pass"
+    },
+    {
+      "id": "soc3-g8",
+      "status": "pass"
+    },
+    {
+      "id": "soc3-g10",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g0",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g2",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g4",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g6",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g8",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g10",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g22",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g24",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g26",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g28",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g30",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g32",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g34",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g36",
+      "status": "pass"
+    },
+    {
+      "id": "law2-g38",
+      "status": "pass"
+    },
+    {
+      "id": "law8-g0",
+      "status": "pass"
+    },
+    {
+      "id": "law8-g2",
+      "status": "pass"
+    },
+    {
+      "id": "law8-g4",
+      "status": "pass"
+    },
+    {
+      "id": "law8-g6",
+      "status": "pass"
+    },
+    {
+      "id": "law8-g8",
+      "status": "pass"
+    },
+    {
+      "id": "law8-g10",
+      "status": "pass"
+    },
+    {
+      "id": "law8-g12",
+      "status": "pass"
+    },
+    {
+      "id": "law8-g14",
+      "status": "pass"
+    },
+    {
+      "id": "eco2-g0",
+      "status": "pass"
+    },
+    {
+      "id": "eco2-g2",
+      "status": "pass"
+    },
+    {
+      "id": "eco2-g4",
+      "status": "pass"
+    },
+    {
+      "id": "eco2-g6",
+      "status": "pass"
+    },
+    {
+      "id": "eco2-g8",
+      "status": "pass"
+    },
+    {
+      "id": "eco2-g10",
+      "status": "pass"
+    },
+    {
+      "id": "eco2-g12",
+      "status": "pass"
+    },
+    {
+      "id": "eco2-g14",
+      "status": "pass"
+    },
+    {
+      "id": "eco2-g16",
+      "status": "pass"
+    },
+    {
+      "id": "eco2-g18",
+      "status": "pass"
+    },
+    {
+      "id": "eco4-g0",
+      "status": "pass"
+    },
+    {
+      "id": "eco4-g2",
+      "status": "pass"
+    },
+    {
+      "id": "eco4-g4",
+      "status": "pass"
+    },
+    {
+      "id": "eco4-g6",
+      "status": "pass"
+    },
+    {
+      "id": "eco4-g8",
+      "status": "pass"
+    },
+    {
+      "id": "eco4-g10",
+      "status": "pass"
+    },
+    {
+      "id": "eco4-g12",
+      "status": "pass"
+    },
+    {
+      "id": "eco4-g14",
+      "status": "pass"
+    },
+    {
+      "id": "eco4-g16",
+      "status": "pass"
+    },
+    {
+      "id": "eco4-g18",
+      "status": "pass"
+    },
+    {
+      "id": "eco5-g0",
+      "status": "pass"
+    },
+    {
+      "id": "eco5-g2",
+      "status": "pass"
+    },
+    {
+      "id": "eco5-g4",
+      "status": "pass"
+    },
+    {
+      "id": "eco5-g6",
+      "status": "pass"
+    },
+    {
+      "id": "eco5-g8",
+      "status": "pass"
+    },
+    {
+      "id": "eco5-g10",
+      "status": "pass"
+    },
+    {
+      "id": "eco5-g12",
+      "status": "pass"
+    },
+    {
+      "id": "eco5-g14",
+      "status": "pass"
+    },
+    {
+      "id": "eco5-g16",
+      "status": "pass"
+    },
+    {
+      "id": "eco5-g18",
+      "status": "pass"
+    }
+  ],
+  "unionCumulative": 1868,
+  "cumulativeCounts": {
+    "pass": 1867,
+    "optional": 1
+  },
+  "unreviewedContent": 1972,
+  "manualCheckpoint": {
+    "reviewer": "/root",
+    "date": "2026-10-29",
+    "termCompactRead": [
+      [
+        1,
+        30
+      ],
+      [
+        31,
+        59
+      ]
+    ],
+    "previousCompactRead": [
+      1,
+      12
+    ],
+    "all59ChangedExplanationsRead": true,
+    "all4NonNullContextsRead": true
+  },
+  "programModified": false,
+  "roundSamples": 120,
+  "submittedAnswers": 128,
+  "uniqueUI": 126,
+  "figureSamples": 5,
+  "simulationPairedRounds": 34800,
+  "physicalPhoneTested": false,
+  "androidEmulatorTested": false
+}

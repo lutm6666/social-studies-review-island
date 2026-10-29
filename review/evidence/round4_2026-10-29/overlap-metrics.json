@@ -1,0 +1,44 @@
+[
+  {
+    "chapter": "law8",
+    "n": 20,
+    "scorePass": true,
+    "answerLeak": [],
+    "sharedTwo": []
+  },
+  {
+    "chapter": "law2",
+    "n": 20,
+    "scorePass": true,
+    "answerLeak": [],
+    "sharedTwo": []
+  },
+  {
+    "chapter": "eco4",
+    "n": 20,
+    "scorePass": true,
+    "answerLeak": [],
+    "sharedTwo": []
+  },
+  {
+    "chapter": "eco5",
+    "n": 20,
+    "scorePass": true,
+    "answerLeak": [],
+    "sharedTwo": []
+  },
+  {
+    "chapter": "eco2",
+    "n": 20,
+    "scorePass": true,
+    "answerLeak": [],
+    "sharedTwo": []
+  },
+  {
+    "chapter": "soc3",
+    "n": 20,
+    "scorePass": true,
+    "answerLeak": [],
+    "sharedTwo": []
+  }
+]
