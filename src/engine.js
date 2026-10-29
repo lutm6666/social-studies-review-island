@@ -46,9 +46,11 @@ function buildBank(HAND,GEN,PERIODS){
           const tf=(spec.tfo||{})[k], w=tf&&!set.oneway?tf.slice():w0;
           const other=set.oneway?'':w.map(x=>{ const kk=keyOf(x); return kk?'「'+x+'」說的是'+kk:null; }).filter(Boolean).join('；');
           add(set.db||2, fill(set.qb,k,v), v, w, set.oneway ? '「'+k+'」→ '+v+'。'+tip : '「'+k+'」的重點是：'+v+'。'+tip+(tf?(tf.note?tf.note+'。':'其他選項是常見的誤解，都不是「'+k+'」的意思。'):(other?'容易混淆的選項：'+other+'。':''))); }
-        if(set.qa && !set.oneway){ const keys=set.items.filter(i=>i[1]!==v).map(i=>i[0]); const w=pick(keys,x=>!clash(k,x),same);
-          const other=w.map(x=>'「'+x+'」是'+valOf(x)).join('；');
-          add(set.da||1, fill(set.qa,k,v), k, w, '「'+v+'」說的是「'+k+'」。'+tip+'其他選項：'+other+'。'); }
+        if(set.qa && !set.oneway){ const keys=set.items.filter(i=>i[1]!==v).map(i=>i[0]); const w0=pick(keys,x=>!clash(k,x),same);
+          // 反查題專屬誘答：同類但不在本組的名詞（data_foils.js 的 TA），仍先呼叫 pick 維持亂數序列
+          const ta=(spec.tfa||{})[k], w=ta?ta.slice():w0;
+          const other=ta?(ta.note||'其他選項都是同類但不同意思的名詞'):w.map(x=>'「'+x+'」是'+valOf(x)).join('；');
+          add(set.da||1, fill(set.qa,k,v), k, w, '「'+v+'」說的是「'+k+'」。'+tip+(ta?other:'其他選項：'+other)+'。'); }
       });
     });
 
