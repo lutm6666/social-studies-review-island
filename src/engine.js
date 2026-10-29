@@ -50,7 +50,9 @@ function buildBank(HAND,GEN,PERIODS){
           // 反查題專屬誘答：同類但不在本組的名詞（data_foils.js 的 TA），仍先呼叫 pick 維持亂數序列
           const ta=(spec.tfa||{})[k], w=ta?ta.slice():w0;
           const other=ta?(ta.note||'其他選項都是同類但不同意思的名詞'):w.map(x=>'「'+x+'」是'+valOf(x)).join('；');
-          add(set.da||1, fill(set.qa,k,v), k, w, '「'+v+'」說的是「'+k+'」。'+tip+(ta?other:'其他選項：'+other)+'。'); }
+          // TA 可改寫題幹與正解（例如改成「下列哪一組」的組合題），題號不變
+          if(ta&&ta.q) add(set.da||1, ta.q, ta.a, w, ta.note+'。');
+          else add(set.da||1, fill(set.qa,k,v), k, w, '「'+v+'」說的是「'+k+'」。'+tip+(ta?other:'其他選項：'+other)+'。'); }
       });
     });
 
