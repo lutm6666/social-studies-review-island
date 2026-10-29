@@ -1,0 +1,21 @@
+{
+  "questionSource": "44f82be3d925c5bb45edcbf52f03d553b474ec5c",
+  "githubHead": "80120134b4ecd902e1000c43d4cdbe0475f0d8dc",
+  "primaryRounds": 3,
+  "primaryAnswers": 60,
+  "totalSubmittedAnswers": 61,
+  "uniqueNativeUI": 60,
+  "allScoresAndFeedbackMatch": true,
+  "allSourceOptionSetsMatch": true,
+  "zeroOverlapAllThreeRounds": true,
+  "resumePassed": true,
+  "progressAndWrongRetryPassed": true,
+  "rawQuestionFramesVerified": 129,
+  "physicalPhoneTested": false,
+  "emulatorGraphsTested": 0,
+  "emulatorGraphsStatus": "未完成，視窗控制阻擋",
+  "roundLengthRestored": false,
+  "programModified": false,
+  "brokenLinks": [],
+  "errors": []
+}

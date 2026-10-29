@@ -1,0 +1,161 @@
+{
+  "excludesSelf": true,
+  "scope": "Only files published under review/. Raw per-question PNG frames are packaged separately and described by raw-screenshots-manifest.json.",
+  "files": [
+    {
+      "path": "review/acceptance_coverage_2026-10-27.md",
+      "bytes": 381986,
+      "sha256": "4268981df361308299205243a942cc669e2dd0c3c6b8ed1e3eda68d1b4d6aff9"
+    },
+    {
+      "path": "review/android_emulator_acceptance_2026-10-29.md",
+      "bytes": 6941,
+      "sha256": "c03536012af8b3bb0761ff02c544e3d3d470344fdcdd1ac8ca1c57ed6b3282c8"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/01-home.png",
+      "bytes": 122991,
+      "sha256": "f9ea27fbbe68c2e593c782d28c1c41dcabf3da4bebe07622e845f7fc8cd3e15f"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/06-app-loaded.png",
+      "bytes": 50949,
+      "sha256": "57f4c9170ae299185111ae29a8124f425a61cb6238bf7dab08630579d63197aa"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/22-home-progress.png",
+      "bytes": 53080,
+      "sha256": "0d055d557fb783e74a7fdd82fad9fd08a7fa46aec15a08614aeaf6008359a1e6"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/30-home-progress-after-reopen.png",
+      "bytes": 54127,
+      "sha256": "a9eafa8ac03014ddc1c614642397796085c699f15f71ec94d94057a54caefa43"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/31-wrong-island.png",
+      "bytes": 58046,
+      "sha256": "06608368cfb97d247841230bc968cd9adbbdbfefbf5721dbebc372c4badfb812"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/32-wrong-cleared.png",
+      "bytes": 43600,
+      "sha256": "f33e98db0966a44d8db08beb0b230b244b68e8b974163917b1a1cdd2f3974a52"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/35-progress-backup-summary.png",
+      "bytes": 48899,
+      "sha256": "709f664e3d1494d9fc073640686cd23d7abf730d57ff8c61789fc3bef7b0458b"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/41-font-touch-check.png",
+      "bytes": 51952,
+      "sha256": "d404dd8858a5af021cb4b1fbccb31f789da66827c727ad878d23980766bf982f"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/48-climate-search-input.png",
+      "bytes": 43604,
+      "sha256": "670c57c3d0619202db15fb63429ef38b57b32f6339c12bc8b2c060939165abda"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/browser-rounds.json",
+      "bytes": 41449,
+      "sha256": "ac36e343f51b59439d82d1f9610b8b7c292fa255f93a5be2df2ab36d9b8b3af2"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/delivery-validation.json",
+      "bytes": 655,
+      "sha256": "71867149eeb4e875c9b1b53c21ca385da4a9fa711199291b3d1c49cc3c4bcd19"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/environment.json",
+      "bytes": 1130,
+      "sha256": "d19f971d1967ea188879a669e696740ecd81320e6297e5bc538873d78b4e49ad"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/native-audit.json",
+      "bytes": 2401,
+      "sha256": "d5dfdde8897bfeef34fcb0e8702ef8c6d334a6d8342c26e07acd20b1e1975d4f"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/overlap-metrics.json",
+      "bytes": 668,
+      "sha256": "4e7cc1158f29049cc251e82774ffda6fb6d041e934b7c9fa335daad310e9191f"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/progress.json",
+      "bytes": 606,
+      "sha256": "fad3cf16a2f28235fc1b7a689b52b06b0e61ca48a0c1f0670f1e3b2e1cf93881"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/r1-q11-after-reopen.png",
+      "bytes": 45856,
+      "sha256": "3535f498394fba6d3bb56cd6f7d0c3729643cdc915bedeb2e61f50674bb126d6"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/r1-q11-before-reload.png",
+      "bytes": 48837,
+      "sha256": "d547fdabab8aa295f3a95b3cdcaed6986d173d33852da9f673627b4cf59fb93a"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/r1-result.png",
+      "bytes": 48843,
+      "sha256": "f28fd64f325359a3492bb1c5b5ddc22f2fb594dcad31ead4e4a021ea1ae24833"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/r1-resume-prompt.png",
+      "bytes": 39469,
+      "sha256": "2e103a9b4185bd0d6d7d20254f505f9508eac81bfcca574ee7bee5fb41e5081f"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/r2-result.png",
+      "bytes": 52226,
+      "sha256": "66aba9da18c909186daa756f5564dabafaa5c472b387a95a2907631bca0b6109"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/r3-result.png",
+      "bytes": 48418,
+      "sha256": "a0c3b593cee0c07f830164691460e1f81a42509e211b4ac9b40d3b4fdfdd92df"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/raw-screenshots-manifest.json",
+      "bytes": 35151,
+      "sha256": "2f593472ac1ea0bb3bd948c505b4834c97e86474e6a6835ecbb7d8a4d8ed015c"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/resume.json",
+      "bytes": 772,
+      "sha256": "72c555f28d5d25f2eb46f335c1b93ca1b40efc28ce4f59c12c40af942633c658"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/retry-q01.png",
+      "bytes": 43105,
+      "sha256": "a9b20b307e10f8341064abf1d99f7a2a62733d6d81b32991cf2a4005416eed12"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/retry-result.png",
+      "bytes": 39878,
+      "sha256": "d685091e04150227de8380e61a3a6227635a95bf4b28a31f077fbd3559bd0020"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/source-meta.json",
+      "bytes": 331,
+      "sha256": "7eb2240bca9d0537e5f78bfd16549ca3418f4195a8d4eec88bf38125ec98fc4c"
+    },
+    {
+      "path": "review/evidence/android_emulator_2026-10-29/summary.json",
+      "bytes": 2475,
+      "sha256": "4c6e9afb2e1deb571afff46e6330903dd4b6708ba632063e1ff26c993de1da91"
+    },
+    {
+      "path": "review/final_acceptance_2026-10-27.md",
+      "bytes": 1827,
+      "sha256": "9bf10518e4dd90ca91121121f5a925a252658e4c3f7c11d8b0ab819f6963da3c"
+    },
+    {
+      "path": "review/final_acceptance_2026-10-29_round5_historical.md",
+      "bytes": 1870,
+      "sha256": "6042cc775dc71b1eb6c955fc94d7ae31bc3553343ef046e19b035c66e487bcf7"
+    }
+  ]
+}

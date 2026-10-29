@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-29",
+  "emulator": "雷電模擬器9（啟動畫面曾顯示9.5.19.0）",
+  "androidVersion": "未讀取",
+  "chromeVersion": "未讀取",
+  "route": "使用者先於Android Chrome開啟正式網站，後從Android桌面社會科複習島捷徑啟動直向網站",
+  "physicalPhoneTested": false,
+  "nativeBrowserConsoleRead": false,
+  "androidScriptHashRead": false,
+  "graphs": [],
+  "settingRoundLengthCurrent": 20,
+  "settingRoundLengthRestored": false,
+  "bigTextRestored": true,
+  "controlBlocked": true,
+  "blockReason": "failed to activate captured window; recovery after fresh window selection failed; final capture showed desktop wallpaper rather than website",
+  "inputLimitation": "Sky文字輸入欲送入冬季雨量特別多，搜尋欄卻收到舊的正式網站網址；未據此判定網站搜尋有錯。",
+  "extraAppApproval": "嘗試開啟文字頁協助複製時，Computer Use app approval timed out；未取得該程式控制權，未繞過授權。",
+  "userActionRequested": "確認Windows可操作並將雷電模擬器帶回網站畫面，以補測圖表及還原每輪10題。"
+}

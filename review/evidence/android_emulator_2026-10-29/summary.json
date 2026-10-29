@@ -1,0 +1,96 @@
+{
+  "expectedQuestionSource": "44f82be3d925c5bb45edcbf52f03d553b474ec5c",
+  "githubHeadAtStart": "80120134b4ecd902e1000c43d4cdbe0475f0d8dc",
+  "browserCodeHashesReadOnAndroid": false,
+  "environment": "LDPlayer Android emulator, desktop shortcut of social-studies site",
+  "physicalPhoneTested": false,
+  "uiMethod": "Native Windows Computer Use only; visual question/options read and mapped to offline source using unique text tokens. No Android DOM, ADB, hidden game state or injected answers.",
+  "primaryRounds": 3,
+  "primaryAnswers": 60,
+  "totalSubmittedAnswers": 61,
+  "uniqueQuestionIDs": 60,
+  "scores": [
+    {
+      "chapter": "law8",
+      "correct": 20,
+      "total": 20,
+      "visibleSummary": "全部答對",
+      "screenshot": "r1-result.png"
+    },
+    {
+      "chapter": "soc3",
+      "correct": 19,
+      "total": 20,
+      "intentionallyWrong": 1,
+      "visibleSummary": "表現不錯",
+      "screenshot": "r2-result.png"
+    },
+    {
+      "chapter": "eco4",
+      "correct": 20,
+      "total": 20,
+      "screenshot": "r3-result.png"
+    }
+  ],
+  "allFeedbackVisuallyVerified": true,
+  "overlapMetrics": [
+    {
+      "chapter": "law8",
+      "n": 20,
+      "score": {
+        "correct": 20,
+        "total": 20,
+        "visibleSummary": "全部答對",
+        "screenshot": "r1-result.png"
+      },
+      "answerLeak": [],
+      "sharedTwo": []
+    },
+    {
+      "chapter": "soc3",
+      "n": 20,
+      "score": {
+        "correct": 19,
+        "total": 20,
+        "intentionallyWrong": 1,
+        "visibleSummary": "表現不錯",
+        "screenshot": "r2-result.png"
+      },
+      "answerLeak": [],
+      "sharedTwo": []
+    },
+    {
+      "chapter": "eco4",
+      "n": 20,
+      "score": {
+        "correct": 20,
+        "total": 20,
+        "screenshot": "r3-result.png"
+      },
+      "answerLeak": [],
+      "sharedTwo": []
+    }
+  ],
+  "priorRoundChangedIDsSeen": [
+    "soc3-g20",
+    "soc3-g22",
+    "soc3-g24",
+    "soc3-g28",
+    "soc3-g30"
+  ],
+  "resumePassed": true,
+  "progressAndWrongRetryPassed": true,
+  "allFrames": 180,
+  "questionEvidenceFrames": 129,
+  "questionEvidenceBytes": 6868329,
+  "graphsTestedOnEmulator": 0,
+  "graphStatus": "未完成：視窗控制阻擋",
+  "roundLengthSettingRestored": false,
+  "bigTextRestored": true,
+  "errors": [],
+  "settingRoundLengthRestored": false,
+  "settingRoundLengthCurrent": 20,
+  "contentReviewed": 1874,
+  "contentUnreviewed": 1966,
+  "questionProgramModified": false
+}

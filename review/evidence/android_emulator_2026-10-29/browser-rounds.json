@@ -1,0 +1,1361 @@
+[
+  {
+    "chapter": "law8",
+    "n": 20,
+    "samples": [
+      {
+        "id": "law8-g34",
+        "question": "「人民透過陳情表達意見」帶來的結果是？",
+        "visualTokens": [
+          "更不了解",
+          "脫節",
+          "較能了解",
+          "不予回"
+        ],
+        "options": [
+          "機關更不了解民意",
+          "施政與民眾需求脫節",
+          "機關較能了解民意並改善施政",
+          "機關不予回應"
+        ],
+        "answer": "機關較能了解民意並改善施政",
+        "selectedLetter": 2,
+        "selected": "機關較能了解民意並改善施政",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g8",
+        "question": "「陳情」的內容是？",
+        "visualTokens": [
+          "長官",
+          "行政法院",
+          "立法委員",
+          "人民向"
+        ],
+        "options": [
+          "公務員對長官的命令提出異議",
+          "依法向行政法院提起訴訟",
+          "立法委員在議會詢問官員",
+          "人民向機關反映意見或建議"
+        ],
+        "answer": "人民向機關反映意見或建議",
+        "selectedLetter": 3,
+        "selected": "人民向機關反映意見或建議",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g26",
+        "question": "「不服行政處分」帶來的結果是？",
+        "visualTokens": [
+          "只能接受",
+          "監察院",
+          "管轄權",
+          "民事法院"
+        ],
+        "options": [
+          "只能接受、無法救濟",
+          "直接向監察院提出彈劾",
+          "可以向有管轄權的機關提起訴願",
+          "向民事法院提起訴訟"
+        ],
+        "answer": "可以向有管轄權的機關提起訴願",
+        "selectedLetter": 2,
+        "selected": "可以向有管轄權的機關提起訴願",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g30",
+        "question": "「公務員違法執行職務造成損害」帶來的結果是？",
+        "visualTokens": [
+          "國家賠償",
+          "不必負",
+          "自行負擔",
+          "只能"
+        ],
+        "options": [
+          "人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權",
+          "公務員不必負任何責任",
+          "由受害人自行負擔損失",
+          "人民只能自認倒楣"
+        ],
+        "answer": "人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權",
+        "selectedLetter": 0,
+        "selected": "人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g35",
+        "question": "「機關較能了解民意並改善施政」最主要的原因是？",
+        "visualTokens": [
+          "監理站",
+          "人民透過",
+          "稅捐處",
+          "戶政事務所"
+        ],
+        "options": [
+          "監理站辦理駕照",
+          "人民透過陳情表達意見",
+          "稅捐處寄發稅單",
+          "戶政事務所辦理戶籍登記"
+        ],
+        "answer": "人民透過陳情表達意見",
+        "selectedLetter": 1,
+        "selected": "人民透過陳情表達意見",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g14",
+        "question": "「行政法院」的內容是？",
+        "visualTokens": [
+          "上級行政",
+          "彈劾",
+          "行政訴訟",
+          "民事與刑事"
+        ],
+        "options": [
+          "受理訴願的上級行政機關",
+          "負責彈劾失職官員的機關",
+          "審理行政訴訟案件的法院",
+          "審理民事與刑事案件的法院"
+        ],
+        "answer": "審理行政訴訟案件的法院",
+        "selectedLetter": 2,
+        "selected": "審理行政訴訟案件的法院",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g32",
+        "question": "「公共設施管理有欠缺造成傷害」帶來的結果是？",
+        "visualTokens": [
+          "管理機關",
+          "不能向",
+          "醫藥費",
+          "商店"
+        ],
+        "options": [
+          "人民可以向管理機關請求國家賠償",
+          "不能向任何機關求償",
+          "只能自行負擔醫藥費",
+          "向設施旁的商店求償"
+        ],
+        "answer": "人民可以向管理機關請求國家賠償",
+        "selectedLetter": 0,
+        "selected": "人民可以向管理機關請求國家賠償",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g11",
+        "question": "「行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定」指的是哪一種救濟或參與方式？",
+        "visualTokens": [
+          "行政法院",
+          "國家賠償",
+          "行政處分",
+          "訴願"
+        ],
+        "options": [
+          "行政法院",
+          "國家賠償",
+          "行政處分",
+          "訴願"
+        ],
+        "answer": "行政處分",
+        "selectedLetter": 2,
+        "selected": "行政處分",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-h6",
+        "question": "陳先生第一步最適合採取的救濟方式是？",
+        "visualTokens": [
+          "提起訴願",
+          "罷免",
+          "監察院",
+          "立法院"
+        ],
+        "options": [
+          "提起訴願",
+          "請求罷免市長",
+          "向監察院申請判決",
+          "直接向立法院上訴"
+        ],
+        "answer": "提起訴願",
+        "selectedLetter": 0,
+        "selected": "提起訴願",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-h9",
+        "question": "小李接下來可以採取的救濟途徑是？",
+        "visualTokens": [
+          "立法院",
+          "調解",
+          "行政法院",
+          "監察院"
+        ],
+        "options": [
+          "向立法院提起訴願",
+          "向調解委員會申請調解",
+          "向行政法院提起行政訴訟",
+          "請監察院直接撤銷處分"
+        ],
+        "answer": "向行政法院提起行政訴訟",
+        "selectedLetter": 2,
+        "selected": "向行政法院提起行政訴訟",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g17",
+        "question": "遇到「訴願被駁回仍然不服」，最適合採取哪一種管道？",
+        "visualTokens": [
+          "陳情",
+          "行政訴訟",
+          "罷免",
+          "彈劾"
+        ],
+        "options": [
+          "陳情",
+          "行政訴訟",
+          "罷免",
+          "彈劾"
+        ],
+        "answer": "行政訴訟",
+        "selectedLetter": 1,
+        "selected": "行政訴訟",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g4",
+        "question": "「國家賠償」的內容是？",
+        "visualTokens": [
+          "罰金",
+          "土地",
+          "天然災害",
+          "公務員"
+        ],
+        "options": [
+          "人民被判刑後向國家繳納罰金",
+          "政府徵收私人土地時，依法給予的補償",
+          "因天然災害受損時，政府發放的救助金",
+          "公務員違法或公共設施欠缺造成損害時，向國家請求賠償"
+        ],
+        "answer": "公務員違法或公共設施欠缺造成損害時，向國家請求賠償",
+        "selectedLetter": 3,
+        "selected": "公務員違法或公共設施欠缺造成損害時，向國家請求賠償",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g6",
+        "question": "「請願」的內容是？",
+        "visualTokens": [
+          "罷免",
+          "上級機關",
+          "法院",
+          "公共利益"
+        ],
+        "options": [
+          "人民連署罷免民意代表",
+          "不服行政處分時，向上級機關請求撤銷",
+          "向法院請求國家賠償損害",
+          "人民對國家政策或公共利益向機關表達希望"
+        ],
+        "answer": "人民對國家政策或公共利益向機關表達希望",
+        "selectedLetter": 3,
+        "selected": "人民對國家政策或公共利益向機關表達希望",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g27",
+        "question": "「可以向有管轄權的機關提起訴願」最主要的原因是？",
+        "visualTokens": [
+          "不服",
+          "地方議會",
+          "戶政",
+          "刑事"
+        ],
+        "options": [
+          "不服行政處分",
+          "地方議會開會",
+          "戶政事務所辦理戶籍登記",
+          "法院審理刑事案件"
+        ],
+        "answer": "不服行政處分",
+        "selectedLetter": 0,
+        "selected": "不服行政處分",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g23",
+        "question": "「有期徒刑」屬於哪一種處罰？",
+        "visualTokens": [
+          "刑罰",
+          "學校",
+          "民事",
+          "行政罰"
+        ],
+        "options": [
+          "刑罰",
+          "學校懲處",
+          "民事賠償",
+          "行政罰"
+        ],
+        "answer": "刑罰",
+        "selectedLetter": 0,
+        "selected": "刑罰",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g10",
+        "question": "「行政處分」的內容是？",
+        "visualTokens": [
+          "判決",
+          "工作分配",
+          "公法",
+          "立法院"
+        ],
+        "options": [
+          "法院對案件作出的判決",
+          "行政機關內部的工作分配",
+          "行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定",
+          "立法院通過的法律案"
+        ],
+        "answer": "行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定",
+        "selectedLetter": 2,
+        "selected": "行政機關就公法上的具體事件，對外作成直接影響人民權利義務的決定",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g2",
+        "question": "「行政訴訟」的內容是？",
+        "visualTokens": [
+          "檢察官",
+          "公法",
+          "財產",
+          "調解"
+        ],
+        "options": [
+          "檢察官對犯罪嫌疑人提起公訴",
+          "人民與行政機關發生公法上的爭議時，向行政法院請求救濟",
+          "人民之間發生財產糾紛時，向地方法院請求判決",
+          "向鄉鎮市調解委員會申請調解"
+        ],
+        "answer": "人民與行政機關發生公法上的爭議時，向行政法院請求救濟",
+        "selectedLetter": 1,
+        "selected": "人民與行政機關發生公法上的爭議時，向行政法院請求救濟",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g12",
+        "question": "「行政罰」的內容是？",
+        "visualTokens": [
+          "學校",
+          "契約",
+          "行政法",
+          "鄰居"
+        ],
+        "options": [
+          "學校對違規學生的記過處分",
+          "違反契約時應付給對方的損害賠償",
+          "對違反行政法上義務的處罰，例如罰鍰",
+          "鄰居之間協議的補償金"
+        ],
+        "answer": "對違反行政法上義務的處罰，例如罰鍰",
+        "selectedLetter": 2,
+        "selected": "對違反行政法上義務的處罰，例如罰鍰",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g29",
+        "question": "「向行政法院提起行政訴訟」最主要的原因是？",
+        "visualTokens": [
+          "健保",
+          "監理",
+          "訴願",
+          "國家考試"
+        ],
+        "options": [
+          "健保署發行健保卡",
+          "監理站辦理駕照",
+          "訴願決定後仍然不服",
+          "國家考試放榜"
+        ],
+        "answer": "訴願決定後仍然不服",
+        "selectedLetter": 2,
+        "selected": "訴願決定後仍然不服",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "law8-g31",
+        "question": "「人民可以請求國家賠償；公務員若有故意或重大過失，機關依法有求償權」最主要的原因是？",
+        "visualTokens": [
+          "稅捐",
+          "公務員",
+          "環保",
+          "都市計畫"
+        ],
+        "options": [
+          "稅捐處寄發稅單",
+          "公務員違法執行職務造成損害",
+          "環保局稽查噪音",
+          "政府公告都市計畫"
+        ],
+        "answer": "公務員違法執行職務造成損害",
+        "selectedLetter": 1,
+        "selected": "公務員違法執行職務造成損害",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      }
+    ],
+    "verifiedScore": {
+      "correct": 20,
+      "total": 20,
+      "visibleSummary": "全部答對",
+      "screenshot": "r1-result.png"
+    },
+    "scope": "chapter"
+  },
+  {
+    "chapter": "soc3",
+    "n": 20,
+    "samples": [
+      {
+        "id": "soc3-g6",
+        "question": "「隔代教養家庭」的組成是？",
+        "visualTokens": [
+          "保母",
+          "由祖父母",
+          "社福",
+          "過年"
+        ],
+        "options": [
+          "子女白天由保母照顧",
+          "由祖父母照顧孫子女",
+          "子女暫時寄住在社福機構",
+          "祖父母每逢過年才與孫子女團聚"
+        ],
+        "answer": "由祖父母照顧孫子女",
+        "selectedLetter": 0,
+        "selected": "子女白天由保母照顧",
+        "expectedCorrect": false,
+        "feedbackVerified": true,
+        "intentionallyWrong": true
+      },
+      {
+        "id": "soc3-g22",
+        "question": "「教育功能」的例子是？",
+        "visualTokens": [
+          "補習",
+          "教導",
+          "圖書館",
+          "政府"
+        ],
+        "options": [
+          "補習班替學生加強課業",
+          "教導孩子生活規範與價值觀",
+          "社區圖書館舉辦說故事活動",
+          "政府制定教育政策"
+        ],
+        "answer": "教導孩子生活規範與價值觀",
+        "selectedLetter": 1,
+        "selected": "教導孩子生活規範與價值觀",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-g14",
+        "question": "「祖父母」屬於血親還是姻親？",
+        "visualTokens": [
+          "姻親",
+          "血親",
+          "鄰里",
+          "朋友"
+        ],
+        "options": [
+          "姻親",
+          "血親",
+          "鄰里關係",
+          "朋友關係"
+        ],
+        "answer": "血親",
+        "selectedLetter": 1,
+        "selected": "血親",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-g40",
+        "question": "「跨國婚姻增加」帶來的結果是？",
+        "visualTokens": [
+          "新住民家庭增加",
+          "本地出生",
+          "新住民家庭減少",
+          "單一"
+        ],
+        "options": [
+          "新住民家庭增加，文化更加多元",
+          "本地出生人口比例提高",
+          "新住民家庭減少",
+          "家庭文化變得單一"
+        ],
+        "answer": "新住民家庭增加，文化更加多元",
+        "selectedLetter": 0,
+        "selected": "新住民家庭增加，文化更加多元",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-g39",
+        "question": "「祖父母或托育機構協助照顧孩子」最主要的原因是？",
+        "visualTokens": [
+          "雙薪",
+          "政府",
+          "夜市",
+          "學校"
+        ],
+        "options": [
+          "雙薪家庭增加",
+          "政府推動長期照顧",
+          "家人週末去夜市",
+          "學校實施營養午餐"
+        ],
+        "answer": "雙薪家庭增加",
+        "selectedLetter": 0,
+        "selected": "雙薪家庭增加",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-g24",
+        "question": "「經濟功能」的例子是？",
+        "visualTokens": [
+          "公司",
+          "政府",
+          "家庭",
+          "銀行"
+        ],
+        "options": [
+          "公司按月發薪水給員工",
+          "政府發放失業補助",
+          "家庭成員共同生活、分擔支出",
+          "銀行提供房屋貸款"
+        ],
+        "answer": "家庭成員共同生活、分擔支出",
+        "selectedLetter": 2,
+        "selected": "家庭成員共同生活、分擔支出",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-g34",
+        "question": "「遭受家庭暴力」帶來的結果是？",
+        "visualTokens": [
+          "保護令",
+          "警察",
+          "離婚",
+          "忍受"
+        ],
+        "options": [
+          "可以向法院聲請保護令",
+          "警察不會介入家庭事務",
+          "必須先離婚才能求助",
+          "只能默默忍受、無法求助"
+        ],
+        "answer": "可以向法院聲請保護令",
+        "selectedLetter": 0,
+        "selected": "可以向法院聲請保護令",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-g28",
+        "question": "「保護功能」的例子是？",
+        "visualTokens": [
+          "家人",
+          "醫院",
+          "警察",
+          "長照"
+        ],
+        "options": [
+          "照顧幼兒、老人與生病的家人",
+          "醫院照顧住院病人",
+          "警察巡邏維護社區治安",
+          "長照機構照顧失能長者"
+        ],
+        "answer": "照顧幼兒、老人與生病的家人",
+        "selectedLetter": 0,
+        "selected": "照顧幼兒、老人與生病的家人",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-h10",
+        "question": "一起吃飯、聊天最能發揮家庭的哪一種功能？",
+        "visualTokens": [
+          "情感",
+          "生育",
+          "保護",
+          "經濟"
+        ],
+        "options": [
+          "情感功能",
+          "生育功能",
+          "保護功能",
+          "經濟功能"
+        ],
+        "answer": "情感功能",
+        "selectedLetter": 0,
+        "selected": "情感功能",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-h4",
+        "question": "全國保護專線的號碼是？",
+        "visualTokens": [
+          "165",
+          "119",
+          "110",
+          "113"
+        ],
+        "options": [
+          "165",
+          "119",
+          "110",
+          "113"
+        ],
+        "answer": "113",
+        "selectedLetter": 3,
+        "selected": "113",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-h6",
+        "question": "子女與父母意見不同時，最適當的處理方式是？",
+        "visualTokens": [
+          "離家",
+          "讓步",
+          "理性",
+          "網路"
+        ],
+        "options": [
+          "離家出走",
+          "等父母讓步再說",
+          "理性溝通，說明自己的想法並傾聽父母意見",
+          "在網路上抱怨父母"
+        ],
+        "answer": "理性溝通，說明自己的想法並傾聽父母意見",
+        "selectedLetter": 2,
+        "selected": "理性溝通，說明自己的想法並傾聽父母意見",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-g5",
+        "question": "「由父親或母親一人與子女組成」指的是哪一種家庭型態？",
+        "visualTokens": [
+          "新住民",
+          "單親",
+          "折衷",
+          "核心"
+        ],
+        "options": [
+          "新住民家庭",
+          "單親家庭",
+          "折衷家庭",
+          "核心家庭"
+        ],
+        "answer": "單親家庭",
+        "selectedLetter": 1,
+        "selected": "單親家庭",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-g37",
+        "question": "「較能化解親子衝突」最主要的原因是？",
+        "visualTokens": [
+          "家中",
+          "家人",
+          "公園",
+          "健保"
+        ],
+        "options": [
+          "家中添購電腦",
+          "家人之間理性溝通",
+          "社區設立公園",
+          "政府推行全民健保"
+        ],
+        "answer": "家人之間理性溝通",
+        "selectedLetter": 1,
+        "selected": "家人之間理性溝通",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-g32",
+        "question": "「都市化使居住與工作型態改變」帶來的結果是？",
+        "visualTokens": [
+          "三代",
+          "單一",
+          "小家庭",
+          "大家庭"
+        ],
+        "options": [
+          "三代同堂成為主流",
+          "家庭型態變得單一",
+          "小家庭增加，家庭型態更加多元",
+          "大家庭比例增加"
+        ],
+        "answer": "小家庭增加，家庭型態更加多元",
+        "selectedLetter": 2,
+        "selected": "小家庭增加，家庭型態更加多元",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-g20",
+        "question": "「生育功能」的例子是？",
+        "visualTokens": [
+          "醫院",
+          "子女",
+          "政府",
+          "學校"
+        ],
+        "options": [
+          "醫院提供產前檢查",
+          "生育子女，延續家族與社會",
+          "政府發放生育補助",
+          "學校實施性別平等教育"
+        ],
+        "answer": "生育子女，延續家族與社會",
+        "selectedLetter": 1,
+        "selected": "生育子女，延續家族與社會",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-g2",
+        "question": "「折衷家庭」的組成是？",
+        "visualTokens": [
+          "已婚兄弟",
+          "親戚",
+          "三代",
+          "再婚"
+        ],
+        "options": [
+          "多個已婚兄弟的家庭與父母同住",
+          "子女暫時寄住在親戚家",
+          "祖父母、父母與子女三代同住",
+          "父母再婚後組成的家庭"
+        ],
+        "answer": "祖父母、父母與子女三代同住",
+        "selectedLetter": 2,
+        "selected": "祖父母、父母與子女三代同住",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-g30",
+        "question": "「休閒功能」的例子是？",
+        "visualTokens": [
+          "公司",
+          "社區",
+          "學校",
+          "一起"
+        ],
+        "options": [
+          "公司舉辦員工旅遊",
+          "社區舉辦運動會",
+          "學校舉辦校外教學",
+          "一起出遊、共享休閒時光"
+        ],
+        "answer": "一起出遊、共享休閒時光",
+        "selectedLetter": 3,
+        "selected": "一起出遊、共享休閒時光",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-h8",
+        "question": "她可以向法院聲請什麼？",
+        "visualTokens": [
+          "營業",
+          "搜索",
+          "保護",
+          "支付"
+        ],
+        "options": [
+          "營業登記",
+          "搜索票",
+          "保護令",
+          "支付命令"
+        ],
+        "answer": "保護令",
+        "selectedLetter": 2,
+        "selected": "保護令",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-h5",
+        "question": "現代臺灣家庭型態的變化，下列敘述何者正確？",
+        "visualTokens": [
+          "不再",
+          "人數",
+          "多元",
+          "三代"
+        ],
+        "options": [
+          "家庭不再有任何功能",
+          "家庭人數越來越多",
+          "家庭型態更加多元，例如單親、隔代教養、新住民家庭",
+          "三代同堂家庭比例越來越高"
+        ],
+        "answer": "家庭型態更加多元，例如單親、隔代教養、新住民家庭",
+        "selectedLetter": 2,
+        "selected": "家庭型態更加多元，例如單親、隔代教養、新住民家庭",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "soc3-h0",
+        "question": "家庭最基本的功能之一，是讓孩子學習生活規範與價值觀，這屬於什麼功能？",
+        "visualTokens": [
+          "社會化",
+          "經濟",
+          "娛樂",
+          "宗教"
+        ],
+        "options": [
+          "教育與社會化功能",
+          "經濟功能",
+          "娛樂功能",
+          "宗教功能"
+        ],
+        "answer": "教育與社會化功能",
+        "selectedLetter": 0,
+        "selected": "教育與社會化功能",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      }
+    ],
+    "verifiedScore": {
+      "correct": 19,
+      "total": 20,
+      "intentionallyWrong": 1,
+      "visibleSummary": "表現不錯",
+      "screenshot": "r2-result.png"
+    },
+    "scope": "chapter"
+  },
+  {
+    "chapter": "soc3",
+    "scope": "wrong-retry",
+    "n": 1,
+    "samples": [
+      {
+        "id": "soc3-g6",
+        "question": "「隔代教養家庭」的組成是？",
+        "visualTokens": [
+          "保母",
+          "由祖父母",
+          "過年",
+          "社福"
+        ],
+        "options": [
+          "子女白天由保母照顧",
+          "由祖父母照顧孫子女",
+          "祖父母每逢過年才與孫子女團聚",
+          "子女暫時寄住在社福機構"
+        ],
+        "answer": "由祖父母照顧孫子女",
+        "selectedLetter": 1,
+        "selected": "由祖父母照顧孫子女",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      }
+    ],
+    "verifiedScore": {
+      "correct": 1,
+      "total": 1,
+      "screenshot": "retry-result.png"
+    }
+  },
+  {
+    "chapter": "eco4",
+    "scope": "chapter",
+    "n": 20,
+    "samples": [
+      {
+        "id": "eco4-g2",
+        "question": "「工會」的意思是？",
+        "visualTokens": [
+          "勞工",
+          "雇主",
+          "價格",
+          "政府"
+        ],
+        "options": [
+          "勞工為維護權益組成的團體",
+          "雇主為管理員工而設立的部門",
+          "企業之間協調價格的組織",
+          "政府監督企業的行政機關"
+        ],
+        "answer": "勞工為維護權益組成的團體",
+        "selectedLetter": 0,
+        "selected": "勞工為維護權益組成的團體",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-h1",
+        "question": "保障勞工最低工作條件的重要法律是？",
+        "visualTokens": [
+          "刑法",
+          "親屬",
+          "勞動",
+          "公民"
+        ],
+        "options": [
+          "刑法",
+          "民法親屬編",
+          "勞動基準法",
+          "公民投票法"
+        ],
+        "answer": "勞動基準法",
+        "selectedLetter": 2,
+        "selected": "勞動基準法",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g4",
+        "question": "「團結權」的意思是？",
+        "visualTokens": [
+          "參加工會",
+          "離職",
+          "同業",
+          "個人"
+        ],
+        "options": [
+          "勞工組織與參加工會的權利",
+          "勞工可以隨時離職的權利",
+          "雇主組成同業公會的權利",
+          "勞工個人與雇主談判薪資的權利"
+        ],
+        "answer": "勞工組織與參加工會的權利",
+        "selectedLetter": 0,
+        "selected": "勞工組織與參加工會的權利",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g6",
+        "question": "「協商權」的意思是？",
+        "visualTokens": [
+          "單方面",
+          "個人",
+          "工會",
+          "政府"
+        ],
+        "options": [
+          "雇主單方面制定工作規則的權利",
+          "勞工個人與主管私下約定加班費的權利",
+          "工會與雇主集體協商勞動條件的權利",
+          "政府替勞工決定工資的權利"
+        ],
+        "answer": "工會與雇主集體協商勞動條件的權利",
+        "selectedLetter": 2,
+        "selected": "工會與雇主集體協商勞動條件的權利",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g16",
+        "question": "「職業災害」的意思是？",
+        "visualTokens": [
+          "旅遊",
+          "因工作",
+          "倒閉",
+          "故障"
+        ],
+        "options": [
+          "勞工下班後私人旅遊時受傷",
+          "勞工因工作而受傷、生病或死亡",
+          "企業因經營不善而倒閉",
+          "工廠機器因老舊而故障"
+        ],
+        "answer": "勞工因工作而受傷、生病或死亡",
+        "selectedLetter": 1,
+        "selected": "勞工因工作而受傷、生病或死亡",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-h3",
+        "question": "國中生想要打工，下列觀念何者正確？",
+        "visualTokens": [
+          "不受",
+          "危險",
+          "加班費",
+          "十五"
+        ],
+        "options": [
+          "國中生打工不受任何法律保障",
+          "未成年人可以從事危險工作",
+          "雇主可以不給加班費",
+          "未滿十五歲原則上不得受僱，打工應注意勞動條件與安全"
+        ],
+        "answer": "未滿十五歲原則上不得受僱，打工應注意勞動條件與安全",
+        "selectedLetter": 3,
+        "selected": "未滿十五歲原則上不得受僱，打工應注意勞動條件與安全",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g38",
+        "question": "「勞動基準法規定最低勞動條件」帶來的結果是？",
+        "visualTokens": [
+          "低於",
+          "失去",
+          "延長",
+          "基本權益"
+        ],
+        "options": [
+          "工資可以低於任何標準",
+          "勞工權益失去保障",
+          "雇主可以任意延長工時",
+          "勞工的基本權益受到保障"
+        ],
+        "answer": "勞工的基本權益受到保障",
+        "selectedLetter": 3,
+        "selected": "勞工的基本權益受到保障",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-h7",
+        "question": "這種失業屬於？",
+        "context": "某工廠引進自動化機器人後，原本在生產線上的工人因為不會操作新設備而失業。",
+        "visualContextToken": "機器人",
+        "visualTokens": [
+          "季節",
+          "結構",
+          "自願",
+          "摩擦"
+        ],
+        "options": [
+          "季節性失業",
+          "結構性失業",
+          "自願性失業",
+          "摩擦性失業"
+        ],
+        "answer": "結構性失業",
+        "selectedLetter": 1,
+        "selected": "結構性失業",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-h6",
+        "question": "職場上同工不同酬、因性別而不予升遷，違反了什麼原則？",
+        "context": null,
+        "visualContextToken": null,
+        "visualTokens": [
+          "比較",
+          "罪刑",
+          "就業",
+          "供給"
+        ],
+        "options": [
+          "比較利益",
+          "罪刑法定",
+          "就業平等",
+          "供給法則"
+        ],
+        "answer": "就業平等",
+        "selectedLetter": 2,
+        "selected": "就業平等",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g33",
+        "question": "「部分勞工面臨結構性失業」最主要的原因是？",
+        "context": null,
+        "visualContextToken": null,
+        "visualTokens": [
+          "旅遊",
+          "觀光",
+          "產業",
+          "制服"
+        ],
+        "options": [
+          "勞工參加員工旅遊",
+          "政府推動觀光",
+          "產業轉型、技術更新",
+          "公司更換制服"
+        ],
+        "answer": "產業轉型、技術更新",
+        "selectedLetter": 2,
+        "selected": "產業轉型、技術更新",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g12",
+        "question": "「最低工資」的意思是？",
+        "context": null,
+        "visualContextToken": null,
+        "visualTokens": [
+          "公告",
+          "年終",
+          "相同",
+          "下限"
+        ],
+        "options": [
+          "勞工的工資依法不得低於政府公告的金額",
+          "企業依獲利發給員工的年終獎金",
+          "政府規定所有勞工都領相同的薪水",
+          "勞工與雇主自由約定、沒有下限的工資"
+        ],
+        "answer": "勞工的工資依法不得低於政府公告的金額",
+        "selectedLetter": 0,
+        "selected": "勞工的工資依法不得低於政府公告的金額",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g18",
+        "question": "「就業平等」的意思是？",
+        "context": null,
+        "visualContextToken": null,
+        "visualTokens": [
+          "相同",
+          "女性",
+          "年齡",
+          "不因性別"
+        ],
+        "options": [
+          "所有勞工的薪水都必須相同",
+          "只有女性才能申請育嬰假",
+          "雇主可以依年齡優先錄取年輕人",
+          "不因性別、種族等因素在就業上受到歧視"
+        ],
+        "answer": "不因性別、種族等因素在就業上受到歧視",
+        "selectedLetter": 3,
+        "selected": "不因性別、種族等因素在就業上受到歧視",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g15",
+        "question": "「勞工發生傷病、老年等情況時的保險」指的是？",
+        "context": null,
+        "visualContextToken": null,
+        "visualTokens": [
+          "職業",
+          "童工",
+          "最低",
+          "勞工保險"
+        ],
+        "options": [
+          "職業災害",
+          "童工",
+          "最低工資",
+          "勞工保險"
+        ],
+        "answer": "勞工保險",
+        "selectedLetter": 3,
+        "selected": "勞工保險",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g8",
+        "question": "「爭議權」的意思是？",
+        "context": null,
+        "visualContextToken": null,
+        "visualTokens": [
+          "罷工",
+          "破壞",
+          "解僱",
+          "刑事"
+        ],
+        "options": [
+          "協商不成時依法進行罷工等爭議行為的權利",
+          "勞工可以任意破壞雇主財產的權利",
+          "雇主可以隨時解僱勞工的權利",
+          "勞工向法院提起刑事告訴的權利"
+        ],
+        "answer": "協商不成時依法進行罷工等爭議行為的權利",
+        "selectedLetter": 0,
+        "selected": "協商不成時依法進行罷工等爭議行為的權利",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g28",
+        "question": "「工會與資方簽訂團體協約」屬於勞動三權中的哪一項？",
+        "context": null,
+        "visualContextToken": null,
+        "visualTokens": [
+          "協商",
+          "團結",
+          "財產",
+          "參政"
+        ],
+        "options": [
+          "協商權",
+          "團結權",
+          "財產權",
+          "參政權"
+        ],
+        "answer": "協商權",
+        "selectedLetter": 0,
+        "selected": "協商權",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g10",
+        "question": "「童工」的意思是？",
+        "context": null,
+        "visualContextToken": null,
+        "visualTokens": [
+          "十六歲以上",
+          "未滿十二",
+          "十五歲以上",
+          "已滿十八"
+        ],
+        "options": [
+          "十六歲以上未滿十八歲的受僱者",
+          "未滿十二歲、在家幫忙做家事的孩子",
+          "十五歲以上未滿十六歲的受僱者",
+          "已滿十八歲、第一次工作的新進員工"
+        ],
+        "answer": "十五歲以上未滿十六歲的受僱者",
+        "selectedLetter": 2,
+        "selected": "十五歲以上未滿十六歲的受僱者",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g32",
+        "question": "「產業轉型、技術更新」帶來的結果是？",
+        "context": null,
+        "visualContextToken": null,
+        "visualTokens": [
+          "結構",
+          "下降",
+          "容易",
+          "不變"
+        ],
+        "options": [
+          "部分勞工面臨結構性失業",
+          "失業率下降",
+          "勞工都更容易就業",
+          "勞工技能需求不變"
+        ],
+        "answer": "部分勞工面臨結構性失業",
+        "selectedLetter": 0,
+        "selected": "部分勞工面臨結構性失業",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g30",
+        "question": "「個別勞工力量較小」帶來的結果是？",
+        "context": null,
+        "visualContextToken": null,
+        "visualTokens": [
+          "各自",
+          "組成工會",
+          "解散",
+          "不需要"
+        ],
+        "options": [
+          "勞工各自與雇主談判效果最好",
+          "勞工組成工會集體協商",
+          "工會相繼解散",
+          "勞工不需要任何組織"
+        ],
+        "answer": "勞工組成工會集體協商",
+        "selectedLetter": 1,
+        "selected": "勞工組成工會集體協商",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g37",
+        "question": "「失業勞工較容易轉業」最主要的原因是？",
+        "context": null,
+        "visualContextToken": null,
+        "visualTokens": [
+          "餐廳",
+          "職業訓練",
+          "週休",
+          "最低工資"
+        ],
+        "options": [
+          "企業設立員工餐廳",
+          "政府提供職業訓練",
+          "企業實施週休二日",
+          "政府調漲最低工資"
+        ],
+        "answer": "政府提供職業訓練",
+        "selectedLetter": 1,
+        "selected": "政府提供職業訓練",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      },
+      {
+        "id": "eco4-g35",
+        "question": "「企業裁員，出現循環性失業」最主要的原因是？",
+        "context": null,
+        "visualContextToken": null,
+        "visualTokens": [
+          "健保",
+          "年終",
+          "家庭日",
+          "景氣"
+        ],
+        "options": [
+          "政府推行全民健保",
+          "企業發放年終獎金",
+          "工廠舉辦家庭日",
+          "景氣衰退"
+        ],
+        "answer": "景氣衰退",
+        "selectedLetter": 3,
+        "selected": "景氣衰退",
+        "expectedCorrect": true,
+        "feedbackVerified": true
+      }
+    ],
+    "verifiedScore": {
+      "correct": 20,
+      "total": 20,
+      "screenshot": "r3-result.png"
+    }
+  }
+]

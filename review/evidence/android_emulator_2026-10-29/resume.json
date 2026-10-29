@@ -1,0 +1,32 @@
+{
+  "before": {
+    "visibleQuestion": "遇到「訴願被駁回仍然不服」，最適合採取哪一種管道？",
+    "options": [
+      "陳情",
+      "行政訴訟",
+      "罷免",
+      "彈劾"
+    ],
+    "completed": 10,
+    "position": 11
+  },
+  "method": "Closed only social-studies app card from Android recents, returned home and launched its desktop shortcut",
+  "promptVerified": {
+    "position": 11,
+    "total": 20,
+    "correct": 10
+  },
+  "after": {
+    "visibleQuestion": "遇到「訴願被駁回仍然不服」，最適合採取哪一種管道？",
+    "options": [
+      "陳情",
+      "行政訴訟",
+      "罷免",
+      "彈劾"
+    ],
+    "position": 11
+  },
+  "sameQuestion": true,
+  "sameOptionSet": true,
+  "choiceOrderPreserved": true
+}

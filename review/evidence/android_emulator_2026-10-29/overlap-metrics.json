@@ -1,0 +1,38 @@
+[
+  {
+    "chapter": "law8",
+    "n": 20,
+    "score": {
+      "correct": 20,
+      "total": 20,
+      "visibleSummary": "全部答對",
+      "screenshot": "r1-result.png"
+    },
+    "answerLeak": [],
+    "sharedTwo": []
+  },
+  {
+    "chapter": "soc3",
+    "n": 20,
+    "score": {
+      "correct": 19,
+      "total": 20,
+      "intentionallyWrong": 1,
+      "visibleSummary": "表現不錯",
+      "screenshot": "r2-result.png"
+    },
+    "answerLeak": [],
+    "sharedTwo": []
+  },
+  {
+    "chapter": "eco4",
+    "n": 20,
+    "score": {
+      "correct": 20,
+      "total": 20,
+      "screenshot": "r3-result.png"
+    },
+    "answerLeak": [],
+    "sharedTwo": []
+  }
+]

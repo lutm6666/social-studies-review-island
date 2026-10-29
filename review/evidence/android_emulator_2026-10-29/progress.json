@@ -1,0 +1,28 @@
+{
+  "beforeReopen": {
+    "correctIDs": 39,
+    "total": 3840,
+    "completedRoundAnswers": 40,
+    "wrongIDs": 1
+  },
+  "screenshotBefore": "22-home-progress.png",
+  "afterReopen": {
+    "correctIDs": 39,
+    "total": 3840,
+    "wrongIDs": 1
+  },
+  "progressPreserved": true,
+  "wrongPreserved": true,
+  "screenshotAfter": "30-home-progress-after-reopen.png",
+  "afterRetry": {
+    "correctIDs": 40,
+    "total": 3840,
+    "wrongIDs": 0
+  },
+  "wrongCleared": true,
+  "backupPanelVerified": {
+    "recordedQuestions": 40,
+    "screenshot": "35-progress-backup-summary.png"
+  },
+  "bigTextRestored": true
+}
