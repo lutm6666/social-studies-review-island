@@ -329,7 +329,7 @@ const cardEl=$('#card');
 /* ---------- 未完成的一輪：重新整理或不小心關掉分頁後，可以從中斷的地方繼續 ---------- */
 const ROUND_KEY='shehui-round';
 function saveRound(){ if(!S||!S.qs) return; try{ const o=Object.assign({},S.o); delete o.list;
-  localStorage.setItem(ROUND_KEY,JSON.stringify({o,head:S.head,isl:S.info&&S.info.isl||null,diff:S.diff,ids:S.qs.map(q=>q.id),i:S.i,res:S.results,el:Date.now()-S.t0,at:Date.now()})); }catch(e){} }
+  localStorage.setItem(ROUND_KEY,JSON.stringify({o,head:S.head,isl:S.info&&S.info.isl||null,diff:S.diff,ids:S.qs.map(q=>q.id),i:S.i,res:S.results,op:(S.qs[S.i]&&S.opts&&S.opts.length)?{id:S.qs[S.i].id,o:S.opts}:null,el:Date.now()-S.t0,at:Date.now()})); }catch(e){} }
 function clearRound(){ try{ localStorage.removeItem(ROUND_KEY); }catch(e){} }
 function qById(id){ if(!qById.m){ qById.m={}; Object.keys(BANK).forEach(k=>(BANK[k]||[]).forEach(q=>{ qById.m[q.id]=q; })); } return qById.m[id]; }
 function offerResume(){
@@ -340,7 +340,7 @@ function offerResume(){
   view='resume'; setHead.apply(null,R.head||['全部島嶼','繼續上一輪','','hist']); $('#panelSub').textContent='上次還沒答完'; openPanel();
   body.innerHTML='<p class="note">「'+esc((R.head&&R.head[1])||'上一輪')+'」答到第 '+(done+1)+' / '+qs.length+' 題就中斷了（答對 '+R.res.filter(Boolean).length+' 題）。要從中斷的地方繼續嗎？</p><div class="actions"><button type="button" class="btn primary" id="rsGo">繼續作答</button><button type="button" class="btn" id="rsNo">放棄這一輪</button></div>';
   $('#rsGo').addEventListener('click',()=>{
-    S={o:R.o, info:{isl:R.isl,title:R.head&&R.head[1],sub:R.head&&R.head[2],list:[]}, qs, i:done, results:R.res.slice(), wrong:qs.filter((q,k)=>k<done&&!R.res[k]), answered:false, opts:[], diff:R.diff, t0:Date.now()-(R.el||0), head:R.head};
+    S={o:R.o, info:{isl:R.isl,title:R.head&&R.head[1],sub:R.head&&R.head[2],list:[]}, qs, i:done, results:R.res.slice(), wrong:qs.filter((q,k)=>k<done&&!R.res[k]), answered:false, opts:[], ro:R.op||null, diff:R.diff, t0:Date.now()-(R.el||0), head:R.head};
     view='quiz'; if(R.isl && focusId!==R.isl){ focusId=R.isl; $('#backBtn').hidden=false; if(scene3d) scene3d.focus(R.isl); }
     clearInterval(timerT); if(R.o.scope==='exam') timerT=setInterval(()=>{ const el=document.getElementById('qtimer'); if(!S||S.o.scope!=='exam'||view!=='quiz'){ clearInterval(timerT); return; } if(el) el.textContent='⏱ '+fmtTime(Date.now()-S.t0); },1000);
     setHead.apply(null,S.head); renderQ(); });
@@ -666,8 +666,10 @@ function startQuiz(o){
   if(o.scope==='cross'){ crossFocus=o.id; if(scene3d) scene3d.focusCross(o.id); }
 }
 function renderQ(){
+  // 重新整理後繼續作答時，沿用中斷那一題原本的選項順序
+  const q=S.qs[S.i], ro=S.ro; S.ro=null;
+  S.opts=(ro&&ro.id===q.id&&ro.o&&ro.o.length===1+q.w.length&&[q.c].concat(q.w).every(v=>ro.o.includes(v))) ? ro.o.slice() : shuffle([q.c].concat(q.w)); S.answered=false;
   saveRound();
-  const q=S.qs[S.i]; S.opts=shuffle([q.c].concat(q.w)); S.answered=false;
   const segs=S.qs.map((_,k)=>{ let c=''; if(k<S.i) c=S.results[k]?'right':'wrong'; else if(k===S.i) c='now'; return '<i class="'+c+'"></i>'; }).join('');
   const lmTag = q.lm==='_cx' ? '<span class="tagchip lk">⛵ '+esc(CROSS[q.cx].title)+'</span>' : q.lm==='_lk' ? '<span class="tagchip lk">⇢ '+esc(LINKS[q.link].title)+'</span>' : ((S.o.scope!=='lm' && lmName(q.lm)) ? '<span class="tagchip">'+lmName(q.lm)+'</span>' : '');
   body.innerHTML=
