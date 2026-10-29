@@ -1,0 +1,63 @@
+{
+  "sourceSha": "44f82be3d925c5bb45edcbf52f03d553b474ec5c",
+  "baseline": "e743ac12233a48fd68a3b6ba8147216d4be3c761",
+  "reviewedChangedIDs": 8,
+  "statusCounts": {
+    "pass": 8
+  },
+  "unionCumulative": 1874,
+  "cumulativeCounts": {
+    "pass": 1874
+  },
+  "unreviewedContent": 1966,
+  "previousFindingClosed": true,
+  "manualCheckpoint": {
+    "reviewer": "/root",
+    "date": "2026-10-29",
+    "all8FullBeforeAfterRead": true,
+    "all6ChangedExplanationsRead": true,
+    "nonNullContexts": 0
+  },
+  "programModified": false,
+  "roundSamples": 60,
+  "submittedAnswers": 63,
+  "uniqueUI": 37,
+  "changedIDsShownAndAnswered": [
+    {
+      "id": "soc3-g0",
+      "shown": true
+    },
+    {
+      "id": "soc3-g4",
+      "shown": true
+    },
+    {
+      "id": "soc3-g20",
+      "shown": true
+    },
+    {
+      "id": "soc3-g22",
+      "shown": true
+    },
+    {
+      "id": "soc3-g24",
+      "shown": true
+    },
+    {
+      "id": "soc3-g26",
+      "shown": true
+    },
+    {
+      "id": "soc3-g28",
+      "shown": true
+    },
+    {
+      "id": "soc3-g30",
+      "shown": true
+    }
+  ],
+  "figureSamples": 1,
+  "simulationPairedRounds": 34800,
+  "pendingDocMismatchesCorrected": 2,
+  "physicalPhoneTested": false
+}

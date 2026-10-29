@@ -1,0 +1,14 @@
+{
+  "sourceSha": "44f82be3d925c5bb45edcbf52f03d553b474ec5c",
+  "idSetsEqual": true,
+  "storageKeyUnchanged": true,
+  "appSourceUnchanged": true,
+  "drawSourceUnchanged": true,
+  "refreshSameQuestion": true,
+  "refreshSameOptionSet": true,
+  "refreshChoiceOrderPreserved": true,
+  "wrongPersistedAcrossReload": true,
+  "retryPass": true,
+  "wrongCleared": true,
+  "individualStudentDevicesTested": false
+}

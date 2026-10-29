@@ -1,0 +1,62 @@
+{
+  "sample": {
+    "id": "twg3-h9",
+    "question": "下圖是臺灣某地的氣候圖，冬季雨量特別多，最可能是哪裡？",
+    "options": [
+      "屏東",
+      "基隆",
+      "高雄",
+      "臺南"
+    ],
+    "answer": "基隆"
+  },
+  "svg": {
+    "height": 177.5,
+    "outerHTML": "<svg viewBox=\"0 0 320 200\" role=\"img\" aria-label=\"某地氣候圖（示意）\"><line x1=\"38\" x2=\"286\" y1=\"14\" y2=\"14\" class=\"fg\"></line><text x=\"34\" y=\"18\" text-anchor=\"end\" class=\"fx\">450</text><text x=\"290\" y=\"18\" text-anchor=\"start\" class=\"fx\">30</text><line x1=\"38\" x2=\"286\" y1=\"66\" y2=\"66\" class=\"fg\"></line><text x=\"34\" y=\"70\" text-anchor=\"end\" class=\"fx\">300</text><text x=\"290\" y=\"70\" text-anchor=\"start\" class=\"fx\">20</text><line x1=\"38\" x2=\"286\" y1=\"118\" y2=\"118\" class=\"fg\"></line><text x=\"34\" y=\"122\" text-anchor=\"end\" class=\"fx\">150</text><text x=\"290\" y=\"122\" text-anchor=\"start\" class=\"fx\">10</text><line x1=\"38\" x2=\"286\" y1=\"170\" y2=\"170\" class=\"fg\"></line><text x=\"34\" y=\"174\" text-anchor=\"end\" class=\"fx\">0</text><text x=\"290\" y=\"174\" text-anchor=\"start\" class=\"fx\">0</text><rect x=\"40\" y=\"55.60000000000001\" width=\"16.666666666666668\" height=\"114.39999999999999\" class=\"fr\"></rect><rect x=\"60.66666666666667\" y=\"41.73333333333335\" width=\"16.666666666666668\" height=\"128.26666666666665\" class=\"fr\"></rect><rect x=\"81.33333333333334\" y=\"66\" width=\"16.666666666666668\" height=\"104\" class=\"fr\"></rect><rect x=\"102\" y=\"83.33333333333333\" width=\"16.666666666666668\" height=\"86.66666666666667\" class=\"fr\"></rect><rect x=\"122.66666666666667\" y=\"72.93333333333334\" width=\"16.666666666666668\" height=\"97.06666666666666\" class=\"fr\"></rect><rect x=\"143.33333333333334\" y=\"69.46666666666665\" width=\"16.666666666666668\" height=\"100.53333333333335\" class=\"fr\"></rect><rect x=\"164\" y=\"118\" width=\"16.666666666666668\" height=\"52\" class=\"fr\"></rect><rect x=\"184.66666666666669\" y=\"97.2\" width=\"16.666666666666668\" height=\"72.8\" class=\"fr\"></rect><rect x=\"205.33333333333334\" y=\"41.73333333333335\" width=\"16.666666666666668\" height=\"128.26666666666665\" class=\"fr\"></rect><rect x=\"226\" y=\"41.73333333333335\" width=\"16.666666666666668\" height=\"128.26666666666665\" class=\"fr\"></rect><rect x=\"246.66666666666669\" y=\"38.26666666666668\" width=\"16.666666666666668\" height=\"131.73333333333332\" class=\"fr\"></rect><rect x=\"267.33333333333337\" y=\"66\" width=\"16.666666666666668\" height=\"104\" class=\"fr\"></rect><polyline points=\"48.333333333333336,86.8 69,86.8 89.66666666666667,81.60000000000001 110.33333333333333,60.80000000000001 131,45.19999999999999 151.66666666666669,29.599999999999994 172.33333333333334,19.19999999999999 193.00000000000003,19.19999999999999 213.66666666666669,29.599999999999994 234.33333333333334,45.19999999999999 255.00000000000003,60.80000000000001 275.6666666666667,81.60000000000001\" class=\"ft\"></polyline><circle cx=\"48.333333333333336\" cy=\"86.8\" r=\"2.6\" class=\"ftd\"></circle><circle cx=\"69\" cy=\"86.8\" r=\"2.6\" class=\"ftd\"></circle><circle cx=\"89.66666666666667\" cy=\"81.60000000000001\" r=\"2.6\" class=\"ftd\"></circle><circle cx=\"110.33333333333333\" cy=\"60.80000000000001\" r=\"2.6\" class=\"ftd\"></circle><circle cx=\"131\" cy=\"45.19999999999999\" r=\"2.6\" class=\"ftd\"></circle><circle cx=\"151.66666666666669\" cy=\"29.599999999999994\" r=\"2.6\" class=\"ftd\"></circle><circle cx=\"172.33333333333334\" cy=\"19.19999999999999\" r=\"2.6\" class=\"ftd\"></circle><circle cx=\"193.00000000000003\" cy=\"19.19999999999999\" r=\"2.6\" class=\"ftd\"></circle><circle cx=\"213.66666666666669\" cy=\"29.599999999999994\" r=\"2.6\" class=\"ftd\"></circle><circle cx=\"234.33333333333334\" cy=\"45.19999999999999\" r=\"2.6\" class=\"ftd\"></circle><circle cx=\"255.00000000000003\" cy=\"60.80000000000001\" r=\"2.6\" class=\"ftd\"></circle><circle cx=\"275.6666666666667\" cy=\"81.60000000000001\" r=\"2.6\" class=\"ftd\"></circle><text x=\"48.333333333333336\" y=\"184\" text-anchor=\"middle\" class=\"fx\">1</text><text x=\"69\" y=\"184\" text-anchor=\"middle\" class=\"fx\">2</text><text x=\"89.66666666666667\" y=\"184\" text-anchor=\"middle\" class=\"fx\">3</text><text x=\"110.33333333333333\" y=\"184\" text-anchor=\"middle\" class=\"fx\">4</text><text x=\"131\" y=\"184\" text-anchor=\"middle\" class=\"fx\">5</text><text x=\"151.66666666666669\" y=\"184\" text-anchor=\"middle\" class=\"fx\">6</text><text x=\"172.33333333333334\" y=\"184\" text-anchor=\"middle\" class=\"fx\">7</text><text x=\"193.00000000000003\" y=\"184\" text-anchor=\"middle\" class=\"fx\">8</text><text x=\"213.66666666666669\" y=\"184\" text-anchor=\"middle\" class=\"fx\">9</text><text x=\"234.33333333333334\" y=\"184\" text-anchor=\"middle\" class=\"fx\">10</text><text x=\"255.00000000000003\" y=\"184\" text-anchor=\"middle\" class=\"fx\">11</text><text x=\"275.6666666666667\" y=\"184\" text-anchor=\"middle\" class=\"fx\">12</text><text x=\"34\" y=\"196\" text-anchor=\"end\" class=\"fx fs\">雨量 mm</text><text x=\"162\" y=\"196\" text-anchor=\"middle\" class=\"fx fs\">月</text><text x=\"290\" y=\"196\" text-anchor=\"start\" class=\"fx fs\">氣溫 °C</text></svg>",
+    "texts": [
+      "450",
+      "30",
+      "300",
+      "20",
+      "150",
+      "10",
+      "0",
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "雨量 mm",
+      "月",
+      "氣溫 °C"
+    ],
+    "width": 284
+  },
+  "round": {
+    "chapter": "twg3",
+    "samples": [
+      {
+        "id": "twg3-h9",
+        "question": "下圖是臺灣某地的氣候圖，冬季雨量特別多，最可能是哪裡？",
+        "options": [
+          "屏東",
+          "基隆",
+          "高雄",
+          "臺南"
+        ],
+        "answer": "基隆",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 196, 199, 202, 205\n~\t\t\t\t\t194 button (disabled) A 屏東\n~\t\t\t\t\t\t195 text A 屏東\n~\t\t\t\t\t197 button (disabled) B 基隆\n~\t\t\t\t\t\t198 text B 基隆\n~\t\t\t\t\t200 button (disabled) C 高雄\n~\t\t\t\t\t\t201 text C 高雄\n~\t\t\t\t\t203 button (disabled) D 臺南\n~\t\t\t\t\t\t204 text D 臺南\n+\t\t\t\t205 container fb\n+\t\t\t\t\t206 text 答對了\n+\t\t\t\t\t207 text 冬季東北季風從海上帶來水氣，基隆位於迎風面，冬雨豐沛；南部冬季位於背風側，雨量很少。\n+\t\t\t\t\t208 text 下次複習：3 天後\n+\t\t\t\t\t209 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t210 button 回報錯誤, ID: rptBtn\n+\t\t\t\t211 button 看成績, ID: nextBtn\nThe focused UI element is 211 button 看成績, ID: nextBtn"
+      }
+    ],
+    "lastState": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 183, 187, 190-195, 197-198, 200-201, 203-211\n+\t\t\t187 text 已答對 212 / 3840 題．熟練 43．開放 9 / 9 座島\n~\t\t\t\t188 container 答對 1 題，共 1 題\n~\t\t\t\t189 text 全部答對\n+\t\t\t\t190 text 全對！這一輪的題目都掌握了。\n+\t\t\t\t191 content list\n+\t\t\t\t\t192 container\n+\t\t\t\t\t\t193 text 中等 1 / 1\n+\t\t\t\t194 button 再來 20 題, ID: rMore\n+\t\t\t\t195 button 回到島上, ID: rBack\n+\t\t\t\t196 button (collapsed) 這一輪的 1 題．覺得哪題有問題可以回報, Secondary Actions: Expand\n+\t\t\t\t\t197 text 這一輪的 1 題．覺得哪題有問題可以回報\nThe focused UI element is 194 button 再來 20 題, ID: rMore"
+  },
+  "pass": true
+}

@@ -1,0 +1,743 @@
+[
+  {
+    "chapter": "soc3",
+    "samples": [
+      {
+        "id": "soc3-g6",
+        "question": "「隔代教養家庭」的組成是？",
+        "options": [
+          "子女暫時寄住在社福機構",
+          "由祖父母照顧孫子女",
+          "子女白天由保母照顧",
+          "祖父母每逢過年才與孫子女團聚"
+        ],
+        "answer": "由祖父母照顧孫子女",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 106, 109, 112, 115\n~\t\t\t\t\t104 button (disabled) A 子女暫時寄住在社福機構\n~\t\t\t\t\t\t105 text A 子女暫時寄住在社福機構\n~\t\t\t\t\t107 button (disabled) B 由祖父母照顧孫子女\n~\t\t\t\t\t\t108 text B 由祖父母照顧孫子女\n~\t\t\t\t\t110 button (disabled) C 子女白天由保母照顧\n~\t\t\t\t\t\t111 text C 子女白天由保母照顧\n~\t\t\t\t\t113 button (disabled) D 祖父母每逢過年才與孫子女團聚\n~\t\t\t\t\t\t114 text D 祖父母每逢過年才與孫子女團聚\n+\t\t\t\t115 container fb\n+\t\t\t\t\t116 text 答對了\n+\t\t\t\t\t117 text 「隔代教養家庭」的重點是：由祖父母照顧孫子女。其他選項是常見的誤解，都不是「隔代教養家庭」的意思。\n+\t\t\t\t\t118 text 下次複習：3 天後\n+\t\t\t\t\t119 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t120 button 回報錯誤, ID: rptBtn\n+\t\t\t\t121 button 下一題, ID: nextBtn\nThe focused UI element is 121 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h0",
+        "question": "家庭最基本的功能之一，是讓孩子學習生活規範與價值觀，這屬於什麼功能？",
+        "options": [
+          "經濟功能",
+          "娛樂功能",
+          "教育與社會化功能",
+          "宗教功能"
+        ],
+        "answer": "教育與社會化功能",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 106, 109, 112, 115\n~\t\t\t\t\t104 button (disabled) A 經濟功能\n~\t\t\t\t\t\t105 text A 經濟功能\n~\t\t\t\t\t107 button (disabled) B 娛樂功能\n~\t\t\t\t\t\t108 text B 娛樂功能\n~\t\t\t\t\t110 button (disabled) C 教育與社會化功能\n~\t\t\t\t\t\t111 text C 教育與社會化功能\n~\t\t\t\t\t113 button (disabled) D 宗教功能\n~\t\t\t\t\t\t114 text D 宗教功能\n+\t\t\t\t115 container fb\n+\t\t\t\t\t116 text 答對了\n+\t\t\t\t\t117 text 家庭是社會化的起點，父母透過日常生活教導孩子規範、價值觀與待人處事的方法。\n+\t\t\t\t\t118 text 下次複習：3 天後\n+\t\t\t\t\t119 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t120 button 回報錯誤, ID: rptBtn\n+\t\t\t\t121 button 下一題, ID: nextBtn\nThe focused UI element is 121 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g22",
+        "question": "「教育功能」的例子是？",
+        "options": [
+          "政府制定教育政策",
+          "社區圖書館舉辦說故事活動",
+          "教導孩子生活規範與價值觀",
+          "補習班替學生加強課業"
+        ],
+        "answer": "教導孩子生活規範與價值觀",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 106, 109, 112, 115\n~\t\t\t\t\t104 button (disabled) A 政府制定教育政策\n~\t\t\t\t\t\t105 text A 政府制定教育政策\n~\t\t\t\t\t107 button (disabled) B 社區圖書館舉辦說故事活動\n~\t\t\t\t\t\t108 text B 社區圖書館舉辦說故事活動\n~\t\t\t\t\t110 button (disabled) C 教導孩子生活規範與價值觀\n~\t\t\t\t\t\t111 text C 教導孩子生活規範與價值觀\n~\t\t\t\t\t113 button (disabled) D 補習班替學生加強課業\n~\t\t\t\t\t\t114 text D 補習班替學生加強課業\n+\t\t\t\t115 container fb\n+\t\t\t\t\t116 text 答對了\n+\t\t\t\t\t117 text 「教育功能」的重點是：教導孩子生活規範與價值觀。其他選項是補習班、政府或社區的作為，不是家庭本身的功能。\n+\t\t\t\t\t118 text 下次複習：明天\n+\t\t\t\t\t119 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t120 button 回報錯誤, ID: rptBtn\n+\t\t\t\t121 button 下一題, ID: nextBtn\nThe focused UI element is 121 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h4",
+        "question": "全國保護專線的號碼是？",
+        "options": [
+          "119",
+          "113",
+          "165",
+          "110"
+        ],
+        "answer": "113",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 106, 109, 112, 115\n~\t\t\t\t\t104 button (disabled) A 119\n~\t\t\t\t\t\t105 text A 119\n~\t\t\t\t\t107 button (disabled) B 113\n~\t\t\t\t\t\t108 text B 113\n~\t\t\t\t\t110 button (disabled) C 165\n~\t\t\t\t\t\t111 text C 165\n~\t\t\t\t\t113 button (disabled) D 110\n~\t\t\t\t\t\t114 text D 110\n+\t\t\t\t115 container fb\n+\t\t\t\t\t116 text 答對了\n+\t\t\t\t\t117 text 遭遇家庭暴力、兒少虐待或性侵害，可撥打 113 保護專線求助；110 是報案電話，119 是消防救護。\n+\t\t\t\t\t118 text 下次複習：3 天後\n+\t\t\t\t\t119 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t120 button 回報錯誤, ID: rptBtn\n+\t\t\t\t121 button 下一題, ID: nextBtn\nThe focused UI element is 121 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g34",
+        "question": "「遭受家庭暴力」帶來的結果是？",
+        "options": [
+          "警察不會介入家庭事務",
+          "必須先離婚才能求助",
+          "只能默默忍受、無法求助",
+          "可以向法院聲請保護令"
+        ],
+        "answer": "可以向法院聲請保護令",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 106, 109, 112, 115\n~\t\t\t\t\t104 button (disabled) A 警察不會介入家庭事務\n~\t\t\t\t\t\t105 text A 警察不會介入家庭事務\n~\t\t\t\t\t107 button (disabled) B 必須先離婚才能求助\n~\t\t\t\t\t\t108 text B 必須先離婚才能求助\n~\t\t\t\t\t110 button (disabled) C 只能默默忍受、無法求助\n~\t\t\t\t\t\t111 text C 只能默默忍受、無法求助\n~\t\t\t\t\t113 button (disabled) D 可以向法院聲請保護令\n~\t\t\t\t\t\t114 text D 可以向法院聲請保護令\n+\t\t\t\t115 container fb\n+\t\t\t\t\t116 text 答對了\n+\t\t\t\t\t117 text 因為「遭受家庭暴力」，所以可以向法院聲請保護令。其他選項雖然和本單元有關，但都不是「遭受家庭暴力」直接造成的結果。\n+\t\t\t\t\t118 text 下次複習：明天\n+\t\t\t\t\t119 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t120 button 回報錯誤, ID: rptBtn\n+\t\t\t\t121 button 下一題, ID: nextBtn\nThe focused UI element is 121 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h8",
+        "question": "她可以向法院聲請什麼？",
+        "options": [
+          "保護令",
+          "營業登記",
+          "搜索票",
+          "支付命令"
+        ],
+        "answer": "保護令",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 保護令\n~\t\t\t\t\t\t107 text A 保護令\n~\t\t\t\t\t109 button (disabled) B 營業登記\n~\t\t\t\t\t\t110 text B 營業登記\n~\t\t\t\t\t112 button (disabled) C 搜索票\n~\t\t\t\t\t\t113 text C 搜索票\n~\t\t\t\t\t115 button (disabled) D 支付命令\n~\t\t\t\t\t\t116 text D 支付命令\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 家庭暴力防治法規定，被害人可以向法院聲請保護令，禁止加害人接近或騷擾。\n+\t\t\t\t\t120 text 下次複習：明天\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g4",
+        "question": "「單親家庭」的組成是？",
+        "options": [
+          "父母長期派駐國外、子女住校",
+          "子女由寄養家庭照顧",
+          "由父親或母親一人與子女組成",
+          "父母離婚後各自再婚組成的家庭"
+        ],
+        "answer": "由父親或母親一人與子女組成",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 106, 109, 112, 115\n~\t\t\t\t\t104 button (disabled) A 父母長期派駐國外、子女住校\n~\t\t\t\t\t\t105 text A 父母長期派駐國外、子女住校\n~\t\t\t\t\t107 button (disabled) B 子女由寄養家庭照顧\n~\t\t\t\t\t\t108 text B 子女由寄養家庭照顧\n~\t\t\t\t\t110 button (disabled) C 由父親或母親一人與子女組成\n~\t\t\t\t\t\t111 text C 由父親或母親一人與子女組成\n~\t\t\t\t\t113 button (disabled) D 父母離婚後各自再婚組成的家庭\n~\t\t\t\t\t\t114 text D 父母離婚後各自再婚組成的家庭\n+\t\t\t\t115 container fb\n+\t\t\t\t\t116 text 答對了\n+\t\t\t\t\t117 text 「單親家庭」的重點是：由父親或母親一人與子女組成。其他選項是常見的誤解，都不是「單親家庭」的意思。\n+\t\t\t\t\t118 text 下次複習：3 天後\n+\t\t\t\t\t119 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t120 button 回報錯誤, ID: rptBtn\n+\t\t\t\t121 button 下一題, ID: nextBtn\nThe focused UI element is 121 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h6",
+        "question": "子女與父母意見不同時，最適當的處理方式是？",
+        "options": [
+          "離家出走",
+          "理性溝通，說明自己的想法並傾聽父母意見",
+          "在網路上抱怨父母",
+          "等父母讓步再說"
+        ],
+        "answer": "理性溝通，說明自己的想法並傾聽父母意見",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 106, 109, 112, 115\n~\t\t\t\t\t104 button (disabled) A 離家出走\n~\t\t\t\t\t\t105 text A 離家出走\n~\t\t\t\t\t107 button (disabled) B 理性溝通，說明自己的想法並傾聽父母意見\n~\t\t\t\t\t\t108 text B 理性溝通，說明自己的想法並傾聽父母意見\n~\t\t\t\t\t110 button (disabled) C 在網路上抱怨父母\n~\t\t\t\t\t\t111 text C 在網路上抱怨父母\n~\t\t\t\t\t113 button (disabled) D 等父母讓步再說\n~\t\t\t\t\t\t114 text D 等父母讓步再說\n+\t\t\t\t115 container fb\n+\t\t\t\t\t116 text 答對了\n+\t\t\t\t\t117 text 家庭衝突透過溝通與互相理解，較能找到雙方都能接受的方式。\n+\t\t\t\t\t118 text 下次複習：明天\n+\t\t\t\t\t119 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t120 button 回報錯誤, ID: rptBtn\n+\t\t\t\t121 button 下一題, ID: nextBtn\nThe focused UI element is 121 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g40",
+        "question": "「跨國婚姻增加」帶來的結果是？",
+        "options": [
+          "本地出生人口比例提高",
+          "新住民家庭增加，文化更加多元",
+          "家庭文化變得單一",
+          "新住民家庭減少"
+        ],
+        "answer": "新住民家庭增加，文化更加多元",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 106, 109, 112, 115\n~\t\t\t\t\t104 button (disabled) A 本地出生人口比例提高\n~\t\t\t\t\t\t105 text A 本地出生人口比例提高\n~\t\t\t\t\t107 button (disabled) B 新住民家庭增加，文化更加多元\n~\t\t\t\t\t\t108 text B 新住民家庭增加，文化更加多元\n~\t\t\t\t\t110 button (disabled) C 家庭文化變得單一\n~\t\t\t\t\t\t111 text C 家庭文化變得單一\n~\t\t\t\t\t113 button (disabled) D 新住民家庭減少\n~\t\t\t\t\t\t114 text D 新住民家庭減少\n+\t\t\t\t115 container fb\n+\t\t\t\t\t116 text 答對了\n+\t\t\t\t\t117 text 因為「跨國婚姻增加」，所以新住民家庭增加，文化更加多元。其他選項雖然和本單元有關，但都不是「跨國婚姻增加」直接造成的結果。\n+\t\t\t\t\t118 text 下次複習：3 天後\n+\t\t\t\t\t119 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t120 button 回報錯誤, ID: rptBtn\n+\t\t\t\t121 button 下一題, ID: nextBtn\nThe focused UI element is 121 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g32",
+        "question": "「都市化使居住與工作型態改變」帶來的結果是？",
+        "options": [
+          "小家庭增加，家庭型態更加多元",
+          "家庭型態變得單一",
+          "大家庭比例增加",
+          "三代同堂成為主流"
+        ],
+        "answer": "小家庭增加，家庭型態更加多元",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 106, 109, 112, 115\n~\t\t\t\t\t104 button (disabled) A 小家庭增加，家庭型態更加多元\n~\t\t\t\t\t\t105 text A 小家庭增加，家庭型態更加多元\n~\t\t\t\t\t107 button (disabled) B 家庭型態變得單一\n~\t\t\t\t\t\t108 text B 家庭型態變得單一\n~\t\t\t\t\t110 button (disabled) C 大家庭比例增加\n~\t\t\t\t\t\t111 text C 大家庭比例增加\n~\t\t\t\t\t113 button (disabled) D 三代同堂成為主流\n~\t\t\t\t\t\t114 text D 三代同堂成為主流\n+\t\t\t\t115 container fb\n+\t\t\t\t\t116 text 答對了\n+\t\t\t\t\t117 text 因為「都市化使居住與工作型態改變」，所以小家庭增加，家庭型態更加多元。其他選項雖然和本單元有關，但都不是「都市化使居住與工作型態改變」直接造成的結果。\n+\t\t\t\t\t118 text 下次複習：明天\n+\t\t\t\t\t119 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t120 button 回報錯誤, ID: rptBtn\n+\t\t\t\t121 button 下一題, ID: nextBtn\nThe focused UI element is 121 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h5",
+        "question": "現代臺灣家庭型態的變化，下列敘述何者正確？",
+        "options": [
+          "三代同堂家庭比例越來越高",
+          "家庭不再有任何功能",
+          "家庭人數越來越多",
+          "家庭型態更加多元，例如單親、隔代教養、新住民家庭"
+        ],
+        "answer": "家庭型態更加多元，例如單親、隔代教養、新住民家庭",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 三代同堂家庭比例越來越高\n~\t\t\t\t\t\t55 text A 三代同堂家庭比例越來越高\n~\t\t\t\t\t57 button (disabled) B 家庭不再有任何功能\n~\t\t\t\t\t\t58 text B 家庭不再有任何功能\n~\t\t\t\t\t60 button (disabled) C 家庭人數越來越多\n~\t\t\t\t\t\t61 text C 家庭人數越來越多\n~\t\t\t\t\t63 button (disabled) D 家庭型態更加多元，例如單親、隔代教養、新住民家庭\n~\t\t\t\t\t\t64 text D 家庭型態更加多元，例如單親、隔代教養、新住民家庭\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 社會變遷使小家庭增加，也出現單親、隔代教養、跨國婚姻等多元家庭型態。\n+\t\t\t\t\t68 text 下次複習：3 天後\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g24",
+        "question": "「經濟功能」的例子是？",
+        "options": [
+          "銀行提供房屋貸款",
+          "家庭成員共同生活、分擔支出",
+          "政府發放失業補助",
+          "公司按月發薪水給員工"
+        ],
+        "answer": "家庭成員共同生活、分擔支出",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 銀行提供房屋貸款\n~\t\t\t\t\t\t55 text A 銀行提供房屋貸款\n~\t\t\t\t\t57 button (disabled) B 家庭成員共同生活、分擔支出\n~\t\t\t\t\t\t58 text B 家庭成員共同生活、分擔支出\n~\t\t\t\t\t60 button (disabled) C 政府發放失業補助\n~\t\t\t\t\t\t61 text C 政府發放失業補助\n~\t\t\t\t\t63 button (disabled) D 公司按月發薪水給員工\n~\t\t\t\t\t\t64 text D 公司按月發薪水給員工\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 「經濟功能」的重點是：家庭成員共同生活、分擔支出。其他選項是銀行、政府或公司的作為，不是家庭本身的功能。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g13",
+        "question": "「兄弟姊妹」屬於血親還是姻親？",
+        "options": [
+          "朋友關係",
+          "鄰里關係",
+          "姻親",
+          "血親"
+        ],
+        "answer": "血親",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 朋友關係\n~\t\t\t\t\t\t55 text A 朋友關係\n~\t\t\t\t\t57 button (disabled) B 鄰里關係\n~\t\t\t\t\t\t58 text B 鄰里關係\n~\t\t\t\t\t60 button (disabled) C 姻親\n~\t\t\t\t\t\t61 text C 姻親\n~\t\t\t\t\t63 button (disabled) D 血親\n~\t\t\t\t\t\t64 text D 血親\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 「兄弟姊妹」→ 血親。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g30",
+        "question": "「休閒功能」的例子是？",
+        "options": [
+          "一起出遊、共享休閒時光",
+          "學校舉辦校外教學",
+          "公司舉辦員工旅遊",
+          "社區舉辦運動會"
+        ],
+        "answer": "一起出遊、共享休閒時光",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 一起出遊、共享休閒時光\n~\t\t\t\t\t\t55 text A 一起出遊、共享休閒時光\n~\t\t\t\t\t57 button (disabled) B 學校舉辦校外教學\n~\t\t\t\t\t\t58 text B 學校舉辦校外教學\n~\t\t\t\t\t60 button (disabled) C 公司舉辦員工旅遊\n~\t\t\t\t\t\t61 text C 公司舉辦員工旅遊\n~\t\t\t\t\t63 button (disabled) D 社區舉辦運動會\n~\t\t\t\t\t\t64 text D 社區舉辦運動會\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 「休閒功能」的重點是：一起出遊、共享休閒時光。其他選項是公司、學校或社區辦的活動，不是家庭本身的功能。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g20",
+        "question": "「生育功能」的例子是？",
+        "options": [
+          "醫院提供產前檢查",
+          "政府發放生育補助",
+          "生育子女，延續家族與社會",
+          "學校實施性別平等教育"
+        ],
+        "answer": "生育子女，延續家族與社會",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 醫院提供產前檢查\n~\t\t\t\t\t\t55 text A 醫院提供產前檢查\n~\t\t\t\t\t57 button (disabled) B 政府發放生育補助\n~\t\t\t\t\t\t58 text B 政府發放生育補助\n~\t\t\t\t\t60 button (disabled) C 生育子女，延續家族與社會\n~\t\t\t\t\t\t61 text C 生育子女，延續家族與社會\n~\t\t\t\t\t63 button (disabled) D 學校實施性別平等教育\n~\t\t\t\t\t\t64 text D 學校實施性別平等教育\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 「生育功能」的重點是：生育子女，延續家族與社會。其他選項是政府、醫院或學校的作為，不是家庭本身的功能。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g29",
+        "question": "「照顧幼兒、老人與生病的家人」是家庭的哪一種功能？",
+        "options": [
+          "經濟功能",
+          "休閒功能",
+          "保護功能",
+          "情感功能"
+        ],
+        "answer": "保護功能",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 經濟功能\n~\t\t\t\t\t\t55 text A 經濟功能\n~\t\t\t\t\t57 button (disabled) B 休閒功能\n~\t\t\t\t\t\t58 text B 休閒功能\n~\t\t\t\t\t60 button (disabled) C 保護功能\n~\t\t\t\t\t\t61 text C 保護功能\n~\t\t\t\t\t63 button (disabled) D 情感功能\n~\t\t\t\t\t\t64 text D 情感功能\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 「照顧幼兒、老人與生病的家人」說的是「保護功能」。其他選項：「休閒功能」是一起出遊、共享休閒時光；「經濟功能」是家庭成員共同生活、分擔支出；「情感功能」是家人互相關心、提供支持。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g36",
+        "question": "「家人之間理性溝通」帶來的結果是？",
+        "options": [
+          "親子衝突更加嚴重",
+          "較能化解親子衝突",
+          "家人更少交談",
+          "家庭關係更加緊張"
+        ],
+        "answer": "較能化解親子衝突",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 親子衝突更加嚴重\n~\t\t\t\t\t\t55 text A 親子衝突更加嚴重\n~\t\t\t\t\t57 button (disabled) B 較能化解親子衝突\n~\t\t\t\t\t\t58 text B 較能化解親子衝突\n~\t\t\t\t\t60 button (disabled) C 家人更少交談\n~\t\t\t\t\t\t61 text C 家人更少交談\n~\t\t\t\t\t63 button (disabled) D 家庭關係更加緊張\n~\t\t\t\t\t\t64 text D 家庭關係更加緊張\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 因為「家人之間理性溝通」，所以較能化解親子衝突。其他選項雖然和本單元有關，但都不是「家人之間理性溝通」直接造成的結果。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g26",
+        "question": "「情感功能」的例子是？",
+        "options": [
+          "輔導室老師提供學生諮商",
+          "家人互相關心、提供支持",
+          "社區舉辦聯誼活動",
+          "網友在社群上按讚留言"
+        ],
+        "answer": "家人互相關心、提供支持",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 輔導室老師提供學生諮商\n~\t\t\t\t\t\t55 text A 輔導室老師提供學生諮商\n~\t\t\t\t\t57 button (disabled) B 家人互相關心、提供支持\n~\t\t\t\t\t\t58 text B 家人互相關心、提供支持\n~\t\t\t\t\t60 button (disabled) C 社區舉辦聯誼活動\n~\t\t\t\t\t\t61 text C 社區舉辦聯誼活動\n~\t\t\t\t\t63 button (disabled) D 網友在社群上按讚留言\n~\t\t\t\t\t\t64 text D 網友在社群上按讚留言\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 「情感功能」的重點是：家人互相關心、提供支持。其他選項是學校、網路或社區提供的支持，不是家庭本身的功能。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g39",
+        "question": "「祖父母或托育機構協助照顧孩子」最主要的原因是？",
+        "options": [
+          "家人週末去夜市",
+          "學校實施營養午餐",
+          "政府推動長期照顧",
+          "雙薪家庭增加"
+        ],
+        "answer": "雙薪家庭增加",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 56, 59, 62, 65\n~\t\t\t\t\t54 button (disabled) A 家人週末去夜市\n~\t\t\t\t\t\t55 text A 家人週末去夜市\n~\t\t\t\t\t57 button (disabled) B 學校實施營養午餐\n~\t\t\t\t\t\t58 text B 學校實施營養午餐\n~\t\t\t\t\t60 button (disabled) C 政府推動長期照顧\n~\t\t\t\t\t\t61 text C 政府推動長期照顧\n~\t\t\t\t\t63 button (disabled) D 雙薪家庭增加\n~\t\t\t\t\t\t64 text D 雙薪家庭增加\n+\t\t\t\t65 container fb\n+\t\t\t\t\t66 text 答對了\n+\t\t\t\t\t67 text 祖父母或托育機構協助照顧孩子，最主要是因為「雙薪家庭增加」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t68 text 下次複習：明天\n+\t\t\t\t\t69 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t70 button 回報錯誤, ID: rptBtn\n+\t\t\t\t71 button 下一題, ID: nextBtn\nThe focused UI element is 71 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h9",
+        "question": "小婕的家庭型態最接近？",
+        "options": [
+          "隔代教養家庭",
+          "核心家庭",
+          "單親家庭",
+          "折衷家庭"
+        ],
+        "answer": "折衷家庭",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 58, 61, 64, 67\n~\t\t\t\t\t56 button (disabled) A 隔代教養家庭\n~\t\t\t\t\t\t57 text A 隔代教養家庭\n~\t\t\t\t\t59 button (disabled) B 核心家庭\n~\t\t\t\t\t\t60 text B 核心家庭\n~\t\t\t\t\t62 button (disabled) C 單親家庭\n~\t\t\t\t\t\t63 text C 單親家庭\n~\t\t\t\t\t65 button (disabled) D 折衷家庭\n~\t\t\t\t\t\t66 text D 折衷家庭\n+\t\t\t\t67 container fb\n+\t\t\t\t\t68 text 答對了\n+\t\t\t\t\t69 text 祖父母、父母與子女三代同住，屬於折衷家庭。\n+\t\t\t\t\t70 text 下次複習：明天\n+\t\t\t\t\t71 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t72 button 回報錯誤, ID: rptBtn\n+\t\t\t\t73 button 看成績, ID: nextBtn\nThe focused UI element is 73 button 看成績, ID: nextBtn"
+      }
+    ],
+    "lastState": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\n1 AXWebArea 社會科複習島, URL: lutm6666.github.io/social-studies-review-island/\n\t2 container\n\t\t3 image Description: 可以拖曳旋轉的 3D 社會科群島, ID: scene\n\t\t8 container labels\n\t\t\t9 button 臺灣史島 七年級．925 題\n\t\t\t\t50 text 臺灣史島\n\t\t\t\t51 text 七年級．925 題\n\t\t\t10 button 中國與東亞史島 八年級．450 題\n\t\t\t\t52 text 中國與東亞史島\n\t\t\t\t53 text 八年級．450 題\n\t\t\t11 button 世界史島 九年級．444 題\n\t\t\t\t54 text 世界史島\n\t\t\t\t55 text 九年級．444 題\n\t\t\t12 button 臺灣地理島 七年級．488 題\n\t\t\t\t56 text 臺灣地理島\n\t\t\t\t57 text 七年級．488 題\n\t\t\t13 button 亞洲島 八年級．286 題\n\t\t\t\t58 text 亞洲島\n\t\t\t\t59 text 八年級．286 題\n\t\t\t14 button 世界島 九年級．243 題\n\t\t\t\t60 text 世界島\n\t\t\t\t61 text 九年級．243 題\n\t\t\t15 button 社會生活島 七年級．267 題\n\t\t\t\t62 text 社會生活島\n\t\t\t\t63 text 七年級．267 題\n\t\t\t16 button 政治與法律島 八年級．406 題\n\t\t\t\t64 text 政治與法律島\n\t\t\t\t65 text 八年級．406 題\n\t\t\t17 button 經濟與全球島 九年級．298 題\n\t\t\t\t66 text 經濟與全球島\n\t\t\t\t67 text 九年級．298 題\n\t\t\t18 button 🍾 錯題島 沒有錯題\n\t\t\t\t68 text 🍾 錯題島\n\t\t\t\t69 text 沒有錯題\n\t\t70 button ‹ 回到群島, ID: backBtn\n\t\t39 container 家庭, ID: panel\n\t\t\t47 text 社會生活島\n\t\t\t41 button Description: 關閉, ID: closeBtn\n\t\t\t42 heading 家庭, Value: 2, ID: panelTitle\n\t\t\t\t48 text 家庭\n\t\t\t49 text 第3章 家庭\n\t\t\t45 container panelBody\n\t\t\t\t71 container 答對 20 題，共 20 題\n\t\t\t\t72 text 全部答對\n\t\t\t\t73 text 全對！這一輪的題目都掌握了。\n\t\t\t\t74 content list\n\t\t\t\t\t75 container\n\t\t\t\t\t\t76 text 簡單 1 / 1\n\t\t\t\t\t77 container\n\t\t\t\t\t\t78 text 中等 16 / 16\n\t\t\t\t\t79 container\n\t\t\t\t\t\t80 text 困難 3 / 3\n\t\t\t\t81 button 再來 20 題, ID: rMore\n\t\t\t\t82 button 回到島上, ID: rBack\n\t\t\t\t83 button (collapsed) 這一輪的 20 題．覺得哪題有問題可以回報, Secondary Actions: Expand\n\t\t\t\t\t84 text 這一輪的 20 題．覺得哪題有問題可以回報\n\nThe focused UI element is 81 button 再來 20 題, ID: rMore",
+    "scorePass": true
+  },
+  {
+    "chapter": "soc3",
+    "samples": [
+      {
+        "id": "soc3-h8",
+        "question": "她可以向法院聲請什麼？",
+        "options": [
+          "保護令",
+          "支付命令",
+          "搜索票",
+          "營業登記"
+        ],
+        "answer": "保護令",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 110, 113, 116, 119\n~\t\t\t\t\t108 button (disabled) A 保護令\n~\t\t\t\t\t\t109 text A 保護令\n~\t\t\t\t\t111 button (disabled) B 支付命令\n~\t\t\t\t\t\t112 text B 支付命令\n~\t\t\t\t\t114 button (disabled) C 搜索票\n~\t\t\t\t\t\t115 text C 搜索票\n~\t\t\t\t\t117 button (disabled) D 營業登記\n~\t\t\t\t\t\t118 text D 營業登記\n+\t\t\t\t119 container fb\n+\t\t\t\t\t120 text 答對了\n+\t\t\t\t\t121 text 家庭暴力防治法規定，被害人可以向法院聲請保護令，禁止加害人接近或騷擾。\n+\t\t\t\t\t122 text 下次複習：3 天後\n+\t\t\t\t\t123 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t124 button 回報錯誤, ID: rptBtn\n+\t\t\t\t125 button 下一題, ID: nextBtn\nThe focused UI element is 125 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g38",
+        "question": "「雙薪家庭增加」帶來的結果是？",
+        "options": [
+          "祖父母較少參與照顧",
+          "托育需求減少",
+          "父母全天在家照顧孩子",
+          "祖父母或托育機構協助照顧孩子"
+        ],
+        "answer": "祖父母或托育機構協助照顧孩子",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 祖父母較少參與照顧\n~\t\t\t\t\t\t107 text A 祖父母較少參與照顧\n~\t\t\t\t\t109 button (disabled) B 托育需求減少\n~\t\t\t\t\t\t110 text B 托育需求減少\n~\t\t\t\t\t112 button (disabled) C 父母全天在家照顧孩子\n~\t\t\t\t\t\t113 text C 父母全天在家照顧孩子\n~\t\t\t\t\t115 button (disabled) D 祖父母或托育機構協助照顧孩子\n~\t\t\t\t\t\t116 text D 祖父母或托育機構協助照顧孩子\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 因為「雙薪家庭增加」，所以祖父母或托育機構協助照顧孩子。其他選項雖然和本單元有關，但都不是「雙薪家庭增加」直接造成的結果。\n+\t\t\t\t\t120 text 下次複習：3 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g35",
+        "question": "「可以向法院聲請保護令」最主要的原因是？",
+        "options": [
+          "社區舉辦運動會",
+          "家人一起看電視",
+          "學校舉辦親師座談",
+          "遭受家庭暴力"
+        ],
+        "answer": "遭受家庭暴力",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 社區舉辦運動會\n~\t\t\t\t\t\t107 text A 社區舉辦運動會\n~\t\t\t\t\t109 button (disabled) B 家人一起看電視\n~\t\t\t\t\t\t110 text B 家人一起看電視\n~\t\t\t\t\t112 button (disabled) C 學校舉辦親師座談\n~\t\t\t\t\t\t113 text C 學校舉辦親師座談\n~\t\t\t\t\t115 button (disabled) D 遭受家庭暴力\n~\t\t\t\t\t\t116 text D 遭受家庭暴力\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 可以向法院聲請保護令，最主要是因為「遭受家庭暴力」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t120 text 下次複習：明天\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g37",
+        "question": "「較能化解親子衝突」最主要的原因是？",
+        "options": [
+          "家中添購電腦",
+          "社區設立公園",
+          "政府推行全民健保",
+          "家人之間理性溝通"
+        ],
+        "answer": "家人之間理性溝通",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 家中添購電腦\n~\t\t\t\t\t\t107 text A 家中添購電腦\n~\t\t\t\t\t109 button (disabled) B 社區設立公園\n~\t\t\t\t\t\t110 text B 社區設立公園\n~\t\t\t\t\t112 button (disabled) C 政府推行全民健保\n~\t\t\t\t\t\t113 text C 政府推行全民健保\n~\t\t\t\t\t115 button (disabled) D 家人之間理性溝通\n~\t\t\t\t\t\t116 text D 家人之間理性溝通\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 較能化解親子衝突，最主要是因為「家人之間理性溝通」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t120 text 下次複習：3 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g25",
+        "question": "「家庭成員共同生活、分擔支出」是家庭的哪一種功能？",
+        "options": [
+          "情感功能",
+          "保護功能",
+          "經濟功能",
+          "教育功能"
+        ],
+        "answer": "經濟功能",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 情感功能\n~\t\t\t\t\t\t107 text A 情感功能\n~\t\t\t\t\t109 button (disabled) B 保護功能\n~\t\t\t\t\t\t110 text B 保護功能\n~\t\t\t\t\t112 button (disabled) C 經濟功能\n~\t\t\t\t\t\t113 text C 經濟功能\n~\t\t\t\t\t115 button (disabled) D 教育功能\n~\t\t\t\t\t\t116 text D 教育功能\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 「家庭成員共同生活、分擔支出」說的是「經濟功能」。其他選項：「教育功能」是教導孩子生活規範與價值觀；「情感功能」是家人互相關心、提供支持；「保護功能」是照顧幼兒、老人與生病的家人。\n+\t\t\t\t\t120 text 下次複習：明天\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h6",
+        "question": "子女與父母意見不同時，最適當的處理方式是？",
+        "options": [
+          "等父母讓步再說",
+          "在網路上抱怨父母",
+          "離家出走",
+          "理性溝通，說明自己的想法並傾聽父母意見"
+        ],
+        "answer": "理性溝通，說明自己的想法並傾聽父母意見",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 等父母讓步再說\n~\t\t\t\t\t\t107 text A 等父母讓步再說\n~\t\t\t\t\t109 button (disabled) B 在網路上抱怨父母\n~\t\t\t\t\t\t110 text B 在網路上抱怨父母\n~\t\t\t\t\t112 button (disabled) C 離家出走\n~\t\t\t\t\t\t113 text C 離家出走\n~\t\t\t\t\t115 button (disabled) D 理性溝通，說明自己的想法並傾聽父母意見\n~\t\t\t\t\t\t116 text D 理性溝通，說明自己的想法並傾聽父母意見\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 家庭衝突透過溝通與互相理解，較能找到雙方都能接受的方式。\n+\t\t\t\t\t120 text 下次複習：3 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g9",
+        "question": "「夫妻都有工作收入、沒有子女」指的是哪一種家庭型態？",
+        "options": [
+          "折衷家庭",
+          "核心家庭",
+          "隔代教養家庭",
+          "頂客族家庭"
+        ],
+        "answer": "頂客族家庭",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 折衷家庭\n~\t\t\t\t\t\t107 text A 折衷家庭\n~\t\t\t\t\t109 button (disabled) B 核心家庭\n~\t\t\t\t\t\t110 text B 核心家庭\n~\t\t\t\t\t112 button (disabled) C 隔代教養家庭\n~\t\t\t\t\t\t113 text C 隔代教養家庭\n~\t\t\t\t\t115 button (disabled) D 頂客族家庭\n~\t\t\t\t\t\t116 text D 頂客族家庭\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 「夫妻都有工作收入、沒有子女」說的是「頂客族家庭」。其他選項：「隔代教養家庭」是由祖父母照顧孫子女；「核心家庭」是父母與未婚子女；「折衷家庭」是祖父母、父母與子女三代同住。\n+\t\t\t\t\t120 text 下次複習：明天\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g0",
+        "question": "「核心家庭」的組成是？",
+        "options": [
+          "祖父母、父母與叔伯等多房親戚同住",
+          "只有未婚兄弟姊妹同住，沒有父母同住",
+          "父母與未婚子女",
+          "子女由社福機構安排到其他家庭照顧"
+        ],
+        "answer": "父母與未婚子女",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 祖父母、父母與叔伯等多房親戚同住\n~\t\t\t\t\t\t107 text A 祖父母、父母與叔伯等多房親戚同住\n~\t\t\t\t\t109 button (disabled) B 只有未婚兄弟姊妹同住，沒有父母同住\n~\t\t\t\t\t\t110 text B 只有未婚兄弟姊妹同住，沒有父母同住\n~\t\t\t\t\t112 button (disabled) C 父母與未婚子女\n~\t\t\t\t\t\t113 text C 父母與未婚子女\n~\t\t\t\t\t115 button (disabled) D 子女由社福機構安排到其他家庭照顧\n~\t\t\t\t\t\t116 text D 子女由社福機構安排到其他家庭照顧\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 「核心家庭」的重點是：父母與未婚子女。其他選項是常見的誤解，都不是「核心家庭」的意思。\n+\t\t\t\t\t120 text 下次複習：3 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g30",
+        "question": "「休閒功能」的例子是？",
+        "options": [
+          "社區舉辦運動會",
+          "公司舉辦員工旅遊",
+          "學校舉辦校外教學",
+          "一起出遊、共享休閒時光"
+        ],
+        "answer": "一起出遊、共享休閒時光",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 社區舉辦運動會\n~\t\t\t\t\t\t107 text A 社區舉辦運動會\n~\t\t\t\t\t109 button (disabled) B 公司舉辦員工旅遊\n~\t\t\t\t\t\t110 text B 公司舉辦員工旅遊\n~\t\t\t\t\t112 button (disabled) C 學校舉辦校外教學\n~\t\t\t\t\t\t113 text C 學校舉辦校外教學\n~\t\t\t\t\t115 button (disabled) D 一起出遊、共享休閒時光\n~\t\t\t\t\t\t116 text D 一起出遊、共享休閒時光\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 「休閒功能」的重點是：一起出遊、共享休閒時光。其他選項是公司、學校或社區辦的活動，不是家庭本身的功能。\n+\t\t\t\t\t120 text 下次複習：3 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g28",
+        "question": "「保護功能」的例子是？",
+        "options": [
+          "長照機構照顧失能長者",
+          "照顧幼兒、老人與生病的家人",
+          "警察巡邏維護社區治安",
+          "醫院照顧住院病人"
+        ],
+        "answer": "照顧幼兒、老人與生病的家人",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 長照機構照顧失能長者\n~\t\t\t\t\t\t107 text A 長照機構照顧失能長者\n~\t\t\t\t\t109 button (disabled) B 照顧幼兒、老人與生病的家人\n~\t\t\t\t\t\t110 text B 照顧幼兒、老人與生病的家人\n~\t\t\t\t\t112 button (disabled) C 警察巡邏維護社區治安\n~\t\t\t\t\t\t113 text C 警察巡邏維護社區治安\n~\t\t\t\t\t115 button (disabled) D 醫院照顧住院病人\n~\t\t\t\t\t\t116 text D 醫院照顧住院病人\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 「保護功能」的重點是：照顧幼兒、老人與生病的家人。其他選項是警察、醫院或照顧機構的作為，不是家庭本身的功能。\n+\t\t\t\t\t120 text 下次複習：3 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g22",
+        "question": "「教育功能」的例子是？",
+        "options": [
+          "教導孩子生活規範與價值觀",
+          "政府制定教育政策",
+          "補習班替學生加強課業",
+          "社區圖書館舉辦說故事活動"
+        ],
+        "answer": "教導孩子生活規範與價值觀",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 教導孩子生活規範與價值觀\n~\t\t\t\t\t\t107 text A 教導孩子生活規範與價值觀\n~\t\t\t\t\t109 button (disabled) B 政府制定教育政策\n~\t\t\t\t\t\t110 text B 政府制定教育政策\n~\t\t\t\t\t112 button (disabled) C 補習班替學生加強課業\n~\t\t\t\t\t\t113 text C 補習班替學生加強課業\n~\t\t\t\t\t115 button (disabled) D 社區圖書館舉辦說故事活動\n~\t\t\t\t\t\t116 text D 社區圖書館舉辦說故事活動\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 「教育功能」的重點是：教導孩子生活規範與價值觀。其他選項是補習班、政府或社區的作為，不是家庭本身的功能。\n+\t\t\t\t\t120 text 下次複習：3 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g33",
+        "question": "「小家庭增加，家庭型態更加多元」最主要的原因是？",
+        "options": [
+          "政府發放育兒津貼",
+          "政府推動長期照顧",
+          "都市化使居住與工作型態改變",
+          "學校實施營養午餐"
+        ],
+        "answer": "都市化使居住與工作型態改變",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 政府發放育兒津貼\n~\t\t\t\t\t\t107 text A 政府發放育兒津貼\n~\t\t\t\t\t109 button (disabled) B 政府推動長期照顧\n~\t\t\t\t\t\t110 text B 政府推動長期照顧\n~\t\t\t\t\t112 button (disabled) C 都市化使居住與工作型態改變\n~\t\t\t\t\t\t113 text C 都市化使居住與工作型態改變\n~\t\t\t\t\t115 button (disabled) D 學校實施營養午餐\n~\t\t\t\t\t\t116 text D 學校實施營養午餐\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 小家庭增加，家庭型態更加多元，最主要是因為「都市化使居住與工作型態改變」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t120 text 下次複習：3 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g26",
+        "question": "「情感功能」的例子是？",
+        "options": [
+          "輔導室老師提供學生諮商",
+          "家人互相關心、提供支持",
+          "社區舉辦聯誼活動",
+          "網友在社群上按讚留言"
+        ],
+        "answer": "家人互相關心、提供支持",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 輔導室老師提供學生諮商\n~\t\t\t\t\t\t107 text A 輔導室老師提供學生諮商\n~\t\t\t\t\t109 button (disabled) B 家人互相關心、提供支持\n~\t\t\t\t\t\t110 text B 家人互相關心、提供支持\n~\t\t\t\t\t112 button (disabled) C 社區舉辦聯誼活動\n~\t\t\t\t\t\t113 text C 社區舉辦聯誼活動\n~\t\t\t\t\t115 button (disabled) D 網友在社群上按讚留言\n~\t\t\t\t\t\t116 text D 網友在社群上按讚留言\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 「情感功能」的重點是：家人互相關心、提供支持。其他選項是學校、網路或社區提供的支持，不是家庭本身的功能。\n+\t\t\t\t\t120 text 下次複習：3 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g10",
+        "question": "「新住民家庭」的組成是？",
+        "options": [
+          "父母都在外縣市工作的家庭",
+          "原住民族的家庭",
+          "全家移民到國外的臺灣家庭",
+          "父母一方是從其他國家或地區移居臺灣的新住民"
+        ],
+        "answer": "父母一方是從其他國家或地區移居臺灣的新住民",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 父母都在外縣市工作的家庭\n~\t\t\t\t\t\t107 text A 父母都在外縣市工作的家庭\n~\t\t\t\t\t109 button (disabled) B 原住民族的家庭\n~\t\t\t\t\t\t110 text B 原住民族的家庭\n~\t\t\t\t\t112 button (disabled) C 全家移民到國外的臺灣家庭\n~\t\t\t\t\t\t113 text C 全家移民到國外的臺灣家庭\n~\t\t\t\t\t115 button (disabled) D 父母一方是從其他國家或地區移居臺灣的新住民\n~\t\t\t\t\t\t116 text D 父母一方是從其他國家或地區移居臺灣的新住民\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 「新住民家庭」的重點是：父母一方是從其他國家或地區移居臺灣的新住民。其他選項是常見的誤解，都不是「新住民家庭」的意思。\n+\t\t\t\t\t120 text 下次複習：3 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g14",
+        "question": "「祖父母」屬於血親還是姻親？",
+        "options": [
+          "血親",
+          "姻親",
+          "鄰里關係",
+          "朋友關係"
+        ],
+        "answer": "血親",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 血親\n~\t\t\t\t\t\t107 text A 血親\n~\t\t\t\t\t109 button (disabled) B 姻親\n~\t\t\t\t\t\t110 text B 姻親\n~\t\t\t\t\t112 button (disabled) C 鄰里關係\n~\t\t\t\t\t\t113 text C 鄰里關係\n~\t\t\t\t\t115 button (disabled) D 朋友關係\n~\t\t\t\t\t\t116 text D 朋友關係\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 「祖父母」→ 血親。\n+\t\t\t\t\t120 text 下次複習：明天\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g4",
+        "question": "「單親家庭」的組成是？",
+        "options": [
+          "父母長期派駐國外、子女住校",
+          "由父親或母親一人與子女組成",
+          "父母離婚後各自再婚組成的家庭",
+          "子女由寄養家庭照顧"
+        ],
+        "answer": "由父親或母親一人與子女組成",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 父母長期派駐國外、子女住校\n~\t\t\t\t\t\t107 text A 父母長期派駐國外、子女住校\n~\t\t\t\t\t109 button (disabled) B 由父親或母親一人與子女組成\n~\t\t\t\t\t\t110 text B 由父親或母親一人與子女組成\n~\t\t\t\t\t112 button (disabled) C 父母離婚後各自再婚組成的家庭\n~\t\t\t\t\t\t113 text C 父母離婚後各自再婚組成的家庭\n~\t\t\t\t\t115 button (disabled) D 子女由寄養家庭照顧\n~\t\t\t\t\t\t116 text D 子女由寄養家庭照顧\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 「單親家庭」的重點是：由父親或母親一人與子女組成。其他選項是常見的誤解，都不是「單親家庭」的意思。\n+\t\t\t\t\t120 text 下次複習：7 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g20",
+        "question": "「生育功能」的例子是？",
+        "options": [
+          "生育子女，延續家族與社會",
+          "醫院提供產前檢查",
+          "政府發放生育補助",
+          "學校實施性別平等教育"
+        ],
+        "answer": "生育子女，延續家族與社會",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 生育子女，延續家族與社會\n~\t\t\t\t\t\t107 text A 生育子女，延續家族與社會\n~\t\t\t\t\t109 button (disabled) B 醫院提供產前檢查\n~\t\t\t\t\t\t110 text B 醫院提供產前檢查\n~\t\t\t\t\t112 button (disabled) C 政府發放生育補助\n~\t\t\t\t\t\t113 text C 政府發放生育補助\n~\t\t\t\t\t115 button (disabled) D 學校實施性別平等教育\n~\t\t\t\t\t\t116 text D 學校實施性別平等教育\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 「生育功能」的重點是：生育子女，延續家族與社會。其他選項是政府、醫院或學校的作為，不是家庭本身的功能。\n+\t\t\t\t\t120 text 下次複習：3 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g6",
+        "question": "「隔代教養家庭」的組成是？",
+        "options": [
+          "子女暫時寄住在社福機構",
+          "祖父母每逢過年才與孫子女團聚",
+          "由祖父母照顧孫子女",
+          "子女白天由保母照顧"
+        ],
+        "answer": "由祖父母照顧孫子女",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 子女暫時寄住在社福機構\n~\t\t\t\t\t\t107 text A 子女暫時寄住在社福機構\n~\t\t\t\t\t109 button (disabled) B 祖父母每逢過年才與孫子女團聚\n~\t\t\t\t\t\t110 text B 祖父母每逢過年才與孫子女團聚\n~\t\t\t\t\t112 button (disabled) C 由祖父母照顧孫子女\n~\t\t\t\t\t\t113 text C 由祖父母照顧孫子女\n~\t\t\t\t\t115 button (disabled) D 子女白天由保母照顧\n~\t\t\t\t\t\t116 text D 子女白天由保母照顧\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 「隔代教養家庭」的重點是：由祖父母照顧孫子女。其他選項是常見的誤解，都不是「隔代教養家庭」的意思。\n+\t\t\t\t\t120 text 下次複習：7 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g40",
+        "question": "「跨國婚姻增加」帶來的結果是？",
+        "options": [
+          "新住民家庭增加，文化更加多元",
+          "家庭文化變得單一",
+          "本地出生人口比例提高",
+          "新住民家庭減少"
+        ],
+        "answer": "新住民家庭增加，文化更加多元",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 新住民家庭增加，文化更加多元\n~\t\t\t\t\t\t107 text A 新住民家庭增加，文化更加多元\n~\t\t\t\t\t109 button (disabled) B 家庭文化變得單一\n~\t\t\t\t\t\t110 text B 家庭文化變得單一\n~\t\t\t\t\t112 button (disabled) C 本地出生人口比例提高\n~\t\t\t\t\t\t113 text C 本地出生人口比例提高\n~\t\t\t\t\t115 button (disabled) D 新住民家庭減少\n~\t\t\t\t\t\t116 text D 新住民家庭減少\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 因為「跨國婚姻增加」，所以新住民家庭增加，文化更加多元。其他選項雖然和本單元有關，但都不是「跨國婚姻增加」直接造成的結果。\n+\t\t\t\t\t120 text 下次複習：7 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 下一題, ID: nextBtn\nThe focused UI element is 123 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g2",
+        "question": "「折衷家庭」的組成是？",
+        "options": [
+          "子女暫時寄住在親戚家",
+          "祖父母、父母與子女三代同住",
+          "父母再婚後組成的家庭",
+          "多個已婚兄弟的家庭與父母同住"
+        ],
+        "answer": "祖父母、父母與子女三代同住",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 108, 111, 114, 117\n~\t\t\t\t\t106 button (disabled) A 子女暫時寄住在親戚家\n~\t\t\t\t\t\t107 text A 子女暫時寄住在親戚家\n~\t\t\t\t\t109 button (disabled) B 祖父母、父母與子女三代同住\n~\t\t\t\t\t\t110 text B 祖父母、父母與子女三代同住\n~\t\t\t\t\t112 button (disabled) C 父母再婚後組成的家庭\n~\t\t\t\t\t\t113 text C 父母再婚後組成的家庭\n~\t\t\t\t\t115 button (disabled) D 多個已婚兄弟的家庭與父母同住\n~\t\t\t\t\t\t116 text D 多個已婚兄弟的家庭與父母同住\n+\t\t\t\t117 container fb\n+\t\t\t\t\t118 text 答對了\n+\t\t\t\t\t119 text 「折衷家庭」的重點是：祖父母、父母與子女三代同住。補充：祖父母、父母、子女三代同住，但只有一對已婚子女同住。其他選項是常見的誤解，都不是「折衷家庭」的意思。\n+\t\t\t\t\t120 text 下次複習：3 天後\n+\t\t\t\t\t121 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t122 button 回報錯誤, ID: rptBtn\n+\t\t\t\t123 button 看成績, ID: nextBtn\nThe focused UI element is 123 button 看成績, ID: nextBtn"
+      }
+    ],
+    "lastState": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 71-77, 96-98, 102-107, 109-110, 112-113, 115-122\n+\t\t\t\t102 text 七年級．925 題\n+\t\t\t\t103 text 八年級．450 題\n+\t\t\t\t104 text 九年級．444 題\n+\t\t\t\t105 text 七年級．488 題\n+\t\t\t\t106 text 八年級．286 題\n+\t\t\t\t107 text 九年級．243 題\n+\t\t\t\t108 text 七年級．267 題\n+\t\t\t\t109 text 八年級．406 題\n+\t\t\t\t110 text 九年級．298 題\n+\t\t\t\t111 text 沒有錯題\n+\t\t\t\t112 container 答對 20 題，共 20 題\n+\t\t\t\t113 text 全部答對\n+\t\t\t\t114 text 全對！這一輪的題目都掌握了。\n+\t\t\t\t115 content list\n+\t\t\t\t\t116 container\n+\t\t\t\t\t\t117 text 簡單 2 / 2\n+\t\t\t\t\t118 container\n+\t\t\t\t\t\t119 text 中等 14 / 14\n+\t\t\t\t\t120 container\n+\t\t\t\t\t\t121 text 困難 4 / 4\n+\t\t\t\t122 button 再來 20 題, ID: rMore\n~\t\t\t\t123 button 回到島上, ID: rBack\n+\t\t\t\t124 button (collapsed) 這一輪的 20 題．覺得哪題有問題可以回報, Secondary Actions: Expand\n+\t\t\t\t\t125 text 這一輪的 20 題．覺得哪題有問題可以回報\nThe focused UI element is 122 button 再來 20 題, ID: rMore",
+    "scorePass": true
+  },
+  {
+    "chapter": "soc3",
+    "samples": [
+      {
+        "id": "soc3-g2",
+        "question": "「折衷家庭」的組成是？",
+        "options": [
+          "子女暫時寄住在親戚家",
+          "祖父母、父母與子女三代同住",
+          "父母再婚後組成的家庭",
+          "多個已婚兄弟的家庭與父母同住"
+        ],
+        "answer": "祖父母、父母與子女三代同住",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 子女暫時寄住在親戚家\n~\t\t\t\t\t\t114 text A 子女暫時寄住在親戚家\n~\t\t\t\t\t116 button (disabled) B 祖父母、父母與子女三代同住\n~\t\t\t\t\t\t117 text B 祖父母、父母與子女三代同住\n~\t\t\t\t\t119 button (disabled) C 父母再婚後組成的家庭\n~\t\t\t\t\t\t120 text C 父母再婚後組成的家庭\n~\t\t\t\t\t122 button (disabled) D 多個已婚兄弟的家庭與父母同住\n~\t\t\t\t\t\t123 text D 多個已婚兄弟的家庭與父母同住\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 「折衷家庭」的重點是：祖父母、父母與子女三代同住。補充：祖父母、父母、子女三代同住，但只有一對已婚子女同住。其他選項是常見的誤解，都不是「折衷家庭」的意思。\n+\t\t\t\t\t127 text 下次複習：7 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g23",
+        "question": "「教導孩子生活規範與價值觀」是家庭的哪一種功能？",
+        "options": [
+          "情感功能",
+          "教育功能",
+          "休閒功能",
+          "經濟功能"
+        ],
+        "answer": "教育功能",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 情感功能\n~\t\t\t\t\t\t114 text A 情感功能\n~\t\t\t\t\t116 button (disabled) B 教育功能\n~\t\t\t\t\t\t117 text B 教育功能\n~\t\t\t\t\t119 button (disabled) C 休閒功能\n~\t\t\t\t\t\t120 text C 休閒功能\n~\t\t\t\t\t122 button (disabled) D 經濟功能\n~\t\t\t\t\t\t123 text D 經濟功能\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 「教導孩子生活規範與價值觀」說的是「教育功能」。其他選項：「休閒功能」是一起出遊、共享休閒時光；「經濟功能」是家庭成員共同生活、分擔支出；「情感功能」是家人互相關心、提供支持。\n+\t\t\t\t\t127 text 下次複習：明天\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g5",
+        "question": "「由父親或母親一人與子女組成」指的是哪一種家庭型態？",
+        "options": [
+          "單親家庭",
+          "新住民家庭",
+          "折衷家庭",
+          "核心家庭"
+        ],
+        "answer": "單親家庭",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 單親家庭\n~\t\t\t\t\t\t114 text A 單親家庭\n~\t\t\t\t\t116 button (disabled) B 新住民家庭\n~\t\t\t\t\t\t117 text B 新住民家庭\n~\t\t\t\t\t119 button (disabled) C 折衷家庭\n~\t\t\t\t\t\t120 text C 折衷家庭\n~\t\t\t\t\t122 button (disabled) D 核心家庭\n~\t\t\t\t\t\t123 text D 核心家庭\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 「由父親或母親一人與子女組成」說的是「單親家庭」。其他選項：「折衷家庭」是祖父母、父母與子女三代同住；「核心家庭」是父母與未婚子女；「新住民家庭」是父母一方是從其他國家或地區移居臺灣的新住民。\n+\t\t\t\t\t127 text 下次複習：明天\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g32",
+        "question": "「都市化使居住與工作型態改變」帶來的結果是？",
+        "options": [
+          "三代同堂成為主流",
+          "大家庭比例增加",
+          "小家庭增加，家庭型態更加多元",
+          "家庭型態變得單一"
+        ],
+        "answer": "小家庭增加，家庭型態更加多元",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 三代同堂成為主流\n~\t\t\t\t\t\t114 text A 三代同堂成為主流\n~\t\t\t\t\t116 button (disabled) B 大家庭比例增加\n~\t\t\t\t\t\t117 text B 大家庭比例增加\n~\t\t\t\t\t119 button (disabled) C 小家庭增加，家庭型態更加多元\n~\t\t\t\t\t\t120 text C 小家庭增加，家庭型態更加多元\n~\t\t\t\t\t122 button (disabled) D 家庭型態變得單一\n~\t\t\t\t\t\t123 text D 家庭型態變得單一\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 因為「都市化使居住與工作型態改變」，所以小家庭增加，家庭型態更加多元。其他選項雖然和本單元有關，但都不是「都市化使居住與工作型態改變」直接造成的結果。\n+\t\t\t\t\t127 text 下次複習：3 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g0",
+        "question": "「核心家庭」的組成是？",
+        "options": [
+          "只有未婚兄弟姊妹同住，沒有父母同住",
+          "父母與未婚子女",
+          "祖父母、父母與叔伯等多房親戚同住",
+          "子女由社福機構安排到其他家庭照顧"
+        ],
+        "answer": "父母與未婚子女",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 只有未婚兄弟姊妹同住，沒有父母同住\n~\t\t\t\t\t\t114 text A 只有未婚兄弟姊妹同住，沒有父母同住\n~\t\t\t\t\t116 button (disabled) B 父母與未婚子女\n~\t\t\t\t\t\t117 text B 父母與未婚子女\n~\t\t\t\t\t119 button (disabled) C 祖父母、父母與叔伯等多房親戚同住\n~\t\t\t\t\t\t120 text C 祖父母、父母與叔伯等多房親戚同住\n~\t\t\t\t\t122 button (disabled) D 子女由社福機構安排到其他家庭照顧\n~\t\t\t\t\t\t123 text D 子女由社福機構安排到其他家庭照顧\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 「核心家庭」的重點是：父母與未婚子女。其他選項是常見的誤解，都不是「核心家庭」的意思。\n+\t\t\t\t\t127 text 下次複習：7 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g8",
+        "question": "「頂客族家庭」的組成是？",
+        "options": [
+          "夫妻都有工作收入、沒有子女",
+          "夫妻一方工作、一方照顧子女",
+          "單身獨居、不打算結婚",
+          "夫妻收養子女共同生活"
+        ],
+        "answer": "夫妻都有工作收入、沒有子女",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 夫妻都有工作收入、沒有子女\n~\t\t\t\t\t\t114 text A 夫妻都有工作收入、沒有子女\n~\t\t\t\t\t116 button (disabled) B 夫妻一方工作、一方照顧子女\n~\t\t\t\t\t\t117 text B 夫妻一方工作、一方照顧子女\n~\t\t\t\t\t119 button (disabled) C 單身獨居、不打算結婚\n~\t\t\t\t\t\t120 text C 單身獨居、不打算結婚\n~\t\t\t\t\t122 button (disabled) D 夫妻收養子女共同生活\n~\t\t\t\t\t\t123 text D 夫妻收養子女共同生活\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 「頂客族家庭」的重點是：夫妻都有工作收入、沒有子女。其他選項是常見的誤解，都不是「頂客族家庭」的意思。\n+\t\t\t\t\t127 text 下次複習：3 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g20",
+        "question": "「生育功能」的例子是？",
+        "options": [
+          "生育子女，延續家族與社會",
+          "政府發放生育補助",
+          "學校實施性別平等教育",
+          "醫院提供產前檢查"
+        ],
+        "answer": "生育子女，延續家族與社會",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 生育子女，延續家族與社會\n~\t\t\t\t\t\t114 text A 生育子女，延續家族與社會\n~\t\t\t\t\t116 button (disabled) B 政府發放生育補助\n~\t\t\t\t\t\t117 text B 政府發放生育補助\n~\t\t\t\t\t119 button (disabled) C 學校實施性別平等教育\n~\t\t\t\t\t\t120 text C 學校實施性別平等教育\n~\t\t\t\t\t122 button (disabled) D 醫院提供產前檢查\n~\t\t\t\t\t\t123 text D 醫院提供產前檢查\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 「生育功能」的重點是：生育子女，延續家族與社會。其他選項是政府、醫院或學校的作為，不是家庭本身的功能。\n+\t\t\t\t\t127 text 下次複習：7 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h0",
+        "question": "家庭最基本的功能之一，是讓孩子學習生活規範與價值觀，這屬於什麼功能？",
+        "options": [
+          "宗教功能",
+          "教育與社會化功能",
+          "經濟功能",
+          "娛樂功能"
+        ],
+        "answer": "教育與社會化功能",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 宗教功能\n~\t\t\t\t\t\t114 text A 宗教功能\n~\t\t\t\t\t116 button (disabled) B 教育與社會化功能\n~\t\t\t\t\t\t117 text B 教育與社會化功能\n~\t\t\t\t\t119 button (disabled) C 經濟功能\n~\t\t\t\t\t\t120 text C 經濟功能\n~\t\t\t\t\t122 button (disabled) D 娛樂功能\n~\t\t\t\t\t\t123 text D 娛樂功能\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 家庭是社會化的起點，父母透過日常生活教導孩子規範、價值觀與待人處事的方法。\n+\t\t\t\t\t127 text 下次複習：7 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g39",
+        "question": "「祖父母或托育機構協助照顧孩子」最主要的原因是？",
+        "options": [
+          "學校實施營養午餐",
+          "雙薪家庭增加",
+          "家人週末去夜市",
+          "政府推動長期照顧"
+        ],
+        "answer": "雙薪家庭增加",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 學校實施營養午餐\n~\t\t\t\t\t\t114 text A 學校實施營養午餐\n~\t\t\t\t\t116 button (disabled) B 雙薪家庭增加\n~\t\t\t\t\t\t117 text B 雙薪家庭增加\n~\t\t\t\t\t119 button (disabled) C 家人週末去夜市\n~\t\t\t\t\t\t120 text C 家人週末去夜市\n~\t\t\t\t\t122 button (disabled) D 政府推動長期照顧\n~\t\t\t\t\t\t123 text D 政府推動長期照顧\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 祖父母或托育機構協助照顧孩子，最主要是因為「雙薪家庭增加」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t127 text 下次複習：3 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g28",
+        "question": "「保護功能」的例子是？",
+        "options": [
+          "警察巡邏維護社區治安",
+          "醫院照顧住院病人",
+          "照顧幼兒、老人與生病的家人",
+          "長照機構照顧失能長者"
+        ],
+        "answer": "照顧幼兒、老人與生病的家人",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 警察巡邏維護社區治安\n~\t\t\t\t\t\t114 text A 警察巡邏維護社區治安\n~\t\t\t\t\t116 button (disabled) B 醫院照顧住院病人\n~\t\t\t\t\t\t117 text B 醫院照顧住院病人\n~\t\t\t\t\t119 button (disabled) C 照顧幼兒、老人與生病的家人\n~\t\t\t\t\t\t120 text C 照顧幼兒、老人與生病的家人\n~\t\t\t\t\t122 button (disabled) D 長照機構照顧失能長者\n~\t\t\t\t\t\t123 text D 長照機構照顧失能長者\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 「保護功能」的重點是：照顧幼兒、老人與生病的家人。其他選項是警察、醫院或照顧機構的作為，不是家庭本身的功能。\n+\t\t\t\t\t127 text 下次複習：7 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g41",
+        "question": "「新住民家庭增加，文化更加多元」最主要的原因是？",
+        "options": [
+          "跨國婚姻增加",
+          "學校舉辦親師座談",
+          "政府發放育兒津貼",
+          "社區舉辦運動會"
+        ],
+        "answer": "跨國婚姻增加",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 跨國婚姻增加\n~\t\t\t\t\t\t114 text A 跨國婚姻增加\n~\t\t\t\t\t116 button (disabled) B 學校舉辦親師座談\n~\t\t\t\t\t\t117 text B 學校舉辦親師座談\n~\t\t\t\t\t119 button (disabled) C 政府發放育兒津貼\n~\t\t\t\t\t\t120 text C 政府發放育兒津貼\n~\t\t\t\t\t122 button (disabled) D 社區舉辦運動會\n~\t\t\t\t\t\t123 text D 社區舉辦運動會\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 新住民家庭增加，文化更加多元，最主要是因為「跨國婚姻增加」。其他選項雖然和本單元有關，但和這個結果沒有直接因果關係。\n+\t\t\t\t\t127 text 下次複習：3 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g30",
+        "question": "「休閒功能」的例子是？",
+        "options": [
+          "一起出遊、共享休閒時光",
+          "公司舉辦員工旅遊",
+          "學校舉辦校外教學",
+          "社區舉辦運動會"
+        ],
+        "answer": "一起出遊、共享休閒時光",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 一起出遊、共享休閒時光\n~\t\t\t\t\t\t114 text A 一起出遊、共享休閒時光\n~\t\t\t\t\t116 button (disabled) B 公司舉辦員工旅遊\n~\t\t\t\t\t\t117 text B 公司舉辦員工旅遊\n~\t\t\t\t\t119 button (disabled) C 學校舉辦校外教學\n~\t\t\t\t\t\t120 text C 學校舉辦校外教學\n~\t\t\t\t\t122 button (disabled) D 社區舉辦運動會\n~\t\t\t\t\t\t123 text D 社區舉辦運動會\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 「休閒功能」的重點是：一起出遊、共享休閒時光。其他選項是公司、學校或社區辦的活動，不是家庭本身的功能。\n+\t\t\t\t\t127 text 下次複習：7 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g26",
+        "question": "「情感功能」的例子是？",
+        "options": [
+          "輔導室老師提供學生諮商",
+          "家人互相關心、提供支持",
+          "社區舉辦聯誼活動",
+          "網友在社群上按讚留言"
+        ],
+        "answer": "家人互相關心、提供支持",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 輔導室老師提供學生諮商\n~\t\t\t\t\t\t114 text A 輔導室老師提供學生諮商\n~\t\t\t\t\t116 button (disabled) B 家人互相關心、提供支持\n~\t\t\t\t\t\t117 text B 家人互相關心、提供支持\n~\t\t\t\t\t119 button (disabled) C 社區舉辦聯誼活動\n~\t\t\t\t\t\t120 text C 社區舉辦聯誼活動\n~\t\t\t\t\t122 button (disabled) D 網友在社群上按讚留言\n~\t\t\t\t\t\t123 text D 網友在社群上按讚留言\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 「情感功能」的重點是：家人互相關心、提供支持。其他選項是學校、網路或社區提供的支持，不是家庭本身的功能。\n+\t\t\t\t\t127 text 下次複習：7 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g34",
+        "question": "「遭受家庭暴力」帶來的結果是？",
+        "options": [
+          "必須先離婚才能求助",
+          "可以向法院聲請保護令",
+          "警察不會介入家庭事務",
+          "只能默默忍受、無法求助"
+        ],
+        "answer": "可以向法院聲請保護令",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 必須先離婚才能求助\n~\t\t\t\t\t\t114 text A 必須先離婚才能求助\n~\t\t\t\t\t116 button (disabled) B 可以向法院聲請保護令\n~\t\t\t\t\t\t117 text B 可以向法院聲請保護令\n~\t\t\t\t\t119 button (disabled) C 警察不會介入家庭事務\n~\t\t\t\t\t\t120 text C 警察不會介入家庭事務\n~\t\t\t\t\t122 button (disabled) D 只能默默忍受、無法求助\n~\t\t\t\t\t\t123 text D 只能默默忍受、無法求助\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 因為「遭受家庭暴力」，所以可以向法院聲請保護令。其他選項雖然和本單元有關，但都不是「遭受家庭暴力」直接造成的結果。\n+\t\t\t\t\t127 text 下次複習：3 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g36",
+        "question": "「家人之間理性溝通」帶來的結果是？",
+        "options": [
+          "家庭關係更加緊張",
+          "較能化解親子衝突",
+          "親子衝突更加嚴重",
+          "家人更少交談"
+        ],
+        "answer": "較能化解親子衝突",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 家庭關係更加緊張\n~\t\t\t\t\t\t114 text A 家庭關係更加緊張\n~\t\t\t\t\t116 button (disabled) B 較能化解親子衝突\n~\t\t\t\t\t\t117 text B 較能化解親子衝突\n~\t\t\t\t\t119 button (disabled) C 親子衝突更加嚴重\n~\t\t\t\t\t\t120 text C 親子衝突更加嚴重\n~\t\t\t\t\t122 button (disabled) D 家人更少交談\n~\t\t\t\t\t\t123 text D 家人更少交談\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 因為「家人之間理性溝通」，所以較能化解親子衝突。其他選項雖然和本單元有關，但都不是「家人之間理性溝通」直接造成的結果。\n+\t\t\t\t\t127 text 下次複習：3 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h6",
+        "question": "子女與父母意見不同時，最適當的處理方式是？",
+        "options": [
+          "等父母讓步再說",
+          "在網路上抱怨父母",
+          "理性溝通，說明自己的想法並傾聽父母意見",
+          "離家出走"
+        ],
+        "answer": "理性溝通，說明自己的想法並傾聽父母意見",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 等父母讓步再說\n~\t\t\t\t\t\t114 text A 等父母讓步再說\n~\t\t\t\t\t116 button (disabled) B 在網路上抱怨父母\n~\t\t\t\t\t\t117 text B 在網路上抱怨父母\n~\t\t\t\t\t119 button (disabled) C 理性溝通，說明自己的想法並傾聽父母意見\n~\t\t\t\t\t\t120 text C 理性溝通，說明自己的想法並傾聽父母意見\n~\t\t\t\t\t122 button (disabled) D 離家出走\n~\t\t\t\t\t\t123 text D 離家出走\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 家庭衝突透過溝通與互相理解，較能找到雙方都能接受的方式。\n+\t\t\t\t\t127 text 下次複習：7 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g15",
+        "question": "「配偶的父母」屬於血親還是姻親？",
+        "options": [
+          "血親",
+          "鄰里關係",
+          "姻親",
+          "朋友關係"
+        ],
+        "answer": "姻親",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 血親\n~\t\t\t\t\t\t114 text A 血親\n~\t\t\t\t\t116 button (disabled) B 鄰里關係\n~\t\t\t\t\t\t117 text B 鄰里關係\n~\t\t\t\t\t119 button (disabled) C 姻親\n~\t\t\t\t\t\t120 text C 姻親\n~\t\t\t\t\t122 button (disabled) D 朋友關係\n~\t\t\t\t\t\t123 text D 朋友關係\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 「配偶的父母」→ 姻親。\n+\t\t\t\t\t127 text 下次複習：明天\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h5",
+        "question": "現代臺灣家庭型態的變化，下列敘述何者正確？",
+        "options": [
+          "家庭人數越來越多",
+          "家庭型態更加多元，例如單親、隔代教養、新住民家庭",
+          "家庭不再有任何功能",
+          "三代同堂家庭比例越來越高"
+        ],
+        "answer": "家庭型態更加多元，例如單親、隔代教養、新住民家庭",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 家庭人數越來越多\n~\t\t\t\t\t\t114 text A 家庭人數越來越多\n~\t\t\t\t\t116 button (disabled) B 家庭型態更加多元，例如單親、隔代教養、新住民家庭\n~\t\t\t\t\t\t117 text B 家庭型態更加多元，例如單親、隔代教養、新住民家庭\n~\t\t\t\t\t119 button (disabled) C 家庭不再有任何功能\n~\t\t\t\t\t\t120 text C 家庭不再有任何功能\n~\t\t\t\t\t122 button (disabled) D 三代同堂家庭比例越來越高\n~\t\t\t\t\t\t123 text D 三代同堂家庭比例越來越高\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 社會變遷使小家庭增加，也出現單親、隔代教養、跨國婚姻等多元家庭型態。\n+\t\t\t\t\t127 text 下次複習：7 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-h4",
+        "question": "全國保護專線的號碼是？",
+        "options": [
+          "165",
+          "110",
+          "113",
+          "119"
+        ],
+        "answer": "113",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 165\n~\t\t\t\t\t\t114 text A 165\n~\t\t\t\t\t116 button (disabled) B 110\n~\t\t\t\t\t\t117 text B 110\n~\t\t\t\t\t119 button (disabled) C 113\n~\t\t\t\t\t\t120 text C 113\n~\t\t\t\t\t122 button (disabled) D 119\n~\t\t\t\t\t\t123 text D 119\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 遭遇家庭暴力、兒少虐待或性侵害，可撥打 113 保護專線求助；110 是報案電話，119 是消防救護。\n+\t\t\t\t\t127 text 下次複習：7 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 下一題, ID: nextBtn\nThe focused UI element is 130 button 下一題, ID: nextBtn"
+      },
+      {
+        "id": "soc3-g24",
+        "question": "「經濟功能」的例子是？",
+        "options": [
+          "銀行提供房屋貸款",
+          "家庭成員共同生活、分擔支出",
+          "公司按月發薪水給員工",
+          "政府發放失業補助"
+        ],
+        "answer": "家庭成員共同生活、分擔支出",
+        "feedback": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 115, 118, 121, 124\n~\t\t\t\t\t113 button (disabled) A 銀行提供房屋貸款\n~\t\t\t\t\t\t114 text A 銀行提供房屋貸款\n~\t\t\t\t\t116 button (disabled) B 家庭成員共同生活、分擔支出\n~\t\t\t\t\t\t117 text B 家庭成員共同生活、分擔支出\n~\t\t\t\t\t119 button (disabled) C 公司按月發薪水給員工\n~\t\t\t\t\t\t120 text C 公司按月發薪水給員工\n~\t\t\t\t\t122 button (disabled) D 政府發放失業補助\n~\t\t\t\t\t\t123 text D 政府發放失業補助\n+\t\t\t\t124 container fb\n+\t\t\t\t\t125 text 答對了\n+\t\t\t\t\t126 text 「經濟功能」的重點是：家庭成員共同生活、分擔支出。其他選項是銀行、政府或公司的作為，不是家庭本身的功能。\n+\t\t\t\t\t127 text 下次複習：3 天後\n+\t\t\t\t\t128 checkbox ⚑ 這題有疑問, Value: 0, ID: flagBtn\n+\t\t\t\t\t129 button 回報錯誤, ID: rptBtn\n+\t\t\t\t130 button 看成績, ID: nextBtn\nThe focused UI element is 130 button 看成績, ID: nextBtn"
+      }
+    ],
+    "lastState": "Browser tab: 3, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 96-105, 109-114, 116-117, 119-120, 122-129\n+\t\t\t\t109 text 七年級．925 題\n+\t\t\t\t110 text 八年級．450 題\n+\t\t\t\t111 text 九年級．444 題\n+\t\t\t\t112 text 七年級．488 題\n+\t\t\t\t113 text 八年級．286 題\n+\t\t\t\t114 text 九年級．243 題\n+\t\t\t\t115 text 七年級．267 題\n+\t\t\t\t116 text 八年級．406 題\n+\t\t\t\t117 text 九年級．298 題\n+\t\t\t\t118 text 沒有錯題\n+\t\t\t\t119 container 答對 20 題，共 20 題\n+\t\t\t\t120 text 全部答對\n+\t\t\t\t121 text 全對！這一輪的題目都掌握了。\n+\t\t\t\t122 content list\n+\t\t\t\t\t123 container\n+\t\t\t\t\t\t124 text 簡單 2 / 2\n+\t\t\t\t\t125 container\n+\t\t\t\t\t\t126 text 中等 15 / 15\n+\t\t\t\t\t127 container\n+\t\t\t\t\t\t128 text 困難 3 / 3\n+\t\t\t\t129 button 再來 20 題, ID: rMore\n~\t\t\t\t130 button 回到島上, ID: rBack\n+\t\t\t\t131 button (collapsed) 這一輪的 20 題．覺得哪題有問題可以回報, Secondary Actions: Expand\n+\t\t\t\t\t132 text 這一輪的 20 題．覺得哪題有問題可以回報\nThe focused UI element is 129 button 再來 20 題, ID: rMore",
+    "scorePass": true
+  }
+]

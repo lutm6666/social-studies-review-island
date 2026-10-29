@@ -1,0 +1,22 @@
+{
+  "sourceSha": "44f82be3d925c5bb45edcbf52f03d553b474ec5c",
+  "changedReviewed": 8,
+  "cumulativeReviewed": 1874,
+  "bankIDs": 3840,
+  "statusCounts": {
+    "pass": 8
+  },
+  "roundSamples": 60,
+  "submittedAnswers": 63,
+  "uniqueUI": 37,
+  "changedIDsActuallyAnswered": 8,
+  "simulationPairedRounds": 34800,
+  "pendingEntriesVerified": 65,
+  "pendingDocErrorsCorrected": 2,
+  "choiceOrderPreserved": true,
+  "physicalPhoneTested": false,
+  "androidEmulatorTested": false,
+  "programModified": false,
+  "brokenLinks": [],
+  "errors": []
+}

@@ -1,0 +1,386 @@
+{
+  "summary": {
+    "sourceSha": "44f82be3d925c5bb45edcbf52f03d553b474ec5c",
+    "baseline": "e743ac12233a48fd68a3b6ba8147216d4be3c761",
+    "reviewedChangedIDs": 8,
+    "statusCounts": {
+      "pass": 8
+    },
+    "unionCumulative": 1874,
+    "cumulativeCounts": {
+      "pass": 1874
+    },
+    "unreviewedContent": 1966,
+    "previousFindingClosed": true,
+    "manualCheckpoint": {
+      "reviewer": "/root",
+      "date": "2026-10-29",
+      "all8FullBeforeAfterRead": true,
+      "all6ChangedExplanationsRead": true,
+      "nonNullContexts": 0
+    },
+    "programModified": false
+  },
+  "records": [
+    {
+      "id": "soc3-g0",
+      "status": "pass",
+      "comment": "已移除以再婚歷程排除核心家庭的誘答，改成只有兄弟姊妹且沒有父母同住的成員結構；上輪可選消歧複驗通過。",
+      "suggestion": null,
+      "sources": [],
+      "changedFields": [
+        "distractors"
+      ],
+      "before": {
+        "id": "soc3-g0",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「核心家庭」的組成是？",
+        "answer": "父母與未婚子女",
+        "distractors": [
+          "祖父母、父母與叔伯等多房親戚同住",
+          "父母再婚後與雙方子女同住",
+          "子女由社福機構安排到其他家庭照顧"
+        ],
+        "explanation": "「核心家庭」的重點是：父母與未婚子女。其他選項是常見的誤解，都不是「核心家庭」的意思。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "soc3-g0",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「核心家庭」的組成是？",
+        "answer": "父母與未婚子女",
+        "distractors": [
+          "祖父母、父母與叔伯等多房親戚同住",
+          "只有未婚兄弟姊妹同住，沒有父母同住",
+          "子女由社福機構安排到其他家庭照顧"
+        ],
+        "explanation": "「核心家庭」的重點是：父母與未婚子女。其他選項是常見的誤解，都不是「核心家庭」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "soc3-g4",
+      "status": "pass",
+      "comment": "長期派駐國外與住校描述居住安排，並不是只有父或母一方的組成定義；不再與g0重複使用未婚手足同住的誘答。未見新增第二正解。",
+      "suggestion": null,
+      "sources": [],
+      "changedFields": [
+        "distractors"
+      ],
+      "before": {
+        "id": "soc3-g4",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「單親家庭」的組成是？",
+        "answer": "由父親或母親一人與子女組成",
+        "distractors": [
+          "父母離婚後各自再婚組成的家庭",
+          "子女由寄養家庭照顧",
+          "未婚的兄弟姊妹一起生活"
+        ],
+        "explanation": "「單親家庭」的重點是：由父親或母親一人與子女組成。其他選項是常見的誤解，都不是「單親家庭」的意思。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "soc3-g4",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「單親家庭」的組成是？",
+        "answer": "由父親或母親一人與子女組成",
+        "distractors": [
+          "父母離婚後各自再婚組成的家庭",
+          "子女由寄養家庭照顧",
+          "父母長期派駐國外、子女住校"
+        ],
+        "explanation": "「單親家庭」的重點是：由父親或母親一人與子女組成。其他選項是常見的誤解，都不是「單親家庭」的意思。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "soc3-g20",
+      "status": "pass",
+      "comment": "生育子女本身是家庭生育功能；補助、產檢與學校性平教育是其他機構的措施，並非題目要辨識的家庭本身行為。",
+      "suggestion": null,
+      "sources": [
+        "https://www.mohw.gov.tw/dl-87685-1b10b921-40f2-4d47-af2f-c04eff14af52.html",
+        "https://www.stgvs.ntpc.edu.tw/uploads/1710916078013NLQd4CBm.pdf"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "soc3-g20",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「生育功能」的例子是？",
+        "answer": "生育子女，延續家族與社會",
+        "distractors": [
+          "一起出遊、共享休閒時光",
+          "教導孩子生活規範與價值觀",
+          "家人互相關心、提供支持"
+        ],
+        "explanation": "「生育功能」的重點是：生育子女，延續家族與社會。容易混淆的選項：「一起出遊、共享休閒時光」說的是休閒功能；「教導孩子生活規範與價值觀」說的是教育功能；「家人互相關心、提供支持」說的是情感功能。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "soc3-g20",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「生育功能」的例子是？",
+        "answer": "生育子女，延續家族與社會",
+        "distractors": [
+          "政府發放生育補助",
+          "醫院提供產前檢查",
+          "學校實施性別平等教育"
+        ],
+        "explanation": "「生育功能」的重點是：生育子女，延續家族與社會。其他選項是政府、醫院或學校的作為，不是家庭本身的功能。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "soc3-g22",
+      "status": "pass",
+      "comment": "生活規範與價值觀的家庭教導符合教育功能；補習班課業、政府政策、圖書館活動的提供者不同。依家庭章節與解析的範圍判斷，未見明確第二正解。",
+      "suggestion": null,
+      "sources": [
+        "https://www.mohw.gov.tw/dl-87685-1b10b921-40f2-4d47-af2f-c04eff14af52.html",
+        "https://www.stgvs.ntpc.edu.tw/uploads/1710916078013NLQd4CBm.pdf"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "soc3-g22",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「教育功能」的例子是？",
+        "answer": "教導孩子生活規範與價值觀",
+        "distractors": [
+          "生育子女，延續家族與社會",
+          "家人互相關心、提供支持",
+          "家庭成員共同生活、分擔支出"
+        ],
+        "explanation": "「教育功能」的重點是：教導孩子生活規範與價值觀。容易混淆的選項：「生育子女，延續家族與社會」說的是生育功能；「家人互相關心、提供支持」說的是情感功能；「家庭成員共同生活、分擔支出」說的是經濟功能。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "soc3-g22",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「教育功能」的例子是？",
+        "answer": "教導孩子生活規範與價值觀",
+        "distractors": [
+          "補習班替學生加強課業",
+          "政府制定教育政策",
+          "社區圖書館舉辦說故事活動"
+        ],
+        "explanation": "「教育功能」的重點是：教導孩子生活規範與價值觀。其他選項是補習班、政府或社區的作為，不是家庭本身的功能。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "soc3-g24",
+      "status": "pass",
+      "comment": "家庭成員分擔生活支出符合家庭經濟功能；貸款、政府補助與公司薪資是外部金融／政府／企業的行為。家庭可受益，不等於由家庭直接提供該措施。",
+      "suggestion": null,
+      "sources": [
+        "https://www.mohw.gov.tw/dl-87685-1b10b921-40f2-4d47-af2f-c04eff14af52.html",
+        "https://www.stgvs.ntpc.edu.tw/uploads/1710916078013NLQd4CBm.pdf"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "soc3-g24",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「經濟功能」的例子是？",
+        "answer": "家庭成員共同生活、分擔支出",
+        "distractors": [
+          "教導孩子生活規範與價值觀",
+          "生育子女，延續家族與社會",
+          "照顧幼兒、老人與生病的家人"
+        ],
+        "explanation": "「經濟功能」的重點是：家庭成員共同生活、分擔支出。容易混淆的選項：「教導孩子生活規範與價值觀」說的是教育功能；「生育子女，延續家族與社會」說的是生育功能；「照顧幼兒、老人與生病的家人」說的是保護功能。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "soc3-g24",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「經濟功能」的例子是？",
+        "answer": "家庭成員共同生活、分擔支出",
+        "distractors": [
+          "銀行提供房屋貸款",
+          "政府發放失業補助",
+          "公司按月發薪水給員工"
+        ],
+        "explanation": "「經濟功能」的重點是：家庭成員共同生活、分擔支出。其他選項是銀行、政府或公司的作為，不是家庭本身的功能。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "soc3-g26",
+      "status": "pass",
+      "comment": "家人相互支持符合家庭情感功能；學校諮商、網友留言、社區活動可以提供外部支持，但不是題目限定的家人互動。",
+      "suggestion": null,
+      "sources": [
+        "https://www.mohw.gov.tw/dl-87685-1b10b921-40f2-4d47-af2f-c04eff14af52.html",
+        "https://www.stgvs.ntpc.edu.tw/uploads/1710916078013NLQd4CBm.pdf"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "soc3-g26",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「情感功能」的例子是？",
+        "answer": "家人互相關心、提供支持",
+        "distractors": [
+          "家庭成員共同生活、分擔支出",
+          "生育子女，延續家族與社會",
+          "教導孩子生活規範與價值觀"
+        ],
+        "explanation": "「情感功能」的重點是：家人互相關心、提供支持。容易混淆的選項：「家庭成員共同生活、分擔支出」說的是經濟功能；「生育子女，延續家族與社會」說的是生育功能；「教導孩子生活規範與價值觀」說的是教育功能。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "soc3-g26",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「情感功能」的例子是？",
+        "answer": "家人互相關心、提供支持",
+        "distractors": [
+          "輔導室老師提供學生諮商",
+          "網友在社群上按讚留言",
+          "社區舉辦聯誼活動"
+        ],
+        "explanation": "「情感功能」的重點是：家人互相關心、提供支持。其他選項是學校、網路或社區提供的支持，不是家庭本身的功能。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "soc3-g28",
+      "status": "pass",
+      "comment": "家人照顧幼老病者符合家庭保護功能；警察、醫院與長照機構的服務可以分擔照顧，不能因此視為本題要求的家庭本身行為。解析沒有宣稱家庭不得求助外部機構。",
+      "suggestion": null,
+      "sources": [
+        "https://www.mohw.gov.tw/dl-87685-1b10b921-40f2-4d47-af2f-c04eff14af52.html",
+        "https://www.stgvs.ntpc.edu.tw/uploads/1710916078013NLQd4CBm.pdf"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "soc3-g28",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「保護功能」的例子是？",
+        "answer": "照顧幼兒、老人與生病的家人",
+        "distractors": [
+          "教導孩子生活規範與價值觀",
+          "家人互相關心、提供支持",
+          "一起出遊、共享休閒時光"
+        ],
+        "explanation": "「保護功能」的重點是：照顧幼兒、老人與生病的家人。容易混淆的選項：「教導孩子生活規範與價值觀」說的是教育功能；「家人互相關心、提供支持」說的是情感功能；「一起出遊、共享休閒時光」說的是休閒功能。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "soc3-g28",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「保護功能」的例子是？",
+        "answer": "照顧幼兒、老人與生病的家人",
+        "distractors": [
+          "警察巡邏維護社區治安",
+          "醫院照顧住院病人",
+          "長照機構照顧失能長者"
+        ],
+        "explanation": "「保護功能」的重點是：照顧幼兒、老人與生病的家人。其他選項是警察、醫院或照顧機構的作為，不是家庭本身的功能。",
+        "source": "generated",
+        "figure": null
+      }
+    },
+    {
+      "id": "soc3-g30",
+      "status": "pass",
+      "comment": "依家庭章節判準，一起出遊共享休閒指家人活動；其他三項明示公司、學校、社區辦理，未見明確第二正解。",
+      "suggestion": null,
+      "sources": [
+        "https://www.mohw.gov.tw/dl-87685-1b10b921-40f2-4d47-af2f-c04eff14af52.html",
+        "https://www.stgvs.ntpc.edu.tw/uploads/1710916078013NLQd4CBm.pdf"
+      ],
+      "changedFields": [
+        "distractors",
+        "explanation"
+      ],
+      "before": {
+        "id": "soc3-g30",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「休閒功能」的例子是？",
+        "answer": "一起出遊、共享休閒時光",
+        "distractors": [
+          "照顧幼兒、老人與生病的家人",
+          "教導孩子生活規範與價值觀",
+          "家庭成員共同生活、分擔支出"
+        ],
+        "explanation": "「休閒功能」的重點是：一起出遊、共享休閒時光。容易混淆的選項：「照顧幼兒、老人與生病的家人」說的是保護功能；「教導孩子生活規範與價值觀」說的是教育功能；「家庭成員共同生活、分擔支出」說的是經濟功能。",
+        "source": "generated",
+        "figure": null
+      },
+      "current": {
+        "id": "soc3-g30",
+        "chapter": "soc3",
+        "difficulty": 2,
+        "context": null,
+        "question": "「休閒功能」的例子是？",
+        "answer": "一起出遊、共享休閒時光",
+        "distractors": [
+          "公司舉辦員工旅遊",
+          "學校舉辦校外教學",
+          "社區舉辦運動會"
+        ],
+        "explanation": "「休閒功能」的重點是：一起出遊、共享休閒時光。其他選項是公司、學校或社區辦的活動，不是家庭本身的功能。",
+        "source": "generated",
+        "figure": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "sourceSha": "44f82be3d925c5bb45edcbf52f03d553b474ec5c",
+  "total": 28,
+  "types": {
+    "climate": 20,
+    "pyramid": 5,
+    "stack": 3
+  },
+  "all28FiguresUnchanged": true,
+  "browserSample": {
+    "id": "twg3-h9",
+    "width": 284,
+    "height": 177.5,
+    "scorePass": true
+  },
+  "all28IndividuallyRenderedThisRound": false,
+  "previousThreeTypeBrowserEvidence": "https://github.com/lutm6666/social-studies-review-island/blob/740b0c21f2cf14b3c778ce056b59637734fc5715/review/evidence/round4_2026-10-29/figure-verification.json"
+}

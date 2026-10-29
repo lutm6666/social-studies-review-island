@@ -1,0 +1,20 @@
+{
+  "sourceSha": "44f82be3d925c5bb45edcbf52f03d553b474ec5c",
+  "date": "2026-10-29",
+  "browser": "ChatGPT in-app browser (IAB)",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "mode": "桌面瀏覽器窄畫面，非手機實機／非Android模擬器",
+  "physicalPhoneTested": false,
+  "androidEmulatorTested": false,
+  "safariOrIOSTested": false,
+  "touchHardwareTested": false,
+  "mobileGPUTested": false,
+  "viewportOverrideReset": true,
+  "questionCountSettingRestoredTo": 10,
+  "consoleWarningsOrErrors": 0,
+  "sourceAndProgramModified": false,
+  "reviewDocsOnly": true
+}
