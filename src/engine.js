@@ -49,7 +49,11 @@ function buildBank(HAND,GEN,PERIODS){
         if(set.qa && !set.oneway){ const keys=set.items.filter(i=>i[1]!==v).map(i=>i[0]); const w0=pick(keys,x=>!clash(k,x),same);
           // 反查題專屬誘答：同類但不在本組的名詞（data_foils.js 的 TA），仍先呼叫 pick 維持亂數序列
           const ta=(spec.tfa||{})[k], w=ta?ta.slice():w0;
-          const other=ta?(ta.note||'其他選項都是同類但不同意思的名詞'):w.map(x=>'「'+x+'」是'+valOf(x)).join('；');
+          const defOf=x=>{ for(const st of (spec.sets||[])){ const it=st.items.find(i=>i[0]===x); if(it&&!st.oneway) return it[1]; } return null; };
+          const taOther=()=>{ const kn=w.filter(x=>defOf(x)), un=w.filter(x=>!defOf(x));
+            if(!kn.length) return '其他選項都是同類但不同意思的名詞';
+            return kn.map(x=>'「'+x+'」是'+defOf(x)).join('；')+(un.length?'；'+un.map(x=>'「'+x+'」').join('、')+'也不是這個意思':''); };
+          const other=ta?(ta.note||taOther()):w.map(x=>'「'+x+'」是'+valOf(x)).join('；');
           // TA 可改寫題幹與正解（例如改成「下列哪一組」的組合題），題號不變
           if(ta&&ta.q) add(set.da||1, ta.q, ta.a, w, ta.note+'。');
           else add(set.da||1, fill(set.qa,k,v), k, w, '「'+v+'」說的是「'+k+'」。'+tip+(ta?other:'其他選項：'+other)+'。'); }
