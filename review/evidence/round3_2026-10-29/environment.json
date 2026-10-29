@@ -1,0 +1,16 @@
+{
+  "sourceSha": "7ee6394c5ee2ef9b353c387eff0099abb3758028",
+  "date": "2026-10-29",
+  "browser": "ChatGPT in-app browser (IAB)",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "mode": "桌面瀏覽器窄畫面；僅改viewport，非實體手機，也非Android模擬器",
+  "physicalPhone": "未測試：沒有連接可操作的實體手機",
+  "androidEmulator": "未測試：啟動既有LDPlayer時，Computer Use app approval timed out；未啟動成功，未改用其他途徑繞過授權",
+  "viewportOverrideReset": true,
+  "questionCountSettingRestoredTo": 10,
+  "consoleWarningsOrErrors": 0,
+  "programModified": false
+}

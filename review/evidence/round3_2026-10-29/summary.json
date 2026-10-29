@@ -1,0 +1,290 @@
+{
+  "sourceSha": "7ee6394c5ee2ef9b353c387eff0099abb3758028",
+  "reviewedChangedIDs": 277,
+  "statusCounts": {
+    "pass": 265,
+    "optional": 11,
+    "needs_fix": 1
+  },
+  "sevenRetest": [
+    {
+      "id": "law1-g11",
+      "status": "pass"
+    },
+    {
+      "id": "law1-g23",
+      "status": "pass"
+    },
+    {
+      "id": "law1-g24",
+      "status": "pass"
+    },
+    {
+      "id": "twg8-g28",
+      "status": "pass"
+    },
+    {
+      "id": "voy-g46",
+      "status": "pass"
+    },
+    {
+      "id": "cnh3-g56",
+      "status": "pass"
+    },
+    {
+      "id": "wdh5-g48",
+      "status": "pass"
+    }
+  ],
+  "precision24": [
+    {
+      "id": "pre-g70",
+      "status": "pass"
+    },
+    {
+      "id": "pre-g71",
+      "status": "pass"
+    },
+    {
+      "id": "ces-h15",
+      "status": "pass"
+    },
+    {
+      "id": "ces-g42",
+      "status": "pass"
+    },
+    {
+      "id": "twg1-g45",
+      "status": "pass"
+    },
+    {
+      "id": "twg1-g46",
+      "status": "pass"
+    },
+    {
+      "id": "twg2-g63",
+      "status": "pass"
+    },
+    {
+      "id": "twg2-g64",
+      "status": "pass"
+    },
+    {
+      "id": "twg4-g33",
+      "status": "pass"
+    },
+    {
+      "id": "twg4-g34",
+      "status": "pass"
+    },
+    {
+      "id": "twg4-g35",
+      "status": "pass"
+    },
+    {
+      "id": "twg4-g36",
+      "status": "pass"
+    },
+    {
+      "id": "twg6-g40",
+      "status": "pass"
+    },
+    {
+      "id": "twg6-g41",
+      "status": "pass"
+    },
+    {
+      "id": "soc3-g32",
+      "status": "pass"
+    },
+    {
+      "id": "soc3-g33",
+      "status": "pass"
+    },
+    {
+      "id": "soc5-g41",
+      "status": "pass"
+    },
+    {
+      "id": "soc5-g42",
+      "status": "pass"
+    },
+    {
+      "id": "law5-g34",
+      "status": "pass"
+    },
+    {
+      "id": "law5-g35",
+      "status": "pass"
+    },
+    {
+      "id": "law5-g40",
+      "status": "pass"
+    },
+    {
+      "id": "law5-g41",
+      "status": "pass"
+    },
+    {
+      "id": "law7-g34",
+      "status": "pass"
+    },
+    {
+      "id": "law7-g35",
+      "status": "pass"
+    }
+  ],
+  "actualMarkedCauseIDs": 156,
+  "handIDs": 95,
+  "extraIDs": [
+    "eco3-g32",
+    "eco3-g33",
+    "eco3-g34"
+  ],
+  "unionCumulative": 1851,
+  "cumulativeCounts": {
+    "pass": 1839,
+    "optional": 11,
+    "needs_fix": 1
+  },
+  "unreviewedContent": 1989,
+  "manualCheckpoint": {
+    "reviewer": "/root",
+    "date": "2026-10-29",
+    "causeCompactRanges": [
+      [
+        1,
+        80
+      ],
+      [
+        81,
+        156
+      ]
+    ],
+    "handCompactRanges": [
+      [
+        1,
+        45
+      ],
+      [
+        46,
+        95
+      ]
+    ],
+    "precisionRange": [
+      1,
+      24
+    ],
+    "sevenRange": [
+      1,
+      7
+    ],
+    "extraRange": [
+      1,
+      3
+    ],
+    "all12NonNullHandContextsRead": true,
+    "all26ChangedExplanationsRead": true
+  },
+  "programModified": false,
+  "sourceAudit": {
+    "sha": "7ee6394c5ee2ef9b353c387eff0099abb3758028",
+    "baseline": "7206fdb147893cd63e699c1b933cd88f333c810b",
+    "total": 3840,
+    "unique": 3840,
+    "runtime": 3840,
+    "changed": 277,
+    "causeList": 156,
+    "handList": 95,
+    "precisionList": 24,
+    "sevenList": 7,
+    "requestedUnique": 274,
+    "requestedNotChanged": [],
+    "changedOutsideRequested": [
+      "eco3-g32",
+      "eco3-g33",
+      "eco3-g34"
+    ],
+    "added": [],
+    "removed": [],
+    "engineExportMismatches": [],
+    "structureFailures": [],
+    "figureChanges": [],
+    "fields": {
+      "question": 12,
+      "distractors": 262,
+      "explanation": 26,
+      "answer": 12
+    }
+  },
+  "UI": {
+    "rounds": 4,
+    "roundSamples": 70,
+    "targetedSamples": 12,
+    "uniqueIDs": 80,
+    "metrics": [
+      {
+        "round": 1,
+        "chapter": "law1",
+        "n": 10,
+        "earlierAnswerInLaterOptions": 0,
+        "shares2PlusWithEarlier": 0,
+        "score": "10/10"
+      },
+      {
+        "round": 2,
+        "chapter": "law1",
+        "n": 20,
+        "earlierAnswerInLaterOptions": 0,
+        "shares2PlusWithEarlier": 0,
+        "score": "20/20"
+      },
+      {
+        "round": 3,
+        "chapter": "law8",
+        "n": 20,
+        "earlierAnswerInLaterOptions": 3,
+        "shares2PlusWithEarlier": 3,
+        "score": "20/20"
+      },
+      {
+        "round": 4,
+        "chapter": "eco4",
+        "n": 20,
+        "earlierAnswerInLaterOptions": 1,
+        "shares2PlusWithEarlier": 1,
+        "score": "20/20"
+      }
+    ],
+    "physicalPhone": false
+  },
+  "simulation": {
+    "chapters": 58,
+    "states": 2,
+    "roundsPerChapterState": 200,
+    "roundLength": 20,
+    "totalComparedRounds": 23200,
+    "before": {
+      "answerLeak": 5.905862068965518,
+      "sharedTwo": 6.764439655172412
+    },
+    "after": {
+      "answerLeak": 0.12754310344827585,
+      "sharedTwo": 0.15991379310344828
+    }
+  },
+  "progress": {
+    "sourceSha": "7ee6394c5ee2ef9b353c387eff0099abb3758028",
+    "idSetsEqual": true,
+    "storageKeyBefore": "'shehui-archipelago-v2'",
+    "storageKeyAfter": "'shehui-archipelago-v2'",
+    "storageKeyUnchanged": true,
+    "drawDidNotMutateProgressInSimulation": true,
+    "refreshSameQuestion": true,
+    "refreshSameOptionSet": true,
+    "refreshChoiceOrderPreserved": false,
+    "individualExistingStudentDevicesTested": false,
+    "physicalPhoneTested": false
+  },
+  "questionProgramModified": false
+}

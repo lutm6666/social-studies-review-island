@@ -1,0 +1,63 @@
+{
+  "sourceSha": "7ee6394c5ee2ef9b353c387eff0099abb3758028",
+  "expected": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js",
+      "characters": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "src": "",
+      "characters": 123,
+      "sha256": "c0ba3027bba048f052fcdcb262188a7946d50744d60dfab57f77000ecaf1dcf5"
+    },
+    {
+      "src": "",
+      "characters": 202308,
+      "sha256": "561bd01f64f6418a044441cfed5ce4e0cbe864e9a060fc1a68353b3d17aae16b"
+    },
+    {
+      "src": "",
+      "characters": 260537,
+      "sha256": "1cf5bf11d8946415fda62932ba22833e413102cabcf70ad11de6d2ad9635d5c9"
+    },
+    {
+      "src": "",
+      "characters": 166,
+      "sha256": "d4603f049ac60d8b9b73f6169d4b3d01a8096709317c1bf31afd00fa475ef459"
+    }
+  ],
+  "actual": [
+    {
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js",
+      "characters": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "src": "",
+      "characters": 123,
+      "sha256": "c0ba3027bba048f052fcdcb262188a7946d50744d60dfab57f77000ecaf1dcf5"
+    },
+    {
+      "src": "",
+      "characters": 202308,
+      "sha256": "561bd01f64f6418a044441cfed5ce4e0cbe864e9a060fc1a68353b3d17aae16b"
+    },
+    {
+      "src": "",
+      "characters": 260537,
+      "sha256": "1cf5bf11d8946415fda62932ba22833e413102cabcf70ad11de6d2ad9635d5c9"
+    },
+    {
+      "src": "",
+      "characters": 166,
+      "sha256": "d4603f049ac60d8b9b73f6169d4b3d01a8096709317c1bf31afd00fa475ef459"
+    }
+  ],
+  "matches": true,
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "physicalPhone": false
+}

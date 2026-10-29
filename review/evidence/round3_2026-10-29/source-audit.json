@@ -1,0 +1,30 @@
+{
+  "sha": "7ee6394c5ee2ef9b353c387eff0099abb3758028",
+  "baseline": "7206fdb147893cd63e699c1b933cd88f333c810b",
+  "total": 3840,
+  "unique": 3840,
+  "runtime": 3840,
+  "changed": 277,
+  "causeList": 156,
+  "handList": 95,
+  "precisionList": 24,
+  "sevenList": 7,
+  "requestedUnique": 274,
+  "requestedNotChanged": [],
+  "changedOutsideRequested": [
+    "eco3-g32",
+    "eco3-g33",
+    "eco3-g34"
+  ],
+  "added": [],
+  "removed": [],
+  "engineExportMismatches": [],
+  "structureFailures": [],
+  "figureChanges": [],
+  "fields": {
+    "question": 12,
+    "distractors": 262,
+    "explanation": 26,
+    "answer": 12
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "sourceSha": "7ee6394c5ee2ef9b353c387eff0099abb3758028",
+  "round": 2,
+  "answered": 10,
+  "prompt": "Browser tab: 1, Title: \"社會科複習島\", URL: \"https://lutm6666.github.io/social-studies-review-island/\".\n0 AXWebArea 社會科複習島, URL: lutm6666.github.io/social-studies-review-island/\n\t1 container\n\t\t2 image Description: 可以拖曳旋轉的 3D 社會科群島, ID: scene\n\t\t3 container labels\n\t\t\t4 button 臺灣史島\n\t\t\t5 button 中國與東亞史島\n\t\t\t6 button 世界史島\n\t\t\t7 button 臺灣地理島\n\t\t\t8 button 亞洲島\n\t\t\t9 button 世界島\n\t\t\t10 button 社會生活島\n\t\t\t11 button 政治與法律島\n\t\t\t12 button 經濟與全球島\n\t\t\t13 button 🍾 錯題島\n\t\t14 container\n\t\t\t15 button (collapsed) Description: 展開面板, ID: hudMin, Secondary Actions: Expand\n\t\t\t16 heading 社會科複習島, Value: 1\n\t\t\t\t17 text 社會科複習島\n\t\t18 container 民主政治, ID: panel\n\t\t\t19 text 政治與法律島\n\t\t\t20 button Description: 關閉, ID: closeBtn\n\t\t\t21 heading 民主政治, Value: 2, ID: panelTitle\n\t\t\t\t22 text 民主政治\n\t\t\t23 text 上次還沒答完\n\t\t\t24 container panelBody\n\t\t\t\t25 text 「民主政治」答到第 11 / 20 題就中斷了（答對 10 題）。要從中斷的地方繼續嗎？\n\t\t\t\t26 button 繼續作答, ID: rsGo\n\t\t\t\t27 button 放棄這一輪, ID: rsNo\n\nThe focused UI element is 0 AXWebArea 社會科複習島, URL: lutm6666.github.io/social-studies-review-island/",
+  "before": {
+    "question": "下列何者是民主國家的特徵？",
+    "choices": [
+      "A定期且公平的選舉，以及政黨輪替的可能",
+      "B只有一個合法政黨",
+      "C禁止人民批評政府",
+      "D領導人終身執政"
+    ]
+  },
+  "after": {
+    "question": "下列何者是民主國家的特徵？",
+    "choices": [
+      "A定期且公平的選舉，以及政黨輪替的可能",
+      "B只有一個合法政黨",
+      "C領導人終身執政",
+      "D禁止人民批評政府"
+    ]
+  },
+  "sameQuestion": true,
+  "sameOptionSet": true,
+  "choiceOrderPreserved": false,
+  "exactOrderAssertion": "失敗：C與D換位；原始觀察保留，不宣告選項位置保存成功。",
+  "physicalPhone": false
+}

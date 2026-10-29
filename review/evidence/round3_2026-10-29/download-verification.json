@@ -1,0 +1,199 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2969,
+      "sha": "2782e9f18711a08549c92c3026efa1eb551e611a"
+    },
+    {
+      "path": "build.py",
+      "bytes": 3790,
+      "sha": "eb0030a4beb95c85b3b500412c92f08a168c63fe"
+    },
+    {
+      "path": "index.html",
+      "bytes": 824726,
+      "sha": "b52801865230ae9ee4cc56ef384954c529c293f2"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 660,
+      "sha": "c3bb39d5df569e58c1991b5b88ffb05ba120c797"
+    },
+    {
+      "path": "review/REVIEW.md",
+      "bytes": 3331,
+      "sha": "c5bd5d1fd4345969da182c72a72f7be260eb3d06"
+    },
+    {
+      "path": "review/pending_cause_foils.md",
+      "bytes": 161454,
+      "sha": "cfdf5f86249c6dfc4692ce74116d1c1f69b5c640"
+    },
+    {
+      "path": "review/pending_hand_foils.md",
+      "bytes": 31037,
+      "sha": "267d49f9b13d4fbc81e7fba25ec9c116d2afde77"
+    },
+    {
+      "path": "review/pending_round3_2026-10-29.md",
+      "bytes": 8870,
+      "sha": "ad76a31de118f724939c4846d53dc4422edadc0e"
+    },
+    {
+      "path": "review/questions.json",
+      "bytes": 2199687,
+      "sha": "933cecbb538d1a9771fef7dacdf347c2b7b9dec6"
+    },
+    {
+      "path": "review/responses.md",
+      "bytes": 34523,
+      "sha": "5ea1e787a8f5f78cdbaf54aafb45566649f936a2"
+    },
+    {
+      "path": "src/app.html",
+      "bytes": 42457,
+      "sha": "9cabec668b46faea13051da609d3315f5a5db3f6"
+    },
+    {
+      "path": "src/app.js",
+      "bytes": 185289,
+      "sha": "21f0e776a4761684228411afcef73ff4821e564f"
+    },
+    {
+      "path": "src/data_asg.js",
+      "bytes": 18575,
+      "sha": "1915f047096bb1f73e14a5d6c619a407a2b00516"
+    },
+    {
+      "path": "src/data_cnh.js",
+      "bytes": 29526,
+      "sha": "04ccd7c558b9cf3455267f978d7b8aee171db56b"
+    },
+    {
+      "path": "src/data_ctx.js",
+      "bytes": 48875,
+      "sha": "ba3e069ac572fbb7d7a614ef686ce096f27e6723"
+    },
+    {
+      "path": "src/data_eco.js",
+      "bytes": 20526,
+      "sha": "a4bff1c111b2128c37c813f744ca1c81431825b0"
+    },
+    {
+      "path": "src/data_fig.js",
+      "bytes": 9896,
+      "sha": "362c3bd460e0f6288b0a7fbf823dc251cf15a4d0"
+    },
+    {
+      "path": "src/data_foils.js",
+      "bytes": 66671,
+      "sha": "8f056d5837c34a10d91fc0f32f2e198c1422181e"
+    },
+    {
+      "path": "src/data_law.js",
+      "bytes": 27644,
+      "sha": "9b1314791689fefe3bd45cbad6535ab584b95f31"
+    },
+    {
+      "path": "src/data_notes.js",
+      "bytes": 8383,
+      "sha": "4a5b928c76d0eaf33fd9b4aaa72c50acbdcaca5b"
+    },
+    {
+      "path": "src/data_overlap.js",
+      "bytes": 3699,
+      "sha": "4c7efe64532bd925ae448c9f08178b40d2e10f2e"
+    },
+    {
+      "path": "src/data_soc.js",
+      "bytes": 19670,
+      "sha": "03f3489d4b6546f8d4a5f821ebed661020b263f1"
+    },
+    {
+      "path": "src/data_twg.js",
+      "bytes": 29090,
+      "sha": "d42949b87bdefe52c6bd36f1dc4da10cc5c56915"
+    },
+    {
+      "path": "src/data_wdg.js",
+      "bytes": 15754,
+      "sha": "5534e70155c717269cb992de7a047046b7db7356"
+    },
+    {
+      "path": "src/data_wdh.js",
+      "bytes": 30591,
+      "sha": "fbfccfb54004c78c2246acff971a931892d56371"
+    },
+    {
+      "path": "src/deco.js",
+      "bytes": 32824,
+      "sha": "dc83d36eecfc494c5257e304b7e82502e59f7295"
+    },
+    {
+      "path": "src/dsl.js",
+      "bytes": 1300,
+      "sha": "7e8ccf0dce75248dff55760e635515c40da45f08"
+    },
+    {
+      "path": "src/engine.js",
+      "bytes": 6297,
+      "sha": "77f170e7d7a9adc2ba80209d0b5be08aed3df832"
+    },
+    {
+      "path": "src/gen_twh.js",
+      "bytes": 21726,
+      "sha": "1943b65e4e3954921b0f94a3544137328efb29e5"
+    },
+    {
+      "path": "src/hand_twh_1.js",
+      "bytes": 43224,
+      "sha": "fdbf04b3238cb85899a34533c853a310b54bd8da"
+    },
+    {
+      "path": "src/hand_twh_2.js",
+      "bytes": 43804,
+      "sha": "b4bd388a46dca155e76c425234dceefac57579cf"
+    },
+    {
+      "path": "src/hand_twh_ctx.js",
+      "bytes": 9813,
+      "sha": "d1f6232fcc46af708e0efd8f0b1d5fbcddaa2ed1"
+    },
+    {
+      "path": "src/links_cross.js",
+      "bytes": 13498,
+      "sha": "8ace0c5101ba5561395e15f6e208cfa3e38358af"
+    },
+    {
+      "path": "src/links_twh.js",
+      "bytes": 10492,
+      "sha": "4c26bfec04ff6019baab66192a3042e125275ba5"
+    },
+    {
+      "path": "src/models_wip.js",
+      "bytes": 34386,
+      "sha": "61543d5b82559aa3923bae9e2730118c964140d5"
+    },
+    {
+      "path": "src/people.js",
+      "bytes": 30410,
+      "sha": "8c5e1db704f6d90fa98c71fc39b8f0a277e0f574"
+    },
+    {
+      "path": "src/preview.js",
+      "bytes": 9094,
+      "sha": "a2f3402ba8a1c352015a2fa7899fc53de9e75b88"
+    },
+    {
+      "path": "src/sw.js",
+      "bytes": 1749,
+      "sha": "4583c105d1ca04bd5954d995912c8812464d8c60"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 1748,
+      "sha": "9bb413e120ab02764aae85c94af15b2ff1357ccd"
+    }
+  ]
+}

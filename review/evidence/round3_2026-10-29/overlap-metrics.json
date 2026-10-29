@@ -1,0 +1,147 @@
+{
+  "sourceSha": "7ee6394c5ee2ef9b353c387eff0099abb3758028",
+  "environment": "桌面IAB瀏覽器390x844窄畫面；非實體手機、非Android模擬器",
+  "rounds": [
+    {
+      "round": 1,
+      "chapter": "law1",
+      "n": 10,
+      "earlierAnswerInLaterOptions": 0,
+      "shares2PlusWithEarlier": 0,
+      "leaks": [],
+      "overlaps": [],
+      "score": "10/10"
+    },
+    {
+      "round": 2,
+      "chapter": "law1",
+      "n": 20,
+      "earlierAnswerInLaterOptions": 0,
+      "shares2PlusWithEarlier": 0,
+      "leaks": [],
+      "overlaps": [],
+      "score": "20/20"
+    },
+    {
+      "round": 3,
+      "chapter": "law8",
+      "n": 20,
+      "earlierAnswerInLaterOptions": 3,
+      "shares2PlusWithEarlier": 3,
+      "leaks": [
+        {
+          "position": 6,
+          "id": "law8-g7",
+          "repeatedPriorAnswers": [
+            "國家賠償"
+          ]
+        },
+        {
+          "position": 15,
+          "id": "law8-g24",
+          "repeatedPriorAnswers": [
+            "行政罰"
+          ]
+        },
+        {
+          "position": 19,
+          "id": "law8-g9",
+          "repeatedPriorAnswers": [
+            "訴願",
+            "國家賠償"
+          ]
+        }
+      ],
+      "overlaps": [
+        {
+          "position": 7,
+          "id": "law8-g16",
+          "pairs": [
+            {
+              "earlierPosition": 6,
+              "earlierId": "law8-g7",
+              "shared": [
+                "訴願",
+                "行政訴訟"
+              ]
+            }
+          ]
+        },
+        {
+          "position": 15,
+          "id": "law8-g24",
+          "pairs": [
+            {
+              "earlierPosition": 8,
+              "earlierId": "law8-g21",
+              "shared": [
+                "刑罰",
+                "行政罰",
+                "民事賠償",
+                "學校懲處"
+              ]
+            }
+          ]
+        },
+        {
+          "position": 19,
+          "id": "law8-g9",
+          "pairs": [
+            {
+              "earlierPosition": 6,
+              "earlierId": "law8-g7",
+              "shared": [
+                "訴願",
+                "行政訴訟",
+                "國家賠償"
+              ]
+            },
+            {
+              "earlierPosition": 7,
+              "earlierId": "law8-g16",
+              "shared": [
+                "訴願",
+                "行政訴訟"
+              ]
+            }
+          ]
+        }
+      ],
+      "score": "20/20"
+    },
+    {
+      "round": 4,
+      "chapter": "eco4",
+      "n": 20,
+      "earlierAnswerInLaterOptions": 1,
+      "shares2PlusWithEarlier": 1,
+      "leaks": [
+        {
+          "position": 17,
+          "id": "eco4-g9",
+          "repeatedPriorAnswers": [
+            "團結權"
+          ]
+        }
+      ],
+      "overlaps": [
+        {
+          "position": 17,
+          "id": "eco4-g9",
+          "pairs": [
+            {
+              "earlierPosition": 9,
+              "earlierId": "eco4-g26",
+              "shared": [
+                "團結權",
+                "爭議權",
+                "協商權"
+              ]
+            }
+          ]
+        }
+      ],
+      "score": "20/20"
+    }
+  ]
+}

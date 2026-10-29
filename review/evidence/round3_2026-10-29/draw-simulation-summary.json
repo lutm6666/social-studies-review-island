@@ -1,0 +1,1925 @@
+{
+  "sourceSha": "7ee6394c5ee2ef9b353c387eff0099abb3758028",
+  "method": "Compare old and new original draw functions against the identical current question pool; deterministic LCG seed per paired run. Fresh and mixed answer histories. This is offline automation, not phone or browser play.",
+  "metrics": {
+    "answerLeak": "count later questions whose four options contain an earlier answer, per final display order",
+    "sharedTwo": "count later questions sharing at least two exact option strings with any one earlier question"
+  },
+  "totals": {
+    "chapters": 58,
+    "states": 2,
+    "roundsPerChapterState": 200,
+    "roundLength": 20,
+    "totalComparedRounds": 23200,
+    "before": {
+      "answerLeak": 5.905862068965518,
+      "sharedTwo": 6.764439655172412
+    },
+    "after": {
+      "answerLeak": 0.12754310344827585,
+      "sharedTwo": 0.15991379310344828
+    }
+  },
+  "caseChecks": [
+    {
+      "name": "empty",
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    },
+    {
+      "name": "short",
+      "expected": 5,
+      "actual": 5,
+      "pass": true
+    },
+    {
+      "name": "zero",
+      "expected": 0,
+      "actual": 0,
+      "pass": true
+    },
+    {
+      "name": "difficulty",
+      "expected": 20,
+      "actual": 20,
+      "pass": true
+    },
+    {
+      "name": "difficulty-empty-fallback",
+      "expected": 20,
+      "actual": 20,
+      "pass": true
+    },
+    {
+      "name": "tag-exhausted",
+      "expected": 20,
+      "actual": 20,
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "bankUnchanged": true,
+  "functions": {
+    "before": "function draw(list,n,diff){\r\n  let pool = diff==='mix' ? list : list.filter(q=>q.d===+diff);\r\n  if(!pool.length) pool=list;\r\n  const scored=pool.map(q=>{ const r=ST.q[q.id]; let p = !r ? 0 : (!r[2] ? 1 : (streakOf(r)<MASTER ? 1.5 : 2.2+r[0]*0.25)); return {q, p:p+Math.random()*0.95}; });\r\n  scored.sort((a,b)=>a.p-b.p);\r\n  // 同一輪避免出現考同一件事的題目（同一筆資料的正反題、精寫題與生成題重疊）\r\n  const used=new Set(), pick=[], rest=[];\r\n  scored.forEach(x=>{ if(pick.length>=n) return; const tg=x.q.tags||[]; if(tg.some(g=>used.has(g))){ rest.push(x); return; } tg.forEach(g=>used.add(g)); pick.push(x); });\r\n  for(let i=0;pick.length<n && i<rest.length;i++) pick.push(rest[i]);\r\n  return shuffle(pick.map(x=>x.q));\r\n}",
+    "after": "function draw(list,n,diff){\n  let pool = diff==='mix' ? list : list.filter(q=>q.d===+diff);\n  if(!pool.length) pool=list;\n  const scored=pool.map(q=>{ const r=ST.q[q.id]; let p = !r ? 0 : (!r[2] ? 1 : (streakOf(r)<MASTER ? 1.5 : 2.2+r[0]*0.25)); return {q, p:p+Math.random()*0.95}; });\n  scored.sort((a,b)=>a.p-b.p);\n  // 同一輪避免出現考同一件事的題目（同一筆資料的正反題、精寫題與生成題重疊）\n  // 也避免選項輪替：不選「選項含本輪已出現的正解」或「與已選題共用 2 個以上選項」的題目；不夠時逐步放寬\n  const used=new Set(), seen=new Set(), ans=new Set(), pick=[], taken=new Set();\n  const opts=q=>[q.c].concat(q.w||[]);\n  const clash=q=>{ const o=opts(q); let k=0; for(const v of o){ if(seen.has(v)) k++; if(ans.has(v)) return true; } return k>=2 || seen.has(q.c); };\n  const add=x=>{ pick.push(x); taken.add(x); (x.q.tags||[]).forEach(g=>used.add(g)); opts(x.q).forEach(v=>seen.add(v)); ans.add(x.q.c); };\n  [[1,1],[0,1],[0,0]].forEach(([tg,cl])=>{ scored.forEach(x=>{ if(pick.length>=n || taken.has(x)) return;\n    if(tg && (x.q.tags||[]).some(g=>used.has(g))) return; if(cl && clash(x.q)) return; add(x); }); });\n  return shuffle(pick.map(x=>x.q));\n}"
+  },
+  "results": [
+    {
+      "chapter": "pre",
+      "state": "fresh",
+      "pool": 110,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 2.47,
+        "sharedTwo": 3.28
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "voy",
+      "state": "fresh",
+      "pool": 94,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 2.14,
+        "sharedTwo": 2.13
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "qpe",
+      "state": "fresh",
+      "pool": 100,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 2.05,
+        "sharedTwo": 2.165
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "qsc",
+      "state": "fresh",
+      "pool": 100,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 2.205,
+        "sharedTwo": 2.945
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "jpe",
+      "state": "fresh",
+      "pool": 107,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 2.145,
+        "sharedTwo": 2.02
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "jsc",
+      "state": "fresh",
+      "pool": 94,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 1.59,
+        "sharedTwo": 2.135
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "cpd",
+      "state": "fresh",
+      "pool": 95,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 2.155,
+        "sharedTwo": 2.75
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "ces",
+      "state": "fresh",
+      "pool": 92,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 1.805,
+        "sharedTwo": 2.15
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "cnh1",
+      "state": "fresh",
+      "pool": 99,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 3.82,
+        "sharedTwo": 4.59
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "cnh2",
+      "state": "fresh",
+      "pool": 73,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.615,
+        "sharedTwo": 5.34
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "cnh3",
+      "state": "fresh",
+      "pool": 76,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.075,
+        "sharedTwo": 4.755
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "cnh4",
+      "state": "fresh",
+      "pool": 80,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.38,
+        "sharedTwo": 5.275
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "cnh5",
+      "state": "fresh",
+      "pool": 63,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.91,
+        "sharedTwo": 5.89
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "cnh6",
+      "state": "fresh",
+      "pool": 59,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.73,
+        "sharedTwo": 7.32
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdh1",
+      "state": "fresh",
+      "pool": 73,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.455,
+        "sharedTwo": 5.335
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdh2",
+      "state": "fresh",
+      "pool": 63,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 8.14,
+        "sharedTwo": 8.685
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdh3",
+      "state": "fresh",
+      "pool": 76,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.745,
+        "sharedTwo": 5.195
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdh4",
+      "state": "fresh",
+      "pool": 50,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.055,
+        "sharedTwo": 7.665
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdh5",
+      "state": "fresh",
+      "pool": 64,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.365,
+        "sharedTwo": 5.545
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdh6",
+      "state": "fresh",
+      "pool": 49,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.69,
+        "sharedTwo": 7.335
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdh7",
+      "state": "fresh",
+      "pool": 69,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.625,
+        "sharedTwo": 7.495
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg1",
+      "state": "fresh",
+      "pool": 59,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.29,
+        "sharedTwo": 7.315
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg2",
+      "state": "fresh",
+      "pool": 73,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.1,
+        "sharedTwo": 7.32
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg3",
+      "state": "fresh",
+      "pool": 65,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.865,
+        "sharedTwo": 6.11
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg4",
+      "state": "fresh",
+      "pool": 56,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.38,
+        "sharedTwo": 6.66
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg5",
+      "state": "fresh",
+      "pool": 65,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.71,
+        "sharedTwo": 8.785
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg6",
+      "state": "fresh",
+      "pool": 52,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 8.895,
+        "sharedTwo": 9.34
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg7",
+      "state": "fresh",
+      "pool": 72,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.135,
+        "sharedTwo": 6.88
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg8",
+      "state": "fresh",
+      "pool": 46,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.915,
+        "sharedTwo": 6.245
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "asg1",
+      "state": "fresh",
+      "pool": 58,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.395,
+        "sharedTwo": 6.41
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "asg2",
+      "state": "fresh",
+      "pool": 58,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.02,
+        "sharedTwo": 6.31
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "asg3",
+      "state": "fresh",
+      "pool": 46,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.02,
+        "sharedTwo": 8.225
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "asg4",
+      "state": "fresh",
+      "pool": 70,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.855,
+        "sharedTwo": 5.98
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "asg5",
+      "state": "fresh",
+      "pool": 54,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.305,
+        "sharedTwo": 5.435
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdg1",
+      "state": "fresh",
+      "pool": 59,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.235,
+        "sharedTwo": 5.695
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdg2",
+      "state": "fresh",
+      "pool": 55,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.685,
+        "sharedTwo": 6.235
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdg3",
+      "state": "fresh",
+      "pool": 70,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.765,
+        "sharedTwo": 5.95
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdg4",
+      "state": "fresh",
+      "pool": 59,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.57,
+        "sharedTwo": 5.115
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "soc1",
+      "state": "fresh",
+      "pool": 40,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 8.11,
+        "sharedTwo": 7.92
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "soc2",
+      "state": "fresh",
+      "pool": 43,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.065,
+        "sharedTwo": 7.615
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "soc3",
+      "state": "fresh",
+      "pool": 49,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.365,
+        "sharedTwo": 8.71
+      },
+      "after": {
+        "answerLeak": 0.75,
+        "sharedTwo": 1.125
+      },
+      "afterZeroOverlapRounds": 0
+    },
+    {
+      "chapter": "soc4",
+      "state": "fresh",
+      "pool": 38,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.895,
+        "sharedTwo": 5.615
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "soc5",
+      "state": "fresh",
+      "pool": 49,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.69,
+        "sharedTwo": 7.745
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "soc6",
+      "state": "fresh",
+      "pool": 48,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 8.4,
+        "sharedTwo": 9.385
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "law1",
+      "state": "fresh",
+      "pool": 54,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 9.07,
+        "sharedTwo": 9.62
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "law2",
+      "state": "fresh",
+      "pool": 55,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 8.245,
+        "sharedTwo": 9.375
+      },
+      "after": {
+        "answerLeak": 0.565,
+        "sharedTwo": 0.81
+      },
+      "afterZeroOverlapRounds": 83
+    },
+    {
+      "chapter": "law3",
+      "state": "fresh",
+      "pool": 52,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.1,
+        "sharedTwo": 8.96
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "law4",
+      "state": "fresh",
+      "pool": 46,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.595,
+        "sharedTwo": 8.01
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "law5",
+      "state": "fresh",
+      "pool": 50,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 11.05,
+        "sharedTwo": 11.55
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "law6",
+      "state": "fresh",
+      "pool": 57,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 8.18,
+        "sharedTwo": 9.39
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "law7",
+      "state": "fresh",
+      "pool": 49,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.185,
+        "sharedTwo": 6.285
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "law8",
+      "state": "fresh",
+      "pool": 43,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 9.48,
+        "sharedTwo": 10.45
+      },
+      "after": {
+        "answerLeak": 3.44,
+        "sharedTwo": 3.535
+      },
+      "afterZeroOverlapRounds": 0
+    },
+    {
+      "chapter": "eco1",
+      "state": "fresh",
+      "pool": 52,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 9.685,
+        "sharedTwo": 11.18
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "eco2",
+      "state": "fresh",
+      "pool": 45,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.3,
+        "sharedTwo": 7.335
+      },
+      "after": {
+        "answerLeak": 0.16,
+        "sharedTwo": 0.185
+      },
+      "afterZeroOverlapRounds": 162
+    },
+    {
+      "chapter": "eco3",
+      "state": "fresh",
+      "pool": 52,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.55,
+        "sharedTwo": 5.84
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "eco4",
+      "state": "fresh",
+      "pool": 48,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 8.075,
+        "sharedTwo": 9.025
+      },
+      "after": {
+        "answerLeak": 1.38,
+        "sharedTwo": 1.68
+      },
+      "afterZeroOverlapRounds": 0
+    },
+    {
+      "chapter": "eco5",
+      "state": "fresh",
+      "pool": 49,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 8.56,
+        "sharedTwo": 9.3
+      },
+      "after": {
+        "answerLeak": 0.965,
+        "sharedTwo": 1.065
+      },
+      "afterZeroOverlapRounds": 2
+    },
+    {
+      "chapter": "eco6",
+      "state": "fresh",
+      "pool": 52,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.545,
+        "sharedTwo": 7.4
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "pre",
+      "state": "mixed-progress",
+      "pool": 110,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 3.995,
+        "sharedTwo": 4.19
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "voy",
+      "state": "mixed-progress",
+      "pool": 94,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 3.5,
+        "sharedTwo": 3.18
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "qpe",
+      "state": "mixed-progress",
+      "pool": 100,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 3.655,
+        "sharedTwo": 3.8
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "qsc",
+      "state": "mixed-progress",
+      "pool": 100,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 2.92,
+        "sharedTwo": 2.545
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "jpe",
+      "state": "mixed-progress",
+      "pool": 107,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 1.795,
+        "sharedTwo": 1.735
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "jsc",
+      "state": "mixed-progress",
+      "pool": 94,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 1.865,
+        "sharedTwo": 1.495
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "cpd",
+      "state": "mixed-progress",
+      "pool": 95,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 1.94,
+        "sharedTwo": 3.58
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "ces",
+      "state": "mixed-progress",
+      "pool": 92,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 1.775,
+        "sharedTwo": 2
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "cnh1",
+      "state": "mixed-progress",
+      "pool": 99,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.32,
+        "sharedTwo": 7.945
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "cnh2",
+      "state": "mixed-progress",
+      "pool": 73,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.105,
+        "sharedTwo": 6.43
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "cnh3",
+      "state": "mixed-progress",
+      "pool": 76,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.105,
+        "sharedTwo": 5.495
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "cnh4",
+      "state": "mixed-progress",
+      "pool": 80,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.48,
+        "sharedTwo": 6.335
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "cnh5",
+      "state": "mixed-progress",
+      "pool": 63,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.09,
+        "sharedTwo": 5.3
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "cnh6",
+      "state": "mixed-progress",
+      "pool": 59,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 3.64,
+        "sharedTwo": 7.13
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdh1",
+      "state": "mixed-progress",
+      "pool": 73,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.16,
+        "sharedTwo": 7.795
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdh2",
+      "state": "mixed-progress",
+      "pool": 63,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.905,
+        "sharedTwo": 8.23
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdh3",
+      "state": "mixed-progress",
+      "pool": 76,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.355,
+        "sharedTwo": 7.07
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdh4",
+      "state": "mixed-progress",
+      "pool": 50,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.035,
+        "sharedTwo": 8.025
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdh5",
+      "state": "mixed-progress",
+      "pool": 64,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.235,
+        "sharedTwo": 5.23
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdh6",
+      "state": "mixed-progress",
+      "pool": 49,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.31,
+        "sharedTwo": 4.82
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdh7",
+      "state": "mixed-progress",
+      "pool": 69,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.625,
+        "sharedTwo": 8.2
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg1",
+      "state": "mixed-progress",
+      "pool": 59,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.475,
+        "sharedTwo": 8.3
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg2",
+      "state": "mixed-progress",
+      "pool": 73,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.185,
+        "sharedTwo": 8.595
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg3",
+      "state": "mixed-progress",
+      "pool": 65,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.295,
+        "sharedTwo": 5.765
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg4",
+      "state": "mixed-progress",
+      "pool": 56,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.77,
+        "sharedTwo": 8.14
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg5",
+      "state": "mixed-progress",
+      "pool": 65,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.44,
+        "sharedTwo": 8.185
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg6",
+      "state": "mixed-progress",
+      "pool": 52,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 9.465,
+        "sharedTwo": 9.88
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg7",
+      "state": "mixed-progress",
+      "pool": 72,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 8.325,
+        "sharedTwo": 8.915
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "twg8",
+      "state": "mixed-progress",
+      "pool": 46,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.66,
+        "sharedTwo": 6.365
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "asg1",
+      "state": "mixed-progress",
+      "pool": 58,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.985,
+        "sharedTwo": 7.585
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "asg2",
+      "state": "mixed-progress",
+      "pool": 58,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.605,
+        "sharedTwo": 6.255
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "asg3",
+      "state": "mixed-progress",
+      "pool": 46,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.6,
+        "sharedTwo": 8.55
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "asg4",
+      "state": "mixed-progress",
+      "pool": 70,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.425,
+        "sharedTwo": 6.25
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "asg5",
+      "state": "mixed-progress",
+      "pool": 54,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.64,
+        "sharedTwo": 4.47
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdg1",
+      "state": "mixed-progress",
+      "pool": 59,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.88,
+        "sharedTwo": 5.13
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdg2",
+      "state": "mixed-progress",
+      "pool": 55,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.735,
+        "sharedTwo": 7.19
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdg3",
+      "state": "mixed-progress",
+      "pool": 70,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.11,
+        "sharedTwo": 7.145
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "wdg4",
+      "state": "mixed-progress",
+      "pool": 59,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.165,
+        "sharedTwo": 6.06
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "soc1",
+      "state": "mixed-progress",
+      "pool": 40,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 8.27,
+        "sharedTwo": 8.245
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "soc2",
+      "state": "mixed-progress",
+      "pool": 43,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.3,
+        "sharedTwo": 7.545
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "soc3",
+      "state": "mixed-progress",
+      "pool": 49,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.03,
+        "sharedTwo": 7.795
+      },
+      "after": {
+        "answerLeak": 0.66,
+        "sharedTwo": 1
+      },
+      "afterZeroOverlapRounds": 0
+    },
+    {
+      "chapter": "soc4",
+      "state": "mixed-progress",
+      "pool": 38,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 4.71,
+        "sharedTwo": 4.73
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "soc5",
+      "state": "mixed-progress",
+      "pool": 49,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.79,
+        "sharedTwo": 8.235
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "soc6",
+      "state": "mixed-progress",
+      "pool": 48,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.44,
+        "sharedTwo": 8.27
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "law1",
+      "state": "mixed-progress",
+      "pool": 54,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 8.455,
+        "sharedTwo": 9.09
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "law2",
+      "state": "mixed-progress",
+      "pool": 55,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.8,
+        "sharedTwo": 9.295
+      },
+      "after": {
+        "answerLeak": 0.465,
+        "sharedTwo": 0.725
+      },
+      "afterZeroOverlapRounds": 92
+    },
+    {
+      "chapter": "law3",
+      "state": "mixed-progress",
+      "pool": 52,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.98,
+        "sharedTwo": 9.31
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "law4",
+      "state": "mixed-progress",
+      "pool": 46,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.65,
+        "sharedTwo": 7.64
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "law5",
+      "state": "mixed-progress",
+      "pool": 50,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 11.25,
+        "sharedTwo": 11.485
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "law6",
+      "state": "mixed-progress",
+      "pool": 57,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 5.78,
+        "sharedTwo": 6.57
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "law7",
+      "state": "mixed-progress",
+      "pool": 49,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.935,
+        "sharedTwo": 7.17
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "law8",
+      "state": "mixed-progress",
+      "pool": 43,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 8.74,
+        "sharedTwo": 10.53
+      },
+      "after": {
+        "answerLeak": 3.57,
+        "sharedTwo": 5.29
+      },
+      "afterZeroOverlapRounds": 0
+    },
+    {
+      "chapter": "eco1",
+      "state": "mixed-progress",
+      "pool": 52,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 9.885,
+        "sharedTwo": 11.1
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "eco2",
+      "state": "mixed-progress",
+      "pool": 45,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.28,
+        "sharedTwo": 7.77
+      },
+      "after": {
+        "answerLeak": 0.125,
+        "sharedTwo": 0.125
+      },
+      "afterZeroOverlapRounds": 175
+    },
+    {
+      "chapter": "eco3",
+      "state": "mixed-progress",
+      "pool": 52,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.24,
+        "sharedTwo": 5.835
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    },
+    {
+      "chapter": "eco4",
+      "state": "mixed-progress",
+      "pool": 48,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 9.385,
+        "sharedTwo": 10.4
+      },
+      "after": {
+        "answerLeak": 1.515,
+        "sharedTwo": 1.5
+      },
+      "afterZeroOverlapRounds": 0
+    },
+    {
+      "chapter": "eco5",
+      "state": "mixed-progress",
+      "pool": 49,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 7.35,
+        "sharedTwo": 8.085
+      },
+      "after": {
+        "answerLeak": 1.2,
+        "sharedTwo": 1.51
+      },
+      "afterZeroOverlapRounds": 0
+    },
+    {
+      "chapter": "eco6",
+      "state": "mixed-progress",
+      "pool": 52,
+      "rounds": 200,
+      "n": 20,
+      "before": {
+        "answerLeak": 6.79,
+        "sharedTwo": 7.545
+      },
+      "after": {
+        "answerLeak": 0,
+        "sharedTwo": 0
+      },
+      "afterZeroOverlapRounds": 200
+    }
+  ]
+}

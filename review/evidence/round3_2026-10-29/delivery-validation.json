@@ -1,0 +1,22 @@
+{
+  "sourceSha": "7ee6394c5ee2ef9b353c387eff0099abb3758028",
+  "changedReviewed": 277,
+  "cumulativeReviewed": 1851,
+  "contentCounts": {
+    "pass": 265,
+    "optional": 11,
+    "needs_fix": 1
+  },
+  "bankIDs": 3840,
+  "uniqueUI": 80,
+  "roundSamples": 70,
+  "targeted": 12,
+  "simulationPairedRounds": 23200,
+  "physicalPhoneTested": false,
+  "androidEmulatorTested": false,
+  "choiceOrderPreserved": false,
+  "questionAndOptionSetPreserved": true,
+  "programModified": false,
+  "brokenLinks": [],
+  "errors": []
+}
