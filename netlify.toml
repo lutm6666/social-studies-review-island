@@ -1,0 +1,4 @@
+# Netlify 部署設定：只把網站本身需要的檔案放上線（不含 review/、src/ 等開發資料）
+[build]
+  command = "mkdir -p dist && cp index.html sw.js manifest.webmanifest favicon.png apple-touch-icon.png icon-192.png icon-512.png og.png dist/"
+  publish = "dist"
