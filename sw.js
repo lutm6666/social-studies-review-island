@@ -1,5 +1,5 @@
 // 離線功能：第一次開啟後，網頁、3D 引擎與字型都會存到這台裝置，沒有網路也能複習
-const CACHE='shehui-bbebb6f000';
+const CACHE='shehui-da35b2a4c8';
 const CORE=['./','index.html','manifest.webmanifest','icon-192.png','icon-512.png','favicon.png','apple-touch-icon.png'];
 const THREE_URL='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
 self.addEventListener('install',e=>{
