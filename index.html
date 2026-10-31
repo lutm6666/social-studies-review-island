@@ -6597,7 +6597,7 @@ function renderBackup(){
 // ── 線上排行榜（只在公開網址版啟用；需先填好 Firebase 設定）──
 // 計分：答對過的「不同題數」（同一題刷很多次只算一次）。總榜＝累積；週榜＝本週（臺灣時間週一 0 點起）答對的不同題數。
 // 只顯示自取的暱稱，不收姓名、學號或 Email；要自己按「加入」才會上傳。
-const LB_FB=null; // 例：{apiKey:'…',authDomain:'…',projectId:'…',appId:'…'}
+const LB_FB={apiKey:'AIzaSyAFpL7DEmlW_3_Lf41rKEGUphIkJ_pggeU',authDomain:'social-island-9638f.firebaseapp.com',projectId:'social-island-9638f',storageBucket:'social-island-9638f.firebasestorage.app',messagingSenderId:'233514331022',appId:'1:233514331022:web:396b8020c3a8b6d260d2df'};
 const LB_KEY='shehui-lb', LB_MAX=12, LB_TOP=50;
 const LB_ON=!!LB_FB && !(window.claude && claude.use) && /^https:$/.test(location.protocol);
 const LB_BAD=['幹','靠北','靠夭','白痴','白癡','智障','腦殘','操你','垃圾','去死','三小','雞掰','機掰','屁眼','fuck','shit','bitch','dick','sex','porn','http','www','.com'];
