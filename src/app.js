@@ -864,7 +864,7 @@ async function lbInit(){
   if(!auth.currentUser) await auth.signInAnonymously();
   lbFb={db,uid:auth.currentUser.uid}; return lbFb;
 }
-function lbSchedule(){ if(!LB_ON) return; clearTimeout(lbT); lbT=setTimeout(lbPush,Math.max(5000,25000-(Date.now()-lbLast))); }
+function lbSchedule(){ if(!LB_ON) return; clearTimeout(lbT); lbT=setTimeout(()=>{ lbT=0; lbPush(); },Math.max(5000,25000-(Date.now()-lbLast))); }
 async function lbPush(){
   const p=lbPrefs(); if(!LB_ON || !p.name) return;
   try{ const {db,uid}=await lbInit(); const ts=firebase.firestore.FieldValue.serverTimestamp();
@@ -892,7 +892,7 @@ function renderLeaderboard(tab){
     $('#lbOut').addEventListener('click',async()=>{ await lbLeave(); renderLeaderboard(tab); });
   }
   (async()=>{ const list=$('#lbList');
-    try{ const {db,uid}=await lbInit(); const snap=await db.collection('lb/'+(tab==='week'?lbWeek():'all')+'/players').orderBy('score','desc').limit(LB_TOP).get();
+    try{ const {db,uid}=await lbInit(); if(p.name && lbT){ clearTimeout(lbT); lbT=0; await lbPush(); } const snap=await db.collection('lb/'+(tab==='week'?lbWeek():'all')+'/players').orderBy('score','desc').limit(LB_TOP).get();
       if(!$('#lbList')) return; const rows=[]; snap.forEach(d=>{ const x=d.data(); if(x.score>0) rows.push({me:d.id===uid,name:x.name,score:x.score}); });
       list.innerHTML=rows.length?rows.map((r,i)=>'<li class="lb-row'+(r.me?' me':'')+'"><span class="lb-rk">'+(i+1)+'</span><span class="lb-nm">'+esc(r.name)+'</span><span class="lb-sc">'+r.score+' 題</span></li>').join(''):'<li class="note">還沒有人上榜，答對幾題就能成為第一名。</li>';
       if(p.name && !rows.some(r=>r.me)) list.insertAdjacentHTML('afterend','<p class="note">'+((tab==='week'?lbWeekScore():lbTotal())?'你目前不在前 '+LB_TOP+' 名，繼續加油。':'答對題目後，你就會出現在排行榜上。')+'</p>');
