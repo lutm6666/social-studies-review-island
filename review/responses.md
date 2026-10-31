@@ -722,3 +722,6 @@ law4-g37（非阻擋提醒）暫不再改。
 
 ## 線上排行榜
 - 待審清單見 `pending_leaderboard_2026-10-31.md`；Firestore 規則見 `firestore.rules`。尚未部署正式網站，待審查通過後再部署。
+
+## 排行榜安全審查修正
+- 見 `pending_leaderboard_fix_2026-10-31.md`；規則見 `firestore.rules`（資料改為每人一筆 players/{uid}）。尚未部署。

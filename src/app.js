@@ -839,63 +839,89 @@ function renderBackup(){
   $('#bkIn').addEventListener('click',()=>{ const t=$('#bkCode').value; if(!t.trim()){ msg.textContent='請先選擇備份檔，或貼上備份代碼。'; msg.className='bk-msg err'; return; } doImport(t); });
   $('#bkFile').addEventListener('change',e=>{ const file=e.target.files&&e.target.files[0]; if(!file) return; const rd=new FileReader(); rd.onload=()=>doImport(String(rd.result)); rd.onerror=()=>{ msg.textContent='讀取檔案失敗。'; msg.className='bk-msg err'; }; rd.readAsText(file); });
 }
-// ── 線上排行榜（只在公開網址版啟用；需先填好 Firebase 設定）──
+// ── 線上排行榜（只在公開網址版啟用）──
 // 計分：答對過的「不同題數」（同一題刷很多次只算一次）。總榜＝累積；週榜＝本週（臺灣時間週一 0 點起）答對的不同題數。
-// 只顯示自取的暱稱，不收姓名、學號或 Email；要自己按「加入」才會上傳。
+// 每位玩家只有一筆紀錄 players/{匿名識別碼}：name、total、at，再加上「本週」欄位（例如 w20752）。
+// 週榜依本週欄位排序；換週時舊週欄位會被覆蓋掉，所以「退出」只要刪掉這一筆就能刪除全部資料。
+// 只有按「加入」或「檢舉」時才會匿名登入；單純看榜不登入。分數由瀏覽器計算，屬於趣味排行。
 const LB_FB={apiKey:'AIzaSyAFpL7DEmlW_3_Lf41rKEGUphIkJ_pggeU',authDomain:'social-island-9638f.firebaseapp.com',projectId:'social-island-9638f',storageBucket:'social-island-9638f.firebasestorage.app',messagingSenderId:'233514331022',appId:'1:233514331022:web:396b8020c3a8b6d260d2df'};
 const LB_KEY='shehui-lb', LB_MAX=12, LB_TOP=50;
 const LB_ON=!!LB_FB && !(window.claude && claude.use) && /^https:$/.test(location.protocol);
-const LB_BAD=['幹','靠北','靠夭','白痴','白癡','智障','腦殘','操你','垃圾','去死','三小','雞掰','機掰','屁眼','fuck','shit','bitch','dick','sex','porn','http','www','.com'];
+// 與 firestore.rules 的伺服器端過濾一致（前端先擋，伺服器再擋一次）
+const LB_BAD=/(幹|靠北|靠夭|白痴|白癡|智障|腦殘|操你|去死|三小|雞掰|機掰|屁眼|fuck|shit|bitch|dick|sex|porn|http|www|\.com|[<>"'`])/i;
+const LB_RPT=['不雅或冒犯的暱稱','可能是真實姓名或個人資料','冒充或影射別人','其他'];
 function lbWeek(){ const d=Math.floor((Date.now()+8*3600000)/86400000); return 'w'+(d-((d+3)%7)); } // 1970/1/1 是週四，(d+3)%7=0 為週一
 function lbPrefs(){ try{ return JSON.parse(localStorage.getItem(LB_KEY))||{}; }catch(e){ return {}; } }
 function lbSavePrefs(p){ try{ localStorage.setItem(LB_KEY,JSON.stringify(p)); }catch(e){} }
-function lbTotal(){ return Object.keys(ST.q).filter(id=>ST.q[id] && ST.q[id][1]>0).length; }
-function lbWeekScore(){ const w=ST.wk; return w && w.w===lbWeek() ? Object.keys(w.ids||{}).length : 0; }
-function lbNote(id){ const k=lbWeek(); if(!ST.wk || ST.wk.w!==k) ST.wk={w:k,ids:{}}; ST.wk.ids[id]=1; if(lbPrefs().name) lbSchedule(); }
-function lbCleanName(s){ s=String(s||'').replace(/[\s​-‏<>"'`]/g,'').slice(0,LB_MAX); const low=s.toLowerCase(); if(!s) return {err:'請輸入暱稱。'}; if(LB_BAD.some(w=>low.includes(w))) return {err:'這個暱稱不能使用，請換一個。'}; return {name:s}; }
-let lbFb=null, lbT=0, lbLast=0;
+function lbTotal(){ return Math.min(4000,Object.keys(ST.q).filter(id=>ST.q[id] && ST.q[id][1]>0).length); }
+function lbWeekScore(){ const w=ST.wk; return w && w.w===lbWeek() ? Math.min(lbTotal(),Object.keys(w.ids||{}).length) : 0; }
+function lbNote(id){ const k=lbWeek(); if(!ST.wk || ST.wk.w!==k) ST.wk={w:k,ids:{}}; ST.wk.ids[id]=1; if(lbPrefs().name) lbSchedule(25000); }
+function lbCleanName(s){ s=String(s||'').replace(/[\s​-‏]/g,'').slice(0,LB_MAX); if(!s) return {err:'請輸入暱稱。'}; if(LB_BAD.test(s)) return {err:'這個暱稱不能使用，請換一個。'}; return {name:s}; }
+let lbApp=null, lbUid=null, lbT=0, lbLast=0, lbBusy=null, lbFail=0, lbLeaving=false;
 function lbLoad(src){ return new Promise((ok,no)=>{ const s=document.createElement('script'); s.src=src; s.onload=ok; s.onerror=no; document.head.appendChild(s); }); }
-async function lbInit(){
-  if(lbFb) return lbFb;
-  const V='https://cdn.jsdelivr.net/npm/firebase@10.12.2/';
-  await lbLoad(V+'firebase-app-compat.js'); await Promise.all([lbLoad(V+'firebase-auth-compat.js'),lbLoad(V+'firebase-firestore-compat.js')]);
-  const app=firebase.initializeApp(LB_FB); const auth=app.auth(), db=app.firestore();
-  if(!auth.currentUser) await new Promise(r=>{ const un=auth.onAuthStateChanged(u=>{ un(); r(u); }); });
-  if(!auth.currentUser) await auth.signInAnonymously();
-  lbFb={db,uid:auth.currentUser.uid}; return lbFb;
+async function lbInit(needAuth){
+  if(!lbApp){ const V='https://cdn.jsdelivr.net/npm/firebase@10.12.2/';
+    await lbLoad(V+'firebase-app-compat.js'); await Promise.all([lbLoad(V+'firebase-auth-compat.js'),lbLoad(V+'firebase-firestore-compat.js')]);
+    const app=firebase.initializeApp(LB_FB); lbApp={db:app.firestore(),auth:app.auth()};
+    await new Promise(r=>{ const un=lbApp.auth.onAuthStateChanged(u=>{ un(); r(u); }); }); }
+  if(lbApp.auth.currentUser) lbUid=lbApp.auth.currentUser.uid;
+  else if(needAuth){ await lbApp.auth.signInAnonymously(); lbUid=lbApp.auth.currentUser.uid; }
+  return lbApp.db;
 }
-function lbSchedule(){ if(!LB_ON) return; clearTimeout(lbT); lbT=setTimeout(()=>{ lbT=0; lbPush(); },Math.max(5000,25000-(Date.now()-lbLast))); }
+// 上傳：同一時間只跑一次；規則要求同一筆至少隔 5 秒，所以太快就延後；失敗會逐步拉長間隔自動重試
+function lbSchedule(ms){ if(!LB_ON || lbLeaving) return; clearTimeout(lbT); lbT=setTimeout(()=>{ lbT=0; lbPush(); },ms); }
 async function lbPush(){
-  const p=lbPrefs(); if(!LB_ON || !p.name) return;
-  try{ const {db,uid}=await lbInit(); const ts=firebase.firestore.FieldValue.serverTimestamp();
-    const b=db.batch(); b.set(db.doc('lb/all/players/'+uid),{name:p.name,score:lbTotal(),at:ts}); b.set(db.doc('lb/'+lbWeek()+'/players/'+uid),{name:p.name,score:lbWeekScore(),at:ts});
-    await b.commit(); lbLast=Date.now(); }
-  catch(e){ lbLast=Date.now(); }
+  const p=lbPrefs(); if(!LB_ON || !p.name || lbLeaving) return false;
+  if(lbBusy) return lbBusy;
+  const wait=6000-(Date.now()-lbLast); if(wait>0){ await new Promise(r=>setTimeout(r,wait)); }
+  lbBusy=(async()=>{ try{ const db=await lbInit(true); if(lbLeaving) return false; const wk=lbWeek();
+      const row={name:p.name,total:lbTotal(),at:firebase.firestore.FieldValue.serverTimestamp()}; row[wk]=lbWeekScore();
+      await db.doc('players/'+lbUid).set(row); lbLast=Date.now(); lbFail=0; return true; }
+    catch(e){ lbLast=Date.now(); lbFail++; lbSchedule(Math.min(300000,30000*Math.pow(2,lbFail-1))); return false; }
+    finally{ lbBusy=null; } })();
+  return lbBusy;
 }
-async function lbLeave(){ try{ const {db,uid}=await lbInit(); const b=db.batch(); b.delete(db.doc('lb/all/players/'+uid)); b.delete(db.doc('lb/'+lbWeek()+'/players/'+uid)); await b.commit(); }catch(e){} const p=lbPrefs(); delete p.name; lbSavePrefs(p); }
-function renderLeaderboard(tab){
+async function lbLeave(){
+  lbLeaving=true; clearTimeout(lbT); lbT=0;
+  try{ if(lbBusy) await lbBusy; const db=await lbInit(true); await db.doc('players/'+lbUid).delete(); const p=lbPrefs(); delete p.name; lbSavePrefs(p); lbFail=0; return true; }
+  catch(e){ return false; } finally{ lbLeaving=false; }
+}
+async function lbReport(uid,reason){ const db=await lbInit(true); await db.collection('lbreports').add({target:uid,reason,at:firebase.firestore.FieldValue.serverTimestamp()}); }
+function lbPrivacyHTML(){ return '<details class="lb-priv"><summary>排行榜會存哪些資料？</summary><p class="bk-msg">公開顯示：你取的暱稱、累積與本週答對題數。<br>系統另外記錄：一組隨機產生的匿名識別碼（用來分辨哪一筆是你的）和最後更新時間；這兩項看不出你是誰，但技術上任何人都讀得到。<br>資料存放在 Google 的 Firebase 服務（臺灣機房）。<br>不收姓名、學號、Email 或位置；請不要用真實姓名或能認出你的暱稱。<br>按「退出排行榜」會刪除你的整筆紀錄；長期沒有更新或被檢舉不當的紀錄，管理者可能刪除。<br>分數由各自的瀏覽器計算，屬於趣味排行，不代表正式成績。</p></details>'; }
+function renderLeaderboard(tab,flash){
   view='leaderboard'; S=null; tab=tab||'week';
-  setHead('全部島嶼','排行榜','比比看誰答對的不同題目最多','hist'); openPanel();
+  setHead('全部島嶼','排行榜','趣味排行：比比看誰答對的不同題目最多','hist'); openPanel();
   const p=lbPrefs();
   body.innerHTML='<div class="lb-tabs" role="tablist"><button type="button" role="tab" class="btn'+(tab==='week'?' primary':'')+'" data-t="week" aria-selected="'+(tab==='week')+'">本週</button><button type="button" role="tab" class="btn'+(tab==='all'?' primary':'')+'" data-t="all" aria-selected="'+(tab==='all')+'">總榜</button></div>'+
     '<p class="note">分數是答對過的不同題數，同一題答對很多次只算一次'+(tab==='week'?'；週榜每週一重新計算':'')+'。</p>'+
-    '<div id="lbMe" class="bk-box"></div><ol class="lb-list" id="lbList"><li class="note">讀取中…</li></ol>';
+    (flash?'<p class="bk-msg '+flash[0]+'" role="status">'+esc(flash[1])+'</p>':'')+
+    '<div id="lbMe" class="bk-box"></div><ol class="lb-list" id="lbList"><li class="note">讀取中…</li></ol><p id="lbFoot"></p>'+lbPrivacyHTML();
   body.querySelectorAll('[data-t]').forEach(b=>b.addEventListener('click',()=>renderLeaderboard(b.dataset.t)));
   const me=$('#lbMe');
   if(!p.name){
-    me.innerHTML='<label class="bk-msg" for="lbName">取一個暱稱加入排行榜（最多 '+LB_MAX+' 字，請不要用真實姓名）</label><input id="lbName" class="sq" maxlength="'+LB_MAX+'" autocomplete="off"><div class="actions"><button type="button" class="btn primary" id="lbJoin">加入排行榜</button></div><p class="bk-msg" id="lbMsg" aria-live="polite">只會上傳暱稱和分數，隨時可以退出。</p>';
+    me.innerHTML='<label class="bk-msg" for="lbName">取一個暱稱加入排行榜（最多 '+LB_MAX+' 字，請不要用真實姓名）</label><input id="lbName" class="sq" maxlength="'+LB_MAX+'" autocomplete="off"><div class="actions"><button type="button" class="btn primary" id="lbJoin">加入排行榜</button></div><p class="bk-msg" id="lbMsg" aria-live="polite">加入前可以先看下方「排行榜會存哪些資料？」，隨時可以退出。</p>';
     $('#lbJoin').addEventListener('click',async()=>{ const r=lbCleanName($('#lbName').value), m=$('#lbMsg'); if(r.err){ m.textContent=r.err; m.className='bk-msg err'; return; }
-      m.textContent='加入中…'; m.className='bk-msg'; p.name=r.name; lbSavePrefs(p); lbLast=0; await lbPush(); renderLeaderboard(tab); });
+      m.textContent='加入中…'; m.className='bk-msg'; p.name=r.name; lbSavePrefs(p);
+      const ok=await lbPush(); if(!ok){ delete p.name; lbSavePrefs(p); clearTimeout(lbT); lbT=0; m.textContent='加入失敗，請確認網路後再試一次（暱稱也可能不符合規定）。'; m.className='bk-msg err'; return; }
+      renderLeaderboard(tab,['ok','已加入排行榜。']); });
   } else {
-    me.innerHTML='<p class="bk-msg">你的暱稱：<b>'+esc(p.name)+'</b>　本週 '+lbWeekScore()+' 題．累積 '+lbTotal()+' 題</p><div class="actions"><button type="button" class="btn" id="lbRen">改暱稱</button><button type="button" class="btn" id="lbOut">退出排行榜</button></div>';
-    $('#lbRen').addEventListener('click',()=>{ const v=prompt('新的暱稱（最多 '+LB_MAX+' 字）',p.name); if(v==null) return; const r=lbCleanName(v); if(r.err){ alert(r.err); return; } p.name=r.name; lbSavePrefs(p); lbLast=0; lbPush().then(()=>renderLeaderboard(tab)); });
-    $('#lbOut').addEventListener('click',async()=>{ await lbLeave(); renderLeaderboard(tab); });
+    me.innerHTML='<p class="bk-msg">你的暱稱：<b>'+esc(p.name)+'</b>　本週 '+lbWeekScore()+' 題．累積 '+lbTotal()+' 題</p>'+(lbFail?'<p class="bk-msg err">上次上傳成績失敗，會自動重試。</p>':'')+'<div class="actions"><button type="button" class="btn" id="lbRen">改暱稱</button><button type="button" class="btn" id="lbOut">退出並刪除紀錄</button></div>';
+    $('#lbRen').addEventListener('click',async()=>{ const v=prompt('新的暱稱（最多 '+LB_MAX+' 字）',p.name); if(v==null) return; const r=lbCleanName(v); if(r.err){ alert(r.err); return; }
+      const old=p.name; p.name=r.name; lbSavePrefs(p); const ok=await lbPush(); if(!ok){ p.name=old; lbSavePrefs(p); renderLeaderboard(tab,['err','改暱稱失敗，請稍後再試（暱稱也可能不符合規定）。']); return; } renderLeaderboard(tab,['ok','暱稱已更新。']); });
+    $('#lbOut').addEventListener('click',async()=>{ if(!confirm('退出後會刪除你在排行榜上的整筆紀錄，確定嗎？')) return; const ok=await lbLeave();
+      renderLeaderboard(tab, ok?['ok','已退出，排行榜上的紀錄已刪除。']:['err','刪除失敗，你還在排行榜上。請確認網路後再試一次。']); });
   }
   (async()=>{ const list=$('#lbList');
-    try{ const {db,uid}=await lbInit(); if(p.name && lbT){ clearTimeout(lbT); lbT=0; await lbPush(); } const snap=await db.collection('lb/'+(tab==='week'?lbWeek():'all')+'/players').orderBy('score','desc').limit(LB_TOP).get();
-      if(!$('#lbList')) return; const rows=[]; snap.forEach(d=>{ const x=d.data(); if(x.score>0) rows.push({me:d.id===uid,name:x.name,score:x.score}); });
-      list.innerHTML=rows.length?rows.map((r,i)=>'<li class="lb-row'+(r.me?' me':'')+'"><span class="lb-rk">'+(i+1)+'</span><span class="lb-nm">'+esc(r.name)+'</span><span class="lb-sc">'+r.score+' 題</span></li>').join(''):'<li class="note">還沒有人上榜，答對幾題就能成為第一名。</li>';
-      if(p.name && !rows.some(r=>r.me)) list.insertAdjacentHTML('afterend','<p class="note">'+((tab==='week'?lbWeekScore():lbTotal())?'你目前不在前 '+LB_TOP+' 名，繼續加油。':'答對題目後，你就會出現在排行榜上。')+'</p>');
+    try{ if(p.name && lbT){ clearTimeout(lbT); lbT=0; await lbPush(); }
+      const db=await lbInit(!!p.name); const f=tab==='week'?lbWeek():'total';
+      const snap=await db.collection('players').orderBy(f,'desc').limit(LB_TOP).get();
+      if(!$('#lbList')) return; const rows=[]; snap.forEach(d=>{ const x=d.data(); const sc=x[f]|0; if(sc>0) rows.push({id:d.id,me:d.id===lbUid,name:String(x.name||''),score:sc}); });
+      list.innerHTML=rows.length?rows.map((r,i)=>'<li class="lb-row'+(r.me?' me':'')+'"><span class="lb-rk">'+(i+1)+'</span><span class="lb-nm">'+esc(r.name)+'</span><span class="lb-sc">'+r.score+' 題</span>'+(r.me?'':'<button type="button" class="lb-rpt" data-u="'+esc(r.id)+'" aria-label="檢舉暱稱 '+esc(r.name)+'" title="檢舉這個暱稱">⚑</button>')+'</li>').join(''):'<li class="note">還沒有人上榜，答對幾題就能成為第一名。</li>';
+      const mine=tab==='week'?lbWeekScore():lbTotal();
+      if(p.name && !rows.some(r=>r.me)) $('#lbFoot').outerHTML='<p class="note" id="lbFoot">'+(mine?'你目前不在前 '+LB_TOP+' 名，繼續加油。':'答對題目後，你就會出現在排行榜上。')+'</p>';
+      list.querySelectorAll('.lb-rpt').forEach(b=>b.addEventListener('click',async()=>{
+        const n=prompt('檢舉這個暱稱的原因（輸入數字）：\n'+LB_RPT.map((x,i)=>(i+1)+'. '+x).join('\n'),'1'); if(n==null) return; const reason=LB_RPT[(parseInt(n,10)||4)-1]||LB_RPT[3];
+        try{ await lbReport(b.dataset.u,reason); b.disabled=true; b.textContent='✓'; b.title='已檢舉，管理者會處理'; }catch(e){ alert('檢舉送出失敗，請稍後再試。'); } }));
     }catch(e){ if($('#lbList')) list.innerHTML='<li class="note">目前連不上排行榜，請稍後再試。</li>'; } })();
 }
 function renderSearch(term){

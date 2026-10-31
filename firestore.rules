@@ -1,19 +1,48 @@
 rules_version = '2';
-// 社會科複習島排行榜：任何人可讀；只能寫自己的那一筆，且格式、分數範圍、更新頻率都有限制
+// 社會科複習島排行榜
+// 每位玩家一筆 players/{匿名識別碼}：name、total、at，加上「本週」欄位（例如 w20752）。
+// 任何人可讀；只能寫自己那一筆；暱稱在伺服器端再過濾一次；被封鎖（banned/{識別碼}）的人不能再寫入。
+// 檢舉寫進 lbreports（只能新增、任何人都不能讀，管理者在 Firebase 控制台查看）。
 service cloud.firestore {
   match /databases/{database}/documents {
-    match /lb/{board}/players/{uid} {
-      allow read: if board == 'all' || board.matches('w[0-9]+');
+
+    // 臺灣時間本週一的日序號，例如 'w20752'（1970/1/1 是週四）
+    function curWeek() {
+      let d = int((request.time.toMillis() + 28800000) / 86400000);
+      return 'w' + string(d - ((d + 3) % 7));
+    }
+
+    function okName(n) {
+      return n is string && n.size() >= 1 && n.size() <= 12
+        && !n.matches('.*\\s.*')
+        && !n.matches(".*['<>`].*")
+        && !n.matches('.*["].*')
+        && !n.lower().matches('.*(幹|靠北|靠夭|白痴|白癡|智障|腦殘|操你|去死|三小|雞掰|機掰|屁眼|fuck|shit|bitch|dick|sex|porn|http|www|[.]com).*');
+    }
+
+    match /players/{uid} {
+      allow read: if true;
       allow create, update: if request.auth != null && request.auth.uid == uid
-        && (board == 'all' || board.matches('w[0-9]+'))
-        && request.resource.data.keys().hasOnly(['name', 'score', 'at'])
-        && request.resource.data.name is string
-        && request.resource.data.name.size() >= 1 && request.resource.data.name.size() <= 12
-        && request.resource.data.score is int
-        && request.resource.data.score >= 0 && request.resource.data.score <= 4000
+        && !exists(/databases/$(database)/documents/banned/$(uid))
+        && request.resource.data.keys().size() == 4
+        && request.resource.data.keys().hasAll(['name', 'total', 'at', curWeek()])
+        && okName(request.resource.data.name)
+        && request.resource.data.total is int
+        && request.resource.data.total >= 0 && request.resource.data.total <= 4000
+        && request.resource.data[curWeek()] is int
+        && request.resource.data[curWeek()] >= 0
+        && request.resource.data[curWeek()] <= request.resource.data.total
         && request.resource.data.at == request.time
         && (resource == null || request.time > resource.data.at + duration.value(5, 's'));
       allow delete: if request.auth != null && request.auth.uid == uid;
+    }
+
+    match /lbreports/{id} {
+      allow create: if request.auth != null
+        && request.resource.data.keys().hasOnly(['target', 'reason', 'at'])
+        && request.resource.data.target is string && request.resource.data.target.size() <= 128
+        && request.resource.data.reason is string && request.resource.data.reason.size() <= 40
+        && request.resource.data.at == request.time;
     }
   }
 }
