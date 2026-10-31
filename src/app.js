@@ -101,7 +101,7 @@ async function pushNow(){
 // 間隔複習：紀錄第 5 欄是「下次複習日」（本地日期序號）。答對後依連續答對次數隔 1、3、7、14、30、60 天；答錯隔天再出現
 const today=()=>Math.floor((Date.now()-new Date().getTimezoneOffset()*60000)/86400000);
 const INTV=[1,1,3,7,14,30,60];
-function record(id,ok){ const r=ST.q[id]||[0,0,0,0]; const st=r[3]!=null?r[3]:(r[2]?1:0); r[0]++; if(ok) r[1]++; r[2]=ok?1:0; r[3]=ok?st+1:0; r[4]=today()+(ok?INTV[Math.min(r[3],6)]:1); ST.q[id]=r; save(); return r[4]-today(); }
+function record(id,ok){ const r=ST.q[id]||[0,0,0,0]; const st=r[3]!=null?r[3]:(r[2]?1:0); r[0]++; if(ok) r[1]++; r[2]=ok?1:0; r[3]=ok?st+1:0; r[4]=today()+(ok?INTV[Math.min(r[3],6)]:1); ST.q[id]=r; if(ok) lbNote(id); save(); return r[4]-today(); }
 // 舊紀錄沒有複習日：答錯的今天就到期，答對的依連續次數排定
 function migrateDue(){ const t=today(); Object.keys(ST.q).forEach(id=>{ const r=ST.q[id]; if(r && r[4]==null){ const st=r[3]!=null?r[3]:(r[2]?1:0); r[4]=r[2]?t+INTV[Math.min(st,6)]:t; } }); }
 migrateDue();
@@ -839,6 +839,65 @@ function renderBackup(){
   $('#bkIn').addEventListener('click',()=>{ const t=$('#bkCode').value; if(!t.trim()){ msg.textContent='請先選擇備份檔，或貼上備份代碼。'; msg.className='bk-msg err'; return; } doImport(t); });
   $('#bkFile').addEventListener('change',e=>{ const file=e.target.files&&e.target.files[0]; if(!file) return; const rd=new FileReader(); rd.onload=()=>doImport(String(rd.result)); rd.onerror=()=>{ msg.textContent='讀取檔案失敗。'; msg.className='bk-msg err'; }; rd.readAsText(file); });
 }
+// ── 線上排行榜（只在公開網址版啟用；需先填好 Firebase 設定）──
+// 計分：答對過的「不同題數」（同一題刷很多次只算一次）。總榜＝累積；週榜＝本週（臺灣時間週一 0 點起）答對的不同題數。
+// 只顯示自取的暱稱，不收姓名、學號或 Email；要自己按「加入」才會上傳。
+const LB_FB=null; // 例：{apiKey:'…',authDomain:'…',projectId:'…',appId:'…'}
+const LB_KEY='shehui-lb', LB_MAX=12, LB_TOP=50;
+const LB_ON=!!LB_FB && !(window.claude && claude.use) && /^https:$/.test(location.protocol);
+const LB_BAD=['幹','靠北','靠夭','白痴','白癡','智障','腦殘','操你','垃圾','去死','三小','雞掰','機掰','屁眼','fuck','shit','bitch','dick','sex','porn','http','www','.com'];
+function lbWeek(){ const d=Math.floor((Date.now()+8*3600000)/86400000); return 'w'+(d-((d+3)%7)); } // 1970/1/1 是週四，(d+3)%7=0 為週一
+function lbPrefs(){ try{ return JSON.parse(localStorage.getItem(LB_KEY))||{}; }catch(e){ return {}; } }
+function lbSavePrefs(p){ try{ localStorage.setItem(LB_KEY,JSON.stringify(p)); }catch(e){} }
+function lbTotal(){ return Object.keys(ST.q).filter(id=>ST.q[id] && ST.q[id][1]>0).length; }
+function lbWeekScore(){ const w=ST.wk; return w && w.w===lbWeek() ? Object.keys(w.ids||{}).length : 0; }
+function lbNote(id){ const k=lbWeek(); if(!ST.wk || ST.wk.w!==k) ST.wk={w:k,ids:{}}; ST.wk.ids[id]=1; if(lbPrefs().name) lbSchedule(); }
+function lbCleanName(s){ s=String(s||'').replace(/[\s​-‏<>"'`]/g,'').slice(0,LB_MAX); const low=s.toLowerCase(); if(!s) return {err:'請輸入暱稱。'}; if(LB_BAD.some(w=>low.includes(w))) return {err:'這個暱稱不能使用，請換一個。'}; return {name:s}; }
+let lbFb=null, lbT=0, lbLast=0;
+function lbLoad(src){ return new Promise((ok,no)=>{ const s=document.createElement('script'); s.src=src; s.onload=ok; s.onerror=no; document.head.appendChild(s); }); }
+async function lbInit(){
+  if(lbFb) return lbFb;
+  const V='https://cdn.jsdelivr.net/npm/firebase@10.12.2/';
+  await lbLoad(V+'firebase-app-compat.js'); await Promise.all([lbLoad(V+'firebase-auth-compat.js'),lbLoad(V+'firebase-firestore-compat.js')]);
+  const app=firebase.initializeApp(LB_FB); const auth=app.auth(), db=app.firestore();
+  if(!auth.currentUser) await new Promise(r=>{ const un=auth.onAuthStateChanged(u=>{ un(); r(u); }); });
+  if(!auth.currentUser) await auth.signInAnonymously();
+  lbFb={db,uid:auth.currentUser.uid}; return lbFb;
+}
+function lbSchedule(){ if(!LB_ON) return; clearTimeout(lbT); lbT=setTimeout(lbPush,Math.max(5000,25000-(Date.now()-lbLast))); }
+async function lbPush(){
+  const p=lbPrefs(); if(!LB_ON || !p.name) return;
+  try{ const {db,uid}=await lbInit(); const ts=firebase.firestore.FieldValue.serverTimestamp();
+    const b=db.batch(); b.set(db.doc('lb/all/players/'+uid),{name:p.name,score:lbTotal(),at:ts}); b.set(db.doc('lb/'+lbWeek()+'/players/'+uid),{name:p.name,score:lbWeekScore(),at:ts});
+    await b.commit(); lbLast=Date.now(); }
+  catch(e){ lbLast=Date.now(); }
+}
+async function lbLeave(){ try{ const {db,uid}=await lbInit(); const b=db.batch(); b.delete(db.doc('lb/all/players/'+uid)); b.delete(db.doc('lb/'+lbWeek()+'/players/'+uid)); await b.commit(); }catch(e){} const p=lbPrefs(); delete p.name; lbSavePrefs(p); }
+function renderLeaderboard(tab){
+  view='leaderboard'; S=null; tab=tab||'week';
+  setHead('全部島嶼','排行榜','比比看誰答對的不同題目最多','hist'); openPanel();
+  const p=lbPrefs();
+  body.innerHTML='<div class="lb-tabs" role="tablist"><button type="button" role="tab" class="btn'+(tab==='week'?' primary':'')+'" data-t="week" aria-selected="'+(tab==='week')+'">本週</button><button type="button" role="tab" class="btn'+(tab==='all'?' primary':'')+'" data-t="all" aria-selected="'+(tab==='all')+'">總榜</button></div>'+
+    '<p class="note">分數是答對過的不同題數，同一題答對很多次只算一次'+(tab==='week'?'；週榜每週一重新計算':'')+'。</p>'+
+    '<div id="lbMe" class="bk-box"></div><ol class="lb-list" id="lbList"><li class="note">讀取中…</li></ol>';
+  body.querySelectorAll('[data-t]').forEach(b=>b.addEventListener('click',()=>renderLeaderboard(b.dataset.t)));
+  const me=$('#lbMe');
+  if(!p.name){
+    me.innerHTML='<label class="bk-msg" for="lbName">取一個暱稱加入排行榜（最多 '+LB_MAX+' 字，請不要用真實姓名）</label><input id="lbName" class="sq" maxlength="'+LB_MAX+'" autocomplete="off"><div class="actions"><button type="button" class="btn primary" id="lbJoin">加入排行榜</button></div><p class="bk-msg" id="lbMsg" aria-live="polite">只會上傳暱稱和分數，隨時可以退出。</p>';
+    $('#lbJoin').addEventListener('click',async()=>{ const r=lbCleanName($('#lbName').value), m=$('#lbMsg'); if(r.err){ m.textContent=r.err; m.className='bk-msg err'; return; }
+      m.textContent='加入中…'; m.className='bk-msg'; p.name=r.name; lbSavePrefs(p); lbLast=0; await lbPush(); renderLeaderboard(tab); });
+  } else {
+    me.innerHTML='<p class="bk-msg">你的暱稱：<b>'+esc(p.name)+'</b>　本週 '+lbWeekScore()+' 題．累積 '+lbTotal()+' 題</p><div class="actions"><button type="button" class="btn" id="lbRen">改暱稱</button><button type="button" class="btn" id="lbOut">退出排行榜</button></div>';
+    $('#lbRen').addEventListener('click',()=>{ const v=prompt('新的暱稱（最多 '+LB_MAX+' 字）',p.name); if(v==null) return; const r=lbCleanName(v); if(r.err){ alert(r.err); return; } p.name=r.name; lbSavePrefs(p); lbLast=0; lbPush().then(()=>renderLeaderboard(tab)); });
+    $('#lbOut').addEventListener('click',async()=>{ await lbLeave(); renderLeaderboard(tab); });
+  }
+  (async()=>{ const list=$('#lbList');
+    try{ const {db,uid}=await lbInit(); const snap=await db.collection('lb/'+(tab==='week'?lbWeek():'all')+'/players').orderBy('score','desc').limit(LB_TOP).get();
+      if(!$('#lbList')) return; const rows=[]; snap.forEach(d=>{ const x=d.data(); if(x.score>0) rows.push({me:d.id===uid,name:x.name,score:x.score}); });
+      list.innerHTML=rows.length?rows.map((r,i)=>'<li class="lb-row'+(r.me?' me':'')+'"><span class="lb-rk">'+(i+1)+'</span><span class="lb-nm">'+esc(r.name)+'</span><span class="lb-sc">'+r.score+' 題</span></li>').join(''):'<li class="note">還沒有人上榜，答對幾題就能成為第一名。</li>';
+      if(p.name && !rows.some(r=>r.me)) list.insertAdjacentHTML('afterend','<p class="note">'+((tab==='week'?lbWeekScore():lbTotal())?'你目前不在前 '+LB_TOP+' 名，繼續加油。':'答對題目後，你就會出現在排行榜上。')+'</p>');
+    }catch(e){ if($('#lbList')) list.innerHTML='<li class="note">目前連不上排行榜，請稍後再試。</li>'; } })();
+}
 function renderSearch(term){
   view='search'; S=null;
   setHead('全部島嶼','搜尋題目','輸入關鍵字，找出相關題目一起練','geo'); openPanel();
@@ -992,6 +1051,7 @@ const SKY_MODES=[['auto','自動',null],['day','白天',12],['dusk','黃昏',17.
 function setSky(mode,keep){ const m=SKY_MODES.find(s=>s[0]===mode)||SKY_MODES[0]; if(!keep){ UIP.sky=m[0]; saveUIP(); } window.__skyPref=m[2]; if(typeof window.__skyHour==='function') window.__skyHour(m[2]); $('#skyBtn').textContent='天空：'+m[1]; }
 $('#skyBtn').addEventListener('click',()=>{ const i=SKY_MODES.findIndex(s=>s[0]===(UIP.sky||'auto')); setSky(SKY_MODES[(i+1)%SKY_MODES.length][0]); });
 $('#backupBtn').addEventListener('click',()=>{ markInteracted(); renderBackup(); });
+if(LB_ON){ $('#lbBtn').hidden=false; $('#lbBtn').addEventListener('click',()=>{ markInteracted(); renderLeaderboard(); }); }
 $('#hudMin').addEventListener('click',()=>setHudMini(!document.body.classList.contains('hud-mini')));
 $('#compactBtn').addEventListener('click',()=>setCompact(!UIP.compact));
 $('#eyeBtn').addEventListener('click',()=>setUiHidden(!document.body.classList.contains('ui-hidden')));

@@ -455,6 +455,7 @@ body.sound-off .snd-btn .snd-wave{display:none}
 .chip.hubchip .lk-ic{font-size:var(--fs-5);line-height:1}
 .hubc{display:inline-flex;align-items:center;gap:4px;margin-right:4px}
 .hubc b{color:var(--ink)}
+.lb-tabs{display:flex;gap:8px;margin:4px 0 8px}.lb-list{list-style:none;margin:0;padding:0;display:grid;gap:4px}.lb-row{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;background:rgba(127,127,127,.08)}.lb-row.me{outline:2px solid var(--accent,#d98b2b)}.lb-rk{width:2em;text-align:center;font-weight:700;color:var(--muted)}.lb-row:nth-child(-n+3) .lb-rk{color:var(--accent,#d98b2b)}.lb-nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.lb-sc{font-variant-numeric:tabular-nums;color:var(--muted)}
 </style>
 
 <canvas id="scene" aria-label="可以拖曳旋轉的 3D 社會科群島"></canvas>
@@ -478,7 +479,7 @@ body.sound-off .snd-btn .snd-wave{display:none}
       <li><span class="dot" style="--c:var(--geo)"></span>地理</li>
       <li><span class="dot" style="--c:var(--civ)"></span>公民</li>
     </ul>
-    <div class="hud-tools"><button type="button" class="tool" id="reviewBtn" disabled>今日複習 ✓</button><button type="button" class="tool" id="examBtn">會考模擬</button><button type="button" class="tool" id="searchBtn">搜尋題目</button><button type="button" class="tool" id="liteBtn" aria-pressed="false">省電模式</button><button type="button" class="tool" id="bigBtn" aria-pressed="false">大字模式</button><button type="button" class="tool" id="compactBtn" aria-pressed="false">精簡卡片</button><button type="button" class="tool" id="skyBtn">天空：自動</button><button type="button" class="tool" id="musicBtn" aria-pressed="true">音樂：開</button><button type="button" class="tool" id="sfxBtn" aria-pressed="true">音效：開</button><button type="button" class="tool" id="festBtn" aria-pressed="true" hidden>節慶裝飾：開</button><button type="button" class="tool" id="backupBtn">進度備份</button></div>
+    <div class="hud-tools"><button type="button" class="tool" id="reviewBtn" disabled>今日複習 ✓</button><button type="button" class="tool" id="examBtn">會考模擬</button><button type="button" class="tool" id="searchBtn">搜尋題目</button><button type="button" class="tool" id="liteBtn" aria-pressed="false">省電模式</button><button type="button" class="tool" id="bigBtn" aria-pressed="false">大字模式</button><button type="button" class="tool" id="compactBtn" aria-pressed="false">精簡卡片</button><button type="button" class="tool" id="skyBtn">天空：自動</button><button type="button" class="tool" id="musicBtn" aria-pressed="true">音樂：開</button><button type="button" class="tool" id="sfxBtn" aria-pressed="true">音效：開</button><button type="button" class="tool" id="festBtn" aria-pressed="true" hidden>節慶裝飾：開</button><button type="button" class="tool" id="lbBtn" hidden>排行榜</button><button type="button" class="tool" id="backupBtn">進度備份</button></div>
     <button type="button" class="back" id="backBtn" hidden>‹ 回到群島</button>
   </header>
   <div class="spacer"></div>
